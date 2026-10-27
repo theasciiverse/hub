@@ -1,0 +1,4 @@
+dev-releases/
+dev/__pycache__/
+fonts/src/
+*.tmp

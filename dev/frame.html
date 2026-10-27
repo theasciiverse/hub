@@ -1,0 +1,14 @@
+<!doctype html><meta charset="utf-8">
+<link rel="stylesheet" href="../vendor/asciinema-player/asciinema-player.css">
+<link rel="stylesheet" href="../css/site.css">
+<style>body{margin:0;background:#000}#p{width:1000px}.ap-overlay-start{display:none!important}</style>
+<div id="p"></div>
+<script src="../vendor/asciinema-player/asciinema-player.min.js"></script>
+<script>
+document.fonts.load('16px "Iosevka Term AV"').then(()=>{
+const q=new URLSearchParams(location.search);
+if(q.get('w'))document.getElementById('p').style.width=q.get('w')+'px';
+AsciinemaPlayer.create('../casts/'+q.get('cast')+'.cast',document.getElementById('p'),
+ {poster:'npt:'+(q.get('t')||'5'),fit:'width',controls:false,theme:'asciiverse',terminalFontFamily:'"Iosevka Term AV", monospace',terminalLineHeight:1.2});
+});
+</script>

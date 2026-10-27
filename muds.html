@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MUDs on Asciiverse</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="vendor/asciinema-player/asciinema-player.css">
+<link rel="stylesheet" href="css/site.css">
+<style>
+  .mudrow { grid-template-columns: 90px 1fr 330px; }
+  .since { font: 600 22px/1 var(--font-mono); color: var(--amber); text-align: center; }
+  .since small { display: block; font: 10px var(--font-mono); color: var(--text-faint); letter-spacing: .12em; margin-top: 4px; }
+  .addr { display: flex; flex-direction: column; gap: 6px; align-items: flex-end; padding-right: 8px; }
+  .addr .install { width: 100%; }
+  .addr .install code::before { content: ""; }
+  .soon { font: 11px var(--font-mono); color: var(--text-faint); }
+  .intro { color: var(--text-dim); max-width: 78ch; margin: 6px 0 0; }
+  @media (max-width: 900px) { .lera { grid-template-columns: 1fr; } .mudrow { grid-template-columns: 70px 1fr; } .addr { display: none; } }
+</style>
+</head>
+<body>
+<main id="app"></main>
+<script src="vendor/asciinema-player/asciinema-player.min.js"></script>
+<script src="js/site.js"></script>
+<script>
+(async () => {
+  const app = document.getElementById("app");
+  const all = await loadCatalog().catch(() => []);
+  // lera has no cast yet, so the generated catalog skips it; its hero is static
+  const muds = all.filter(t => t.kind === "mud");
+  app.append(header("Catalog", "muds"));
+  const wrap = el(`<div class="wrap"></div>`);
+  app.append(wrap);
+  // For everyone who has never met a MUD: what it is, before anything else
+  const WHAT = `<section class="what">
+    <div class="what-text">
+      <h1>A world made of words, <em>shared live.</em></h1>
+      <p>A MUD (Multi-User Dungeon) is an online game where everything is text. You read where you are, type what you do, and the people around you are real players, connected right now. The first one opened at the University of Essex in 1978. The online role-playing games that came later grew out of them.</p>
+      <div class="what-points">
+        <div><b>Type to play</b><span>Commands are plain words: look, north, say hello, get lamp. Every MUD has help.</span></div>
+        <div><b>Always on</b><span>The world keeps going while you are away: its economy, its politics, its people.</span></div>
+        <div><b>Still alive</b><span>Many below have run for more than thirty years, with players who log in every day.</span></div>
+      </div>
+      <p class="what-start">To start: pick a world, connect, and log in as a guest or make up a name.</p>
+    </div>
+    <pre class="what-demo"><span class="d">The Village Square</span>
+A worn stone fountain stands in the middle of the square. Lanterns sway over the inn door.
+Exits: <span class="g">north</span>, <span class="g">east</span>, <span class="g">west</span>.
+<span class="a">Mira</span> is here, sharpening a sword.
+
+<span class="p">&gt;</span> say hello
+You say 'hello'.
+<span class="a">Mira</span> says 'Evening! First time here?'
+
+<span class="p">&gt;</span> north<span class="c">_</span></pre>
+  </section>`;
+
+  // MUD clients sit above the worlds; Lera is the first, others can join it
+  const clients = [{ id: "lera", kind: "client", title: "Lera", theme: "client" }, ...[...MUD_CLIENTS].sort((a, b) => a.title.localeCompare(b.title))];
+  wrap.append(library({
+    label: "MUDs", items: [...clients, ...muds],
+    groups: [{ label: "Clients", items: clients, keepOrder: true }, { label: "Worlds", items: muds }],
+    badge: m => m.title[0].toUpperCase(),
+    mark: m => m.id === "lera" ? `<span class="m" style="color:var(--amber)">SOON</span>` : m.kind === "client" ? "" : `<span class="m" style="color:var(--text-faint)">${m.since || ""}</span>`,
+    detail: m => m.id === "lera" ? leraDetail(LERA_BLOCK) : m.kind === "client" ? clientDetail(m) : mudDetail(m),
+    home: main => {
+      main.append(el(WHAT));
+      main.append(el(LERA_BLOCK));
+      main.append(shelf("Other terminal clients", "not made by Asciiverse · av launches any of them", MUD_CLIENTS, null, clientCard));
+      const oldest = [...muds].sort((a, b) => (a.since || 9999) - (b.since || 9999));
+      const shelves = [
+        ["Worlds", "oldest first", oldest],
+        ["Older than the web", "open since before 1993", oldest.filter(m => m.since && m.since < 1993)],
+        ["In German", "auf Deutsch", muds.filter(m => m.language === "German")],
+        ["Science fiction", "", muds.filter(m => /sci-fi|dune/.test(m.theme) || (m.topics || []).includes("sci-fi"))],
+        ["Dark fantasy and horror", "", muds.filter(m => /dark|post-apoc/.test(m.theme))],
+        ["Social", "talk and build", muds.filter(m => m.theme === "social")],
+      ];
+      for (const [title, sub, list] of shelves)
+        if (list.length > 1) main.append(shelf(title, [sub, list.length].filter(Boolean).join(" · "), list, null, mudCard));
+    },
+  }));
+  app.append(footer());
+})();
+</script>
+</body>
+</html>

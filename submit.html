@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Submit a title</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+<style>
+  .sub-hero { margin-top: 22px; border: 1px solid var(--line); background: var(--panel); padding: 26px 28px; }
+  .sub-hero h1 { margin: 0 0 12px; font: 600 30px/1.15 var(--font-mono); }
+  .sub-hero h1 span { color: var(--amber); }
+  .sub-hero p { margin: 0 0 10px; color: var(--text-dim); max-width: 70ch; font-size: 15px; line-height: 1.6; }
+  .sub-ways { display: flex; flex-wrap: wrap; gap: 10px; margin: 8px 0 12px; }
+  .sub-ways .btn-av, .btn-ghost { display: inline-block; font: 600 12px/1 var(--font-mono); padding: 7px 10px; border-radius: var(--radius); }
+  .btn-ghost { color: var(--text); border: 1px solid var(--line-2); }
+  .btn-ghost:hover { border-color: var(--green); color: var(--green-hi); }
+  .sub-hero p.small { font-size: 13px; margin: 0; }
+
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .card { background: var(--panel); border: 1px solid var(--line); padding: 16px 18px; }
+  .card h3 { margin: 0 0 8px; font: 600 14px var(--font-mono); color: var(--text); }
+  .card p, .card li { color: var(--text-dim); font-size: 13.5px; line-height: 1.55; }
+  .card p { margin: 0 0 8px; }
+  .card ul, .card ol { margin: 0; padding-left: 18px; }
+  .card li { margin-bottom: 4px; }
+  .card code { font: 12.5px var(--font-mono); color: var(--amber-soft); }
+
+  .steps { counter-reset: step; display: grid; gap: 10px; }
+  .step { display: grid; grid-template-columns: 44px 1fr; gap: 14px; background: var(--panel); border: 1px solid var(--line); padding: 14px 16px; }
+  .step::before { counter-increment: step; content: counter(step); font: 700 26px/1 var(--font-mono); color: var(--green-hi); }
+  .step h3 { margin: 0 0 6px; font: 600 14px var(--font-mono); }
+  .step p { margin: 0 0 6px; color: var(--text-dim); font-size: 13.5px; line-height: 1.55; max-width: 80ch; }
+  .step code { font: 12.5px var(--font-mono); color: var(--amber-soft); }
+
+  .rec { width: 100%; border-collapse: collapse; font-size: 13px; background: var(--panel); border: 1px solid var(--line); }
+  .rec td { padding: 7px 12px; border-bottom: 1px solid var(--line); color: var(--text-dim); }
+  .rec td:first-child { color: var(--text); width: 160px; font: 12px var(--font-mono); }
+
+  @media (max-width: 900px) { .grid2, .grid3 { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<main id="app"></main>
+<script src="js/site.js"></script>
+<script>
+(() => {
+  const app = document.getElementById("app");
+  app.append(header("Submit a title", "none"));
+  const main = el(`<div class="wrap"></div>`);
+  app.append(main);
+
+  main.append(el(`<section class="sub-hero">
+    <h1>Made a terminal game? <span>Put it in the catalog.</span></h1>
+    <p>Asciiverse is a home for text-mode and terminal games and programs. Add yours and players can find it, watch it play, and install and launch it through av.</p>
+    <p>Open or closed source are both welcome: av only downloads and launches your program, it never links with it. The catalog is free at launch and funded by donations, and you are welcome to link your own donation page from your title's entry.</p>
+    <div class="sub-ways">
+      <a class="btn-av" href="https://github.com/theasciiverse/hub/issues/new?template=submit-title.yml">Fill in the form</a>
+      <a class="btn-ghost" href="https://github.com/theasciiverse/hub/pulls">Open a pull request</a>
+      <a class="btn-ghost" href="mailto:submit@asciiverse.sh">Email us</a>
+    </div>
+    <p class="small">Know a great terminal title by someone else? <a href="https://github.com/theasciiverse/hub/issues/new?template=suggest-title.yml">Suggest it.</a></p>
+  </section>`));
+
+  main.append(el(`<section class="sect">
+    <div class="sect-head"><h2>What fits</h2></div>
+    <div class="grid2">
+      <div class="card"><h3>Your title</h3><ul>
+        <li>Runs in a terminal: a TUI, a text game, an ASCII-art animation, a terminal utility.</li>
+        <li>Runs from a downloadable archive, without admin rights or an installer.</li>
+        <li>Keeps saves and settings in the user's normal config and data folders, not its own install folder, because an update replaces that folder's contents.</li>
+        <li>Is yours to distribute.</li></ul></div>
+      <div class="card"><h3>What review checks</h3><ul>
+        <li>The manifest and page are valid, and the archives download and match their checksums.</li>
+        <li>It installs, launches and quits cleanly through av on at least one listed platform.</li>
+        <li>The recording follows the recording guide.</li>
+        <li>Nothing harmful: no undisclosed network use, nothing written outside the user's own folders, no bundled malware or miners.</li></ul></div>
+    </div>
+  </section>`));
+
+  main.append(el(`<section class="sect">
+    <div class="sect-head"><h2>What you provide</h2></div>
+    <div class="steps">
+      <div class="step"><div><h3>Builds</h3>
+        <p><code>&lt;id&gt;-&lt;target-triple&gt;.tar.gz</code> for Linux and macOS, <code>&lt;id&gt;-&lt;target-triple&gt;.zip</code> for Windows, with their sha256 checksums. Static (musl) Linux builds are preferred.</p>
+        <p>Host them on GitHub Releases of a public repo with a <code>SHA256SUMS</code> file attached (new releases are picked up automatically), or at any public HTTPS URL (each update is then a small pull request).</p></div></div>
+      <div class="step"><div><h3>A manifest</h3>
+        <p><code>catalog/&lt;id&gt;.toml</code>: where the builds are, how to launch, what it needs. <code>catalog/solitty.toml</code> is a worked example.</p></div></div>
+      <div class="step"><div><h3>A page</h3>
+        <p><code>catalog/&lt;id&gt;.md</code>: your store page text (what it is, controls, credits), in a small Markdown subset. <code>catalog/solitty.md</code> is a worked example.</p></div></div>
+      <div class="step"><div><h3>One recording</h3>
+        <p>A <code>.cast</code> made with asciinema. It is your title's screenshot, trailer and thumbnail, in av and on this site.</p></div></div>
+    </div>
+  </section>`));
+
+  main.append(el(`<section class="sect">
+    <div class="sect-head"><h2>The recording</h2><span class="sub">one fixed format, so every preview looks right</span></div>
+    <p style="color:var(--text-dim);max-width:80ch;margin:0 0 12px">A cast stores what your program printed, not pixels, so your font and terminal do not matter. The size, colors and encoding do:</p>
+    <table class="rec">
+      <tr><td>Size</td><td>100x30 columns by rows; narrower is fine, never taller</td></tr>
+      <tr><td>Format</td><td>asciicast v3, plain <code>.cast</code>, recorded with asciinema 3.x</td></tr>
+      <tr><td>Terminal</td><td><code>TERM=xterm-256color</code>, <code>COLORTERM=truecolor</code>, a UTF-8 locale</td></tr>
+      <tr><td>Length</td><td>20 to 60 seconds, idle limit 2 seconds</td></tr>
+      <tr><td>Input capture</td><td>off (asciinema's default)</td></tr>
+    </table>
+  </section>`));
+
+  main.append(el(`<section class="sect">
+    <div class="sect-head"><h2>How to submit</h2><span class="sub">three ways in, one review</span></div>
+    <div class="grid3">
+      <div class="card"><h3>The form</h3><p><a href="https://github.com/theasciiverse/hub/issues/new?template=submit-title.yml">A short form on GitHub</a>: what it is, who made it, where the downloads are, its licence and what it needs. We write the manifest and page from it and ask there if anything is missing. No git needed.</p></div>
+      <div class="card"><h3>Email</h3><p>No GitHub account? Send the same details to <a href="mailto:submit@asciiverse.sh">submit@asciiverse.sh</a>.</p></div>
+      <div class="card"><h3>A pull request</h3><p>For developers who know git: add the manifest and page yourself, described below.</p></div>
+    </div>
+    <div class="card" style="margin-top:14px">
+      <p>Open a pull request on hub adding <code>catalog/&lt;id&gt;.toml</code> and <code>catalog/&lt;id&gt;.md</code>. In the description, say:</p>
+      <ul>
+        <li>what the title is and who made it,</li>
+        <li>whether it uses the network, and for what,</li>
+        <li>anything it needs from the system: libraries, mouse support, a font with Braille, a minimum terminal size.</li>
+      </ul>
+      <p style="margin-top:10px">Once merged, it appears in the catalog on the next build: every 6 hours, or right after the merge. av checks every download against the sha256 in the reviewed catalog, so if an archive changes after review, av refuses to install it. That is what lets players trust binaries from many different developers.</p>
+    </div>
+  </section>`));
+
+  app.append(footer());
+})();
+</script>
+</body>
+</html>

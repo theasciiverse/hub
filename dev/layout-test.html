@@ -1,0 +1,26 @@
+<!doctype html><html><body style="margin:0">
+<iframe id="f" src="../games.html" style="width:1400px;height:800px;border:0"></iframe>
+<pre id="out">running</pre>
+<script>
+const f = document.getElementById("f"), out = document.getElementById("out");
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+f.onload = async () => {
+  await sleep(3000);
+  const w = f.contentWindow, d = f.contentDocument, res = [];
+  const snap = tag => {
+    const head = d.querySelector(".site-head").getBoundingClientRect();
+    const side = d.querySelector(".lib-side").getBoundingClientRect();
+    const main = d.querySelector(".lib-main");
+    res.push(`${tag}: page scrollY=${w.scrollY} head top=${Math.round(head.top)} side top=${Math.round(side.top)} bottom=${Math.round(side.bottom)} window=${w.innerHeight} main scrollTop=${main.scrollTop} of ${main.scrollHeight - main.clientHeight}`);
+  };
+  snap("start");
+  const main = d.querySelector(".lib-main"); main.scrollTop = 1e6; await sleep(500);
+  snap("main scrolled to end");
+  const foot = main.querySelector(".foot"), fr = foot.getBoundingClientRect();
+  res.push(`footer visible in pane: ${fr.top < w.innerHeight}`);
+  const list = d.querySelector(".lib-list"); list.scrollTop = 1e6; await sleep(300);
+  const last = list.lastElementChild.getBoundingClientRect();
+  res.push(`last sidebar item visible: ${last.bottom <= w.innerHeight && last.top >= 0} (${list.lastElementChild.textContent.trim()})`);
+  out.textContent = res.join("\n");
+};
+</script></body></html>

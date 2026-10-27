@@ -1,0 +1,20 @@
+<!doctype html><html><body style="margin:0">
+<iframe id="f" src="../muds.html" style="width:1400px;height:800px;border:0"></iframe>
+<pre id="out">running</pre>
+<script>
+const f = document.getElementById("f"), out = document.getElementById("out");
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+f.onload = async () => {
+  await sleep(2500);
+  const w = f.contentWindow, d = f.contentDocument, res = [];
+  for (const [name, y] of [["top", 0], ["middle", 900], ["bottom", 99999]]) {
+    w.scrollTo(0, y); w.dispatchEvent(new Event("scroll")); await sleep(1500);
+    const list = d.querySelector(".lib-list"), r = list.getBoundingClientRect();
+    const last = list.lastElementChild; list.scrollTop = 1e6; await sleep(200);
+    const lr = last.getBoundingClientRect();
+    const sr = d.querySelector(".lib-side").getBoundingClientRect(); res.push(`${name}: side top=${Math.round(sr.top)} scrollY=${Math.round(w.scrollY)} list top=${Math.round(r.top)} bottom=${Math.round(r.bottom)} window=${w.innerHeight} last item visible=${lr.bottom <= w.innerHeight && lr.top >= 0}`);
+    list.scrollTop = 0;
+  }
+  out.textContent = res.join("\n");
+};
+</script></body></html>

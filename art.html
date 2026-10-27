@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Art &amp; Demos on Asciiverse</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="vendor/asciinema-player/asciinema-player.css">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+<main id="app"></main>
+<script src="vendor/asciinema-player/asciinema-player.min.js"></script>
+<script src="js/site.js"></script>
+<script>
+(async () => {
+  const app = document.getElementById("app");
+  const items = (await loadCatalog().catch(() => [])).filter(t => t.kind === "art");
+  app.append(header("Catalog", "art"));
+  const wrap = el(`<div class="wrap"></div>`);
+  app.append(wrap);
+  wrap.append(library({
+    label: "Art & Demos", items,
+    groups: [{ label: "Art & Demos", items }].filter(g => g.items.length),
+    badge: t => t.title[0].toUpperCase(),
+    detail: t => gameDetail(t),
+    empty: "Nothing here yet.",
+    home: main => {
+      main.append(el(`<section class="what"><div class="what-text">
+        <h1>Art in motion, <em>beauty reflected in text.</em></h1>
+        <p>Programs that draw for the joy of it: the Matrix's rain, the spinning ASCII donut, fire, plasma and flocking birds. Nothing to win and nothing to do; put one on and watch. The demoscene, the screensaver and the ANSI art scene all live on here.</p>
+      </div></section>`));
+      if (items.length) { main.append(shelf("Art & Demos", `${items.length}`, items)); return; }
+      main.append(el(`<section class="lib-empty"><h2>Art &amp; Demos are coming</h2>
+        <p>Nothing is in this part of the catalog yet. Made something that belongs here? <a href="submit.html">Submit a title</a>.</p></section>`));
+    },
+  }));
+  app.append(footer());
+})();
+</script>
+</body>
+</html>
