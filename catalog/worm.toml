@@ -3,6 +3,7 @@ id = "worm"
 kind = "game"
 title = "Worm"
 description = "Steer a growing worm to the numbers and see how long it can get before it runs into a wall or itself"
+year = 1980
 license = "BSD-3-Clause"
 repo = "theasciiverse/bsdgames"
 collection = "bsdgames"

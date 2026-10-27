@@ -3,6 +3,7 @@ id = "curses"
 kind = "adventure"
 title = "Curses"
 description = "Hunting for a map in the family attic leads into myth, history and a house full of puzzles"
+year = 1993
 license = "LicenseRef-Free-Noncommercial"
 repo = "theasciiverse/stories"
 provenance = "Graham Nelson's Curses (1993) is a landmark of the years after Infocom."

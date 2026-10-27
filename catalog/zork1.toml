@@ -3,6 +3,7 @@ id = "zork1"
 kind = "adventure"
 title = "Zork I: The Great Underground Empire"
 description = "Explore the Great Underground Empire for its treasures, starting by a white house"
+year = 1980
 license = "MIT"
 repo = "theasciiverse/zork"
 provenance = "Infocom released Zork I in 1980; Marc Blank, Dave Lebling, Bruce Daniels and Tim Anderson wrote it."

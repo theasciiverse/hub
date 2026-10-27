@@ -3,6 +3,7 @@ id = "muncher"
 kind = "game"
 title = "Muncher"
 description = "Steer the muncher to the food and keep clear of the traps that pile up as your score grows"
+year = 2020
 license = "CC0-1.0 OR Apache-2.0"
 repo = "theasciiverse/nbsdgames"
 collection = "nbsdgames"

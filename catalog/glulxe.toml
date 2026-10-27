@@ -3,6 +3,7 @@ id = "glulxe"
 kind = "program"
 title = "Glulxe"
 description = "The standard player for Glulx stories: most Inform 7 games, Counterfeit Monkey among them"
+year = 1999
 license = "MIT"
 repo = "theasciiverse/glulxe"
 provenance = "Glulxe is Andrew Plotkin's player for Glulx, the virtual machine he designed in 1999 when Inform games outgrew the Z-machine."

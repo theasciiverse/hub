@@ -3,6 +3,7 @@ id = "ascii-fluid"
 kind = "art"
 title = "ASCII Fluid"
 description = "Water poured, dropped and splashed in ASCII: Yusuke Endoh's fluid simulator from the IOCCC, running its scenes one after another"
+year = 2012
 license = "CC-BY-SA-4.0"
 repo = "theasciiverse/ioccc-art"
 collection = "ioccc"

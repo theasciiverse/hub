@@ -3,6 +3,7 @@ id = "neon-rain"
 kind = "art"
 title = "Neon Rain"
 description = "A rainy city street at night seen from above: buzzing neon signs mirrored on the wet road, cars with headlight beams, people under umbrellas and the odd flash of lightning"
+year = 2026
 license = "MIT"
 repo = "theasciiverse/neon-rain"
 provenance = "Asciiverse made Neon Rain in Rust in 2026, after a GIF of Terminal Rain, a cyberpunk roguelike shown on the TIGSource forums from 2015 that was never released."

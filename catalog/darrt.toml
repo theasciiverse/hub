@@ -3,6 +3,7 @@ id = "darrt"
 kind = "game"
 title = "Darrt"
 description = "Twenty-six letters fly around a target: stop them with their keys and land them on the bullseye"
+year = 2021
 license = "CC0-1.0 OR Apache-2.0"
 repo = "theasciiverse/nbsdgames"
 collection = "nbsdgames"

@@ -8,6 +8,7 @@ id = "solitty"
 kind = "game"
 title = "Solitty"
 description = "Ncurses-based Klondike solitaire, packaged for the Asciiverse catalog"
+year = 2010
 license = "MIT"
 repo = "theasciiverse/solitty"
 provenance = "Murilo Pereira wrote solitty, an ncurses Klondike, between 2010 and 2018."

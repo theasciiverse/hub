@@ -3,6 +3,7 @@ id = "wump"
 kind = "game"
 title = "Hunt the Wumpus"
 description = "Track the Wumpus through a cave of twenty rooms by smell, dodging bottomless pits and giant bats, and shoot it with a crooked arrow"
+year = 1973
 license = "BSD-3-Clause"
 repo = "theasciiverse/bsdgames"
 collection = "bsdgames"

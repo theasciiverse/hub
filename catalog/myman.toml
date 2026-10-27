@@ -3,6 +3,7 @@ id = "myman"
 kind = "game"
 title = "MyMan"
 description = "Pac-Man-like maze chase in curses: eat every dot, dodge four ghosts, turn the tables with a power pellet"
+year = 1998
 license = "MIT"
 repo = "theasciiverse/myman"
 provenance = "Benjamin C. Wiley Sittler wrote MyMan from 1998 to 2017."

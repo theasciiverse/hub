@@ -3,6 +3,7 @@ id = "warp"
 kind = "game"
 title = "Warp"
 description = "Larry Wall's real-time space war: fly an Enterprise and a Base at once through a wraparound universe where blasts spread and enemies never wait"
+year = 1983
 license = "BSD-2-Clause"
 repo = "theasciiverse/netbsd-games"
 collection = "bsdgames"

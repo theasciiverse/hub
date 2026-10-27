@@ -3,6 +3,7 @@ id = "zork3"
 kind = "adventure"
 title = "Zork III: The Dungeon Master"
 description = "The final descent: earn the title of Dungeon Master in the trilogy's last part"
+year = 1982
 license = "MIT"
 repo = "theasciiverse/zork"
 provenance = "Infocom released Zork III in 1982; Marc Blank, Dave Lebling, Bruce Daniels and Tim Anderson wrote it."

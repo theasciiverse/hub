@@ -3,6 +3,7 @@ id = "lost-pig"
 kind = "adventure"
 title = "Lost Pig"
 description = "Grunk the orc has lost the farm's pig and must find it in the dark woods and below"
+year = 2007
 license = "CC-BY-NC-ND-3.0"
 repo = "theasciiverse/stories"
 provenance = "Admiral Jota's Lost Pig won the 2007 Interactive Fiction Competition and Best Game at the 2007 XYZZY Awards."

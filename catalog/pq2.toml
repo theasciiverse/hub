@@ -3,6 +3,7 @@ id = "pq2"
 kind = "game"
 title = "pq2"
 description = "Nick Bollom's remake of Progress Quest, Eric Fredricksen's 2002 RPG parody that plays itself: roll up a hero, then watch the bars fill"
+year = 2002
 # upstream's LICENSE is the GPL version 3 text and nothing says "or
 # later"; the game data inside comes from Progress Quest (MIT, Eric
 # Fredricksen) and the program includes nlohmann/json (MIT), both

@@ -3,6 +3,7 @@ id = "blue-chairs"
 kind = "adventure"
 title = "Blue Chairs"
 description = "One strange drink at a party, and the night turns into a dream you have to walk through"
+year = 2004
 license = "CC-BY-NC-SA-3.0"
 repo = "theasciiverse/stories"
 provenance = "Chris Klimas wrote Blue Chairs in 2004. It came second in that year's Interactive Fiction Competition and won Best Game at the 2004 XYZZY Awards."

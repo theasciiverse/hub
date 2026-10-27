@@ -3,6 +3,7 @@ id = "chess-tui"
 kind = "game"
 title = "chess-tui"
 description = "Chess in the terminal: against Stockfish at five strengths, a friend on the same keyboard or over the network, or anyone on Lichess"
+year = 2023
 license = "MIT"
 repo = "theasciiverse/chess-tui"
 provenance = "chess-tui is Thomas Mauran's terminal chess game in Rust and Ratatui, from 2023 and still maintained with many contributors."

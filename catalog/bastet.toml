@@ -3,6 +3,7 @@ id = "bastet"
 kind = "game"
 title = "Bastet"
 description = "Falling blocks with a mean streak: instead of picking the next block at random, Bastet works out which one would hurt you most and sends that"
+year = 2005
 license = "GPL-3.0-or-later"
 repo = "theasciiverse/bastet"
 provenance = "Federico Poloni wrote Bastet in C++ and ncurses; it reached Slashdot in 2005, and he rewrote it for 0.43 in 2009."

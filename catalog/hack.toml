@@ -3,6 +3,7 @@ id = "hack"
 kind = "game"
 title = "Hack"
 description = "The 1985 dungeon crawl that NetHack grew from: down through the Mazes of Menace for the Amulet of Yendor, with your dog at your side"
+year = 1982
 license = "BSD-3-Clause"
 repo = "theasciiverse/netbsd-games"
 collection = "bsdgames"

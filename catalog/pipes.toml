@@ -3,6 +3,7 @@ id = "pipes"
 kind = "game"
 title = "Pipes"
 description = "Lay pipes from the queue ahead of the sewage, which starts flowing when the countdown ends"
+year = 2019
 license = "CC0-1.0 OR Apache-2.0"
 repo = "theasciiverse/nbsdgames"
 collection = "nbsdgames"

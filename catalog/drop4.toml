@@ -3,6 +3,7 @@ id = "drop4"
 kind = "game"
 title = "Drop4"
 description = "Fit the falling four-square shapes into complete rows before the stack reaches the top"
+year = 1992
 license = "BSD-3-Clause"
 repo = "theasciiverse/bsdgames"
 collection = "bsdgames"

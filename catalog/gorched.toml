@@ -3,6 +3,7 @@ id = "gorched"
 kind = "game"
 title = "Gorched"
 description = "Two tanks, one cannon each, a fresh range of hills every round: Scorched Earth for the terminal"
+year = 2020
 license = "MIT"
 repo = "theasciiverse/gorched"
 provenance = "Ján Čabala (zladovan) wrote Gorched in Go on termloop in 2020, as a homage to Wendell Hicken's 1991 DOS game Scorched Earth."

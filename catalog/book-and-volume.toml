@@ -3,6 +3,7 @@ id = "book-and-volume"
 kind = "adventure"
 title = "Book and Volume"
 description = "A new sysadmin is paged all night across a strange tech-boom city"
+year = 2005
 license = "CC-BY-NC-SA-2.5"
 repo = "theasciiverse/stories"
 provenance = "Nick Montfort wrote Book and Volume, a satire of the dot-com office, in 2005."

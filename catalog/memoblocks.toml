@@ -3,6 +3,7 @@ id = "memoblocks"
 kind = "game"
 title = "Memoblocks"
 description = "Memory on a board of 128 hidden tiles: turn them one at a time and find all 64 pairs"
+year = 2019
 license = "CC0-1.0 OR Apache-2.0"
 repo = "theasciiverse/nbsdgames"
 collection = "nbsdgames"

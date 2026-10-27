@@ -3,6 +3,7 @@ id = "hauberk"
 kind = "game"
 title = "Hauberk"
 description = "A hundred floors of dungeon, rebuilt every time you take the stairs. Light a candle, grip your stick, and go find out what happened to the last adventurer."
+year = 2012
 license = "MIT"
 repo = "theasciiverse/hauberk"
 provenance = "Bob Nystrom has written Hauberk in Dart since 2012 as a roguelike for the web browser, and still works on it."

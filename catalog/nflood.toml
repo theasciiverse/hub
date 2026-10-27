@@ -3,6 +3,7 @@ id = "nflood"
 kind = "game"
 title = "nFlood"
 description = "Flood the whole board with one colour in as few moves as you can, spreading out from the top left corner"
+year = 2011
 license = "GPL-3.0-or-later"
 repo = "theasciiverse/nflood"
 provenance = "Alexandre Dantas wrote nFlood, a Flood-It puzzle in C and ncurses, between 2011 and 2014, with help from Yu-Jie Lin."

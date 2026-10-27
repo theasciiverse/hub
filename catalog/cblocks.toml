@@ -3,6 +3,7 @@ id = "cblocks"
 kind = "game"
 title = "cblocks"
 description = "Twelve classic sliding-block puzzles, from Dudeney's Motor-Car Problem of 1903 to Conway's Century-and-a-Half, with undo and the fewest steps to beat"
+year = 2000
 license = "GPL-2.0-or-later"
 repo = "theasciiverse/cgames"
 collection = "cgames"

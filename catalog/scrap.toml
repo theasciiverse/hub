@@ -3,6 +3,7 @@ id = "scrap"
 kind = "game"
 title = "Scrap"
 description = "A robot roguelike written in ten days: shoot enemy robots to wrecks and build your own from the systems you salvage, twenty levels down"
+year = 2005
 license = "GPL-2.0-or-later"
 repo = "theasciiverse/scrap"
 provenance = "Thijs van Ommen wrote Scrap in ten days for the Ten-Day Roguelike in 2005, extended it in 2006 and published it on GitHub in 2017."

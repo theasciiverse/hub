@@ -3,6 +3,7 @@ id = "clines"
 kind = "game"
 title = "Console Lines"
 description = "Color Lines in the terminal: slide coloured chips across a 9x9 board to line up five of a kind before the board fills, by keyboard or mouse"
+year = 2002
 license = "GPL-2.0-only"
 repo = "theasciiverse/clines"
 provenance = "Pawel S. Veselov wrote Console Lines in C on curses (2002 to 2006), after the classic Color Lines."

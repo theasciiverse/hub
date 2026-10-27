@@ -3,6 +3,7 @@ id = "tugow"
 kind = "game"
 title = "Tug of War"
 description = "Tug of war by typing: key in the digits on screen faster than the other side pulls"
+year = 2020
 license = "CC0-1.0 OR Apache-2.0"
 repo = "theasciiverse/nbsdgames"
 collection = "nbsdgames"

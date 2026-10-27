@@ -3,6 +3,7 @@ id = "unnethack"
 kind = "game"
 title = "UnNetHack"
 description = "NetHack with more of everything: more randomness, more levels, more challenges, down to the Amulet of Yendor"
+year = 2009
 license = "NGPL"
 repo = "theasciiverse/unnethack"
 provenance = "Patric Mueller started UnNetHack in 2009 as a fork of NetHack 3.4.3, the DevTeam's game, to be NetHack as it would look had its releases gone on; he and contributors still develop it."

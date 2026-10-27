@@ -3,6 +3,7 @@ id = "trsr"
 kind = "game"
 title = "Treasure"
 description = "Two-player minesweeper: take turns digging for treasure, against the computer or a friend"
+year = 2018
 license = "CC0-1.0 OR Apache-2.0"
 repo = "theasciiverse/nbsdgames"
 collection = "nbsdgames"

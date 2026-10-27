@@ -3,6 +3,7 @@ id = "starlanes"
 kind = "game"
 title = "Star Lanes"
 description = "Found shipping companies between the stars, buy their stock and merge your way to the biggest fortune: the classic trading game for one to four players at one keyboard"
+year = 1995
 license = "GPL-2.0-only"
 repo = "theasciiverse/starlanes"
 provenance = "Brian \"Beej\" Hall wrote this curses Star Lanes in C (1995 to 1997, 1.2.2), after the Osborne version of Steven Faber's game, and modernised it himself in 2026 (1.4.0)."

@@ -3,6 +3,7 @@ id = "greed"
 kind = "game"
 title = "Greed"
 description = "Munch as much of a grid of numbers as you can; each number decides how far you move"
+year = 1990
 license = "BSD-2-Clause"
 repo = "theasciiverse/greed"
 provenance = "Matt Day wrote Greed in C (to 3.0a, 1990); Eric S. Raymond has maintained it since and ported it to Rust in 2026."

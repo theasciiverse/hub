@@ -3,6 +3,7 @@ id = "cmines"
 kind = "game"
 title = "cmines"
 description = "Minesweeper as it should be: Beginner, Intermediate and Expert fields, a timer and best times, flags and chording, keys or mouse"
+year = 2000
 license = "GPL-2.0-or-later"
 repo = "theasciiverse/cgames"
 collection = "cgames"

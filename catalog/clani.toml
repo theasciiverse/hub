@@ -3,6 +3,7 @@ id = "clani"
 kind = "art"
 title = "CLiAni"
 description = "Endless scrolling noise patterns in ASCII: Voronoi cells, Perlin clouds and cellular shapes, with rain, zig-zag and static effects"
+year = 2020
 license = "GPL-3.0-only"
 repo = "theasciiverse/clani"
 provenance = "Ryan Huth (hury) wrote CLiAni in C++ on ncurses (2020 to 2024), with resize handling by Sergeant-Salz."

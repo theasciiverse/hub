@@ -3,6 +3,7 @@ id = "larn"
 kind = "game"
 title = "Larn"
 description = "Find the potion that cures your daughter in the caverns of Larn and the volcano below them, against the clock, in Noah Morgan's 1986 roguelike"
+year = 1986
 license = "LicenseRef-Free-Noncommercial"
 repo = "theasciiverse/netbsd-games"
 collection = "bsdgames"

@@ -3,6 +3,7 @@ id = "swarm"
 kind = "game"
 title = "Swarm"
 description = "Stranded on an alien planet, you build and program robots in a small functional language to explore, gather and craft"
+year = 2021
 license = "BSD-3-Clause"
 repo = "theasciiverse/swarm"
 provenance = "Swarm is by Brent Yorgey and contributors, in Haskell on Brick, since 2021."

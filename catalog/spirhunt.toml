@@ -3,6 +3,7 @@ id = "spirhunt"
 kind = "game"
 title = "Space Pirate Hunt"
 description = "Clear the galaxy of space pirates before time runs out: warp between quadrants, fire plasers and torpedoes, dock at starbases, with the whole map always on screen"
+year = 1976
 license = "BSD-3-Clause"
 repo = "theasciiverse/bsdgames"
 collection = "bsdgames"

@@ -3,6 +3,7 @@ id = "urogue"
 kind = "game"
 title = "UltraRogue"
 description = "Herb Chong's Rogue of 1985 to 1995: ten character classes, a flea market at the start, and unique artifacts deep in the Dungeons of Doom"
+year = 1985
 # the BSD licence plus two clauses: "UltraRogue" and "urogue" may not
 # endorse or promote derived products, and "Products derived from this
 # software may not be called "UltraRogue" or "urogue" ... without prior

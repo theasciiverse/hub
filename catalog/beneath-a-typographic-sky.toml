@@ -3,6 +3,7 @@ id = "beneath-a-typographic-sky"
 kind = "game"
 title = "Beneath a Typographic Sky"
 description = "Revolution's Beneath a Steel Sky in the terminal: Union City rebuilt out of Braille dots, its words set in type"
+year = 1994
 # the engine is GPL (a port of ScummVM's); Revolution's game data is
 # freeware: free to share and to modify, never to be sold
 license = "GPL-3.0-or-later AND LicenseRef-Free-Noncommercial"

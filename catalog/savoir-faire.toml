@@ -3,6 +3,7 @@ id = "savoir-faire"
 kind = "adventure"
 title = "Savoir-Faire"
 description = "A broke aristocrat returns to an empty chateau, with a talent for linking things"
+year = 2002
 license = "CC-BY-NC-ND-1.0"
 repo = "theasciiverse/stories"
 provenance = "Emily Short's Savoir-Faire (2002) is set in an alternate France where magic links like things to like."

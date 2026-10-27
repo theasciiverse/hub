@@ -3,6 +3,7 @@ id = "fortress-earth"
 kind = "game"
 title = "Fortress Earth"
 description = "The sky opens over a great city, then another, then another. Ten armies, twelve cities, one world slowly turning red. Your move, Commander."
+year = 2019
 license = "MIT"
 repo = "theasciiverse/fortress-earth"
 provenance = "Filip Hracek wrote Fortress Earth in Dart between 2019 and 2025 as a keyboard-only strategy tech demo for the browser: armies that spread over a map of the Earth like a cellular automaton."

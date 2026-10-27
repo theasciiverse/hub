@@ -3,6 +3,7 @@ id = "spider-and-web"
 kind = "adventure"
 title = "Spider and Web"
 description = "A spy caught breaking in is made to tell the story, and not all of it is true"
+year = 1998
 license = "LicenseRef-Free-Distribution"
 repo = "theasciiverse/stories"
 provenance = "Andrew Plotkin wrote Spider and Web in 1998."

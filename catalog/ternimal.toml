@@ -3,6 +3,7 @@ id = "ternimal"
 kind = "art"
 title = "Ternimal"
 description = "A glowing lifeform creeps and coils around the terminal along an endless path of arcs"
+year = 2017
 license = "GPL-3.0-only"
 repo = "theasciiverse/ternimal"
 provenance = "Ternimal is by Philipp Emanuel Weidmann, one Rust file with no dependencies, from 2017."

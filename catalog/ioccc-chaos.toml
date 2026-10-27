@@ -3,6 +3,7 @@ id = "ioccc-chaos"
 kind = "art"
 title = "Chaos"
 description = "A cube, a pyramid, a desk, an X-wing and the IOCCC's own name tumble in 3D wireframe: Alan De Smet's obfuscated object viewer"
+year = 1998
 license = "CC-BY-SA-4.0"
 repo = "theasciiverse/ioccc-art"
 collection = "ioccc"

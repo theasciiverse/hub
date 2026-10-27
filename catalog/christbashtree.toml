@@ -3,6 +3,7 @@ id = "christbashtree"
 kind = "art"
 title = "Christmas Tree"
 description = "A tree of green stars with coloured lights twinkling on and off and a flashing greeting: ChristBASHTree as one small program"
+year = 2014
 license = "Unlicense"
 repo = "theasciiverse/christbashtree"
 provenance = "Sergio Lepore wrote ChristBASHTree in bash and tput in 2014, with later contributions to 2018."

@@ -3,6 +3,7 @@ id = "tristam-island"
 kind = "adventure"
 title = "Tristam Island"
 description = "Stranded on a small Atlantic island, explore it and find out why it is empty"
+year = 2020
 license = "CC0-1.0"
 repo = "theasciiverse/stories"
 provenance = "Hugo Labrande wrote Tristam Island in 2020, in the style of a 1980s Infocom adventure and for the same Z-machine version 3."

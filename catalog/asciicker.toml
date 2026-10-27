@@ -3,6 +3,7 @@ id = "asciicker"
 kind = "game"
 title = "Asciicker"
 description = "A whole 3D island drawn in characters: walk it, turn it, jump, swing a sword and fill your pack, in Gumix's ASCII action RPG"
+year = 2019
 license = "MIT"
 repo = "theasciiverse/asciicker"
 provenance = "Marcin Sokalski (Gumix), who also made ASCII Patrol, built Asciicker from 2019 to 2024 as a 3D ASCII game concept that plays in the browser at asciicker.com."

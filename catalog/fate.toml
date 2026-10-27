@@ -3,6 +3,7 @@ id = "fate"
 kind = "adventure"
 title = "Fate"
 description = "A pregnant queen sees her child's future in a crystal ball and sets out to change it"
+year = 2007
 license = "GPL-2.0-or-later"
 repo = "theasciiverse/stories"
 provenance = "Victor Gijsbers entered Fate in Spring Thing 2007."

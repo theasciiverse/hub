@@ -3,6 +3,7 @@ id = "0verkill"
 kind = "game"
 title = "0verkill"
 description = "Bloody 2D deathmatch in ASCII art: run, jump and shoot against friends or bots"
+year = 2000
 license = "GPL-2.0-only"
 repo = "theasciiverse/0verkill"
 provenance = "Brainsoft (Brain, Clock and others) released 0verkill 0.16 in 2000; hackndev fixed it for newer compilers from 2008 to 2010, and ravener revived it on GitHub from 2021."

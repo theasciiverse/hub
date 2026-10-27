@@ -3,6 +3,7 @@ id = "ncmatrix"
 kind = "art"
 title = "NCMatrix"
 description = "The Matrix's falling code, with your computer's network traffic falling in it: packets sent in red, received in magenta"
+year = 2005
 license = "GPL-3.0-or-later"
 repo = "theasciiverse/ncmatrix"
 provenance = "CMatrix is by Chris Allegretta from 1999 and Abishek V Ashok from 2017, with many contributors. In 2005 Thomas Bloedorn made NCMatrix from it, painting the packets the computer sends and receives into the rain."

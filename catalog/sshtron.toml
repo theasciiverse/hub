@@ -3,6 +3,7 @@ id = "sshtron"
 kind = "game"
 title = "SSHTron"
 description = "Lightcycles over SSH: leave a wall of light behind you, cut across the others, and be the last trail still moving"
+year = 2016
 license = "MIT"
 repo = "theasciiverse/sshtron"
 provenance = "Zach Latta and Max Wofford built SSHTron in about twenty hours at BrickHack 2 in March 2016, a Tron game anyone could join with nothing but ssh, and its public server is still running."

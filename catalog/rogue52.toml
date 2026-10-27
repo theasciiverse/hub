@@ -3,6 +3,7 @@ id = "rogue52"
 kind = "game"
 title = "Rogue 5.2"
 description = "Rogue as Berkeley had it in 1982: the Dungeons of Doom, now with stairs back up, traps you can name and a list of what you have found"
+year = 1982
 license = "BSD-3-Clause"
 repo = "theasciiverse/rogue-restoration"
 collection = "rogue-restoration"

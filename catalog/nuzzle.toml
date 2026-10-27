@@ -3,6 +3,7 @@ id = "nuzzle"
 kind = "game"
 title = "Nuzzle"
 description = "Three block-placing puzzles: drop shapes on the grid, fill rows, columns, squares or colour groups to clear them, and keep going as long as anything fits"
+year = 2019
 license = "MIT"
 repo = "theasciiverse/nuzzle"
 provenance = "Dead End wrote nuzzle in C on ncurses (2019 to 2023), a collection of three block-placing puzzles."

@@ -3,6 +3,7 @@ id = "changes"
 kind = "adventure"
 title = "Changes"
 description = "Crash-landed on a strange forest world, wake up as something new and learn to survive"
+year = 2012
 license = "LicenseRef-CC-BY-ND"
 repo = "theasciiverse/stories"
 provenance = "David Given wrote Changes for the 2012 Interactive Fiction Competition."

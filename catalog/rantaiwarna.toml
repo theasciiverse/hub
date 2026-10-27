@@ -3,6 +3,7 @@ id = "rantaiwarna"
 kind = "game"
 title = "rantaiwarna"
 description = "SameGame in the terminal: clear groups of same-coloured elements from the board, and the bigger the group, the bigger the score"
+year = 2014
 license = "MIT"
 repo = "theasciiverse/rantaiwarna"
 provenance = "Guido Berhoerster wrote rantaiwarna, a SameGame (Chain Shot!) for curses terminals, in C in 2014 and kept it in Mercurial until 2016."

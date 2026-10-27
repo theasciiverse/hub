@@ -3,6 +3,7 @@ id = "dopewars"
 kind = "game"
 title = "dopewars"
 description = "Thirty days to pay off the loan shark: buy low, sell high and dodge the cops across New York, alone or online"
+year = 1998
 license = "GPL-2.0-or-later"
 repo = "theasciiverse/dopewars"
 provenance = "Ben Webb has written and maintained dopewars since 1998, after John E. Dell's MS-DOS game Drug Wars."

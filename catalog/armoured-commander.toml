@@ -3,6 +3,7 @@ id = "armoured-commander"
 kind = "game"
 title = "Armoured Commander"
 description = "Command a Sherman and its five-man crew through the campaigns of 1944 and 1945 in the World War II tank commander roguelike"
+year = 2015
 license = "GPL-3.0-or-later"
 repo = "theasciiverse/armoured-commander"
 provenance = "Gregory Adam Scott wrote Armoured Commander in Python and libtcod between 2015 and 2017, and Eric Normandeau maintained it from version 1.04. Asciiverse ported it to Rust and Ratatui for the terminal."

@@ -3,6 +3,7 @@ id = "galaxis"
 kind = "game"
 title = "Galaxis"
 description = "Find four lifeboats adrift in a starfield with probes that tell how many they can see, in as few tries as you can"
+year = 1994
 license = "BSD-2-Clause"
 repo = "theasciiverse/galaxis"
 provenance = "Eric S. Raymond began Galaxis in 1994 as a curses clone of Christian Franz's Macintosh freeware game, and still maintains it."

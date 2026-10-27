@@ -3,6 +3,7 @@ id = "2048"
 kind = "game"
 title = "2048"
 description = "Slide numbered tiles on a 4x4 board, merge equal pairs, and try to build a 2048 before the board fills up"
+year = 2014
 license = "MIT"
 repo = "theasciiverse/2048"
 provenance = "Maurits van der Schee wrote 2048.c in 2014, a console version of Gabriele Cirulli's game of the same year, in one C file that draws with ANSI escape codes."

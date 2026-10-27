@@ -3,6 +3,7 @@ id = "jewels"
 kind = "game"
 title = "Jewels"
 description = "Falling pairs of jewels: line up four of a kind to blow them away before the pile reaches the top"
+year = 2018
 license = "CC0-1.0 OR Apache-2.0"
 repo = "theasciiverse/nbsdgames"
 collection = "nbsdgames"

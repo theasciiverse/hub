@@ -3,6 +3,7 @@ id = "atc"
 kind = "game"
 title = "ATC"
 description = "Air traffic control at the terminal: steer jets and prop planes by typed commands, and never let two of them touch"
+year = 1986
 license = "BSD-3-Clause"
 repo = "theasciiverse/bsdgames"
 collection = "bsdgames"

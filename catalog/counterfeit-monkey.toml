@@ -3,6 +3,7 @@ id = "counterfeit-monkey"
 kind = "adventure"
 title = "Counterfeit Monkey"
 description = "A spy fused from two people slips through an island of wordplay, changing things by changing their names"
+year = 2012
 license = "CC-BY-SA-4.0"
 repo = "theasciiverse/stories"
 provenance = "Emily Short's Counterfeit Monkey (2012) won Best Game and four more categories at the 2012 XYZZY Awards; its community now maintains it in an open-source repository."

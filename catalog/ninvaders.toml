@@ -3,6 +3,7 @@ id = "ninvaders"
 kind = "game"
 title = "nInvaders"
 description = "Space Invaders in ncurses: hold back the descending alien block from behind four crumbling bunkers, and pick off the UFO for 500 points"
+year = 2002
 license = "GPL-2.0-or-later"
 repo = "theasciiverse/ninvaders"
 provenance = "Thomas Dettbarn wrote nInvaders in C on ncurses in 2002 and 2003 with Alexander Hollinger, Sebastian Gutsfeld and Matthias Thar, with code by Mike Saarna."

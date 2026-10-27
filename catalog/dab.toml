@@ -3,6 +3,7 @@ id = "dab"
 kind = "game"
 title = "Dots and Boxes"
 description = "Dots and boxes against the computer: draw one line a turn, close a box to claim it and move again, and the board grows each time you win"
+year = 2003
 license = "BSD-3-Clause"
 repo = "theasciiverse/bsdgames"
 collection = "bsdgames"

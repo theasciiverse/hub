@@ -3,6 +3,7 @@ id = "rain"
 kind = "art"
 title = "Rain"
 description = "Raindrops land on a still pond and spread out in widening rings, one after another: the BSD screen piece from 1980"
+year = 1980
 license = "BSD-3-Clause"
 repo = "theasciiverse/netbsd-games"
 collection = "bsdgames"

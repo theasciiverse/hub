@@ -3,6 +3,7 @@ id = "all-things-devours"
 kind = "adventure"
 title = "All Things Devours"
 description = "Break into your own lab to destroy a time machine before anyone can use it"
+year = 2004
 license = "LicenseRef-Public-Domain"
 repo = "theasciiverse/stories"
 provenance = "Toby Ord wrote All Things Devours, as half sick of shadows, for the 2004 Interactive Fiction Competition."

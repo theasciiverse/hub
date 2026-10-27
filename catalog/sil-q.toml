@@ -3,6 +3,7 @@ id = "sil-q"
 kind = "game"
 title = "Sil-Q"
 description = "Steal a Silmaril from Morgoth's iron crown and escape alive, in the Tolkien roguelike of the First Age that grew out of Angband"
+year = 2012
 # GPL version 2 or the non-commercial "Angband licence", at the user's
 # choice (LICENSE.md); taken under the GPL, which LICENSE.md names as
 # "version 2" with no "or any later version". The sounds ("freeware,

@@ -3,6 +3,7 @@ id = "revenge"
 kind = "game"
 title = "Revenge"
 description = "Push rows of blocks to box in the cats before they catch you, and trapped cats turn to cheese"
+year = 2022
 license = "CC0-1.0 OR Apache-2.0"
 repo = "theasciiverse/nbsdgames"
 collection = "nbsdgames"

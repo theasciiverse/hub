@@ -3,6 +3,7 @@ id = "netgame"
 kind = "game"
 title = "Net"
 description = "Turn the tiles until every pipe joins the network at the centre: the classic net (netwalk) rotation puzzle"
+year = 2010
 license = "MIT"
 repo = "theasciiverse/netgame"
 provenance = "Ben Falconer wrote Netgame in 2010, the net puzzle in a single C++ file that draws with ANSI escape codes."

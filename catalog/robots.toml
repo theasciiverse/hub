@@ -3,6 +3,7 @@ id = "robots"
 kind = "game"
 title = "Robots"
 description = "Lure the dim but deadly robots into crashing into each other, with nothing but a teleporter to save you"
+year = 1980
 license = "BSD-3-Clause"
 repo = "theasciiverse/bsdgames"
 collection = "bsdgames"

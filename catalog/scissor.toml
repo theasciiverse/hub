@@ -3,6 +3,7 @@ id = "scissor"
 kind = "game"
 title = "Scissor"
 description = "Rock, paper, scissors as a live action game: steer your scissor into papers and away from rocks"
+year = 2025
 license = "CC0-1.0 OR Apache-2.0"
 repo = "theasciiverse/nbsdgames"
 collection = "nbsdgames"

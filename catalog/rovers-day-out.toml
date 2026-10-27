@@ -3,6 +3,7 @@ id = "rovers-day-out"
 kind = "adventure"
 title = "Rover's Day Out"
 description = "A spaceship's computer dreams through a morning routine that is not what it seems"
+year = 2009
 license = "CC-BY-NC-SA-3.0"
 repo = "theasciiverse/stories"
 provenance = "Jack Welch and Ben Collins-Sussman's Rover's Day Out won the 2009 Interactive Fiction Competition."

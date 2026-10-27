@@ -3,6 +3,7 @@ id = "worms"
 kind = "art"
 title = "Worms"
 description = "Coloured worms wander the screen, turning at random and bouncing off the edges: the BSD screen piece from 1980"
+year = 1980
 license = "BSD-3-Clause"
 repo = "theasciiverse/netbsd-games"
 collection = "bsdgames"

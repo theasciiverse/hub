@@ -3,6 +3,7 @@ id = "andromeda-apocalypse"
 kind = "adventure"
 title = "Andromeda Apocalypse"
 description = "The last survivor of a dead world drifts through space on a strange vessel"
+year = 2012
 license = "CC-BY-NC-SA-3.0"
 repo = "theasciiverse/stories"
 provenance = "Marco Innocenti's Andromeda Apocalypse won the 2012 Interactive Fiction Competition."

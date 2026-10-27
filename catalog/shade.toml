@@ -3,6 +3,7 @@ id = "shade"
 kind = "adventure"
 title = "Shade"
 description = "Waiting for dawn in your small apartment before a trip, the place starts to change"
+year = 2000
 license = "LicenseRef-Free-Noncommercial"
 repo = "theasciiverse/stories"
 provenance = "Andrew Plotkin wrote Shade for the 2000 Interactive Fiction Competition."

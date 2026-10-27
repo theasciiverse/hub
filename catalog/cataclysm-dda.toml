@@ -3,6 +3,7 @@ id = "cataclysm-dda"
 kind = "game"
 title = "Cataclysm: Dark Days Ahead"
 description = "Survive the end of the world in a huge open-world roguelike: scavenge, craft, build, drive and fight the dead and far stranger things"
+year = 2010
 license = "CC-BY-SA-3.0"
 repo = "theasciiverse/cataclysm-dda"
 provenance = "Cataclysm: Dark Days Ahead began as a fork of Whales' Cataclysm (on GitHub from 2010) by Kevin Granade, TheDarklingWolf and GlyphGryph, and has been built by CleverRaven and thousands of contributors since."

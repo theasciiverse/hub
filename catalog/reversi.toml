@@ -3,6 +3,7 @@ id = "reversi"
 kind = "game"
 title = "Reversi"
 description = "Reversi against the computer or a friend: outflank the other side's discs and turn them"
+year = 2018
 license = "CC0-1.0 OR Apache-2.0"
 repo = "theasciiverse/nbsdgames"
 collection = "nbsdgames"

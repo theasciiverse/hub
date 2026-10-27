@@ -3,6 +3,7 @@ id = "i-am-prey"
 kind = "adventure"
 title = "I Am Prey"
 description = "Born in a sealed facility, outrun the Predator and collect a suit to escape the gas"
+year = 2023
 license = "CC-BY-SA-4.0"
 repo = "theasciiverse/stories"
 provenance = "Joey Cramsey wrote I Am Prey, a TADS 3 game, in 2023."

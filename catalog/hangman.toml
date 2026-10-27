@@ -3,6 +3,7 @@ id = "hangman"
 kind = "game"
 title = "Hangman"
 description = "Guess the computer's word a letter at a time before the gallows is finished"
+year = 1983
 license = "BSD-3-Clause"
 repo = "theasciiverse/bsdgames"
 collection = "bsdgames"

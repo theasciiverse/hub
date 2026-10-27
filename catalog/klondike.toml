@@ -3,6 +3,7 @@ id = "klondike"
 kind = "game"
 title = "Klondike"
 description = "Solitaire in a box: build the four suit piles from Ace to King, played entirely from the keyboard"
+year = 2016
 license = "BSD-3-Clause"
 repo = "theasciiverse/bsdgames"
 collection = "bsdgames"

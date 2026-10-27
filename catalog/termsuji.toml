@@ -3,6 +3,7 @@ id = "termsuji"
 kind = "game"
 title = "termsuji"
 description = "Go in the terminal on a proper wooden board: play GNU Go on 9x9, 13x13 or 19x19, at ten strengths and with handicap stones"
+year = 2022
 license = "MIT"
 repo = "theasciiverse/termsuji"
 provenance = "termsuji is lvank's terminal client for online-go.com, in Go with tview (2022)."

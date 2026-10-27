@@ -3,6 +3,7 @@ id = "silent-night"
 kind = "art"
 title = "Silent Night"
 description = "A snowy forest at night: wind and gusts blow the snow into drifts around a lit cabin, under the stars and a faint aurora, with the sound of the wind and the forest"
+year = 2026
 license = "MIT"
 repo = "theasciiverse/silent-night"
 provenance = "Asciiverse made Silent Night in Rust in 2026 for Christmas, after finding no terminal snow with wind, drifting snow or depth."

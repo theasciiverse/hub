@@ -3,6 +3,7 @@ id = "snake"
 kind = "game"
 title = "Snake"
 description = "Grab the money and reach the exit before the snake eats you: the 1980 BSD chase game, where the snake gets hungrier as you get richer"
+year = 1980
 license = "BSD-3-Clause"
 repo = "theasciiverse/bsdgames"
 collection = "bsdgames"

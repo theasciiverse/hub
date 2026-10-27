@@ -3,6 +3,7 @@ id = "lexter"
 kind = "game"
 title = "Lexter"
 description = "Letters fall into a pit: steer them into words across or up and down, forwards or backwards, before the pit fills up"
+year = 1998
 license = "GPL-2.0-only"
 repo = "theasciiverse/lexter"
 provenance = "Mark Pulford wrote Lexter in C on curses from 1998 to 2001."

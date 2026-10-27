@@ -3,6 +3,7 @@ id = "cbonsai"
 kind = "art"
 title = "cbonsai"
 description = "A bonsai tree grows in its pot branch by branch, then another, and another: a calm terminal screensaver"
+year = 2020
 license = "GPL-3.0-only"
 repo = "theasciiverse/cbonsai"
 provenance = "cbonsai is by John Allbritten and contributors, in C on ncurses, since 2020."

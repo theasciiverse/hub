@@ -3,6 +3,7 @@ id = "clidle"
 kind = "game"
 title = "clidle"
 description = "A five-letter word-guessing game in the style of Wordle: six tries, letters that turn colour one by one, a keyboard that keeps track of your letters, and a running score"
+year = 2022
 license = "MIT"
 repo = "theasciiverse/clidle"
 provenance = "Ajeet D'Souza wrote clidle, a terminal word-guessing game, in Go in 2022 and still maintains it."

@@ -3,6 +3,7 @@ id = "nettoe"
 kind = "game"
 title = "netToe"
 description = "Tic-tac-toe against the computer at three levels, a friend at the same keyboard, or a friend across the network"
+year = 2000
 license = "GPL-2.0-or-later"
 repo = "theasciiverse/nettoe"
 provenance = "Gabriele Giorgetti wrote netToe in C in 2000 and 2001, and Mats Erik Andersson maintained it until 2014."

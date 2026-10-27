@@ -3,6 +3,7 @@ id = "candybox2"
 kind = "game"
 title = "Candy Box 2"
 description = "You have 1 candy. Eat it, throw some on the ground, ask for new features, and watch a candy counter grow into a whole ASCII world of quests, spells and lollipops"
+year = 2013
 # the code is GPL version 3 "or (at your option) any later version"
 # (candybox2_sourceCodeLicense.txt), the ASCII art CC BY-SA 3.0
 # (ascii_art.html, credited by the @author line of each file)

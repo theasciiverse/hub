@@ -3,6 +3,7 @@ id = "checkers"
 kind = "game"
 title = "Checkers"
 description = "Checkers against the computer or a friend, with forced jumps, chains of jumps and kings"
+year = 2018
 license = "CC0-1.0 OR Apache-2.0"
 repo = "theasciiverse/nbsdgames"
 collection = "nbsdgames"

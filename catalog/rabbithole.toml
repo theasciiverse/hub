@@ -3,6 +3,7 @@ id = "rabbithole"
 kind = "game"
 title = "Rabbithole"
 description = "A rabbit in a hidden maze: find every carrot before the time runs out"
+year = 2019
 license = "CC0-1.0 OR Apache-2.0"
 repo = "theasciiverse/nbsdgames"
 collection = "nbsdgames"

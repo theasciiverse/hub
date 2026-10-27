@@ -3,6 +3,7 @@ id = "fisher"
 kind = "game"
 title = "Fisher"
 description = "Drop a hook through ten rows of sea life and reel in the deep catches, without letting a fish cross your line"
+year = 2020
 license = "CC0-1.0 OR Apache-2.0"
 repo = "theasciiverse/nbsdgames"
 collection = "nbsdgames"

@@ -3,6 +3,7 @@ id = "nstars"
 kind = "art"
 title = "nstars"
 description = "Fly through a starfield: stars stream out from the centre and brighten as they rush past"
+year = 2016
 license = "GPL-3.0-or-later"
 repo = "theasciiverse/nstars"
 provenance = "nstars is the ncurses version of Philip J Freeman's stars, in C, from 2016 to 2020."

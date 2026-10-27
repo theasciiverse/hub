@@ -3,6 +3,7 @@ id = "miketron"
 kind = "game"
 title = "Miketron"
 description = "Drive a vehicle that leaves a trail it cannot cross, and grab pick-ups for flight, immunity and bombs"
+year = 2020
 license = "CC0-1.0 OR Apache-2.0"
 repo = "theasciiverse/nbsdgames"
 collection = "nbsdgames"

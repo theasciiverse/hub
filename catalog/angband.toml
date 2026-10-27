@@ -3,6 +3,7 @@ id = "angband"
 kind = "game"
 title = "Angband"
 description = "Go down a hundred levels of dungeon beneath Angband and defeat Morgoth, Lord of Darkness, in the classic Tolkien roguelike"
+year = 1990
 # GPL-2 or the non-commercial "Angband licence", at the user's choice
 # (docs/copying.rst); taken under the GPL, which says "version 2" only
 license = "GPL-2.0-only"

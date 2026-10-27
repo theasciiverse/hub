@@ -3,6 +3,7 @@ id = "sjump"
 kind = "game"
 title = "Square Jump"
 description = "Time your jump: send the O flying from square to square and build up a combo"
+year = 2021
 license = "CC0-1.0 OR Apache-2.0"
 repo = "theasciiverse/nbsdgames"
 collection = "nbsdgames"

@@ -3,6 +3,7 @@ id = "chroma"
 kind = "game"
 title = "Chroma"
 description = "An abstract puzzle game: steer two pieces through traps of falling arrows and bombs to collect every star, with unlimited undo"
+year = 2010
 license = "GPL-2.0-or-later"
 repo = "theasciiverse/chroma"
 provenance = "Amf wrote Chroma in C (2010 to 2025), with a graphical version and this terminal one, chroma-curses."

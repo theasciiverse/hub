@@ -3,6 +3,7 @@ id = "particles"
 kind = "art"
 title = "Particle Fountain"
 description = "An emitter sprays particles that glow green, yellow and red as they age: steer it, add gravity and wind, and play"
+year = 2013
 license = "MIT"
 repo = "theasciiverse/particles"
 provenance = "Particle Fountain is particles.cpp by flarn2006, in C++ on curses, from 2013 to 2017, one of the programs in his MiscPrograms collection."

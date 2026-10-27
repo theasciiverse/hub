@@ -3,6 +3,7 @@ id = "nbsd-sos"
 kind = "game"
 title = "SOS"
 description = "Write S or O on the board and score for every S-O-S line you complete, against the computer or a friend"
+year = 2019
 license = "CC0-1.0 OR Apache-2.0"
 repo = "theasciiverse/nbsdgames"
 collection = "nbsdgames"

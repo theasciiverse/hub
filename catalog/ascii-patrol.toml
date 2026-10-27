@@ -3,6 +3,7 @@ id = "ascii-patrol"
 kind = "game"
 title = "ASCII Patrol"
 description = "Roll a moon buggy through alien country, hopping craters, blasting rocks and shooting saucers out of the sky, in a love letter to Moon Patrol"
+year = 2017
 # LICENSE is the GPL version 3 text and nothing says "or later";
 # see PATCHES.md
 license = "GPL-3.0-only"

@@ -3,6 +3,7 @@ id = "nhfourk"
 kind = "game"
 title = "NetHack Fourk"
 description = "NetHack rebalanced, with NetHack 4's friendlier interface: autoexplore, travel, status bars, an inventory sidebar and levels you can look back on"
+year = 2014
 license = "NGPL"
 repo = "theasciiverse/nhfourk"
 provenance = "Nathan Eady began NetHack Fourk in 2014 as a variant of NetHack 4, Alex Smith's reworking of NetHack 3.4.3 from AceHack and Daniel Thaler's NitroHack, and still maintains it for the Hardfought servers."

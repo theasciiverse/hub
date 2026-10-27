@@ -3,6 +3,7 @@ id = "glider"
 kind = "game"
 title = "Glider"
 description = "John Calhoun's Glider 4.0 in the terminal: fly a paper glider through a house, riding the air from the floor vents past candles, toasters, darts and sparking outlets"
+year = 1991
 # Calhoun's repository (code, art, sounds and houses): MIT, "Copyright (c)
 # 2016 softdorothy"
 license = "MIT"

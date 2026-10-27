@@ -3,6 +3,7 @@ id = "battlestar"
 kind = "game"
 title = "Battlestar"
 description = "A tropical adventure in the classic style: escape a doomed starship, then explore an island of natives, wizards and a goddess"
+year = 1979
 license = "BSD-3-Clause"
 repo = "theasciiverse/bsdgames"
 collection = "bsdgames"

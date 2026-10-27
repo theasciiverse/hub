@@ -3,6 +3,7 @@ id = "huarongdao"
 kind = "game"
 title = "HuaRongDao"
 description = "The Chinese sliding-block puzzle: slide the pieces around the box until the big square escapes through the gap at the bottom"
+year = 2004
 license = "GPL-2.0-or-later"
 repo = "theasciiverse/huarongdao"
 provenance = "Qingning Huo wrote hrd, a curses HuaRongDao in C++, in 2004 and packaged it for Debian."

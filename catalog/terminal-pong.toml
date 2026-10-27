@@ -3,6 +3,7 @@ id = "terminal-pong"
 kind = "game"
 title = "terminal.pong"
 description = "Pong in the terminal: against the computer, with a friend, or watch two AIs play"
+year = 2025
 license = "MIT"
 repo = "theasciiverse/terminal-pong"
 provenance = "terminal.pong is IshmamR's Pong in Rust and Ratatui (2025)."

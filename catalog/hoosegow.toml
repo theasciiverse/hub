@@ -3,6 +3,7 @@ id = "hoosegow"
 kind = "adventure"
 title = "Hoosegow"
 description = "Thrown in a frontier jail with Muddy Charlie, plan a jailbreak"
+year = 2010
 license = "CC-BY-NC-SA-3.0"
 repo = "theasciiverse/stories"
 provenance = "Ben Collins-Sussman and Jack Welch's comic Western Hoosegow (2010) won the Casual Gameplay Design Competition #7."

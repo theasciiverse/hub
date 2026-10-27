@@ -3,6 +3,7 @@ id = "miscom"
 kind = "game"
 title = "Miscom"
 description = "Defend six cities from falling missiles: aim, fire, and catch the warheads in your explosions before they land"
+year = 1995
 license = "GPL-2.0-or-later"
 repo = "theasciiverse/miscom"
 provenance = "Graham Richards wrote Miscom in C on curses (1995 to 1996), a terminal take on Missile Command; Russell Marks, who wrote Ztrack, added colour and sound and released it in 1998."

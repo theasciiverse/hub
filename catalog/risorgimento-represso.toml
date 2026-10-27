@@ -3,6 +3,7 @@ id = "risorgimento-represso"
 kind = "adventure"
 title = "Risorgimento Represso"
 description = "Escape a dull lecture and stumble into a magical mess you have to clean up"
+year = 2003
 license = "CC-BY-NC-ND-1.0"
 repo = "theasciiverse/stories"
 provenance = "Michael J. Coyne wrote Risorgimento Represso in 2003 and revised it in 2006 and 2017."

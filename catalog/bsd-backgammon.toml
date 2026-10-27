@@ -3,6 +3,7 @@ id = "bsd-backgammon"
 kind = "game"
 title = "BSD Backgammon"
 description = "The BSD backgammon of 1980: you against the computer or a friend, with the doubling cube, saved games and a tutorial that teaches the rules"
+year = 1980
 license = "BSD-3-Clause"
 repo = "theasciiverse/netbsd-games"
 collection = "bsdgames"

@@ -3,6 +3,7 @@ id = "doctor-m"
 kind = "adventure"
 title = "The Life (and Deaths) of Doctor M"
 description = "A doctor wakes in a windswept land between life and death, and walks back through his life"
+year = 2011
 license = "CC-BY-NC-ND-3.0"
 repo = "theasciiverse/stories"
 provenance = "Michael D. Hilborn entered The Life (and Deaths) of Doctor M in the 2011 Interactive Fiction Competition, under the name Edmund Wells."

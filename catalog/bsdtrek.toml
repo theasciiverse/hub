@@ -3,6 +3,7 @@ id = "bsdtrek"
 kind = "game"
 title = "BSD Trek"
 description = "Eric Allman's 1976 Star Trek for Unix: hunt Klingons by warp, phaser and torpedo, one typed command at a time"
+year = 1976
 license = "BSD-3-Clause"
 repo = "theasciiverse/bsdtrek"
 provenance = "Eric Allman wrote Trek at UC Berkeley in 1976 and it shipped with BSD's games; Kenji Rikitake's bsdtrek later made the FreeBSD and DragonFly BSD version build on Linux."

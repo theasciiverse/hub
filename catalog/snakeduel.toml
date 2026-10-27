@@ -3,6 +3,7 @@ id = "snakeduel"
 kind = "game"
 title = "Snakeduel"
 description = "A light-cycle duel against the computer: both snakes leave walls behind, and the first to crash loses the round"
+year = 2021
 license = "CC0-1.0 OR Apache-2.0"
 repo = "theasciiverse/nbsdgames"
 collection = "nbsdgames"

@@ -3,6 +3,7 @@ id = "curse-of-war"
 kind = "game"
 title = "Curse of War"
 description = "Real-time strategy on a hex map where you never move a unit: plant flags, build cities and let your people march"
+year = 2013
 license = "GPL-3.0-or-later"
 repo = "theasciiverse/curse-of-war"
 provenance = "Alexey Nikolaev wrote Curse of War in C on ncurses in 2013."

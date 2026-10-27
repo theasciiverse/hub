@@ -3,6 +3,7 @@ id = "canfield"
 kind = "game"
 title = "Canfield"
 description = "The solitaire with a betting account: buy the deal, build down in alternate colours, and keep a running tally of what you won and lost"
+year = 1980
 license = "BSD-3-Clause"
 repo = "theasciiverse/netbsd-games"
 collection = "bsdgames"

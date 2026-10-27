@@ -3,6 +3,7 @@ id = "tarts"
 kind = "art"
 title = "tarts"
 description = "Terminal art in motion: Matrix rain, a spinning donut, plasma, fire, flocking boids and more"
+year = 2022
 license = "MIT"
 repo = "theasciiverse/tarts"
 provenance = "tarts (Terminal Arts) is by oiwn and contributors, in Rust, since 2022."

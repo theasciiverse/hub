@@ -3,6 +3,7 @@ id = "mandelbrot"
 kind = "art"
 title = "Mandelbrot"
 description = "Explore the Mandelbrot set in coloured characters: pan with the arrows, zoom a hundred levels into its spirals and seahorses"
+year = 2015
 license = "AGPL-3.0-only"
 repo = "theasciiverse/mandelbrot"
 provenance = "David Ulrich wrote mandelbrot viewer in C on ncurses (2015 to 2016), built on Ken Perlin's one-line Mandelbrot."

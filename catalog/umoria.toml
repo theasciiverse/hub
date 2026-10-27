@@ -3,6 +3,7 @@ id = "umoria"
 kind = "game"
 title = "Umoria"
 description = "The original Moria: go down through the mines below the town, deeper and deeper, to the Balrog, who waits from level 50 down"
+year = 1981
 license = "GPL-3.0-or-later"
 repo = "theasciiverse/umoria"
 provenance = "Robert A. Koeneke wrote Moria at the University of Oklahoma from 1981 to 1986, James E. Wilson made it Umoria for Unix from 1987 to 1994, and Michael R. Cook restored it as Umoria 5.7."

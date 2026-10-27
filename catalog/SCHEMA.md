@@ -20,6 +20,10 @@ id = "solitty"                 # lowercase, [a-z0-9-], same as the file name
 kind = "game"                  # game | program | movie | mud | adventure (a text adventure story) | art (demos, effects and ANSI/ASCII art)
 title = "Solitty"
 description = "Ncurses-based Klondike solitaire, packaged for the Asciiverse catalog"
+year = 2010                    # the year the work first appeared; for a restoration
+                               # or port, the original's year (Rogue 1980), for a new
+                               # game after an older one, its own; places it on the
+                               # website's history timeline. MUDs use `since`
 license = "MIT"                # SPDX id, or "Proprietary" for closed titles
 repo = "theasciiverse/solitty" # optional: closed titles may have no public repo
 topics = ["terminal", "ncurses", "solitaire"]

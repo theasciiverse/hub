@@ -3,6 +3,7 @@ id = "terminal-parrot"
 kind = "art"
 title = "terminal-parrot"
 description = "The party parrot, dancing in your terminal in every colour, forever"
+year = 2016
 license = "MIT"
 repo = "theasciiverse/terminal-parrot"
 provenance = "terminal-parrot is by John Hobbs and contributors, in Go, since 2016."

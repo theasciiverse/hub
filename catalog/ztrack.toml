@@ -3,6 +3,7 @@ id = "ztrack"
 kind = "game"
 title = "Ztrack"
 description = "Pseudo-3D driving down an endless three-lane road at 150 mph, dodging traffic you can only half see"
+year = 1995
 # public domain by its author; SPDX has no id for that, so a LicenseRef
 license = "LicenseRef-PublicDomain"
 repo = "theasciiverse/ztrack"

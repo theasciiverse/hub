@@ -3,6 +3,7 @@ id = "gomoku"
 kind = "game"
 title = "Gomoku"
 description = "Five in a row on a 19 by 19 board against Ralph Campbell's computer player, moved with the cursor"
+year = 1994
 license = "BSD-3-Clause"
 repo = "theasciiverse/bsdgames"
 collection = "bsdgames"
