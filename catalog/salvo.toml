@@ -1,14 +1,15 @@
 schema_version = 1
-id = "battleship"
+id = "salvo"
 kind = "game"
-title = "Battleship"
-description = "Hide your fleet, then find and sink the enemy's, against the computer or a friend"
+title = "Salvo"
+description = "Hide five ships on a 10x10 sea, then fire blind into the enemy's until one fleet is on the bottom: against the computer or a friend on the same keyboard."
+year = 2018
 license = "CC0-1.0 OR Apache-2.0"
 repo = "theasciiverse/nbsdgames"
 collection = "nbsdgames"
-provenance = "abakh wrote Battleship for New BSD Games, a collection of small curses games in C started in 2018."
+provenance = "abakh wrote it as Battleship for New BSD Games, a collection of small curses games in C started in 2018. It plays here as Salvo, the name the pencil-and-paper game was sold under in the 1930s."
 changes = "PATCHES.md"
-topics = ["board", "battleship", "naval", "vs-computer", "hot-seat", "mouse", "curses"]
+topics = ["board", "salvo", "naval", "vs-computer", "hot-seat", "mouse", "curses"]
 genre = "board"
 
 [developer]
@@ -20,7 +21,7 @@ name = "abakh and contributors"
 url = "https://github.com/abakh/nbsdgames"
 
 [exec]
-game = "battleship"
+game = "salvo"
 
 # your board and the tracking board side by side, with the two message
 # lines below them
@@ -33,11 +34,11 @@ utf8 = false
 color = "basic"
 mouse = true
 
-# 100x30, single player, played by asciiverse/record/battleship.py: it
+# 100x30, single player, played by asciiverse/record/salvo.py: it
 # sets its fleet, then hunts on a checkerboard and follows up hits; 30 s is
 # mid-game
 [media]
-cast = "asciiverse/casts/battleship.cast"
+cast = "asciiverse/casts/salvo.cast"
 thumbnail_at = 30.0
 
 [release]
