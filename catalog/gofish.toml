@@ -1,0 +1,45 @@
+schema_version = 1
+id = "gofish"
+kind = "game"
+title = "Go Fish"
+description = "The children's card game against the computer: ask for ranks, go fish, and collect the most books of four"
+license = "BSD-3-Clause"
+repo = "theasciiverse/bsdgames"
+collection = "bsdgames"
+provenance = "Muffy Barkocy wrote fish for BSD Unix. Mike Sharov gave it a curses display and one-key play in 2016 and renamed it Go Fish in 2020."
+changes = "PATCHES.md"
+topics = ["card", "go-fish", "vs-computer", "classic", "curses"]
+genre = "card"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "Muffy Barkocy, UC Berkeley (1990)"
+url = "https://sourceforge.net/projects/bsd-games"
+
+[exec]
+game = "gofish"
+
+# the status panel at the bottom is 80 columns wide and the messages
+# above it scroll; measured in tmux: at 76 columns the panel is cut off,
+# a turn plays normally at 80x12
+[min_terminal]
+cols = 80
+rows = 12
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, a game against the computer played by asciiverse/record/gofish.py,
+# which asks for what the computer has asked for; it ends "I win!!!" at 35 s;
+# 22 s is mid-game with a book down
+[media]
+cast = "asciiverse/casts/gofish.cast"
+thumbnail_at = 22.0
+
+[release]
+source = "github"

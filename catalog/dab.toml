@@ -1,0 +1,46 @@
+schema_version = 1
+id = "dab"
+kind = "game"
+title = "Dots and Boxes"
+description = "Dots and boxes against the computer: draw one line a turn, close a box to claim it and move again, and the board grows each time you win"
+license = "BSD-3-Clause"
+repo = "theasciiverse/bsdgames"
+collection = "bsdgames"
+provenance = "Christos Zoulas wrote dab, in C++, for NetBSD's games in 2003. Mike Sharov rewrote it in C for his bsd-games in 2016."
+changes = "PATCHES.md"
+topics = ["dots and boxes", "pencil and paper", "board", "classic", "curses"]
+genre = "board"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "Christos Zoulas (2003), Mike Sharov"
+url = "https://sourceforge.net/projects/bsd-games"
+
+# an optional level argument, 1 to 9, sets the starting board size
+[exec]
+game = "dab"
+
+# laid out for an 80x24 screen (S_COLS, S_LINES in dab.c): level 1 needs
+# only 8 rows, but each win grows the board, and at level 9 the 23-row
+# field and the status line under it need 24 rows and 58 columns
+[min_terminal]
+cols = 58
+rows = 24
+
+# you and the computer each have a color; keyboard only
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, dab 5 (a 7 by 7 field) played by asciiverse/record/dab.py, which
+# takes boxes and gives nothing away; 43 s is a close game, 8 boxes to 10
+[media]
+cast = "asciiverse/casts/dab.cast"
+thumbnail_at = 43.0
+
+[release]
+source = "github"

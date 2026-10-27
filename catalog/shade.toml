@@ -1,0 +1,44 @@
+schema_version = 1
+id = "shade"
+kind = "adventure"
+title = "Shade"
+description = "Waiting for dawn in your small apartment before a trip, the place starts to change"
+license = "LicenseRef-Free-Noncommercial"
+repo = "theasciiverse/stories"
+provenance = "Andrew Plotkin wrote Shade for the 2000 Interactive Fiction Competition."
+changes = "shade/README.md"            # what Asciiverse changed, a path in repo
+topics = ["text-adventure", "surreal", "short", "psychological"]
+genre = "text adventure"
+
+[developer]
+name = "Andrew Plotkin"
+url = "https://eblong.com/zarf/if.html"
+
+# Written for the 2000 Interactive Fiction Competition.
+# The story file is unchanged (provenance and sha256 in the stories repo,
+# shade/README.md); played with Frotz 2.55, which comes inside the archive.
+[upstream]
+name = "Andrew Plotkin, 2000"
+url = "https://eblong.com/zarf/if.html"
+
+# the start script plays the story in the bundled Frotz; saves go to
+# ~/.local/share/shade
+[exec]
+game = "shade"
+args = []
+
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+[media]
+cast = "asciiverse/shade.cast"
+thumbnail_at = 15.4
+
+[release]
+source = "github"

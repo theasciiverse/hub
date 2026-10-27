@@ -1,0 +1,44 @@
+schema_version = 1
+id = "jewels"
+kind = "game"
+title = "Jewels"
+description = "Falling pairs of jewels: line up four of a kind to blow them away before the pile reaches the top"
+license = "CC0-1.0 OR Apache-2.0"
+repo = "theasciiverse/nbsdgames"
+collection = "nbsdgames"
+provenance = "abakh wrote Jewels for New BSD Games, a collection of small curses games in C started in 2018."
+changes = "PATCHES.md"
+topics = ["puzzle", "falling-blocks", "match-four", "curses"]
+genre = "puzzle"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "abakh and contributors"
+url = "https://github.com/abakh/nbsdgames"
+
+[exec]
+game = "jewels"
+
+# the well is 19 wide and 17 deep, with the score and the next pair
+# to its left and the controls below it
+[min_terminal]
+cols = 38
+rows = 20
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, jewels played by asciiverse/record/jewels.py, which tries every
+# column and turn for each pair in a copy of the well; 40 s is a mid-game
+# well with a few hundred points
+[media]
+cast = "asciiverse/casts/jewels.cast"
+thumbnail_at = 40.0
+
+[release]
+source = "github"

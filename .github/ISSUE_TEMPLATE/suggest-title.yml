@@ -1,0 +1,37 @@
+name: Suggest a title
+description: A terminal game or program by someone else that belongs in Asciiverse.
+title: "Suggest: "
+labels: ["suggestion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Know a terminal game, program, demo or adventure that deserves a home
+        here? Tell us where to find it and we will look into its licence,
+        builds and contents. Not every suggestion makes it in.
+  - type: input
+    id: name
+    attributes:
+      label: Title
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Where to find it
+      description: Its source, home page or download.
+      placeholder: "https://..."
+    validations:
+      required: true
+  - type: input
+    id: by
+    attributes:
+      label: Made by
+      description: If you know.
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it belongs here
+      description: What it is and what makes it worth playing.
+    validations:
+      required: true

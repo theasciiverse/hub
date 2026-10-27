@@ -1,0 +1,47 @@
+schema_version = 1
+id = "cblocks"
+kind = "game"
+title = "cblocks"
+description = "Twelve classic sliding-block puzzles, from Dudeney's Motor-Car Problem of 1903 to Conway's Century-and-a-Half, with undo and the fewest steps to beat"
+license = "GPL-2.0-or-later"
+repo = "theasciiverse/cgames"
+collection = "cgames"
+provenance = "Brian Raiter wrote cblocks in C for the Linux console and curses (2000, last updated 2020)."
+changes = "PATCHES.md"
+topics = ["puzzle", "sliding blocks", "logic", "classic", "curses"]
+genre = "puzzle"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# built from Brian Raiter's release tarballs (1.0 to 2.2b, in the repo's
+# history) with the changes in PATCHES.md
+[upstream]
+name = "Brian Raiter"
+url = "https://www.muppetlabs.com/~breadbox/software/cgames.html"
+
+# puzzles in series/ beside the program; solutions and saved positions in
+# the data folder (~/.local/share/cblocks, %APPDATA%\cblocks)
+[exec]
+game = "cblocks"
+
+# the largest puzzle (8x10) takes 60 columns and 24 rows with its sidebar
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = true
+
+# 100x30, the first two puzzles solved by asciiverse/record/cblocks.py (a
+# breadth-first search), blocks selected with the arrow keys and slid
+# with H J K L; the still is Dudeney's Motor-Car Problem half done
+[media]
+cast = "asciiverse/cblocks.cast"
+thumbnail_at = 26.0
+
+[release]
+source = "github"

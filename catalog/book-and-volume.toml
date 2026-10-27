@@ -1,0 +1,44 @@
+schema_version = 1
+id = "book-and-volume"
+kind = "adventure"
+title = "Book and Volume"
+description = "A new sysadmin is paged all night across a strange tech-boom city"
+license = "CC-BY-NC-SA-2.5"
+repo = "theasciiverse/stories"
+provenance = "Nick Montfort wrote Book and Volume, a satire of the dot-com office, in 2005."
+changes = "book-and-volume/README.md"            # what Asciiverse changed, a path in repo
+topics = ["text-adventure", "satire", "city", "timed"]
+genre = "text adventure"
+
+[developer]
+name = "Nick Montfort"
+url = "https://nickm.com/if/book_and_volume.html"
+
+# Nick Montfort's 2005 game, a satire of the dot-com office.
+# The story file is unchanged (provenance and sha256 in the stories repo,
+# book-and-volume/README.md); played with Frotz 2.55, which comes inside the archive.
+[upstream]
+name = "Nick Montfort, 2005"
+url = "https://nickm.com/if/book_and_volume.html"
+
+# the start script plays the story in the bundled Frotz; saves go to
+# ~/.local/share/book-and-volume
+[exec]
+game = "book-and-volume"
+args = []
+
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+[media]
+cast = "asciiverse/book-and-volume.cast"
+thumbnail_at = 17.5
+
+[release]
+source = "github"

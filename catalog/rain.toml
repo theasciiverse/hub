@@ -1,0 +1,43 @@
+schema_version = 1
+id = "rain"
+kind = "art"
+title = "Rain"
+description = "Raindrops land on a still pond and spread out in widening rings, one after another: the BSD screen piece from 1980"
+license = "BSD-3-Clause"
+repo = "theasciiverse/netbsd-games"
+collection = "bsdgames"
+provenance = "Eric P. Scott wrote rain at Caltech High Energy Physics in November 1980, after the VAX/VMS program of the same name, and it shipped with BSD Unix from then on."
+changes = "PATCHES.md"
+topics = ["screensaver", "rain", "ripples", "classic", "calm", "curses"]
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "Eric P. Scott, Caltech (1980)"
+url = "https://github.com/NetBSD/src/tree/trunk/games/rain"
+
+# any key quits; the default 120 ms between drops
+[exec]
+game = "rain"
+
+# draws over the whole window and follows a resize; it runs at any size
+# (resized down to 2x2 under ASan), but ripples need room to show
+[min_terminal]
+cols = 20
+rows = 8
+
+# plain ASCII, no colour; keyboard only
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, `rain` for 30 s (asciiverse/record/rain.py)
+[media]
+cast = "asciiverse/casts/rain.cast"
+thumbnail_at = 20.0
+
+[release]
+source = "github"

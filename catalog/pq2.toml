@@ -1,0 +1,51 @@
+schema_version = 1
+id = "pq2"
+kind = "game"
+title = "pq2"
+description = "Nick Bollom's remake of Progress Quest, Eric Fredricksen's 2002 RPG parody that plays itself: roll up a hero, then watch the bars fill"
+# upstream's LICENSE is the GPL version 3 text and nothing says "or
+# later"; the game data inside comes from Progress Quest (MIT, Eric
+# Fredricksen) and the program includes nlohmann/json (MIT), both
+# notices shipped in the archive
+license = "GPL-3.0-only"
+repo = "theasciiverse/pq2"
+provenance = "Nick Bollom's remake in C++ and ncurses (2016 to 2025) of Progress Quest, the idle RPG parody Eric Fredricksen released in 2002."
+changes = "PATCHES.md"
+topics = ["idle", "zero-player", "rpg", "parody", "remake", "curses"]
+genre = "idle"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "Nick Bollom, after Eric Fredricksen's Progress Quest"
+url = "https://github.com/nbollom/pq2"
+
+[exec]
+game = "pq2"
+
+# the screen is a fixed 80x24, centred; measured in a pty: at 79x24 or
+# 80x23 it only says "Progress Quest 2 requires a terminal of at least
+# 80x24" (NCursesView::Update)
+[min_terminal]
+cols = 80
+rows = 24
+
+# the progress bars are Unicode block characters (U+2588 to U+258F)
+[requires]
+utf8 = true
+color = "basic"
+mouse = false
+
+# 100x30, played by asciiverse/record/pq2.py: a character rolled up on
+# the sheet (random name, race and class from their lists, a few rolls),
+# then the game left to itself through the prologue into Act I; 58 s;
+# the still is the first quest under way, with the quest, inventory,
+# experience and task bars all moving
+[media]
+cast = "asciiverse/casts/pq2.cast"
+thumbnail_at = 57.5
+
+[release]
+source = "github"

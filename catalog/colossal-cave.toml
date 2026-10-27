@@ -1,0 +1,51 @@
+schema_version = 1
+id = "colossal-cave"
+kind = "adventure"
+title = "Colossal Cave Adventure"
+description = "The original text adventure: explore the cave, gather its treasures, and say the magic word"
+license = "BSD-2-Clause"
+repo = "theasciiverse/colossal-cave"
+provenance = "Will Crowther wrote Adventure in 1976 and Don Woods expanded it in 1977. Eric S. Raymond ported their last version, Adventure 2.5 (1995, 430 points), to modern C as Open Adventure."
+changes = "PATCHES.md"            # what Asciiverse changed, a path in repo
+topics = ["text-adventure", "classic", "cave", "fantasy"]
+genre = "text adventure"
+
+[developer]
+name = "Will Crowther and Don Woods"
+url = "https://gitlab.com/esr/open-adventure"
+
+# Adventure 2.5 (1995), the 430-point version and the last by its own
+# authors, in Eric S. Raymond's Open Adventure 1.22, released with their
+# permission (README.adoc). Native C with libedit; Windows is a MinGW
+# build with WinEditLine.
+[upstream]
+name = "Eric S. Raymond, after Will Crowther (1976) and Don Woods (1977)"
+url = "https://gitlab.com/esr/open-adventure"
+
+# the start script runs lib/advent from ~/.local/share/colossal-cave, where
+# SAVE writes its file; on Windows colossal-cave.exe moves into
+# %APPDATA%\colossal-cave itself (PATCHES.md)
+[exec]
+game = "colossal-cave"
+args = []
+
+# plain line-oriented text wrapped at about 70 columns
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+[media]
+cast = "asciiverse/colossal-cave.cast"
+thumbnail_at = 38.5
+
+# Release v1.22-av.1 is tagged but not built yet: GitHub Actions for
+# theasciiverse is blocked on billing (2026-10-12). The archives, their
+# sha256s and SHA256SUMS come from that release once the workflow runs
+# (release.source = "github" takes them from the release, not from here).
+[release]
+source = "github"

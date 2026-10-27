@@ -1,0 +1,44 @@
+schema_version = 1
+id = "changes"
+kind = "adventure"
+title = "Changes"
+description = "Crash-landed on a strange forest world, wake up as something new and learn to survive"
+license = "LicenseRef-CC-BY-ND"
+repo = "theasciiverse/stories"
+provenance = "David Given wrote Changes for the 2012 Interactive Fiction Competition."
+changes = "changes/README.md"            # what Asciiverse changed, a path in repo
+topics = ["text-adventure", "science-fiction", "nature", "survival"]
+genre = "text adventure"
+
+[developer]
+name = "David Given"
+url = "http://cowlark.com/changes/"
+
+# Entered in the 2012 Interactive Fiction Competition.
+# The story file is unchanged (provenance and sha256 in the stories repo,
+# changes/README.md); played with Frotz 2.55, which comes inside the archive.
+[upstream]
+name = "David Given, 2012"
+url = "http://cowlark.com/changes/"
+
+# the start script plays the story in the bundled Frotz; saves go to
+# ~/.local/share/changes
+[exec]
+game = "changes"
+args = []
+
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+[media]
+cast = "asciiverse/changes.cast"
+thumbnail_at = 15.1
+
+[release]
+source = "github"

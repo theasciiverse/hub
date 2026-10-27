@@ -1,0 +1,57 @@
+schema_version = 1
+id = "candybox2"
+kind = "game"
+title = "Candy Box 2"
+description = "You have 1 candy. Eat it, throw some on the ground, ask for new features, and watch a candy counter grow into a whole ASCII world of quests, spells and lollipops"
+# the code is GPL version 3 "or (at your option) any later version"
+# (candybox2_sourceCodeLicense.txt), the ASCII art CC BY-SA 3.0
+# (ascii_art.html, credited by the @author line of each file)
+license = "GPL-3.0-or-later AND CC-BY-SA-3.0"
+repo = "theasciiverse/candybox2"
+provenance = "aniwey made Candy Box in 2013 as a programming exercise; it went viral, and he promised its sequel would be free software. Candy Box 2 came out on 24 October 2013."
+changes = "PATCHES.md"
+topics = ["incremental", "rpg", "exploration", "quests", "ascii art", "humour", "classic", "javascript"]
+genre = "rpg"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# built from github.com/candybox2/candybox2.github.io at 35301d4
+# (2026-06-04, game version 1.2.3) by .github/workflows/release.yml, with
+# tty/ beside the unchanged game code (PATCHES.md)
+[upstream]
+name = "aniwey (2013); kept by Andrei Kvapil"
+url = "https://github.com/candybox2/candybox2.github.io"
+
+# saves (the browser's localStorage) go to $XDG_DATA_HOME/candybox2
+# (~/.local/share/candybox2), %APPDATA% on Windows; --slot N starts with
+# a save slot, as the browser's ?slot=N
+[exec]
+game = "candybox2"
+
+# the status bar and most places are 100 columns; bigger quests and the
+# world map scroll and follow the player
+[min_terminal]
+cols = 100
+rows = 30
+
+# box drawing for tooltips and the translations' letters; the browser's
+# white page in truecolor (the game's "Invert colors?" gives the black
+# one); played with the mouse (buttons, hover tooltips), Tab and Enter
+# reach every button without one
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = true
+
+# 100x30, recorded by asciiverse/record-preview.py from
+# asciiverse/preview-save.json: the candy box, the village, the merchant,
+# the world map, the computer booting, a quest in the arena, the cauldron;
+# the still is the village, at 8 s
+[media]
+cast = "asciiverse/candybox2.cast"
+thumbnail_at = 8.0
+
+[release]
+source = "github"

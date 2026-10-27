@@ -1,0 +1,43 @@
+schema_version = 1
+id = "darrt"
+kind = "game"
+title = "Darrt"
+description = "Twenty-six letters fly around a target: stop them with their keys and land them on the bullseye"
+license = "CC0-1.0 OR Apache-2.0"
+repo = "theasciiverse/nbsdgames"
+collection = "nbsdgames"
+provenance = "abakh wrote Darrt for New BSD Games, a collection of small curses games in C started in 2018."
+changes = "PATCHES.md"
+topics = ["arcade", "darts", "timing", "keyboard", "curses"]
+genre = "arcade"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "abakh and contributors"
+url = "https://github.com/abakh/nbsdgames"
+
+[exec]
+game = "darrt"
+
+# a fixed 80x24 screen (LEN and WID in src/darrt.c)
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, two rounds of ten shots played by asciiverse/record/darrt.py,
+# which tracks each letter and stops the one that will land nearest the
+# centre; 39 s is a dead-centre hit (Bravo!)
+[media]
+cast = "asciiverse/casts/darrt.cast"
+thumbnail_at = 39.0
+
+[release]
+source = "github"

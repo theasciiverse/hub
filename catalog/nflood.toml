@@ -1,0 +1,46 @@
+schema_version = 1
+id = "nflood"
+kind = "game"
+title = "nFlood"
+description = "Flood the whole board with one colour in as few moves as you can, spreading out from the top left corner"
+license = "GPL-3.0-or-later"
+repo = "theasciiverse/nflood"
+provenance = "Alexandre Dantas wrote nFlood, a Flood-It puzzle in C and ncurses, between 2011 and 2014, with help from Yu-Jie Lin."
+changes = "PATCHES.md"
+topics = ["puzzle", "colours", "flood fill", "mouse", "curses"]
+genre = "puzzle"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "Alexandre Dantas"
+url = "https://github.com/alexdantas/nFlood"
+
+[exec]
+game = "nflood"
+args = ["-c"]
+
+# the colour keys, the score panel and the 14x14 board; measured: under
+# 44x16 nflood will not start ("nFlood needs a terminal of at least
+# 44x16")
+[min_terminal]
+cols = 44
+rows = 16
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = true
+
+# 100x30, nflood -c as av starts it, played by
+# asciiverse/record-preview.py, which reads the colours from the screen
+# and floods with a two-move lookahead: one board to Congrats!, then a
+# second; the still is the first board most of the way flooded
+[media]
+cast = "asciiverse/nflood.cast"
+thumbnail_at = 8.0
+
+[release]
+source = "github"

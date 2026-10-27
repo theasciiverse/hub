@@ -1,0 +1,62 @@
+schema_version = 1
+id = "aquest"
+kind = "game"
+title = "AQuest"
+description = "Mark Mackey's XQuest in the terminal: steer a drifting ship round the arena, grab every crystal, dodge the mines and leave through the gate, fifty levels deep"
+# Mark Mackey's shareware terms, carried by xquest-sdl's LICENSE to the port
+# and to this edition: free to share, credited, unofficial, never sold
+license = "LicenseRef-Free-Noncommercial"
+repo = "theasciiverse/aquest"
+provenance = "Mark Mackey wrote XQuest for DOS in Turbo Pascal and released it as shareware from 1994 to 1996. David ported version 1.3 to C and SDL2 as xquest-sdl, and AQuest carries that port's game logic line by line into Rust and Ratatui for the terminal."
+changes = "README.md"
+topics = ["shooter", "arcade", "classic", "dos", "inertia", "mouse", "gamepad", "braille", "rust"]
+genre = "arcade"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# XQuest 1.3, Mark Mackey (Atomjack), 1994 to 1996; the original site's
+# downloads are gone, an archived copy is in xquest-sdl's releases. Game
+# logic from github.com/sandbranch/xquest-sdl (C and SDL2, David's port).
+[upstream]
+name = "Mark Mackey, 1994"
+url = "http://www.swallowtail.org/xquest/"
+
+# the archive holds aquest, README.md and LICENSE; the game data is compiled
+# in. The Hall of Fame (xquest.scr), the last recorded demo (xquest.dmo) and
+# aquest.cfg go to $XDG_DATA_HOME/aquest (~/.local/share/aquest,
+# %APPDATA%\aquest)
+[exec]
+game = "aquest"
+args = []
+
+# the original's square pixels at any size; fully readable from 60x20, the
+# original status bar from 160x63 (Mixed, Braille) or 320x125 (Blocks)
+[min_terminal]
+cols = 60
+rows = 20
+
+# Braille and half blocks mixed cell by cell, or either alone (V
+# switches), RGB colours; the mouse thrusts,
+# fires and bombs as in DOS. Sound through ALSA and gamepads through udev
+# on Linux
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = true
+gamepad = true
+glyphs = ["braille"]
+
+system_deps = ["libasound2", "libudev1"]
+
+# 100x30, `aquest --demo` (xquest-sdl's reference recording, built in),
+# levels 1 and 2 with the par countdown, in Mixed (Blocks from 18 s to 34 s)
+# (asciiverse/record-preview.sh); the still is the level 2 bonus window,
+# 3500 points, at 41 s
+[media]
+cast = "asciiverse/aquest.cast"
+thumbnail_at = 41.0
+
+[release]
+source = "github"

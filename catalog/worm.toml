@@ -1,0 +1,45 @@
+schema_version = 1
+id = "worm"
+kind = "game"
+title = "Worm"
+description = "Steer a growing worm to the numbers and see how long it can get before it runs into a wall or itself"
+license = "BSD-3-Clause"
+repo = "theasciiverse/bsdgames"
+collection = "bsdgames"
+provenance = "Michael Toy wrote Worm at UC Santa Cruz around 1980, and it shipped with BSD Unix. Mike Sharov added colour and some grass for looks in 2016 for his bsd-games."
+changes = "PATCHES.md"
+topics = ["arcade", "snake", "action", "classic", "curses"]
+genre = "arcade"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "Michael Toy, UC Santa Cruz (1980)"
+url = "https://sourceforge.net/projects/bsd-games"
+
+[exec]
+game = "worm"
+
+# measured in tmux: the field fills the terminal; the length and score on
+# the top line need 42 columns, and below about 10 rows there is no room
+# to turn
+[min_terminal]
+cols = 42
+rows = 10
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, played by asciiverse/record/worm.py, which takes the shortest
+# way to each number without boxing itself in; 38 s is a long worm
+# coiled across the field
+[media]
+cast = "asciiverse/casts/worm.cast"
+thumbnail_at = 38.0
+
+[release]
+source = "github"

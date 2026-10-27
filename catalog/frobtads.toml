@@ -1,0 +1,50 @@
+schema_version = 1
+id = "frobtads"
+kind = "program"
+title = "FrobTADS"
+description = "The terminal player for TADS 2 and TADS 3 stories, I Am Prey among them"
+# TADS 2 and TADS 3 Freeware Source Code Licenses (no SPDX id exists):
+# free to copy and give away, never sold or bundled with anything sold
+license = "LicenseRef-TADS-Freeware"
+repo = "theasciiverse/frobtads"
+provenance = "FrobTADS is Nikos Chantziaras' terminal player for TADS, the adventure system by Michael J. Roberts."
+changes = "PATCHES.md"            # what Asciiverse changed, a path in repo
+topics = ["interpreter", "text-adventure", "tads", "classic"]
+genre = "interpreter"
+
+[developer]
+name = "Nikos Chantziaras"
+url = "https://github.com/realnc/frobtads"
+
+# built from upstream's v2.0 tag plus two fixes (PATCHES.md in
+# theasciiverse/frobtads); TADS itself is Michael J. Roberts'
+[upstream]
+name = "Nikos Chantziaras"
+url = "https://github.com/realnc/frobtads"
+
+# play a story: frob <story file>
+[exec]
+game = "frob"
+args = []
+
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+[media]
+cast = "asciiverse/frobtads.cast"
+thumbnail_at = 40.0
+
+# TODO: release v2.0-av.1 is pending. The tag is pushed, but GitHub Actions
+# is blocked for theasciiverse (billing), so no release or SHA256SUMS exists
+# yet. Once the workflow runs, the hub build reads versions and sha256s from
+# the release itself; check that it has frobtads-{x86_64,aarch64}-unknown-
+# linux-musl.tar.gz, frobtads-{x86_64,aarch64}-apple-darwin.tar.gz and
+# SHA256SUMS.
+[release]
+source = "github"

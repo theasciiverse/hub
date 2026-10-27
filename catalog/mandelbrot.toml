@@ -1,0 +1,45 @@
+schema_version = 1
+id = "mandelbrot"
+kind = "art"
+title = "Mandelbrot"
+description = "Explore the Mandelbrot set in coloured characters: pan with the arrows, zoom a hundred levels into its spirals and seahorses"
+license = "AGPL-3.0-only"
+repo = "theasciiverse/mandelbrot"
+provenance = "David Ulrich wrote mandelbrot viewer in C on ncurses (2015 to 2016), built on Ken Perlin's one-line Mandelbrot."
+changes = "PATCHES.md"
+topics = ["fractal", "mandelbrot", "math", "explorer", "generative", "curses"]
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "David Ulrich"
+url = "https://github.com/dulrich/mandelbrot-viewer"
+
+# opens on the whole set, fitted to the terminal and centred; arrows pan,
+# + and - zoom (100 levels), q quits
+[exec]
+game = "mandelbrot"
+
+# any size works (the set is fitted to the terminal); below about 60x20
+# there is little detail to see
+[min_terminal]
+cols = 60
+rows = 20
+
+# plain ASCII; 256 colours give the black-red-yellow-white bands, fewer
+# colours a monochrome picture; keyboard only
+[requires]
+utf8 = false
+color = "256"
+mouse = false
+
+# 100x30, the whole set, then 34 levels into Seahorse Valley from a fixed
+# key sequence (asciiverse/record-preview.py), about 23 s
+[media]
+cast = "asciiverse/mandelbrot.cast"
+thumbnail_at = 15.0
+
+[release]
+source = "github"

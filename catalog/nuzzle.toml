@@ -1,0 +1,50 @@
+schema_version = 1
+id = "nuzzle"
+kind = "game"
+title = "Nuzzle"
+description = "Three block-placing puzzles: drop shapes on the grid, fill rows, columns, squares or colour groups to clear them, and keep going as long as anything fits"
+license = "MIT"
+repo = "theasciiverse/nuzzle"
+provenance = "Dead End wrote nuzzle in C on ncurses (2019 to 2023), a collection of three block-placing puzzles."
+changes = "PATCHES.md"
+topics = ["puzzle", "blocks", "casual", "mouse", "curses"]
+genre = "puzzle"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "Dead End"
+url = "https://github.com/dead-end/nuzzle"
+
+# starts at the menu of the three games; scores in
+# $XDG_DATA_HOME/nuzzle (~/.local/share/nuzzle)
+[exec]
+game = "nuzzle"
+
+# Lines, the largest game: a board of 10x11 blocks (40x22 cells) with
+# the score box and the three pieces beside it, 80 columns in all; below
+# that it is cut off (it never crashes; the menu asks for a bigger
+# terminal)
+[min_terminal]
+cols = 80
+rows = 24
+
+# full blocks and box drawing (UTF-8); its colours are mapped to the
+# 256-colour palette; the mouse is optional (pick up, move, drop), every
+# action has a key
+[requires]
+utf8 = true
+color = "256"
+mouse = false
+
+# 100x30, a game of Lines played by asciiverse/record-preview.py, a
+# driver that reads the board and picks the placement that clears the
+# most lines, 23 pieces and 81 points in 50 s
+[media]
+cast = "asciiverse/nuzzle.cast"
+thumbnail_at = 36.0
+
+[release]
+source = "github"

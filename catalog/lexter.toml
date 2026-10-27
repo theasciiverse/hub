@@ -1,0 +1,49 @@
+schema_version = 1
+id = "lexter"
+kind = "game"
+title = "Lexter"
+description = "Letters fall into a pit: steer them into words across or up and down, forwards or backwards, before the pit fills up"
+license = "GPL-2.0-only"
+repo = "theasciiverse/lexter"
+provenance = "Mark Pulford wrote Lexter in C on curses from 1998 to 2001."
+changes = "PATCHES.md"
+topics = ["word", "puzzle", "falling-blocks", "english", "french", "classic", "curses"]
+genre = "puzzle"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# Mark Pulford, 1998 to 2001; 1.0.3 plus Termux's two patches, built by
+# .github/workflows/release.yml
+[upstream]
+name = "Mark Pulford"
+url = "https://www.kyne.au/~mark/software/lexter.php"
+
+# the dictionary follows the language (fr for French, else English);
+# lexter -d en or -d fr chooses
+[exec]
+game = "lexter"
+
+# a fixed 80x24 screen, centred on a bigger terminal; smaller terminals get
+# a message (if_init in text.c)
+[min_terminal]
+cols = 80
+rows = 24
+
+# ASCII for English; the French dictionary's accented letters need UTF-8
+# (or a Latin-1 terminal); no colours, keyboard only
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, the English dictionary played by asciiverse/record-preview.py,
+# ending in the high score table (as "player"); 36.9 s has "gate" lit up
+# along the bottom row, the fourth word
+[media]
+cast = "asciiverse/lexter.cast"
+thumbnail_at = 36.9
+
+[release]
+source = "github"

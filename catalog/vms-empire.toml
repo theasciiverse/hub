@@ -1,0 +1,44 @@
+schema_version = 1
+id = "vms-empire"
+kind = "game"
+title = "VMS Empire"
+description = "One continent-spanning war against the computer, with armies, fleets and planes: the 1970s ancestor of Civilization"
+license = "GPL-2.0-or-later"
+repo = "theasciiverse/vms-empire"
+provenance = "Walter Bright wrote Empire in the early 1970s; Chuck Simmons wrote this C version in 1987, and Eric S. Raymond has maintained it since around 1990."
+topics = ["strategy", "4x", "wargame", "classic", "curses"]
+genre = "strategy"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# Walter Bright's Empire (early 1970s), Chuck Simmons' C version (1987),
+# maintained by Eric S. Raymond since around 1990; this edition is ESR's
+# 1.23 plus a Windows portability patch, built by .github/workflows/release.yml.
+[upstream]
+name = "Eric S. Raymond"
+url = "http://www.catb.org/~esr/vms-empire/"
+
+[exec]
+game = "vms-empire"
+
+# the map view grows with the terminal; 80x24 is the classic screen
+[min_terminal]
+cols = 80
+rows = 24
+
+# plain ASCII in the basic colors, keyboard only
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, vms-empire -d 0 played by asciiverse/drive.py; 42 s has the
+# computer's transports and fighters landing and taking one of our cities
+[media]
+cast = "asciiverse/vms-empire.cast"
+thumbnail_at = 42.0
+
+[release]
+source = "github"

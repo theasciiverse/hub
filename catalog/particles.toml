@@ -1,0 +1,44 @@
+schema_version = 1
+id = "particles"
+kind = "art"
+title = "Particle Fountain"
+description = "An emitter sprays particles that glow green, yellow and red as they age: steer it, add gravity and wind, and play"
+license = "MIT"
+repo = "theasciiverse/particles"
+provenance = "Particle Fountain is particles.cpp by flarn2006, in C++ on curses, from 2013 to 2017, one of the programs in his MiscPrograms collection."
+changes = "PATCHES.md"
+topics = ["particles", "fountain", "interactive", "physics", "curses", "toy"]
+
+[developer]
+name = "flarn2006"
+url = "https://github.com/flarn2006/MiscPrograms"
+
+[upstream]
+name = "flarn2006"
+url = "https://github.com/flarn2006/MiscPrograms"
+
+# no arguments; the help is on the screen until ` hides it; q, Q or Esc quits
+[exec]
+game = "particles"
+args = []
+
+# the help takes 8 lines and the fountain sits a quarter across; tried at
+# 100x30, 40x12 and 120x40
+[min_terminal]
+cols = 60
+rows = 20
+
+# plain ASCII in the 8 basic colours, bold; keyboard only
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, the fountain, then gravity, speed, a longer life, wind and the
+# emitter moved (asciiverse/record-preview.py)
+[media]
+cast = "asciiverse/particles.cast"
+thumbnail_at = 14.0
+
+[release]
+source = "github"

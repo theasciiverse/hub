@@ -1,0 +1,48 @@
+schema_version = 1
+id = "nethack"
+kind = "game"
+title = "NetHack"
+description = "The great dungeon crawl: down through the Mazes of Menace and Gehennom for the Amulet of Yendor, with your pet at your side"
+license = "NGPL"
+repo = "theasciiverse/nethack"
+provenance = "Mike Stephenson merged the descendants of Andries Brouwer's Hack into NetHack 1.4 in 1987, and the NetHack DevTeam has developed it ever since."
+changes = "PATCHES.md"
+topics = ["roguelike", "dungeon", "classic", "fantasy", "turn-based"]
+genre = "roguelike"
+
+[developer]
+name = "NetHack DevTeam"
+url = "https://www.nethack.org"
+
+# NetHack 5.0.0 (tag NetHack-5.0.0_Released, 2026-05-02); PATCHES.md in
+# theasciiverse/nethack
+[upstream]
+name = "NetHack DevTeam"
+url = "https://github.com/NetHack/NetHack"
+
+# the tty interface; OPTIONS=windowtype:curses in nethackrc picks curses
+[exec]
+game = "nethack"
+args = []
+
+# message line, the 80x21 map and two status lines (COLNO, ROWNO in
+# include/global.h); on a smaller terminal the map scrolls (CLIPPING)
+[min_terminal]
+cols = 80
+rows = 24
+
+# 16 colours (8 plus bright), plain ASCII by default, keyboard only
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, Ada the Valkyrie played by asciiverse/record-preview.py, which
+# explores by breadth-first search and fights what she meets; the still is
+# her second room on the first level, with her kitten
+[media]
+cast = "asciiverse/nethack.cast"
+thumbnail_at = 20.0
+
+[release]
+source = "github"

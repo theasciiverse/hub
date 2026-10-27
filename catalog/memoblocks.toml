@@ -1,0 +1,45 @@
+schema_version = 1
+id = "memoblocks"
+kind = "game"
+title = "Memoblocks"
+description = "Memory on a board of 128 hidden tiles: turn them one at a time and find all 64 pairs"
+license = "CC0-1.0 OR Apache-2.0"
+repo = "theasciiverse/nbsdgames"
+collection = "nbsdgames"
+provenance = "abakh wrote Memoblocks for New BSD Games, a collection of small curses games in C."
+changes = "PATCHES.md"
+topics = ["puzzle", "memory", "pairs", "mouse", "curses"]
+genre = "puzzle"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "abakh and contributors"
+url = "https://github.com/abakh/nbsdgames"
+
+[exec]
+game = "memoblocks"
+
+# the 16x8 board is fixed: 18 columns by 10 rows under the 3-row logo, then
+# "You solved it! Wanna play again?(y/n)" (37 columns) and the time spent
+# two rows further down
+[min_terminal]
+cols = 37
+rows = 16
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = true
+
+# 100x30, memoblocks played by asciiverse/record/memoblocks.py, which
+# remembers every glyph it has seen and pairs them; the board takes longer
+# than a preview, so it stops partway; 40 s has about twenty pairs found
+[media]
+cast = "asciiverse/casts/memoblocks.cast"
+thumbnail_at = 40.0
+
+[release]
+source = "github"

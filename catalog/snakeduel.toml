@@ -1,0 +1,45 @@
+schema_version = 1
+id = "snakeduel"
+kind = "game"
+title = "Snakeduel"
+description = "A light-cycle duel against the computer: both snakes leave walls behind, and the first to crash loses the round"
+license = "CC0-1.0 OR Apache-2.0"
+repo = "theasciiverse/nbsdgames"
+collection = "nbsdgames"
+provenance = "abakh wrote Snakeduel for New BSD Games, a collection of small curses games in C."
+changes = "PATCHES.md"
+topics = ["arcade", "snake", "light-cycle", "versus-computer", "curses"]
+genre = "arcade"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "abakh and contributors"
+url = "https://github.com/abakh/nbsdgames"
+
+[exec]
+game = "snakeduel"
+
+# by default the board fits the terminal, from 40x10 up (MINWID and
+# MINLEN in src/snakeduel.c), with the wins above it and a line of
+# messages below; -w and -l set its size
+[min_terminal]
+cols = 42
+rows = 16
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30 (a 95x23 board), played by asciiverse/record/snakeduel.py, which
+# steers the player's snake toward the cells it can reach before the
+# computer's; 32 s is a long round with the board half full
+[media]
+cast = "asciiverse/casts/snakeduel.cast"
+thumbnail_at = 32.0
+
+[release]
+source = "github"

@@ -1,0 +1,45 @@
+schema_version = 1
+id = "0verkill"
+kind = "game"
+title = "0verkill"
+description = "Bloody 2D deathmatch in ASCII art: run, jump and shoot against friends or bots"
+license = "GPL-2.0-only"
+repo = "theasciiverse/0verkill"
+provenance = "Brainsoft (Brain, Clock and others) released 0verkill 0.16 in 2000; hackndev fixed it for newer compilers from 2008 to 2010, and ravener revived it on GitHub from 2021."
+changes = "PATCHES.md"            # what Asciiverse changed, a path in repo
+topics = ["action", "multiplayer", "deathmatch", "classic"]
+genre = "action"
+
+[developer]
+name = "Brainsoft"
+url = "https://github.com/ravener/0verkill"
+
+# Brainsoft's 0.16 (2000), with the hackndev (2008 to 2010) and ravener
+# (2021 to 2026) fixes; PATCHES.md in theasciiverse/0verkill
+[upstream]
+name = "Brainsoft (Brain, Clock and others)"
+url = "https://github.com/ravener/0verkill"
+
+# 0verkill-play: with no arguments a local game against two bots (server,
+# bots and client), with arguments just the client (-i <host> joins a server)
+[exec]
+game = "0verkill-play"
+args = []
+
+# the game fills the window; 80x24 is the size it assumes without one
+[min_terminal]
+cols = 80
+rows = 24
+
+# the 8 basic colors plus bold, keyboard only (console.c)
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+[media]
+cast = "asciiverse/0verkill.cast"
+thumbnail_at = 20.0
+
+[release]
+source = "github"

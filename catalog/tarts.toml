@@ -1,0 +1,46 @@
+schema_version = 1
+id = "tarts"
+kind = "art"
+title = "tarts"
+description = "Terminal art in motion: Matrix rain, a spinning donut, plasma, fire, flocking boids and more"
+license = "MIT"
+repo = "theasciiverse/tarts"
+provenance = "tarts (Terminal Arts) is by oiwn and contributors, in Rust, since 2022."
+changes = "PATCHES.md"
+topics = ["screensaver", "matrix", "donut", "plasma", "fire", "boids", "game of life"]
+
+[developer]
+name = "oiwn and contributors"
+url = "https://github.com/oiwn/tarts"
+
+[upstream]
+name = "oiwn and contributors"
+url = "https://github.com/oiwn/tarts"
+
+# the tour: every effect for 20 seconds, n or Right for the next, p or Left
+# for the previous, q to quit; `tarts <effect>` runs one effect alone
+[exec]
+game = "tarts"
+args = ["tour"]
+
+# every effect fills the window and follows a resize; tried at 80x24 and 100x30
+[min_terminal]
+cols = 80
+rows = 24
+
+# 24-bit colour; boids, pipes and the cube draw in Braille, Matrix in
+# half-width katakana; keyboard only
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = false
+glyphs = ["braille"]
+
+# 100x30, the tour moved on every few seconds (asciiverse/record-preview.py),
+# re-encoded at 25 fps; 11.5 s is the plasma
+[media]
+cast = "asciiverse/tarts.cast"
+thumbnail_at = 11.5
+
+[release]
+source = "github"

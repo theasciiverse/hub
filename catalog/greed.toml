@@ -1,0 +1,43 @@
+schema_version = 1
+id = "greed"
+kind = "game"
+title = "Greed"
+description = "Munch as much of a grid of numbers as you can; each number decides how far you move"
+license = "BSD-2-Clause"
+repo = "theasciiverse/greed"
+provenance = "Matt Day wrote Greed in C (to 3.0a, 1990); Eric S. Raymond has maintained it since and ported it to Rust in 2026."
+topics = ["puzzle", "numbers", "classic", "rust"]
+genre = "puzzle"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# Matt Day wrote the C version (to 3.0a, 1990); Eric S. Raymond has
+# maintained it since and ported it to Rust + crossterm in 5.0 (2026).
+[upstream]
+name = "Eric S. Raymond, after Matt Day"
+url = "https://gitlab.com/esr/greed"
+
+# -f sizes the board to the terminal (greed.rs fit_to_tty)
+[exec]
+game = "greed"
+args = ["-f"]
+
+# with -f the board is (cols - 1) x (rows - 3); 20x10 is still a game
+[min_terminal]
+cols = 20
+rows = 10
+
+# crossterm, the 8 basic colors, keyboard only (greed.adoc)
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+[media]
+cast = "asciiverse/greed.cast"
+thumbnail_at = 16.0
+
+[release]
+source = "github"

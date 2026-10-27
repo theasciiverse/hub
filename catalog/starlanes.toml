@@ -1,0 +1,46 @@
+schema_version = 1
+id = "starlanes"
+kind = "game"
+title = "Star Lanes"
+description = "Found shipping companies between the stars, buy their stock and merge your way to the biggest fortune: the classic trading game for one to four players at one keyboard"
+license = "GPL-2.0-only"
+repo = "theasciiverse/starlanes"
+provenance = "Brian \"Beej\" Hall wrote this curses Star Lanes in C (1995 to 1997, 1.2.2), after the Osborne version of Steven Faber's game, and modernised it himself in 2026 (1.4.0)."
+changes = "PATCHES.md"
+topics = ["trading", "strategy", "space", "hot-seat", "classic", "curses"]
+genre = "strategy"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# Brian "Beej" Hall (Beej Jorgensen), 1995 to 1997 and 2026; upstream main
+# 2c4b2bf after v1.4.0, built by .github/workflows/release.yml
+[upstream]
+name = "Brian \"Beej\" Hall"
+url = "https://github.com/beejjorgensen/starlanes-c"
+
+[exec]
+game = "starlanes"
+
+# a fixed 80x24 screen, centred on a bigger terminal; smaller terminals get
+# a message (the check in main, starlanes.c)
+[min_terminal]
+cols = 80
+rows = 24
+
+# plain ASCII with curses box corners, basic colours, keyboard only
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, a two-player game played by asciiverse/record-preview.py, ending
+# in the final standings; 40 s has all five companies on the map and the
+# trading list open
+[media]
+cast = "asciiverse/starlanes.cast"
+thumbnail_at = 40.0
+
+[release]
+source = "github"

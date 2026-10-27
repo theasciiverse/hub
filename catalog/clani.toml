@@ -1,0 +1,45 @@
+schema_version = 1
+id = "clani"
+kind = "art"
+title = "CLiAni"
+description = "Endless scrolling noise patterns in ASCII: Voronoi cells, Perlin clouds and cellular shapes, with rain, zig-zag and static effects"
+license = "GPL-3.0-only"
+repo = "theasciiverse/clani"
+provenance = "Ryan Huth (hury) wrote CLiAni in C++ on ncurses (2020 to 2024), with resize handling by Sergeant-Salz."
+changes = "PATCHES.md"
+topics = ["screensaver", "noise", "voronoi", "perlin", "generative", "curses"]
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "Ryan Huth"
+url = "https://github.com/hu-ry/CLiAni"
+
+# straight into a scrolling Voronoi pattern with a random seed; any key
+# quits; without arguments clani opens its menu (flavour, effect, seed,
+# characters), which needs about 100x33
+[exec]
+game = "clani"
+args = ["-f", "voronoi"]
+
+# rows are 120 characters, cut to narrower terminals and centred on wider
+# ones; any size works
+[min_terminal]
+cols = 40
+rows = 12
+
+# plain ASCII, no colour; keyboard only
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, 25 s of `clani -f voronoi -s 2026` (asciiverse/record-preview.sh)
+[media]
+cast = "asciiverse/clani.cast"
+thumbnail_at = 20.0
+
+[release]
+source = "github"

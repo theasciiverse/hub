@@ -1,0 +1,43 @@
+schema_version = 1
+id = "reversi"
+kind = "game"
+title = "Reversi"
+description = "Reversi against the computer or a friend: outflank the other side's discs and turn them"
+license = "CC0-1.0 OR Apache-2.0"
+repo = "theasciiverse/nbsdgames"
+collection = "nbsdgames"
+provenance = "abakh wrote Reversi for New BSD Games, a collection of small curses games in C."
+changes = "PATCHES.md"
+topics = ["board", "reversi", "vs-computer", "hot-seat", "mouse", "curses"]
+genre = "board"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "abakh and contributors"
+url = "https://github.com/abakh/nbsdgames"
+
+[exec]
+game = "reversi"
+
+# the board, the score, the start-up questions and the end-of-game line
+[min_terminal]
+cols = 37
+rows = 14
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = true
+
+# 100x30, a human on black against the computer, the human side played by
+# asciiverse/record/reversi.py with a corner-and-edge heuristic; 25 s is
+# mid-game
+[media]
+cast = "asciiverse/casts/reversi.cast"
+thumbnail_at = 25.0
+
+[release]
+source = "github"

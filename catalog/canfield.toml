@@ -1,0 +1,44 @@
+schema_version = 1
+id = "canfield"
+kind = "game"
+title = "Canfield"
+description = "The solitaire with a betting account: buy the deal, build down in alternate colours, and keep a running tally of what you won and lost"
+license = "BSD-3-Clause"
+repo = "theasciiverse/netbsd-games"
+collection = "bsdgames"
+provenance = "Steve Levine wrote Canfield at UC Berkeley by 1980; Steve Feldman moved it to curses, Kirk McKusick and Mikey Olson added card counting and McKusick the betting, with interface work by Eric Allman."
+changes = "PATCHES.md"
+topics = ["card", "solitaire", "betting", "classic", "curses"]
+genre = "card"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "Steve Levine, UC Berkeley (1980)"
+url = "https://github.com/NetBSD/src/tree/trunk/games/canfield"
+
+[exec]
+game = "canfield"
+
+# the table and its instructions box are 78 columns by 24 rows; measured
+# in tmux: all of it shows at 78x24, at 23 rows the title is cut off
+[min_terminal]
+cols = 78
+rows = 24
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, a game played by asciiverse/record/canfield.py, which reads the
+# board and makes only legal moves; 45 s; the still has the foundations
+# built up to the ten of hearts, the six of spades and the seven of clubs
+[media]
+cast = "asciiverse/casts/canfield.cast"
+thumbnail_at = 38.0
+
+[release]
+source = "github"

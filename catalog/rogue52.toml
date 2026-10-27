@@ -1,0 +1,44 @@
+schema_version = 1
+id = "rogue52"
+kind = "game"
+title = "Rogue 5.2"
+description = "Rogue as Berkeley had it in 1982: the Dungeons of Doom, now with stairs back up, traps you can name and a list of what you have found"
+license = "BSD-3-Clause"
+repo = "theasciiverse/rogue-restoration"
+collection = "rogue-restoration"
+provenance = "Michael Toy, Glenn Wichman and Ken Arnold's Rogue 5.2 of 1982, restored by Nicholas J. Kisseberth in the Roguelike Restoration Project."
+changes = "PATCHES.md"
+topics = ["roguelike", "dungeon", "rpg", "classic", "curses"]
+genre = "roguelike"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "Michael Toy, Glenn Wichman and Ken Arnold (1982); Nicholas J. Kisseberth"
+url = "https://github.com/rogueforge/rogue5.2"
+
+[exec]
+game = "rogue52"
+
+# the dungeon is a fixed 80x24 at most, centred; measured in a pty: at
+# 75 columns or 23 rows it refuses to start ("needs 76", "needs 24")
+[min_terminal]
+cols = 76
+rows = 24
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, played by asciiverse/record/rogue52.py: a kobold fight at the
+# start, the first level explored and the second begun, 50 s, ending on
+# the top ten; the still has five rooms of the first level mapped
+[media]
+cast = "asciiverse/casts/rogue52.cast"
+thumbnail_at = 31.0
+
+[release]
+source = "github"

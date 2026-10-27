@@ -1,0 +1,47 @@
+schema_version = 1
+id = "ninvaders"
+kind = "game"
+title = "nInvaders"
+description = "Space Invaders in ncurses: hold back the descending alien block from behind four crumbling bunkers, and pick off the UFO for 500 points"
+license = "GPL-2.0-or-later"
+repo = "theasciiverse/ninvaders"
+provenance = "Thomas Dettbarn wrote nInvaders in C on ncurses in 2002 and 2003 with Alexander Hollinger, Sebastian Gutsfeld and Matthias Thar, with code by Mike Saarna."
+changes = "PATCHES.md"
+topics = ["arcade", "shooter", "space-invaders", "classic", "curses"]
+genre = "arcade"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# Thomas Dettbarn (dettus) and contributors, 2002 to 2003, GPL-2.0-or-later;
+# Debian has carried it since 2002 (Matthew Palmer)
+[upstream]
+name = "Thomas Dettbarn and contributors"
+url = "https://ninvaders.sourceforge.net/"
+
+[exec]
+game = "ninvaders"
+
+# a fixed 80x24 battlefield, centred on a bigger terminal; at 80x23 nothing
+# is drawn and at 79 columns the right edge is cut off (measured in tmux)
+[min_terminal]
+cols = 80
+rows = 24
+
+# plain ASCII in the 8 basic colors, keyboard only
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, the battlefield centred, played by asciiverse/record.py (the title
+# with its TOP 10 from 4 s, then it aims at the alien columns, dodges bombs
+# and leads its shot at the UFO); 43 s has the UFO crossing above a
+# thinned-out alien block and chipped bunkers, score 3700
+[media]
+cast = "asciiverse/ninvaders.cast"
+thumbnail_at = 43.0
+
+[release]
+source = "github"

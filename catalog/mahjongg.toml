@@ -1,0 +1,42 @@
+schema_version = 1
+id = "mahjongg"
+kind = "game"
+title = "Mahjongg"
+description = "Mahjong solitaire in the terminal: GNOME Mahjongg's ten layouts, always solvable, mouse or keys"
+license = "GPL-3.0-or-later"
+repo = "theasciiverse/mahjongg"
+provenance = "radha wrote this terminal Mahjongg in Rust in 2026, with layouts and game logic from GNOME Mahjongg."
+changes = "PATCHES.md"            # what Asciiverse changed, a path in repo
+topics = ["puzzle", "mahjong", "solitaire", "rust"]
+genre = "puzzle"
+
+[developer]
+name = "radha"
+url = "https://github.com/radha/mahjongg"
+
+# packaged by Asciiverse with one fix (saves on Windows); PATCHES.md in
+# theasciiverse/mahjongg. Layouts and game logic come from GNOME Mahjongg.
+[upstream]
+name = "radha"
+url = "https://github.com/radha/mahjongg"
+
+[exec]
+game = "mahjongg"
+args = []
+
+# compact tiles fit Turtle in 80x24 (README); large tiles from about 100x40
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = true
+
+[media]
+cast = "asciiverse/mahjongg.cast"
+thumbnail_at = 14.0
+
+[release]
+source = "github"

@@ -1,0 +1,44 @@
+schema_version = 1
+id = "fate"
+kind = "adventure"
+title = "Fate"
+description = "A pregnant queen sees her child's future in a crystal ball and sets out to change it"
+license = "GPL-2.0-or-later"
+repo = "theasciiverse/stories"
+provenance = "Victor Gijsbers entered Fate in Spring Thing 2007."
+changes = "fate/README.md"            # what Asciiverse changed, a path in repo
+topics = ["text-adventure", "fantasy", "drama", "moral-choice"]
+genre = "text adventure"
+
+[developer]
+name = "Victor Gijsbers"
+url = "https://ifarchive.org/if-archive/games/springthing/2007/Fate.z8"
+
+# Entered in Spring Thing 2007; the author's Inform 7 source comes with it, as the GPL asks.
+# The story file is unchanged (provenance and sha256 in the stories repo,
+# fate/README.md); played with Frotz 2.55, which comes inside the archive.
+[upstream]
+name = "Victor Gijsbers, 2007"
+url = "https://ifarchive.org/if-archive/games/springthing/2007/Fate.z8"
+
+# the start script plays the story in the bundled Frotz; saves go to
+# ~/.local/share/fate
+[exec]
+game = "fate"
+args = []
+
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+[media]
+cast = "asciiverse/fate.cast"
+thumbnail_at = 17.3
+
+[release]
+source = "github"

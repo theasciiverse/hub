@@ -1,0 +1,52 @@
+schema_version = 1
+id = "urogue"
+kind = "game"
+title = "UltraRogue"
+description = "Herb Chong's Rogue of 1985 to 1995: ten character classes, a flea market at the start, and unique artifacts deep in the Dungeons of Doom"
+# the BSD licence plus two clauses: "UltraRogue" and "urogue" may not
+# endorse or promote derived products, and "Products derived from this
+# software may not be called "UltraRogue" or "urogue" ... without prior
+# written permission"; SPDX has no id for that. Nicholas J. Kisseberth
+# gave permission to keep the names on 2026-10-21, provided the only
+# changes are to make them play here (see the repo's PATCHES.md)
+license = "LicenseRef-BSD-3-Clause-Name-Restriction"
+repo = "theasciiverse/rogue-restoration"
+collection = "rogue-restoration"
+provenance = "Herb Chong wrote UltraRogue in 1985 and 1986 from Rogue 3.6 and an early Advanced Rogue, gave its source to Nicholas J. Kisseberth in 1992 and worked on it with him to 1995."
+changes = "PATCHES.md"
+topics = ["roguelike", "dungeon", "rpg", "classic", "curses"]
+genre = "roguelike"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "Herb Chong (1985 to 1995); Nicholas J. Kisseberth"
+url = "https://github.com/RoguelikeRestorationProject/urogue"
+
+[exec]
+game = "urogue"
+
+# the field is 80x24 at most, centred; UltraRogue starts on any terminal
+# and lays the dungeon out smaller, but below 80 columns its status line
+# is cut off (seen at 60x18), so 80x24 is the size it is made for
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, a fighter played by asciiverse/record/urogue.py: out of the
+# flea market, three levels explored, fights with xvarts, a kobold and
+# a giant rat, 50 s, ending on the top ten; the still is the
+# fighter at a door with four xvarts in the room behind him
+[media]
+cast = "asciiverse/casts/urogue.cast"
+thumbnail_at = 10.5
+
+[release]
+source = "github"

@@ -1,0 +1,45 @@
+schema_version = 1
+id = "miketron"
+kind = "game"
+title = "Miketron"
+description = "Drive a vehicle that leaves a trail it cannot cross, and grab pick-ups for flight, immunity and bombs"
+license = "CC0-1.0 OR Apache-2.0"
+repo = "theasciiverse/nbsdgames"
+collection = "nbsdgames"
+provenance = "abakh wrote Miketron for New BSD Games, a collection of small curses games in C; its manual page says it was copied from MikeOS."
+changes = "PATCHES.md"
+topics = ["arcade", "trail", "light-cycle", "curses"]
+genre = "arcade"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "abakh and contributors"
+url = "https://github.com/abakh/nbsdgames"
+
+[exec]
+game = "miketron"
+
+# the board fits the terminal, from 40x10 up to 80x24 (MINWID to MAXWID,
+# MINLEN to MAXLEN in src/miketron.c), with the score above it and a line
+# of messages below
+[min_terminal]
+cols = 42
+rows = 16
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30 (an 80x23 board), played by asciiverse/record/miketron.py, which
+# reads the board and turns toward the most room and the nearest pick-up;
+# 40 s is a board crossed with trail and dotted with pick-ups
+[media]
+cast = "asciiverse/casts/miketron.cast"
+thumbnail_at = 40.0
+
+[release]
+source = "github"

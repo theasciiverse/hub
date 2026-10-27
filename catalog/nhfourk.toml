@@ -1,0 +1,51 @@
+schema_version = 1
+id = "nhfourk"
+kind = "game"
+title = "NetHack Fourk"
+description = "NetHack rebalanced, with NetHack 4's friendlier interface: autoexplore, travel, status bars, an inventory sidebar and levels you can look back on"
+license = "NGPL"
+repo = "theasciiverse/nhfourk"
+provenance = "Nathan Eady began NetHack Fourk in 2014 as a variant of NetHack 4, Alex Smith's reworking of NetHack 3.4.3 from AceHack and Daniel Thaler's NitroHack, and still maintains it for the Hardfought servers."
+changes = "PATCHES.md"
+topics = ["roguelike", "dungeon", "fantasy", "turn-based", "nethack-variant"]
+genre = "roguelike"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# master at 479383a1 (2026-04-14), past the last tag v4.3.0.4 (2017);
+# PATCHES.md in theasciiverse/nhfourk
+[upstream]
+name = "Nathan Eady, after NetHack 4 by Alex Smith and others"
+url = "https://github.com/tsadok/nhfourk"
+
+# the tty interface (libuncursed), no tiles
+[exec]
+game = "nhfourk"
+
+# measured in tmux: at 79x24 or 80x23 it shows "Your terminal is too
+# small" (minimum 80x24); wider and taller terminals get the inventory
+# sidebar and more message lines
+[min_terminal]
+cols = 80
+rows = 24
+
+# Unicode box drawing when the terminal answers its UTF-8 probe, IBM
+# graphics otherwise; 16 colours; keyboard (mouselook is optional)
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, Ada the Barbarian played by asciiverse/record/nhfourk.py, which
+# explores with the game's autoexplore, fights what comes next to her,
+# travels to the stairs and goes down, then saves; 54 s, the second level
+# reached at 33 s; the still is the first level mapped after she kills a
+# newt, at 25 s
+[media]
+cast = "asciiverse/casts/nhfourk.cast"
+thumbnail_at = 25.0
+
+[release]
+source = "github"

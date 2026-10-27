@@ -1,0 +1,57 @@
+schema_version = 1
+id = "glider"
+kind = "game"
+title = "Glider"
+description = "John Calhoun's Glider 4.0 in the terminal: fly a paper glider through a house, riding the air from the floor vents past candles, toasters, darts and sparking outlets"
+# Calhoun's repository (code, art, sounds and houses): MIT, "Copyright (c)
+# 2016 softdorothy"
+license = "MIT"
+repo = "theasciiverse/glider"
+provenance = "John Calhoun wrote Glider 4.0 for the Macintosh in THINK Pascal, published by Casady & Greene in 1991, and released its source, art, sounds and houses in 2016."
+changes = "CLAUDE.md"
+topics = ["arcade", "classic", "macintosh", "paper airplane", "mouse", "gamepad", "braille", "rust"]
+genre = "arcade"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# Glider 4.0, John Calhoun, 1991; source, art, sounds and houses released by
+# him as softdorothy in 2016
+[upstream]
+name = "John Calhoun, 1991"
+url = "https://github.com/softdorothy/Glider4"
+
+# the archive holds glider; the art, sounds and the 22 houses are compiled
+# in. Settings (glider.cfg) and high scores (scores.txt) go to
+# $XDG_DATA_HOME/glider (~/.local/share/glider, %APPDATA%\glider)
+[exec]
+game = "glider"
+args = []
+
+# the room keeps its shape at any size; 60x20 shows it whole with the
+# status line, bigger only adds detail
+[min_terminal]
+cols = 60
+rows = 20
+
+# silhouettes in Braille with box-drawn furniture, or the original art in
+# half blocks (V switches), RGB colours; the mouse steers as in Glider.
+# Sound through ALSA and gamepads through udev on Linux
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = true
+gamepad = true
+glyphs = ["braille"]
+system_deps = ["libasound2", "libudev1"]
+
+# 100x30, `glider --watch "Hands-off House"` (the house plays itself), in
+# the silhouette view, the original view from 20 s to 36 s
+# (asciiverse/record-preview.sh)
+[media]
+cast = "asciiverse/glider.cast"
+thumbnail_at = 12.0
+
+[release]
+source = "github"

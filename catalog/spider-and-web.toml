@@ -1,0 +1,44 @@
+schema_version = 1
+id = "spider-and-web"
+kind = "adventure"
+title = "Spider and Web"
+description = "A spy caught breaking in is made to tell the story, and not all of it is true"
+license = "LicenseRef-Free-Distribution"
+repo = "theasciiverse/stories"
+provenance = "Andrew Plotkin wrote Spider and Web in 1998."
+changes = "spider-and-web/README.md"            # what Asciiverse changed, a path in repo
+topics = ["text-adventure", "espionage", "classic", "science-fiction"]
+genre = "text adventure"
+
+[developer]
+name = "Andrew Plotkin"
+url = "https://ifarchive.org/if-archive/games/zcode/Tangle.z5"
+
+# Andrew Plotkin's 1998 game.
+# The story file is unchanged (provenance and sha256 in the stories repo,
+# spider-and-web/README.md); played with Frotz 2.55, which comes inside the archive.
+[upstream]
+name = "Andrew Plotkin, 1998"
+url = "https://ifarchive.org/if-archive/games/zcode/Tangle.z5"
+
+# the start script plays the story in the bundled Frotz; saves go to
+# ~/.local/share/spider-and-web
+[exec]
+game = "spider-and-web"
+args = []
+
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+[media]
+cast = "asciiverse/spider-and-web.cast"
+thumbnail_at = 14.4
+
+[release]
+source = "github"

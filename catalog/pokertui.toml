@@ -1,0 +1,44 @@
+schema_version = 1
+id = "pokertui"
+kind = "game"
+title = "pokertui"
+description = "Texas Hold'em at a six-seat table: read the bots, watch the odds rail, and take their chips one pot at a time"
+license = "MIT OR Apache-2.0"
+repo = "theasciiverse/pokertui"
+provenance = "pokertui is Aleksandr Babarika's terminal Texas Hold'em in Rust and Ratatui, from 2026."
+changes = "PATCHES.md"
+topics = ["poker", "texas hold'em", "card game", "bots", "multiplayer", "rust"]
+genre = "card"
+
+[developer]
+name = "Aleksandr Babarika"
+url = "https://github.com/AlexAlexBabarika/pokertui"
+
+# packaged by Asciiverse; PATCHES.md in theasciiverse/pokertui
+[upstream]
+name = "Aleksandr Babarika"
+url = "https://github.com/AlexAlexBabarika/pokertui"
+
+# the archive also holds pokertui-server, for network tables. Settings in
+# $XDG_CONFIG_HOME/pokertui (%APPDATA%\pokertui on Windows)
+[exec]
+game = "pokertui"
+args = []
+
+# below this it asks for a bigger terminal; 120x40 is roomier
+[min_terminal]
+cols = 100
+rows = 30
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = false
+
+# 100x30, a six-seat game played by hand; the still is a won pot of 8,250
+[media]
+cast = "asciiverse/pokertui.cast"
+thumbnail_at = 155.0
+
+[release]
+source = "github"

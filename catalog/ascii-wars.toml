@@ -1,0 +1,54 @@
+schema_version = 1
+id = "ascii-wars"
+kind = "game"
+title = "ASCII Wars!"
+description = "A boss rush bullet hell: ten bosses in phases of rings, rain, walls, homing swarms and sweeping beams, and you only fire while you move"
+license = "MIT"
+repo = "theasciiverse/ascii-wars"
+provenance = "Carlos Alvarez (VikingosTeam) made ASCII Wars! in Rust and Bevy in 2025, ten bosses of glyph rings and aimed shots in a graphical window. Asciiverse brought it to the terminal and grew it into a fuller game."
+changes = "README.md"
+topics = ["bullet hell", "boss rush", "shmup", "arcade", "gamepad", "rust"]
+genre = "action"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# github.com/Alvarz/ascii-wars, 0c4121f (2025-04-29); no releases
+[upstream]
+name = "Carlos Alvarez"
+url = "https://github.com/Alvarz/ascii-wars"
+
+# the archive holds ascii-wars, README.md and LICENSE; settings and
+# records go to $XDG_DATA_HOME/ascii-wars (~/.local/share/ascii-wars,
+# %APPDATA%\ascii-wars)
+[exec]
+game = "ascii-wars"
+args = []
+
+# the field keeps the original window's 1.6:1 shape and grows with the
+# terminal; under 40x13 it asks for a bigger one
+[min_terminal]
+cols = 40
+rows = 13
+
+# box drawing, hearts and diamonds in the HUD, RGB colours; the mouse works
+# in the menus only. Sound through ALSA and gamepads through udev on Linux
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = false
+gamepad = true
+
+system_deps = ["libasound2", "libudev1"]
+
+# 100x30, `ascii-wars --demo --level 8 --seed 4` (the game's own bot,
+# best of eight takes): the Celestial Tyrant through all three phases,
+# Firmament, Meteor Shower and Supernova, its explosion, then the
+# Clockwork Leviathan's warning; the still is the Supernova ring at 36 s
+[media]
+cast = "asciiverse/ascii-wars.cast"
+thumbnail_at = 36.0
+
+[release]
+source = "github"

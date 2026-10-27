@@ -1,0 +1,49 @@
+schema_version = 1
+id = "clidle"
+kind = "game"
+title = "clidle"
+description = "A five-letter word-guessing game in the style of Wordle: six tries, letters that turn colour one by one, a keyboard that keeps track of your letters, and a running score"
+license = "MIT"
+repo = "theasciiverse/clidle"
+provenance = "Ajeet D'Souza wrote clidle, a terminal word-guessing game, in Go in 2022 and still maintains it."
+changes = "PATCHES.md"
+topics = ["words", "word game", "puzzle", "vocabulary", "go"]
+genre = "puzzle"
+
+[developer]
+name = "Ajeet D'Souza"
+url = "https://github.com/ajeetdsouza/clidle"
+
+# packaged by Asciiverse with the changes in PATCHES.md (theasciiverse/clidle)
+[upstream]
+name = "Ajeet D'Souza"
+url = "https://github.com/ajeetdsouza/clidle"
+
+# a new random word every game; Enter after a game, or Ctrl+R at any time,
+# starts the next one. The score is kept in the player's data folder
+[exec]
+game = "clidle"
+args = []
+
+# status line and board need 25x19; the on-screen keyboard appears from
+# 58 columns and 30 rows, the help line from 31 (or when the keyboard does
+# not fit)
+[min_terminal]
+cols = 30
+rows = 19
+
+# box drawing; RGB letter colours; keyboard only
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = false
+
+# 100x30, a game solved by asciiverse/drive.py (reads the letter colours
+# and narrows the answer list): five guesses to PIXEL, then a new game; at
+# 22 s the board is solved, "You win!" shown and the keyboard coloured
+[media]
+cast = "asciiverse/clidle.cast"
+thumbnail_at = 22.0
+
+[release]
+source = "github"

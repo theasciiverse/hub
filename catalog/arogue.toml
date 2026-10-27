@@ -1,0 +1,51 @@
+schema_version = 1
+id = "arogue"
+kind = "game"
+title = "Advanced Rogue 5.8"
+description = "Bell Labs' Rogue of 1984 and 1985 with character classes, over a hundred monsters and a quest for one of the dungeon's unique artifacts"
+# the BSD licence plus two clauses: "Advanced Rogue" and "ARogue" may not
+# endorse or promote derived products, and "Products derived from this
+# software may not be called "Advanced Rogue" or "ARogue" ... without
+# prior written permission"; SPDX has no id for that. Nicholas J. Kisseberth
+# gave permission to keep the names on 2026-10-21, provided the only
+# changes are to make them play here (see the repo's PATCHES.md)
+license = "LicenseRef-BSD-3-Clause-Name-Restriction"
+repo = "theasciiverse/rogue-restoration"
+collection = "rogue-restoration"
+provenance = "Advanced Rogue was made at AT&T Bell Labs in 1984 and 1985, by a group that seems to have included Michael Morgan and Ken Dalka, from Rogue 3.6 with parts of Super-Rogue. Nicholas J. Kisseberth restored it in the Roguelike Restoration Project."
+changes = "PATCHES.md"
+topics = ["roguelike", "dungeon", "rpg", "classic", "curses"]
+genre = "roguelike"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "Michael Morgan, Ken Dalka and AT&T (1985); Nicholas J. Kisseberth"
+url = "https://github.com/RoguelikeRestorationProject/arogue5.8"
+
+[exec]
+game = "arogue"
+
+# the dungeon and its two status lines fill 80x24, centred; measured in a
+# pty: at 79x24 or 80x23 it refuses to start ("screen size to small")
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, a fighter played by asciiverse/record/arogue.py: the first
+# level explored, fights with a quartermaster, a kobold and a giant
+# rat, 55 s, ending on the top twenty; the still has four rooms
+# mapped and a kobold in the room the fighter has just reached
+[media]
+cast = "asciiverse/casts/arogue.cast"
+thumbnail_at = 22.0
+
+[release]
+source = "github"

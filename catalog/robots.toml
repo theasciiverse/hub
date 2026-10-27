@@ -1,0 +1,44 @@
+schema_version = 1
+id = "robots"
+kind = "game"
+title = "Robots"
+description = "Lure the dim but deadly robots into crashing into each other, with nothing but a teleporter to save you"
+license = "BSD-3-Clause"
+repo = "theasciiverse/bsdgames"
+collection = "bsdgames"
+provenance = "Robots was first written at the University of California in 1980, and Christos Zoulas contributed a new version to NetBSD in 1999. Mike Sharov rewrote it from scratch in 2016 for his bsd-games, keeping the play and the look of the field."
+changes = "PATCHES.md"
+topics = ["robots", "turn-based", "survival", "classic", "curses"]
+genre = "puzzle"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "UC Berkeley (1980), Christos Zoulas (1999), Mike Sharov (2016)"
+url = "https://sourceforge.net/projects/bsd-games"
+
+[exec]
+game = "robots"
+
+# the field and help windows are 80x24 and fixed; measured in tmux: at
+# 23 rows nothing is drawn, at 79 columns the help panel is cut off
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, played by asciiverse/record/robots.py, which simulates
+# the robots' moves to crash them and teleports only when trapped; 25 s is a
+# full field mid-game
+[media]
+cast = "asciiverse/casts/robots.cast"
+thumbnail_at = 25.0
+
+[release]
+source = "github"

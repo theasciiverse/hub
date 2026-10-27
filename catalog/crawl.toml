@@ -1,0 +1,45 @@
+schema_version = 1
+id = "crawl"
+kind = "game"
+title = "Dungeon Crawl Stone Soup"
+description = "The open-source roguelike: go down through the Dungeon and its branches for the Orb of Zot, with gods to serve and runes to win"
+license = "GPL-2.0-or-later"
+repo = "theasciiverse/crawl"
+provenance = "Linley Henzell wrote Linley's Dungeon Crawl in 1997, and the Stone Soup team has developed it as Dungeon Crawl Stone Soup since 2006, in the open on GitHub."
+changes = "PATCHES.md"
+topics = ["roguelike", "dungeon", "fantasy", "turn-based", "rpg"]
+genre = "roguelike"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "Linley Henzell (1997) and the Dungeon Crawl Stone Soup team (since 2006)"
+url = "https://github.com/crawl/crawl"
+
+[exec]
+game = "crawl"
+
+# MIN_COLS 79 and MIN_LINES 24 in defines.h; measured in tmux: at 78
+# columns or 23 rows it asks for "at least 79,24"
+[min_terminal]
+cols = 79
+rows = 24
+
+# the default char_set draws Unicode glyphs (char_set = ascii in init.txt
+# turns them off); the 16 colors; mouse_input is off by default
+[requires]
+utf8 = true
+color = "basic"
+mouse = false
+
+# 100x30, a Minotaur Fighter on seed 7 played by
+# asciiverse/record-preview.py: autoexplore and autofight on D:1, then
+# save and quit; the still is a ball python fight, at 33 s
+[media]
+cast = "asciiverse/crawl.cast"
+thumbnail_at = 33.0
+
+[release]
+source = "github"

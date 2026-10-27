@@ -1,0 +1,45 @@
+schema_version = 1
+id = "drop4"
+kind = "game"
+title = "Drop4"
+description = "Fit the falling four-square shapes into complete rows before the stack reaches the top"
+license = "BSD-3-Clause"
+repo = "theasciiverse/bsdgames"
+collection = "bsdgames"
+provenance = "Drop4 is BSD's tetris, which Chris Torek and Darren F. Provine adapted from a 1989 International Obfuscated C Code Contest winner (UC Berkeley, 1992). Mike Sharov renamed it and changed its look in 2016 for his bsd-games."
+changes = "PATCHES.md"
+topics = ["falling blocks", "tetromino", "arcade puzzle", "classic", "curses"]
+genre = "puzzle"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "Chris Torek and Darren F. Provine (1992), Mike Sharov"
+url = "https://sourceforge.net/projects/bsd-games"
+
+# an optional level argument, 1 to 9, sets the starting speed
+[exec]
+game = "drop4"
+
+# laid out for 80 columns (S_COLS in drop4.c): the score panel ends at
+# column 73; under 24 rows it quits at once, measured in tmux
+[min_terminal]
+cols = 73
+rows = 24
+
+# colored shapes, keyboard only
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, played by asciiverse/record/drop4.py, which tries every rotation
+# and column and drops where the pile scores best; 24 s is mid-game
+[media]
+cast = "asciiverse/casts/drop4.cast"
+thumbnail_at = 24.0
+
+[release]
+source = "github"

@@ -1,0 +1,42 @@
+schema_version = 1
+id = "tugow"
+kind = "game"
+title = "Tug of War"
+description = "Tug of war by typing: key in the digits on screen faster than the other side pulls"
+license = "CC0-1.0 OR Apache-2.0"
+repo = "theasciiverse/nbsdgames"
+collection = "nbsdgames"
+provenance = "abakh wrote Tug of War for New BSD Games, a collection of small curses games in C."
+changes = "PATCHES.md"
+topics = ["typing", "numpad", "arcade", "curses"]
+genre = "typing"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "abakh and contributors"
+url = "https://github.com/abakh/nbsdgames"
+
+[exec]
+game = "tugow"
+
+# the game draws an 80x24 screen (LEN and WID in src/tugow.c)
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, played by asciiverse/record/tugow.py, a typist reading the
+# digits off the screen; 8 s is level 3 with the rope mid-way
+[media]
+cast = "asciiverse/casts/tugow.cast"
+thumbnail_at = 8.0
+
+[release]
+source = "github"

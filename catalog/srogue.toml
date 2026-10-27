@@ -1,0 +1,51 @@
+schema_version = 1
+id = "srogue"
+kind = "game"
+title = "Super-Rogue"
+description = "Bell Labs' bigger Rogue of 1982 to 1984: 52 monsters, magic pools, mazes, a Flea Market and four stats to watch, down to the Amulet of Yendor"
+# the BSD licence plus two clauses: "Super-Rogue" may not endorse or
+# promote derived products, and "Products derived from this software may
+# not be called "Super-Rogue" ... without prior written permission";
+# SPDX has no id for that. Nicholas J. Kisseberth gave permission to
+# keep the names on 2026-10-21, provided the only changes are to make
+# them play here (see the repo's PATCHES.md)
+license = "LicenseRef-BSD-3-Clause-Name-Restriction"
+repo = "theasciiverse/rogue-restoration"
+collection = "rogue-restoration"
+provenance = "Robert D. Kindelberger and co-workers at AT&T Bell Labs made Super-Rogue from Rogue 3.6 between 1982 and 1984; Kindelberger gave the 9.0 source to Nicholas J. Kisseberth in 2004, who restored it for the Roguelike Restoration Project."
+changes = "PATCHES.md"
+topics = ["roguelike", "dungeon", "rpg", "classic", "curses"]
+genre = "roguelike"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "Robert D. Kindelberger (1984); Nicholas J. Kisseberth"
+url = "https://github.com/RoguelikeRestorationProject/srogue"
+
+[exec]
+game = "srogue"
+
+# the dungeon and its two status lines fill 80x24, centred; measured in a
+# pty: at 79x24 or 80x23 it refuses to start ("screen size too small")
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, played by asciiverse/record/srogue.py: two levels explored,
+# fights with snakes, a hobgoblin and others, 51 s, ending on the top
+# adventurers; the still is the hobgoblin fight beside the stairs, four
+# rooms mapped
+[media]
+cast = "asciiverse/casts/srogue.cast"
+thumbnail_at = 27.0
+
+[release]
+source = "github"

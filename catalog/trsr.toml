@@ -1,0 +1,44 @@
+schema_version = 1
+id = "trsr"
+kind = "game"
+title = "Treasure"
+description = "Two-player minesweeper: take turns digging for treasure, against the computer or a friend"
+license = "CC0-1.0 OR Apache-2.0"
+repo = "theasciiverse/nbsdgames"
+collection = "nbsdgames"
+provenance = "abakh wrote Treasure for New BSD Games, a collection of small curses games in C."
+changes = "PATCHES.md"
+topics = ["puzzle", "minesweeper", "logic", "two-player", "mouse", "curses"]
+genre = "puzzle"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "abakh and contributors"
+url = "https://github.com/abakh/nbsdgames"
+
+[exec]
+game = "trsr"
+
+# the default field: 15x15, or 20 wide below 45 columns, which fits from
+# 41; below 22 rows the field scrolls
+[min_terminal]
+cols = 41
+rows = 22
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = true
+
+# 100x30, the default field, a human side played by
+# asciiverse/record/trsr.py (it opens the cells the numbers point to)
+# against the computer; 25 s is mid-game at 11:5
+[media]
+cast = "asciiverse/casts/trsr.cast"
+thumbnail_at = 25.0
+
+[release]
+source = "github"

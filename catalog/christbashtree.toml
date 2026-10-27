@@ -1,0 +1,42 @@
+schema_version = 1
+id = "christbashtree"
+kind = "art"
+title = "Christmas Tree"
+description = "A tree of green stars with coloured lights twinkling on and off and a flashing greeting: ChristBASHTree as one small program"
+license = "Unlicense"
+repo = "theasciiverse/christbashtree"
+provenance = "Sergio Lepore wrote ChristBASHTree in bash and tput in 2014, with later contributions to 2018."
+changes = "PATCHES.md"
+topics = ["christmas", "tree", "seasonal", "lights", "screensaver"]
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "Sergio Lepore"
+url = "https://github.com/sergiolepore/ChristBASHTree"
+
+# the English greeting; any key quits
+[exec]
+game = "christbashtree"
+
+# the tree, trunk and greeting are 24 columns by 14 rows, centred;
+# resized down to 2x2 under ASan
+[min_terminal]
+cols = 26
+rows = 14
+
+# plain ASCII in the 8 basic colours with bold; keyboard only
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, `christbashtree` for 30 s (asciiverse/record-preview.sh)
+[media]
+cast = "asciiverse/christbashtree.cast"
+thumbnail_at = 20.0
+
+[release]
+source = "github"

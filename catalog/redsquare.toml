@@ -1,0 +1,46 @@
+schema_version = 1
+id = "redsquare"
+kind = "game"
+title = "Redsquare"
+description = "Move a red square through Conway's Game of Life: catch the X, or crowd out the white cells with red ones"
+license = "CC0-1.0 OR Apache-2.0"
+repo = "theasciiverse/nbsdgames"
+collection = "nbsdgames"
+provenance = "abakh wrote Redsquare for New BSD Games, a collection of small curses games in C."
+changes = "PATCHES.md"
+topics = ["puzzle", "game-of-life", "cellular-automaton", "curses"]
+genre = "puzzle"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "abakh and contributors"
+url = "https://github.com/abakh/nbsdgames"
+
+[exec]
+game = "redsquare"
+
+# the board is 50x35 and wraps at every edge; the view scrolls to follow
+# the square when the terminal is shorter than 42 rows. 52 columns show
+# the board's width; at 20 rows 13 of its 35 rows are in view
+[min_terminal]
+cols = 52
+rows = 20
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, played by asciiverse/record/redsquare.py, which works out the
+# next generations to keep the square clear of life on its way to the X;
+# it catches the X on the first level at about 20 s, and 34 s is the
+# second level boiling over with the X in view
+[media]
+cast = "asciiverse/casts/redsquare.cast"
+thumbnail_at = 34.0
+
+[release]
+source = "github"

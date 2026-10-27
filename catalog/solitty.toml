@@ -1,0 +1,47 @@
+# Verification case for SCHEMA.md: every field the generated catalog.json
+# needs should come from this file or from solitty's GitHub Release.
+# Not publishable yet: theasciiverse/solitty is private, has no release.yml
+# and no recorded .cast (see av/CLAUDE.md, open questions and first steps).
+
+schema_version = 1
+id = "solitty"
+kind = "game"
+title = "Solitty"
+description = "Ncurses-based Klondike solitaire, packaged for the Asciiverse catalog"
+license = "MIT"
+repo = "theasciiverse/solitty"
+provenance = "Murilo Pereira wrote solitty, an ncurses Klondike, between 2010 and 2018."
+topics = ["terminal", "ncurses", "solitaire", "cards"]
+genre = "card"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "Murilo Pereira"
+url = "http://murilopereira.com"
+
+[exec]
+game = "solitty"
+
+# src/common.h: MIN_TERM_COLS 57, MIN_TERM_LINES 28
+[min_terminal]
+cols = 57
+rows = 28
+
+# src/solitty.c uses the eight basic ncurses colors only;
+# src/mouse.c enables button 1 and 3 clicks.
+[requires]
+utf8 = true
+color = "basic"
+mouse = true
+
+system_deps = ["libncursesw6"]
+
+[media]
+cast = "resources/solitty.cast"
+thumbnail_at = 5.0
+
+[release]
+source = "github"

@@ -1,0 +1,45 @@
+schema_version = 1
+id = "rantaiwarna"
+kind = "game"
+title = "rantaiwarna"
+description = "SameGame in the terminal: clear groups of same-coloured elements from the board, and the bigger the group, the bigger the score"
+license = "MIT"
+repo = "theasciiverse/rantaiwarna"
+provenance = "Guido Berhoerster wrote rantaiwarna, a SameGame (Chain Shot!) for curses terminals, in C in 2014 and kept it in Mercurial until 2016."
+changes = "PATCHES.md"
+topics = ["puzzle", "samegame", "tile matching", "mouse", "curses"]
+genre = "puzzle"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "Guido Berhoerster"
+url = "https://code.guido-berhoerster.org/projects/rantaiwarna/"
+
+[exec]
+game = "rantaiwarna"
+
+# the default 20x10 board (two columns an element) in its box under the
+# header line; measured: smaller, the game shows "terminal size is too
+# small" until it grows
+[min_terminal]
+cols = 44
+rows = 15
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = true
+
+# 100x30, played by asciiverse/record-preview.py, which reads the board
+# and removes the group that scores best with a one-group lookahead, to
+# the end of a game, then the high score table and a new game; the still
+# is mid-game with the columns half cleared
+[media]
+cast = "asciiverse/rantaiwarna.cast"
+thumbnail_at = 15.0
+
+[release]
+source = "github"

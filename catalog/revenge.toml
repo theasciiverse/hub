@@ -1,0 +1,44 @@
+schema_version = 1
+id = "revenge"
+kind = "game"
+title = "Revenge"
+description = "Push rows of blocks to box in the cats before they catch you, and trapped cats turn to cheese"
+license = "CC0-1.0 OR Apache-2.0"
+repo = "theasciiverse/nbsdgames"
+collection = "nbsdgames"
+provenance = "abakh wrote Revenge for New BSD Games, a collection of small curses games in C."
+changes = "PATCHES.md"
+topics = ["arcade", "puzzle", "push-blocks", "curses"]
+genre = "arcade"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "abakh and contributors"
+url = "https://github.com/abakh/nbsdgames"
+
+[exec]
+game = "revenge"
+
+# the 20x20 field fills rows 3 to 24; the line after it says when the
+# game is lost
+[min_terminal]
+cols = 41
+rows = 26
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, played by asciiverse/record/revenge.py, which searches a few
+# pushes ahead to box the cats in; a wave turns to cheese at 12 s, and
+# at 35 s three cats are walled in
+[media]
+cast = "asciiverse/casts/revenge.cast"
+thumbnail_at = 35.0
+
+[release]
+source = "github"

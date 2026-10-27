@@ -1,0 +1,44 @@
+schema_version = 1
+id = "sudoku"
+kind = "game"
+title = "Sudoku"
+description = "Sudoku in the terminal, from 4x4 up to 49x49, with hints and the mouse"
+license = "CC0-1.0 OR Apache-2.0"
+repo = "theasciiverse/nbsdgames"
+collection = "nbsdgames"
+provenance = "abakh wrote Sudoku for New BSD Games, a collection of small curses games in C."
+changes = "PATCHES.md"
+topics = ["puzzle", "sudoku", "logic", "numbers", "mouse", "curses"]
+genre = "puzzle"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "abakh and contributors"
+url = "https://github.com/abakh/nbsdgames"
+
+[exec]
+game = "sudoku"
+
+# the default 9x9 board with its header and the line below it; -s 4 and
+# up need more, and boards that do not fit scroll
+[min_terminal]
+cols = 28
+rows = 17
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = true
+
+# 100x30, the default 9x9 board solved by asciiverse/record/sudoku.py,
+# which reads the givens and fills the most constrained cell first, then a
+# second board; 8 s is a half-solved board
+[media]
+cast = "asciiverse/casts/sudoku.cast"
+thumbnail_at = 8.0
+
+[release]
+source = "github"

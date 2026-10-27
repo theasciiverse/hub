@@ -1,0 +1,44 @@
+schema_version = 1
+id = "fifteen"
+kind = "game"
+title = "Fifteen"
+description = "The fifteen puzzle: slide the shuffled tiles back into order, with the keys or the mouse"
+license = "CC0-1.0 OR Apache-2.0"
+repo = "theasciiverse/nbsdgames"
+collection = "nbsdgames"
+provenance = "abakh wrote Fifteen for New BSD Games, a collection of small curses games in C started in 2018."
+changes = "PATCHES.md"
+topics = ["puzzle", "sliding-puzzle", "classic", "mouse", "curses"]
+genre = "puzzle"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "abakh and contributors"
+url = "https://github.com/abakh/nbsdgames"
+
+[exec]
+game = "fifteen"
+
+# the default 4x4 board is 9 columns by 6 rows under the 3-row logo; the
+# row below takes "You solved it! Wanna play again?(y/n)", 37 columns
+[min_terminal]
+cols = 37
+rows = 10
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = true
+
+# 100x30, fifteen played by asciiverse/record/fifteen.py, which solves
+# each shuffle with a weighted A* search and plays it with the cursor; it
+# solves two boards; 15 s is the first one a few moves from solved
+[media]
+cast = "asciiverse/casts/fifteen.cast"
+thumbnail_at = 15.0
+
+[release]
+source = "github"

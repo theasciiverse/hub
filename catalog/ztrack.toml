@@ -1,0 +1,47 @@
+schema_version = 1
+id = "ztrack"
+kind = "game"
+title = "Ztrack"
+description = "Pseudo-3D driving down an endless three-lane road at 150 mph, dodging traffic you can only half see"
+# public domain by its author; SPDX has no id for that, so a LicenseRef
+license = "LicenseRef-PublicDomain"
+repo = "theasciiverse/ztrack"
+provenance = "Russell Marks wrote Ztrack in C on curses (1995, version 1.0 in 1996)."
+topics = ["racing", "driving", "pseudo-3d", "classic", "curses"]
+genre = "racing"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# Russell Marks wrote Ztrack in C on curses (1995, v1.0 1996, public
+# domain); this edition reads keys through curses (cursor keys steer, and it
+# builds on Windows with PDCurses) and fixes an out-of-bounds read on the
+# title screen, built by .github/workflows/release.yml.
+[upstream]
+name = "Russell Marks"
+url = "http://ibiblio.org/pub/linux/games/arcade/"
+
+[exec]
+game = "ztrack"
+
+# a fixed 80x24 screen; it uses no more on a bigger terminal
+[min_terminal]
+cols = 80
+rows = 24
+
+# plain ASCII in the 8 basic colors, keyboard only
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30 (the game draws 80x24 in the top left), driven by
+# asciiverse/drive.py; 19 s has a car dead ahead, one close in the right
+# lane and one alongside in the left mirror
+[media]
+cast = "asciiverse/ztrack.cast"
+thumbnail_at = 19.0
+
+[release]
+source = "github"

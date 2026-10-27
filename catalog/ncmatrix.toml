@@ -1,0 +1,44 @@
+schema_version = 1
+id = "ncmatrix"
+kind = "art"
+title = "NCMatrix"
+description = "The Matrix's falling code, with your computer's network traffic falling in it: packets sent in red, received in magenta"
+license = "GPL-3.0-or-later"
+repo = "theasciiverse/ncmatrix"
+provenance = "CMatrix is by Chris Allegretta from 1999 and Abishek V Ashok from 2017, with many contributors. In 2005 Thomas Bloedorn made NCMatrix from it, painting the packets the computer sends and receives into the rain."
+changes = "PATCHES.md"
+topics = ["matrix", "rain", "network", "traffic", "screensaver", "classic", "curses"]
+
+[developer]
+name = "Chris Allegretta, Abishek V Ashok, Thomas Bloedorn and contributors"
+url = "https://github.com/abishekvashok/cmatrix"
+
+[upstream]
+name = "Chris Allegretta, Abishek V Ashok and contributors (CMatrix); Thomas Bloedorn (NCMatrix)"
+url = "https://github.com/abishekvashok/cmatrix"
+
+# screensaver mode (any key quits), columns at their own speeds, bold
+# characters; traffic of every interface but loopback
+[exec]
+game = "ncmatrix"
+args = ["-s", "-a", "-b"]
+
+# any size; resized down to 1x1 under ASan (CMatrix draws at least 10x10)
+[min_terminal]
+cols = 20
+rows = 10
+
+# plain ASCII in the 8 basic colours with bold; keyboard only
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, `ncmatrix -s -a -b` for 20 s while a download runs
+# (asciiverse/record-preview.sh), capped at 20 fps
+[media]
+cast = "asciiverse/ncmatrix.cast"
+thumbnail_at = 12.0
+
+[release]
+source = "github"

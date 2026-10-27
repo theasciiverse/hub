@@ -1,0 +1,49 @@
+schema_version = 1
+id = "moon-buggy"
+kind = "game"
+title = "Moon-Buggy"
+description = "Drive a buggy across the moon, jumping craters and shooting meteors out of your way, faster with every level"
+# the notices name no GPL version, so any may be chosen (COPYING is GPL 3
+# since 2011, GPL 2 before); see PATCHES.md
+license = "GPL-1.0-or-later"
+repo = "theasciiverse/moon-buggy"
+provenance = "Jochen Voss wrote Moon-Buggy in C on curses in 1998 and still maintains it."
+changes = "PATCHES.md"
+topics = ["arcade", "driving", "jumping", "shooter", "classic", "curses"]
+genre = "arcade"
+
+[developer]
+name = "Jochen Voss"
+url = "https://github.com/seehuhn/moon-buggy"
+
+# built from github.com/seehuhn/moon-buggy (v1.1.0 and one README commit)
+# by .github/workflows/release.yml, with the changes in PATCHES.md
+[upstream]
+name = "Jochen Voss"
+url = "https://github.com/seehuhn/moon-buggy"
+
+# the score file is mbscore in the data folder
+# (~/.local/share/moon-buggy, %APPDATA%\moon-buggy)
+[exec]
+game = "moon-buggy"
+
+# the title is 74 columns wide; the game fills any terminal and follows
+# resizes, with the buggy 12 columns from the right of the first 80
+[min_terminal]
+cols = 80
+rows = 24
+
+# plain ASCII, no colour, keyboard only
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, the title, then levels 1 to 4 driven by asciiverse/drive.py
+# (craters jumped, meteors shot from level 4); the still is the title
+[media]
+cast = "asciiverse/moon-buggy.cast"
+thumbnail_at = 2.0
+
+[release]
+source = "github"

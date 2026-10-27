@@ -1,0 +1,44 @@
+schema_version = 1
+id = "kerkerkruip"
+kind = "adventure"
+title = "Kerkerkruip"
+description = "A short roguelike told in words: fight your way down a random dungeon to the wizard Malygris"
+license = "GPL-3.0-or-later"
+repo = "theasciiverse/stories"
+provenance = "Victor Gijsbers and contributors first entered Kerkerkruip in the 2011 Interactive Fiction Competition and worked on it until 2014."
+changes = "kerkerkruip/README.md"            # what Asciiverse changed, a path in repo
+topics = ["text-adventure", "roguelike", "combat", "dungeon"]
+genre = "text adventure"
+
+[developer]
+name = "Victor Gijsbers and contributors"
+url = "https://github.com/i7/kerkerkruip"
+
+# First entered in the 2011 Interactive Fiction Competition; this is version 9.0.1 (2014).
+# The story file is unchanged (provenance and sha256 in the stories repo,
+# kerkerkruip/README.md); played with Glulxe 0.6.1 with GlkTerm, which comes inside the archive.
+[upstream]
+name = "Victor Gijsbers and contributors, 2011"
+url = "https://github.com/i7/kerkerkruip"
+
+# the start script plays the story in the bundled Glulxe; saves go to
+# ~/.local/share/kerkerkruip
+[exec]
+game = "kerkerkruip"
+args = []
+
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+[media]
+cast = "asciiverse/kerkerkruip.cast"
+thumbnail_at = 18.9
+
+[release]
+source = "github"

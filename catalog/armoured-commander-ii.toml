@@ -1,0 +1,57 @@
+schema_version = 1
+id = "armoured-commander-ii"
+kind = "game"
+title = "Armoured Commander II"
+description = "Command a tank and its crew through ten campaigns of World War II, from Poland in 1939 to Germany in 1945, in the tank commander roguelike"
+license = "GPL-3.0-or-later"
+repo = "theasciiverse/armoured-commander-II"
+provenance = "Gregory Adam Scott wrote Armoured Commander II in Python and libtcod between 2016 and 2020, and Asciiverse ported it to Rust and Ratatui for the terminal."
+changes = "README.md"
+topics = ["world war ii", "tanks", "roguelike", "turn-based", "campaign", "dice", "rust"]
+genre = "roguelike"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# version 3.0.2 (9d719b6, 2020-05-03), the last GPL release; the later
+# Steam versions are not GPL and not used. The first game, Armoured
+# Commander, is a separate title
+[upstream]
+name = "Gregory Adam Scott"
+url = "https://github.com/sudasana/armcom2"
+
+# the archive holds armcom2, README.md and LICENSE; saved campaigns, the
+# settings and the campaign logs go to $XDG_DATA_HOME/armoured-commander-ii
+# (~/.local/share/armoured-commander-ii, %APPDATA%\armoured-commander-ii)
+[exec]
+game = "armcom2"
+args = []
+
+# every screen is laid out for 100x30; under that it asks for a bigger
+# terminal. Bigger ones get bigger maps
+[min_terminal]
+cols = 100
+rows = 30
+
+# box drawing, half and quarter blocks and CP437 symbols; RGB colours from
+# libtcod's palette; the mouse is optional (the zone or hex under the
+# pointer), the keyboard plays everything. Sound through ALSA on Linux if
+# present
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = false
+
+# 100x30, `armcom2 --battle pattons_best` played by asciiverse/drive.py
+# (the gunner on Operate Gun, firing at the first identified target he
+# can; every roll read; best of twenty takes): a PSW 221 armoured car
+# spots the Sherman, the Sherman's 75mm AP hits it in the hull side,
+# penetrates and destroys it, and a truck unloads riflemen; the still is
+# the 75mm hit on the armoured car, both portraits shown, at 34 s
+[media]
+cast = "asciiverse/armcom2.cast"
+thumbnail_at = 34.0
+
+[release]
+source = "github"

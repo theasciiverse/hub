@@ -1,0 +1,45 @@
+schema_version = 1
+id = "larn"
+kind = "game"
+title = "Larn"
+description = "Find the potion that cures your daughter in the caverns of Larn and the volcano below them, against the clock, in Noah Morgan's 1986 roguelike"
+license = "LicenseRef-Free-Noncommercial"
+repo = "theasciiverse/netbsd-games"
+collection = "bsdgames"
+provenance = "Noah Morgan wrote Larn in 1986 and posted it to the net, and it was soon part of the BSD games."
+changes = "PATCHES.md"
+topics = ["roguelike", "dungeon", "classic", "fantasy", "turn-based"]
+genre = "roguelike"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "Noah Morgan (1986)"
+url = "https://cvsweb.netbsd.org/bsdweb.cgi/src/games/larn/"
+
+[exec]
+game = "larn"
+
+# its screen is 80x24; measured in tmux: at 79 columns the right edge and
+# at 23 rows the bottom line are cut off
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, played by asciiverse/record/larn.py: from the town into the
+# dungeon, exploring, fighting kobolds, gnomes and hobgoblins and taking
+# gold, scrolls, a diamond and ring mail (best of several takes); the still
+# is a hobgoblin's end, at 35.3 s
+[media]
+cast = "asciiverse/casts/larn.cast"
+thumbnail_at = 35.3
+
+[release]
+source = "github"

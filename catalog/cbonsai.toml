@@ -1,0 +1,47 @@
+schema_version = 1
+id = "cbonsai"
+kind = "art"
+title = "cbonsai"
+description = "A bonsai tree grows in its pot branch by branch, then another, and another: a calm terminal screensaver"
+license = "GPL-3.0-only"
+repo = "theasciiverse/cbonsai"
+provenance = "cbonsai is by John Allbritten and contributors, in C on ncurses, since 2020."
+changes = "PATCHES.md"
+topics = ["screensaver", "bonsai", "tree", "generative", "calm", "curses"]
+
+[developer]
+name = "John Allbritten and contributors"
+url = "https://gitlab.com/jallbrit/cbonsai"
+
+[upstream]
+name = "John Allbritten and contributors"
+url = "https://gitlab.com/jallbrit/cbonsai"
+
+# screensaver mode: live growth, a new tree every 4 seconds, any key quits;
+# the tree in progress is saved ($XDG_DATA_HOME/cbonsai/save, %APPDATA% on
+# Windows) and grows on from there next time
+[exec]
+game = "cbonsai"
+args = ["-S"]
+
+# the pot is 31 columns wide; below 80x24 the top of a tall tree is cut off
+# (it never crashes: grown and resized down to 10x4 under ASan)
+[min_terminal]
+cols = 80
+rows = 24
+
+# plain ASCII; 256 colours give bright and dark leaves and wood, an
+# 8-colour terminal gets a flatter tree; keyboard only
+[requires]
+utf8 = false
+color = "256"
+mouse = false
+
+# 100x30, `cbonsai -S` with no save file, three trees in 50 s
+# (asciiverse/record-preview.sh); 11.5 s is the first tree fully grown
+[media]
+cast = "asciiverse/cbonsai.cast"
+thumbnail_at = 11.5
+
+[release]
+source = "github"

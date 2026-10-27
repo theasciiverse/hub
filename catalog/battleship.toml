@@ -1,0 +1,44 @@
+schema_version = 1
+id = "battleship"
+kind = "game"
+title = "Battleship"
+description = "Hide your fleet, then find and sink the enemy's, against the computer or a friend"
+license = "CC0-1.0 OR Apache-2.0"
+repo = "theasciiverse/nbsdgames"
+collection = "nbsdgames"
+provenance = "abakh wrote Battleship for New BSD Games, a collection of small curses games in C started in 2018."
+changes = "PATCHES.md"
+topics = ["board", "battleship", "naval", "vs-computer", "hot-seat", "mouse", "curses"]
+genre = "board"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "abakh and contributors"
+url = "https://github.com/abakh/nbsdgames"
+
+[exec]
+game = "battleship"
+
+# your board and the tracking board side by side, with the two message
+# lines below them
+[min_terminal]
+cols = 43
+rows = 18
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = true
+
+# 100x30, single player, played by asciiverse/record/battleship.py: it
+# sets its fleet, then hunts on a checkerboard and follows up hits; 30 s is
+# mid-game
+[media]
+cast = "asciiverse/casts/battleship.cast"
+thumbnail_at = 30.0
+
+[release]
+source = "github"

@@ -1,0 +1,44 @@
+schema_version = 1
+id = "i-am-prey"
+kind = "adventure"
+title = "I Am Prey"
+description = "Born in a sealed facility, outrun the Predator and collect a suit to escape the gas"
+license = "CC-BY-SA-4.0"
+repo = "theasciiverse/stories"
+provenance = "Joey Cramsey wrote I Am Prey, a TADS 3 game, in 2023."
+changes = "i-am-prey/README.md"            # what Asciiverse changed, a path in repo
+topics = ["text-adventure", "horror", "stealth", "roguelike"]
+genre = "text adventure"
+
+[developer]
+name = "Joey Cramsey"
+url = "https://ifarchive.org/if-archive/games/tads/I-Am-Prey.zip"
+
+# Version 0.9.6 beta, patch 6 (2023), for TADS 3; played with FrobTADS.
+# The story file is unchanged (provenance and sha256 in the stories repo,
+# i-am-prey/README.md); played with FrobTADS 2.0, which comes inside the archive.
+[upstream]
+name = "Joey Cramsey, 2023"
+url = "https://ifarchive.org/if-archive/games/tads/I-Am-Prey.zip"
+
+# the start script plays the story in the bundled FrobTADS; saves go to
+# ~/.local/share/i-am-prey
+[exec]
+game = "i-am-prey"
+args = []
+
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+[media]
+cast = "asciiverse/i-am-prey.cast"
+thumbnail_at = 32.7
+
+[release]
+source = "github"

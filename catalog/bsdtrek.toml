@@ -1,0 +1,41 @@
+schema_version = 1
+id = "bsdtrek"
+kind = "game"
+title = "BSD Trek"
+description = "Eric Allman's 1976 Star Trek for Unix: hunt Klingons by warp, phaser and torpedo, one typed command at a time"
+license = "BSD-3-Clause"
+repo = "theasciiverse/bsdtrek"
+provenance = "Eric Allman wrote Trek at UC Berkeley in 1976 and it shipped with BSD's games; Kenji Rikitake's bsdtrek later made the FreeBSD and DragonFly BSD version build on Linux."
+changes = "PATCHES.md"
+topics = ["strategy", "space", "classic", "teletype"]
+genre = "strategy"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "Eric Allman, UC Berkeley (1976)"
+url = "https://github.com/jj1bdx/bsdtrek"
+
+[exec]
+game = "trek"
+
+# a scrolling teletype game: the widest line it prints is 57 columns (the
+# short range scan with its status beside it, measured in the preview)
+[min_terminal]
+cols = 60
+rows = 20
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, recorded 2026-10-10: a short, fair game from the first command
+[media]
+cast = "asciiverse/casts/bsdtrek.cast"
+thumbnail_at = 12.0
+
+[release]
+source = "github"

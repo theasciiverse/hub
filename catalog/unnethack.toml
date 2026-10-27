@@ -1,0 +1,51 @@
+schema_version = 1
+id = "unnethack"
+kind = "game"
+title = "UnNetHack"
+description = "NetHack with more of everything: more randomness, more levels, more challenges, down to the Amulet of Yendor"
+license = "NGPL"
+repo = "theasciiverse/unnethack"
+provenance = "Patric Mueller started UnNetHack in 2009 as a fork of NetHack 3.4.3, the DevTeam's game, to be NetHack as it would look had its releases gone on; he and contributors still develop it."
+changes = "PATCHES.md"
+topics = ["roguelike", "dungeon", "fantasy", "turn-based", "nethack-variant"]
+genre = "roguelike"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# upstream master at c4db5abfc (2026-10-07), three build fixes after the
+# commit that set 6.0.16; upstream no longer tags releases
+[upstream]
+name = "Patric Mueller and contributors"
+url = "https://github.com/UnNetHack/UnNetHack"
+
+# the tty interface, centred on bigger terminals; OPTIONS=windowtype:curses
+# in unnethackrc picks the curses interface
+[exec]
+game = "unnethack"
+
+# laid out for 80x24: message line, the 80x21 map, two status lines; it
+# also starts smaller (checked at 64x20), with the map scrolling and the
+# status line squeezed, so 80x24 is where it plays as meant
+[min_terminal]
+cols = 80
+rows = 24
+
+# 16 colours; UTF-8 walls and floors when the terminal answers its UTF-8
+# check, plain ASCII otherwise; keyboard only
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, Freya the Valkyrie played by asciiverse/record/unnethack.py,
+# which explores by breadth-first search, fights what comes next to her
+# and takes the stairs down; 45 s on two levels, ending on the save; the
+# still is her fight with a jackal in a corridor, three rooms mapped
+[media]
+cast = "asciiverse/casts/unnethack.cast"
+thumbnail_at = 21.8
+
+[release]
+source = "github"

@@ -1,0 +1,44 @@
+schema_version = 1
+id = "ioccc-chaos"
+kind = "art"
+title = "Chaos"
+description = "A cube, a pyramid, a desk, an X-wing and the IOCCC's own name tumble in 3D wireframe: Alan De Smet's obfuscated object viewer"
+license = "CC-BY-SA-4.0"
+repo = "theasciiverse/ioccc-art"
+collection = "ioccc"
+provenance = "Alan De Smet wrote chaos, a curses 3D wireframe viewer, for the International Obfuscated C Code Contest in 1998, where it won \"Best object orientation\"."
+changes = "PATCHES.md"
+topics = ["3d", "wireframe", "ioccc", "obfuscated", "screensaver", "curses"]
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "Alan De Smet, IOCCC 1998"
+url = "https://www.ioccc.org/1998/chaos/index.html"
+
+# the five objects in turn, tumbling; any key quits
+[exec]
+game = "ioccc-chaos"
+
+# the entry draws in 79x24, centred; a smaller window shows its top left
+# (resized down to 2x2 under ASan)
+[min_terminal]
+cols = 79
+rows = 24
+
+# plain ASCII, no colour; keyboard only
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, `ioccc-chaos -t 9 cube pyramid desk xwing ioccc` for 46 s
+# (asciiverse/record-preview.sh chaos); 37 s has the letters reading IOCCC
+[media]
+cast = "asciiverse/ioccc-chaos.cast"
+thumbnail_at = 37.0
+
+[release]
+source = "github"

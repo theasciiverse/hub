@@ -1,0 +1,44 @@
+schema_version = 1
+id = "robotfindskitten"
+kind = "game"
+title = "robotfindskitten"
+description = "Yet another zen simulation: you are robot, and your job is to find kitten"
+license = "GPL-2.0-or-later"
+repo = "theasciiverse/robotfindskitten"
+provenance = "Leonard Richardson wrote robotfindskitten in 1997 for the Nerth Pork magazine's contest of the same name, and contributors have kept it going since."
+changes = "PATCHES.md"
+topics = ["zen", "classic", "humor", "exploration", "robot finds kitten"]
+genre = "zen"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "Leonard Richardson and contributors"
+url = "https://robotfindskitten.org"
+
+[exec]
+game = "robotfindskitten"
+
+# it fills whatever terminal it gets; the items' descriptions run to 80
+# characters on the message line and are cut to the width below that
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, driven by asciiverse/record/robotfindskitten.py: robot touches
+# the nearest things one by one until one is kitten (re-recorded until
+# the search took 25 to 55 s); 52 s; the still has robot among the
+# things, a description on the message line
+[media]
+cast = "asciiverse/casts/robotfindskitten.cast"
+thumbnail_at = 14.0
+
+[release]
+source = "github"

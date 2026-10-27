@@ -1,0 +1,44 @@
+schema_version = 1
+id = "spirhunt"
+kind = "game"
+title = "Space Pirate Hunt"
+description = "Clear the galaxy of space pirates before time runs out: warp between quadrants, fire plasers and torpedoes, dock at starbases, with the whole map always on screen"
+license = "BSD-3-Clause"
+repo = "theasciiverse/bsdgames"
+collection = "bsdgames"
+provenance = "Eric Allman wrote trek at UC Berkeley in 1976, and it shipped with BSD Unix. Mike Sharov removed its Star Trek content and brought it back in 2020 as Space Pirate Hunt, then gave it a full-screen curses display and grid navigation."
+changes = "PATCHES.md"
+topics = ["strategy", "space", "combat", "classic", "curses"]
+genre = "strategy"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "Eric Allman, UC Berkeley (1976); Mike Sharov (2020)"
+url = "https://sourceforge.net/projects/bsd-games"
+
+[exec]
+game = "spirhunt"
+
+# measured in tmux: the map and status panel are 77 columns by 12 rows,
+# and messages need the rows above it; 16 rows leave four
+[min_terminal]
+cols = 77
+rows = 16
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, played by asciiverse/record/spirhunt.py, which warps to the
+# quadrants with pirates and fights them with plasers and torpedoes;
+# 24 s is a fight in the sector at condition red
+[media]
+cast = "asciiverse/casts/spirhunt.cast"
+thumbnail_at = 24.0
+
+[release]
+source = "github"

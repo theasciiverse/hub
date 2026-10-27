@@ -1,0 +1,45 @@
+schema_version = 1
+id = "rogue36"
+kind = "game"
+title = "Rogue 3.6"
+description = "Rogue as Berkeley shipped it in 1981: the Dungeons of Doom, 26 monsters from A to Z, and the Amulet of Yendor below the 20th level"
+license = "BSD-3-Clause"
+repo = "theasciiverse/rogue-restoration"
+collection = "rogue-restoration"
+provenance = "Michael Toy, Glenn Wichman and Ken Arnold's Rogue 3.6 of 1981, restored by Nicholas J. Kisseberth in the Roguelike Restoration Project."
+changes = "PATCHES.md"
+topics = ["roguelike", "dungeon", "rpg", "classic", "curses"]
+genre = "roguelike"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "Michael Toy, Glenn Wichman and Ken Arnold (1981); Nicholas J. Kisseberth"
+url = "https://github.com/rogueforge/rogue3.6"
+
+[exec]
+game = "rogue36"
+
+# the dungeon is laid out on at most 80x24, centred; measured in a pty:
+# at 69 columns or 21 rows it refuses to start ("needs 70", "needs 22")
+[min_terminal]
+cols = 70
+rows = 22
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, played by asciiverse/record/rogue36.py: three levels explored,
+# items and gold picked up, a kobold, a snake and others fought, 49 s,
+# ending on the top adventurers; the still has three rooms mapped and
+# the hero fighting a kobold
+[media]
+cast = "asciiverse/casts/rogue36.cast"
+thumbnail_at = 46.5
+
+[release]
+source = "github"

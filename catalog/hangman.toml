@@ -1,0 +1,46 @@
+schema_version = 1
+id = "hangman"
+kind = "game"
+title = "Hangman"
+description = "Guess the computer's word a letter at a time before the gallows is finished"
+license = "BSD-3-Clause"
+repo = "theasciiverse/bsdgames"
+collection = "bsdgames"
+provenance = "Ken Arnold wrote Hangman for BSD in 1983, and Mike Sharov cleaned it up for modern curses in 2016."
+changes = "PATCHES.md"
+topics = ["word", "hangman", "vs-computer", "classic", "curses"]
+genre = "puzzle"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "Ken Arnold, UC Berkeley (1983)"
+url = "https://sourceforge.net/projects/bsd-games"
+
+# av starts titles in their install folder, where the archive puts the
+# SCOWL word list as `words`
+[exec]
+game = "hangman"
+args = ["-d", "words"]
+
+# the gallows and prompt windows are 60x12 and fixed; measured in tmux:
+# at 11 rows the gallows is not drawn
+[min_terminal]
+cols = 60
+rows = 12
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, hangman -d words played by asciiverse/record/hangman.py, a guesser
+# using the same word list; four words in 42 s, 30 s is a half-guessed word
+[media]
+cast = "asciiverse/casts/hangman.cast"
+thumbnail_at = 30.0
+
+[release]
+source = "github"

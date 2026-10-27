@@ -1,0 +1,47 @@
+schema_version = 1
+id = "bsd-backgammon"
+kind = "game"
+title = "BSD Backgammon"
+description = "The BSD backgammon of 1980: you against the computer or a friend, with the doubling cube, saved games and a tutorial that teaches the rules"
+license = "BSD-3-Clause"
+repo = "theasciiverse/netbsd-games"
+collection = "bsdgames"
+provenance = "Alan Char wrote backgammon and its tutorial, teachgammon, at UC Berkeley by 1980, and it shipped with BSD Unix from then on."
+changes = "PATCHES.md"
+topics = ["board game", "backgammon", "dice", "tutorial", "two-player", "classic"]
+genre = "board"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "Alan Char, UC Berkeley (1980)"
+url = "https://github.com/NetBSD/src/tree/trunk/games/backgammon"
+
+# backgammon and teachgammon are installed side by side and start each
+# other; saved games go to bsdgames/backgammon in the player's data folder
+[exec]
+game = "backgammon"
+
+# the board and messages fill 80x24, centred in a bigger terminal; from
+# 72x24 it draws the board in place, below that it prints it as text
+[min_terminal]
+cols = 72
+rows = 24
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, White against the computer played by
+# asciiverse/record/backgammon.py from the board on screen; 50 s, with
+# hits, a double and the quit; the still is the middle game: the game
+# value doubled, White unable to use a roll, Red hitting a blot
+[media]
+cast = "asciiverse/casts/bsd-backgammon.cast"
+thumbnail_at = 30.0
+
+[release]
+source = "github"

@@ -1,0 +1,49 @@
+schema_version = 1
+id = "swarm"
+kind = "game"
+title = "Swarm"
+description = "Stranded on an alien planet, you build and program robots in a small functional language to explore, gather and craft"
+license = "BSD-3-Clause"
+repo = "theasciiverse/swarm"
+provenance = "Swarm is by Brent Yorgey and contributors, in Haskell on Brick, since 2021."
+topics = ["programming", "robots", "crafting", "puzzle", "haskell"]
+genre = "programming"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# Brent Yorgey and contributors (Haskell, Brick); this edition is the 0.8.0.0
+# release plus one patch that finds data/ next to the binary, built by
+# .github/workflows/asciiverse-release.yml.
+[upstream]
+name = "Brent Yorgey and contributors"
+url = "https://swarm-game.github.io/"
+
+[exec]
+game = "swarm"
+
+# at 80x24 the world view is eight rows tall; 100x30 or more is comfortable
+[min_terminal]
+cols = 80
+rows = 24
+
+# box drawing, arrows and a few symbols (λ, ₿, ▪); 24-bit colour
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = true
+
+# Linux builds link glibc (2.34 or newer), gmp, zlib and ncurses' tinfo
+# dynamically, as upstream's own release binaries do; v0.8.0.0-1's macOS
+# builds need macOS 14 (Apple silicon) or 15 (Intel)
+system_deps = ["libgmp10", "libtinfo6", "zlib1g"]
+
+# 100x30, three challenges solved by their built-in solutions
+# (asciiverse/montage.sh); 26 s is the wave robot mid-pattern
+[media]
+cast = "asciiverse/swarm.cast"
+thumbnail_at = 26.0
+
+[release]
+source = "github"

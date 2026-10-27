@@ -1,0 +1,44 @@
+schema_version = 1
+id = "ascii-fluid"
+kind = "art"
+title = "ASCII Fluid"
+description = "Water poured, dropped and splashed in ASCII: Yusuke Endoh's fluid simulator from the IOCCC, running its scenes one after another"
+license = "CC-BY-SA-4.0"
+repo = "theasciiverse/ioccc-art"
+collection = "ioccc"
+provenance = "Yusuke Endoh wrote this smoothed-particle fluid simulator for the International Obfuscated C Code Contest in 2012, where it won \"Most complex ASCII fluid\" (2012/endoh1)."
+changes = "PATCHES.md"
+topics = ["fluid", "simulation", "physics", "ioccc", "obfuscated", "screensaver"]
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "Yusuke Endoh, IOCCC 2012"
+url = "https://www.ioccc.org/2012/endoh1/index.html"
+
+# the 18 scenes in turn, the author's 256-colour version; any key quits
+[exec]
+game = "ascii-fluid"
+
+# the entry's picture is 79x25, centred; a smaller window shows its middle
+# columns and bottom lines (resized down to 2x2 under ASan)
+[min_terminal]
+cols = 79
+rows = 25
+
+# plain ASCII on 256-colour backgrounds (density); -m is black and white
+[requires]
+utf8 = false
+color = "256"
+mouse = false
+
+# 100x30, `ascii-fluid -t 12 endoh1 pour-out tanada clock` for 49 s
+# (asciiverse/record-preview.sh fluid); 20 s is the tea poured out
+[media]
+cast = "asciiverse/ascii-fluid.cast"
+thumbnail_at = 20.0
+
+[release]
+source = "github"

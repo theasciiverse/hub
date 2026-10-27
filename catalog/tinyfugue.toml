@@ -1,0 +1,42 @@
+schema_version = 1
+id = "tinyfugue"
+kind = "program"
+title = "TinyFugue"
+description = "The classic programmable MUD client: triggers, macros, hooks and several worlds at once"
+license = "GPL-2.0-or-later"
+repo = "theasciiverse/tinyfugue"
+provenance = "TinyFugue is Ken Keys' MUD client; 5.0 beta 8 (2007) was its last release."
+changes = "PATCHES.md"            # what Asciiverse changed, a path in repo
+topics = ["mud-client", "mud", "classic", "scripting"]
+genre = "mud client"
+
+[developer]
+name = "Ken Keys"
+url = "https://tinyfugue.sourceforge.net/"
+
+# 5.0 beta 8 (2007, the last release) with Debian's patches, built by
+# Asciiverse (PATCHES.md in theasciiverse/tinyfugue)
+[upstream]
+name = "Ken Keys, with Debian's patches"
+url = "https://tinyfugue.sourceforge.net/"
+
+# the start script sets TFLIBDIR to the bundled tf-lib, then runs tf
+[exec]
+game = "tinyfugue"
+args = []
+
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = false
+color = "256"
+mouse = false
+
+[media]
+cast = "asciiverse/tinyfugue.cast"
+thumbnail_at = 1.8
+
+[release]
+source = "github"

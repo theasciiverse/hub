@@ -1,0 +1,42 @@
+schema_version = 1
+id = "tintin"
+kind = "program"
+title = "TinTin++"
+description = "The classic console MUD client, with a scripting language, PCRE triggers, and a mapper"
+license = "GPL-3.0-or-later"
+repo = "theasciiverse/tintin"
+provenance = "TinTin++ grew from Peter Unold's TinTin III (1992); Bill Reis and then Igor van den Hoven continued it, and Igor maintains it today."
+changes = "PATCHES.md"            # what Asciiverse changed, a path in repo
+topics = ["mud-client", "mud", "scripting"]
+genre = "mud client"
+
+[developer]
+name = "Igor van den Hoven"
+url = "https://tintin.mudhalla.net"
+
+# built statically by Asciiverse from upstream's 2.02.61 tag, no code changes
+# (PATCHES.md in theasciiverse/tintin)
+[upstream]
+name = "Peter Unold, Bill Reis and Igor van den Hoven"
+url = "https://github.com/scandum/tintin"
+
+# connect from inside: #session <name> <host> <port>
+[exec]
+game = "tt++"
+args = []
+
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = true
+color = "256"
+mouse = false
+
+[media]
+cast = "asciiverse/tintin.cast"
+thumbnail_at = 6.0
+
+[release]
+source = "github"

@@ -1,0 +1,40 @@
+schema_version = 1
+id = "neon-rain"
+kind = "art"
+title = "Neon Rain"
+description = "A rainy city street at night seen from above: buzzing neon signs mirrored on the wet road, cars with headlight beams, people under umbrellas and the odd flash of lightning"
+license = "MIT"
+repo = "theasciiverse/neon-rain"
+provenance = "Asciiverse made Neon Rain in Rust in 2026, after a GIF of Terminal Rain, a cyberpunk roguelike shown on the TIGSource forums from 2015 that was never released."
+topics = ["rain", "city", "neon", "cyberpunk", "night", "screensaver", "colour"]
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# a new street every start; any key quits; `neon-rain -s N` repeats one
+[exec]
+game = "neon-rain"
+args = []
+
+# the street is laid out to fit the window and rebuilt on resize; it runs
+# down to 1x1, but under about 40x14 the road crowds out the buildings
+[min_terminal]
+cols = 40
+rows = 14
+
+# block shading, half blocks, smileys and dots; RGB colour, 256 colours
+# when the terminal does not report truecolor; keyboard only
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = false
+
+# 100x30, `neon-rain -s 4` for 25 s (asciiverse/record-preview.sh), capped
+# at 20 fps; lightning at about 7 s
+[media]
+cast = "asciiverse/neon-rain.cast"
+thumbnail_at = 18.0
+
+[release]
+source = "github"

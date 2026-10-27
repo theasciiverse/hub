@@ -1,0 +1,49 @@
+schema_version = 1
+id = "fortress-earth"
+kind = "game"
+title = "Fortress Earth"
+description = "The sky opens over a great city, then another, then another. Ten armies, twelve cities, one world slowly turning red. Your move, Commander."
+license = "MIT"
+repo = "theasciiverse/fortress-earth"
+provenance = "Filip Hracek wrote Fortress Earth in Dart between 2019 and 2025 as a keyboard-only strategy tech demo for the browser: armies that spread over a map of the Earth like a cellular automaton."
+changes = "PATCHES.md"
+topics = ["strategy", "real-time", "world map", "aliens", "keyboard", "dart"]
+genre = "strategy"
+
+[developer]
+name = "Filip Hracek"
+url = "https://github.com/filiph/fortress-earth"
+
+# his simulation, our campaign, help and terminal build; PATCHES.md in
+# theasciiverse/fortress-earth
+[upstream]
+name = "Filip Hracek"
+url = "https://github.com/filiph/fortress-earth"
+
+# --demo lets the computer fight the war
+[exec]
+game = "fortress-earth"
+args = []
+
+# the whole world on one screen: a 186x43 map with panels below; below it
+# the game waits behind a message
+[min_terminal]
+cols = 186
+rows = 55
+
+# box drawing and shade blocks; RGB map colours; keyboard only
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = false
+
+# 100x30, the game's own --preview view (the reports panel and a window of
+# the map that cuts to the latest landing) with the --demo commander, seed
+# 1 (asciiverse/record-preview.sh): landings near Paris, Beijing and
+# Kinshasa; at 47 s the fight around Beijing is at its height
+[media]
+cast = "asciiverse/fortress-earth.cast"
+thumbnail_at = 47.0
+
+[release]
+source = "github"

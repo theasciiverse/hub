@@ -1,0 +1,44 @@
+schema_version = 1
+id = "nbsd-sos"
+kind = "game"
+title = "SOS"
+description = "Write S or O on the board and score for every S-O-S line you complete, against the computer or a friend"
+license = "CC0-1.0 OR Apache-2.0"
+repo = "theasciiverse/nbsdgames"
+collection = "nbsdgames"
+provenance = "abakh wrote SOS for New BSD Games, a collection of small curses games in C."
+changes = "PATCHES.md"
+topics = ["board", "sos", "vs-computer", "hot-seat", "mouse", "curses"]
+genre = "board"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "abakh and contributors"
+url = "https://github.com/abakh/nbsdgames"
+
+[exec]
+game = "sos"
+
+# the 5x6 board, the score, the start-up questions and the end-of-game line
+[min_terminal]
+cols = 41
+rows = 11
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = true
+
+# 100x30, a human on blue against the computer, the human side played by
+# asciiverse/record/nbsd-sos.py, which scores when it can and otherwise
+# leaves nothing to score; two games, the second against a stronger
+# computer; 40 s is late in the second game
+[media]
+cast = "asciiverse/casts/nbsd-sos.cast"
+thumbnail_at = 40.0
+
+[release]
+source = "github"

@@ -1,0 +1,54 @@
+schema_version = 1
+id = "chess-tui"
+kind = "game"
+title = "chess-tui"
+description = "Chess in the terminal: against Stockfish at five strengths, a friend on the same keyboard or over the network, or anyone on Lichess"
+license = "MIT"
+repo = "theasciiverse/chess-tui"
+provenance = "chess-tui is Thomas Mauran's terminal chess game in Rust and Ratatui, from 2023 and still maintained with many contributors."
+changes = "PATCHES.md"
+topics = ["chess", "board game", "strategy", "two-player", "stockfish", "lichess", "rust"]
+genre = "board"
+
+[developer]
+name = "Thomas Mauran"
+url = "https://github.com/thomas-mauran/chess-tui"
+
+# packaged by Asciiverse with Stockfish 11 (GPL-3.0-or-later, its licence
+# and source in every archive and release); PATCHES.md in
+# theasciiverse/chess-tui
+[upstream]
+name = "Thomas Mauran"
+url = "https://github.com/thomas-mauran/chess-tui"
+
+# the archive holds chess-tui and stockfish side by side; chess-tui finds
+# the engine itself. Settings, skins and saved games go to the config
+# folder (~/.config/chess-tui, %APPDATA%\chess-tui)
+[exec]
+game = "chess-tui"
+args = []
+
+# 80x24 draws the board with Unicode chess symbols; from about 100x30 the
+# pieces are drawn large in block characters
+[min_terminal]
+cols = 80
+rows = 24
+
+# chess symbols and block characters; RGB board colours; the mouse is
+# optional (click a piece, then a square). Sound on macOS and Windows only.
+# The network only for Lichess and network games
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = false
+
+# 100x30, Play Bot as White against the shipped Stockfish, White's moves
+# typed through the move box by asciiverse/drive.py (best of six takes):
+# twelve moves with three captures (cxd4, Nxe5, dxe5); the still is the
+# board after 12. Rc1 Kh8, History and captured pieces shown, at 50 s
+[media]
+cast = "asciiverse/chess-tui.cast"
+thumbnail_at = 50.0
+
+[release]
+source = "github"

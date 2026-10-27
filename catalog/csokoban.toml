@@ -1,0 +1,49 @@
+schema_version = 1
+id = "csokoban"
+kind = "game"
+title = "csokoban"
+description = "Sokoban with 1,043 levels by David W. Skinner, from the gentle Microban sets to the very hard Sasquatch ones, with undo and saved solutions"
+license = "GPL-2.0-or-later"
+repo = "theasciiverse/cgames"
+collection = "cgames"
+provenance = "Brian Raiter wrote csokoban in C for the Linux console and curses (2000, last updated 2020)."
+changes = "PATCHES.md"
+topics = ["puzzle", "sokoban", "logic", "warehouse", "curses"]
+genre = "puzzle"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# built from Brian Raiter's release tarballs (1.0 to 2.2b, in the repo's
+# history) with the changes in PATCHES.md; levels by David W. Skinner,
+# credited in LEVELS.txt
+[upstream]
+name = "Brian Raiter"
+url = "https://www.muppetlabs.com/~breadbox/software/cgames.html"
+
+# levels in series/ beside the program; solutions and saved positions in
+# the data folder (~/.local/share/csokoban, %APPDATA%\csokoban)
+[exec]
+game = "csokoban"
+
+# the Microban sets fit 80x24; some later levels are bigger (up to 49 by
+# 44 squares, 98 columns and 44 rows), and the game asks for room
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, Microban from level 1, each level solved by
+# asciiverse/record/csokoban.py (a breadth-first search) and walked in;
+# the still is level 6
+[media]
+cast = "asciiverse/csokoban.cast"
+thumbnail_at = 44.0
+
+[release]
+source = "github"

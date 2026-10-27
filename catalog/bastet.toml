@@ -1,0 +1,47 @@
+schema_version = 1
+id = "bastet"
+kind = "game"
+title = "Bastet"
+description = "Falling blocks with a mean streak: instead of picking the next block at random, Bastet works out which one would hurt you most and sends that"
+license = "GPL-3.0-or-later"
+repo = "theasciiverse/bastet"
+provenance = "Federico Poloni wrote Bastet in C++ and ncurses; it reached Slashdot in 2005, and he rewrote it for 0.43 in 2009."
+changes = "PATCHES.md"
+topics = ["arcade", "falling-blocks", "classic", "curses"]
+genre = "arcade"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "Federico Poloni"
+url = "https://github.com/fph/bastet"
+
+[exec]
+game = "bastet"
+
+# the 10x20 well and the next-block and score boxes beside it, centred;
+# measured in tmux: at 38x22 or 39x21 bastet refuses to start ("the game
+# needs at least 39x22")
+[min_terminal]
+cols = 39
+rows = 22
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, a normal game played by asciiverse/record-preview.py, which
+# reads the well from the screen and places each block by a classic
+# height, holes and bumpiness score; Bastet holds it to three lines in
+# 45 s, then the rest drops straight down, "player" goes into the high
+# score table and it quits from the menu; the still is three lines in,
+# a ragged stack and an S coming next
+[media]
+cast = "asciiverse/bastet.cast"
+thumbnail_at = 39.5
+
+[release]
+source = "github"

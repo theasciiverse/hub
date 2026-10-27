@@ -1,0 +1,44 @@
+schema_version = 1
+id = "counterfeit-monkey"
+kind = "adventure"
+title = "Counterfeit Monkey"
+description = "A spy fused from two people slips through an island of wordplay, changing things by changing their names"
+license = "CC-BY-SA-4.0"
+repo = "theasciiverse/stories"
+provenance = "Emily Short's Counterfeit Monkey (2012) won Best Game and four more categories at the 2012 XYZZY Awards; its community now maintains it in an open-source repository."
+changes = "counterfeit-monkey/README.md"            # what Asciiverse changed, a path in repo
+topics = ["text-adventure", "wordplay", "puzzle", "espionage"]
+genre = "text adventure"
+
+[developer]
+name = "Emily Short"
+url = "https://github.com/i7/counterfeit-monkey"
+
+# Emily Short's 2012 game, Best Game and four more wins at the 2012 XYZZY Awards; release 11.1 (2023) from the maintained open-source repository.
+# The story file is unchanged (provenance and sha256 in the stories repo,
+# counterfeit-monkey/README.md); played with Glulxe 0.6.1 with GlkTerm, which comes inside the archive.
+[upstream]
+name = "Emily Short, 2012"
+url = "https://github.com/i7/counterfeit-monkey"
+
+# the start script plays the story in the bundled Glulxe; saves go to
+# ~/.local/share/counterfeit-monkey
+[exec]
+game = "counterfeit-monkey"
+args = []
+
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+[media]
+cast = "asciiverse/counterfeit-monkey.cast"
+thumbnail_at = 15.0
+
+[release]
+source = "github"

@@ -1,0 +1,44 @@
+schema_version = 1
+id = "battlestar"
+kind = "game"
+title = "Battlestar"
+description = "A tropical adventure in the classic style: escape a doomed starship, then explore an island of natives, wizards and a goddess"
+license = "BSD-3-Clause"
+repo = "theasciiverse/bsdgames"
+collection = "bsdgames"
+provenance = "David Riggle wrote Battlestar in 1979, and it became one of BSD's games; Mike Sharov modernised it in his bsd-games from 2016 to 2020."
+changes = "PATCHES.md"
+topics = ["adventure", "interactive fiction", "parser", "exploration", "classic"]
+genre = "text adventure"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "David Riggle (1979), Mike Sharov"
+url = "https://sourceforge.net/projects/bsd-games"
+
+[exec]
+game = "battlestar"
+
+# the adventure is plain scrolling text up to 75 columns wide; the space
+# fight opens a fixed 80x24 curses window (battlestar/fly.c)
+[min_terminal]
+cols = 80
+rows = 24
+
+# no colors set in the source, keyboard only
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, asciiverse/record/battlestar.py walks from the stateroom to the
+# starfighter, launches and shoots down a Drenian; 22 s is the dogfight
+[media]
+cast = "asciiverse/casts/battlestar.cast"
+thumbnail_at = 22.0
+
+[release]
+source = "github"

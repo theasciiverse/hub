@@ -1,0 +1,44 @@
+schema_version = 1
+id = "wump"
+kind = "game"
+title = "Hunt the Wumpus"
+description = "Track the Wumpus through a cave of twenty rooms by smell, dodging bottomless pits and giant bats, and shoot it with a crooked arrow"
+license = "BSD-3-Clause"
+repo = "theasciiverse/bsdgames"
+collection = "bsdgames"
+provenance = "Hunt the Wumpus was first presented in People's Computer Company in 1973; Dave Taylor of Intuitive Systems wrote this version for BSD Unix in 1989."
+changes = "PATCHES.md"
+topics = ["adventure", "deduction", "cave", "classic", "text"]
+genre = "adventure"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "Dave Taylor, Intuitive Systems (1989), after Hunt the Wumpus (1973)"
+url = "https://sourceforge.net/projects/bsd-games"
+
+[exec]
+game = "wump"
+
+# a typed game that scrolls; measured in tmux, its widest line (in the
+# instructions) is 74 columns
+[min_terminal]
+cols = 75
+rows = 24
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, played by asciiverse/record/wump.py, which maps the cave and
+# moves only into rooms it has worked out are safe; 30 s is bats, a draft
+# and the Wumpus's smell on screen together
+[media]
+cast = "asciiverse/casts/wump.cast"
+thumbnail_at = 30.0
+
+[release]
+source = "github"

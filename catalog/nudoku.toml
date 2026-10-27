@@ -1,0 +1,43 @@
+schema_version = 1
+id = "nudoku"
+kind = "game"
+title = "nudoku"
+description = "Classic 9x9 sudoku in ncurses, with three difficulty levels, hints, number highlighting, undo and a saved game"
+license = "GPL-3.0-or-later"
+repo = "theasciiverse/nudoku"
+provenance = "Michael Vetter (jubalh) has written nudoku in C and ncurses since 2014, with contributors adding translations."
+changes = "PATCHES.md"
+topics = ["puzzle", "sudoku", "logic", "numbers", "curses"]
+genre = "puzzle"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "Michael Vetter and contributors"
+url = "https://github.com/jubalh/nudoku"
+
+[exec]
+game = "nudoku"
+
+# the board and the help beside it, centred; measured: below 75x24 the
+# game asks for a bigger terminal and waits
+[min_terminal]
+cols = 75
+rows = 24
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, two easy puzzles solved by asciiverse/record-preview.py, which
+# reads the givens, solves them and types the answers with the marks on,
+# checking each with c; the still is the first puzzle half filled in
+[media]
+cast = "asciiverse/nudoku.cast"
+thumbnail_at = 12.0
+
+[release]
+source = "github"

@@ -1,0 +1,45 @@
+schema_version = 1
+id = "braincurses"
+kind = "game"
+title = "BrainCurses"
+description = "Crack a hidden code of four colours in ten guesses, led only by red and white markers: a classic code-breaking game"
+license = "GPL-2.0-only"
+repo = "theasciiverse/braincurses"
+provenance = "Brian Derr wrote braincurses in 2002 and rewrote it in C++ on ncurses in 2015 and 2016."
+changes = "PATCHES.md"
+topics = ["puzzle", "logic", "code-breaking", "colours", "curses"]
+genre = "puzzle"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "Brian Derr"
+url = "https://github.com/bderrly/braincurses"
+
+# four colours to find in ten guesses; -c 5 or -c 6 and -g 1 to 15 from
+# a terminal
+[exec]
+game = "braincurses"
+
+# the board is 60x23; smaller terminals are asked to grow
+[min_terminal]
+cols = 60
+rows = 23
+
+# box lines through curses (any locale); the six colours are the basic 8
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, three games won by asciiverse/record-preview.py, a code breaker
+# that reads the markers and always guesses a code that fits every answer;
+# at 10 s the first game is solved in five guesses
+[media]
+cast = "asciiverse/braincurses.cast"
+thumbnail_at = 10.0
+
+[release]
+source = "github"

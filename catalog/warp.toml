@@ -1,0 +1,45 @@
+schema_version = 1
+id = "warp"
+kind = "game"
+title = "Warp"
+description = "Larry Wall's real-time space war: fly an Enterprise and a Base at once through a wraparound universe where blasts spread and enemies never wait"
+license = "BSD-2-Clause"
+repo = "theasciiverse/netbsd-games"
+collection = "bsdgames"
+provenance = "Larry Wall wrote Warp from 1983 (version 7.0 is from 1986), before he wrote Perl; NetBSD added it to its games in 2020."
+changes = "PATCHES.md"
+topics = ["space", "real-time", "shooter", "classic", "arcade"]
+genre = "arcade"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "Larry Wall (1983)"
+url = "https://cvsweb.netbsd.org/bsdweb.cgi/src/games/warp/"
+
+[exec]
+game = "warp"
+
+# the universe and status line fill 80x24; measured in tmux: at 79
+# columns or 23 rows warp refuses to start
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, played by asciiverse/record/warp.py: the Enterprise fires
+# torpedoes and phasers along any line where an enemy sits, clears the first
+# wave and fights on to wave 3 before quitting (best of four takes); the
+# still is a torpedo volley inside a space amoeba, at 7 s
+[media]
+cast = "asciiverse/casts/warp.cast"
+thumbnail_at = 7.0
+
+[release]
+source = "github"

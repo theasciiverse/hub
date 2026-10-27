@@ -1,0 +1,54 @@
+schema_version = 1
+id = "sil-q"
+kind = "game"
+title = "Sil-Q"
+description = "Steal a Silmaril from Morgoth's iron crown and escape alive, in the Tolkien roguelike of the First Age that grew out of Angband"
+# GPL version 2 or the non-commercial "Angband licence", at the user's
+# choice (LICENSE.md); taken under the GPL, which LICENSE.md names as
+# "version 2" with no "or any later version". The sounds ("freeware,
+# whatever that means") are not in the archive.
+license = "GPL-2.0-only"
+repo = "theasciiverse/sil-q"
+provenance = "half and Scatha made Sil, a Tolkien roguelike grown from NPPAngband and Angband, from 2012 to 2016; Quirk continued it as Sil-Q from 2017 to version 1.5.0 (2022), and Michael G. Noll carries it on today."
+changes = "PATCHES.md"
+topics = ["roguelike", "dungeon", "fantasy", "tolkien", "turn-based", "curses"]
+genre = "roguelike"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# upstream master 07fdf77 (2026-10-16); half and Scatha are the names
+# Sil-Q's own build and manual give for Sil's authors
+[upstream]
+name = "Michael G. Noll and Quirk (Sil-Q), after Sil by half and Scatha"
+url = "https://github.com/sil-quirk/sil-q"
+
+[exec]
+game = "sil"
+
+# measured in a pty: at 79x24 or 80x23 main-gcu.c quits with "Angband
+# needs at least an 80x24 'curses' screen"; bigger terminals show more of
+# the map, and a resized terminal is followed
+[min_terminal]
+cols = 80
+rows = 24
+
+# plain ASCII; main-gcu.c needs 8 colours and uses 256 when the terminal
+# has them; no mouse
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, a dwarf of Nogrod called Morwen played by
+# asciiverse/record/sil-q.py: character creation, then exploring the first
+# level at 50 ft, fighting a Mewlip in a corridor and Tanglethorns in a
+# side room, ending with save and quit (best of seven takes); 53 s; the
+# still is the Tanglethorn fight with three rooms mapped, at 36 s
+[media]
+cast = "asciiverse/casts/sil-q.cast"
+thumbnail_at = 36.0
+
+[release]
+source = "github"

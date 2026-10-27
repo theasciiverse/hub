@@ -1,0 +1,52 @@
+schema_version = 1
+id = "angband"
+kind = "game"
+title = "Angband"
+description = "Go down a hundred levels of dungeon beneath Angband and defeat Morgoth, Lord of Darkness, in the classic Tolkien roguelike"
+# GPL-2 or the non-commercial "Angband licence", at the user's choice
+# (docs/copying.rst); taken under the GPL, which says "version 2" only
+license = "GPL-2.0-only"
+repo = "theasciiverse/angband"
+provenance = "Alex Cutler and Andy Astrand wrote Angband at the University of Warwick in 1990 from the code of Umoria, and a line of maintainers, now the Angband Dev Team, has kept it going since."
+changes = "PATCHES.md"
+topics = ["roguelike", "dungeon", "fantasy", "classic", "turn-based"]
+genre = "roguelike"
+
+[developer]
+name = "The Angband Dev Team"
+url = "https://angband.github.io/angband/"
+
+# Angband 4.2.6, maintainer Nick McConnell; PATCHES.md in
+# theasciiverse/angband
+[upstream]
+name = "Angband Dev Team, after Alex Cutler and Andy Astrand (1990)"
+url = "https://github.com/angband/angband"
+
+[exec]
+game = "angband"
+args = []
+
+# main-gcu.c quits with "Angband needs at least an 80x24 'curses' screen";
+# bigger terminals show more of the map
+[min_terminal]
+cols = 80
+rows = 24
+
+# main.c quits unless the locale is UTF-8; main-gcu.c needs 8 colours and
+# uses 256 when the terminal has them; the mouse is optional (click to
+# travel), the keyboard plays everything
+[requires]
+utf8 = true
+color = "basic"
+mouse = false
+
+# 100x30, a Warrior called Ada played by asciiverse/record-preview.py: the
+# General Store, then down from the town and exploring the first level,
+# fighting what she meets (best of five takes); the still is a corridor
+# opening onto a lit room, at 50 s
+[media]
+cast = "asciiverse/angband.cast"
+thumbnail_at = 50.0
+
+[release]
+source = "github"

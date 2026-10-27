@@ -1,0 +1,47 @@
+schema_version = 1
+id = "cmines"
+kind = "game"
+title = "cmines"
+description = "Minesweeper as it should be: Beginner, Intermediate and Expert fields, a timer and best times, flags and chording, keys or mouse"
+license = "GPL-2.0-or-later"
+repo = "theasciiverse/cgames"
+collection = "cgames"
+provenance = "Brian Raiter wrote cmines in C for the Linux console and curses (2000, last updated 2020)."
+changes = "PATCHES.md"
+topics = ["puzzle", "minesweeper", "logic", "mouse", "curses"]
+genre = "puzzle"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# built from Brian Raiter's release tarballs (1.0 to 2.2b, in the repo's
+# history) with the changes in PATCHES.md
+[upstream]
+name = "Brian Raiter"
+url = "https://www.muppetlabs.com/~breadbox/software/cgames.html"
+
+# setups and best times in cminesrc in the data folder
+# (~/.local/share/cmines, %APPDATA%\cmines)
+[exec]
+game = "cmines"
+
+# Expert (16x30) takes 76 columns and 18 rows
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = true
+
+# 100x30, "cmines Intermediate" played by asciiverse/record/cmines.py, a
+# careful player that reads the field; the take ends on a won game (46 s,
+# its best time); the still is that won field
+[media]
+cast = "asciiverse/cmines.cast"
+thumbnail_at = 48.9
+
+[release]
+source = "github"

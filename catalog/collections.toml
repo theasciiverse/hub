@@ -1,0 +1,33 @@
+# Collections: upstream projects that hold several games. Each game is its
+# own title in the catalog and names its collection with `collection = "<key>"`
+# (SCHEMA.md, "Collections").
+
+[nbsdgames]
+name = "New BSD Games"
+url = "https://github.com/abakh/nbsdgames"
+description = "Twenty-two small curses games by abakh and contributors since 2018, in the public domain (CC0) and also under Apache-2.0"
+
+[bsdgames]
+name = "BSD Games"
+url = "https://sourceforge.net/projects/bsd-games"
+description = "The classic text-mode games that shipped with BSD Unix, from Hunt the Wumpus (1973) on: most in Mike Sharov's modernised Linux port, and the ones it dropped (hack, rogue, larn, warp, hunt, canfield, cgram, and the screen pieces rain and worms) from NetBSD's own tree"
+
+[rogue-restoration]
+name = "Roguelike Restoration Project"
+url = "https://rogueforge.github.io/"
+description = "Nicholas J. Kisseberth's restorations of early Rogue and its Bell Labs descendants: Rogue 3.6 and 5.2, Super-Rogue, Advanced Rogue, UltraRogue and XRogue"
+
+[ioccc]
+name = "International Obfuscated C Code Contest"
+url = "https://www.ioccc.org/"
+description = "Winning entries of the IOCCC, since 1984: tiny, deliberately unreadable C programs that do surprising things; content copyright Landon Curt Noll under CC BY-SA 4.0"
+
+[cgames]
+name = "cgames"
+url = "https://www.muppetlabs.com/~breadbox/software/cgames.html"
+description = "Brian Raiter's three games for the terminal (2000 to 2020): cmines, csokoban and cblocks, minesweeper, sokoban and sliding-block puzzles, under the GPL"
+
+[ancient-games]
+name = "Ancient Games"
+url = "https://github.com/theasciiverse/ancient-games"
+description = "The oldest board games of the world, made for the terminal by Asciiverse: the Royal Game of Ur, Senet, Mehen, Hnefatafl, Fox and Geese, the mancala games, the morris games, Mū tōrere and Kōnane, each with every honest reconstruction of its rules"

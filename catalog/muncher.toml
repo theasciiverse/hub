@@ -1,0 +1,45 @@
+schema_version = 1
+id = "muncher"
+kind = "game"
+title = "Muncher"
+description = "Steer the muncher to the food and keep clear of the traps that pile up as your score grows"
+license = "CC0-1.0 OR Apache-2.0"
+repo = "theasciiverse/nbsdgames"
+collection = "nbsdgames"
+provenance = "abakh wrote Muncher for New BSD Games, a collection of small curses games in C."
+changes = "PATCHES.md"
+topics = ["arcade", "action", "food", "curses"]
+genre = "arcade"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "abakh and contributors"
+url = "https://github.com/abakh/nbsdgames"
+
+[exec]
+game = "muncher"
+
+# the board fits the terminal, from 40x10 up to 80x24 (MINWID to MAXWID,
+# MINLEN to MAXLEN in src/muncher.c), with the score above it and a line
+# of messages below
+[min_terminal]
+cols = 42
+rows = 16
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30 (an 80x23 board), played by asciiverse/record/muncher.py, which
+# reads the board and takes the shortest way to the food around the traps;
+# 40 s is a board scattered with traps at almost 2000 points
+[media]
+cast = "asciiverse/casts/muncher.cast"
+thumbnail_at = 40.0
+
+[release]
+source = "github"

@@ -1,0 +1,57 @@
+schema_version = 1
+id = "ascii-patrol"
+kind = "game"
+title = "ASCII Patrol"
+description = "Roll a moon buggy through alien country, hopping craters, blasting rocks and shooting saucers out of the sky, in a love letter to Moon Patrol"
+# LICENSE is the GPL version 3 text and nothing says "or later";
+# see PATCHES.md
+license = "GPL-3.0-only"
+repo = "theasciiverse/ascii-patrol"
+provenance = "Marcin Sokalski (Gumix) wrote ASCII Patrol in C++ from 2017, after Moon Patrol, his favourite arcade game as a child; 1.7 came out in 2019."
+changes = "PATCHES.md"
+topics = ["arcade", "driving", "shooter", "jumping", "aliens", "story", "ascii art", "c++"]
+genre = "arcade"
+
+[developer]
+name = "Marcin Sokalski"
+url = "https://github.com/msokalski/ascii-patrol"
+
+# built from github.com/msokalski/ascii-patrol at bd3bd7c (2022-05-02,
+# twelve commits after 1.7) by .github/workflows/release.yml, with the
+# changes in PATCHES.md
+[upstream]
+name = "Marcin Sokalski"
+url = "https://github.com/msokalski/ascii-patrol"
+
+# options, the last game's record and screen shots (Tab) go to
+# $XDG_DATA_HOME/ascii-patrol (~/.local/share/ascii-patrol); %APPDATA%
+# on Windows. Any argument makes it check a recorded game instead of
+# playing, so it takes none
+[exec]
+game = "asciipat"
+
+# the screen grows with the terminal from 80x25 to 160x50 and is
+# centred beyond that; smaller terminals see it clipped
+[min_terminal]
+cols = 80
+rows = 25
+
+# plain ASCII; the 16 base colours, sent as 256-colour escapes; keyboard
+# only. Key releases come from the kitty keyboard protocol (kitty,
+# Ghostty, foot, Alacritty), the Linux console or X11; other terminals
+# play with sticky keys
+[requires]
+utf8 = false
+color = "256"
+mouse = false
+
+# 100x30, the intro, then Mission One from @ to D-E without losing a
+# car, played by asciiverse/record-preview.py (fires all the time, jumps
+# by the game's own crash rule, brakes under bombs); the still is the
+# laser bursting a flying ball over the buggy, at 36 s
+[media]
+cast = "asciiverse/ascii-patrol.cast"
+thumbnail_at = 36.0
+
+[release]
+source = "github"

@@ -1,0 +1,42 @@
+schema_version = 1
+id = "durthang"
+kind = "program"
+title = "Durthang"
+description = "Terminal MUD client in Rust and Ratatui, with passwords kept in the system keyring"
+license = "GPL-3.0-only"
+repo = "theasciiverse/durthang"
+provenance = "Durthang is Raimo Geisel's MUD client in Rust."
+changes = "PATCHES.md"            # what Asciiverse changed, a path in repo
+topics = ["mud-client", "mud", "rust"]
+genre = "mud client"
+
+[developer]
+name = "Raimo Geisel"
+url = "https://github.com/Pommersche92/durthang"
+
+# packaged by Asciiverse with one fix (keyring stores on macOS and Windows),
+# see PATCHES.md in theasciiverse/durthang
+[upstream]
+name = "Raimo Geisel"
+url = "https://github.com/Pommersche92/durthang"
+
+# no host or port on the command line: worlds are picked inside Durthang
+[exec]
+game = "durthang"
+args = []
+
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = true
+color = "256"
+mouse = false
+
+[media]
+cast = "asciiverse/durthang.cast"
+thumbnail_at = 9.0
+
+[release]
+source = "github"

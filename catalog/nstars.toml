@@ -1,0 +1,45 @@
+schema_version = 1
+id = "nstars"
+kind = "art"
+title = "nstars"
+description = "Fly through a starfield: stars stream out from the centre and brighten as they rush past"
+license = "GPL-3.0-or-later"
+repo = "theasciiverse/nstars"
+provenance = "nstars is the ncurses version of Philip J Freeman's stars, in C, from 2016 to 2020."
+changes = "PATCHES.md"
+topics = ["screensaver", "starfield", "space", "classic", "curses", "calm"]
+
+[developer]
+name = "Philip J Freeman"
+url = "https://github.com/ph1l/stars"
+
+[upstream]
+name = "Philip J Freeman"
+url = "https://github.com/ph1l/stars"
+
+# stars shaded in the 24 greys of the 256-colour palette; with the command
+# line empty any key but / quits, Ctrl+C and Esc always do
+[exec]
+game = "nstars"
+args = ["-c", "256"]
+
+# the status line wants about 70 columns; the sky follows any size (ASan
+# clean resized down to 1x1)
+[min_terminal]
+cols = 70
+rows = 12
+
+# plain ASCII; 256 colours for the shading; keyboard only
+[requires]
+utf8 = false
+color = "256"
+mouse = false
+
+# 100x30, `nstars -c 256` for 20 s (asciiverse/record-preview.sh), capped
+# at 30 fps by asciiverse/cast-cap-fps.py
+[media]
+cast = "asciiverse/nstars.cast"
+thumbnail_at = 8.0
+
+[release]
+source = "github"

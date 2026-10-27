@@ -1,0 +1,42 @@
+schema_version = 1
+id = "terminal-parrot"
+kind = "art"
+title = "terminal-parrot"
+description = "The party parrot, dancing in your terminal in every colour, forever"
+license = "MIT"
+repo = "theasciiverse/terminal-parrot"
+provenance = "terminal-parrot is by John Hobbs and contributors, in Go, since 2016."
+changes = "PATCHES.md"
+topics = ["party parrot", "meme", "animation", "fun", "slack"]
+
+[developer]
+name = "John Hobbs and contributors"
+url = "https://github.com/jmhobbs/terminal-parrot"
+
+[upstream]
+name = "John Hobbs and contributors"
+url = "https://github.com/jmhobbs/terminal-parrot"
+
+# no arguments: the party parrot at 75 ms a frame; any key quits
+[exec]
+game = "terminal-parrot"
+args = []
+
+# the parrot is 48 columns by 18 lines, centred on the bottom row
+[min_terminal]
+cols = 48
+rows = 18
+
+# ASCII in the 256-colour palette, a new colour every frame; keyboard only
+[requires]
+utf8 = false
+color = "256"
+mouse = false
+
+# 100x30, `terminal-parrot` for 12 s (asciiverse/record-preview.sh)
+[media]
+cast = "asciiverse/terminal-parrot.cast"
+thumbnail_at = 3.0
+
+[release]
+source = "github"

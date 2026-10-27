@@ -1,0 +1,45 @@
+schema_version = 1
+id = "wolfpack-empire"
+kind = "game"
+title = "Wolfpack Empire"
+description = "The Internet's long-running multiplayer wargame: build a nation sector by sector against other players on a live server"
+license = "GPL-3.0-or-later"
+repo = "theasciiverse/wolfpack-empire"
+provenance = "Empire is Peter Langston's game; this line of the code comes from Dave Pare (UCSD, 1986) through Chainsaw and Empire 3 to Wolfpack, who have kept it going as Empire 4 since 1996."
+topics = ["wargame", "strategy", "multiplayer", "online", "classic"]
+genre = "strategy"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# Empire after Peter Langston's game; this code line from Dave Pare (UCSD,
+# 1986), Chainsaw, Empire 3 and Wolfpack (Empire 4, since 1996). This
+# edition is the 4.4.1 client only, built by
+# .github/workflows/asciiverse-release.yml with the Wolfpack Fever game
+# (blitz.wolfpackempire.com:4567) as its default server.
+[upstream]
+name = "Wolfpack"
+url = "http://www.wolfpackempire.com/"
+
+[exec]
+game = "empire"
+
+# a line-by-line client: commands and reports scroll like a shell
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, a first session as a new country, recorded against a private test
+# server (asciiverse/drive.sh); 31 s is the map after the first explorations
+[media]
+cast = "asciiverse/wolfpack-empire.cast"
+thumbnail_at = 31.0
+
+[release]
+source = "github"

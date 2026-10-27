@@ -1,0 +1,45 @@
+schema_version = 1
+id = "galaxis"
+kind = "game"
+title = "Galaxis"
+description = "Find four lifeboats adrift in a starfield with probes that tell how many they can see, in as few tries as you can"
+license = "BSD-2-Clause"
+repo = "theasciiverse/galaxis"
+provenance = "Eric S. Raymond began Galaxis in 1994 as a curses clone of Christian Franz's Macintosh freeware game, and still maintains it."
+changes = "PATCHES.md"
+topics = ["puzzle", "deduction", "logic", "space", "classic", "curses"]
+genre = "puzzle"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# built from gitlab.com/esr/galaxis (1.13) with the changes in PATCHES.md
+[upstream]
+name = "Eric S. Raymond"
+url = "https://gitlab.com/esr/galaxis"
+
+# keeps no files
+[exec]
+game = "galaxis"
+
+# an 80x24 screen, centred on bigger terminals
+[min_terminal]
+cols = 80
+rows = 24
+
+# plain ASCII in the basic colours; the mouse is optional (click marks,
+# double-click probes)
+[requires]
+utf8 = false
+color = "basic"
+mouse = true
+
+# 100x30, a game played by asciiverse/drive.py, which reasons from the
+# probes' counts: all four lifeboats in 19 tries; the still is the end
+[media]
+cast = "asciiverse/galaxis.cast"
+thumbnail_at = 39.8
+
+[release]
+source = "github"

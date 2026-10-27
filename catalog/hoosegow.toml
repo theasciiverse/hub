@@ -1,0 +1,44 @@
+schema_version = 1
+id = "hoosegow"
+kind = "adventure"
+title = "Hoosegow"
+description = "Thrown in a frontier jail with Muddy Charlie, plan a jailbreak"
+license = "CC-BY-NC-SA-3.0"
+repo = "theasciiverse/stories"
+provenance = "Ben Collins-Sussman and Jack Welch's comic Western Hoosegow (2010) won the Casual Gameplay Design Competition #7."
+changes = "hoosegow/README.md"            # what Asciiverse changed, a path in repo
+topics = ["text-adventure", "western", "humour", "escape"]
+genre = "text adventure"
+
+[developer]
+name = "Ben Collins-Sussman and Jack Welch"
+url = "https://github.com/sussman/hoosegow"
+
+# Ben Collins-Sussman and Jack Welch's 2010 comic Western, first place in the Casual Gameplay Design Competition #7.
+# The story file is unchanged (provenance and sha256 in the stories repo,
+# hoosegow/README.md); played with Frotz 2.55, which comes inside the archive.
+[upstream]
+name = "Ben Collins-Sussman and Jack Welch, 2010"
+url = "https://github.com/sussman/hoosegow"
+
+# the start script plays the story in the bundled Frotz; saves go to
+# ~/.local/share/hoosegow
+[exec]
+game = "hoosegow"
+args = []
+
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+[media]
+cast = "asciiverse/hoosegow.cast"
+thumbnail_at = 18.6
+
+[release]
+source = "github"

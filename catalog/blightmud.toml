@@ -1,0 +1,42 @@
+schema_version = 1
+id = "blightmud"
+kind = "program"
+title = "Blightmud"
+description = "Terminal MUD client in Rust with Lua scripting and screen-reader support"
+license = "GPL-3.0-only"
+repo = "theasciiverse/blightmud"
+provenance = "Blightmud is Linus Probert's MUD client in Rust, developed with its contributors on GitHub."
+changes = "PATCHES.md"            # what Asciiverse changed, a path in repo
+topics = ["mud-client", "mud", "lua", "rust"]
+genre = "mud client"
+
+[developer]
+name = "Linus Probert"
+url = "https://github.com/Blightmud/Blightmud"
+
+# built by Asciiverse from upstream's v5.7.1 tag, no code changes
+# (PATCHES.md in theasciiverse/blightmud)
+[upstream]
+name = "Linus Probert and contributors"
+url = "https://github.com/Blightmud/Blightmud"
+
+# connect from the command line too: blightmud --connect host:port
+[exec]
+game = "blightmud"
+args = []
+
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = true
+color = "256"
+mouse = false
+
+[media]
+cast = "asciiverse/blightmud.cast"
+thumbnail_at = 1.5
+
+[release]
+source = "github"

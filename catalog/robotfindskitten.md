@@ -1,0 +1,41 @@
+You are robot. Your job is to find kitten. This task is complicated by
+the existence of various things which are not kitten, scattered across
+the screen, and every one of them looks like a random character, just
+as kitten does. Robot must touch each thing to find out what it is:
+perhaps a stack of 7 inch floppies wobbling precariously, perhaps some
+coconut crabs milling about. There are 726 of them to meet. The game
+ends when robotfindskitten.
+
+There is no score, no timer and no way to lose. It is a zen simulation.
+
+## Controls
+
+- **Arrow keys**, **hjkl** or the number pad: move robot; **yubn** (or
+  **Home**, **PgUp**, **End**, **PgDn**) move diagonally
+- **Ctrl-L**: redraw the screen
+- **q** or **Ctrl-C**: give up
+
+## Options
+
+Started from a shell in its folder: `-n NUM` puts NUM things on the
+screen (20 by default), `-s SEED` sets the layout, and `-f FILE` reads
+the things from another list. Your own `.nki` files in
+`~/.robotfindskitten` join the 726.
+
+## History
+
+In 1997 Peter A. Peterson II held a contest in his magazine Nerth Pork
+for the best piece of art entitled "robotfindskitten". Leonard
+Richardson submitted the winning (read: only) entry. This is the
+canonical C version for terminals: Alexey Toptygin's 2004 to 2005 code,
+merged by Eric S. Raymond in 2012 when he recovered the project's
+history, and maintained since by Ryan Finnie, who moved it to Codeberg
+in 2026. The game is upstream's, unchanged.
+
+## Credits
+
+- Game: Leonard Richardson and contributors
+- C version: Alexey Toptygin, Eric S. Raymond, Ryan Finnie and contributors
+- Windows console support: [PDCurses](https://pdcurses.org)
+- Asciiverse edition: Asciiverse
+- License: GPL-2.0-or-later

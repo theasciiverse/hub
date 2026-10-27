@@ -1,0 +1,44 @@
+schema_version = 1
+id = "snake"
+kind = "game"
+title = "Snake"
+description = "Grab the money and reach the exit before the snake eats you: the 1980 BSD chase game, where the snake gets hungrier as you get richer"
+license = "BSD-3-Clause"
+repo = "theasciiverse/bsdgames"
+collection = "bsdgames"
+provenance = "Snake is a 1980 chase game from UC Berkeley that shipped with BSD Unix. Mike Sharov gave it a new chase algorithm and a longer, deadlier snake in 2016 for his bsd-games."
+changes = "PATCHES.md"
+topics = ["arcade", "action", "chase", "classic", "curses"]
+genre = "arcade"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "UC Berkeley (1980)"
+url = "https://sourceforge.net/projects/bsd-games"
+
+[exec]
+game = "snake"
+
+# measured in tmux: the field fills the terminal and is still playable at
+# 20x10; scores weigh the field size, so bigger is fairer
+[min_terminal]
+cols = 20
+rows = 10
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, played by asciiverse/record/snake.py, which reads the field and
+# walks the safest way to the money, then out by the exit; 15 s is the
+# snake chasing with money on the board
+[media]
+cast = "asciiverse/casts/snake.cast"
+thumbnail_at = 15.0
+
+[release]
+source = "github"

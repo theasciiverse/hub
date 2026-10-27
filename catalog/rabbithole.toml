@@ -1,0 +1,44 @@
+schema_version = 1
+id = "rabbithole"
+kind = "game"
+title = "Rabbithole"
+description = "A rabbit in a hidden maze: find every carrot before the time runs out"
+license = "CC0-1.0 OR Apache-2.0"
+repo = "theasciiverse/nbsdgames"
+collection = "nbsdgames"
+provenance = "abakh wrote Rabbithole for New BSD Games, a collection of small curses games in C."
+changes = "PATCHES.md"
+topics = ["maze", "timed", "exploration", "curses"]
+genre = "arcade"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "abakh and contributors"
+url = "https://github.com/abakh/nbsdgames"
+
+[exec]
+game = "rabbithole"
+
+# the maze is sized to the terminal, at least 20x5 cells: 41 columns, the
+# three header rows, the maze's 11 and one row for the closing question
+[min_terminal]
+cols = 41
+rows = 16
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, a 47x11 maze with 10 carrots, played by
+# asciiverse/record/rabbithole.py, which explores toward the nearest
+# carrot; 20 s is a half-walked maze with carrots still out
+[media]
+cast = "asciiverse/casts/rabbithole.cast"
+thumbnail_at = 20.0
+
+[release]
+source = "github"

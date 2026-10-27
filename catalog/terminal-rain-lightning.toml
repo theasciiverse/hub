@@ -1,0 +1,44 @@
+schema_version = 1
+id = "terminal-rain-lightning"
+kind = "art"
+title = "Terminal Rain"
+description = "Rain falls down the terminal, and in a thunderstorm forked lightning cracks across it, with the sound of rain and thunder if you like"
+license = "MIT"
+repo = "theasciiverse/terminal-rain-lightning"
+provenance = "Terminal Rain is by rmaake1, in Python on curses, from 2025 to 2026, with slow motion by plasma and rain and thunder sounds contributed from Pixabay."
+changes = "PATCHES.md"
+topics = ["rain", "lightning", "thunderstorm", "weather", "screensaver", "sound"]
+
+[developer]
+name = "rmaake1 and contributors"
+url = "https://github.com/rmaake1/terminal-rain-lightning"
+
+[upstream]
+name = "rmaake1 and contributors"
+url = "https://github.com/rmaake1/terminal-rain-lightning"
+
+# the thunderstorm; t turns it calm, s changes speed, m sound (needs
+# ffplay), q or Esc quits
+[exec]
+game = "terminal-rain"
+args = ["-t"]
+
+# rain fills any window; lightning needs four rows; resized down to 1x1
+[min_terminal]
+cols = 20
+rows = 8
+
+# plain ASCII in the 8 basic colours with bold and dim; keyboard only
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, `terminal-rain -t` for 25 s (asciiverse/record-preview.sh),
+# capped at 30 fps; 9.8 s is a full bolt
+[media]
+cast = "asciiverse/terminal-rain-lightning.cast"
+thumbnail_at = 9.8
+
+[release]
+source = "github"

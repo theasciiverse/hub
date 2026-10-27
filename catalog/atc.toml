@@ -1,0 +1,46 @@
+schema_version = 1
+id = "atc"
+kind = "game"
+title = "ATC"
+description = "Air traffic control at the terminal: steer jets and prop planes by typed commands, and never let two of them touch"
+license = "BSD-3-Clause"
+repo = "theasciiverse/bsdgames"
+collection = "bsdgames"
+provenance = "Ed James wrote ATC in 1986 and 1987 and contributed it to UC Berkeley, where it became one of BSD's games; Mike Sharov later modernised it in his bsd-games."
+changes = "PATCHES.md"
+topics = ["air traffic control", "simulation", "real-time", "classic", "curses"]
+genre = "strategy"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "Ed James (1987), Mike Sharov"
+url = "https://sourceforge.net/projects/bsd-games"
+
+# the scenario name is an optional argument (atc -l lists them); av starts
+# the default one
+[exec]
+game = "atc"
+
+# radar plus plane list are 79x24 in every scenario but Easy (49x18),
+# measured in tmux; at 80x23 the radar is not drawn
+[min_terminal]
+cols = 79
+rows = 24
+
+# curses, the 8 basic colors, keyboard only (no mousemask in the source)
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, the Default arena flown by asciiverse/record/atc.py, which routes
+# each plane to its exit or runway; 30 s has a plane already home
+[media]
+cast = "asciiverse/casts/atc.cast"
+thumbnail_at = 30.0
+
+[release]
+source = "github"

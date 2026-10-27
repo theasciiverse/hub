@@ -1,0 +1,103 @@
+name: Submit a title
+description: Your own terminal game or program, without writing a manifest. We turn it into one.
+title: "Submit: "
+labels: ["submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for bringing your title home. Fill in what you can; we write
+        the manifest and page from it and ask here if anything is missing.
+        Developers who know git can open a pull request instead, see
+        CONTRIBUTING.md.
+  - type: input
+    id: name
+    attributes:
+      label: Title
+      placeholder: "Solitty"
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What is it?
+      options:
+        - Game
+        - Text adventure
+        - Program or utility
+        - Art or demo
+        - Movie or animation
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: about
+    attributes:
+      label: About it
+      description: What it is and how it plays, in a few sentences. This becomes the start of its store page.
+    validations:
+      required: true
+  - type: input
+    id: by
+    attributes:
+      label: Made by
+      description: You, your team, and the original author if it is a port or a package of someone else's work.
+    validations:
+      required: true
+  - type: input
+    id: home
+    attributes:
+      label: Source or home page
+      description: Where the project lives, if it has a public home.
+      placeholder: "https://github.com/..."
+  - type: textarea
+    id: downloads
+    attributes:
+      label: Downloads
+      description: |
+        Where its builds can be downloaded: a GitHub release, or any public
+        HTTPS link. It must run from the archive, without an installer or
+        admin rights.
+    validations:
+      required: true
+  - type: checkboxes
+    id: platforms
+    attributes:
+      label: Platforms with a build
+      options:
+        - label: Linux x86_64
+        - label: Linux ARM (aarch64)
+        - label: macOS Apple silicon
+        - label: macOS Intel
+        - label: Windows x86_64
+  - type: input
+    id: license
+    attributes:
+      label: Licence
+      description: An SPDX id such as MIT or GPL-3.0-or-later, or "Proprietary" for closed source.
+    validations:
+      required: true
+  - type: textarea
+    id: needs
+    attributes:
+      label: What it needs
+      description: |
+        Smallest terminal size it plays at, colours, mouse, special glyphs
+        (braille, half blocks), libraries it needs on the system, and whether
+        it uses the network and for what.
+  - type: textarea
+    id: recording
+    attributes:
+      label: Recording
+      description: |
+        A link to a 100x30 asciinema recording (.cast), see RECORDING.md.
+        If you can't make one, say so and we will record it.
+  - type: checkboxes
+    id: rights
+    attributes:
+      label: Rights
+      options:
+        - label: It is mine to distribute, or its licence allows it.
+          required: true
+        - label: It has no sexual content.
+          required: true

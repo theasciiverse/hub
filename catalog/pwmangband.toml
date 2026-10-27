@@ -1,0 +1,53 @@
+schema_version = 1
+id = "pwmangband"
+kind = "game"
+title = "PWMAngband"
+description = "Multiplayer Angband: go down a hundred levels to face Morgoth, alone on your own server or with others on someone else's"
+# docs/copying.rst: GNU GPL version 2 (no "or later") or the non-commercial
+# Angband licence, at the user's choice; Asciiverse distributes it under the GPL
+license = "GPL-2.0-only"
+repo = "theasciiverse/pwmangband"
+provenance = "PWMAngband is a multiplayer Angband, based on Angband 4.2 and MAngband 1.5 and maintained by the MAngband and PWMAngband developers on GitHub."
+changes = "PATCHES.md"
+topics = ["roguelike", "dungeon", "fantasy", "multiplayer", "client-server"]
+genre = "roguelike"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "MAngband and PWMAngband developers (draconisPW and others)"
+url = "https://github.com/draconisPW/PWMAngband"
+
+# pwmangband-play: with no arguments a private game on this machine (a
+# local server and the client, the server stopped when the client quits);
+# with <host> [port] just the client, joining a server elsewhere; --list
+# shows the mangband.org metaserver's list
+[exec]
+game = "pwmangband-play"
+args = []
+
+# src/client/main-gcu.c: "Angband needs at least an 80x24 'curses' screen"
+# (MIN_TERM0_COLS/LINES = NORMAL_WID/HGT, 80 and 24); a bigger terminal
+# gets side panels for inventory and equipment
+[min_terminal]
+cols = 80
+rows = 24
+
+# 16 colours, redefined on terminals that allow it and shaded with 256
+# colours where there are 256 (main-gcu.c); no setlocale, no mouse
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, Ada the Elf Ranger (made before the recording) logs in to a
+# private game and walks the town into its shops, played by
+# asciiverse/record-preview.py; the still is the Black Market
+[media]
+cast = "asciiverse/pwmangband.cast"
+thumbnail_at = 23.0
+
+[release]
+source = "github"

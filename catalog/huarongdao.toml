@@ -1,0 +1,43 @@
+schema_version = 1
+id = "huarongdao"
+kind = "game"
+title = "HuaRongDao"
+description = "The Chinese sliding-block puzzle: slide the pieces around the box until the big square escapes through the gap at the bottom"
+license = "GPL-2.0-or-later"
+repo = "theasciiverse/huarongdao"
+provenance = "Qingning Huo wrote hrd, a curses HuaRongDao in C++, in 2004 and packaged it for Debian."
+changes = "PATCHES.md"
+topics = ["puzzle", "sliding blocks", "classic", "chinese", "curses"]
+genre = "puzzle"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "Qingning Huo"
+url = "https://sourceforge.net/projects/hrd/"
+
+[exec]
+game = "hrd"
+
+# the 14x17 box, centred, and the status line under it, whose messages
+# run to about 30 characters
+[min_terminal]
+cols = 40
+rows = 18
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, the classic layout solved in 116 one-cell moves found by a
+# breadth-first search in asciiverse/record-preview.py, to "Solved! Well
+# done!"; the still is midway, the big square on its way down
+[media]
+cast = "asciiverse/huarongdao.cast"
+thumbnail_at = 25.0
+
+[release]
+source = "github"

@@ -1,0 +1,47 @@
+schema_version = 1
+id = "cbirds"
+kind = "art"
+title = "cbirds"
+description = "A flock of birds wheels across the terminal in braille: Reynolds' boids, with sliders, hawks and a mouse that scatters them"
+license = "MIT"
+repo = "theasciiverse/cbirds"
+provenance = "cbirds is by Alessandro Palliccia (clainstone), in C99 with nothing but the C library, from 2025."
+changes = "PATCHES.md"
+topics = ["screensaver", "boids", "flocking", "birds", "braille", "simulation", "interactive"]
+
+[developer]
+name = "Alessandro Palliccia"
+url = "https://github.com/clainstone/cbirds"
+
+[upstream]
+name = "Alessandro Palliccia"
+url = "https://github.com/clainstone/cbirds"
+
+# no arguments: braille in the terminal's own colours; q sends the flock off
+# the top and quits, h opens the sliders, the mouse scatters the flock
+[exec]
+game = "cbirds"
+args = []
+
+# it follows a resize and never crashed down to 20x6 (tried at 100x30,
+# 60x20, 40x12, 20x6 and 120x40); 60x20 leaves the flock room to flock
+[min_terminal]
+cols = 60
+rows = 20
+
+# braille in 24-bit colour; the pointer scatters the flock (motion tracking),
+# keys do everything else; sprites (--render kitty) need Kitty or Ghostty
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = true
+glyphs = ["braille"]
+
+# 100x30, `cbirds --seed 1` for 20 s (asciiverse/record-preview.sh); it
+# opens by writing BOIDS and lets go
+[media]
+cast = "asciiverse/cbirds.cast"
+thumbnail_at = 10.0
+
+[release]
+source = "github"

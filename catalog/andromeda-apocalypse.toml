@@ -1,0 +1,44 @@
+schema_version = 1
+id = "andromeda-apocalypse"
+kind = "adventure"
+title = "Andromeda Apocalypse"
+description = "The last survivor of a dead world drifts through space on a strange vessel"
+license = "CC-BY-NC-SA-3.0"
+repo = "theasciiverse/stories"
+provenance = "Marco Innocenti's Andromeda Apocalypse won the 2012 Interactive Fiction Competition."
+changes = "andromeda-apocalypse/README.md"            # what Asciiverse changed, a path in repo
+topics = ["text-adventure", "science-fiction", "exploration", "space"]
+genre = "text adventure"
+
+[developer]
+name = "Marco Innocenti"
+url = "https://ifarchive.org/if-archive/games/glulx/AndromedaApocalypse-Extended.gblorb"
+
+# Winner of the 2012 Interactive Fiction Competition; this is the Extended Edition, release 2.
+# The story file is unchanged (provenance and sha256 in the stories repo,
+# andromeda-apocalypse/README.md); played with Glulxe 0.6.1 with GlkTerm, which comes inside the archive.
+[upstream]
+name = "Marco Innocenti, 2012"
+url = "https://ifarchive.org/if-archive/games/glulx/AndromedaApocalypse-Extended.gblorb"
+
+# the start script plays the story in the bundled Glulxe; saves go to
+# ~/.local/share/andromeda-apocalypse
+[exec]
+game = "andromeda-apocalypse"
+args = []
+
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+[media]
+cast = "asciiverse/andromeda-apocalypse.cast"
+thumbnail_at = 16.5
+
+[release]
+source = "github"

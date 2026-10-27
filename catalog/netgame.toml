@@ -1,0 +1,46 @@
+schema_version = 1
+id = "netgame"
+kind = "game"
+title = "Net"
+description = "Turn the tiles until every pipe joins the network at the centre: the classic net (netwalk) rotation puzzle"
+license = "MIT"
+repo = "theasciiverse/netgame"
+provenance = "Ben Falconer wrote Netgame in 2010, the net puzzle in a single C++ file that draws with ANSI escape codes."
+changes = "PATCHES.md"
+topics = ["puzzle", "logic", "netwalk", "casual", "relaxing"]
+genre = "puzzle"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "Ben Falconer"
+url = "https://github.com/zed0/Netgame"
+
+# an 11x11 board; from a terminal, `netgame 15 20` picks another size
+# (2 to 99) and --wrapping lets pipes run off one edge onto the other
+[exec]
+game = "netgame"
+
+# the 11x11 board is 22 columns by 11 rows, with its count and a line of
+# keys below (the keys line is 77 columns, cut on narrower terminals); a
+# terminal too small for the board says so and redraws once it fits
+[min_terminal]
+cols = 80
+rows = 24
+
+# box drawing (UTF-8) and the 8 basic colours; keyboard only
+[requires]
+utf8 = true
+color = "basic"
+mouse = false
+
+# 100x30, 30 s from a fixed key script (asciiverse/record-preview.sh):
+# three rows of tiles turned, a tile locked, a new puzzle with n
+[media]
+cast = "asciiverse/netgame.cast"
+thumbnail_at = 12.0
+
+[release]
+source = "github"

@@ -1,0 +1,44 @@
+schema_version = 1
+id = "tristam-island"
+kind = "adventure"
+title = "Tristam Island"
+description = "Stranded on a small Atlantic island, explore it and find out why it is empty"
+license = "CC0-1.0"
+repo = "theasciiverse/stories"
+provenance = "Hugo Labrande wrote Tristam Island in 2020, in the style of a 1980s Infocom adventure and for the same Z-machine version 3."
+changes = "tristam-island/README.md"            # what Asciiverse changed, a path in repo
+topics = ["text-adventure", "island", "mystery", "retro"]
+genre = "text adventure"
+
+[developer]
+name = "Hugo Labrande"
+url = "https://hlabrande.itch.io/tristam-island"
+
+# A new game written in 2020 in the style of a 1980s Infocom adventure, for the Z-machine version 3 that those ran on.
+# The story file is unchanged (provenance and sha256 in the stories repo,
+# tristam-island/README.md); played with Frotz 2.55, which comes inside the archive.
+[upstream]
+name = "Hugo Labrande, 2020"
+url = "https://hlabrande.itch.io/tristam-island"
+
+# the start script plays the story in the bundled Frotz; saves go to
+# ~/.local/share/tristam-island
+[exec]
+game = "tristam-island"
+args = []
+
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+[media]
+cast = "asciiverse/tristam-island.cast"
+thumbnail_at = 14.3
+
+[release]
+source = "github"

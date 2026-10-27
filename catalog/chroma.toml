@@ -1,0 +1,45 @@
+schema_version = 1
+id = "chroma"
+kind = "game"
+title = "Chroma"
+description = "An abstract puzzle game: steer two pieces through traps of falling arrows and bombs to collect every star, with unlimited undo"
+license = "GPL-2.0-or-later"
+repo = "theasciiverse/chroma"
+provenance = "Amf wrote Chroma in C (2010 to 2025), with a graphical version and this terminal one, chroma-curses."
+changes = "PATCHES.md"
+topics = ["puzzle", "logic", "sokoban-like", "undo", "level editor", "curses"]
+genre = "puzzle"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "Amf"
+url = "http://www.level7.org.uk/chroma/"
+
+[exec]
+game = "chroma-curses"
+
+# measured: the levels (32x23) scroll with the player on smaller
+# terminals, and the menus are tidy from 60x20 (at 56 columns two menu
+# texts run together)
+[min_terminal]
+cols = 60
+rows = 20
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, the title and level menus, then the first beginners' level
+# played with moves from asciiverse/solve.c, a greedy player on the
+# game's own engine (15 of the 71 stars, both player pieces used); the
+# still is mid-level, with stars taken and arrows fallen
+[media]
+cast = "asciiverse/chroma.cast"
+thumbnail_at = 35.0
+
+[release]
+source = "github"

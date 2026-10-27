@@ -1,0 +1,45 @@
+schema_version = 1
+id = "pipes"
+kind = "game"
+title = "Pipes"
+description = "Lay pipes from the queue ahead of the sewage, which starts flowing when the countdown ends"
+license = "CC0-1.0 OR Apache-2.0"
+repo = "theasciiverse/nbsdgames"
+collection = "nbsdgames"
+provenance = "abakh wrote Pipes for New BSD Games, a collection of small curses games in C."
+changes = "PATCHES.md"
+topics = ["puzzle", "pipes", "timed", "mouse", "curses"]
+genre = "puzzle"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "abakh and contributors"
+url = "https://github.com/abakh/nbsdgames"
+
+[exec]
+game = "pipes"
+
+# the 20x14 board is fixed: 30 columns with the queue to its left (the
+# record screen is the widest), 16 rows and two for the end-of-game
+# question, which wraps at this width
+[min_terminal]
+cols = 30
+rows = 18
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = true
+
+# 100x30, pipes played by asciiverse/record/pipes.py, which lays each pipe
+# from the queue at the end of the pipeline when it fits, starts the flow
+# with g and finishes with fast flow; 35 s is the sewage racing through
+[media]
+cast = "asciiverse/casts/pipes.cast"
+thumbnail_at = 35.0
+
+[release]
+source = "github"

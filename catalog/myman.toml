@@ -1,0 +1,46 @@
+schema_version = 1
+id = "myman"
+kind = "game"
+title = "MyMan"
+description = "Pac-Man-like maze chase in curses: eat every dot, dodge four ghosts, turn the tables with a power pellet"
+license = "MIT"
+repo = "theasciiverse/myman"
+provenance = "Benjamin C. Wiley Sittler wrote MyMan from 1998 to 2017."
+changes = "PATCHES.md"
+topics = ["arcade", "maze", "classic", "curses"]
+genre = "arcade"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "Benjamin C. Wiley Sittler"
+url = "https://myman.sourceforge.io"
+
+[exec]
+game = "myman"
+
+# the maze scrolls to follow MyMan on any size; at 60x20 the whole width
+# and the status line fit (smaller still plays, scrolling sideways too)
+[min_terminal]
+cols = 60
+rows = 20
+
+# box-drawing walls through the terminal's line graphics, the 8 basic
+# colors, keyboard only
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, the first maze played by asciiverse/record/myman.py, a bot that
+# goes for the nearest dot clear of the ghosts; 44 s, 1730 points and one
+# life lost; the still has MyMan by the frightened ghosts just after
+# eating one
+[media]
+cast = "asciiverse/casts/myman.cast"
+thumbnail_at = 17.0
+
+[release]
+source = "github"

@@ -1,0 +1,46 @@
+schema_version = 1
+id = "curse-of-war"
+kind = "game"
+title = "Curse of War"
+description = "Real-time strategy on a hex map where you never move a unit: plant flags, build cities and let your people march"
+license = "GPL-3.0-or-later"
+repo = "theasciiverse/curse-of-war"
+provenance = "Alexey Nikolaev wrote Curse of War in C on ncurses in 2013."
+topics = ["rts", "strategy", "hex", "multiplayer", "ncurses"]
+genre = "strategy"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# Alexey Nikolaev wrote Curse of War in C on ncurses (2013); this edition is
+# upstream's v1.3.0 plus its 2021 memory-leak fix, with VERSION corrected to
+# 1.3.0, built by .github/workflows/release.yml.
+[upstream]
+name = "Alexey Nikolaev"
+url = "https://a-nikolaev.github.io/curseofwar/"
+
+[exec]
+game = "curseofwar"
+
+# the default 21x21 map with the status panel below it; -W and -H make
+# smaller maps for smaller terminals
+[min_terminal]
+cols = 88
+rows = 30
+
+# plain ASCII in the 8 basic colors, keyboard only
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, curseofwar -R 11 -i 2 -q 1 played through tmux; 38 s shows the
+# flag lines on two fronts, a new fortress beside the capital and the
+# first battles (x marks)
+[media]
+cast = "asciiverse/curse-of-war.cast"
+thumbnail_at = 38.0
+
+[release]
+source = "github"

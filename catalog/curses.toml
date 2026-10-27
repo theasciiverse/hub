@@ -1,0 +1,44 @@
+schema_version = 1
+id = "curses"
+kind = "adventure"
+title = "Curses"
+description = "Hunting for a map in the family attic leads into myth, history and a house full of puzzles"
+license = "LicenseRef-Free-Noncommercial"
+repo = "theasciiverse/stories"
+provenance = "Graham Nelson's Curses (1993) is a landmark of the years after Infocom."
+changes = "curses/README.md"            # what Asciiverse changed, a path in repo
+topics = ["text-adventure", "classic", "puzzle", "humour"]
+genre = "text adventure"
+
+[developer]
+name = "Graham Nelson"
+url = "https://ifarchive.org/if-archive/games/zcode/curses.z5"
+
+# Graham Nelson's 1993 game, a landmark of the post-Infocom era.
+# The story file is unchanged (provenance and sha256 in the stories repo,
+# curses/README.md); played with Frotz 2.55, which comes inside the archive.
+[upstream]
+name = "Graham Nelson, 1993"
+url = "https://ifarchive.org/if-archive/games/zcode/curses.z5"
+
+# the start script plays the story in the bundled Frotz; saves go to
+# ~/.local/share/curses
+[exec]
+game = "curses"
+args = []
+
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+[media]
+cast = "asciiverse/curses.cast"
+thumbnail_at = 15.7
+
+[release]
+source = "github"

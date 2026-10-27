@@ -1,0 +1,43 @@
+schema_version = 1
+id = "checkers"
+kind = "game"
+title = "Checkers"
+description = "Checkers against the computer or a friend, with forced jumps, chains of jumps and kings"
+license = "CC0-1.0 OR Apache-2.0"
+repo = "theasciiverse/nbsdgames"
+collection = "nbsdgames"
+provenance = "abakh wrote Checkers for New BSD Games, a collection of small curses games in C started in 2018."
+changes = "PATCHES.md"
+topics = ["board", "checkers", "draughts", "vs-computer", "hot-seat", "mouse", "curses"]
+genre = "board"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "abakh and contributors"
+url = "https://github.com/abakh/nbsdgames"
+
+[exec]
+game = "checkers"
+
+# the board, the score, the start-up questions and the end-of-game line
+[min_terminal]
+cols = 36
+rows = 14
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = true
+
+# 100x30, a human on black against the computer, the human side played by
+# asciiverse/record/checkers.py (longest jump first, then safe moves);
+# 20 s is mid-game with a king on the board
+[media]
+cast = "asciiverse/casts/checkers.cast"
+thumbnail_at = 20.0
+
+[release]
+source = "github"

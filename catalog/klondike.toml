@@ -1,0 +1,43 @@
+schema_version = 1
+id = "klondike"
+kind = "game"
+title = "Klondike"
+description = "Solitaire in a box: build the four suit piles from Ace to King, played entirely from the keyboard"
+license = "BSD-3-Clause"
+repo = "theasciiverse/bsdgames"
+collection = "bsdgames"
+provenance = "Mike Sharov wrote this Klondike in 2016 for his bsd-games, the modern Linux port of the BSD games, to replace canfield."
+changes = "PATCHES.md"
+topics = ["card", "solitaire", "klondike", "patience", "curses"]
+genre = "card"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "Mike Sharov (2016)"
+url = "https://sourceforge.net/projects/bsd-games"
+
+[exec]
+game = "klondike"
+
+# the table window is 60x22 and fixed; measured in tmux: at 59 columns
+# the right edge is cut off, at 21 rows the table is not drawn
+[min_terminal]
+cols = 60
+rows = 22
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, a deal played by asciiverse/record/klondike.py using the game's own
+# move marks; 44 s has runs down the stacks and the final piles started
+[media]
+cast = "asciiverse/casts/klondike.cast"
+thumbnail_at = 44.0
+
+[release]
+source = "github"

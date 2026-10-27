@@ -1,0 +1,47 @@
+schema_version = 1
+id = "umoria"
+kind = "game"
+title = "Umoria"
+description = "The original Moria: go down through the mines below the town, deeper and deeper, to the Balrog, who waits from level 50 down"
+license = "GPL-3.0-or-later"
+repo = "theasciiverse/umoria"
+provenance = "Robert A. Koeneke wrote Moria at the University of Oklahoma from 1981 to 1986, James E. Wilson made it Umoria for Unix from 1987 to 1994, and Michael R. Cook restored it as Umoria 5.7."
+changes = "PATCHES.md"
+topics = ["roguelike", "dungeon", "rpg", "classic", "curses"]
+genre = "roguelike"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "Robert A. Koeneke, James E. Wilson, Michael R. Cook"
+url = "https://github.com/dungeons-of-moria/umoria"
+
+[exec]
+game = "umoria"
+
+# the screen is a fixed 80x24, centred; measured in a pty: at 79x24 or
+# 80x23 umoria refuses to start ("it needs 80x24")
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, a Half-Troll warrior called Ada played by
+# asciiverse/record/umoria.py: rolled, kitted out, across the town and
+# down; it explores towards unexplored ground, picks things up, opens
+# doors and fights what is next to it; 57 s on the first level, ending
+# with a save and the score table; the still is a large white snake just
+# slain, two rooms and their corridors mapped and another R (snakes and
+# lizards) beside Ada
+[media]
+cast = "asciiverse/casts/umoria.cast"
+thumbnail_at = 24.0
+
+[release]
+source = "github"

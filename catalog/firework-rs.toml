@@ -1,0 +1,45 @@
+schema_version = 1
+id = "firework-rs"
+kind = "art"
+title = "Fireworks"
+description = "An endless fireworks show in ASCII: rockets burst in showers of colour all over the window"
+license = "MIT"
+repo = "theasciiverse/firework-rs"
+provenance = "Fireworks is the demo of firework-rs, a Rust crate for ASCII-art fireworks by Wayoung7, from 2024."
+changes = "PATCHES.md"
+topics = ["fireworks", "particles", "celebration", "screensaver", "colour"]
+
+[developer]
+name = "Wayoung7"
+url = "https://github.com/Wayoung7/firework-rs"
+
+[upstream]
+name = "Wayoung7"
+url = "https://github.com/Wayoung7/firework-rs"
+
+# no -d: the endless random show (the five fixed demos play once and stop);
+# any key quits
+[exec]
+game = "firework"
+args = []
+
+# the show sizes itself to the window and follows a resize (tried at
+# 100x30, 40x12, 10x4 and 120x40)
+[min_terminal]
+cols = 40
+rows = 12
+
+# ASCII particles in 24-bit colour; keyboard only
+[requires]
+utf8 = false
+color = "truecolor"
+mouse = false
+
+# 100x30, `firework` for 25 s (asciiverse/record-preview.py), re-encoded at
+# 20 fps with only the changed cells (83 MB raw)
+[media]
+cast = "asciiverse/firework.cast"
+thumbnail_at = 12.0
+
+[release]
+source = "github"

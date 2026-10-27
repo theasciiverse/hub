@@ -1,0 +1,47 @@
+schema_version = 1
+id = "sshtron"
+kind = "game"
+title = "SSHTron"
+description = "Lightcycles over SSH: leave a wall of light behind you, cut across the others, and be the last trail still moving"
+license = "MIT"
+repo = "theasciiverse/sshtron"
+provenance = "Zach Latta and Max Wofford built SSHTron in about twenty hours at BrickHack 2 in March 2016, a Tron game anyone could join with nothing but ssh, and its public server is still running."
+changes = "PATCHES.md"
+topics = ["action", "multiplayer", "lan", "online", "lightcycles", "ssh", "go"]
+genre = "action"
+
+[developer]
+name = "Zach Latta and Max Wofford"
+url = "https://github.com/zachlatta/sshtron"
+
+# packaged by Asciiverse with the changes in PATCHES.md (theasciiverse/sshtron)
+[upstream]
+name = "Zach Latta and Max Wofford"
+url = "https://github.com/zachlatta/sshtron"
+
+# with no arguments the menu: a game here against computer players (open
+# to the local network on port 2022), the public server, or a friend's game
+[exec]
+game = "sshtron"
+args = []
+
+# the arena and its frame are 80x24, centred in anything bigger
+[min_terminal]
+cols = 80
+rows = 24
+
+# box drawing and arrows; the 8 colours and their bright versions;
+# keyboard only
+[requires]
+utf8 = true
+color = "basic"
+mouse = false
+
+# 100x30, sshtron -demo -bots 6 (asciiverse/record-preview.sh): all seven
+# colours in one arena; at 34 s it is full of trails
+[media]
+cast = "asciiverse/sshtron.cast"
+thumbnail_at = 34.0
+
+[release]
+source = "github"

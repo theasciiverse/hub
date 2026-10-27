@@ -1,0 +1,45 @@
+schema_version = 1
+id = "glulxe"
+kind = "program"
+title = "Glulxe"
+description = "The standard player for Glulx stories: most Inform 7 games, Counterfeit Monkey among them"
+license = "MIT"
+repo = "theasciiverse/glulxe"
+provenance = "Glulxe is Andrew Plotkin's player for Glulx, the virtual machine he designed in 1999 when Inform games outgrew the Z-machine."
+changes = "PATCHES.md"            # what Asciiverse changed, a path in repo
+topics = ["interpreter", "text-adventure", "glulx", "inform-7"]
+genre = "interpreter"
+
+[developer]
+name = "Andrew Plotkin"
+url = "https://github.com/erkyrath/glulxe"
+
+# glulxe 0.6.1 with GlkTerm (wide-character branch), four GlkTerm fixes
+# (PATCHES.md in theasciiverse/glulxe)
+[upstream]
+name = "Andrew Plotkin"
+url = "https://github.com/erkyrath/glulxe"
+
+# play a story: glulxe <story file>
+[exec]
+game = "glulxe"
+args = []
+
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = true
+color = "basic"
+mouse = false
+
+[media]
+cast = "asciiverse/glulxe.cast"
+thumbnail_at = 15.0
+
+# TODO: release v0.6.1-av.1 is tagged but not built yet (GitHub Actions
+# blocked by billing on theasciiverse); the archives and SHA256SUMS this
+# reads do not exist until the release workflow runs.
+[release]
+source = "github"

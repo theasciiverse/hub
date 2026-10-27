@@ -1,0 +1,43 @@
+schema_version = 1
+id = "typespeed"
+kind = "game"
+title = "Typespeed"
+description = "Type the words before they fly off the screen: Unix commands, code keywords or a dozen languages"
+license = "GPL-2.0-or-later"
+repo = "theasciiverse/typespeed"
+provenance = "Typespeed is by Jani Ollikainen and Jaakko Manelius, later maintained by Tobias Stoeckmann; 0.6.5 (2008) was its last release."
+changes = "PATCHES.md"            # what Asciiverse changed, a path in repo
+topics = ["typing", "arcade", "multiplayer", "classic"]
+genre = "typing"
+
+[developer]
+name = "Jani Ollikainen and Jaakko Manelius"
+url = "https://typespeed.sourceforge.net/"
+
+# 0.6.5, the last release, with Debian's patches and ours (scores without
+# setgid, relocatable data); PATCHES.md in theasciiverse/typespeed
+[upstream]
+name = "Jani Ollikainen, Jaakko Manelius and Tobias Stoeckmann"
+url = "https://typespeed.sourceforge.net/"
+
+# the start script points typespeed at its bundled words and rules
+[exec]
+game = "typespeed"
+args = []
+
+# "You need at least 80 x 24 terminal!" (src/typespeed.c)
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+[media]
+cast = "asciiverse/typespeed.cast"
+thumbnail_at = 33.0
+
+[release]
+source = "github"

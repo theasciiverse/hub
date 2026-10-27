@@ -1,0 +1,44 @@
+schema_version = 1
+id = "risorgimento-represso"
+kind = "adventure"
+title = "Risorgimento Represso"
+description = "Escape a dull lecture and stumble into a magical mess you have to clean up"
+license = "CC-BY-NC-ND-1.0"
+repo = "theasciiverse/stories"
+provenance = "Michael J. Coyne wrote Risorgimento Represso in 2003 and revised it in 2006 and 2017."
+changes = "risorgimento-represso/README.md"            # what Asciiverse changed, a path in repo
+topics = ["text-adventure", "fantasy", "humour", "puzzle"]
+genre = "text adventure"
+
+[developer]
+name = "Michael J. Coyne"
+url = "https://ifarchive.org/if-archive/games/zcode/risorg.zblorb"
+
+# Michael J. Coyne's 2003 game, revised in 2006 and 2017; a long, friendly puzzle adventure.
+# The story file is unchanged (provenance and sha256 in the stories repo,
+# risorgimento-represso/README.md); played with Frotz 2.55, which comes inside the archive.
+[upstream]
+name = "Michael J. Coyne, 2003"
+url = "https://ifarchive.org/if-archive/games/zcode/risorg.zblorb"
+
+# the start script plays the story in the bundled Frotz; saves go to
+# ~/.local/share/risorgimento-represso
+[exec]
+game = "risorgimento-represso"
+args = []
+
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+[media]
+cast = "asciiverse/risorgimento-represso.cast"
+thumbnail_at = 15.4
+
+[release]
+source = "github"

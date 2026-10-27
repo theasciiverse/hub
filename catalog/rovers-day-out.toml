@@ -1,0 +1,44 @@
+schema_version = 1
+id = "rovers-day-out"
+kind = "adventure"
+title = "Rover's Day Out"
+description = "A spaceship's computer dreams through a morning routine that is not what it seems"
+license = "CC-BY-NC-SA-3.0"
+repo = "theasciiverse/stories"
+provenance = "Jack Welch and Ben Collins-Sussman's Rover's Day Out won the 2009 Interactive Fiction Competition."
+changes = "rovers-day-out/README.md"            # what Asciiverse changed, a path in repo
+topics = ["text-adventure", "science-fiction", "humour", "puzzle"]
+genre = "text adventure"
+
+[developer]
+name = "Jack Welch and Ben Collins-Sussman"
+url = "https://github.com/sussman/rovers-day-out"
+
+# Winner of the 2009 Interactive Fiction Competition.
+# The story file is unchanged (provenance and sha256 in the stories repo,
+# rovers-day-out/README.md); played with Glulxe 0.6.1 with GlkTerm, which comes inside the archive.
+[upstream]
+name = "Jack Welch and Ben Collins-Sussman, 2009"
+url = "https://github.com/sussman/rovers-day-out"
+
+# the start script plays the story in the bundled Glulxe; saves go to
+# ~/.local/share/rovers-day-out
+[exec]
+game = "rovers-day-out"
+args = []
+
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+[media]
+cast = "asciiverse/rovers-day-out.cast"
+thumbnail_at = 17.1
+
+[release]
+source = "github"

@@ -1,0 +1,44 @@
+schema_version = 1
+id = "lost-pig"
+kind = "adventure"
+title = "Lost Pig"
+description = "Grunk the orc has lost the farm's pig and must find it in the dark woods and below"
+license = "CC-BY-NC-ND-3.0"
+repo = "theasciiverse/stories"
+provenance = "Admiral Jota's Lost Pig won the 2007 Interactive Fiction Competition and Best Game at the 2007 XYZZY Awards."
+changes = "lost-pig/README.md"            # what Asciiverse changed, a path in repo
+topics = ["text-adventure", "humour", "fantasy", "classic"]
+genre = "text adventure"
+
+[developer]
+name = "Admiral Jota"
+url = "http://grunk.org/lostpig/"
+
+# Winner of the 2007 Interactive Fiction Competition and Best Game at the 2007 XYZZY Awards.
+# The story file is unchanged (provenance and sha256 in the stories repo,
+# lost-pig/README.md); played with Frotz 2.55, which comes inside the archive.
+[upstream]
+name = "Admiral Jota, 2007"
+url = "http://grunk.org/lostpig/"
+
+# the start script plays the story in the bundled Frotz; saves go to
+# ~/.local/share/lost-pig
+[exec]
+game = "lost-pig"
+args = []
+
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+[media]
+cast = "asciiverse/lost-pig.cast"
+thumbnail_at = 13.8
+
+[release]
+source = "github"

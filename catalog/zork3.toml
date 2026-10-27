@@ -1,0 +1,43 @@
+schema_version = 1
+id = "zork3"
+kind = "adventure"
+title = "Zork III: The Dungeon Master"
+description = "The final descent: earn the title of Dungeon Master in the trilogy's last part"
+license = "MIT"
+repo = "theasciiverse/zork"
+provenance = "Infocom released Zork III in 1982; Marc Blank, Dave Lebling, Bruce Daniels and Tim Anderson wrote it."
+changes = "README.md"            # what Asciiverse changed, a path in repo
+topics = ["text-adventure", "infocom", "classic", "fantasy"]
+genre = "text adventure"
+
+[developer]
+name = "Infocom (Marc Blank, Dave Lebling, Bruce Daniels, Tim Anderson)"
+url = "https://github.com/historicalsource/zork3"
+
+# Infocom's 1982 release, unchanged; MIT-licensed by Microsoft on
+# 2025-11-20. Played with Frotz 2.55, which comes inside the archive.
+[upstream]
+name = "Infocom, 1982"
+url = "https://github.com/historicalsource/zork3"
+
+# the start script plays zork3.z3 in the bundled Frotz; saves go to
+# ~/.local/share/zork3
+[exec]
+game = "zork3"
+args = []
+
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+[media]
+cast = "asciiverse/zork3.cast"
+thumbnail_at = 8.0
+
+[release]
+source = "github"

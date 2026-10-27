@@ -1,0 +1,44 @@
+schema_version = 1
+id = "hack"
+kind = "game"
+title = "Hack"
+description = "The 1985 dungeon crawl that NetHack grew from: down through the Mazes of Menace for the Amulet of Yendor, with your dog at your side"
+license = "BSD-3-Clause"
+repo = "theasciiverse/netbsd-games"
+collection = "bsdgames"
+provenance = "Jay Fenlason wrote Hack in 1982 with Kenny Woodland, Mike Thome and Jon Payne, after Rogue, and Andries Brouwer reworked it at the CWI in Amsterdam into the 1985 game, version 1.0.3, that NetHack grew from."
+changes = "PATCHES.md"
+topics = ["roguelike", "dungeon", "classic", "fantasy", "turn-based"]
+genre = "roguelike"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "Jay Fenlason (1982), Andries Brouwer, CWI (1985)"
+url = "https://cvsweb.netbsd.org/bsdweb.cgi/src/games/hack/"
+
+[exec]
+game = "hack"
+
+# the dungeon and status lines fill 80x24; measured in tmux: at 79
+# columns or 23 rows hack refuses to start
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, a Fighter called Ada played by asciiverse/record/hack.py, which
+# explores by breadth-first search, fights what is next to her and picks
+# things up (best of several takes); the still is her fourth pickup, at 45 s
+[media]
+cast = "asciiverse/casts/hack.cast"
+thumbnail_at = 45.0
+
+[release]
+source = "github"

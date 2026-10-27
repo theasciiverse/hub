@@ -1,0 +1,46 @@
+schema_version = 1
+id = "2048"
+kind = "game"
+title = "2048"
+description = "Slide numbered tiles on a 4x4 board, merge equal pairs, and try to build a 2048 before the board fills up"
+license = "MIT"
+repo = "theasciiverse/2048"
+provenance = "Maurits van der Schee wrote 2048.c in 2014, a console version of Gabriele Cirulli's game of the same year, in one C file that draws with ANSI escape codes."
+changes = "PATCHES.md"
+topics = ["puzzle", "numbers", "sliding tiles", "casual", "ansi"]
+genre = "puzzle"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "Maurits van der Schee"
+url = "https://github.com/mevdschee/2048.c"
+
+[exec]
+game = "2048"
+
+# the board: the score line, four rows of tiles three lines high, the
+# keys line and the line below; 28 columns wide; drawn from the top left
+# when the terminal is smaller, so 28x17 is what it needs
+[min_terminal]
+cols = 28
+rows = 17
+
+# the empty cells are a middle dot and the keys line has arrows (UTF-8);
+# the tile colours are 256-colour escape codes
+[requires]
+utf8 = true
+color = "256"
+mouse = false
+
+# 100x30, a game played by asciiverse/record-preview.py, a two-ply
+# expectimax driver that reads the board from the screen, to a 256 tile
+# in 50 s, then q and y; the still has a 128 in the corner
+[media]
+cast = "asciiverse/2048.cast"
+thumbnail_at = 40.0
+
+[release]
+source = "github"

@@ -1,0 +1,54 @@
+schema_version = 1
+id = "armoured-commander"
+kind = "game"
+title = "Armoured Commander"
+description = "Command a Sherman and its five-man crew through the campaigns of 1944 and 1945 in the World War II tank commander roguelike"
+license = "GPL-3.0-or-later"
+repo = "theasciiverse/armoured-commander"
+provenance = "Gregory Adam Scott wrote Armoured Commander in Python and libtcod between 2015 and 2017, and Eric Normandeau maintained it from version 1.04. Asciiverse ported it to Rust and Ratatui for the terminal."
+changes = "README.md"
+topics = ["world war ii", "tanks", "roguelike", "turn-based", "campaign", "dice", "rust"]
+genre = "roguelike"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# version 1.0 subversion 9 (ca6a1cf, 2020-12-26), the last of the
+# original; its sequel, Armoured Commander II, is a separate title
+[upstream]
+name = "Gregory Adam Scott"
+url = "https://github.com/sudasana/armcom"
+
+# the archive holds armcom, README.md and LICENSE; the saved game, high
+# scores, graveyard and journals go to $XDG_DATA_HOME/armoured-commander
+# (~/.local/share/armoured-commander, %APPDATA%\armoured-commander)
+[exec]
+game = "armcom"
+args = []
+
+# every screen is laid out for 100x30; under that it asks for a bigger
+# terminal. Bigger ones get bigger hexes, map and message log
+[min_terminal]
+cols = 100
+rows = 30
+
+# box drawing, half blocks and CP437 symbols; RGB colours from libtcod's
+# palette; the mouse is optional (unit info, the area under the pointer),
+# the keyboard plays everything. Sound through ALSA on Linux if present
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = false
+
+# 100x30, `armcom --encounter battle` played by asciiverse/drive.py (the
+# gunner on Fire Main Gun each round, every roll read; best of six takes):
+# spotting, the Sherman firing on a tank, a penetrating hit on its turret,
+# friendly fire destroying a gun; the still is the gunner laying on the
+# enemy tank, its line of fire across the map, at 21.5 s
+[media]
+cast = "asciiverse/armcom.cast"
+thumbnail_at = 21.5
+
+[release]
+source = "github"

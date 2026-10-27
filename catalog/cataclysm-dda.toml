@@ -1,0 +1,49 @@
+schema_version = 1
+id = "cataclysm-dda"
+kind = "game"
+title = "Cataclysm: Dark Days Ahead"
+description = "Survive the end of the world in a huge open-world roguelike: scavenge, craft, build, drive and fight the dead and far stranger things"
+license = "CC-BY-SA-3.0"
+repo = "theasciiverse/cataclysm-dda"
+provenance = "Cataclysm: Dark Days Ahead began as a fork of Whales' Cataclysm (on GitHub from 2010) by Kevin Granade, TheDarklingWolf and GlyphGryph, and has been built by CleverRaven and thousands of contributors since."
+changes = "PATCHES.md"
+topics = ["roguelike", "survival", "post-apocalyptic", "crafting", "open-world", "turn-based"]
+genre = "roguelike"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "CleverRaven and contributors, after Whales"
+url = "https://github.com/CleverRaven/Cataclysm-DDA"
+
+# cataclysm-dda is the start script: it passes the read-only data beside
+# it to the game with --basepath
+[exec]
+game = "cataclysm-dda"
+
+# EVEN_MINIMUM_TERM_WIDTH and _HEIGHT (src/game_constants.h); below that
+# the game only shows a "terminal is tiny" notice until it is enlarged
+# (ensure_term_size(), src/ncurses_def.cpp); it uses more room when there
+[min_terminal]
+cols = 80
+rows = 24
+
+# warns at start without a UTF-8 locale (check_encoding()); uses 256
+# colours when the terminal has them, the basic 8 otherwise; registers the
+# mouse but plays fully from the keyboard
+[requires]
+utf8 = true
+color = "basic"
+mouse = false
+
+# 100x30, recorded by asciiverse/record-preview.py: "Play Now!" in a fresh
+# world, a walk out of the start area to the nearest unexplored edges, the
+# overmap, then save and quit; the still is outside, past the open door
+[media]
+cast = "asciiverse/cataclysm-dda.cast"
+thumbnail_at = 36.0
+
+[release]
+source = "github"

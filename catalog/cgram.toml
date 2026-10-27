@@ -1,0 +1,43 @@
+schema_version = 1
+id = "cgram"
+kind = "game"
+title = "Cgram"
+description = "Sunday-paper cryptograms: crack a substitution cipher hiding one of La Rochefoucauld's maxims, letter by letter"
+license = "BSD-2-Clause"
+repo = "theasciiverse/netbsd-games"
+collection = "bsdgames"
+provenance = "David A. Holland wrote cgram around 2004 and added it to NetBSD's games in 2013; Roland Illig reworked it in 2020 and 2021."
+changes = "PATCHES.md"
+topics = ["puzzle", "word", "cryptogram", "classic", "curses"]
+genre = "puzzle"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "David A. Holland, NetBSD (2013)"
+url = "https://github.com/NetBSD/src/tree/trunk/games/cgram"
+
+[exec]
+game = "cgram"
+
+# the longest maxim is 64 columns by 4 lines, with a blank line and the help
+# line under it; a smaller terminal scrolls the puzzle
+[min_terminal]
+cols = 64
+rows = 8
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, a maxim decoded at a person's pace by asciiverse/record/cgram.py,
+# the most frequent letters first, to *solved*; 34 s; the still is mid-solve
+[media]
+cast = "asciiverse/casts/cgram.cast"
+thumbnail_at = 16.0
+
+[release]
+source = "github"

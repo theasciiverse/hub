@@ -1,0 +1,45 @@
+schema_version = 1
+id = "sjump"
+kind = "game"
+title = "Square Jump"
+description = "Time your jump: send the O flying from square to square and build up a combo"
+license = "CC0-1.0 OR Apache-2.0"
+repo = "theasciiverse/nbsdgames"
+collection = "nbsdgames"
+provenance = "abakh wrote Square Jump for New BSD Games, a collection of small curses games in C."
+changes = "PATCHES.md"
+topics = ["arcade", "timing", "one-button", "curses"]
+genre = "arcade"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "abakh and contributors"
+url = "https://github.com/abakh/nbsdgames"
+
+[exec]
+game = "sjump"
+
+# the game is laid out for 80x24 (LEN and WID in src/sjump.c), but it
+# draws the next square out to column 92, so 93 columns show it whole;
+# at 80 its right side is cut off
+[min_terminal]
+cols = 93
+rows = 24
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, played by asciiverse/record/sjump.py, which works out the
+# flight with the game's own rules and presses Enter in time; 19 s is
+# combo 8 with both squares in view
+[media]
+cast = "asciiverse/casts/sjump.cast"
+thumbnail_at = 19.0
+
+[release]
+source = "github"

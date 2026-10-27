@@ -1,0 +1,44 @@
+schema_version = 1
+id = "doctor-m"
+kind = "adventure"
+title = "The Life (and Deaths) of Doctor M"
+description = "A doctor wakes in a windswept land between life and death, and walks back through his life"
+license = "CC-BY-NC-ND-3.0"
+repo = "theasciiverse/stories"
+provenance = "Michael D. Hilborn entered The Life (and Deaths) of Doctor M in the 2011 Interactive Fiction Competition, under the name Edmund Wells."
+changes = "doctor-m/README.md"            # what Asciiverse changed, a path in repo
+topics = ["text-adventure", "drama", "afterlife", "conversation"]
+genre = "text adventure"
+
+[developer]
+name = "Michael D. Hilborn"
+url = "https://ifarchive.org/if-archive/games/glulx/DoctorM.zip"
+
+# Entered in the 2011 Interactive Fiction Competition, under the name Edmund Wells.
+# The story file is unchanged (provenance and sha256 in the stories repo,
+# doctor-m/README.md); played with Glulxe 0.6.1 with GlkTerm, which comes inside the archive.
+[upstream]
+name = "Michael D. Hilborn, 2011"
+url = "https://ifarchive.org/if-archive/games/glulx/DoctorM.zip"
+
+# the start script plays the story in the bundled Glulxe; saves go to
+# ~/.local/share/doctor-m
+[exec]
+game = "doctor-m"
+args = []
+
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+[media]
+cast = "asciiverse/doctor-m.cast"
+thumbnail_at = 14.3
+
+[release]
+source = "github"

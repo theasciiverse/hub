@@ -1,0 +1,45 @@
+schema_version = 1
+id = "gorched"
+kind = "game"
+title = "Gorched"
+description = "Two tanks, one cannon each, a fresh range of hills every round: Scorched Earth for the terminal"
+license = "MIT"
+repo = "theasciiverse/gorched"
+provenance = "Ján Čabala (zladovan) wrote Gorched in Go on termloop in 2020, as a homage to Wendell Hicken's 1991 DOS game Scorched Earth."
+topics = ["artillery", "tanks", "hot-seat", "scorched-earth", "go"]
+genre = "artillery"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# Ján Čabala (zladovan) wrote Gorched in Go on termloop (2020, v1.7 2025);
+# this edition is upstream unchanged, built by .github/workflows/release.yml.
+[upstream]
+name = "Ján Čabala (zladovan)"
+url = "https://github.com/zladovan/gorched"
+
+# sizes the world to the terminal at start; a resize applies from the next round
+[exec]
+game = "gorched"
+
+# the tanks start close to fixed columns; below 60x20 they crowd together
+[min_terminal]
+cols = 60
+rows = 20
+
+# termloop puts termbox in 256-color mode with mouse input on, but only
+# --debug uses the mouse; the tank sprite and terrain use block elements
+[requires]
+utf8 = true
+color = "256"
+mouse = false
+
+# 100x30, gorched --seed 42 --width 100 --height 30 --demo asciiverse/preview.demo;
+# 9.5 s is red's first shell bursting beside the blue tank
+[media]
+cast = "asciiverse/gorched.cast"
+thumbnail_at = 9.5
+
+[release]
+source = "github"

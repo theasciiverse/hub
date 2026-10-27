@@ -1,0 +1,46 @@
+schema_version = 1
+id = "dopewars"
+kind = "game"
+title = "dopewars"
+description = "Thirty days to pay off the loan shark: buy low, sell high and dodge the cops across New York, alone or online"
+license = "GPL-2.0-or-later"
+repo = "theasciiverse/dopewars"
+provenance = "Ben Webb has written and maintained dopewars since 1998, after John E. Dell's MS-DOS game Drug Wars."
+topics = ["trading", "classic", "multiplayer", "curses"]
+genre = "trading"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# Ben Webb's dopewars (1998 on), after John E. Dell's MS-DOS Drug Wars; this
+# edition is the curses client and server only: 1.6.2 plus upstream main as
+# of 2026-01-14, a per-user high score file and a CA bundle search for the
+# static curl, built by .github/workflows/asciiverse-release.yml.
+[upstream]
+name = "Ben Webb"
+url = "https://dopewars.sourceforge.io/"
+
+# without -n it first offers a server, the metaserver list or single player
+[exec]
+game = "dopewars"
+
+# the screen stretches to fit; 80x24 is what it was laid out for
+[min_terminal]
+cols = 80
+rows = 24
+
+# ASCII with curses line drawing, basic colours, keyboard only
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, dopewars -t -n played by asciiverse/drive.py; 36 s shows the
+# trader at $50,642 on day 8, jetting out of Coney Island
+[media]
+cast = "asciiverse/dopewars.cast"
+thumbnail_at = 36.0
+
+[release]
+source = "github"

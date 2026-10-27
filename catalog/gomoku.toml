@@ -1,0 +1,44 @@
+schema_version = 1
+id = "gomoku"
+kind = "game"
+title = "Gomoku"
+description = "Five in a row on a 19 by 19 board against Ralph Campbell's computer player, moved with the cursor"
+license = "BSD-3-Clause"
+repo = "theasciiverse/bsdgames"
+collection = "bsdgames"
+provenance = "Ralph Campbell wrote Gomoku for BSD in 1994, with a board display based on Peter Langston's goref. Mike Sharov reworked it in 2016 for modern curses, with cursor keys for moves."
+changes = "PATCHES.md"
+topics = ["board", "gomoku", "five-in-a-row", "vs-computer", "classic", "curses"]
+genre = "board"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "Ralph Campbell, UC Berkeley (1994)"
+url = "https://sourceforge.net/projects/bsd-games"
+
+[exec]
+game = "gomoku"
+
+# the board window is 41x21 and fixed; measured in tmux: at 40 columns
+# the right edge is cut off, at 20 rows the board is not drawn
+[min_terminal]
+cols = 41
+rows = 21
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, a game against the computer played by asciiverse/record/gomoku.py, an
+# evaluator that blocks threes and fours and builds its own lines; the
+# computer gets five in a row at 41 s; the still is just after, at 42 s
+[media]
+cast = "asciiverse/casts/gomoku.cast"
+thumbnail_at = 42.0
+
+[release]
+source = "github"

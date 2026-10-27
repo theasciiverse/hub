@@ -1,0 +1,43 @@
+schema_version = 1
+id = "fisher"
+kind = "game"
+title = "Fisher"
+description = "Drop a hook through ten rows of sea life and reel in the deep catches, without letting a fish cross your line"
+license = "CC0-1.0 OR Apache-2.0"
+repo = "theasciiverse/nbsdgames"
+collection = "nbsdgames"
+provenance = "abakh wrote Fisher for New BSD Games, a collection of small curses games in C started in 2018, as a port of Deep Sea Fisher, a MikeOS game."
+changes = "PATCHES.md"
+topics = ["arcade", "fishing", "timing", "curses"]
+genre = "arcade"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "abakh and contributors"
+url = "https://github.com/abakh/nbsdgames"
+
+[exec]
+game = "fisher"
+
+# the sea and the sky are drawn at a fixed 80x24
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, fisher played by asciiverse/record/fisher.py, which goes for the
+# deepest catch it can reel in before anything above crosses the line;
+# 8.5 s is a jellyfish on the way up just after a catch of actual fish
+[media]
+cast = "asciiverse/casts/fisher.cast"
+thumbnail_at = 8.5
+
+[release]
+source = "github"

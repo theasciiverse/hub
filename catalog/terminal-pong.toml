@@ -1,0 +1,42 @@
+schema_version = 1
+id = "terminal-pong"
+kind = "game"
+title = "terminal.pong"
+description = "Pong in the terminal: against the computer, with a friend, or watch two AIs play"
+license = "MIT"
+repo = "theasciiverse/terminal-pong"
+provenance = "terminal.pong is IshmamR's Pong in Rust and Ratatui (2025)."
+changes = "PATCHES.md"            # what Asciiverse changed, a path in repo
+topics = ["arcade", "pong", "multiplayer", "rust"]
+genre = "arcade"
+
+[developer]
+name = "IshmamR"
+url = "https://github.com/IshmamR/terminal.pong"
+
+# packaged by Asciiverse with two fixes (court follows the window, frame
+# rate cap); PATCHES.md in theasciiverse/terminal-pong
+[upstream]
+name = "IshmamR"
+url = "https://github.com/IshmamR/terminal.pong"
+
+[exec]
+game = "terminal-pong"
+args = []
+
+# the court fills the window from 70x20 up (src/game.rs MIN_COLS, MIN_ROWS)
+[min_terminal]
+cols = 70
+rows = 20
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = true
+
+[media]
+cast = "asciiverse/terminal-pong.cast"
+thumbnail_at = 12.0
+
+[release]
+source = "github"

@@ -1,0 +1,45 @@
+schema_version = 1
+id = "ternimal"
+kind = "art"
+title = "Ternimal"
+description = "A glowing lifeform creeps and coils around the terminal along an endless path of arcs"
+license = "GPL-3.0-only"
+repo = "theasciiverse/ternimal"
+provenance = "Ternimal is by Philipp Emanuel Weidmann, one Rust file with no dependencies, from 2017."
+changes = "PATCHES.md"
+topics = ["screensaver", "creature", "generative", "half blocks", "calm"]
+
+[developer]
+name = "Philipp Emanuel Weidmann"
+url = "https://github.com/p-e-w/ternimal"
+
+[upstream]
+name = "Philipp Emanuel Weidmann"
+url = "https://github.com/p-e-w/ternimal"
+
+# the whole window on the alternate screen, starting again after a resize;
+# any key, Ctrl+C or SIGTERM quits
+[exec]
+game = "ternimal"
+args = ["fit=true"]
+
+# below about 60x20 the path does not fit and it says so until the window
+# grows (tried at 100x30, 60x20, 30x10 and 120x40)
+[min_terminal]
+cols = 60
+rows = 20
+
+# half blocks in 24-bit colour (true_color=false gives 256 colours, not
+# what av passes); keyboard only
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = false
+
+# 100x30, `ternimal fit=true seed=7` for 25 s (asciiverse/record-preview.sh)
+[media]
+cast = "asciiverse/ternimal.cast"
+thumbnail_at = 8.0
+
+[release]
+source = "github"

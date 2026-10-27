@@ -1,0 +1,54 @@
+schema_version = 1
+id = "asciicker"
+kind = "game"
+title = "Asciicker"
+description = "A whole 3D island drawn in characters: walk it, turn it, jump, swing a sword and fill your pack, in Gumix's ASCII action RPG"
+license = "MIT"
+repo = "theasciiverse/asciicker"
+provenance = "Marcin Sokalski (Gumix), who also made ASCII Patrol, built Asciicker from 2019 to 2024 as a 3D ASCII game concept that plays in the browser at asciicker.com."
+changes = "PATCHES.md"
+topics = ["action", "rpg", "3d", "open world", "exploration", "ascii art", "c++"]
+genre = "action"
+
+[developer]
+name = "Marcin Sokalski"
+url = "https://asciicker.com"
+
+# built from github.com/msokalski/asciicker at 8ff75d0 (2024-01-08, the
+# merge of pre-y9) by .github/workflows/release.yml, with the changes in
+# PATCHES.md
+[upstream]
+name = "Marcin Sokalski (Gumix)"
+url = "https://github.com/msokalski/asciicker"
+
+# reads its world, meshes, sprites and samples from beside the binary;
+# asciicker.cfg goes to $XDG_DATA_HOME/asciicker (~/.local/share/asciicker).
+# Single player: online play needs -url and a server, and the asciicker.com
+# servers did not answer on 2026-10-21
+[exec]
+game = "asciicker"
+
+# the picture grows with the terminal up to 320x180 and is centred beyond
+# that; checked playable at 80x24 (menus and the inventory are cramped)
+[min_terminal]
+cols = 80
+rows = 24
+
+# CP437 block art sent as UTF-8; truecolor where COLORTERM says so, else
+# the nearest of the standard 256; the mouse can walk, jump and turn the
+# view but the keyboard does everything
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = false
+
+# 100x30 at 25 fps, recorded by asciiverse/record-preview.sh: the title,
+# a walk with the two companions past the rock and the fence, a
+# swing, the inventory, then out through the game menu; the still is the
+# three on the path among the pines, at 11 s
+[media]
+cast = "asciiverse/asciicker.cast"
+thumbnail_at = 11.0
+
+[release]
+source = "github"

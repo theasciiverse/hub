@@ -1,0 +1,42 @@
+schema_version = 1
+id = "silent-night"
+kind = "art"
+title = "Silent Night"
+description = "A snowy forest at night: wind and gusts blow the snow into drifts around a lit cabin, under the stars and a faint aurora, with the sound of the wind and the forest"
+license = "MIT"
+repo = "theasciiverse/silent-night"
+provenance = "Asciiverse made Silent Night in Rust in 2026 for Christmas, after finding no terminal snow with wind, drifting snow or depth."
+topics = ["snow", "winter", "christmas", "wind", "aurora", "forest", "screensaver", "sound", "colour"]
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# sound on; m turns it off and on, any other key quits; `silent-night -s N`
+# repeats one forest
+[exec]
+game = "silent-night"
+args = []
+
+# laid out to fit the window and rebuilt on resize; runs down to 1x1, but
+# the cabin needs 44x16 and the forest is best from 80x24
+[min_terminal]
+cols = 44
+rows = 16
+
+# half blocks, stars and snowflakes; RGB colour, 256 colours when the
+# terminal does not report truecolor; keyboard only
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = false
+
+# 100x30, `silent-night -s 14 --no-sound` for 30 s
+# (asciiverse/record-preview.sh), capped at 20 fps; the sleigh crosses the
+# aurora at about 18 s
+[media]
+cast = "asciiverse/silent-night.cast"
+thumbnail_at = 18.0
+
+[release]
+source = "github"

@@ -1,0 +1,45 @@
+schema_version = 1
+id = "sail"
+kind = "game"
+title = "Sail"
+description = "Command a man-of-war in the age of sail: work the wind, choose your shot and fight 31 historical sea battles against the computer"
+license = "BSD-3-Clause"
+repo = "theasciiverse/bsdgames"
+collection = "bsdgames"
+provenance = "Dave Riggle wrote Sail at UC Berkeley from 1980, after Avalon Hill's Wooden Ships and Iron Men, with Ed Wang as co-author and Craig Leres making it portable; it shipped with BSD Unix. Mike Sharov rewrote it in 2016 as a single-player game with its own computer captains."
+changes = "PATCHES.md"
+topics = ["strategy", "naval", "historical", "classic", "curses"]
+genre = "strategy"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "Dave Riggle and Ed Wang, UC Berkeley (1980)"
+url = "https://sourceforge.net/projects/bsd-games"
+
+[exec]
+game = "sail"
+
+# measured in tmux: the battle screen needs 60 columns for the sea and the
+# ship's status, and 19 rows leave one line for messages; it uses at most
+# 80 columns and centres itself on wider terminals
+[min_terminal]
+cols = 60
+rows = 19
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, Ambuscade vs. Baionnaise played by asciiverse/record/sail.py,
+# which runs down on the corvette and brings her abeam; 19 s is just
+# after the Ambuscade's broadside hits
+[media]
+cast = "asciiverse/casts/sail.cast"
+thumbnail_at = 19.0
+
+[release]
+source = "github"

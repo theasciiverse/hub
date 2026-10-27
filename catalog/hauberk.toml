@@ -1,0 +1,51 @@
+schema_version = 1
+id = "hauberk"
+kind = "game"
+title = "Hauberk"
+description = "A hundred floors of dungeon, rebuilt every time you take the stairs. Light a candle, grip your stick, and go find out what happened to the last adventurer."
+license = "MIT"
+repo = "theasciiverse/hauberk"
+provenance = "Bob Nystrom has written Hauberk in Dart since 2012 as a roguelike for the web browser, and still works on it."
+changes = "PATCHES.md"
+topics = ["roguelike", "dungeon", "fantasy", "turn-based", "dart"]
+genre = "roguelike"
+
+[developer]
+name = "Bob Nystrom"
+url = "https://github.com/munificent/hauberk"
+
+# built from upstream master (2026-09-14) with a terminal front end in tty/;
+# PATCHES.md in theasciiverse/hauberk
+[upstream]
+name = "Bob Nystrom"
+url = "https://github.com/munificent/hauberk"
+
+# heroes are saved in the player's data folder; --demo lets the computer
+# play a new hero
+[exec]
+game = "hauberk"
+args = []
+
+# the menus and hero creation are laid out for 80x40, the same minimum the
+# browser version enforces; below it the game waits behind a message. The
+# game screen itself fits smaller terminals
+[min_terminal]
+cols = 80
+rows = 40
+
+# box drawing and CP437-style symbols; RGB colours and lighting; keyboard only
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = false
+
+# 100x30, the game's own --demo autopilot with seed 1
+# (asciiverse/record-preview.sh): the hero equips a candle and a stick in
+# town, goes down, fights mice, a simpering knave and a stray cat; at 50 s
+# the most of the level is mapped
+[media]
+cast = "asciiverse/hauberk.cast"
+thumbnail_at = 50.0
+
+[release]
+source = "github"

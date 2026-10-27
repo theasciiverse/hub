@@ -1,0 +1,53 @@
+schema_version = 1
+id = "beneath-a-typographic-sky"
+kind = "game"
+title = "Beneath a Typographic Sky"
+description = "Revolution's Beneath a Steel Sky in the terminal: Union City rebuilt out of Braille dots, its words set in type"
+# the engine is GPL (a port of ScummVM's); Revolution's game data is
+# freeware: free to share and to modify, never to be sold
+license = "GPL-3.0-or-later AND LicenseRef-Free-Noncommercial"
+repo = "theasciiverse/beneath-a-typographic-sky"
+provenance = "Revolution Software made Beneath a Steel Sky in 1994 and released it as freeware in 2003. This edition brings it to the terminal through a Rust port of ScummVM's engine."
+changes = "NOTICE"                # what this modified version changes, a path in repo
+topics = ["point-and-click", "adventure", "classic", "science-fiction", "cyberpunk", "mouse", "braille", "rust", "scummvm"]
+genre = "adventure"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# Revolution Software, 1994; freeware since August 2003 (readme.txt ships
+# beside the data). Engine ported from ScummVM's engines/sky.
+[upstream]
+name = "Revolution Software, 1994"
+url = "https://www.revolution.co.uk"
+
+# the archive holds typosky, data/ (sky.dsk, sky.dnr, sky.cpt and
+# Revolution's readme.txt), NOTICE and LICENSE; saves and settings go to
+# $XDG_DATA_HOME/typographic-sky (~/.local/share/typographic-sky)
+[exec]
+game = "typosky"
+args = []
+
+# the whole picture at 160x50 (one Braille dot per game pixel); playable,
+# coarser, down to 80x24; text stays readable
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = true
+glyphs = ["braille"]
+
+# Speech, effects and AdLib music play through the system's audio. The
+# Linux build's audio dependency (ALSA) is to be settled with the first
+# release build; set system_deps then.
+
+[media]
+cast = "asciiverse/beneath-a-typographic-sky.cast"
+thumbnail_at = 40.0             # Foster on the ledge above Union City
+
+[release]
+source = "github"

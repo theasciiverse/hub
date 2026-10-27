@@ -1,0 +1,46 @@
+schema_version = 1
+id = "clines"
+kind = "game"
+title = "Console Lines"
+description = "Color Lines in the terminal: slide coloured chips across a 9x9 board to line up five of a kind before the board fills, by keyboard or mouse"
+license = "GPL-2.0-only"
+repo = "theasciiverse/clines"
+provenance = "Pawel S. Veselov wrote Console Lines in C on curses (2002 to 2006), after the classic Color Lines."
+changes = "PATCHES.md"
+topics = ["puzzle", "lines", "color-lines", "mouse", "classic", "curses"]
+genre = "puzzle"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# Pawel S. Veselov, 2002 to 2006; his site manticore.2y.net is gone, so the
+# upstream link is ALT Linux's packaging repo, which keeps the 1.0.4 tree
+[upstream]
+name = "Pawel S. Veselov"
+url = "https://git.altlinux.org/gears/c/clines.git"
+
+[exec]
+game = "clines"
+
+# the board grows with the terminal (cells of 2, 3 or more characters) and
+# needs 2 x 9 + 1 = 19 in each direction (rinit in render.c)
+[min_terminal]
+cols = 19
+rows = 19
+
+# ASCII, chips in the 8 basic colours (B&W letters with -m b); click a
+# chip, then a cell
+[requires]
+utf8 = false
+color = "basic"
+mouse = true
+
+# 100x30, played with the mouse by asciiverse/record-preview.py; 40 s is
+# mid-game with 25 points
+[media]
+cast = "asciiverse/clines.cast"
+thumbnail_at = 40.0
+
+[release]
+source = "github"

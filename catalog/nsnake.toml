@@ -1,0 +1,43 @@
+schema_version = 1
+id = "nsnake"
+kind = "game"
+title = "nSnake"
+description = "The classic snake game in the terminal: eat the fruit, grow, and do not bite yourself; 31 levels and lots of game modes"
+license = "GPL-3.0-or-later"
+repo = "theasciiverse/nsnake"
+provenance = "Alexandre Dantas wrote nSnake in C++ and ncurses from 2012 to 2014."
+changes = "PATCHES.md"
+topics = ["arcade", "snake", "classic", "levels", "curses"]
+genre = "arcade"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "Alexandre Dantas"
+url = "https://github.com/alexdantas/nSnake"
+
+[exec]
+game = "nsnake"
+
+# the layout is a fixed 80x24, centred; nsnake refuses to start in a
+# smaller terminal (Layout::windowsInit)
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, Arcade Mode at speed 5 with two fruits, played by
+# asciiverse/record-preview.py, which steers to the nearest fruit; 35 s is
+# a long snake and a score of 80
+[media]
+cast = "asciiverse/nsnake.cast"
+thumbnail_at = 35.0
+
+[release]
+source = "github"

@@ -1,0 +1,44 @@
+schema_version = 1
+id = "so-far"
+kind = "adventure"
+title = "So Far"
+description = "Walk off a stifling theatre stage into a chain of strange, linked worlds"
+license = "LicenseRef-Free-Distribution"
+repo = "theasciiverse/stories"
+provenance = "Andrew Plotkin's So Far (1996) was nominated in the 1996 XYZZY Awards."
+changes = "so-far/README.md"            # what Asciiverse changed, a path in repo
+topics = ["text-adventure", "surreal", "puzzle", "classic"]
+genre = "text adventure"
+
+[developer]
+name = "Andrew Plotkin"
+url = "https://eblong.com/zarf/if.html"
+
+# Andrew Plotkin's 1996 game, nominated in the 1996 XYZZY Awards.
+# The story file is unchanged (provenance and sha256 in the stories repo,
+# so-far/README.md); played with Frotz 2.55, which comes inside the archive.
+[upstream]
+name = "Andrew Plotkin, 1996"
+url = "https://eblong.com/zarf/if.html"
+
+# the start script plays the story in the bundled Frotz; saves go to
+# ~/.local/share/so-far
+[exec]
+game = "so-far"
+args = []
+
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+[media]
+cast = "asciiverse/so-far.cast"
+thumbnail_at = 13.9
+
+[release]
+source = "github"

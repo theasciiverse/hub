@@ -1,0 +1,47 @@
+schema_version = 1
+id = "termcraft"
+kind = "game"
+title = "Termcraft"
+description = "Punch a tree, survive the night, then dig your way to the Nether and the dragon beyond: a whole block world drawn in terminal pixels, with up to eight friends along"
+license = "AGPL-3.0-only"
+repo = "theasciiverse/termcraft"
+provenance = "Termcraft is Sebastian Pagel's 2D survival sandbox in Rust from 2026, after Minecraft."
+changes = "PATCHES.md"
+topics = ["sandbox", "survival", "crafting", "mining", "co-op", "multiplayer", "rust"]
+genre = "sandbox"
+
+[developer]
+name = "Sebastian Pagel"
+url = "https://github.com/pagel-s/termcraft"
+
+# packaged by Asciiverse; PATCHES.md in theasciiverse/termcraft
+[upstream]
+name = "Sebastian Pagel"
+url = "https://github.com/pagel-s/termcraft"
+
+# saves in $XDG_DATA_HOME/termcraft/saves (%APPDATA%\termcraft\saves on
+# Windows); `termcraft trial` is Lantern Run, `termcraft host` co-op
+[exec]
+game = "termcraft"
+args = []
+
+# the picture follows the window, so any size plays; measured in tmux, the
+# inventory and crafting screen still fit at 70x22. Upstream suggests 120x40
+[min_terminal]
+cols = 80
+rows = 24
+
+# all drawing is 24-bit colour; mining, fighting and placing are the mouse
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = true
+
+# 100x30, the start of Lantern Run in the Overview view, played by
+# asciiverse/record-preview.py; the still is the sword fight in the ruins
+[media]
+cast = "asciiverse/termcraft.cast"
+thumbnail_at = 13.0
+
+[release]
+source = "github"

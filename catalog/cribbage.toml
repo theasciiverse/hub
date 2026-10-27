@@ -1,0 +1,44 @@
+schema_version = 1
+id = "cribbage"
+kind = "game"
+title = "Cribbage"
+description = "Cribbage against the computer, to 61 points: discard to the crib, play to 31, count your hand, and peg round the board"
+license = "BSD-3-Clause"
+repo = "theasciiverse/bsdgames"
+collection = "bsdgames"
+provenance = "BSD's cribbage was written by Earl T. Cohen, with Ken Arnold's screen interface (UC Berkeley, 1980). Mike Sharov rewrote it from scratch for his bsd-games in 2016."
+changes = "PATCHES.md"
+topics = ["card", "cribbage", "classic", "curses"]
+genre = "card"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "Mike Sharov, after Earl T. Cohen and Ken Arnold (1980)"
+url = "https://sourceforge.net/projects/bsd-games"
+
+[exec]
+game = "cribbage"
+
+# board 39x9, table 39x6 and the message lines above them, measured in
+# tmux; at 18 rows three message lines remain, more rows show more
+[min_terminal]
+cols = 39
+rows = 18
+
+# card suits are Unicode symbols in a UTF-8 locale, letters otherwise
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, asciiverse/record/cribbage.py discards for the best four and
+# plays out the hands; 26 s is the show being scored
+[media]
+cast = "asciiverse/casts/cribbage.cast"
+thumbnail_at = 26.0
+
+[release]
+source = "github"

@@ -1,0 +1,44 @@
+schema_version = 1
+id = "all-things-devours"
+kind = "adventure"
+title = "All Things Devours"
+description = "Break into your own lab to destroy a time machine before anyone can use it"
+license = "LicenseRef-Public-Domain"
+repo = "theasciiverse/stories"
+provenance = "Toby Ord wrote All Things Devours, as half sick of shadows, for the 2004 Interactive Fiction Competition."
+changes = "all-things-devours/README.md"            # what Asciiverse changed, a path in repo
+topics = ["text-adventure", "time-travel", "puzzle", "science-fiction"]
+genre = "text adventure"
+
+[developer]
+name = "Toby Ord (half sick of shadows)"
+url = "https://ifarchive.org/if-archive/games/zcode/devours.z5"
+
+# Written for the 2004 Interactive Fiction Competition; this is the post-competition release 3.
+# The story file is unchanged (provenance and sha256 in the stories repo,
+# all-things-devours/README.md); played with Frotz 2.55, which comes inside the archive.
+[upstream]
+name = "Toby Ord (half sick of shadows), 2004"
+url = "https://ifarchive.org/if-archive/games/zcode/devours.z5"
+
+# the start script plays the story in the bundled Frotz; saves go to
+# ~/.local/share/all-things-devours
+[exec]
+game = "all-things-devours"
+args = []
+
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+[media]
+cast = "asciiverse/all-things-devours.cast"
+thumbnail_at = 13.7
+
+[release]
+source = "github"

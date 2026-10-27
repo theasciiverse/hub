@@ -1,0 +1,42 @@
+schema_version = 1
+id = "frotz"
+kind = "program"
+title = "Frotz"
+description = "The standard player for Z-machine stories: Infocom's games, Zork among them"
+license = "GPL-2.0-or-later"
+repo = "theasciiverse/frotz"
+provenance = "Stefan Jokisch wrote Frotz, a player for Infocom's Z-machine games; David Griffith and contributors maintain it."
+changes = "PATCHES.md"            # what Asciiverse changed, a path in repo
+topics = ["interpreter", "text-adventure", "z-machine", "classic"]
+genre = "interpreter"
+
+[developer]
+name = "David Griffith and contributors"
+url = "https://gitlab.com/DavidGriffith/frotz"
+
+# built from upstream's 2.55 tag, no code changes (PATCHES.md in
+# theasciiverse/frotz)
+[upstream]
+name = "David Griffith and contributors"
+url = "https://gitlab.com/DavidGriffith/frotz"
+
+# play a story: frotz <story file>
+[exec]
+game = "frotz"
+args = []
+
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = true
+color = "basic"
+mouse = false
+
+[media]
+cast = "asciiverse/frotz.cast"
+thumbnail_at = 9.0
+
+[release]
+source = "github"

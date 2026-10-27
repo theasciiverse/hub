@@ -1,0 +1,43 @@
+schema_version = 1
+id = "hunt"
+kind = "game"
+title = "Hunt"
+description = "Multiplayer deathmatch in a maze over your local network: find the other hunters, shoot, throw grenades and bombs, and be the last one standing"
+license = "BSD-3-Clause"
+repo = "theasciiverse/netbsd-games"
+collection = "bsdgames"
+provenance = "Conrad Huang, Ken Arnold and Greg Couch wrote Hunt at the University of California, San Francisco's Computer Graphics Lab, and Berkeley shipped it with 4BSD."
+changes = "PATCHES.md"
+topics = ["action", "multiplayer", "lan", "deathmatch", "maze", "classic", "curses"]
+genre = "action"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "Conrad Huang, Ken Arnold and Greg Couch, UCSF Computer Graphics Lab"
+url = "https://github.com/NetBSD/src/tree/trunk/games/hunt"
+
+[exec]
+game = "hunt"
+
+# hunt refuses a terminal smaller than 80x24 ("Need a larger window")
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, asciiverse/record/hunt.py plays the hunter Nightjar against one of
+# hunt's computer players (hunt -o): runs the maze, shoots, six kills, then
+# hunt's score table (hunt -S); 47 s; the still is mid-fight, 4 kills
+[media]
+cast = "asciiverse/casts/hunt.cast"
+thumbnail_at = 20.0
+
+[release]
+source = "github"

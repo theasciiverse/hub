@@ -1,0 +1,54 @@
+schema_version = 1
+id = "termsuji"
+kind = "game"
+title = "termsuji"
+description = "Go in the terminal on a proper wooden board: play GNU Go on 9x9, 13x13 or 19x19, at ten strengths and with handicap stones"
+license = "MIT"
+repo = "theasciiverse/termsuji"
+provenance = "termsuji is lvank's terminal client for online-go.com, in Go with tview (2022)."
+changes = "PATCHES.md"
+topics = ["go", "baduk", "weiqi", "board game", "strategy", "gnu go", "go-lang"]
+genre = "board"
+
+[developer]
+name = "lvank"
+url = "https://github.com/lvank/termsuji"
+
+# packaged by Asciiverse with GNU Go 3.9.1 (GPL-3.0-or-later, its licence
+# in every archive and its source in every release); PATCHES.md in
+# theasciiverse/termsuji
+[upstream]
+name = "lvank"
+url = "https://github.com/lvank/termsuji"
+
+# the archive holds termsuji and gnugo side by side; termsuji finds GNU Go
+# itself. The game in progress is saved in the data folder
+# (~/.local/share/termsuji, %LOCALAPPDATA%\termsuji), settings in the
+# config folder (~/.config/termsuji, %APPDATA%\termsuji)
+[exec]
+game = "termsuji"
+args = []
+
+# 19x19 fits 80x24 with one cell between points; bigger terminals space
+# the points out and draw the stones as discs
+[min_terminal]
+cols = 80
+rows = 24
+
+# box-drawing lines and block-character stones on a 256-colour wooden
+# board; keyboard only
+[requires]
+utf8 = true
+color = "256"
+mouse = false
+
+# 100x30, a 9x9 game as Black against GNU Go at strength 5, Black's moves
+# from a second GNU Go at strength 1 entered with the cursor keys by
+# asciiverse/record.py, played to the count (Black wins by 6.5); the still
+# is the end screen at 75 s
+[media]
+cast = "asciiverse/termsuji.cast"
+thumbnail_at = 75.0
+
+[release]
+source = "github"

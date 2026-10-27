@@ -1,0 +1,47 @@
+schema_version = 1
+id = "miscom"
+kind = "game"
+title = "Miscom"
+description = "Defend six cities from falling missiles: aim, fire, and catch the warheads in your explosions before they land"
+license = "GPL-2.0-or-later"
+repo = "theasciiverse/miscom"
+provenance = "Graham Richards wrote Miscom in C on curses (1995 to 1996), a terminal take on Missile Command; Russell Marks, who wrote Ztrack, added colour and sound and released it in 1998."
+changes = "PATCHES.md"
+topics = ["arcade", "shooter", "defence", "classic", "curses"]
+genre = "arcade"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# built from the 1998 release tarball (ibiblio, imported unchanged) with
+# the changes in PATCHES.md
+[upstream]
+name = "Graham Richards and Russell Marks"
+url = "http://ibiblio.org/pub/linux/games/arcade/"
+
+# keeps no files; the sounds are in sounds/ beside the program (Linux)
+[exec]
+game = "miscom"
+
+# an 80x24 screen, centred on bigger terminals
+[min_terminal]
+cols = 80
+rows = 24
+
+# plain ASCII in the basic colours, keyboard only; sound on Linux through
+# aplay (alsa-utils), silent without it
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, the first level and the start of the second, played by
+# asciiverse/drive.py, which aims ahead of the lowest warhead; best of
+# several takes (every city kept); the still is two fireballs at 53 s
+[media]
+cast = "asciiverse/miscom.cast"
+thumbnail_at = 53.4
+
+[release]
+source = "github"

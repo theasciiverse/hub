@@ -1,0 +1,46 @@
+schema_version = 1
+id = "scrap"
+kind = "game"
+title = "Scrap"
+description = "A robot roguelike written in ten days: shoot enemy robots to wrecks and build your own from the systems you salvage, twenty levels down"
+license = "GPL-2.0-or-later"
+repo = "theasciiverse/scrap"
+provenance = "Thijs van Ommen wrote Scrap in ten days for the Ten-Day Roguelike in 2005, extended it in 2006 and published it on GitHub in 2017."
+changes = "PATCHES.md"
+topics = ["roguelike", "robots", "sci-fi", "turn-based", "curses"]
+genre = "roguelike"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "Thijs van Ommen (2005, 2006)"
+url = "https://github.com/thijsvanommen/scrap"
+
+[exec]
+game = "scrap"
+
+# its screen is the message line, the 48x24 map and the system slots,
+# 80x25; measured in a pseudo-terminal: at 79 columns or 24 rows the game
+# asks for a bigger terminal and starts once it gets one
+[min_terminal]
+cols = 80
+rows = 25
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, played by asciiverse/record/scrap.py: shoots a buggy and a
+# sentry to wrecks on the first level, salvages a minigun, then takes the
+# exit into the woods of level 2 and fights a probe and another sentry;
+# 53 s, ending on the game's "play again?"; the still is level 2, the
+# robot next to the exit trading shots with a sentry, at 46 s
+[media]
+cast = "asciiverse/casts/scrap.cast"
+thumbnail_at = 46.0
+
+[release]
+source = "github"

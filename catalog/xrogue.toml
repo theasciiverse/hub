@@ -1,0 +1,45 @@
+schema_version = 1
+id = "xrogue"
+kind = "game"
+title = "XRogue"
+description = "Robert Pietkivitch's Rogue of 1989 to 1992, grown from Advanced Rogue 7.7: nine classes, over 200 monsters, and a shop on level 0"
+license = "BSD-3-Clause"
+repo = "theasciiverse/rogue-restoration"
+collection = "rogue-restoration"
+provenance = "Robert Pietkivitch wrote XRogue for the AT&T UNIX PC between 1989 and 1992 from Advanced Rogue 7.7, and restored it with Nicholas J. Kisseberth from 1996."
+changes = "PATCHES.md"
+topics = ["roguelike", "dungeon", "rpg", "classic", "curses"]
+genre = "roguelike"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "Robert Pietkivitch (1989 to 1992); Nicholas J. Kisseberth"
+url = "https://github.com/rogueforge/xrogue8.0"
+
+[exec]
+game = "xrogue"
+
+# the dungeon is at most 80x24, centred; measured in a pty: at 69
+# columns or 19 rows it refuses to start ("screen size too small")
+[min_terminal]
+cols = 70
+rows = 20
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, a fighter played by asciiverse/record/xrogue.py: attributes
+# chosen, out of Friendly Fiend's Equipage, the first level explored,
+# fights with flying bats, an xvart and a giant rat, 52 s, ending on the
+# top twenty; the still is the fighter in a swarm of bats
+[media]
+cast = "asciiverse/casts/xrogue.cast"
+thumbnail_at = 21.0
+
+[release]
+source = "github"

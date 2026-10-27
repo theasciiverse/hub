@@ -1,0 +1,46 @@
+schema_version = 1
+id = "worms"
+kind = "art"
+title = "Worms"
+description = "Coloured worms wander the screen, turning at random and bouncing off the edges: the BSD screen piece from 1980"
+license = "BSD-3-Clause"
+repo = "theasciiverse/netbsd-games"
+collection = "bsdgames"
+provenance = "Eric P. Scott wrote worms at Caltech High Energy Physics in October 1980, a Unix version of the DEC-2136 program of the same name, and it shipped with BSD Unix from then on."
+changes = "PATCHES.md"
+topics = ["screensaver", "worms", "generative", "classic", "curses"]
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "Eric P. Scott, Caltech (1980)"
+url = "https://github.com/NetBSD/src/tree/trunk/games/worms"
+
+# eight worms (-n 8) in colour (-C) with their heads shown (-H); any key
+# quits
+[exec]
+game = "worms"
+args = ["-C", "-H", "-n", "8"]
+
+# it needs 40 cells and 3 rows and columns, and fits fewer worms on a
+# small screen; below that it waits for a bigger window (resized down to
+# 2x2 under ASan)
+[min_terminal]
+cols = 20
+rows = 8
+
+# plain ASCII in the 8 basic colours, bold and dim; keyboard only
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, `worms -C -H -n 8` for 30 s (asciiverse/record/worms.py)
+[media]
+cast = "asciiverse/casts/worms.cast"
+thumbnail_at = 20.0
+
+[release]
+source = "github"
