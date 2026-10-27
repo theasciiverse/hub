@@ -9,6 +9,7 @@ old = false
 
 [[title]]
 id = "prince-of-braille"
+year = 1989
 kind = "game"
 title = "Prince of Braille"
 description = "Port of the 1989 Apple II Prince of Persia from Mechner's source, prince in Braille"
@@ -34,6 +35,7 @@ The first playable cut: all 14 original levels, the kid's movement and the traps
 
 [[title]]
 id = "tetrix"
+year = 2026
 kind = "game"
 title = "Tetrix"
 description = "Six fields. Nine dirty tricks. One survivor! The late-90s LAN-party block buster legend is back: clear lines, grab specials, and Quake, Bomb and Switch your friends into oblivion!"
@@ -103,6 +105,7 @@ Tetrix needs a terminal of at least 92 columns by 28 rows.
 
 [[title]]
 id = "sleighride"
+year = 2026
 new = true  # demo of the NEW! banner; which titles get it is David's call
 kind = "game"
 title = "Sleighride"
@@ -163,6 +166,7 @@ On terminals without the kitty keyboard protocol, Up latches the gas on, Down tu
 
 [[title]]
 id = "panzer"
+year = 2026
 kind = "game"
 title = "Panzer"
 description = "It is time to make a stand in toyland! Toy tanks - real ricochets! Bank your shells off the walls, plant your mines, and outfox nine enemy tanks with nine nasty tricks, all the way to the Last Stand!"
@@ -243,6 +247,7 @@ requires = { utf8 = true, color = "truecolor", mouse = false, glyphs = ["braille
 
 [[title]]
 id = "sigpipe"
+year = 2026
 kind = "game"
 title = "SIGPIPE"
 description = "The data is already on its way! Lay pipe as fast as your fingers allow: loop it, split it, buffer it, and pray it never hits an open end. cat: write error: Broken pipe!"
@@ -315,6 +320,7 @@ requires = { utf8 = true, color = "truecolor", mouse = false, glyphs = ["braille
 
 [[title]]
 id = "uxo"
+year = 2026
 kind = "game"
 title = "uXo"
 description = "BOOM! Drop bombs, chain the blasts and blow your way through the Orchard, or grab three friends and blast each other sky-high in Battle! Kick them, punch them, throw them, and watch out for the skull!"
@@ -359,6 +365,7 @@ Every bomb on the grid is unexploded ordnance. For now. **IF YOU SEE ME RUNNING,
 
 [[title]]
 id = "brickspire"
+year = 2026
 kind = "game"
 title = "Brickspire"
 description = "The stars are going out! The Mason has walled up the Lamplighter at the top of his tower. Five towers, fifty floors, one ball: smash your way up before the last star fades!"
@@ -410,6 +417,7 @@ At the top, the Mason is still laying bricks, as fast as you can break them. Bre
 
 [[title]]
 id = "kaiku"
+year = 2026
 kind = "game"
 title = "Kaiku: Echoes Home"
 description = "A savage blast hurls you deep into enemy territory, where no human has ever flown! Fight through two hostile fleets, decode the lost voices of Earth, and find the one gate that leads home. Can you make it back alive?!"
@@ -481,6 +489,7 @@ Terminals with the kitty keyboard protocol (kitty, foot, WezTerm, Ghostty) give 
 
 [[title]]
 id = "ceres"
+year = 2015
 kind = "game"
 title = "Ceres"
 description = "Ceres Mountain: three thousand metres of ice, spikes and wind. Jump, dash and wall-kick your way to the summit, and try not to read the memorial on the way up!"
@@ -538,6 +547,7 @@ In 2015, Maddy Thorson and Noel Berry made a hardcore little platformer for the 
 
 [[title]]
 id = "entity"
+year = 2026
 kind = "game"
 title = "Entity"
 description = "N-inspired precision platformer: momentum, wall jumps, gold, mines, instant death"
@@ -552,6 +562,7 @@ requires = { utf8 = true, color = "truecolor", mouse = false, glyphs = ["braille
 
 [[title]]
 id = "marble-recovery"
+year = 2026
 kind = "game"
 title = "Marble Recovery"
 description = "They say you've lost your marbles. They're right: twelve of them, rolled off into places that should not exist. Roll, tilt and tumble through strange worlds to bring every one of them home!"
@@ -595,6 +606,7 @@ Twelve marbles, every one of them out there somewhere. **GO AND GET THEM BACK!**
 
 [[title]]
 id = "moraen"
+year = 2026
 kind = "game"
 title = "Moraen"
 description = "The ice is gone, and the dwarves' treasure lies buried in the rubble it left behind. Dig in, gather the gems and bring the clan's treasure home, before the stone trolls awake!"
@@ -647,6 +659,7 @@ The clock is the thaw, and the trolls are waking. **DIG FAST!**
 
 [[title]]
 id = "ohm"
+year = 2026
 new = true  # demo of the NEW! banner
 kind = "game"
 title = "Ohm's Workshop"
@@ -782,6 +795,7 @@ old = true
 
 [[title]]
 id = "terminal-orbit"
+year = 1999
 kind = "game"
 title = "Terminal Orbit"
 description = "The aliens are already here! Fly real Newtonian orbits across the solar system in a starfighter drawn in Braille, from the Moon to the rings of Saturn and all the way out to Pluto."
@@ -1168,6 +1182,7 @@ new = true
 # brought waves and their Braille banners
 [[title]]
 id = "braillestorm"
+year = 2026
 kind = "game"
 title = "Braillestorm"
 description = "Your terminal is in a storm! Wildcard globs, rogue cursors and runaway forks swarm the screen, and you're the last prompt standing. Twin-stick fury in glorious Braille, over a grid that ripples with every blast!"
@@ -1229,6 +1244,7 @@ Best in a terminal that reports key releases (kitty, foot, WezTerm, Ghostty, Ala
 
 [[title]]
 id = "royal-ur"
+year = 2026
 kind = "game"
 title = "Royal Game of Ur"
 description = "The oldest board game with known rules: race your pieces past the rosettes of a 4,500-year-old board, in four reconstructions"
@@ -1274,6 +1290,7 @@ Play the computer at three strengths, or a friend at the same keyboard.
 
 [[title]]
 id = "senet"
+year = 2026
 kind = "game"
 title = "Senet"
 description = "The Egyptian game of passing through the netherworld, played for three thousand years, with every honest reconstruction of its lost rules"
@@ -1318,6 +1335,7 @@ Play the computer at three strengths, or a friend at the same keyboard.
 
 [[title]]
 id = "mehen"
+year = 2026
 kind = "game"
 title = "Mehen"
 description = "Race your pharaohs up the coiled snake by guessing marbles in a fist, and set lions on the other team: one of Egypt's oldest games, reconstructed in 2024"
@@ -1358,6 +1376,7 @@ Play one against one, or teams of two or three. The computer bluffs with the mix
 
 [[title]]
 id = "hnefatafl"
+year = 2026
 kind = "game"
 title = "Hnefatafl"
 description = "The Viking game of the king: twenty-four attackers, one king and his guard, and five rule sets from Copenhagen to Lapland"
@@ -1403,6 +1422,7 @@ Play the computer at three strengths, from either side, or a friend at the same 
 
 [[title]]
 id = "fox-and-geese"
+year = 2026
 kind = "game"
 title = "Fox and Geese"
 description = "One fox, a whole gaggle of geese, and a cross-shaped board: the medieval hunt game, as R. C. Bell gives it"
@@ -1447,6 +1467,7 @@ Play the computer at three strengths, as fox or geese, or a friend at the same k
 
 [[title]]
 id = "mancala"
+year = 2026
 kind = "game"
 title = "Mancala"
 description = "Seeds, pits and a lot of counting: the sowing games of Africa, Asia and Europe, from Ghana's Oware to Toguz Kumalak of the steppe, each with its own rules"
@@ -1493,6 +1514,7 @@ Play the computer at three strengths, from either side, or a friend at the same 
 
 [[title]]
 id = "morris"
+year = 2026
 kind = "game"
 title = "Morris"
 description = "Three in a row takes a man: Nine Men's Morris and its family, from the Roman game boards to Morabaraba of South Africa"
@@ -1537,6 +1559,7 @@ Play the computer at three strengths, from either side, or a friend at the same 
 
 [[title]]
 id = "mu-torere"
+year = 2026
 kind = "game"
 title = "Mū tōrere"
 description = "Four men each on an eight-pointed star and one empty point: the Māori blocking game of New Zealand's East Coast"
@@ -1578,6 +1601,7 @@ Play the computer at three strengths, from either side, or a friend at the same 
 
 [[title]]
 id = "konane"
+year = 2026
 kind = "game"
 title = "Kōnane"
 description = "Black and white stones, every hollow full, and every move a jump: the Hawaiian game Cook's expedition saw in 1779"
@@ -1620,6 +1644,7 @@ Play the computer at three strengths, from either side, or a friend at the same 
 
 [[title]]
 id = "seega"
+year = 2026
 kind = "game"
 title = "Seega"
 description = "Fill a square of holes with your kelbs, then step and trap: the Egyptian game Lane saw cut into the top of the Great Pyramid"
@@ -1661,6 +1686,7 @@ Play the computer at three strengths, from either side, or a friend at the same 
 
 [[title]]
 id = "alquerque"
+year = 2026
 kind = "game"
 title = "Alquerque and Fanorona"
 description = "Leap and take on the lined board of Alfonso X's Book of Games, or sweep whole lines away in Madagascar's Fanorona"
@@ -1705,6 +1731,7 @@ Play the computer at three strengths, from either side, or a friend at the same 
 
 [[title]]
 id = "tabula"
+year = 2026
 kind = "game"
 title = "Tabula"
 description = "The Roman ancestor of backgammon: fifteen men, three dice, and the one game position that survives from antiquity"
@@ -1745,6 +1772,7 @@ Play the computer at three strengths, from either side, or a friend at the same 
 
 [[title]]
 id = "pachisi"
+year = 2026
 kind = "game"
 title = "Pachisi and Chaupar"
 description = "Four colours round a cross of four arms, thrown with six cowrie shells or three long dice: the game that became Ludo"
@@ -1785,6 +1813,7 @@ Play the computer at three strengths, or a friend at the same keyboard; each sid
 
 [[title]]
 id = "shatranj"
+year = 2026
 kind = "game"
 title = "Shatranj"
 description = "Chess before the queen and the bishop, as the masters of Baghdad played it, and the Indian chaturanga they wrote down"
@@ -1827,6 +1856,7 @@ Play the computer at three strengths, from either side, or a friend at the same 
 
 [[title]]
 id = "patolli"
+year = 2026
 kind = "game"
 title = "Patolli"
 description = "Five black beans, a cross painted on a mat, six stones each: the Aztec game that players staked themselves on"
@@ -1863,6 +1893,7 @@ Play the computer at three strengths, or a friend at the same keyboard.
 
 [[title]]
 id = "nard"
+year = 2026
 kind = "game"
 title = "Nard"
 description = "Fifteen men, two dice, and a neural-network opponent that doubles like it means it: backgammon on an inlaid bazaar board, the oldest game in the family."
@@ -1910,6 +1941,7 @@ Money play with the doubling cube, gammons and backgammons, and the score kept a
 
 [[title]]
 id = "dominos"
+year = 2026
 kind = "game"
 title = "Dominos"
 description = "Clack! Ivory tiles on green baize: the Block game, the Draw game and All Fives, against a sly computer or your friends round the table on the local network."
