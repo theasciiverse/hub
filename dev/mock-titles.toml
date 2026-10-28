@@ -12,10 +12,10 @@ id = "prince-of-braille"
 year = 1989
 kind = "game"
 title = "Prince of Braille"
-description = "Port of the 1989 Apple II Prince of Persia from Mechner's source, prince in Braille"
+description = "Sixty minutes, fourteen levels, and a palace full of spikes, loose floors and gates. Jordan Mechner's 1989 Apple II original, run from his own released source, with the prince drawn in Braille."
 provenance = "Asciiverse ported Jordan Mechner's Prince of Persia (Apple II, 1989), written from the source code Mechner released."
 genre = "platformer"
-license = "undecided"
+license = "MIT"
 topics = ["platformer", "restoration", "braille", "classic"]
 thumbnail_at = 12.0
 featured = 1
@@ -24,9 +24,15 @@ developer = { name = "Asciiverse", url = "https://asciiverse.sh" }
 upstream = { name = "Jordan Mechner", url = "https://www.jordanmechner.com" }
 min_terminal = { cols = 70, rows = 25 }
 requires = { utf8 = true, color = "truecolor", mouse = false, glyphs = ["braille"] }
-page = """A faithful port of Jordan Mechner's 1989 Apple II Prince of Persia, built from the source code he released, with the prince drawn in Braille.
+page = """**SIXTY MINUTES. FOURTEEN LEVELS. WATCH YOUR STEP.**
 
-Run, climb, leap and hang across the palace, and dodge spikes, loose floors and closing gates.
+The clock is running, and it counts down in real minutes. Run, leap, climb, hang from ledges, and creep forward one careful step at a time, because here the floor itself wants you dead. Spikes spring from the stone. Loose tiles crumble under your feet and drop into the dark. Gates rise and fall on pressure plates.
+
+Every move comes from the source code Jordan Mechner released for his 1989 Apple II Prince of Persia: his own 6502 routines, ported routine by routine and run on his original level data, so the prince runs, stops and leaps exactly as Mechner animated him. He is drawn in Braille dots and the palace in block glyphs, coloured as an old colour monitor would show it, or in one of the new themes.
+
+- **All 14 original levels**, with the original traps and the original sixty-minute timer
+- **The whole repertoire**: run, stop, turn, careful step, jump, climb, hang, crouch, crawl, and drink what you find in the flasks
+- **Braille and blocks**: press **g** to compare the looks, **c** to change colour theme (dusk, phosphor, amber or the Apple's own classic)
 
 ## Status
 
@@ -41,7 +47,7 @@ title = "Tetrix"
 description = "Six fields. Nine dirty tricks. One survivor! The late-90s LAN-party block buster legend is back: clear lines, grab specials, and Quake, Bomb and Switch your friends into oblivion!"
 provenance = "Asciiverse made Tetrix in Rust in 2026, after St0rmCat's TetriNET, the late-90s multiplayer falling-block game with attack blocks. Its rules follow TetriNET 1.13, and the rotation table and core rules are ported from Andrew Church's tetrinet 0.11."
 genre = "puzzle"
-license = "undecided"
+license = "GPL-2.0-or-later"
 topics = ["puzzle", "multiplayer", "lan", "blocks"]
 thumbnail_at = 15.0
 featured = 2
@@ -112,7 +118,7 @@ title = "Sleighride"
 description = "Second day of Christmas, Santa's asleep and the elves have found the keys! Grab a sleigh, a reindeer or a broomstick and race like mad, before Santa fires up the snowplough and comes for the ringleader!"
 provenance = "Asciiverse made Sleighride in Rust in 2026, out of the Christmas folklore of Julbocken, La Befana, the Yule Cat, the Yule Lads, Ded Moroz and Snegurochka."
 genre = "racing"
-license = "undecided"
+license = "GPL-3.0-or-later"
 topics = ["racing", "multiplayer", "christmas", "voxel"]
 thumbnail_at = 16.0
 featured = 4
@@ -172,7 +178,7 @@ title = "Panzer"
 description = "It is time to make a stand in toyland! Toy tanks - real ricochets! Bank your shells off the walls, plant your mines, and outfox nine enemy tanks with nine nasty tricks, all the way to the Last Stand!"
 provenance = "Asciiverse made Panzer in Rust in 2026, after Wii Play's Tanks (Nintendo, 2006)."
 genre = "action"
-license = "undecided"
+license = "MIT"
 topics = ["action", "tanks", "co-op", "lan"]
 thumbnail_at = 12.0
 developer = { name = "Asciiverse", url = "https://asciiverse.sh" }
@@ -235,15 +241,43 @@ Panzer needs a truecolour terminal. 160x50 is playable, 200x60 or more is comfor
 id = "rusty-pinball"
 kind = "game"
 title = "Rusty Pinball"
-description = "Physics pinball with nine tables in Braille vector graphics, after Vector Pinball"
+description = "Eight physics pinball tables drawn in Braille vector lines: orbiting bumpers, a spinning triangle round a pyramid, a real star map and multiball wherever the table has it. After Brian Nenninger's Vector Pinball."
 provenance = "Asciiverse ported Brian Nenninger's Vector Pinball for Android, written from its source code."
 genre = "pinball"
-license = "undecided"
+license = "GPL-3.0-only"
 topics = ["pinball", "physics", "braille", "port"]
 thumbnail_at = 5.0
 developer = { name = "Asciiverse", url = "https://asciiverse.sh" }
 upstream = { name = "Vector Pinball", url = "https://github.com/dozingcat/Vector-Pinball" }
 requires = { utf8 = true, color = "truecolor", mouse = false, glyphs = ["braille"] }
+page = """**PULL THE PLUNGER. THE TABLE IS ALIVE.**
+
+Real-time pinball physics, drawn in Braille vector lines right in your terminal. The ball rolls and ricochets off bumpers, slingshots and drop targets, the camera follows it up and down the table, and a dot-matrix display keeps the score.
+
+Eight tables, each with its own rules. On Round and Round the bumpers orbit. On Eye of Horus a spinning triangle guards the pyramid at the centre. On Orbiters five planets circle a sun and tug at the ball as it passes. Ad Astra carries a map of the real night sky, 1,500 stars, and asks you to light up Orion, Leo or Ursa Major one star at a time. Pool Party racks them up and dares you to "Shoot the Eight Ball!" Ball locks, multiball and jackpots wait on every table that has them.
+
+- **Eight tables**: Classic, Round and Round, Ringmaster, Compound Interest, Eye of Horus, Orbiters, Ad Astra and Pool Party
+- **Real physics**: flippers, kickers, ramps, loops and layered mini tables
+- **The original's sound**: score dings, rollover notes, and music that builds as you score
+- **Faithful rules**: ball savers, halving multipliers and "Shoot Again", as Vector Pinball plays them
+- **Unlimited balls** from the menu, when you just want to play
+
+## Controls
+
+- **Space**: launch the ball
+- **Z**, **Left** or **Left Shift**: left flipper
+- **X**, **Right** or **Right Shift**: right flipper (Shift works on terminals with the kitty keyboard protocol; elsewhere use the letters or arrows)
+- **Enter**: carry on after a lost ball, or start again after game over
+- **Esc**: back to the menu
+- In the menu: **Up** or **k**, **Down** or **j**, **Enter** to choose, **Q** to quit; sound, score animations, ball trails and unlimited balls are switched there
+
+## Credits
+
+- Tables 1 to 8: layouts and rules from [Vector Pinball](https://github.com/dozingcat/Vector-Pinball) by Brian Nenninger, GPL-3.0
+- Star map on Ad Astra: from Vector Pinball, which credits Sky Map's catalog
+- Terminal version: Asciiverse
+- License: GPL-3.0
+"""
 
 [[title]]
 id = "sigpipe"
@@ -253,7 +287,7 @@ title = "SIGPIPE"
 description = "The data is already on its way! Lay pipe as fast as your fingers allow: loop it, split it, buffer it, and pray it never hits an open end. cat: write error: Broken pipe!"
 provenance = "Asciiverse made SIGPIPE in Rust in 2026, after the pipe-laying puzzle games of the late 1980s."
 genre = "puzzle"
-license = "undecided"
+license = "MIT"
 topics = ["puzzle", "pipes", "versus", "lan"]
 thumbnail_at = 14.0
 developer = { name = "Asciiverse", url = "https://asciiverse.sh" }
@@ -308,15 +342,43 @@ SIGPIPE fits an 80x24 terminal. At 144 columns or wider, your rival's board show
 id = "tty-rex"
 kind = "game"
 title = "tty-rex"
-description = "Chrome's offline T-Rex runner, recreated faithfully from Chromium's source"
+description = "No internet? No problem. The browser's offline T-Rex runs again in your terminal, rebuilt from Chromium's own source: jump the cacti, duck the pterodactyls, run through the night."
 provenance = "Asciiverse recreated Chrome's offline T-Rex runner, written from Chromium's own source: the same rules, timings, sprites and sounds."
 genre = "runner"
-license = "undecided"
+license = "BSD-3-Clause"
 topics = ["runner", "endless", "braille", "total-conversion"]
 thumbnail_at = 5.0
 developer = { name = "Asciiverse", url = "https://asciiverse.sh" }
 upstream = { name = "The Chromium Authors", url = "https://www.chromium.org" }
 requires = { utf8 = true, color = "truecolor", mouse = false, glyphs = ["braille", "octants"], gamepad = true }
+page = """**NO INTERNET. NO PROBLEM. RUN.**
+
+You know this dinosaur. It is the little T-Rex that waits on the browser's "No Internet" page, and now it runs in your terminal, drawn in Braille dots. Press Space and the road opens up. Jump the cacti. Past speed 8.5 the pterodactyls arrive, so duck. Every 700 points night falls. And it only ever gets faster.
+
+Every rule, timing, sprite and sound comes from Chromium's own source, so it plays exactly the way you remember: hold jump for a higher leap, press down in mid-air to drop fast, and chase your own high score.
+
+- **True to the pixel**: the original sprite art, every art pixel kept at the home scale
+- **Fits anywhere**: from a 20x7 split pane to a big window; the dots get coarser or finer, the game doesn't change
+- **Four looks**: Braille in your terminal's own colours, classic grey on white, coloured sprites, or colour blocks
+- **Auto mode**: press **A** and he runs on his own, a strip of living scenery for the bottom of your tmux layout
+- **Gamepad ready**: A jumps, B ducks, as in the original
+
+## Controls
+
+- **Space**, **Up**, **W** or **K**: jump (hold for a higher jump)
+- **Down**, **S** or **J**: duck; in mid-air, drop fast
+- **Enter**: run again after a crash (Space works too, after a moment)
+- **P**: pause; **V**: next look; **A**: auto mode; **M**: mute
+- **Q** or **Esc**: quit
+- Gamepad: **A** jumps, **B** ducks, **Start** restarts after a crash and pauses otherwise, the D-pad's up and down jump and duck, **Select** toggles auto mode
+
+Holding jump for a higher jump needs a terminal that reports key releases (the kitty keyboard protocol); elsewhere every jump is a full one.
+
+## Credits
+
+- The original game, its sprites and sounds: The Chromium Authors (BSD-3-Clause)
+- Terminal version: Asciiverse
+"""
 
 [[title]]
 id = "uxo"
@@ -326,7 +388,7 @@ title = "uXo"
 description = "BOOM! Drop bombs, chain the blasts and blow your way through the Orchard, or grab three friends and blast each other sky-high in Battle! Kick them, punch them, throw them, and watch out for the skull!"
 provenance = "Asciiverse made uXo in Rust in 2026, a love letter to the 90s bomb-arena games."
 genre = "action"
-license = "undecided"
+license = "MIT"
 topics = ["action", "arena", "party", "gamepad"]
 thumbnail_at = 13.0
 developer = { name = "Asciiverse", url = "https://asciiverse.sh" }
@@ -371,7 +433,7 @@ title = "Brickspire"
 description = "The stars are going out! The Mason has walled up the Lamplighter at the top of his tower. Five towers, fifty floors, one ball: smash your way up before the last star fades!"
 provenance = "Asciiverse made Brickspire in Rust in 2026: a brick breaker after the great arcade and 16-bit ones, played up a turning tower in the manner of the late-80s tower climbers."
 genre = "arcade"
-license = "undecided"
+license = "MIT"
 topics = ["arcade", "breakout", "bosses", "gamepad"]
 thumbnail_at = 8.0
 developer = { name = "Asciiverse", url = "https://asciiverse.sh" }
@@ -423,7 +485,7 @@ title = "Kaiku: Echoes Home"
 description = "A savage blast hurls you deep into enemy territory, where no human has ever flown! Fight through two hostile fleets, decode the lost voices of Earth, and find the one gate that leads home. Can you make it back alive?!"
 provenance = "Asciiverse made Kaiku in Rust in 2026. The echoes are NASA mission audio and John F. Kennedy's speeches; Gates of Zendocon (Epyx, 1989), ZType and Typespeed inspired it."
 genre = "action"
-license = "undecided"
+license = "MIT"
 topics = ["shmup", "typing", "space", "co-op", "gamepad", "braille"]
 thumbnail_at = 38.0             # both fleets, a drop, and an echo decoding in the receiver
 new = true
@@ -553,7 +615,7 @@ title = "Entity"
 description = "N-inspired precision platformer: momentum, wall jumps, gold, mines, instant death"
 provenance = "Asciiverse made Entity in Rust in 2026 inspired by N (Metanet Software). It ports N's physics and object types, and plays the 150 levels of N v1.2."
 genre = "platformer"
-license = "undecided"
+license = "MIT"
 topics = ["platformer", "precision", "physics", "ninja"]
 thumbnail_at = 9.0
 developer = { name = "Asciiverse", url = "https://asciiverse.sh" }
@@ -568,7 +630,7 @@ title = "Marble Recovery"
 description = "They say you've lost your marbles. They're right: twelve of them, rolled off into places that should not exist. Roll, tilt and tumble through strange worlds to bring every one of them home!"
 provenance = "Asciiverse made Marble Recovery in Rust in 2026, after Marble Madness (Mark Cerny, Atari, 1984), with twelve levels of its own."
 genre = "platformer"
-license = "undecided"
+license = "GPL-3.0-or-later"
 topics = ["platformer", "isometric", "physics", "story"]
 thumbnail_at = 24.0
 developer = { name = "Asciiverse", url = "https://asciiverse.sh" }
@@ -612,7 +674,7 @@ title = "Moraen"
 description = "The ice is gone, and the dwarves' treasure lies buried in the rubble it left behind. Dig in, gather the gems and bring the clan's treasure home, before the stone trolls awake!"
 provenance = "Asciiverse made Moraen in Rust in 2026, a love letter to the 1984 cave-digging classic."
 genre = "puzzle"
-license = "undecided"
+license = "MIT"
 topics = ["puzzle", "action", "caves", "boulder-dash"]
 thumbnail_at = 8.0
 developer = { name = "Asciiverse", url = "https://asciiverse.sh" }
@@ -666,7 +728,7 @@ title = "Ohm's Workshop"
 description = "The old master's workshop is yours now. Fix the town's gadgets with real circuits and watch them glow, click and blink... or smoke, pop and bang!"
 provenance = "Asciiverse made Ohm's Workshop in Rust in 2026, in the family of SHENZHEN I/O, Retro Gadgets and Turing Complete, with a real circuit solver at its heart."
 genre = "puzzle"
-license = "undecided"
+license = "GPL-3.0-or-later"
 topics = ["puzzle", "electronics", "simulation", "teaching"]
 thumbnail_at = 21.5
 developer = { name = "Asciiverse", url = "https://asciiverse.sh" }
@@ -715,15 +777,8 @@ Mouse and keyboard work together: point at a part with the mouse and press a key
 - Every electronics fact checked against a real datasheet or standard, listed on its Notebook page
 """
 
-[[title]]
-id = "lera"
-kind = "program"
-title = "Lera"
-description = "The Asciiverse MUD client: every MUD, with maps, rooms and combat drawn in the terminal"
-provenance = "The Asciiverse MUD client, in design; nothing is released yet."
-topics = ["mud", "client", "gmcp", "lua"]
-status = "in design"
-developer = { name = "Asciiverse", url = "https://asciiverse.sh" }
+# Lera is held back from launch until it is built (2026-10-27); its entry,
+# the MUD client in design, stood here.
 
 [[title]]
 id = "achaea"
@@ -801,7 +856,7 @@ title = "Terminal Orbit"
 description = "The aliens are already here! Fly real Newtonian orbits across the solar system in a starfighter drawn in Braille, from the Moon to the rings of Saturn and all the way out to Pluto."
 provenance = "Asciiverse ported Steve Belczyk's ORBIT, a 1999 OpenGL space combat simulator, from its original C source. The original campaign is all here, and the first part of Episode Two is new."
 genre = "simulation"
-license = "undecided"
+license = "GPL-2.0-or-later"
 topics = ["space", "simulation", "combat", "braille", "port"]
 thumbnail_at = 14.0
 repo = "theasciiverse/terminal-orbit"
@@ -837,7 +892,7 @@ The solar system needs a pilot who understands orbits. **ARE YOU THAT PILOT?**
 
 ## Credits
 
-- ORBIT: Steve Belczyk, 1999, released as freeware
+- ORBIT: Steve Belczyk, 1999, GPL
 - Terminal port and Episode Two: Asciiverse
 - Stars: the Yale Bright Star Catalogue, from ORBIT's own source
 """
@@ -1188,7 +1243,7 @@ title = "Braillestorm"
 description = "Your terminal is in a storm! Wildcard globs, rogue cursors and runaway forks swarm the screen, and you're the last prompt standing. Twin-stick fury in glorious Braille, over a grid that ripples with every blast!"
 provenance = "Asciiverse made Braillestorm in Rust in 2026, inspired by Mark Incitti's freeware GridWars (2005); no code, art or sound is taken from it."
 genre = "action"
-license = "undecided"
+license = "GPL-3.0-or-later"
 topics = ["shmup", "twin-stick", "arena", "arcade", "gamepad", "braille"]
 thumbnail_at = 12.2             # the wave 4 banner in big Braille letters, wave 3's clear bonus under it
 new = true
@@ -1250,7 +1305,7 @@ title = "Royal Game of Ur"
 description = "The oldest board game with known rules: race your pieces past the rosettes of a 4,500-year-old board, in four reconstructions"
 provenance = "Asciiverse made Royal Game of Ur in Rust in 2026. The rules are Irving Finkel's reconstructions from a Babylonian tablet of 177 BC, and R. C. Bell's from 1960."
 genre = "board"
-license = "undecided"
+license = "GPL-3.0-or-later"
 repo = "theasciiverse/ancient-games"
 collection = "ancient-games"
 topics = ["board", "race", "dice", "ancient", "history", "vs-computer", "hot-seat"]
@@ -1296,7 +1351,7 @@ title = "Senet"
 description = "The Egyptian game of passing through the netherworld, played for three thousand years, with every honest reconstruction of its lost rules"
 provenance = "Asciiverse made Senet in Rust in 2026. No ancient rules survive; it plays Timothy Kendall's reconstruction in two forms and R. C. Bell's."
 genre = "board"
-license = "undecided"
+license = "GPL-3.0-or-later"
 repo = "theasciiverse/ancient-games"
 collection = "ancient-games"
 topics = ["board", "race", "dice", "ancient", "egypt", "history", "vs-computer", "hot-seat"]
@@ -1341,7 +1396,7 @@ title = "Mehen"
 description = "Race your pharaohs up the coiled snake by guessing marbles in a fist, and set lions on the other team: one of Egypt's oldest games, reconstructed in 2024"
 provenance = "Asciiverse made Mehen in Rust in 2026. No ancient rules survive; it plays James F. R. Masters' 2024 reconstruction."
 genre = "board"
-license = "undecided"
+license = "GPL-3.0-or-later"
 repo = "theasciiverse/ancient-games"
 collection = "ancient-games"
 topics = ["board", "race", "guessing", "ancient", "egypt", "history", "vs-computer", "hot-seat", "party"]
@@ -1382,7 +1437,7 @@ title = "Hnefatafl"
 description = "The Viking game of the king: twenty-four attackers, one king and his guard, and five rule sets from Copenhagen to Lapland"
 provenance = "Asciiverse made Hnefatafl in Rust in 2026. No Norse rules survive; it plays today's reconstructions as the World Tafl Federation and Aage Nielsen give them, and R. C. Bell's Tablut of 1960."
 genre = "board"
-license = "undecided"
+license = "GPL-3.0-or-later"
 repo = "theasciiverse/ancient-games"
 collection = "ancient-games"
 topics = ["board", "strategy", "abstract", "ancient", "viking", "history", "vs-computer", "hot-seat"]
@@ -1428,7 +1483,7 @@ title = "Fox and Geese"
 description = "One fox, a whole gaggle of geese, and a cross-shaped board: the medieval hunt game, as R. C. Bell gives it"
 provenance = "Asciiverse made Fox and Geese in Rust in 2026. The rules are R. C. Bell's (1960), with thirteen or seventeen geese."
 genre = "board"
-license = "undecided"
+license = "GPL-3.0-or-later"
 repo = "theasciiverse/ancient-games"
 collection = "ancient-games"
 topics = ["board", "hunt", "abstract", "medieval", "history", "vs-computer", "hot-seat"]
@@ -1473,7 +1528,7 @@ title = "Mancala"
 description = "Seeds, pits and a lot of counting: the sowing games of Africa, Asia and Europe, from Ghana's Oware to Toguz Kumalak of the steppe, each with its own rules"
 provenance = "Asciiverse made Mancala in Rust in 2026. Each of its nine games follows a source: the Oware Society's tournament rules, R. C. Bell (1960), E. W. Lane's account of Cairo (1836), W. J. Champion's Kalah patent (1955), M. Hellier on Malay congkak (1907), Mrs H. G. Durai on Pallanguli (1928), the Kazakh competition rules of 2013 and Fritz Jahn (1917)."
 genre = "board"
-license = "undecided"
+license = "GPL-3.0-or-later"
 repo = "theasciiverse/ancient-games"
 collection = "ancient-games"
 topics = ["board", "mancala", "count-and-capture", "abstract", "africa", "asia", "history", "vs-computer", "hot-seat"]
@@ -1520,7 +1575,7 @@ title = "Morris"
 description = "Three in a row takes a man: Nine Men's Morris and its family, from the Roman game boards to Morabaraba of South Africa"
 provenance = "Asciiverse made Morris in Rust in 2026. Its rules follow R. C. Bell (1969), the World Mill Association's rules, Ralph Gasser (1996) and Mind Sports South Africa's Morabaraba rules."
 genre = "board"
-license = "undecided"
+license = "GPL-3.0-or-later"
 repo = "theasciiverse/ancient-games"
 collection = "ancient-games"
 topics = ["board", "morris", "mill", "abstract", "europe", "africa", "history", "vs-computer", "hot-seat"]
@@ -1565,7 +1620,7 @@ title = "Mū tōrere"
 description = "Four men each on an eight-pointed star and one empty point: the Māori blocking game of New Zealand's East Coast"
 provenance = "Asciiverse made Mū tōrere in Rust in 2026. Its rules follow Elsdon Best's Games and Pastimes of the Maori (1925), as Tuta Nihoniho of Ngāti Porou explained the game to him, and the rule most often played today."
 genre = "board"
-license = "undecided"
+license = "GPL-3.0-or-later"
 repo = "theasciiverse/ancient-games"
 collection = "ancient-games"
 topics = ["board", "blocking", "abstract", "oceania", "new-zealand", "history", "vs-computer", "hot-seat"]
@@ -1607,7 +1662,7 @@ title = "Kōnane"
 description = "Black and white stones, every hollow full, and every move a jump: the Hawaiian game Cook's expedition saw in 1779"
 provenance = "Asciiverse made Kōnane in Rust in 2026. Its rules follow Michael Ernst (1995), after Kenneth Emory (1924) and Peter Buck (1957), and the National Park Service at Puʻuhonua o Hōnaunau; its largest board is the one James King described in 1779."
 genre = "board"
-license = "undecided"
+license = "GPL-3.0-or-later"
 repo = "theasciiverse/ancient-games"
 collection = "ancient-games"
 topics = ["board", "jumping", "abstract", "oceania", "hawaii", "history", "vs-computer", "hot-seat"]
@@ -1650,7 +1705,7 @@ title = "Seega"
 description = "Fill a square of holes with your kelbs, then step and trap: the Egyptian game Lane saw cut into the top of the Great Pyramid"
 provenance = "Asciiverse made Seega in Rust in 2026. Its rules follow Edward William Lane's Manners and Customs of the Modern Egyptians (1836), which gives them in full."
 genre = "board"
-license = "undecided"
+license = "GPL-3.0-or-later"
 repo = "theasciiverse/ancient-games"
 collection = "ancient-games"
 topics = ["board", "capture", "abstract", "africa", "egypt", "history", "vs-computer", "hot-seat"]
@@ -1692,7 +1747,7 @@ title = "Alquerque and Fanorona"
 description = "Leap and take on the lined board of Alfonso X's Book of Games, or sweep whole lines away in Madagascar's Fanorona"
 provenance = "Asciiverse made Alquerque and Fanorona in Rust in 2026. Its rules follow Alfonso X's Book of Games (1283, in Sonja Musser Golladay's translation), R. C. Bell (1969), W. Montgomery's account of Fanorona (1886) and Schadd and colleagues (2008)."
 genre = "board"
-license = "undecided"
+license = "GPL-3.0-or-later"
 repo = "theasciiverse/ancient-games"
 collection = "ancient-games"
 topics = ["board", "capture", "abstract", "europe", "africa", "madagascar", "history", "vs-computer", "hot-seat"]
@@ -1737,7 +1792,7 @@ title = "Tabula"
 description = "The Roman ancestor of backgammon: fifteen men, three dice, and the one game position that survives from antiquity"
 provenance = "Asciiverse made Tabula in Rust in 2026. Its rules follow the reconstructions of Louis Becq de Fouquières (1869), R. G. Austin (1934), R. C. Bell (1969) and H. J. R. Murray."
 genre = "board"
-license = "undecided"
+license = "GPL-3.0-or-later"
 repo = "theasciiverse/ancient-games"
 collection = "ancient-games"
 topics = ["board", "dice", "race", "backgammon", "europe", "rome", "history", "vs-computer", "hot-seat"]
@@ -1778,7 +1833,7 @@ title = "Pachisi and Chaupar"
 description = "Four colours round a cross of four arms, thrown with six cowrie shells or three long dice: the game that became Ludo"
 provenance = "Asciiverse made Pachisi and Chaupar in Rust in 2026. Its rules follow Rajendralala Mitra's account printed by Edward Tylor (1879), Edward Falkener (1892, reprinted by R. C. Bell) and Abu'l-Fazl's Ain-i Akbari (about 1590)."
 genre = "board"
-license = "undecided"
+license = "GPL-3.0-or-later"
 repo = "theasciiverse/ancient-games"
 collection = "ancient-games"
 topics = ["board", "dice", "race", "partnership", "asia", "india", "history", "vs-computer", "hot-seat"]
@@ -1819,7 +1874,7 @@ title = "Shatranj"
 description = "Chess before the queen and the bishop, as the masters of Baghdad played it, and the Indian chaturanga they wrote down"
 provenance = "Asciiverse made Shatranj in Rust in 2026. Its rules follow H. J. R. Murray's A History of Chess (1913), from the books of al-'Adli and as-Suli, and al-Biruni's account of India (about 1030)."
 genre = "board"
-license = "undecided"
+license = "GPL-3.0-or-later"
 repo = "theasciiverse/ancient-games"
 collection = "ancient-games"
 topics = ["board", "chess", "abstract", "asia", "persia", "india", "history", "vs-computer", "hot-seat"]
@@ -1862,7 +1917,7 @@ title = "Patolli"
 description = "Five black beans, a cross painted on a mat, six stones each: the Aztec game that players staked themselves on"
 provenance = "Asciiverse made Patolli in Rust in 2026. Its rules are R. C. Bell's suggested rules (1969), on the equipment Diego Durán describes (about 1579)."
 genre = "board"
-license = "undecided"
+license = "GPL-3.0-or-later"
 repo = "theasciiverse/ancient-games"
 collection = "ancient-games"
 topics = ["board", "dice", "race", "americas", "mexico", "aztec", "history", "vs-computer", "hot-seat"]
@@ -1899,7 +1954,7 @@ title = "Nard"
 description = "Fifteen men, two dice, and a neural-network opponent that doubles like it means it: backgammon on an inlaid bazaar board, the oldest game in the family."
 provenance = "Asciiverse made Nard in Rust in 2026. The computer player is Mark Higgins' bgsage (Open Sage), and the board's look follows Pouya Hadidi's Backgammon TUI."
 genre = "board"
-license = "undecided"
+license = "MIT"
 repo = "theasciiverse/nard"
 topics = ["board", "backgammon", "dice", "doubling cube", "vs-computer", "hot-seat"]
 thumbnail_at = 24.0             # mid-game, the cube turned to 2, both dice just used
@@ -1947,7 +2002,7 @@ title = "Dominos"
 description = "Clack! Ivory tiles on green baize: the Block game, the Draw game and All Fives, against a sly computer or your friends round the table on the local network."
 provenance = "Asciiverse made Dominos in Rust in 2026. Rules after pagat.com's Block, Draw and All Fives."
 genre = "board"
-license = "undecided"
+license = "MIT"
 repo = "theasciiverse/dominos"
 topics = ["dominoes", "tiles", "vs-computer", "multiplayer", "lan", "partners", "family", "classic"]
 thumbnail_at = 3.0              # the spinner down in All Fives, ten points scored

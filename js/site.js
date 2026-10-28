@@ -371,14 +371,15 @@ function mudDetail(m) {
   // the greeting draws once and stays, like connecting for real; no replay loop
   if (m.cast_url) mountPlayer(d.querySelector(".lib-hero .term"), m.cast_url, { ...PLAYER_OPTS, autoPlay: true, loop: false });
   const tls = m.connect.tls_port;
-  const opts = [["Lera", `lera ${m.id}`, `Opens it in <a href="#lera">Lera</a>, the Asciiverse MUD client (coming soon).`]];
+  const opts = [];
   if (tls) opts.push(["openssl", `openssl s_client -quiet -connect ${m.connect.host}:${tls}`, "Connects without a MUD client."]);
   opts.push(["telnet", `telnet ${addr}`, "Works for every MUD. On Windows, turn on the Telnet Client in Windows Features first."]);
   d.querySelector(".slot").replaceWith(tabbedInstall(opts));
   return d;
 }
 
-// Lera's own page in the MUD library: what it is, and how to get it.
+// Lera's own page in the MUD library: what it is, and how to get it. Unused while
+// Lera is held back from launch (2026-10-27); kept for when it returns.
 function leraDetail(block) {
   const d = el(`<section class="lib-detail"></section>`);
   d.append(el(block));
@@ -390,7 +391,7 @@ function leraDetail(block) {
   return d;
 }
 
-// Terminal MUD clients besides Lera, from each project's own README (checked 2026-10-12).
+// Terminal MUD clients, from each project's own README (checked 2026-10-12).
 // Platform values: "yes", or a short note for how it runs there today; null means not yet.
 const MUD_CLIENTS = [
   { id: "blightmud", kind: "client", title: "Blightmud", theme: "client", lang: "Rust", license: "GPL-3.0",
@@ -499,7 +500,8 @@ const IF_INTERPRETERS = [
     install: [["Debian/Ubuntu", "sudo apt install scottfree", "Then: scottfree <game file>"]] },
 ];
 
-// Lera, the Asciiverse MUD client: shown on the MUDs and Programs pages.
+// Lera, the Asciiverse MUD client, for the MUDs and Programs pages. Unused while
+// it is held back from launch (2026-10-27).
 const LERA_BLOCK = `
     <div class="lera">
       <div class="lera-art"><span class="tag">IN DESIGN</span><span class="w">█   █▀▀ █▀█ ▄▀█

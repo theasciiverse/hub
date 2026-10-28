@@ -20,22 +20,18 @@
   app.append(header("Catalog", "programs"));
   const wrap = el(`<div class="wrap"></div>`);
   app.append(wrap);
-  // Lera, in design, sits first among the MUD clients
-  const lera = { id: "lera", kind: "client", title: "Lera", theme: "client" };
   wrap.append(library({
-    label: "Programs", items: [lera, ...items],
-    // grouped by what they are; Lera leads the MUD clients
+    label: "Programs", items,
+    // grouped by what they are
     groups: [
-      { label: "MUD clients", items: [lera, ...items.filter(t => (t.topics || []).includes("mud-client")).sort((a, b) => a.title.localeCompare(b.title))], keepOrder: true },
+      { label: "MUD clients", items: items.filter(t => (t.topics || []).includes("mud-client")).sort((a, b) => a.title.localeCompare(b.title)), keepOrder: true },
       { label: "Interpreters", items: items.filter(t => (t.topics || []).includes("interpreter")) },
       { label: "Other programs", items: items.filter(t => !["mud-client", "interpreter"].some(k => (t.topics || []).includes(k))) },
     ].filter(g => g.items.length),
-    mark: t => t.id === "lera" ? `<span class="m" style="color:var(--amber)">SOON</span>` : "",
     badge: t => t.title[0].toUpperCase(),
-    detail: t => t.id === "lera" ? leraDetail(LERA_BLOCK) : gameDetail(t),
+    detail: gameDetail,
     empty: "Nothing here yet.",
     home: main => {
-      main.append(el(LERA_BLOCK));
       if (items.length) { main.append(shelf("Programs", `${items.length}`, items)); return; }
       main.append(el(`<section class="lib-empty"><h2>Programs are coming</h2>
         <p>Terminal tools and toys: utilities, players and editors that live in the terminal, installed and launched through av like any game.</p>

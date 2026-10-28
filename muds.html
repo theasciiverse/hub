@@ -28,7 +28,6 @@
 (async () => {
   const app = document.getElementById("app");
   const all = await loadCatalog().catch(() => []);
-  // lera has no cast yet, so the generated catalog skips it; its hero is static
   const muds = all.filter(t => t.kind === "mud");
   app.append(header("Catalog", "muds"));
   const wrap = el(`<div class="wrap"></div>`);
@@ -57,18 +56,17 @@ You say 'hello'.
 <span class="p">&gt;</span> north<span class="c">_</span></pre>
   </section>`;
 
-  // MUD clients sit above the worlds; Lera is the first, others can join it
-  const clients = [{ id: "lera", kind: "client", title: "Lera", theme: "client" }, ...[...MUD_CLIENTS].sort((a, b) => a.title.localeCompare(b.title))];
+  // MUD clients sit above the worlds
+  const clients = [...MUD_CLIENTS].sort((a, b) => a.title.localeCompare(b.title));
   wrap.append(library({
     label: "MUDs", items: [...clients, ...muds],
     groups: [{ label: "Clients", items: clients, keepOrder: true }, { label: "Worlds", items: muds }],
     badge: m => m.title[0].toUpperCase(),
-    mark: m => m.id === "lera" ? `<span class="m" style="color:var(--amber)">SOON</span>` : m.kind === "client" ? "" : `<span class="m" style="color:var(--text-faint)">${m.since || ""}</span>`,
-    detail: m => m.id === "lera" ? leraDetail(LERA_BLOCK) : m.kind === "client" ? clientDetail(m) : mudDetail(m),
+    mark: m => m.kind === "client" ? "" : `<span class="m" style="color:var(--text-faint)">${m.since || ""}</span>`,
+    detail: m => m.kind === "client" ? clientDetail(m) : mudDetail(m),
     home: main => {
       main.append(el(WHAT));
-      main.append(el(LERA_BLOCK));
-      main.append(shelf("Other terminal clients", "not made by Asciiverse · av launches any of them", MUD_CLIENTS, null, clientCard));
+      main.append(shelf("Terminal clients", "av launches any of them", MUD_CLIENTS, null, clientCard));
       const oldest = [...muds].sort((a, b) => (a.since || 9999) - (b.since || 9999));
       const shelves = [
         ["Worlds", "oldest first", oldest],

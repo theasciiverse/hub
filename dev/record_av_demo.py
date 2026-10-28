@@ -5,12 +5,13 @@
 #   python3 -m http.server 8765 --bind 127.0.0.1      # in the site folder, for the catalog
 #   python3 dev/record_av_demo.py casts/av-demo.cast "$(mktemp -d)"
 #
-# The av binary path below points at a local release build.
+# av is taken from a release build in the av folder beside hub.
 import os, pty, sys, time, select, struct, fcntl, termios
 out, home = sys.argv[1], sys.argv[2]
 env = dict(os.environ, HOME=home, XDG_DATA_HOME=home+"/.local/share", XDG_CACHE_HOME=home+"/.cache",
            XDG_CONFIG_HOME=home+"/.config", TERM="xterm-256color", COLORTERM="truecolor", LANG="C.UTF-8",
            AV_CATALOG_URL="http://127.0.0.1:8765/data/catalog.json")
+env["PATH"] = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../../../av/target/release") + os.pathsep + env["PATH"]
 pid, fd = pty.fork()
 if pid == 0:
     os.execvpe("asciinema", ["asciinema", "rec", "--overwrite", "-q", "-i", "2",
