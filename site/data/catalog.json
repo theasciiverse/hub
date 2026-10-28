@@ -744,6 +744,7 @@
    "title": "ASCII Wars!",
    "description": "A boss rush bullet hell against ten glyphs with a grudge, from The Sentinel to The Chaos Reaper: rings, rain, walls, homing swarms and sweeping beams, and you only fire while you move.",
    "year": 2025,
+   "new": true,
    "license": "MIT",
    "repo": "theasciiverse/ascii-wars",
    "provenance": "Carlos Alvarez (VikingosTeam) made ASCII Wars! in Rust and Bevy in 2025, ten bosses of glyph rings and aimed shots in a graphical window. Asciiverse brought it to the terminal and grew it into a fuller game.",
