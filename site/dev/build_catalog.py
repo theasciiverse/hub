@@ -28,6 +28,16 @@ def local_binary(t):
                 return c, name, d
     return None
 
+def local_version(t):
+    """The version in the game's own Cargo.toml, when its folder is here."""
+    for d in (GAMES / t["id"], GAMES / t["id"].replace("-", " ")):
+        for c in (d / "Cargo.toml", d / "game" / "Cargo.toml"):
+            if c.is_file():
+                v = tomllib.loads(c.read_text()).get("package", {}).get("version")
+                if isinstance(v, str):
+                    return v
+    return None
+
 def release_dir(t):
     """dev-releases/<id>/, or dev-releases/<repo name>/ when one release holds
     several titles (theasciiverse/zork: zork1, zork2, zork3)."""
@@ -153,7 +163,7 @@ def main():
             continue
         for k, v in release_info(t).items():
             t.setdefault(k, v)
-        t.setdefault("version", "0.1.0")
+        t.setdefault("version", local_version(t) or "0.1.0")
         t.setdefault("updated_at", "2026-10-10T00:00:00Z")
         t["thumbnail_at"] = t.get("media", {}).get("thumbnail_at", t.get("thumbnail_at", 5.0))
         # version stamp, so av and browsers fetch a re-recorded cast instead of a cached one

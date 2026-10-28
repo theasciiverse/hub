@@ -493,7 +493,6 @@ genre = "action"
 license = "MIT"
 topics = ["shmup", "typing", "space", "co-op", "gamepad", "braille"]
 thumbnail_at = 38.0             # both fleets, a drop, and an echo decoding in the receiver
-version = "1.0.0"
 updated_at = "2026-10-19T12:00:00Z"
 developer = { name = "Asciiverse", url = "https://asciiverse.sh" }
 # the game's own check: a 40x12 play area inside the header, frame, panel and HUD
@@ -1244,7 +1243,6 @@ genre = "action"
 license = "GPL-3.0-or-later"
 topics = ["shmup", "twin-stick", "arena", "arcade", "gamepad", "braille"]
 thumbnail_at = 12.2             # the wave 4 banner in big Braille letters, wave 3's clear bonus under it
-version = "0.2.0"
 updated_at = "2026-10-20T14:00:00Z"
 developer = { name = "Asciiverse", url = "https://asciiverse.sh" }
 # the field fits any window and follows resizes; the game has no size check,
@@ -1956,7 +1954,6 @@ license = "MIT"
 repo = "theasciiverse/nard"
 topics = ["board", "backgammon", "dice", "doubling cube", "vs-computer", "hot-seat"]
 thumbnail_at = 24.0             # mid-game, the cube turned to 2, both dice just used
-version = "0.1.0"
 updated_at = "2026-10-26T13:00:00Z"
 developer = { name = "Asciiverse", url = "https://asciiverse.sh" }
 # the game's own check; larger points and the ornament from bigger sizes up
@@ -2004,7 +2001,6 @@ license = "MIT"
 repo = "theasciiverse/dominos"
 topics = ["dominoes", "tiles", "vs-computer", "multiplayer", "lan", "partners", "family", "classic"]
 thumbnail_at = 3.0              # the spinner down in All Fives, ten points scored
-version = "0.2.0"
 updated_at = "2026-10-26T13:00:00Z"
 developer = { name = "Asciiverse", url = "https://asciiverse.sh" }
 min_terminal = { cols = 80, rows = 24 }
