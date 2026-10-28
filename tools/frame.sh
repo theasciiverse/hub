@@ -1,7 +1,7 @@
 #!/bin/sh
 # frame.sh CAST_ID SECONDS OUT.png [WIDTH_PX]: render one frame of
-# websites/Asciiverse/casts/<id>.cast with the site's player, font and palette
-# (needs the dev server: python3 -m http.server 8765 in websites/Asciiverse).
+# site/casts/<id>.cast with the site's player, font and palette
+# (needs the dev server: python3 -m http.server 8765 in site/).
 W=${4:-800}
 P=$(mktemp -d)
 timeout 40 google-chrome --headless=new --disable-gpu --hide-scrollbars --user-data-dir="$P" \
