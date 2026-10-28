@@ -1270,6 +1270,7 @@ You're a lone shell prompt, `❯`, with a twin stream of fire and three bombs. M
 - **Three bombs** that blast the field clear around you when it gets too close.
 - **Drawn in glorious Braille:** thin, glowing vector lines of dots, sixty frames a second.
 - **Gamepad, mouse or keyboard.** Clear a wave without losing your ship for a bonus, earn an extra life and bomb every 25,000 points, and chase your own best score.
+- **Toys for the grid:** drop in a drifting black hole that drinks the sparks and sucks the grid down, change the grid's colour and density, or sit back and let the autopilot play.
 
 How long can you hold back the storm? **JUST ONE MORE WAVE...**
 
@@ -1280,7 +1281,9 @@ How long can you hold back the storm? **JUST ONE MORE WAVE...**
 - **Space** or **right click**: bomb
 - **P** or **Enter**: pause; **Space** or **Enter**: play again after game over
 - **Q** or **Esc**: quit
-- **Gamepad**: left stick to move, right stick to fire, A or a shoulder button to bomb, Start to pause
+- **B**: a black hole on or off, **H**: hide the top line
+- **F2**: glow, **F3**: grid colour, **F4** / **F5**: grid denser or sparser, **F6**: random blasts, **F7**: autopilot
+- **Gamepad**: left stick to move, right stick to fire, A, a shoulder button or a trigger to bomb, Start to pause, Back to quit
 
 Best in a terminal that reports key releases (kitty, foot, WezTerm, Ghostty, Alacritty, iTerm2 and others), or with a gamepad or the mouse. Elsewhere the arrows fire sticky: the last arrow keeps firing until you press the opposite one.
 
