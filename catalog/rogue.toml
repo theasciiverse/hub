@@ -2,7 +2,7 @@ schema_version = 1
 id = "rogue"
 kind = "game"
 title = "Rogue"
-description = "The game that named the roguelikes: go down through the Dungeons of Doom, fight what you meet, and bring back the Amulet of Yendor"
+description = "The game that named the roguelikes: the guild sends you into the Dungeons of Doom for the Amulet of Yendor, 26 levels down, and death is for good."
 year = 1980
 # BSD licence plus the source's own notice that it "is not to be traded,
 # sold, or used for personal gain or profit"; SPDX has no id for that

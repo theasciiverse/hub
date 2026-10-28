@@ -1,12 +1,14 @@
-A board of 14 by 14 cells in six colours, and one simple move: pick a
-colour, and the patch in the top left corner turns that colour, swallowing
-every neighbouring cell that already had it. Keep picking until the whole
-board is one colour. The fewer moves it takes, the better.
+**ONE CORNER. SIX COLOURS. CAN YOU BEAT 25?**
 
-It sounds like there is nothing to it, but which colour to pick next is
-a real choice: grab the colour with the most cells along your edge, or
-the one that opens a path into the far corner. The panel shows your
-moves, how much of the board is flooded, and your best game.
+A 14 by 14 board in six colours, and your patch starts in the top left corner. Pick a colour, and your patch turns that colour, swallowing every neighbouring cell that already had it. Pick again. And again. Keep going until the whole board is one colour. The fewer moves it takes, the better.
+
+It sounds like there is nothing to it. Then you start counting. Grab the colour with the most cells along your edge, or the one that opens a road into the far corner?
+
+- **One key per colour**, 1 to 6, or click a colour in the panel, or any cell on the board.
+- **A best score to beat**, kept for the standard board. Before your first win, it stands at 25 moves.
+- **Bigger or smaller boards** from a terminal, just for fun.
+
+**DROWN THE BOARD.**
 
 ## Controls
 

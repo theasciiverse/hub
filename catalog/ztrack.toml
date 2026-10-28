@@ -2,10 +2,10 @@ schema_version = 1
 id = "ztrack"
 kind = "game"
 title = "Ztrack"
-description = "Pseudo-3D driving down an endless three-lane road at 150 mph, dodging traffic you can only half see"
+description = "An endless three-lane road full of stupid but dangerous traffic, and you score most at 150 mph. Check your mirrors before you change lanes."
 year = 1995
 # public domain by its author; SPDX has no id for that, so a LicenseRef
-license = "LicenseRef-PublicDomain"
+license = "LicenseRef-Public-Domain"
 repo = "theasciiverse/ztrack"
 provenance = "Russell Marks wrote Ztrack in C on curses (1995, version 1.0 in 1996)."
 topics = ["racing", "driving", "pseudo-3d", "classic", "curses"]

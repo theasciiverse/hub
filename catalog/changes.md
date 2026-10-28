@@ -1,4 +1,18 @@
-You wake and see blood, and a dying face that turns out to be your own reflection in a cockpit canopy. Then you wake again, somewhere warm and soft, and something is different. On a forest world after a crash, you have to work out what you are now, and how the life of this forest fits together.
+**YOU WAKE AND SEE BLOOD.**
+
+"There's blood everywhere." Behind it, a face twisted with pain, and a hand that spasms as it paws at the thing projecting from where a chest should be. You reach out to help, and that is when you realise you are looking into the inside of the reflective cockpit canopy, and the face you can see is yours.
+
+Then you wake again. Somewhere warm and soft.
+
+*Something's different.*
+
+You fight your way out of a cocoon into the Forest Cathedral: huge columnar trees holding up the leaf canopy, golden rays angling down, a river running along the east side, and more green cocoons at the bases of the trees. The air is full of peace. But you're not going anywhere just yet, because something's wrong.
+
+What are you now? How does the life of this forest fit together? And how do you survive in it?
+
+David Given wrote Changes for the 2012 Interactive Fiction Competition: a text adventure on a strange forest world, where the first puzzle is yourself.
+
+**WAKE UP. FIND OUT WHAT YOU'VE BECOME.**
 
 ## How to play
 

@@ -1,7 +1,10 @@
-Frotz plays text adventures written for the Z-machine, the virtual
-computer Infocom created in 1979 so its games could run anywhere. That
-covers Infocom's own catalogue, Zork among them, and most interactive
-fiction written since in Inform. Give it a story file and play.
+**THE COMPUTER THAT NEVER EXISTED, STILL RUNNING.**
+
+Infocom wrote its games for "an imaginary computer of their own design
+called the Z-Machine", so they could run anywhere a small interpreter
+could. Frotz is that interpreter. It plays Infocom's own catalogue, Zork
+among them, and the stories written for the Z-machine since in Inform.
+Give it a story file and play.
 
 ## Use
 
@@ -14,5 +17,5 @@ only need this to play story files of your own.
 ## Credits
 
 - Frotz: David Griffith and contributors, after Stefan Jokisch's original
-- Asciiverse edition: static builds and packaging, no code changes
+- Asciiverse edition: static builds and packaging, and one fix (a heap overread when guessing a story's Blorb file name)
 - License: GPL-2.0-or-later

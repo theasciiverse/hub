@@ -1,8 +1,24 @@
-A fireworks show that never ends: rockets burst all over the window in
-showers of coloured ASCII, sparks trailing and falling as they fade, a few
-at a time in a small window and many in a big one. Every burst picks its
-own place, moment and palette, from embers and golds to ice blue and
-neon pink.
+**THE SHOW NEVER ENDS. TURN OUT THE LIGHTS.**
+
+Bang. A burst of sparks blooms in the corner of your terminal, sparks
+arcing out, slowing, drooping under their own weight and fading as they
+fall. Then another, over there. Then three at once. It never stops, and
+it never repeats: every firework picks its own spot, its own moment and
+its own palette, and a bigger window gets a bigger show.
+
+Wayoung7 built firework-rs as a little particle engine in Rust, with real
+gravity and air resistance on every spark, and the colours are hand-picked:
+reds and golds, deep sea greens, ice blues, pastel pinks and lilacs, eight
+palettes in all.
+
+- **Endless and random**: no two minutes alike, as long as you leave it
+  running
+- **Fills any window**: from a corner of the screen to a wall-sized
+  terminal, the number of bursts grows with the space
+- **Five designed shows** too, from the command line, and a colour fade
+  for black backgrounds
+
+**Pour a drink. Press any key when the party's over.**
 
 ## Controls
 

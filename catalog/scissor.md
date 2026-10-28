@@ -1,16 +1,25 @@
-Rock, paper and scissors bounce around the screen: rocks (**O**), papers
-(**#**), scissors (**>**) and one magic piece (**?**). When two meet, the
-winner turns the loser into its own kind: rock blunts scissors, scissors
-cut paper, paper wraps rock. The magic piece turns scissors into paper,
-paper into rock and rock into scissors.
+**ROCK BLUNTS. PAPER WRAPS. YOU CUT.**
 
-You steer the highlighted scissor. Every time it hits a piece of another
-kind you score 47 points, so the game is to hunt papers, dodge rocks
-and manage the populations. If your scissor is turned into
-something else, another scissor on the screen becomes yours; you have
-extra lives as long as there are scissors left. When the last one is
-gone, the game is over. Some of the other scissors follow your keys
-too, now and then.
+The playground game, "evolved to a super-hyper-great live action
+strategy game", in its author's words. Rocks (**O**), papers (**#**) and
+scissors (**>**) bounce around the screen, and whenever two meet, the
+winner turns the loser into its own kind. Rock blunts scissors, scissors
+cut paper, paper wraps rock. And somewhere in the crowd drifts a magic
+piece (**?**) that turns whatever it touches into the thing it beats.
+
+You steer the highlighted scissor. Hunt down the papers for 47 points a
+hit, and stay well away from the rocks. Lose your scissor and another
+one on the screen becomes yours: you have extra lives as long as there
+are scissors left. So you are not just playing, you are farming: keep
+enough papers alive to feed on and few enough rocks to survive.
+
+- **Diagonal moves are faster**, and you will need them
+- **Some of the other scissors follow your keys too**, now and then
+- **"Patience and vigilance could lead to very high scores"**, says the
+  help screen; lose the last scissor and it says "You have lost The
+  Game"
+
+**Snip, snip.**
 
 ## Controls
 

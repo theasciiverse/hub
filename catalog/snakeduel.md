@@ -1,11 +1,20 @@
-Your snake against the computer's. Both start side by side in the middle
-of the board, yours on the right, and both leave a wall behind them
-wherever they go. Run into a wall, the other snake or yourself and you
-lose the round; make the computer crash first and you win it.
+**TWO SNAKES. ONE ARENA. NO WAY BACK.**
 
-The computer plays to block your way and keep room for itself. The first
-to five wins takes the match, and from four all it goes on until one
-side is two ahead. The colours of the snakes change from round to round.
+Your snake against the computer's, side by side in the middle of the
+board, and both of them leave a solid wall behind them wherever they
+go. The help screen puts the rules in two sentences: "Don't hit the
+walls, the other snake and yourself. Kill the other snake."
+
+Every turn the arena gets smaller. The computer plays to cut you off and
+keep room for itself, so you have to think a few moves ahead: lure it
+into a corridor, swing across its path, and leave it nowhere to turn.
+
+- **First to five rounds** takes the match; from four all it goes on
+  until one side is two ahead
+- **Any size of board**, fitted to your terminal or set from the command
+  line
+
+**Cut it off. Close it in. Win the duel.**
 
 ## Controls
 

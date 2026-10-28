@@ -1,11 +1,21 @@
-Backgammon as it came with BSD Unix: you play White against the
-computer, or two players share the keyboard. The board is redrawn in
-place after every move, the computer offers and takes doubles, and a
-game can be saved and picked up later.
+**ROLL THE DICE. THE COMPUTER HAS ITS EYE ON THE DOUBLING CUBE.**
 
-New to the game? Answer yes when it asks whether you want the rules:
-teachgammon explains backgammon section by section and then plays a
-practice game with you, move by move.
+Backgammon as it came with BSD Unix in 1980. You play White, the computer
+plays Red, and the board is redrawn in place after every move. The computer
+offers doubles and takes them, and it is watching for any man you leave on
+his own. Win big enough and the game says so: "Backgammon!"
+
+Two players can share the keyboard instead, and a game can be saved and
+picked up later.
+
+New to the game? Answer yes when it asks whether you want the rules.
+Teachgammon, its built-in tutor, explains backgammon section by section and
+then plays a practice game with you, move by move.
+
+- **You against the computer**, or two players on one keyboard
+- **The doubling cube**, offered and accepted by the computer
+- **Teachgammon**, the tutorial that teaches the rules
+- **Saved games** to come back to
 
 ## Controls
 

@@ -1,4 +1,14 @@
-You stand west of a white house, with a mailbox and a boarded front door. Somewhere below lies the Great Underground Empire, and nineteen treasures for whoever is brave, clever and careful enough to bring them back. Watch out for the thief, and keep your lamp lit: it is pitch dark, and you are likely to be eaten by a grue.
+**IT IS PITCH BLACK. YOU ARE LIKELY TO BE EATEN BY A GRUE.**
+
+"You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here." Somewhere below lies the Great Underground Empire, and nineteen treasures for whoever is brave, clever and careful enough to bring them back.
+
+Keep your lamp lit. Watch out for the thief, who would very much like your treasures too. And never, ever, go wandering in the dark.
+
+This is where Infocom began: Marc Blank, Dave Lebling, Bruce Daniels and Tim Anderson's adventure of 1980, the original story file, now free under the MIT licence.
+
+- **Type what you mean**: a parser that understands whole sentences, like `put sword in case`
+- **Nineteen treasures** to find and carry home
+- **The original story file**, unchanged, played in Frotz
 
 ## How to play
 

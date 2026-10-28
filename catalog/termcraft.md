@@ -1,4 +1,4 @@
-The sun is going down and you own nothing but your fists.
+**THE SUN IS GOING DOWN. YOU OWN NOTHING BUT YOUR FISTS.**
 
 Punch a tree. Turn the wood into planks, the planks into a crafting table,
 the table into a pickaxe. Dig into the hillside before the zombies come
@@ -15,9 +15,9 @@ them to the stronghold, and at the end of everything the Ender Dragon is
 waiting.
 
 You do not have to do it alone. One command hosts a world and drops you
-into it; up to eight friends join from their own terminals, on the same
-network or through SSH, with their own inventories, shared building, chat
-and, if you leave it on, PvP.
+into it; friends join from their own terminals, on the same network or
+through SSH, up to eight players in all, with their own inventories,
+shared building, chat and, if you leave it on, PvP.
 
 Short on time? **Lantern Run** is a compact challenge route: cross a
 broken trail, take back a ruin from its guards, raid the supply chest,

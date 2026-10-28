@@ -1,9 +1,16 @@
-The big open-source roguelike, still in active development. Pick one of
-27 species and 26 backgrounds, go down through the Dungeon and its
-branches, collect at least three runes and bring the Orb of Zot back to
-the surface. Turn-based, one life per character, no grinding: autoexplore
-and autotravel take you through the dull parts, and the game is about the
-choices in the dangerous ones. This is the console edition, drawn in text.
+**THE ORB OF ZOT IS DOWN THERE. COME BACK WITH IT.**
+
+Somewhere deep beneath the world's surface lies the Orb of Zot. "Some say it will grant immortality or even godhood to the one who carries it into the sunlight; many undead creatures seek it in the hope that it will restore them to life. But then, some people will believe anything."
+
+Between you and it: the Dungeon, and every branch that leads off it. The Orcish Mines. The Elven Halls. The Lair of Beasts, where "there is something to be said about getting gored, mauled and eaten rather than sliced, burnt or stabbed." The Swamp, the Snake Pit, the Slime Pits, the Vaults, the Crypt and, for the brave, Hell itself. To reach the Realm of Zot at all you need at least three magical runes from the bottoms of those branches. And Zot? "No one knows who or what Zot is: demon, god, wizard, something else entirely?" Only that it hunts those who go after the Orb.
+
+- **Twenty-seven species, twenty-six backgrounds**: a Felid Berserker, an Octopode Necromancer, a Mummy, a Troll; play whatever you dare.
+- **Gods to serve**: "a number of gods, demons and other assorted powers" will take your worship and grant favours in return, though "most gods resent being scorned".
+- **One life, no grinding**: turn-based and permanent, built by designers on a crusade against grinding and "no-brainers", so every choice counts. Autoexplore and autotravel skip the dull parts.
+- **Still growing**: in active development for twenty years, carried on in the open by the Stone Soup team.
+- **Pure text**: this is the console game, drawn in characters.
+
+**Three runes to win. Fifteen to brag about. One life to do it.**
 
 ## Controls
 

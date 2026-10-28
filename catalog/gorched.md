@@ -1,12 +1,23 @@
-Two tanks face each other across a range of procedurally generated hills,
-trees and clouds. Take turns setting your cannon's angle and charging up
-your shot, watch the shell's arc, and blow craters in the landscape until
-one of you lands a hit. The winner scores, the hills are swept away and the
-next round starts on new terrain.
+**TWO TANKS. ONE RANGE OF HILLS. FIRE!**
 
-Two players share one keyboard. Between rounds each player spends the
+Two tanks face each other across procedurally generated hills, trees and
+clouds. Turn your cannon, press Space to start charging, press it again
+to fire, and watch the shell arc over the hills. Wherever it lands, the
+ground blows out into a crater. Near misses chip away at the other
+tank's armour; a direct hit can finish it. Land one and your tank says
+so: "Yeeha !", "Take that !", "Rest in pieces !"
+
+The last tank standing scores, the hills are swept away and the next
+round starts on new ground. Between rounds, each player spends the
 points they earned on Attack (bigger explosions, more shooting power) or
 Defense (more armour).
+
+- **Two players, one keyboard**: turn by turn, one shot each.
+- **New terrain every round**: or replay the same rounds with `--seed`.
+- **Fills your terminal**: with `--ascii-only` and `--low-color` for
+  terminals that need them.
+
+**Find the angle. Feel the power. Fire.**
 
 ## Controls
 

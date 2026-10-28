@@ -1,16 +1,15 @@
-Drive some kind of car across the moon's surface. Unfortunately there are
-dangerous craters there. Fortunately your car can jump over them!
+**THE MOON IS FULL OF HOLES. YOU ARE DRIVING ACROSS IT.**
 
-The ground scrolls towards your buggy and you time the jumps: too early
-or too late and a wheel drops into the crater. Some craters are wider
-than others, and they come faster with each level. Further on, meteors
-roll along the ground; your laser breaks them up, three hits each, and
-every shot costs a point. Crossing a crater and breaking a meteor score.
-You have three buggies.
+"Drive some kind of car across the moon's surface," Jochen Voss wrote. "Unfortunately there are dangerous craters there. Fortunately your car can jump over them!"
 
-The high score table has a hundred places. The top three stay; the rest
-expire after two weeks to six months, depending on the rank, and Thorin's
-company of dwarves takes their places.
+The ground rolls towards your buggy and you time every jump. Too early or too late and a wheel drops into the crater. The game eases you in with "good luck (or use <SPC> to jump)", warns you that "some craters are wider than others", hands you a mining laser for the meteors rolling along the ground, and then lets a whole shower of them loose with a cheerful "... but what is that?" Survive all of that and it tells you: "You may start your journey, now."
+
+- **Jump the craters**, narrow and wide, coming faster with each level.
+- **Laser the meteors**: three hits break one up, and every shot costs you a point, so make them count.
+- **Three buggies** to get as far as you can.
+- **A hundred places on the high score table.** The top three stay for good; the rest fade after two weeks to six months, depending on the rank, and Thorin's company of dwarves moves into the empty places.
+
+**GOOD LUCK, DRIVER.**
 
 ## Controls
 

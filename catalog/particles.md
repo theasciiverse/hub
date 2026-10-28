@@ -1,8 +1,6 @@
-An emitter on the left of the screen sprays a fountain of particles that
-fly out, glow green, turn yellow, then red, and vanish. The keys change
-everything about them: how fast they leave, how long they live, which way
-gravity pulls and how hard the wind blows. Move the emitter around with the
-arrows and paint with it.
+**A FOUNTAIN OF SPARKS AT YOUR FINGERTIPS.**
+
+An emitter on the left of the screen sprays a fountain of particles that fly out, glow green, turn yellow, then red, and vanish. The keys change everything about them: how fast they leave, how long they live, which way gravity pulls and how hard the wind blows. Move the emitter around with the arrows and paint with it.
 
 ## Controls
 

@@ -1,19 +1,32 @@
-You command a tank and its crew in one of ten campaigns of World War
-II, from the invasion of Poland in September 1939 to the last weeks of
-the war in Germany in April 1945. Fight for Germany, Poland, the Soviet
-Union, Finland, France, the United Kingdom, the United States or
-Canada, in tanks from the TKS tankette and the T-26 to the Char B1 bis,
-the Panzer IV and the Sherman.
+**SEPTEMBER 1939. ONE TANK. ONE CREW. SIX YEARS OF WAR AHEAD.**
 
-Each campaign is a calendar of combat days. Each day is a map of zones
-to take and hold: travel, scout ahead, call in air and artillery
-support, resupply, and deal with whatever the zone holds. Each
-encounter is a battle on a hex map round your tank: spot the enemy,
-give every crewman his orders, turn the turret, choose the shell, and
-let the dice decide each to-hit, penetration and firepower roll, all of
-them shown. Crewmen gain experience and skills, get wounded, spend time
-in the field hospital and are replaced; refits bring new tanks. One
-saved game per campaign, so several can run side by side.
+Climb into the commander's hatch. In front of you lies the whole war in
+Europe, from the invasion of Poland to the last weeks in Germany, and a tank
+that may not be up to it. Drive a Polish TKS tankette or a 7TP into the
+September Campaign. Defend Finland in the Winter War with "one of the few
+tanks in the Finnish armed forces". Cross into France in 1940 for Germany,
+or hold the line for France or Britain in a Char B1 bis or a Cruiser. Or
+roll a Sherman across Europe in Patton's Best and Canada's Best.
+
+Each day of a campaign is a map of zones to take and hold: scout ahead, call
+in the artillery and the aircraft, resupply before the ammunition runs dry.
+Each battle is a hex map round your tank: spot the enemy before he spots
+you, give every crewman his orders, turn the turret, choose the shell, and
+watch the dice decide every hit, every penetration, every kill. Nothing is
+hidden.
+
+Your crew are people. They gain experience and skills, earn nicknames, get
+wounded, spend weeks in the field hospital and come back, or don't. Refits
+bring new tanks.
+
+- **Ten campaigns, 1939 to 1945**, for Germany, Poland, the Soviet Union,
+  Finland, France, the United Kingdom, the United States and Canada
+- **Tanks from the TKS and the T-26** to the Char B1 bis, the Panzer IV and
+  the Sherman
+- **Every roll on screen**: to-hit, penetration and firepower, all shown
+- **Gregory Adam Scott's art, sounds and theme tune**, laid out for the
+  terminal, the maps growing with a bigger window
+- **One save per campaign**, so several wars can run side by side
 
 ## Controls
 

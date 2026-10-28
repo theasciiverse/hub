@@ -1,7 +1,24 @@
-A bloody 2D deathmatch drawn entirely in ASCII art. Run, jump, creep and
-climb through the levels, pick up weapons, armor and grenades, and frag
-everyone else in sight. Started from Asciiverse, it opens a game on your
-machine against two bots; friends on your network can join the same game.
+**LOAD THE BROWNING. EVERYONE ELSE ALREADY HAS.**
+
+You start with a pistol and a bad feeling. Somewhere on the level there's a
+shotgun, an UZI, a sniper rifle and a box of grenades, and everybody else in
+the game wants them as much as you do. Run, jump, creep under the fire,
+slide down the ladders and drop through the floors. Grab the armour, the
+medikits and, if you can find it, the invisibility. When it goes wrong (and
+it will) the game tells you plainly: "Bloody shrapnel killed you." Press
+Space and get straight back in.
+
+0verkill is a side-on deathmatch drawn entirely in ASCII art, and it is not
+shy with the red.
+
+- **Five weapons**: Browning, shotgun, UZI, sniper rifle and grenades. Take
+  the grenades, fire and jump, and you throw them upward; the manual calls
+  it playing basketball with grenades
+- **Never alone**: started from Asciiverse, it opens a game on your machine
+  against two bots, so there is always someone to shoot
+- **Friends on your network** can join the same game, and Enter opens the
+  chat for the trash talk; Tab shows who has the most frags
+- **A Czech cult classic** from 2000, kept alive by the people who love it
 
 ## Controls
 

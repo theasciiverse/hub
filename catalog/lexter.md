@@ -1,3 +1,5 @@
+**THE LETTERS ARE FALLING. SPELL FAST.**
+
 Letters drop one at a time into a pit ten columns wide. Steer each one
 left or right and let it land so that it spells words with the letters
 around it: across or up and down, forwards or backwards, never
@@ -6,14 +8,15 @@ letters above fall into the gap. Palindromes count twice. The letters
 fall faster as you find more words, and the game ends when the pit is
 full.
 
-Letter scores and how often each letter turns up come from the
-dictionary itself, so rare letters are worth more. Now and then a blank
-falls: press the letter you want it to be before it lands. Clearing the
-whole pit earns a bonus.
+- **Rare letters pay**: letter scores and how often each letter turns up
+  come from the dictionary itself.
+- **Blanks**: now and then a blank falls; press the letter you want it to
+  be before it lands, or the game picks one for you.
+- **Pit empty bonus!**: clear the whole pit and it pays extra.
+- **English or French**: Lexter picks its dictionary from your language;
+  `lexter -d fr` or `lexter -d en` chooses for yourself.
 
-Lexter picks its dictionary from your language: French if your system
-is set to French, English otherwise. `lexter -d fr` or `lexter -d en`
-chooses for yourself.
+**Catch a letter. Make a word. Make room.**
 
 ## Controls
 

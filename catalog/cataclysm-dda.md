@@ -1,12 +1,29 @@
-The world has ended, and you are one of the few left. Cataclysm: Dark Days
-Ahead drops you into a huge, persistent, randomly made world overrun by
-the dead, giant insects, killer robots and things far stranger. Scavenge
-the ruins for food and gear, learn skills by using them, craft and build
-almost anything, fix up a car and get out of town. Every turn counts and
-death is final, but a new world is always waiting.
+**THE WORLD ENDED. YOU DIDN'T. YET.**
 
-This is the terminal edition, drawn entirely in text, with all of the
-game's translations.
+"The building you had chosen to reside in has suddenly caught fire! You
+might want to leave."
+
+That is one way to start. Or you "missed the evacuation and are stuck in a
+city full of the risen dead." Or you made it to a government shelter, and
+now the shelter is all there is. Outside: zombies, giant insects, killer
+robots, "things far stranger and deadlier, and... the others like yourself,
+who want what you have..."
+
+Cataclysm: Dark Days Ahead is a turn-based survival game in a huge,
+persistent world made fresh for every game. Scavenge the ruins for food,
+water and gear. Learn skills by using them. Craft almost anything, build a
+base, and if you are lucky, find "a vehicle with a full tank of gas to get
+you the hell out of Dodge." Then fix it up and drive. Death is final, and a
+new world is always waiting.
+
+- **A whole world, not a dungeon**: cities, forests, labs and the roads
+  between them, and it goes on and on
+- **Craft, build, cook, drive**: if you can find the parts and the know-how,
+  you can probably make it
+- **Dozens of ways to start**, from Evacuee to Really Bad Day: "You start
+  drunk to the point of incapacitation, depressed, infected, surrounded by
+  fire, and sick with the flu."
+- **Pure text**, with every one of the game's translations
 
 ## Controls
 
@@ -26,8 +43,8 @@ game's translations.
 Whales wrote Cataclysm, a grab-bag apocalypse roguelike, around 2010. Kevin
 Granade, TheDarklingWolf and GlyphGryph forked it into Dark Days Ahead, a
 grittier and more realistic survival game, and the project has grown under
-CleverRaven into one of the largest open-source games, with around two
-thousand contributors. Asciiverse builds it as is, with every file a
+CleverRaven into one of the largest open-source games, with more than a
+thousand volunteers. Asciiverse builds it as is, with every file a
 player has, saves and
 options alike, kept in the player's data folder.
 

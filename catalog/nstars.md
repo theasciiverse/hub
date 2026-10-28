@@ -1,8 +1,6 @@
-The classic starfield: you are flying forward through space, and stars
-stream out from the centre of the screen, faint and grey far away,
-brightening to white as they rush past the edges. Below the sky sits a
-small console with a frame counter and a command line, in the style of an
-IRC client.
+**FULL SPEED AHEAD. MIND THE STARS.**
+
+The classic starfield: you are flying forward through space, and stars stream out from the centre of the screen, faint and grey far away, brightening to white as they rush past the edges. Below the sky sits a small console with a frame counter and a command line, in the style of an IRC client: type `/sleep` to change your speed, or `/char` to draw the stars with any character you like.
 
 ## Controls
 

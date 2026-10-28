@@ -2,7 +2,7 @@ schema_version = 1
 id = "angband"
 kind = "game"
 title = "Angband"
-description = "Go down a hundred levels of dungeon beneath Angband and defeat Morgoth, Lord of Darkness, in the classic Tolkien roguelike"
+description = "A hundred levels of dungeon under a little town, and Morgoth, Lord of Darkness, waiting at the bottom. Choose a race and a class, buy what you can, and go down."
 year = 1990
 # GPL-2 or the non-commercial "Angband licence", at the user's choice
 # (docs/copying.rst); taken under the GPL, which says "version 2" only

@@ -1,6 +1,12 @@
-You're a jolly little ship dingus which shoots around a rather abstract
-landscape collecting little gem thingies, while avoiding mines. Pick up
-every crystal on the level and the gate at the top opens; fly out through
+**NO INVASION FLEET. NO HIDEOUS MUCOIDS. JUST GEMS, MINES AND FIFTY LEVELS OF TROUBLE.**
+
+"You're a jolly little ship dingus which shoots around a rather abstract
+landscape collecting little gem thingies, while avoiding mines. Boring, you
+say? Well, we kept the Super Kill-o-Zapper, and added LOTS of things to blow
+up. Happy?" So promised Mark Mackey's XQuest manual in 1994, and he meant
+every word.
+
+Pick up every crystal on the level and the gate at the top opens; fly out through
 it to the next one. Fifty levels, each with more crystals, more mines, a
 narrower gate, and from level 33 a gate that won't keep still.
 

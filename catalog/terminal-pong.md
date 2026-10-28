@@ -1,7 +1,17 @@
-The classic, in your terminal. Play against the computer, take on a
-friend on the same keyboard, or lean back and watch two AIs rally. Each
-side has a handful of power shots that send the ball flying, and the
-court grows and shrinks with your window, even mid-game.
+**TWO PADDLES. ONE BALL. TEN POWER SHOTS EACH.**
+
+The classic paddle game, in your terminal. Play against the
+computer, take on a friend at the same keyboard, or pick "I like to
+watch" and let two AIs rally for as long as you care to look. Each side
+has ten power shots that send the ball flying; save them for the moment
+the other side is out of position.
+
+The court grows and shrinks with your window, even mid-game. Turn the
+difficulty up or down from the pause menu, and dress the court in
+Monokai, Solarized, Dracula, Gruvbox Dark, Nord, One Dark or High
+Contrast.
+
+**Serve.**
 
 ## Controls
 
@@ -15,5 +25,5 @@ Difficulty for each mode, and the default theme, are in Settings.
 ## Credits
 
 - terminal.pong: [IshmamR](https://github.com/IshmamR/terminal.pong)
-- Asciiverse edition: a frame-rate cap
+- Asciiverse edition: a court that follows the window size, and a frame-rate cap
 - License: MIT

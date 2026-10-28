@@ -1,11 +1,15 @@
-Those scary ghosts are back, and they have mistaken you for their old
-rival. Steer MyMan round the maze and eat every dot to clear it, while
-four ghosts hunt you, each in its own way. Eat one of the big power
-pellets in the corners and for a few seconds the ghosts turn and run,
-and you can eat them for points. Fruit appears now and then for a bonus;
-clear the maze and the next one is faster.
+**THOSE SCARY GHOSTS ARE BACK, AND THIS TIME THEY'VE SPOTTED YOU!**
 
-The maze scrolls to follow you, so it plays on any size of terminal.
+That's how Benjamin C. Wiley Sittler sets the scene, and it gets worse: they have mistaken you for their old rival, "and they're out for (yellow) blood!"
+
+Steer MyMan round the maze and eat every dot while four ghosts hunt you, each in its own way. Grab one of the big power pellets in the corners and the tables turn: for a few seconds the ghosts run, and you eat them for points. Fruit turns up now and then for a bonus. Clear the maze, and the next one is faster.
+
+- **Several hundred mazes built in**, from the classic layout to ones after old home-computer versions for the ZX Spectrum and Commodore 64. Pick one with `-v`.
+- **Any terminal, any size**: the maze scrolls to follow you.
+- **Small tiles or big ones**, and more, with `-z`.
+- **Written on a dare** on a Sunday in 1998, and grown for twenty years since.
+
+**EAT EVERY DOT. TRUST NO GHOST.**
 
 ## Controls
 

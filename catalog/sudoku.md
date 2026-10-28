@@ -1,11 +1,24 @@
-Fill the grid so that every row, every column and every smaller box
-holds each symbol once. About half the cells start filled in, shown in
-bold; a number that clashes with another is shown in red. The game ends
-when every cell is filled by the rules, and asks whether to start a new
-board.
+**FROM A 4x4 TO A 49x49. HOW BIG DARE YOU GO?**
 
-Boards are not guaranteed to have only one solution: any filling that
-follows the rules wins.
+You know the rules: fill the grid so that every row, every column and
+every box holds each symbol exactly once. About half the cells start
+filled in, in bold, and anything you write that clashes turns red. Fill
+the last cell by the rules and the game cheers "Yay!! Wanna play
+again?"
+
+Then it gets interesting. Start it with a bigger box size and the
+boards grow: 16x16, 25x25, all the way to 49x49, where the letters join
+in as digits and a board will not fit on your screen without scrolling.
+The generator does its honest best, though it warns you: "My algorithm
+sucks, so you need to wait a bit."
+
+- **Six sizes**, from 4x4 to 49x49
+- **Hints** when you are stuck, a cell at a time
+- **Mouse or keyboard**, whichever you like
+- **Any valid filling wins**, even if it is not the one the generator
+  had in mind
+
+**Pick a size. Lose an evening.**
 
 ## Controls
 

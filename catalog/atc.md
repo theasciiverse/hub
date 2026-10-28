@@ -1,17 +1,27 @@
-You are the air traffic controller. Planes enter the radar from the
-edges and take off from the airports, and each one has a destination: an
-exit on the edge, which it must leave through at 9000 feet, or an
-airport, where it must land facing the right way at altitude zero. You
-give every order by typing it, while the clock keeps ticking.
+**YOU'RE IN THE TOWER. THE PLANES DON'T STOP COMING.**
 
-The game ends when a plane runs out of fuel, leaves by the wrong way, or
-comes next to another plane at the same height. There is no winning,
-only lasting longer: the score is the number of planes you brought home
+ATC "lets you try your hand at the nerve wracking duties of the air traffic
+controller without endangering the lives of millions of travelers each
+year." So says its manual, and it is right about the nerves.
+
+Jets and prop planes appear at the edges of your radar and wait on the
+runways, each with somewhere to be: out through one particular exit at 9000
+feet, or down at one particular airport, facing the right way, at altitude
+zero. You give every order by typing it (`atlab1`, `gtte4ab2`) while the
+clock ticks and the next plane is already coming in.
+
+Let two planes come within a square and a thousand feet of each other and
+it's over. The same if one runs out of fuel, lands at the wrong airport,
+leaves by the wrong exit or wanders out of your airspace. There is no
+winning, only lasting: your score is the number of planes you brought home
 safely.
 
-Prop planes are capital letters and jets lower case, with their altitude
-beside them in thousands of feet. Jets move every tick, props every
-other tick.
+- **Props and jets**: capital letters are props, lower case are jets, and
+  the jets move twice as fast
+- **Scenarios** from Easy and Novice to Killer, OHare and TicTacToe
+- **A command line learned in minutes**: type `?` at any point to see
+  what can come next
+- **A BSD classic** by Ed James, 1986 and 1987
 
 ## Controls
 

@@ -1,8 +1,20 @@
-Five objects turn in 3D, drawn as wireframes in dots, colons and
-backticks that pack two lines of the picture into every row of text: a
-cube, a pyramid, a desk, an X-wing fighter and the letters IOCCC, which
-sway back and forth so they can be read. Each object tumbles about one
-axis after another for a while, then the next takes its place.
+**A 3D ENGINE YOU'RE NOT MEANT TO READ.**
+
+Five objects turn in 3D in your terminal: a cube, a pyramid, a desk, an
+X-wing fighter and the letters IOCCC, which sway back and forth so they
+can be read. They're drawn as wireframes in dots, colons and backticks
+that pack two lines of the picture into every row of text, and each one
+tumbles about one axis after another before the next takes its place.
+
+All of it comes from one small C program written to be impossible to
+follow, the International Obfuscated C Code Contest's "Best object
+orientation" of 1998. The judges asked: "Can you figure out why, in some
+cases, it wants to read itself?" (Run it with no data file and it
+searches its own program file for a cube hidden behind the word
+"AlWuzEre".) Alan De Smet's own advice: "So just don't fly through
+objects. You'll be happier."
+
+**Sit back. Watch it spin. Don't read the source.**
 
 ## Controls
 

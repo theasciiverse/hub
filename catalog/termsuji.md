@@ -1,14 +1,13 @@
-Go, the board game, in the terminal, on a board that looks like one:
-lines and star points on wood, black and white stones on the points, as
-big as the terminal allows. Play GNU Go, which comes with the game, on a
-9x9, 13x13 or 19x19 board, as Black or White, at any of its ten
-strengths, with up to nine handicap stones for Black.
+**BLACK MOVES FIRST. THE BOARD IS WAITING.**
 
-GNU Go thinks while you look at the board, a cursor shows where you are
-and the last stone played is marked. Take back a move whenever you like.
-Two passes end the game and GNU Go counts it. Leave in the middle and the
-game is waiting under Continue the next time, saved as an SGF file that
-any Go program can open.
+Pull up a chair at a proper Go board: lines and star points on warm wood, black and white stones sitting right on the points, as big as your terminal can draw them. Across the table sits GNU Go, and it comes with the game. No account, no server, no waiting for an opponent to turn up. Just you, the stones and a patient adversary.
+
+Pick your board: 9x9 for a quick, sharp fight, 19x19 for the full game. Pick your colour. Then pick how hard GNU Go should push back, from strength 1 to 10, and give Black up to nine handicap stones if you want a head start.
+
+- **A board that looks like one**: wood, lines and star points; on a big terminal the points spread out and the stones become round discs
+- **GNU Go built in**: it thinks while you study the board, marks the last stone played, and counts the game when both sides pass
+- **Take it back**: **u** undoes your move and GNU Go's answer, as often as you like
+- **Never lose a game in progress**: walk away mid-game and it is waiting under Continue, saved as an SGF file any Go program can open
 
 ## Controls
 

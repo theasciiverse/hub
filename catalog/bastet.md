@@ -1,18 +1,24 @@
-A falling-blocks game where the game is against you. Every other one
-picks the next block at random; Bastet looks at your stack, tries every
-block in every place it could go, and hands you the one that does you
-the least good. Waiting for the long straight piece to fill a deep
-gap is a plan that does not work here. Clearing even a few lines is an
-achievement, and a long game is a real one.
+**THE GAME KNOWS WHICH BLOCK YOU NEED. IT IS NOT GOING TO GIVE IT TO YOU.**
 
-Rows clear when they are full, as you would expect: 100 points for one
-row, 300 for two, 500 for three and 800 for four at once. Every ten
-rows the level goes up and the blocks fall faster.
+"For people who enjoy swearing at their computer," wrote Federico Poloni,
+here is Bastet.
 
-There are two games. The normal one shows the next block, and Bastet
-picks the block after that knowing you have seen it. The harder one
-has no preview at all, and the chooser is tuned for that. Each has its
-own top ten.
+Every other falling-blocks game picks the next block at random. Bastet
+doesn't. It looks at your stack, tries every block in every place it could
+go, and hands you the one that does you the least good. That deep gap you
+left for the long straight piece? Bastet has seen it too. Clearing even a
+few lines is an achievement, and a long game is a real one.
+
+In the normal game you see the next block, and Bastet chooses the one after
+it knowing you have seen it. The harder game takes the preview away,
+"thus achieving," as the README puts it, "a higher level of bastardness."
+
+- **An opponent, not a dice roll**: a chooser that picks the worst block
+  it can find
+- **Two games**, normal and harder, each with its own top ten
+- **Classic scoring**: 100 points for one row, up to 800 for four at once,
+  and every ten rows the blocks fall faster
+- **Your keys**: every one can be changed in Customize keys
 
 ## Controls
 

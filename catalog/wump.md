@@ -1,15 +1,10 @@
-One of the oldest computer games there is. You are in a cave of twenty
-rooms, each joined to three others by tunnels, and somewhere in it lives
-the Wumpus. You cannot see it, but you can smell it up to two rooms
-away. You can also feel the draft from a bottomless pit next door and
-hear the bats that, disturbed, will carry you off to another part of the
-cave.
+**SOMETHING IN THIS CAVE SMELLS TERRIBLE. AND IT'S HUNGRY.**
 
-Each turn you either move to a neighbouring room or shoot one of your
-five crooked arrows, giving it a path of up to six rooms to fly
-through. Hit the Wumpus and you win. Miss, and it may wake up and move;
-give the arrow an impossible path and it flies off at random, maybe
-straight back into you. Some tunnels only go one way.
+One of the oldest computer games there is. You are in a cave of twenty rooms, each joined to three others by tunnels, and somewhere in it lives the evil Wumpus. You cannot see it. But you can smell it: `*sniff* (I can smell the evil Wumpus nearby!)`. You can feel the draft from a bottomless pit next door: `*whoosh*`. And you can hear the bats that, if you blunder in, will carry you off to another part of the cave: `*rustle* *rustle*`.
+
+Your quiver holds five "custom super anti-evil Wumpus arrows", and they are crooked: you tell each one which rooms to fly through, up to six. Hit the Wumpus and you win. Miss, and it may wake up and move, maybe right into your room. Give an arrow an impossible path and it flies off at random, maybe straight back into you. Some tunnels only go one way.
+
+Walk into the wrong room and the game will tell you all about it: "Much to the delight of the Wumpus, you walked right into his mouth, making you one of the easiest dinners he's ever had!" Or you fall into a pit, and "have a lot of time to reflect on this error as you fall many miles to the core of the earth."
 
 ## Controls
 

@@ -1,17 +1,28 @@
-Steal a Silmaril from Morgoth's iron crown and escape alive. You are an
-elf, a dwarf or a man of the First Age who has found a way into
-Angband, the Dark Lord's fortress, unarmed and with little food, and
-you must go down a thousand feet to his throne room. Sil-Q is the
-continuation of Sil, a roguelike that stays close to Tolkien: no
-classes, no wizards or priests, no magical scrolls and no town, but
-eight skills to train, songs of power, smithing at the forges, stealth,
-and careful, tactical combat with few easy escapes.
+**STEAL A SILMARIL. GET OUT ALIVE.**
 
-Experience comes from meeting new creatures, going deeper and
-identifying things as much as from killing, so sneaking past a sleeping
-troll is a real choice; the game can be won without ever attacking.
-Every level is made afresh, and as time passes you can no longer go back
-up past a minimum depth, so you must keep going down. Death is final.
+Its authors call it "a dungeon heist game", and that is exactly what it
+is. You are an elf, a dwarf or a man of the First Age who has found a
+way into Angband, the fortress of the Dark Lord Morgoth, unarmed and
+with little food. A thousand feet below, in his throne room, Morgoth
+wears the iron crown with the Silmarils set in it. You are going to
+take one.
+
+Between you and him are orcs and their captains, wolves and wargs,
+wights, trolls, giant spiders, Balrogs and dragons. You will not beat
+them all, and you are not meant to. Sil-Q stays close to Tolkien: no
+classes, no wizards or priests, no magic scrolls and no town, but eight
+skills to train, songs of power, smithing at the forges, stealth, and
+careful, tactical combat with few easy escapes.
+
+- **Sneak or fight:** experience comes from meeting new creatures,
+  going deeper and learning what things are, as much as from killing,
+  so slipping past a sleeping troll is a real choice; the game can be
+  won without ever attacking
+- **Always forward:** every level is made afresh, and as time passes
+  you can no longer go back up past a minimum depth
+- **Death is final**
+
+**The crown is waiting. So is its owner.**
 
 ## Controls
 

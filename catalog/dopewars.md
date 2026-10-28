@@ -1,12 +1,29 @@
-You start in the Bronx with $2,000, a $5,500 debt to the loan shark that
-grows every day, and a coat with room for 100 units. You have a month. Buy
-drugs where they are cheap, jet to another part of New York, sell where
-they are dear, and stay ahead of Officer Hardass and his deputies. Prices
-crash and spike with the news on the street; guns, the bank and a bigger
-coat are there if you can pay for them.
+**YOU OWE THE LOAN SHARK $5,500. YOU HAVE ONE MONTH.**
 
-Play alone, or connect to a dopewars server and deal against other people,
-who can trade with you, page you and tip off the cops about you.
+You start in the Bronx with $2,000 in your pocket, a coat with room
+for 100 units, and a debt that gets bigger every single day. The streets
+of New York are your stock exchange. Buy where it's cheap, take the subway
+to Manhattan, Brooklyn, Coney Island or Staten Island, and sell where it's
+dear. Then do it again. Faster.
+
+The market never sits still. "The Marrakesh Express has arrived!" and
+hashish is dirt cheap. "Cops made a big bust! Prices are outrageous!" and
+you'd better be holding. Officer Hardass and his deputies are on your
+tail, the bank, the gun shop and a bigger coat all cost money you haven't
+made yet, and the lady next to you on the subway has opinions: "Does your
+mother know you're a dope dealer?"
+
+- **The classic trading game**: eight boroughs and neighbourhoods, a
+  dozen goods, prices that crash and spike on the news from the street
+- **Run or fight**: when the cops catch up, flee, or shoot it out if you
+  bought a gun
+- **Deal against real people**: connect to a dopewars server, pick one
+  from the public server list, or run your own; trade with other dealers,
+  page them, or tip off the cops about them
+- **Antique mode**: play it as close to John E. Dell's original Drug Wars
+  as it gets
+
+**Pay off the shark. Get rich. Don't get caught.**
 
 ## Controls
 

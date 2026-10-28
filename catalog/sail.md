@@ -1,19 +1,27 @@
-Naval combat in the days of wooden ships, from the 1770s to the end of
-Napoleonic France. You command one man-of-war in a historical battle,
-from single-ship duels such as Ranger against Drake to John Paul Jones
-boarding the Serapis at Flamborough Head and full fleet actions: 31
-scenarios in all. The computer captains the other ships.
+**RUN OUT THE GUNS, CAPTAIN.**
 
-Every turn you give your orders: how far to sail and when to turn, which
-sails to set, when to fire your broadsides and with what shot, when to
-grapple and board. The wind decides what is possible. Full sails make
-you fast but get shredded by round shot, a ship that stops moving starts
-to drift, and the captain who holds the weather gage usually wins.
+You hold a commission in the Sail Navy and a wooden warship under your
+feet. Every turn you give the orders: how far to sail and when to come
+about, which sails to set, when to "let loose the terrible destruction"
+of your broadsides (the manual's words) with round, double, chain or
+grape shot, and when to throw out the grapples and board. The computer
+captains everything else on the water.
 
-Ships are shown as two characters for bow and stern, such as `a0` for
-the first American ship. A capital letter means full sail is set, `!`
-means the ship has struck its colours, `~` that it is sinking and `#`
-that it is on fire.
+The wind decides what is possible. Full sail makes you fast, until round
+shot shreds it. A ship that stops moving drifts. And as every captain of
+the day knew, whoever holds the weather gage usually wins.
+
+- **31 battles** from the 1770s to the fall of Napoleon: Ranger against
+  Drake, John Paul Jones boarding the Serapis at Flamborough Head,
+  Constitution against Guerriere, and full fleet actions
+- **A few that history forgot:** the Curse of the Flying Dutchman, the
+  South Pacific aboard the USS Scurvy (crew rating: mutinous), and a
+  Battle of Midway fought by Enterprise and Akagi under canvas
+- **Every ship on one screen**, two letters for bow and stern: capitals
+  under full sail, `!` when she has struck her colours, `~` sinking,
+  `#` on fire
+
+**Clear for action.**
 
 ## Controls
 

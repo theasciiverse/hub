@@ -1,4 +1,26 @@
-Janet and David are testing a new program on the MARSpace mission. Beep, beep, beep: an alarm clock by the futon, and an ordinary morning to get through, with a dog called Rover who needs his walk. Something underneath that morning is badly wrong, and the way the story is told is part of the puzzle.
+**BEEP. BEEP. BEEP.**
+
+"Alarm clock. Next to bed. Make it stop." That is how your day begins,
+on a futon, after a dream in which a dog called Rover puffed a stubby
+cigar under a dealer's hat and played poker with Isaac Asimov and the
+cleaning lady. Just an ordinary morning: get up, get dressed, get on
+with things.
+
+Except that before any of it starts, two voices are talking. Janet and
+David are hooked in, testing a program called the ACU, and somewhere out
+there a mission called MARSpace is waiting to launch. "A program is
+never finished," says Janet, "but I think we're ready to go." Every
+command you type comes back logged like a line of machine code.
+
+- **A puzzle in the telling:** what you do in the morning and what is
+  really happening are two different stories, and the game wants you
+  to find the seam
+- **Funny all the way through**, from the dream to the help menu, which
+  explains adventure games to readers centuries from now
+- **The winner of the 2009 Interactive Fiction Competition**, by Jack
+  Welch and Ben Collins-Sussman
+
+**Rise and shine. You have work to do.**
 
 ## How to play
 

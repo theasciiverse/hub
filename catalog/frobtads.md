@@ -1,8 +1,11 @@
+**TADS STORIES, STRAIGHT FROM YOUR COMMAND LINE.**
+
 FrobTADS plays text adventures written with TADS, Michael J. Roberts'
-Text Adventure Development System. TADS 2 games
-(.gam) and TADS 3 games (.t3) both run, from the 1990s classics to
-modern stories such as I Am Prey, with a status line, colours and
-scroll-back. Give it a story file and play.
+Text Adventure Development System. TADS 2 games (.gam) and TADS 3 games
+(.t3) both run, from the 1990s classics to modern stories such as I Am
+Prey, where something hungry is hunting you through a sealed facility.
+Status line, colours and scroll-back come along. Give it a story file
+and play.
 
 ## Use
 

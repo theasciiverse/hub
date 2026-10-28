@@ -1,8 +1,6 @@
-Drops of rain fall on a still pond. Each one lands as a dot, swells to a
-small o and then a big O, and spreads out in two widening rings before
-it fades and another drop lands somewhere else. Five ripples are on the
-water at any time, all in plain characters, and it never repeats the
-same pattern twice.
+**IT HAS BEEN RAINING SINCE 1980.**
+
+Drops of rain fall on a still pond. Each one lands as a dot, swells to a small o and then a big O, and spreads out in two widening rings before it fades and another drop lands somewhere else. Five ripples are on the water at any time, all in plain characters, and it never repeats the same pattern twice.
 
 ## Controls
 

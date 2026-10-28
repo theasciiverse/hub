@@ -1,13 +1,12 @@
-You are a rabbit in a maze, and carrots are scattered through it. Gather
-them all before the clock runs out. The walls are hidden: the maze shows
-only the passages you have already walked, so finding the carrots is a
-matter of choosing your paths well and moving fast.
+**THE CARROTS ARE OUT THERE. THE WALLS ARE INVISIBLE. THE CLOCK IS RUNNING.**
 
-The maze is made to fit the terminal when the game starts, and a bigger
-maze has more carrots and more time: one carrot for every 50 cells and
-one second for every 5. In a 100x30 terminal that is 47 by 11 cells, 10
-carrots and 103 seconds. When the time is up, the game tells you what
-share of the carrots you gathered.
+You are a rabbit, and somewhere in this maze are the carrots. Gather every one before time runs out. The catch: you cannot see the walls. The maze shows only the passages you have already walked, so it all comes down to, in its author's words, "your choice of paths and the speed of your fingers."
+
+- **A maze made to fit your terminal**: a bigger maze has more carrots and more time, one carrot for every 50 cells and one second for every 5. In a 100x30 terminal that is 47 by 11 cells, 10 carrots and 103 seconds.
+- **No pausing to read the help**: the timer keeps running while you do.
+- **Scored in carrots**: when time is up, the game tells you what share you gathered.
+
+**HOP TO IT.**
 
 ## Controls
 

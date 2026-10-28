@@ -1,13 +1,25 @@
-Hack is the dungeon crawl that NetHack grew from. You go down through the
-Mazes of Menace, level by level, fighting what you meet, finding armour,
-weapons, potions, scrolls, rings and wands, and learning what they do by
-trying them. Somewhere far below lies the Amulet of Yendor. You choose to
-be a Tourist, Speleologist, Fighter, Knight, Cave-man or Wizard, and your
-little dog comes along.
+**NOBODY HAS EVER BROUGHT THE AMULET BACK.**
 
-Everything is a letter on the map: you are the `@`, monsters are letters
-of their own, `#` is a corridor and `>` the stairs down. Death is final,
-and the dead you leave behind may haunt the next player on that level.
+Somewhere below the 20th level of the Dungeons of Doom lies the Amulet of
+Yendor. Go down, find it, and get it out. As Hack's own 1985 manual puts
+it: "Nobody has achieved this yet and if somebody does, he will probably
+go down in history as a hero among heroes."
+
+Choose who goes down: a Tourist, Speleologist, Fighter, Knight, Cave-man
+or Wizard. Your little dog comes too. Below wait floating eyes, nymphs
+who steal, leprechauns after your gold, cockatrices, umber hulks, a long
+worm and worse, along with armour, weapons, potions, scrolls, rings and
+wands you only learn to know by trying them. Crack a fortune cookie for
+some advice ("A truly wise man never plays leapfrog with a unicorn.").
+Death is final, and your ghost may wait on that level, with your
+belongings, for the next player who comes down.
+
+- **Where NetHack began**: Andries Brouwer's Hack 1.0.3, as BSD shipped it.
+- **Everything is a letter**: you are the `@`, `#` is a corridor, `>` the
+  stairs down, and every monster has a letter of its own.
+- **Shops and shopkeepers**: who expect to be paid.
+
+**Take the stairs. Keep the dog close. Bring back the Amulet.**
 
 ## Controls
 

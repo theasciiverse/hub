@@ -2,7 +2,7 @@ schema_version = 1
 id = "srogue"
 kind = "game"
 title = "Super-Rogue"
-description = "Bell Labs' bigger Rogue of 1982 to 1984: 52 monsters, magic pools, mazes, a Flea Market and four stats to watch, down to the Amulet of Yendor"
+description = "Bell Labs' bigger Rogue: 52 monsters, magic pools, mazes, Friendly Fiend's Flea Market, and the devil Asmodeus waiting below everything else."
 year = 1982
 # the BSD licence plus two clauses: "Super-Rogue" may not endorse or
 # promote derived products, and "Products derived from this software may

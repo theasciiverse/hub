@@ -1,16 +1,16 @@
-Three puzzles about fitting blocks onto a board. Pieces wait beside the
-grid, three at a time; pick one up, move it into place and drop it. Fill
-a row or a column completely and it clears, one point for every block
-removed. When all three are placed you get three new ones, and the game
-ends when none of them fits anywhere.
+**THREE PIECES. ONE BOARD. WILL ANYTHING STILL FIT?**
+
+Three pieces wait beside the grid. Pick one up, slide it into place, drop it. Fill a row or a column completely and it clears, one point for every block removed. Place all three and you get three new ones... right up to the moment none of them fits anywhere. Then it's over.
+
+Nuzzle (an N-curses p-UZZLE, says its author) is three games in one:
 
 - **Lines**: one colour on a 10x11 board; full rows and columns clear.
-- **Squares-and-Lines**: a 9x9 board split into nine 3x3 squares; a full
-  square clears as well as a full row or column.
-- **Four-Colors**: one piece at a time, its blocks in four colours; four
-  or more touching blocks of the same colour clear.
+- **Squares-and-Lines**: a 9x9 board split into nine 3x3 squares; a full square clears as well as a full row or column.
+- **Four-Colors**: one piece at a time, its blocks in four colours; four or more touching blocks of the same colour clear.
 
-Each game keeps its own high score.
+Each game keeps its own high score, and you can play with the keyboard or the mouse.
+
+**MAKE ROOM.**
 
 ## Controls
 

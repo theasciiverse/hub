@@ -1,19 +1,24 @@
-Night in a snowy forest. Snow drifts down at three depths, near flakes
-fast and large, far ones faint. The wind comes and goes: a gust sweeps in
-from one side, bends the spruces, shakes the snow off their branches in
-clumps and lifts the snow off the open field in a low blizzard, laying it
-down again behind the cabin and the trees, so the drifts grow and creep
-downwind. Snow settles on the roof until it slides off.
+**THE WIND PICKS UP. THE SNOW STARTS TO MOVE.**
 
-A log cabin glows at its windows with smoke drifting from the chimney, a
-spruce beside it is lit for Christmas, and above the mountains the stars
-twinkle, the moon shines and a faint aurora moves. Every now and then a
-sleigh crosses the sky.
+Night in a snowy forest. Snow drifts down at three depths, near flakes
+fast and large, far ones faint. Then a gust sweeps in from one side,
+bends the spruces, shakes the snow off their branches in clumps and
+lifts the snow off the open field in a low blizzard, laying it down
+again behind the cabin and the trees. Watch long enough and the drifts
+grow and creep downwind, and the snow on the roof builds until it
+slides off.
+
+A log cabin glows at its windows with smoke drifting from the chimney,
+a spruce beside it is lit for Christmas, and above the mountains the
+stars twinkle, the moon shines and a faint aurora moves. Every now and
+then a sleigh crosses the sky.
 
 The sound is made as it plays, nothing recorded: the wind in the trees
 rises and falls with the gusts you see, whistles in the strongest, snow
 thumps off the branches and the roof, an owl calls far off, and sleigh
 bells ring while the sleigh is up.
+
+**Turn the lights down and let it snow.**
 
 ## Controls
 

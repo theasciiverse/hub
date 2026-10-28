@@ -1,16 +1,23 @@
-HuaRongDao is an old Chinese sliding-block puzzle. Ten pieces fill a box
-four cells wide and five high, leaving two cells empty: a big square,
-four tall rectangles, one wide one and four small squares. Slide
-them, one at a time and never over each other, until the big square
-reaches the gap in the middle of the bottom edge. The rules take a
-minute to learn; the solution takes a good deal longer.
+**ONE BIG SQUARE. ONE NARROW GAP. NINE PIECES IN THE WAY.**
 
-Moving one piece, even round a corner, counts as one step, and the step
-counter shows how few you can manage. Undo and redo let you back out of
-dead ends, and bookmarks keep a position to come back to.
+HuaRongDao is an ancient Chinese sliding-block puzzle, and its author
+put it best: "The rules are very easy to understand, but the game is not
+so easy to solve."
 
-This game ships one layout, the classic one. Other layouts can be
-played by giving them as a pattern on the command line.
+Ten pieces fill a box four cells wide and five high, leaving just two
+cells empty: a big square, four tall rectangles, one wide one and four
+small squares. Slide them, one at a time and never over each other,
+until the big square escapes through the gap in the middle of the bottom
+edge.
+
+- **Every step counts**: moving one piece, even round a corner, is one
+  step, and the counter shows how few you can manage.
+- **Undo and redo**: back out of dead ends step by step.
+- **Bookmarks**: keep a position in a slot and come back to it later.
+- **More layouts**: the classic one is built in; give others as a
+  pattern on the command line.
+
+**Free the big square. Then do it in fewer steps.**
 
 ## Controls
 

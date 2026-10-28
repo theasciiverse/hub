@@ -1,14 +1,14 @@
-Empire is a war game played over the Internet since the 1980s. You run a
-country on a shared world: explore the land around your capital, designate
-sectors as farms, mines, factories and harbours, grow your population,
-research technology, and build ships, planes and armies. Then deal with
-your neighbours, who are real people, through trade, alliances,
-telegrams and war. The world moves on whether you are logged in or not: updates
-happen on a schedule, and a game runs for weeks.
+**YOUR NEIGHBOURS ARE REAL PEOPLE. SO ARE THEIR ARMIES.**
 
-This is the Empire client. It connects straight to Wolfpack Fever, the
-game the Wolfpack team keeps running all year: no registration, grab a
-country and go.
+Empire is a war game played over the Internet since the 1980s. You rule a country on a shared world: explore the land around your capital, designate sectors as farms, mines, factories and harbours (the sector types run, in the manual's words, "from banks to nuclear fuel processing plants"), grow your population, research technology, and build ships, planes and armies. Then deal with your neighbours, who are real people, through trade, alliances, telegrams and war.
+
+The world moves on whether you are logged in or not: updates happen on a schedule, and a game runs for weeks. No goal is set for you. Most players soon find their own, "ranging from the mundane desire to be the biggest, strongest country in the game" to the most efficient land use possible.
+
+This is the Empire client. It connects straight to Wolfpack Fever, the game the Wolfpack team keeps running all year: no registration, grab a country and go.
+
+- **A whole economy**: food, ore, oil and people feed the war machine
+- **Real diplomacy**: telegrams, alliances, declarations of war, and a newspaper that reports it all
+- **Real time where it counts**: the world updates on a schedule, but attacks happen the moment you order them
 
 ## Getting started
 

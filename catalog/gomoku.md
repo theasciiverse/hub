@@ -1,14 +1,24 @@
-Gomoku is five in a row, the game played with stones on a Go board, here
-against the computer on a 19 by 19 grid. Take turns placing
-stones; the first to get five in an unbroken line, across, down or
-diagonally, wins.
+**FIVE IN A ROW. IT'S WATCHING EVERY LINE.**
 
-The computer picks at random who starts, and X always moves first. It
-weighs every line of five on the board for both sides, building threats
-of its own and blocking yours, so an open three left alone soon becomes
-a line that cannot be stopped. Your stones and its stones
-are in different colours, and the last move of each side is highlighted
-so you can see what just happened.
+Gomoku is five in a row, the game played with stones on a Go board, and
+here the board is 19 by 19 and your opponent is the computer. Take turns
+placing stones. The first to get five in an unbroken line, across, down
+or diagonally, wins.
+
+Sounds simple. Then the computer starts building. It weighs every line of
+five on the board for both sides, making threats of its own and blocking
+yours, and an open three you leave alone soon becomes a line nobody can
+stop. Win and it grumbles "Rats! you won". Lose and you'll read "Ha ha, I
+won".
+
+- **Cursor play**: steer with the arrows or hjkl, place with Space or
+  Enter.
+- **A coin toss to start**: the computer picks at random who goes first,
+  and X always moves first.
+- **Nothing slips past you**: each side in its own colour, and the last
+  move of each side highlighted.
+
+**Five stones. One line. Get there first.**
 
 ## Controls
 

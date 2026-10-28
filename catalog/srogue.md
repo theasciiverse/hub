@@ -1,9 +1,22 @@
-The Rogue that Bell Labs built up. You are sent into the Dungeons of
-Doom by your fighters' guild to bring back the Amulet of Yendor, as in
-Rogue, but there are 52 monsters in both cases of the alphabet, magic
-pools that do strange things to what you dip in them, mazes, a Flea
-Market, and strength, dexterity, wisdom and constitution to keep up. Two
-status lines show them all, with how much you carry.
+**FIFTY-TWO MONSTERS. ONE DEVIL AT THE BOTTOM.**
+
+At AT&T Bell Labs they took Rogue 3.6 and kept on building. You are still the young graduate of the fighters' guild, sent
+into the Dungeons of Doom to bring back the Amulet of Yendor. But the
+dungeon is deeper (the Amulet turns up no sooner than level 35), and
+the alphabet now runs in both cases: after the giant ant and the zombie
+come the cockatrice, the killer frog, the hell hound, the minotaur, the
+titanothere and Yeenoghu. Go deeper than any of them
+will follow and you meet the devil Asmodeus himself. (Hoping to
+wipe him out with a scroll of genocide? "You cannot genocide Asmodeus !!")
+
+- **Magic pools:** dip things in them and see what happens; just do not
+  fall in ("Oh no!!! You drown in the pool!!!")
+- **Whole maze levels** between the rooms and corridors
+- **Friendly Fiend's Flea Market**, open for business in the dungeon
+- **Four stats to keep up:** strength, dexterity, wisdom and
+  constitution, all on two status lines with how much you are carrying
+
+**The Rogue that kept growing. Go and find its floor.**
 
 ## Controls
 
@@ -16,7 +29,7 @@ status lines show them all, with how much you carry.
   off armour, **P** put on and **R** remove a ring, **D**: dip something
   in a pool
 - **s**: search for traps and secret doors, **.**: rest
-- `>`: stairs down
+- `>` and `<`: stairs down, and up once you carry the Amulet
 - **?**: all the commands, **/**: what a symbol is
 - **S**: save and quit, **Q**: quit
 

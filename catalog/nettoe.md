@@ -1,11 +1,13 @@
-Noughts and crosses in the terminal: get three in a row before your
-opponent does. Play the computer at one of three levels, a friend sharing
-your keyboard, or a friend on another machine over the network. A running
-score is kept as long as you keep saying yes to another game.
+**THREE IN A ROW. HOW HARD CAN IT BE?**
 
-The computer's levels play by rules rather than looking ahead. Weak is
-easily fooled, Normal goes for its own wins first, and Better checks every
-winning and blocking move, but traps are still possible if you find them.
+Noughts and crosses, the game everyone knows, with three ways to play it: against the computer at one of three levels, against a friend sharing your keyboard, or against a friend on another machine over the network. A running score is kept for as long as you both keep saying yes to one more game.
+
+How hard can it be? That depends on the level. Weak is easily fooled. Normal goes for its own wins first. Better checks every winning and blocking move, and you will have to set a real trap to beat it.
+
+- **Head to head over the network**: one of you hosts, the other types in the address, and you play direct, with no server in between.
+- **Its own little history**: written in 2000 and 2001 by Gabriele Giorgetti, in Debian since 2001, and taken over in 2009 by Mats Erik Andersson, who added the hardest computer level.
+
+**YOUR MOVE.**
 
 ## Controls
 

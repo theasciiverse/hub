@@ -1,14 +1,23 @@
-The traditional children's card game, against the computer. Each of you
-gets seven cards and the rest of the deck waits face down. Take turns
-asking each other for a rank you already hold: if the other player has
-any, they hand them all over and you ask again. If not, you are told to
-go fish and draw from the deck; draw the rank you asked for and you keep
-going, otherwise it is the other player's turn.
+**GOT ANY SEVENS? NO? GO FISH!**
 
-Four cards of one rank make a book, which is set aside. The game ends
-when either of you runs out of cards, and the one with the most books
-wins. Your hand, the cards left in the deck and the books are always on
-show in the panel at the bottom.
+The traditional children's card game, with the computer across the
+table. You each get seven cards and the rest of the deck waits face
+down. On your turn, ask for a rank you already hold. If the computer has
+any, it hands over every one of them and you ask again. If not: "GO
+FISH!" Draw from the deck, and if you draw the very rank you asked for,
+you keep going.
+
+Four of a rank make a book. When either of you runs out of cards, the
+most books wins. And don't think the computer isn't paying attention: it
+remembers what you've asked for, and it comes asking for it.
+
+- **One key per ask**: a, 2 to 9, 1 for the ten, j, q or k.
+- **Everything on show**: your hand, the cards left in the deck and both
+  sets of books, in the panel at the bottom.
+- **A sore loser, now and then**: beat it and it may mutter "Cheater,
+  cheater, pumpkin eater!"; lose and it may crow "Hah! Stupid peasant!"
+
+**Seven cards. One deck. Make your books.**
 
 ## Controls
 

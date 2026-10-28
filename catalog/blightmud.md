@@ -1,7 +1,22 @@
-Blightmud is a terminal MUD client built for scripting: everything from
-triggers and aliases to its own plugins is written in Lua. It speaks GMCP
-and MSDP for MUDs that send structured data, has a screen reader mode,
-spellchecks what you type and can play a MUD's sounds.
+**THE MUDS ARE STILL OUT THERE. HERE'S YOUR WAY IN.**
+
+Text worlds full of quests, guilds and other players, still running on
+servers across the internet. Blightmud is a modern way to reach them from
+your terminal: a MUD client written in Rust by Linus Probert, a long-time
+TinyFugue user who wanted one of his own.
+
+Connect, and everything a serious MUD player wants is there. Triggers,
+aliases, timers and keybindings, a status bar you can shape and whole
+plugins, all in Lua. It speaks the protocols modern MUDs use to send
+structured data (GMCP, MSDP and MSSP), connects over TLS, plays a MUD's
+music and sound effects, spellchecks what you type, splits the screen when
+you scroll back, and has a screen reader mode.
+
+- **Lua for everything**: triggers, aliases, timers, keybindings, the
+  status bar, plugins
+- **Saved servers**: `/add_server` once, then `/connect <name>`
+- **Screen reader friendly**, with a mode of its own
+- **The manual inside**: `/help` and its topics
 
 ## Getting started
 

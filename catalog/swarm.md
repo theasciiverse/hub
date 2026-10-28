@@ -1,15 +1,26 @@
-You have crash-landed on an alien planet with a toxic atmosphere, so you
-stay inside your robotic base and send robots out instead. You program
-them in a small functional language: move, grab, build, scan, and later
-loops, conditions, recursion and whole fleets of robots running their own
-programs. Every resource they bring back lets you craft better devices,
-which give your robots new abilities and new language features, which let
-them gather more.
+**CRASH-LANDED. TOXIC AIR. A BASE FULL OF ROBOT PARTS.**
 
-Start with the Tutorial from the main menu; it teaches the language one
-idea at a time. Then try Classic or Creative games on a generated world, or
-the challenges: Sokoban, mazes, Towers of Hanoi, ranching, bridge building
-and more. Progress and achievements are saved automatically.
+"In a shockingly original turn of events, you have crash landed on an
+alien planet!" The atmosphere will kill you, so you stay inside your
+robotic base with its life support, and you send robots out instead.
+And you program every one of them.
+
+It starts small: move, turn, grab, build. Bring back a tree and you can
+make a log; bring back enough and you can make better devices, which
+give your robots new abilities and new parts of the language, which let
+them gather more, which in turn will... as the tutorial says, you get
+the idea. Before long you have loops, conditions, recursion and whole
+fleets of robots running programs of their own.
+
+- **A real little programming language** that grows as you craft
+  devices for it
+- **A tutorial that teaches it** one idea at a time, from your first
+  `say "Ready!"`
+- **Open worlds** in Classic and Creative modes, generated from a seed
+- **Challenges:** mazes, the Towers of Hanoi, the wolf, the goat and the
+  cabbage, lights out, ranching, bridge building and more
+
+**Your robots are waiting for orders. Write them some.**
 
 ## Controls
 

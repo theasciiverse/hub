@@ -1,15 +1,18 @@
-Angband for many players. You create a character, set out from the town,
-and go down into the dungeon below, level after level, towards Morgoth,
-Lord of Darkness, a hundred levels deep. Everything is a letter on the map:
-you are the `@`, monsters are letters of their own, and the numbers in town
-are the shops' doors. Races run from Hobbits and Ents to Dragons and
-Hydras, classes from Warriors and Mages to Necromancers and Shapechangers.
+**MORGOTH WAITS A HUNDRED LEVELS DOWN. BRING FRIENDS.**
 
-PWMAngband is always a server and a client. Started from Asciiverse, it runs
-a private server on your machine and connects you to it: the world and your
-characters are kept for the next time, and friends on your network can join
-the same world. The first time, you choose an account name and password;
-they protect your characters on that server.
+"His figure is like a black mountain crowned with lightning." Morgoth, Lord of Darkness, Master of the Pits of Angband, waits at the bottom of the dungeon, a hundred levels deep, with Sauron one level above him. Create a character, set out from the town and go down, level after level, to face them.
+
+PWMAngband is Angband for many players. Everything is a letter on the map: you are the `@`, monsters are letters of their own, and the numbers in town are the shops' doors.
+
+- **Sixteen races**, from Hobbits and Ents to Dragons and Hydras.
+- **Classes for every taste**, from Warriors and Mages to Necromancers, Telepaths and Shapechangers.
+- **A whole wilderness** with more dungeons in it, from the Orc Cave to the Mines of Moria and Mount Doom.
+- **Your own world**: started from Asciiverse, it runs a private server on your machine and connects you to it. The world and your characters are kept for next time, and friends on your local network can join the same world.
+- **Chat** with the other players as you go.
+
+The first time, you choose an account name and password; they protect your characters on that server.
+
+**THE PITS OF ANGBAND ARE WAITING.**
 
 ## Controls
 

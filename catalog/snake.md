@@ -1,13 +1,24 @@
-You are the red `@`. Somewhere on the field is a `$`, and somewhere an
-exit, `#`. A green snake, `@` for its head and `s` for its body, hunts
-you all the while. Grab the money, and a new `$` appears; the richer you
-get, the hungrier the snake. Leave by the exit whenever you like to bank
-your winnings, but getting eaten is worth nothing.
+**GET RICH. GET OUT. DON'T GET EATEN.**
 
-You keep moving in the direction you last chose, so plan your path
-around the snake. When it has you cornered, a space warp throws you to a
-random spot, at a price. If the snake does catch you, a lucky roll on
-the last digit of your winnings can still warp you free.
+You are the red `@`. Somewhere on the field lies a `$`, and somewhere an
+exit, `#`. And all the while a green snake is coming for you. Grab the
+money and another `$` turns up; grab that one too. But as the manual
+warns, "As you get richer, the snake gets hungrier."
+
+You never stop moving: you keep going the way you last pointed, so every
+turn is a plan. Walk out through the exit whenever your nerve gives out,
+and the money is yours. Stay too long and it is the snake's: getting
+eaten is worth nothing, and only players who escape make the high-score
+table.
+
+- **SPACE WARP!!!** throws you to a random spot when the snake has you
+  cornered, at a price
+- **A last chance:** if you are caught, a lucky match on the last digit
+  of your winnings can still warp you free
+- **Your choice of field:** the whole terminal, or a smaller one of the
+  size you give it
+
+**How greedy are you feeling?**
 
 ## Controls
 

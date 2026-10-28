@@ -1,9 +1,15 @@
-The last of the Bell Labs Rogue line. You share out your attribute
-points, choose one of nine classes (fighter, ranger, paladin, magician,
-cleric, thief, assassin, druid or monk) and begin on level 0 in Friendly
-Fiend's Equipage, a shop full of arms, armour and magic, before taking
-its stairs down. More than 200 monsters live below, many of them
-intelligent, and the game sets you a quest for one unique item.
+**VERY FEW PLAYERS HAVE WON THIS GAME.**
+
+That is XRogue's own player's guide talking, and it means it. "XRogue: Expeditions into the Dungeons of Doom" grew out of Advanced Rogue into a dungeon of more than 200 monsters, and many of them are intelligent: like you, they avoid traps and decide when it is better to fight or to run.
+
+Share out your attribute points and choose one of nine classes: fighter, ranger, paladin, magician, cleric, thief, assassin, druid or monk. You begin on level 0 in Friendly Fiend's Equipage, a shop full of arms, armour and magic, with a quest: bring back one unique artifact. The Axe of Aklad, perhaps, or the Eye of Vecna, the Horn of Geryon, the Mandolin of Brian. Some of these items have minds of their own, and some "will kill you outright" if you pick them up while wielding another. Don't be too greedy with the artifacts!
+
+Bring yours to the surface and great honour is yours. Or keep going down, "to match wits with an arch-devil, a demon-prince, or perhaps Charon the Boatman."
+
+- **Nine classes**, from the spell-casting magician to the chanting druid and monk
+- **Over 200 monsters**, many as cunning as you
+- **A quest of your own**: choose your artifact in the shop at the start
+- **Charon the Boatman**, and worse, for those who don't know when to stop
 
 ## Controls
 

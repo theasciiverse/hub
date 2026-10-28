@@ -1,11 +1,25 @@
-You wake in a luxurious stateroom aboard the last battlestar, while
-explosions shake the ship. Get off it, find your way down to a tropical
-island, and explore its beaches, palm groves, caves and a village, until
-you win the hand of a goddess.
+**THE LAST BATTLESTAR IS BURNING. GET OFF IT.**
 
-It is an adventure in the classic style, typed in plain English, but
-less of a puzzle box than most: the fun is in exploring its 275 rooms.
-Along the way there is a fight in space, played in real time.
+"In the days before the darkness came, when battlestars ruled the
+heavens..." Now the darkness has fallen. The whole fleet is down to a single
+ship, and that ship is coming apart around you.
+
+You wake in a luxurious stateroom. The floor shudders, dull explosions
+rumble through the room, and the window shows a view of darkest space. Out
+in the corridors the wounded crowd the hallways and the ceilings have caved
+in. Somewhere below are the hangar and the starfighters. Get to one, launch,
+fight your way clear in real time, and get down to the tropical island
+beneath you.
+
+Then explore: beaches and palm groves, sea caves, a fishing village, and at
+last a goddess on her throne. Win her hand, and you win the game.
+
+- **275 rooms**, more a voyage of discovery than a puzzle box
+- **A space fight in real time**, at the controls of a starfighter
+- **A parser with a memory**: `take knife and sword and apple, drop all`,
+  and the last thing you named stays in mind
+- **Directions as you face them**: ahead, back, left and right, until you
+  find a compass
 
 ## Controls
 

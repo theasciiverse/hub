@@ -1,4 +1,14 @@
-The second part goes deeper into the Empire, to the realm of the Wizard of Frobozz, a wizard who has seen better days and still likes to cast a spell on passing adventurers. There are new treasures, a dragon, a princess and a bank vault to deal with.
+**HE WHISPERS A WORD BEGINNING WITH "F". THEN HE VANISHES, CHUCKLING NASTILY.**
+
+You are inside an ancient barrow, hidden deep in a dark forest. A sword of Elvish workmanship lies on the ground, beside a strangely familiar brass lantern. Beyond the tunnel lies the next part of the Great Underground Empire, and the realm of the Wizard of Frobozz.
+
+He has seen better days. He has a Doctor of Thaumaturgy degree from GUE Tech, a trophy room full of the "dull and nicked swords" of foolhardy adventurers, and a habit of turning up, "floating nonchalantly in the air beside you", to cast a spell. "Fear!" he cries, and you run. His words always begin with F, and they are rarely good news.
+
+There are new treasures down here, and plenty in the way of them: a dragon in a flame-scarred lair, a dishevelled princess, a unicorn with a tiny key on a red satin ribbon, a robot who does what he is told, and a vandalised bank whose sign still reads "Thank You for Banking at the Zork!"
+
+- **The middle of the trilogy**, with the Wizard of Frobozz at its heart
+- **Puzzles with a sense of humour**: the Wizard, the robot and the Bank of Zork
+- **The original story file**, unchanged, played in Frotz
 
 ## How to play
 

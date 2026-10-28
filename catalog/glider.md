@@ -1,3 +1,5 @@
+**A PAPER GLIDER. A WHOLE HOUSE. NOTHING HOLDING YOU UP BUT THE AIR.**
+
 You are at the controls of a paper glider loose in a big old house, and
 the way out is through every room of it. A glider only falls; what keeps
 it up is the air from the floor vents, so you drift from vent to vent,
@@ -7,14 +9,17 @@ Calhoun put it in 1991.
 
 He also confessed he had no intention of telling you what everything in
 the rooms does: the floor, tables, shelves and books are most certainly
-bad, the clocks most certainly good, and you'll enjoy figuring out the
-rest. A few freebies: candles lift you too, but not from too close; toast
-leaps from the toaster, fish from their bowls; outlets spark, grease
-spills, shredders wait; and through the air come slow balloons, paper
-'copters of mysterious origin and fast, unforgiving darts. Folded paper
-is an extra glider, a battery a burst of speed, rubber bands your only
-defense. Ducts and stairs lead on, switches bring back the lights, the
-air or a fan, and the faster you cross a room, the bigger its time bonus.
+bad, the clocks most certainly good ("points, points, what's a game
+without points?"), and you'll enjoy figuring out the rest. A few
+freebies: candles lift you too, "but not too close!"; toast leaps from
+the toaster, fish from their bowls; outlets spark, grease spills,
+shredders wait. And through the air come the balloons ("slow and
+harmless looking, but not party invitations!"), paper 'copters ("of
+mysterious origin, but of dire design!") and the darts: "Fast and
+unforgiving... Out of way!" Folded paper is an extra glider, a battery a
+burst of speed, rubber bands your only defense. Ducts and stairs lead on,
+switches bring back the lights, the air or a fan, and the faster you
+cross a room, the bigger its time bonus.
 
 Twelve houses come with it, from The House and Calhoun's own Mad House to
 the fans' houses of the day: the 120 rooms of the House of the Rising
@@ -26,6 +31,8 @@ and houses read from his own files. The silhouette view is made for the
 terminal: the room softened behind box-drawn furniture, and everything
 that moves or hurts drawn sharp in solid colour. Or press **V** for his
 art itself, in half blocks.
+
+**Catch the air. Mind the darts.**
 
 ## Controls
 

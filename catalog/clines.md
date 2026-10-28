@@ -1,14 +1,17 @@
-The Lines game in your terminal. Coloured chips appear on a 9x9 board
-three at a time. Each turn you move one chip to any free cell it can
-reach by sliding up, down, left and right around the others. Line up
-five or more of the same colour, across, down or diagonally, and they
-vanish, and you get another move before new chips arrive. When the board
-is full, the game is over.
+**THREE NEW CHIPS EVERY TURN. HOW LONG CAN YOU HOLD THEM OFF?**
 
-Every chip removed scores a point, and longer or crossing lines score
-more: n chips removed at once score n + n x (n - 5). Clearing on several
-turns in a row adds a growing bonus, b x b for the b-th such turn after
-the first.
+The board is 9x9 and it is filling up. Every turn you fail to score, three more chips land at random: red, green, blue, yellow and purple, crowding your paths and closing the gaps you were saving. Your one weapon is a single move. Pick up a chip and send it to any free cell it can reach, sliding up, down, left and right around the others.
+
+Line up five or more of one colour, across, down or diagonally, and they vanish. Better still, nothing new arrives: the move is yours again. Let the board fill and it is over.
+
+- **Big clears pay big**: n chips cleared at once score n + n x (n - 5), so a line of six is worth 12, and two lines crossing at the last chip you drop are worth far more than two fives.
+- **Chains pay too**: clear on turn after turn without letting new chips in, and each one adds a growing bonus, b x b for the b-th in a row after the first.
+- **Keys or mouse**: arrow keys or h j k l and Space, or click a chip and then the cell to send it to.
+- **Your best score**: kept between games and shown under the board while you play.
+
+Plays in black and white too, with letters for the colours.
+
+**One move. Five in a row. Don't let it fill.**
 
 ## Controls
 

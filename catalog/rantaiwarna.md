@@ -1,14 +1,14 @@
-The board starts full of elements in four colours. Pick any group of
-two or more touching elements of the same colour and they vanish; the
-elements above fall into the gap, and when a whole column empties, the
-columns to its right slide over. The game is over when no group of two
-is left.
+**BIG GROUPS. BIG SCORES. BE PATIENT.**
 
-A group of n elements scores (n - 1) squared, so two at a time earns
-almost nothing and twenty at once earns 361. Clearing the board
-completely adds a bonus of 1000. The trick is to leave the small groups
-alone until the colours around them have run together into big ones.
-The best ten scores are kept for each board size and number of colours.
+The board is packed with elements in four colours. Pick any group of two or more touching elements of the same colour and they vanish; everything above drops into the gap, and when a whole column empties, the columns to its right slide over. Keep going until no group of two is left.
+
+Here's the trick. A group of n elements scores (n - 1) squared. Two at a time earns you a single point. Twenty at once earns 361. So leave the little groups alone, and let the colours run together into big ones. Clear the board completely and you get a bonus of 1000.
+
+- **Two to five colours**, and any board from 5 by 5 up.
+- **Keyboard or mouse**: aim and press Space, or just click.
+- **The best ten scores** for every board size and number of colours.
+
+**WAIT FOR IT...**
 
 ## Controls
 

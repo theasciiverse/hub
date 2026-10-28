@@ -1,14 +1,18 @@
-Guess the hidden five-letter word in six tries. Type a word and press
-Enter, and its letters turn colour one at a time: green for a letter in
-the right place, yellow for a letter that is in the word somewhere else,
-grey for a letter that is not in it at all. Only real words count.
+**FIVE LETTERS. SIX TRIES. ONE WORD.**
 
-Below the board, an on-screen keyboard colours each letter as you learn
-about it, so you can see at a glance which letters are left. Every game
-picks a new word at random, and a running score adds up how well you
-do: 100 points for one guess, down to 50 for six.
+Type a guess, press Enter, and watch the letters turn, one at a time. Green: right letter, right place. Yellow: it's in there, but somewhere else. Grey: not in the word at all. Only real words count, so no cheating your way through the vowels.
 
-clidle is a five-letter word-guessing game in the style of Wordle.
+Below the board, an on-screen keyboard colours every letter as you learn about it, so you can see at a glance what's left to try. Got it in three? That's 80 points. In one? A hundred, and bragging rights. Six squeaks home with 50, and it all adds up into a running score.
+
+And you don't have to wait until tomorrow: every game picks a new word at random from 2,315 answers, with 12,972 words it accepts as guesses. Press Ctrl+R and there's another one.
+
+- **Letters revealed one by one,** for that moment of suspense.
+- **A running score** that keeps adding up, game after game.
+- **Play it over SSH:** `clidle -serve` turns it into a server other people can connect to and play.
+
+clidle is Ajeet D'Souza's five-letter word-guessing game in the style of Wordle.
+
+**WHAT'S YOUR OPENING WORD?**
 
 ## Controls
 

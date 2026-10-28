@@ -1,6 +1,15 @@
-Somewhere nearby is Colossal Cave, where others have found fortunes in treasure and gold, though it is rumored that some who enter are never seen again. You start at the end of a road, before a small brick building. Take what you need, find the way in, and bring the treasures back. The cave is full of passages, mazes and puzzles, a pirate and some unfriendly dwarves, and words of magic scrawled on its walls.
+**SOMEWHERE NEARBY IS COLOSSAL CAVE.**
 
-This is the game that started the genre, in the 430-point version 2.5 that its authors finished in 1995.
+Others have found fortunes in treasure and gold down there, "though it is rumored that some who enter are never seen again." You are standing at the end of a road before a small brick building. Take the lamp. Find the way in. Bring the treasure back.
+
+Then the light runs out. "It is now pitch dark. If you proceed you will likely fall into a pit." There is a threatening little dwarf in the room with you, and one sharp nasty knife is thrown at you. A bearded pirate pounces out of the shadows: "Har, har," he chortles, "I'll just take all this booty and hide it away with me chest deep in the maze!" A troll guards the bridge ("Stop! Pay troll!"), a dragon is sprawled out on a Persian rug, and on one wall someone has scrawled MAGIC WORD XYZZY.
+
+- **The original**: Will Crowther's 1976 cave, expanded by Don Woods, the game that started the genre and gave the world "a maze of twisty little passages, all alike".
+- **The final version**: Adventure 2.5, the 430-point edition its two authors finished together in 1995, with more cave than the classic 350.
+- **Help at a price**: when you seem stuck, the game offers a hint, and charges you points for it.
+- **Two words is all it takes**: GET LAMP, UNLOCK GRATE, XYZZY.
+
+**Magic is said to work in the cave. Say the word.**
 
 ## How to play
 

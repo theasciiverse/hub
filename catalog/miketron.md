@@ -1,10 +1,12 @@
-You drive a strange vehicle, the **+**, that never stops and leaves a
-trail behind it. It can cross the edges of the board to come out on the
-other side, and it survives explosions, but it cannot cross its own
-trail: run into it and the game is over. Keep it running as long as you
-can; the score counts up as it goes.
+**NEVER STOP. NEVER CROSS YOUR OWN TRAIL.**
 
-Pick-ups lie around the board:
+You are driving "a strange vehicle which can survive explosions but
+cannot cross the trail it has left behind": the **+**. It never stops.
+It leaves a trail wherever it goes. It can slip off one edge of the
+board and come out on the other. Run into your own trail and it's over.
+Keep it running as long as you can; the score counts up as you go.
+
+The pick-ups are how you live:
 
 - **?**: flight for a few moves, over the trail
 - **&**: no trail for a while
@@ -15,8 +17,11 @@ Pick-ups lie around the board:
 
 Every hundred points, five more pick-ups and twenty pieces of loose trail
 appear. The vehicle moves at half speed up and down. The board fits the
-terminal, from 40 by 10 up to 80 by 24. When the game ends, your score
-goes on a top-ten list.
+terminal, from 40 by 10 up to 80 by 24, and your best scores go on a
+top-ten list. If the flashing gets to you, the game has thought of that:
+"Suffering PSE? Press e."
+
+**Turn early. Turn often. Never stop.**
 
 ## Controls
 

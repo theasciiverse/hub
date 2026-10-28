@@ -1,11 +1,14 @@
-A bonsai tree grows in its pot, one branch at a time: the trunk climbs and
-twists, shoots split off left and right, and leaves gather at the tips in
-light and dark green. When the tree is done it stands for a few seconds,
-then a new one starts from a fresh seed, never the same twice. Leave it
-running as a quiet screensaver.
+**GROW A BONSAI. THEN ANOTHER. THEN ANOTHER.**
 
-If you quit halfway through a tree, it is kept, and the next time you start
-cbonsai that tree finishes growing before new ones follow.
+No shears, no watering can, no years of patience. Start cbonsai and a little tree grows in its pot right in front of you. The trunk climbs and twists, shoots split off left and right, and leaves gather at the tips in light and dark green.
+
+When the tree is done it stands for a few seconds to be admired, then a new one starts from a fresh seed. Never the same tree twice. Leave it running and let the afternoon go by.
+
+- **Live growth:** every step of the tree, as it happens.
+- **Picks up where you left off:** quit halfway through a tree and it's kept; next time, that tree finishes growing before new ones follow.
+- **Make it yours:** from a terminal, add a message beside the tree, or change its life, branching and leaves.
+
+**PUT THE KETTLE ON. LET IT GROW.**
 
 ## Controls
 

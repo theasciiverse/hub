@@ -2,7 +2,7 @@ schema_version = 1
 id = "moon-buggy"
 kind = "game"
 title = "Moon-Buggy"
-description = "Drive a buggy across the moon, jumping craters and shooting meteors out of your way, faster with every level"
+description = "Craters ahead! Time your jumps, laser the meteors rolling at you, and keep your buggy on the moon for as long as you can."
 year = 1998
 # the notices name no GPL version, so any may be chosen (COPYING is GPL 3
 # since 2011, GPL 2 before); see PATCHES.md

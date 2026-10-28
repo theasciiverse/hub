@@ -1,13 +1,30 @@
-The original Star Trek game of BSD Unix. The Klingons are invading the
-Federation, and the Enterprise has a limited number of stardates to
-destroy them. Warp between the quadrants of the galaxy, scan for enemies,
-fight with phasers and photon torpedoes, and dock at starbases to refuel
-and repair, while damage, novas, black holes and distress calls get in
-the way.
+**THE KLINGONS ARE INVADING. YOU HAVE ONE SHIP AND NOT MUCH TIME.**
 
-It plays like a 1970s terminal session: you type a command, the computer
-prints the result. Nothing is on screen until you ask for it, so the
-scans are your eyes.
+Klingon warships are spreading across the galaxy. Starbases are calling for
+help, inhabited star systems are under attack, and you have a limited number
+of stardates to destroy every last invader. You command the Enterprise.
+
+Warp between the quadrants, scan near and far, fight with phasers and photon
+torpedoes, raise the shields, cloak, and dock at a starbase to refuel and
+repair. Your bridge crew keep up a running commentary ("Chekov: But captain,
+we are not adjacent to a starbase."), and there are novas, black holes,
+tractor beams and a self-destruct sequence that asks for the password.
+
+Get it wrong and the game has a long list of ways to tell you. "You ran into
+the negative energy barrier." "You have burned up in a star." "Well, you
+destroyed yourself, but it didn't do any good." Abandon ship and you are
+"hereby put in charge of an antiquated but still functional ship, the Fairie
+Queene." Win, and you may even be promoted.
+
+It plays like a 1970s terminal session: type a command, read the result.
+Nothing is on screen until you ask for it, so the scans are your eyes.
+
+- **Eric Allman's original Trek**, written at Berkeley in 1976 and a BSD
+  game ever since
+- **Short, medium or long games**, at skill levels from novice to
+  impossible
+- **Every command can be shortened**, and `?` lists what each prompt
+  accepts
 
 ## Controls
 

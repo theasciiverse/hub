@@ -1,8 +1,14 @@
-Ten bosses, one after another, each a glyph with a grudge. You fire at
-the boss whenever you move, and only then: standing still is safe from
-nothing, so every dodge is an attack.
+**TEN BOSSES. EACH ONE A GLYPH WITH A GRUDGE.**
 
-Each boss fights in phases. It opens with its old attack, then starts to
+The Sentinel. The Hoarder. The Watcher. The Infernal Imp. The Spiral Beast.
+The Guardian of Order. The Swarm King. The Celestial Tyrant. The Clockwork
+Leviathan. And at the end of it all, The Chaos Reaper.
+
+You fire at the boss whenever you move, and only then: standing still is
+safe from nothing, so every dodge is an attack.
+
+Each boss fights in phases, with names like Compound Interest, Thousand
+Eyes, Supernova and Last Rites. It opens with its old attack, then starts to
 move and brings out new ones: aimed fans, rings that turn into spirals,
 shots raining from the top, walls with one gap, bullets that curve, speed
 up, bounce off the edges or home in, and lasers that show as a dotted
@@ -51,3 +57,10 @@ This edition brings it to the terminal and builds a fuller game around
 it, with phases, moving bosses, new attacks, bombs, grazing, a score,
 colour, sound and a chiptune for every boss. The original lives on
 unchanged as Classic.
+
+## Credits
+
+- ASCII Wars!: Carlos Alvarez (VikingosTeam), 2025,
+  [github.com/Alvarz/ascii-wars](https://github.com/Alvarz/ascii-wars)
+- Terminal port, and the Arcade game built round the original: Asciiverse
+- License: MIT

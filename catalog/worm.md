@@ -1,12 +1,10 @@
-The classic growing worm. Your worm is a line of `o`s with an `@` for a
-head, and it never stops moving. Somewhere on the field is a digit: eat
-it and the worm grows by that many segments, and a new digit appears.
-The game ends when the worm runs into the wall or into itself.
+**IT NEVER STOPS MOVING. IT NEVER STOPS GROWING.**
 
-The longer the worm, the harder it is to find a way through, and every
-digit you eat adds the worm's growth to your score. Fill one eighth of
-the screen with worm and you have won. The blue grass is only there to
-look at; you can crawl straight over it.
+The classic growing worm, from the BSD Unix games of 1980. Your worm is a line of `o`s with an `@` for a head, and it is always on the move. Somewhere on the field is a digit: eat it and the worm grows by that many segments, and a new digit appears somewhere else.
+
+The longer the worm, the harder it is to find a way through, and every digit you eat adds to your score. Fill one eighth of the screen with worm and you have won. Run into the wall or into yourself, and the game puts it plainly: "Well, you ran into something and the game is over."
+
+The blue grass is only there to look at; you can crawl straight over it.
 
 ## Controls
 

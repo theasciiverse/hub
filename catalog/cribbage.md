@@ -1,14 +1,14 @@
-Cribbage for one player against the computer. Each hand you are dealt
-six cards and lay two away into the crib, which belongs to the dealer.
-Then the two of you take turns laying cards and calling the count,
-scoring for fifteens, pairs, runs and reaching 31, and finally each hand
-is counted with the turned-up starter card. The pegs on the board keep
-the score.
+**FIFTEEN-TWO, FIFTEEN-FOUR, AND A PAIR IS SIX.**
 
-A game here is played to 61 points, once round the board, and a match
-ends after seven games, with a skunk counting as two. The computer
-counts both hands, and waits before the show so you can count yours
-first.
+Pull up a chair. The computer has shuffled, the pegs are in the board, and it wants a game. Six cards each: lay two away into the crib, and remember whose crib it is before you throw, because it belongs to the dealer. Then the play: you take turns laying cards and calling the count, pegging for fifteens, pairs, runs and 31, and saying "go" when you can't. Then the show, where every hand is counted with the starter card and the dealer counts the crib as well. Turn up a jack, and the dealer gets one for "his heels".
+
+- **A quick game**: once round the board, first to 61.
+- **A seven-game match**: and a skunk, winning before your opponent reaches 31, counts as two games.
+- **No arithmetic homework**: the computer counts both hands and the crib, shows the breakdown (fifteens, pairs, runs, flushes, nobs) and waits before the show so you can count yours first.
+- **No fault points**: you can only make legal plays, and when one card is all you can play, it plays itself.
+- **Real suits**: hearts, spades, diamonds and clubs as card symbols in a UTF-8 terminal.
+
+**"I get one for his heels." Make it pay for that.**
 
 ## Controls
 

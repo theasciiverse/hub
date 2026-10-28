@@ -1,15 +1,21 @@
-Missiles are falling on your six cities. Move the sight and fire: the
-nearest of your three bases launches a missile, which bursts into a
-fireball where you aimed, and any warhead that flies into it is gone.
-Catch several in one blast, or let one explosion set off the next, to
-make your ammunition last.
+**SIX CITIES. THE MISSILES ARE FALLING. THERE ARE NO BONUS CITIES.**
 
-Some warheads split into several on the way down. Smart ones swerve
-round your explosions. A bomber crosses now and then, low over the
-cities, dropping missiles of its own; it shows as the terminal's cursor.
-Your bases can be hit too, but they are rebuilt for the next level;
-lost cities are not. Lose the last city and the game is over once the
-level ends.
+Warheads are streaking down on your six cities. Move the sight and fire:
+the nearest of your three bases with ammunition left launches a missile
+that bursts into a fireball where you aimed, and any warhead that flies
+into it is gone. Catch several in one blast, or let one explosion set off
+the next. As the manual says, "chaining explosions together like this is
+the key to not running out of ammo. Tricky to do under pressure though."
+
+And the pressure comes. Smart missiles swerve round your explosions. A
+bomber crosses low over the cities, dropping missiles of its own; it
+shows as the terminal's cursor ("it's a bit weird, but you'll know it
+when you see it"). Some missiles split into several warheads on the way
+down, which "is extremely nasty, so watch out for it." Your bases can be
+hit too, but they're rebuilt for the next level. Lost cities are not.
+Lose the last one and the game is over when the level ends.
+
+**Aim. Fire. Chain it. Save the cities.**
 
 ## Controls
 

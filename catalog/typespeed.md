@@ -1,8 +1,12 @@
-Words drift across the screen from left to right. Type one and press
-Enter before it reaches the edge; let ten get away and the game is over.
-The faster you type, the faster they come. Pick a word list first: Unix
-and DOS commands, programming keywords, or words in English, Finnish,
-French, German, Italian, Dutch, Portuguese, Spanish or Thai.
+**TYPE IT FAST, OR BE A LEWSER.**
+
+That's the whole idea, straight from the game's own credits screen. Words drift across the screen from left to right. Type one and press Enter before it reaches the far edge. Let ten get away and the game is over. And the higher your score climbs, the faster they come.
+
+Choose your words first: Unix or DOS commands, programming functions, C# keywords, or words in English, Finnish, French, German, Italian, Dutch, Portuguese, Spanish or Thai. Then type. At the bottom of the screen your rank rises every hundred points: Beginner, Learner, NoGood, Average, Good, VeryGood, Pro, 3l33t, *(GOD)*. Make it past *(GOD)* and the game simply calls you Computer.
+
+- **Real numbers**: words per minute, characters per second, misses, and a rank for your typos as well
+- **High scores** with your name on them
+- **Word lists for everyone**: sysadmins, programmers, and nine languages
 
 ## Controls
 

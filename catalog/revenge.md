@@ -1,12 +1,14 @@
-You are the rat (**r**), starting in the middle of a big square of
-blocks (**#**), and a cat (**f**) is coming for you. Moving into a block
-pushes it, together with every block in line behind it, as long as
-there is a free cell at the end of the row. Use the blocks to wall the
-cats in: once every cat is boxed in and cannot move, they all turn to
-cheese (**%**), worth 75 points each, and a new wave of two to eight
-cats comes in. Eating a piece of cheese, or pushing a block onto it, is
-worth 100 more. More cats also turn up every five minutes. If a cat
-reaches you, the game is over.
+**THE CATS HAVE HAD IT THEIR WAY LONG ENOUGH.**
+
+You are the rat, **r**, in the middle of a big square of blocks, **#**, and a cat, **f**, is coming for you. Run? No. Push. Moving into a block shoves it, together with every block lined up behind it, as long as there is a free cell at the end of the row. Wall the cats in. Once every cat is boxed in and cannot move, they all turn to cheese, **%**.
+
+- **75 points a cat** turned to cheese, and 100 more for eating the cheese or pushing a block onto it.
+- **Another wave** of two to eight cats comes in once a wave is trapped, and more cats turn up as time goes on.
+- **Push diagonally** too, with **y**, **u**, **b** and **n**.
+
+And if a cat reaches you? "You lost The Game."
+
+**SWEET, CHEESY REVENGE.**
 
 ## Controls
 

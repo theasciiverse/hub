@@ -1,15 +1,30 @@
-The galaxy is overrun with space pirates, and you have limited time to
-destroy them all. You command a warship with energy,
-shields, plaser banks and ten torpedoes, and starbases where docking
-restores your energy, shields and torpedoes. The pirates fight back, and so do
-supernovas and black holes.
+**THE GALAXY IS CRAWLING WITH PIRATES. THE CLOCK IS RUNNING.**
 
-The screen always shows the sector you are in, your ship `Y` among
-stars `*`, starbases `#`, pirates `P` and inhabited planets `@`, beside a
-chart of the whole galaxy and a panel with your condition, energy,
-torpedoes, the pirates left and the time remaining. You move by giving a
-grid position: two digits for a spot in this sector, four to warp to
-another.
+You command the one warship standing between the pirates and every
+inhabited star system in the galaxy, and you do not have long. Warp from
+sector to sector, charge the plaser banks, fire torpedoes three at a
+time, and dock at starbases for fresh energy, shields and torpedoes
+before the next fight.
+
+Space itself is against you too. Stars go supernova. Black holes swallow
+your torpedoes. A long-range tractor beam drags you off course, and a
+time portal can throw you backwards or forwards in the calendar. Your
+crew keeps you informed, after a fashion: "Captain, the pirates said...
+uh, I don't think I can repeat that."
+
+- **Fight or take them alive:** cloak, ram, or ask a pirate to surrender
+  and hand your captives to a starbase for trial
+- **Answer the distress calls** before starbases and inhabited systems
+  fall
+- **The whole galaxy on one screen:** your sector, the galaxy chart and
+  the ship's condition side by side
+- **Ways to lose that the manual never mentions:** among them, "Your
+  ship was ticketed for speeding"
+
+Clear every pirate in time and headquarters says it for you:
+"Congratulations, you have saved the Galaxy."
+
+**Plasers charged. Shields up. Go.**
 
 ## Controls
 

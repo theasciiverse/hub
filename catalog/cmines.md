@@ -1,15 +1,16 @@
-Clear the minefield without stepping on a mine. Every square you open
-tells you how many of its eight neighbours hide mines; flag the ones you
-are sure of and open the rest. The first square you open is never a
-mine.
+**ONE WRONG STEP AND IT'S OVER.**
 
-Three fields come ready: Beginner (8x8, 10 mines), Intermediate (16x16,
-40 mines) and Expert (16x30, 99 mines), each with its own best time. Add
-your own to the setup file, or start with one by name: `cmines Expert`.
+Somewhere under this grid are 99 mines. Every square you open tells you how many of its eight neighbours hide one, and from those numbers, and nothing else, you work out where it is safe to step. Flag the mines you are sure of. Open the rest. The clock is running.
 
-When a number already has all its mines flagged, Return (or both mouse
-buttons) opens all its other neighbours at once, the quick way through a
-field.
+The first square you open is never a mine, so the opening move is free. After that, it's all you.
+
+- **Three classic fields**: Beginner (8x8, 10 mines), Intermediate (16x16, 40 mines) and Expert (16x30, 99 mines), each with its own best time. Write your own into the setup file, or start one by name: `cmines Expert`.
+- **Chording**: when a number has all its mines flagged, Return (or the middle mouse button) opens all its other neighbours in one go. That is how the fast times are made.
+- **A peek when you're truly stuck**: **p** looks under one square, but a game with a peek in it can't set a best time.
+- **A face to keep you company**: with `-e`, a little emoticon shows the game's mood, from :-) to B-).
+- **Keys or mouse**: arrow keys or h j k l, or click.
+
+**Beginner is a warm-up. Expert is a war.**
 
 ## Controls
 

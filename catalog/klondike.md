@@ -1,16 +1,23 @@
-The best known patience. Seven sorting stacks are dealt, from one card
-in the first to seven in the last, with only the top card of each face
-up. Move cards between the stacks, each one on a card one rank higher
-and of the other colour, and build four final piles, one per suit, from
-Ace up to King. The rest of the deck is dealt one card at a time, and
-when it runs out the dealt cards turn over and become the deck again.
-You win when all four suits are complete.
+**THE PATIENCE EVERYONE KNOWS, TURNED ON ITS SIDE.**
+
+Seven sorting stacks, dealt from one card to seven, only the top card of
+each face up. Move cards between the stacks, each one on a card one rank
+higher and of the other colour, and build four final piles, one per
+suit, from Ace up to King. The deck deals one card at a time, and when
+it runs out the dealt cards turn over and go round again. Complete all
+four suits and the screen says it in capitals: "*** YOU WON! ***"
 
 The table is laid on its side: the sorting stacks run across the screen,
-one per row, with the deck and the final piles down the right. Instead
-of picking cards up with a cursor, you step through the cards that can
-move, and the game marks with a letter each place the selected card can
-go.
+one per row, with the deck and the final piles down the right. There is
+no cursor to drag. You step through the cards that can move, the game
+marks with a letter each place the selected card can go, and you press
+the letter.
+
+- **All keyboard**: j and k to choose a card, a letter to place it, d to
+  deal.
+- **A new deal any time**: R starts over.
+
+**Deal. Build. Bring them home to the King.**
 
 ## Controls
 

@@ -1,22 +1,18 @@
-Chroma is an abstract puzzle game. Each level is a maze of walls, dots,
-arrows and bombs with stars scattered through it, and you have two
-player pieces. Collect every star, then leave through the door. It
-starts simple enough to pick up at once, and gets hard enough to tax
-anyone.
+**HAVE YOU GOT WHAT IT TAKES TO SOLVE CHROMA?**
 
-The pieces are not explained. Arrows slide the way they point whenever
-there is room, and a moving one can crush a player piece; bombs, circles
-and dots have rules of their own, and part of the game is finding out
-exactly how they behave and set each other off. The first
-six levels of each set bring the pieces in one by one. Later levels
-need both player pieces working together.
+That's the question its author, Amf, asks. Twenty-one levels are waiting for your answer.
 
-There are 21 levels in two sets, nine for beginners and twelve for
-experts, and they can be played in any order. Mistakes cost nothing:
-undo goes back as far as you like, and redo plays it forward again.
-Positions can be saved and loaded, and a saved solution replays move by
-move. A level editor lets you build and test your own, and Chroma can
-also play levels from the similar games XOR and Enigma.
+Each one is a pattern of colourful shapes forming, in Amf's words, "fiendish traps that must be disarmed and mysterious puzzles that must be manipulated in order to give up their subtle secrets." You have two octagonal player pieces. Collect every star, then leave through the door. That's all.
+
+Nobody tells you the rules. Arrows slide the way they point whenever there is room, and a moving one will crush a player piece flat. Bombs, circles and dots have rules of their own, and they set each other off. Experiment. Watch what happens. Then use it. The first six levels of each set bring the pieces in one by one; by the end you'll need both player pieces working together, move by careful move.
+
+- **Two sets, 21 levels:** Initiation, nine for beginners, from Invitation onward; and Coronation, twelve for experts, all the way to Culmination. Play them in any order.
+- **Mistakes cost nothing:** undo as far back as you like, and redo plays it forward again.
+- **Save, load and replay:** keep positions, and watch a saved solution replay move by move.
+- **A level editor:** build your own, test it and verify it.
+- **More puzzles:** Chroma also plays levels from the similar games XOR and Enigma.
+
+**THE DOOR IS RIGHT THERE. GETTING TO IT IS ANOTHER MATTER.**
 
 ## Controls
 

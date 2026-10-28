@@ -1,18 +1,17 @@
-NetHack, rebalanced and given a friendlier interface. NetHack Fourk is
-Nathan Eady's variant of NetHack 4: the same descent through the
-Mazes of Menace, the Gnomish Mines, Sokoban and Gehennom for the
-Amulet of Yendor, with careful changes to the balance (races matter
-for your limits and skills, Barbarians are the strongest fighters,
-ranged weapons and multishot reworked, amnesia gone, scrolls of
-wishing), a new race, the sylph, and new levels and monster tricks.
+**THE SAME DEADLY DUNGEON. A LESS HOSTILE INTERFACE.**
 
-From NetHack 4 it has the interface: status bars for health and
-power, a sidebar with your inventory on a wide terminal, the game
-remembering every level you have seen, autoexplore and travel, and
-fewer ways to kill yourself with a typo. It is the version played on
-the Hardfought public servers. Your first characters are human
-Barbarians and Wizards; the other roles and races unlock as you
-achieve things in play, and stay unlocked.
+The Amulet of Yendor still lies at the bottom, past the Mazes of Menace, the Gnomish Mines, Sokoban and Gehennom, and the dungeon still wants you dead. What has changed is everything around it. NetHack 4 set out to give NetHack "a less hostile interface"; Nathan Eady's NetHack Fourk takes that and adds the balance changes NetHack 4 would not.
+
+- **Autoexplore and travel**: **v** explores until something turns up, **_** walks you to any spot.
+- **Status bars** for health and power, and **an inventory sidebar** on a wide terminal.
+- **Every level remembered**: look back on any level you have seen.
+- **Fewer ways to kill yourself with a typo.**
+- **Rebalanced**: races matter for your limits and skills, Barbarians are the strongest fighters, ranged weapons and multishot reworked, amnesia gone. A new race, the sylph, and new levels and monster tricks.
+- **Roles you earn**: you start as a human Barbarian or Wizard, and the rest unlock as you achieve things in play, and stay unlocked. The Archeologist? Win the game first.
+
+It is the version played on the Hardfought public servers.
+
+**ASCEND. THEN COME BACK AS AN ARCHEOLOGIST.**
 
 ## Controls
 

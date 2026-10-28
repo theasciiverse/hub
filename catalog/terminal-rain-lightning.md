@@ -1,7 +1,14 @@
+**RAIN ON THE SCREEN. THUNDER IN THE SPEAKERS.**
+
 Rain streams down the terminal in cyan strokes and dots. Switch on the
-thunderstorm and it pours harder and brighter, and now and then a bolt of
-lightning forks down from the sky, flares and fades. With sound on, the
-rain patters along and thunder rolls in a moment after each strike.
+thunderstorm and it pours harder and brighter, and now and then a bolt
+of lightning forks down from the sky, flares and fades. With sound on,
+the rain patters along and thunder rolls in a moment after each strike.
+
+Slow it down, speed it up, turn the volume to taste, and pick your own
+colours for the rain and the lightning.
+
+**Stay in. It's pouring.**
 
 ## Controls
 

@@ -1,8 +1,13 @@
-Herb Chong's long-grown Rogue. Pick one of ten classes, from fighter,
-paladin and ranger to druid, illusionist, assassin and ninja, spend
-your gold at Friendly Fiend's Flea Market, and go down. The monsters
-come in both cases and many kinds, and unique artifacts lie deep in the
-dungeon for the bravest to bring back.
+**EIGHT ARTIFACTS. ONE DUNGEON. YOUR TOES MAY FALL OFF.**
+
+"UltraRogue: The Ultimate Adventure in the Dungeons of Doom." Herb Chong grew it out of Rogue over ten years, and it shows. Pick one of ten classes, from fighter, paladin and ranger to druid, illusionist, assassin and ninja. Spend your gold at Friendly Fiend's Flea Market. Then go down, into a dungeon where the monsters come in both cases and many kinds.
+
+Deep down lie eight unique artifacts: the Magic Purse of Yendor, the Phial of Galadriel, the Amulet of Yendor, the Palantir, Crown and Sceptre of Might, the Silmaril of Ea and, deepest of all, the Wand of Yendor. Only a hero carrying one can climb the stairs back up, and reaching daylight with it makes you a total winner. But power has its price, and the artifacts have side effects. "A wart grows on the end of your nose." "Your hair begins to turn white." "Your toes fall off."
+
+- **Ten classes**, each with its own way to survive
+- **Spells and prayers**, traps you can set yourself, pools to dip things in
+- **Eight unique artifacts**, the first from level 15, the last from level 50, each with its own powers and curses
+- **Rogue's family tree**: Rogue 3.6 and an early Advanced Rogue at its roots
 
 ## Controls
 
@@ -17,7 +22,7 @@ dungeon for the bravest to bring back.
 - **c**: cast a spell or say a prayer, **a**: affect the undead,
   **^**: set a trap, **D**: dip something in a pool
 - **s**: search for traps and secret doors, **.**: rest
-- `>`: stairs down
+- `>` and `<`: stairs down and up; up only while you carry an artifact
 - **?**: all the commands, **/**: what a symbol is
 - **S**: save and quit, **Q**: quit
 

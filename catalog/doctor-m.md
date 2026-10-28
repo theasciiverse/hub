@@ -1,4 +1,34 @@
-You land in an endless meadow of shale and scrub under a funnel of storm clouds, beside a signpost that will not keep still. In the sky, paramedics are working on someone. As Doctor M, you go back through the scenes of a life, talking to the people in it, to find out what you did and what it was worth. Type ABOUT and CONVERSATION first.
+**"WE'RE LOSING THE PATIENT!"**
+
+"Is that such a bad thing?"
+
+"You have an oath!"
+
+"An oath this one never bothered to follow."
+
+Those are the last voices you hear before the clouds take you. Somebody
+shouts **"CLEAR!"**, lightning rakes across the sky, and you fall (or
+rise?) into the eye of the storm.
+
+You land in an endless meadow of loose shale and gray scrub, under a
+funnel of storm clouds that churn in a slow circle overhead. The wind
+moans. A wooden signpost leans at an absurd angle, two arrows nailed to
+it: **TO HERE** and **TO THERE**. Then the wind howls, and the signpost
+spins. Above you, the clouds part on a silent vision: a circle of
+paramedics, working frantically over someone you can't quite see.
+
+You are Doctor M. You don't know which way to go. Or, maybe, which way
+you went.
+
+- **A surreal afterlife** that bends direction, time and memory, from
+  Michael D. Hilborn's entry to the 2011 Interactive Fiction Competition
+- **Real conversations**: the people you meet are talked to through a
+  conversation system of topics and replies, so type ABOUT and
+  CONVERSATION when you start
+- **Built-in hints** in the ABOUT menu, if the storm gets the better of
+  you
+
+**An Interactive Deliverance. Which way will you go?**
 
 ## How to play
 

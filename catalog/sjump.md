@@ -1,13 +1,21 @@
-An O runs round the border of a square. Press **Enter** and it flies
-off in the direction it sits from the middle of the square: from the
-middle of the right-hand side it goes straight across, from higher or
-lower it climbs or falls on the way. It has to land in the next square; if it flies off
-the screen or past the square, the game is over.
+**ONE KEY. ONE JUMP. DON'T MISS.**
 
-Every landing scores the combo and raises it by one. Landing on the top
-or bottom edge of the square scores the combo times 101. The combo drops
-back to 1 each time the O passes the bottom right corner of its square,
-so it pays not to wait a whole round.
+An O runs round and round the border of a square. Press **Enter** and it
+leaps off, in whatever direction it sits from the middle: from the
+middle of the right-hand side it flies straight across, from higher up
+or lower down it climbs or falls on the way. It has to land in the next
+square. Overshoot, undershoot, fly off the screen, and the game is over.
+
+Every landing scores your combo and raises it by one. Land right on the
+top or bottom edge of the square and it scores the combo times 101. But
+the combo drops back to 1 every time the O passes the bottom right
+corner, so you cannot just sit and wait for the perfect moment.
+
+- **One key to learn**, and a lifetime to get the timing right
+- **Edge landings pay a hundredfold**, if you dare to aim for them
+- **A high-score table** for when you finally get it right
+
+**Time it. Jump. Again.**
 
 ## Controls
 

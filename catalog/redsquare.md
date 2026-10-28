@@ -1,24 +1,17 @@
-A puzzle played in Conway's Game of Life. The board is full of white
-cells, **#**, that live, die and are born by Life's rules, and you move
-a red square of four cells through them. Life moves on a generation
-every time you press a key, or by itself after a short wait.
+**SEE ORDER IN THE CHAOS.**
 
-Red cells live by the same rules, and a cell that is born or survives
-takes the colour of most of its neighbours, so when your square touches
-other cells it starts reactions that can spread red, **O**, or wipe it
-out. Once the square has come apart you cannot move it, until a new red
-square with nothing around it forms somewhere and you take control of
-that one.
+"See order in the chaos and use the predictable to prepare for the unpredictable." That's Redsquare's advice, and you will need it. The board is Conway's Game of Life: white cells, **#**, live, die and are born by Life's rules, a generation every time you press a key, or by itself after a short wait. Into all that, you steer a red square of four cells.
 
-You clear a level by catching the X, which wanders around the board, in
-your square for two turns in a row, or by having red cells outnumber
-the white ones until no white cell is left. You lose when no red cell is
-left. A few set levels come first, then random ones. When the board
-settles down for long, the game scatters new red and white cells over
-it.
+Red cells live by the same rules, and a cell that is born or survives takes the colour of most of its neighbours. So when your square touches other cells, it sets off reactions that can spread red, **O**, across the board, or wipe it out. Once your square comes apart you cannot move it, until a new red square with nothing around it forms somewhere and you take control of that one.
 
-The board is 50 by 35 and wraps around at every edge; on a terminal
-shorter than 42 rows it scrolls to follow your square.
+- **Two ways to win a level**: catch the wandering X in your square for two turns in a row, or let red outnumber white until no white cell is left.
+- **One way to lose**: no red cell left.
+- **Set levels first, then random ones.** When the board settles down for long, the game stirs it up with new red and white cells.
+- **A world with no edges**: 50 by 35, wrapping around at every side, scrolling to follow your square on a short terminal.
+
+"Learn from your mistake and try again and again."
+
+**TRY AGAIN. AND AGAIN.**
 
 ## Controls
 

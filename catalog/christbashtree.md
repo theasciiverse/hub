@@ -1,7 +1,14 @@
-A Christmas tree of green stars stands on its trunk above a greeting.
-Coloured lights come on all over the tree one after another and go out
-again, and the word CODE in the greeting flashes in the colour of the
-newest light: "MERRY CHRISTMAS, And lots of CODE in" next year.
+**MERRY CHRISTMAS, AND LOTS OF CODE.**
+
+"You know, a Christmas tree on Bash :)" That's how Sergio Lepore introduced it in 2014, and it is still one of the nicest things you can leave glowing in a terminal in December.
+
+A tree of bold green stars stands on its little `mWm` trunk. Lights pop on all over it, one after another, colour after colour, and wink out again. Underneath, the greeting: "MERRY CHRISTMAS, And lots of CODE in" next year, with CODE flashing in the colour of the newest light.
+
+- **Two languages:** English, or `christbashtree es` for "FELICES FIESTAS, Y mucho CODIGO en" next year.
+- **Tiny:** happy in a terminal of 26 columns by 14 rows.
+- **No bash needed:** the same tree, lights and pace, as one small program that runs on Windows too.
+
+**HAPPY HOLIDAYS. NOW GO WRITE SOME CODE.**
 
 ## Controls
 

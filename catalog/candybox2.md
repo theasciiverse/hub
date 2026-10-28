@@ -1,4 +1,4 @@
-You have 1 candy.
+**YOU HAVE 1 CANDY.**
 
 That is all you get at first: a number, ticking up once a second, and a
 button to eat them. Eat them, or throw ten on the ground and see what

@@ -1,14 +1,12 @@
-Black (X) and white (O) take turns putting a disc on the 8x8 board. A
-disc has to trap at least one line of the other side's discs between
-itself and another disc of yours, across, down or diagonally, and every
-trapped disc turns over to your side. A side that cannot move is skipped;
-when neither can, the side with more discs wins.
+**TRAP THEM. FLIP THEM. TAKE THE BOARD.**
 
-At the start the game asks who plays each side: by default the computer
-plays white and you play black, which moves first. Two people can share
-one keyboard, and the computer can play itself. Without `-p` the
-computer starts out playing at random and adjusts after every game,
-playing better after you win and worse after it wins.
+Black, **X**, and white, **O**, take turns putting a disc on the 8x8 board. Every disc you play must trap at least one line of the other side's discs between itself and another disc of yours, across, down or diagonally, and every trapped disc flips over to your side. One move can flip several lines at once, and the lead can change hands in a single turn. A side that cannot move is skipped; when neither can, the side with more discs wins.
+
+- **Play the computer, a friend, or watch**: by default you play black and move first, the computer plays white; two people can share one keyboard, and the computer can play itself.
+- **A computer that learns from you**: it starts out playing at random, plays better after you win ("I'd play better next time.") and worse after it wins. Keep beating it and it asks: "Are you human?"
+- **Keyboard or mouse**: click a square to put your disc.
+
+**YOUR MOVE.**
 
 ## Controls
 

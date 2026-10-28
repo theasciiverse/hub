@@ -1,12 +1,21 @@
-The computer picks a secret code of four colours, repeats allowed, from
-red, green, yellow, blue, magenta and white. You have ten guesses to find
-it. After each guess, markers tell you how close you came: a red X for
-every colour in the right place, a white X for every right colour in the
-wrong place. The markers are always listed reds first, so they never say
-which of your colours earned them.
+**FOUR COLOURS. TEN GUESSES. CRACK THE CODE.**
 
-Work it out from the answers; the secret is shown when you crack it or
-run out of guesses.
+The computer has picked a secret: four colours in a row, from red, green,
+yellow, blue, magenta and white, repeats allowed. You have ten tries to name
+it exactly.
+
+Every guess gets its answer in markers: a red X for each colour in the right
+place, a white X for each right colour in the wrong place. They never say
+which is which. Is it the yellow in the second slot, or the blue at the
+end? Work it out, narrow it down, close in.
+
+Donald Knuth showed that this classic code can always be cracked in five
+guesses or fewer. You have ten. How hard can it be?
+
+- **Classic code-breaking**: learned in a minute, played for years
+- **Longer codes** of five or six colours, and anything from one to
+  fifteen guesses
+- **Play again** at a keystroke
 
 ## Controls
 

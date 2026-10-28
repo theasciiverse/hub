@@ -1,10 +1,26 @@
-Somewhere beneath the fortress of Angband, a hundred levels down, waits
-Morgoth, Lord of Darkness. You choose a race and a class, start in a
-small town with some gear and a little gold, buy what you can, and go
-down. Every level is made afresh each time you enter it, full of
-monsters out of Tolkien's Middle-earth and far beyond, traps, treasure,
-unique foes and legendary artifacts. Death is permanent, and the game is
-long and deep: a win usually takes many characters.
+**A HUNDRED LEVELS DOWN, MORGOTH IS WAITING. SO IS EVERYTHING IN BETWEEN.**
+
+Up top there's a little town. The General Store might be kept by Bilbo the
+Friendly, or by Rincewind the Chicken; there's an armoury, a weaponsmith, an
+alchemist and a black market, and Farmer Maggot shuffling about in the
+streets. ("He's lost his dogs. He's had his mushrooms stolen. He's not a
+happy hobbit!") Underneath lie the Pits of Angband. On level 99 waits
+Sauron, the Sorcerer. On level 100, Morgoth, Lord of Darkness.
+
+Every time you take the stairs, the level is built anew: orcs and trolls,
+dragons and wraiths, uniques with names out of Tolkien, traps, treasure and
+artifacts like the Phial of Galadriel, the sword Ringil and the One Ring
+itself. Death is permanent, and most players lose many characters before one
+goes all the way down. That is the game.
+
+- **Eleven races and nine classes**: a Hobbit Rogue, a Dwarf Priest, a
+  High-Elf Mage, a Half-Troll Blackguard, a Kobold Necromancer...
+- **A hundred levels**, made afresh on every visit, deeper and deadlier all
+  the way to the Lord of Darkness
+- **Over six hundred monsters** and a hoard of legendary artifacts, many
+  straight from Middle-earth
+- **The grandfather of a family**: carried on since 1990, with dozens of
+  roguelikes among its variants
 
 ## Controls
 

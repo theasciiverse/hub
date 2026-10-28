@@ -1,12 +1,27 @@
-Mahjong solitaire, the tile-matching kind: clear the board by removing
-matching pairs of free tiles. A tile is free when nothing lies on top of
-it and its left or right side is open. Seasons match any season and
-flowers match any flower. A faithful terminal clone of GNOME Mahjongg,
-with all ten of its layouts, from the Turtle to the Red Dragon, and the
-same deal generator, so every board can be cleared.
+**CLEAR THE BOARD, ONE MATCHING PAIR AT A TIME.**
 
-The board is drawn at the largest size that fits your window. Your game
-is saved after every move and waits, paused, the next time you start.
+Mahjong solitaire, the tile-matching kind. The tiles are piled into a
+shape (a Turtle, a Ziggurat, a Red Dragon) and you take away matching
+pairs of free tiles until none are left. A tile is free when nothing
+lies on top of it and its left or right side is open, and that's where
+the thinking starts: take the wrong pair and the tile you need stays
+buried. Seasons match any season, flowers any flower.
+
+It's a faithful terminal clone of GNOME Mahjongg, with the same deal
+generator, so every board can be cleared. Stuck? Ask for a hint, for 30
+seconds on the clock, or reshuffle, for 60.
+
+- **Ten layouts**: Turtle, The Ziggurat, Four Bridges, Cloud,
+  Tic-Tac-Toe, Red Dragon, Overpass, Pyramid's Walls, Confounding Cross
+  and Taipei.
+- **Mouse or keys**: click two tiles, or move a cursor and jump between
+  free tiles with Tab.
+- **Never lose a game in progress**: it's saved after every move and
+  waits, paused, for next time.
+- **Best times**: kept for every layout.
+- **Fits your window**: the board is drawn at the largest size that fits.
+
+**Find the pair. Free the tile. Clear the board.**
 
 ## Controls
 

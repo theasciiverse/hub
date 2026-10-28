@@ -1,16 +1,18 @@
-A fast real-time strategy game on a map of hexagons, where you never
-command a single soldier. Four countries start in the corners; you rule the
-green one and win by conquering the whole map.
+**YOU DON'T COMMAND SOLDIERS. YOU COMMAND A NATION.**
 
-Your people are your army. They grow in villages, towns and fortresses and
-spill out over the grassland around them. Plant flags and they gather
-there; push a line of flags into enemy land and your crowds will fight
-theirs tile by tile. Surround a gold mine to own it, and spend the gold on
-new cities. The game plays out like a war of fronts and supply lines, and
-the computer rulers each fight with their own personality.
+Four countries start in the corners of a map of hexagons. You rule the green one. The other three want the whole map, and so do you.
 
-Start gently with `curseofwar -i4 -q1 -dee`: the strongest starting
-position against the easiest opponents.
+There are no units to click on here. Your people are your army. They grow in your villages, towns and fortresses and spill out over the grassland, up to 499 to a tile, and where two countries' people meet, they fight. Plant a flag and your crowds drift toward it. Push a line of flags into enemy land and you have a front, fought over tile by tile. Surround a gold mine to take it, spend the gold on new cities, and outgrow them. Lose a city under siege and it burns down a size: fortress to town, town to village, and a village to nothing.
+
+- **Real time, and fast**: speed it up, slow it down or pause while the fronts move.
+- **Rivals with character**: every computer ruler fights in its own way.
+- **Maps your way**: rectangles, rhombuses, or hexagons with room for six countries, any size, and a seed to replay the same map.
+- **Friends on your local network**: one machine hosts, the others join.
+- **Gentle to brutal**: five difficulty levels, and a choice of how fair the start is.
+
+Start gently with `curseofwar -i4 -q1 -dee`: the strongest starting position against the easiest opponents.
+
+**Plant your flag. Hold the line.**
 
 ## Controls
 

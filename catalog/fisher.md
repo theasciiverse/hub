@@ -1,14 +1,25 @@
-A fishing game. Your line hangs from a boat into ten rows of water, and
-something swims along each row, half of them one way and half the other.
-Lower the hook to a row and wait: when that row's swimmer reaches the
-line it bites, and you reel it up to the boat for points.
+**THE TUNA IS AT THE BOTTOM. SO IS EVERYTHING ELSE.**
 
-The deeper the catch, the more it is worth: one point for a plastic bag
-near the surface, then PVC bottles, face masks, shrimp, algae, jellyfish,
-molluscs, actual fish and salmon, up to 100 points for a tuna at the
-bottom. But anything that swims into the line above your hook takes the
-hook with it. You have ten hooks, and when they are gone the game is
-over and your score goes on the high score list.
+Your boat bobs on the surface. Below it, ten rows of sea, and something
+swims along every one of them. Drop
+your hook to a row, wait for the swimmer to reach your line, and reel it
+in. "A tuna!" Now we're talking.
+
+The catch is the depth. Up top it's plastic bags and PVC bottles, worth a
+point or so; then face masks, shrimp, algae, jellyfish, molluscs, "Actual
+fish!", salmon, and right at the bottom, the tuna, worth a hundred. But
+the deeper your hook goes, the more line hangs in the water, and anything
+that swims into the line above your hook takes the hook with it. You
+have ten. When they're gone, so are you.
+
+- **Ten rows, ten catches**: every row deeper is worth more, from 1 point
+  to 100
+- **Ten hooks**: lose one to every swimmer that crosses your line
+- **Two-key controls**: down to drop, up to reel in
+- **A high score list**, and a big "CONGRATULATIONS!!" when you beat
+  the record
+
+**Cast off. How deep do you dare?**
 
 ## Controls
 

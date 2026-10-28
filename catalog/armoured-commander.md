@@ -1,17 +1,29 @@
-You are the commander of a Sherman tank and its crew of five, from the
-breakout in Normandy in the summer of 1944 to the end of the war in
-Europe. Two campaigns: Patton's Best with the US 4th Armored Division
-from July 1944, and Canada's Best with the First Canadian Army from
-August 1944.
+**FIVE MEN. ONE SHERMAN. THE ROAD TO GERMANY.**
 
-Each combat day is a map of the front to fight your way across, area by
-area, calling in artillery and air support and dealing with what you
-find. Each encounter is a battle on a hex map round your tank: spot the
-enemy, give every crewman his orders, choose the ammunition, and let the
-dice decide each to-hit and to-kill roll, all of them shown. Crewmen gain
-experience and skills, get wounded, win medals and are killed;
-refits bring new tanks; and when your commander falls, his name goes on
-the stone on the title screen.
+Normandy, summer 1944. The breakout has begun, you have a Sherman and a crew
+of five, and it is a long way to the Rhine. Your gunner, loader, driver and
+assistant driver are waiting for your orders. Somewhere up ahead, behind a
+hedge or a farmhouse wall, there's a Panther, a Tiger, or an infantry squad
+with a Panzerfaust.
+
+Fight your way across the map of the front, area by area, calling in the
+artillery and air strikes. Every encounter is a battle on a hex map round
+your tank: spot the enemy, give each man his order, choose the ammunition,
+fire, and see every to-hit and to-kill roll on screen.
+
+Your crew gain experience and skills. They win decorations, from the Purple
+Heart and the Bronze Star to the Victoria Cross. And some of them are
+killed. Every man who falls goes into the game's graveyard, and one of them
+stands on a headstone beside a poppy on the title screen, each time you
+start the game.
+
+- **Two campaigns**: Patton's Best with the US 4th Armored Division from
+  July 1944, and Canada's Best with the First Canadian Army from August 1944
+- **Shermans of every mark**, from the M4 and M4A1 to the M4A3E2 Jumbo,
+  against Panzer IVs, Panthers, Tigers, King Tigers and tank destroyers
+- **Every roll shown**: nothing is hidden behind the dice
+- **Gregory Adam Scott's original art and sounds**, carried over to the
+  terminal
 
 ## Controls
 

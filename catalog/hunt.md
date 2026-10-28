@@ -1,13 +1,28 @@
-A deathmatch in a maze for everyone on your network. There are no rooms,
-treasures or monsters, only walls, doors, mines and the other players.
-Wander the maze, find the others, and shoot them, throw grenades and
-bombs, trip mines, and shoot down walls. The more players you kill before you
-die, the better your score; when you die you can come straight back in.
+**NO ROOMS. NO TREASURE. NO MONSTERS. JUST EACH OTHER.**
+
+"The object of the game hunt is to kill off the other players." That's
+the manual's whole pitch, and it's enough. Everyone on your network
+drops into the same maze. Wander it, find the others, and shoot. Throw
+grenades. Throw bombs: satchel charges, big bombs, even bigger bombs, all
+the way up to the "very, very big bomb" and the biggest of all, if
+you've saved the ammunition. Throw slime that oozes round the walls. Trip
+mines, or defuse them for charges. Shoot down walls, and watch them grow
+back.
+
+You can only fire the way you're facing, and you can't see behind you.
+Shots glance off diagonal walls and scatter through doors. Scan to see
+where everyone is; cloak to hide from their scans. Every kill raises your
+score, and when you die you can come straight back in.
 
 Start Hunt and it looks for a game on your local network. If it finds
 one, you join it (if it finds several, you pick); if there is none, it
-starts a game on your machine for the others to find. Everyone who
-starts Hunt on the same network ends up in the same maze.
+starts a game on your machine for the others to find.
+
+A word of warning from the original README: "hunt may be dangerous to
+your health. "Arthritic pain" and "lack of circulation" in fingers have
+been reported by hunt abusers."
+
+**Find them. Face them. Fire.**
 
 ## Controls
 

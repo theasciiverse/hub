@@ -1,9 +1,15 @@
-NetHack's big variant. You go down through the Dungeons of Doom for the
-Amulet of Yendor, as in NetHack, but the dungeon has more in it: Angband
-style towns, the Ruins of Moria, a black market, an Advent Calendar
-portal, Sheol, an icy branch of Gehennom, the Convict role, and many
-smaller changes that make each game less predictable and harder. New
-players can press **T** at the start for a tutorial.
+**THE AMULET OF YENDOR IS STILL DOWN THERE. NOW THERE IS MORE IN THE WAY.**
+
+Down through the Dungeons of Doom, into Gehennom, and back out with the Amulet of Yendor: the quest is NetHack's. The dungeon is bigger. Patric Mueller started UnNetHack in 2009 to show "how NetHack would look today if the DevTeam didn't stop releasing", and it promises "more randomness, more levels, more challenges and more fun than vanilla NetHack."
+
+Step through the portal into the Advent Calendar. Find your way to One-eyed Sam's Market. Climb up into the Ruins of Moria, where "the dungeon here seems less persistent." Brave the Dragon Caves, then go down into Sheol, the icy branch of Gehennom, where crystal ice golems walk. Or start the game as a Convict, an escaped prisoner in a striped shirt with a heavy iron ball chained to you and a trusty sewer rat at your side.
+
+New to all of this? The game asks you straight away: "New? Press T to enter a tutorial."
+
+- **New branches and levels**: the Advent Calendar, One-eyed Sam's Market, the Ruins of Moria, the Dragon Caves, Sheol and more
+- **A new role**: the Convict
+- **Less predictable**: many smaller changes that make every game harder to read
+- **A tutorial** for first-timers, right at the start
 
 ## Controls
 

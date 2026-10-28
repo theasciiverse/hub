@@ -1,12 +1,27 @@
-Fluid in plain characters. Columns of water collapse and slosh, tea pours
-out of a cup, water runs down rice terraces and through funnels, and an
-hourglass empties, all computed live by a real fluid simulation and drawn
-with slashes, dots and hashes, coloured by how dense the fluid is. The
-first scene is the program's own source code, which melts into a puddle.
+**THIS PROGRAM'S SOURCE CODE MELTS.**
 
-There are eighteen scenes, each playing for as long as it stays lively,
-round and round. Warning: the picture changes quickly and may flicker on
-some terminals.
+It opens with its own C source on the screen. Then gravity switches on, and
+the code slumps, slides and splashes into a puddle at the bottom of your
+terminal.
+
+That is Yusuke Endoh's ASCII Fluid: a real fluid simulation squeezed into a
+few lines of C for the International Obfuscated C Code Contest. After the
+source, the show goes on. A column of water collapses and sloshes, the
+program "pours you a cup of tea", water runs down terraced rice fields and
+through funnels, a water clock drains. Every frame is computed live and
+drawn with slashes, dots and hashes, coloured by how dense the water is.
+
+The contest judges opened their remarks with a round of Jeopardy: "A: An
+obfuscated program that deals with complex numbers and produces animated
+ASCII graphics. Q: What is a Mandelbrot simulator? Bzzzt!"
+
+- **Eighteen scenes** in turn, each playing for as long as it stays lively
+- **Bring your own water**: any text file is a scene, with `#` for a wall
+  and anything else for water
+- **Colour**, the version the author made at the judges' suggestion, or
+  the original black and white
+
+Warning: the picture changes quickly and may flicker on some terminals.
 
 ## Controls
 

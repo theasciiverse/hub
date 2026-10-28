@@ -1,16 +1,15 @@
-Patterns made of plain characters scroll down the screen without end, a
-new row every tenth of a second. Faint dots and colons rise into dense
-blocks of D, # and @ wherever the noise is strongest. Each run starts from
-a new random seed, so the landscape is never the same twice.
+**AN ENDLESS LANDSCAPE OF NOISE. NEVER THE SAME TWICE.**
 
-Started from a terminal, CLiAni picks its pattern from options; with none
-it opens a menu to choose.
+Patterns made of plain characters roll down the screen without end, a new row every tenth of a second. Faint dots and colons swell into dense banks of D, # and @ wherever the noise runs strongest, then thin out again. Every run starts from a new random seed, so the landscape you see has never been seen before.
 
-- **Flavours**: Voronoi (the default here), Perlin noise and cellular
-  Voronoi
-- **Effects**: scrolling, raining (the pattern shows only in falling
-  streaks), zig-zag, and static
-- **Characters**: any ten, from faint to dense
+Ryan Huth made CLiAni for "some cool scrolling patterns and other animation effects", and, in his words, "just something I work on by the side for fun". It shows.
+
+- **Three flavours:** Voronoi (the one av starts), Perlin noise and cellular Voronoi.
+- **Four effects:** scrolling, raining (the pattern shows only in falling streaks), zig-zag, and static.
+- **Your own characters:** up to ten, from faint to dense.
+- **Make your choice:** started from a terminal with no options, it opens a menu to pick from.
+
+**SIT BACK AND WATCH IT ROLL.**
 
 ## Controls
 

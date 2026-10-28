@@ -2,7 +2,7 @@ schema_version = 1
 id = "urogue"
 kind = "game"
 title = "UltraRogue"
-description = "Herb Chong's Rogue of 1985 to 1995: ten character classes, a flea market at the start, and unique artifacts deep in the Dungeons of Doom"
+description = "Ten classes, Friendly Fiend's Flea Market, and eight unique artifacts deep in the Dungeons of Doom, from the Phial of Galadriel to the Wand of Yendor. Carry one home, if you can stand the side effects."
 year = 1985
 # the BSD licence plus two clauses: "UltraRogue" and "urogue" may not
 # endorse or promote derived products, and "Products derived from this

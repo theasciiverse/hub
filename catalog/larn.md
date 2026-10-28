@@ -1,14 +1,27 @@
-Your daughter has caught a strange disease and none of your remedies
-help. The only hope is the potion of cure dianthroritis, somewhere in
-the caverns of Larn, the old haunt of the magician Polinneaus, or in the
-volcano beneath them. Larn is a roguelike with a deadline: time is
-counted in mobuls and runs out, and the deeper you go, the more gold, magic and
-danger you find.
+**YOUR DAUGHTER IS DYING. THE CURE IS SOMEWHERE IN THE CAVERNS OF LARN.**
 
-It starts in a town with a bank, a school, a trading post and the
-dungeon's entrance, so you can buy gear, learn, and come back up to
-spend what you found. You cast spells, quaff potions and read scrolls,
-and the map stays as you left it when you return to a level.
+"At this moment, you face a great problem." Your daughter has contracted
+a strange disease, and none of your home remedies seem to have any
+effect. The doctor confirms it: dianthroritis, and he can tell you how
+many mobuls she has left in this world. Her only hope is the very rare
+potion of cure dianthroritis, rumoured to lie deep in the caverns of
+Larn, the old haunt of the magician Polinneaus, or in the volcano
+beneath them. "Good Luck! You're going to need it!"
+
+Larn is a roguelike against the clock. Time runs in mobuls, and
+everything costs some, even school. The town at the top has the College
+of Larn (Fighters Training I: ten mobuls), the Bank of Larn, the Larn
+Thrift Shoppe, the local trading post and the Larn Revenue Service,
+which has ordered the shops not to do business with tax evaders. Go
+down, come back rich, spend it, go deeper. The levels stay as you left
+them, and the deeper you go, the more gold, magic and danger you find.
+
+- **A deadline that matters**: every turn spends your daughter's time.
+- **A town to come home to**: bank, college, shop, trading post, and a
+  tax office.
+- **Spells, potions and scrolls**: cast, quaff and read your way down.
+
+**Find the potion. Beat the clock. Pay your taxes.**
 
 ## Controls
 

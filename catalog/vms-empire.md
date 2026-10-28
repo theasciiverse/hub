@@ -1,14 +1,15 @@
-A full-scale war between two emperors, you and the computer, on a randomly
-generated world of continents and oceans. There is only room for one.
+**TWO EMPERORS. ONE WORLD. ONLY ROOM FOR ONE.**
 
-You start with a single city and a map you have never seen. Cities build
-armies, fighters, patrol boats, destroyers, submarines, troop transports,
-carriers, battleships and satellites. Explore, take the unclaimed cities,
-ship armies across the sea, and destroy the other side. The computer plays
-by exactly the same rules.
+A full-scale war between you and the computer, on a randomly generated world of continents and oceans. As the game's own README puts it: "Naturally, there is only room for one, so the object of the game is to destroy the other."
 
-The game saves itself every 10 turns and picks up where you left off the
-next time you start it.
+You start with a single city and a map you have never seen. Cities build armies, fighters, patrol boats, destroyers, submarines, troop transports, carriers, battleships and satellites. Explore. Take the unclaimed cities before the enemy does. Ship your armies across the sea and destroy the other side. The computer plays by exactly the same rules.
+
+The game saves itself every 10 turns and picks up where you left off the next time you start it.
+
+- **Every arm of war**: nine kinds of piece on land, at sea, in the air and in orbit
+- **A new world every game**: choose how much of it is water, how smooth the coasts are and how big the map
+- **A fair fight**: the computer gets no extra rules, only the ones you have
+- **The ancestor**: in its maintainer's words, "the ancestor of all the multiplayer 4X simulations out there, including Civilization and Master of Orion"
 
 ## Controls
 

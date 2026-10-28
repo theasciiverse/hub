@@ -1,11 +1,14 @@
-The pencil and paper game, against the computer. Take turns drawing one
-line between two neighbouring dots. Whoever draws the fourth side of a
-box owns it and must draw again, so a single careless line can hand
-over a whole chain of boxes. When the board is full, the player with
-more boxes wins.
+**ONE CARELESS LINE CAN COST YOU THE WHOLE BOARD.**
 
-Win, and the next board is one box bigger in each direction, up to
-level 9. Lose, and the game is over.
+The pencil and paper game from the back of every school notebook, now against the computer. Take turns drawing one line between two neighbouring dots. Draw the fourth side of a box and it's yours, and you must draw again. That's the trap: sooner or later every line gives a box away, and one wrong line can hand your opponent a whole chain of them.
+
+Beat the computer and the next board is one box bigger each way. Lose, and it's over.
+
+- **Nine levels**: from a small board up to level 9. Start higher with `dab 5`.
+- **Simple to play**: arrow keys or h j k l to pick a line, Space to draw.
+- **Deeper than it looks**: the manual points to Elwyn Berlekamp's book The Dots and Boxes Game, subtitled "Sophisticated Child's Play".
+
+**Count the chains. Draw the line.**
 
 ## Controls
 

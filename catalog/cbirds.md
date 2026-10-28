@@ -1,3 +1,5 @@
+**EIGHT HUNDRED BIRDS. THREE RULES. ONE FLOCK.**
+
 A flock of birds in your terminal, drawn in braille: eight hundred boids
 that keep their distance, match their neighbours and stay together, the
 rules Craig Reynolds published in 1987. It opens by writing BOIDS in birds,

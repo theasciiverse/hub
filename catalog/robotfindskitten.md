@@ -1,12 +1,10 @@
-You are robot. Your job is to find kitten. This task is complicated by
-the existence of various things which are not kitten, scattered across
-the screen, and every one of them looks like a random character, just
-as kitten does. Robot must touch each thing to find out what it is:
-perhaps a stack of 7 inch floppies wobbling precariously, perhaps some
-coconut crabs milling about. There are 726 of them to meet. The game
-ends when robotfindskitten.
+**YOU ARE ROBOT. YOUR JOB IS TO FIND KITTEN.**
 
-There is no score, no timer and no way to lose. It is a zen simulation.
+This task is complicated by the existence of various things which are not kitten. Every one of them looks like a random character on the screen, just as kitten does, so robot must touch each thing to find out what it is. Perhaps "A stack of 7 inch floppies wobbles precariously." Perhaps "Some coconut crabs are milling about here." Perhaps "A wireframe model of a hot dog rotates in space here." There are 726 of them to meet, and only one kitten.
+
+There is no score, no timer and no way to lose. The game ends when robotfindskitten.
+
+**"YOU FOUND KITTEN! WAY TO GO, ROBOT!"**
 
 ## Controls
 

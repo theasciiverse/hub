@@ -1,14 +1,13 @@
-The dungeon crawl that has been in development for almost forty years.
-You go down through the Mazes of Menace, past the Gnomish Mines,
-Sokoban's puzzles and the Oracle, into Gehennom, to bring back the
-Amulet of Yendor for your god. You choose to be one of thirteen roles,
-from Archeologist and Valkyrie to Wizard and Tourist, with a kitten,
-little dog or pony at your side.
+**DOWN THERE IS THE AMULET OF YENDOR. YOUR GOD WANTS IT.**
 
-Everything is a character on the map, and almost anything you think of
-trying works: dip, engrave, pray, polymorph, kick, bargain with
-shopkeepers. Death is final. New players can say yes to the tutorial
-at the start.
+Go down through the Mazes of Menace, past the Gnomish Mines, Sokoban's boulder puzzles and the Oracle, all the way into Gehennom, and bring the Amulet back for your god. Choose one of thirteen roles, from Archeologist and Valkyrie to Wizard and Tourist, and take your kitten, little dog or pony along.
+
+Everything is a character on the map, and almost anything you think of trying works: dip, engrave, pray, polymorph, kick, bargain with shopkeepers. Write Elbereth in the dust and many monsters will not dare step on it. Death is final, and when it comes the game asks, politely: "Do you want your possessions identified?"
+
+- **Almost forty years in the making**, and still going: 5.0.0 came out in May 2026.
+- **New to it?** Say yes to the tutorial at the start.
+
+**THE DUNGEON IS WAITING.**
 
 ## Controls
 

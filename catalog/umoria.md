@@ -1,10 +1,15 @@
-The original Moria. Below a small town of six shops lies a mine that
-goes down level after level, each one new every time you enter it, and
-somewhere past the 49th level waits the Balrog. Roll a character from
-eight races and six classes, buy what you can afford in town, and go
-down: fight what you meet, find gold, armour, weapons, potions,
-scrolls, wands and staves, most of which you will not know until you
-try them, and come back up to spend your gold. Death is final.
+**THE BALROG IS WAITING. IT HAS BEEN WAITING SINCE 1983.**
+
+Below a small town of six shops, a mine goes down level after level, and every level is new each time you enter it. Somewhere past the 49th, 2450 feet beneath your boots, lurks the Balrog: "the biggest and baddest creature in the game." It cannot be slept, confused or polymorphed. Cast destruction at it and it simply teleports away to heal. To face it you will need to be the kind of hero who kills dragons "with but a mean glance and snap of the fingers."
+
+You won't start out that way. Roll a character from eight races and six classes (halflings make excellent thieves, "but prefer to be called burglars"), buy what you can afford in town, and go down. Fight what you meet. Find gold, armour, weapons, potions, scrolls, wands and staves, most of which you will not know until you try them. Come back up, spend your gold, and go down deeper.
+
+Death is final, and a tombstone marks it. But what your hero learned about the monsters can live on in the next one.
+
+- **The original**: Robert A. Koeneke's Moria, the game Angband and a whole family of roguelikes grew from
+- **A real town**: six shops to buy and sell in between descents
+- **Monster memory**: what you learn about each creature stays with you, even past death
+- **Number keys or roguelike keys**, on one classic 80x24 screen
 
 ## Controls
 

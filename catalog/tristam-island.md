@@ -1,4 +1,14 @@
-You wash up on the south beach of a small island in the Atlantic, a needle in a haystack with no chance of being rescued. A steep forested hill rises to the north and a boulder sits up the beach. An old-school adventure of exploring, mapping and puzzling, written in 2020 for the same Z-machine that ran Infocom's games.
+**A WHOLE VILLAGE. NOT A SOUL IN IT.**
+
+After the accident, you find yourself on the south beach of a small island in the Atlantic. "The immensity of the Atlantic Ocean makes you feel minuscule, a needle in a haystack, with no chance of being rescued." So rescue yourself. Catch a fish. Light a fire with the last of your wet matches. Rig yourself a bed for the night.
+
+Then climb the hill, and find what nobody should find on a deserted island: a dozen buildings, a pub, a storehouse, a radio tower, and a tall white house behind a fence, its metal door locked with a keypad. On the notice board, the community garden rota is filled in every day until February 18th. After that, nobody signs up at all. Strange.
+
+You are not entirely alone, though. There is an albatross, and it seems to know exactly what it is doing.
+
+- **An old-school adventure**: explore, map, puzzle and survive, written in 2020 in the style of the 1980s Infocom games and for the very same Z-machine they ran on
+- **A mystery to unpick**: get the radio working, get past the keypad, and find out why everyone left
+- **A friend with wings**: share your catch, and the albatross may return the favour
 
 ## How to play
 

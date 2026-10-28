@@ -1,13 +1,17 @@
-Chess in the terminal, with a proper board: large pieces drawn in block
-characters on a big enough terminal, chess symbols on a smaller one.
-Play against Stockfish, which comes with the game, at full strength or at
-one of four easier levels; play a friend on the same keyboard, or over
-the network; or sign in to Lichess and play people online.
+**IT IS STRONGER THAN ANY HUMAN WHO EVER PLAYED. YOUR MOVE.**
 
-Choose a clock from bullet to classical, or none. Move with the cursor
-keys or the mouse, or type a move in chess notation. The move history and
-the captured pieces sit beside the board, and a game can be saved, loaded
-from a PGN file and stepped through.
+Stockfish comes in the box, ready the moment you start: no setup, no engine to hunt down. At full strength it is far stronger than any human player. Feeling less heroic? Turn it down to one of four easier levels and work your way up.
+
+This is chess with a proper board. On a big terminal the pieces are drawn large in block characters; on a smaller one, in chess symbols. Move with the arrow keys or the mouse, or just type it: `e4`, `Nf3`, `O-O`. The move history and captured pieces sit beside the board, so you always know who's winning, and why.
+
+- **Stockfish at five strengths,** from Easy to full power, or any other UCI engine you point it at.
+- **Two players:** share one keyboard, or host and join across your local network.
+- **Lichess, from the terminal:** sign in and seek a game, join a friend's by its code, pick up your ongoing games, or solve rated Lichess puzzles.
+- **Clocks** from UltraBullet to Classical, or none at all.
+- **Save, load and replay:** load a PGN file and step through any game, move by move.
+- **Skins:** press `s` and the board changes its look.
+
+**WHITE TO PLAY.**
 
 ## Controls
 

@@ -1,11 +1,22 @@
-The computer thinks of a word and shows a dash for each letter. Guess
-the letters one at a time: a right guess fills in every place that
-letter appears, a wrong one adds a piece to the gallows. Seven wrong
-guesses and the figure is hanged and the word revealed.
+**SEVEN WRONG GUESSES AND HE HANGS.**
 
-Words are at least six letters long. The game keeps playing word after
-word, with your average number of wrong guesses for the current game
-shown beside the gallows, so you can try to bring it down.
+The computer thinks of a word and shows you a dash for every letter.
+Guess a letter. Right, and it fills in every place that letter appears.
+Wrong, and another piece goes up on the gallows. Seven misses and the
+figure is complete, and the screen tells you: "Sorry, the word was..."
+Get there first and it's "You got it!"
+
+Every word is at least six letters long, picked from 61,494 everyday
+English and American words, and they keep coming, one after another.
+Beside the gallows sits your average number of wrong guesses. Bring it
+down.
+
+- **One key per guess**: a to z; Space gives up on a word and moves on.
+- **Its own dictionary**: no system word list needed.
+- **Bring your own words**: from a shell, `-d` takes a word list and `-m`
+  sets the shortest word length.
+
+**Pick a letter. Any letter. Choose well.**
 
 ## Controls
 

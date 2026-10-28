@@ -1,12 +1,22 @@
-Pairs of jewels drop into the well, and you move and turn each pair as
-it falls. Line up four or more of the same jewel in a row or a column
-and they explode for points; whatever was resting on them falls, and if
-that sets off another explosion it scores more. The game is over when
-the jewels pile up to the middle of the top row.
+**FOUR IN A ROW, AND THEY BLOW.**
 
-When one jewel of a pair lands, the other keeps falling on its own. The
-next pair is shown at the top left. When the game ends, your score goes
-on a top-ten list printed in the terminal.
+Pairs of jewels drop into the well. Slide each pair left or right, turn
+it, drop it. Line up four or more of the same jewel in a row or a column
+and they explode for points. Whatever was resting on them falls, and if
+that sets off another explosion, it scores more than the last. Chain
+them and watch the numbers climb.
+
+The catch: when one jewel of a pair lands, the other keeps falling on
+its own, and the pile keeps rising. When the jewels reach the middle of
+the top row, it's over.
+
+- **Plan ahead**: the next pair waits at the top left.
+- **Chains pay**: every explosion in a chain is multiplied by its place
+  in it.
+- **Beat the record**: top the high score and a trophy says so:
+  "CONGRATULATIONS! You beat the previous record".
+
+**Stack them. Line them up. Blow them away.**
 
 ## Controls
 

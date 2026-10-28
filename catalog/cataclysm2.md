@@ -1,16 +1,27 @@
-**An unfinished alpha.** Cataclysm II is the rewrite of Cataclysm that its
-author, Whales, began in 2013 and stopped working on in 2016. It is
-playable for a while, but much is missing, things are rough, and
+**SHIPWRECKED, FIFTY YEARS AFTER THE END OF THE WORLD.**
+
+You were born after the cataclysm, in a coastal farming and fishing town
+that kept its walls up and its people mostly safe. Then the walls broke.
+You grabbed what you could, ran for the docks and put out to sea, the last
+safe way out. Days adrift, no land in sight. Then a storm tore the boat
+apart, and now you wake on a beach with the wreckage, and some of your
+supplies, scattered around you.
+
+Inland: fields, forests, swamps and salt marsh, and towns. Towns are where
+the zombies are: fast ones, brutes, spitters and smoke zombies, and out in
+the wild there are mutant rabbits, demented dogs and giant crabs. Make a
+survivor from stats, traits and a profession (Survivalist, Medic, Farmer,
+Mechanic, Hunter...), pick through the wreck, read the map and go.
+
+**An unfinished alpha, and honest about it.** Cataclysm II is the rewrite
+that Whales, the creator of Cataclysm, began in 2013 and stopped working on
+in 2016. It plays for a while, but much is missing, things are rough, and
 characters cannot be saved yet: each game is one sitting.
 
-Fifty years after the cataclysm that filled the world with monsters and
-raised the dead, you wash up on the beach of a shipwreck with a few things
-from your old life. Make a character from stats, traits and a profession,
-pick through the wreck, read the world map and set out across fields,
-forests, swamps and salt marsh. Towns are where the zombies are: fast
-ones, brutes, spitters and smoke zombies. Every character starts with a
-handful of small missions (eat this, read that) that pay experience, and
-experience buys skills.
+- **Whales' own sequel**, set fifty years after the first game
+- **Small missions** to start with (eat this, read that) that pay
+  experience, and experience buys skills
+- **Worlds you can keep**: make one, then send new characters into it
 
 ## Controls
 

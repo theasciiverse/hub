@@ -1,17 +1,34 @@
-You are a robot, the **@**, in a world full of hostile robots, and the
-only way out is down through twenty levels: open grass and woods, rough
-ground, enemy buildings, caves, chasms, flooded ruins and a metal fortress
-at the bottom. Every robot, yours included, is built from up to eight
-systems: power cells, weapons, propulsion, sensors and armour. Shots damage
-systems rather than hit points; a system at 50% or less stops working until
-your power cell repairs it, and one at 0% is gone for good. If a power
-cell is destroyed, it explodes and takes the robot with it.
+**YOU ARE WHAT YOU SALVAGE.**
 
-Destroy an enemy's power source and it becomes a wreck (**%**). Drive into
-the wreck to salvage what is left of it: a buggy's minigun, a tank's
-caterpillar tracks for crossing rough ground, a sentry's X-ray scope for
-seeing through walls. Your robot grows into whatever you take from the
-robots you beat.
+You are a robot, the **@**, in a world full of robots that want you in
+pieces. The only way out is down, twenty levels of it: open grass and
+woods, rough ground, enemy buildings, caverns, chasms, flooded ruins
+and, at the very bottom, a fortress of metal.
+
+Every robot, you included, is built from up to eight systems: power
+cells, weapons, propulsion, sensors and armour. Shots hit systems, not
+hit points. A system knocked down to half stops working until your
+power cell patches it up; one at zero is gone for good; and if a power
+cell goes, it explodes and takes the robot with it.
+
+So go for the power source. Knock it out and the enemy becomes a wreck,
+and a wreck is a parts bin. Drive into it and take what survived: a buggy's
+minigun, a tank's caterpillar tracks for the rough ground, a sentry's
+X-ray scope to see through walls. Later come the juggernauts, the
+destroyers, the dracos with their heavy flamethrowers, the steel elementals and
+the mechalich, and all of them carry something you want.
+
+- **Build your own robot**, one salvaged system at a time
+- **Every system matters:** the wrong propulsion strands you, the wrong
+  sensor leaves you blind
+- **Written in ten days** for the Ten-Day Roguelike, and it shows only
+  in how tight it is
+
+Make it all the way down and the author has one last line for you:
+"There's probably a great reward for you and your robot at the bottom
+of the dungeon, but I'm afraid I haven't implemented it..."
+
+**Pick your fights. Pick their bones.**
 
 ## Controls
 

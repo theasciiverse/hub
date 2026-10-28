@@ -1,10 +1,22 @@
-Klondike solitaire in your terminal: the classic seven-column patience
-game, drawn with Unicode card frames and colored suits, played with the
+**FIFTY-TWO CARDS. SEVEN COLUMNS. ONE WAY HOME.**
+
+The patience game everybody knows, laid out properly in your terminal:
+real card frames drawn in Unicode, red and black suits (or four colours,
+one for each suit, if you prefer), and a cursor you can drive with the
 keyboard or the mouse.
 
-Turn cards from the stock, build down the seven columns in alternating
-colors, and move every card up to the four foundations, ace to king.
-solitty notices when you have won.
+Turn cards from the stock. Build down the seven columns in alternating
+colours, uncovering the face-down cards as you go. Send every card up to
+the four foundations, ace to king. Double-tap a card and, if there is a
+place for it, it goes home by itself. Get them all up and solitty knows
+you have won.
+
+- **Keyboard or mouse**, click to pick up, click to put down
+- **Pick up whole runs** or just the cards you want
+- **Three passes through the stock** by default, or as many as you set
+- **Your terminal's own background**, if you would rather keep it
+
+**Deal. Build. Win.**
 
 ## Controls
 

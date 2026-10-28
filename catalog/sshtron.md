@@ -1,3 +1,5 @@
+**KEEP MOVING. LEAVE A WALL. BOX THEM IN.**
+
 The grid is black. Your cycle is moving, and it is not going to stop.
 Behind you it leaves a wall of light, and every other rider leaves one
 too. Touch a wall, any wall, yours included, and you are gone: back at
@@ -9,12 +11,15 @@ riders there are. Box the others in, cut across their path, leave them
 nowhere to turn. Seven colours fit in one arena: red, green, yellow,
 blue, magenta, cyan and white.
 
-SSHTron was made to be played with nothing but `ssh`, and it still can
-be. Pick **Play** and you race computer riders on a grid hosted on your
-own machine; anyone on your network can ride in with `ssh -p 2022` and
-your address, or with SSHTron's own **Join a friend**. **Play online**
-takes you to the original public server at sshtron.zachlatta.com, where
-whoever else is online that day shares the grid.
+SSHTron was built in about twenty hours at a hackathon, to be played
+with nothing but `ssh`, and it still can be. Pick **Play** and you race
+computer riders on a grid hosted on your own machine; anyone on your
+network can ride in with `ssh -p 2022` and your address, or with
+SSHTron's own **Join a friend**. **Play online** takes you to the
+original public server at sshtron.zachlatta.com, where whoever else is
+online that day shares the grid.
+
+**Stay alive. Stay moving.**
 
 ## Controls
 

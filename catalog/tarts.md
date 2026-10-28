@@ -1,9 +1,19 @@
-Twelve classic terminal effects in one program, shown one after another:
-the Matrix's digital rain, the spinning ASCII donut, electric plasma, a
-crackling fire, flocking boids, pipes that wind across the screen,
-Conway's Game of Life, a rotating cube, drifting constellations, crabs
-and butterflies, and a maze that builds itself. Each one fills your
-window and keeps going for twenty seconds before the next takes over.
+**TWELVE SCREENSAVERS. ONE ENDLESS SHOW.**
+
+Leave your terminal running and walk away. tarts plays the classics of
+terminal art one after another: falling digital rain, the spinning
+ASCII donut, electric plasma, a crackling fire, flocking boids, pipes
+that wind across the screen, Conway's Game of Life, a rotating cube,
+drifting constellations, crabs and butterflies, and a maze that builds
+itself. Each one fills your window for twenty seconds before the next
+takes over, round and round for as long as you like.
+
+Skip ahead when one catches your eye, go back to the one you missed, or
+start any of them on its own from the command line, including
+pocketworld, a little living planet with drifting continents, rivers
+and weather that is not part of the tour.
+
+**Lean back and watch.**
 
 ## Controls
 

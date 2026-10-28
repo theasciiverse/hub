@@ -1,13 +1,8 @@
-Two figures pull on a rope. Under **Type!** is a row of digits: type the
-first one and the rope moves a step your way, while the other side keeps
-pulling it back at a steady pace. Pull the other side up to the line in
-the middle and you go up a level, where they pull faster and every digit
-is worth more. If you are dragged to the line yourself, the game is
-over and your score goes into the high score table.
+**TYPE THOSE THINGS AND BEAT THE OTHER GUY.**
 
-The digits make it practice for the number keys or the numpad. Press
-**h** during a game to switch to the home row instead: **a** to **l**,
-**;** and **'**.
+That is the game's whole instruction sheet, word for word, and it is all you need. Two figures pull on a rope. Under **Type!** is a row of digits: type the first one and the rope moves a step your way, while the other side keeps hauling it back at a steady pace. Drag them up to the line in the middle and you go up a level, where they pull faster and every digit is worth more. Get dragged to the line yourself and it is over: your score goes into the high score table, and beat the record and the game congratulates you in big letters.
+
+The digits make it practice for the number row or the numpad. Press **h** during a game to switch to the home row instead: **a** to **l**, **;** and **'**.
 
 ## Controls
 

@@ -1,4 +1,14 @@
-The last part of the trilogy, at the bottom of the endless stair. Here the treasures matter less than the trials: the Dungeon Master is watching, and only an adventurer who proves worthy will take his place.
+**"YOU HAVE REACHED THE FINAL TEST, MY FRIEND!"**
+
+As in a dream, you tumble down a great, dark staircase, past old struggles and diabolical traps, until an old yet oddly youthful man turns towards you, his long silver hair dancing in the breeze. "You are proved clever and powerful, but this is not yet enough! Seek me when you feel yourself worthy!"
+
+The dream dissolves. You are at the bottom of the Endless Stair, your old friend the brass lantern at your feet. This is the deepest part of the Great Underground Empire, and here treasure matters less than worth. Ruined aqueducts. A royal museum that Lord Dimwit Flathead built "under two miles of mountain". A mirror that is not quite a mirror. A hooded figure who fights a little too much like you. And an exhibit from the Technological Museum that turned out not to be a nonworking model at all.
+
+The Dungeon Master is watching. Only an adventurer who proves worthy will take his place.
+
+- **The end of the trilogy**: the Empire's last secrets, and its master
+- **Trials, not a treasure hunt**: a different kind of Zork
+- **The original story file**, unchanged, played in Frotz
 
 ## How to play
 

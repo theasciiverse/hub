@@ -1,13 +1,14 @@
-The snake game everyone played on their phone, in the terminal. Steer
-the snake to the fruit; every fruit makes it longer and adds to the
-score, and running into a wall or your own tail ends the game.
+**EAT. GROW. DON'T BITE YOURSELF.**
 
-Arcade Mode is the classic game on an open board. Level Select has 31
-mazes to play instead, from simple arenas to spirals, hearts and
-letters, and each keeps its own high score. In Game Settings you set the
-starting speed (1 to 10), how many fruits are on the board at once, the
-board size, teleporting through the edges, random walls, and a board
-that scrolls under you; scores are kept for each combination.
+The snake game everyone played on their phone, now in your terminal. Steer the snake to the fruit; every fruit makes it longer, and longer makes it harder. Run into a wall or your own tail and it's over.
+
+Arcade Mode is the classic, on an open board. Or pick one of 31 levels in Level Select: arenas, spirals, three hearts ("Cute, right?"), the word NSNAKE spelled out in walls ("How meta. Watch out for the letter K!"), and Tricky, which its author signs off with: "Let's see you survive on this baby. While it scrolls."
+
+- **31 levels**, each with its own high score, and your own levels from plain text files.
+- **Make it your game**: starting speed 1 to 10, how many fruits at once, board size, teleporting through the edges, random walls, and a board that scrolls under you. Scores are kept for every combination.
+- **Every key remappable**, and colours and borders to taste.
+
+**HOW LONG CAN YOU GET?**
 
 ## Controls
 

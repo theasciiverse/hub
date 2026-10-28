@@ -1,16 +1,15 @@
-Five bots, ten thousand chips each, and one seat with your name on it.
-Every hand you get two cards, a felt full of pods, and a rail that does
-the arithmetic for you: your chance to win right now, the pot odds on the
-call, and a blunt verdict on whether calling is worth it.
+**FIVE BOTS. TEN THOUSAND CHIPS EACH. ONE SEAT WITH YOUR NAME ON IT.**
 
-The bots are not all alike. One is tight and aggressive, one calls
-anything, one bluffs more than it should, and one is a rock that only
-moves with a monster. They remember how often you fold, and they lean on
-you when you do. The game ends when one player has every chip on the
-table. Make it you.
+Every hand you get two cards and a rail that does the arithmetic for you: your chance to win right now, the pot odds on the call, and a blunt verdict on whether calling is worth it.
 
-Tired of bots? `pokertui-server` comes in the box: start a room and your
-friends join it over the network.
+The bots are not all alike. One is tight and aggressive, one calls anything, one bluffs more than it should, and one is a rock that only moves with a monster. They remember how often you fold, and they lean on you when you do. The game ends when one player has every chip on the table.
+
+- **Four bot personalities** to read, and beat.
+- **The odds rail**: equity, pot odds and a verdict, or switch it off and trust your gut.
+- **Your table, your rules**: table size, blinds and bot speed in the settings.
+- **Tired of bots?** `pokertui-server` comes in the box: start a table and your friends join it from their own machines on your local network.
+
+**MAKE IT YOU.**
 
 ## Controls
 

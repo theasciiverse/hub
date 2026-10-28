@@ -1,18 +1,15 @@
-Push every box onto a goal square. You can only push, never pull, and
-only one box at a time, so a box in a corner is stuck there for good.
-The rules take a minute to learn; the levels take much longer.
+**PUSH. NEVER PULL. THINK FIRST.**
 
-This csokoban comes with David W. Skinner's fifteen finished sets, 1,043
-levels. Start with **Microban**: small puzzles, each showing one idea,
-good for beginners and children. **Mas Microban**, **Microban III** and
-**IV** carry on in the same spirit. The **Sasquatch** sets, I to XI, range
-from medium to very hard, many of them built on symmetry.
+A warehouse, a handful of boxes, and just as many goal squares. Your job: get every box onto a goal. You can push a box, one at a time, but you can never pull it, so one careless shove into a corner and that box is stuck there for good. The rules take a minute. The levels take much, much longer.
 
-The game remembers your best solution to every level, in moves and in
-pushes, and starts where you left off. Undo and redo as far as you
-like, save a position to come back to, or record a sequence of moves and
-play it again. Some of the later levels are big; when one does not fit,
-the game says how much room it needs and waits for a bigger window.
+Here are 1,043 of them, all by David W. Skinner, from his fifteen finished sets.
+
+- **Start with Microban**: 155 small puzzles, each showing one idea, good for beginners and children. **Mas Microban**, **Microban III** and **IV** carry on in the same spirit.
+- **Then the Sasquatch sets**, I to XI: 550 levels from medium to very hard. Some are huge, up to 49 by 44; when one doesn't fit, the game says how much room it needs and waits for a bigger window.
+- **Mistakes are free**: undo and redo one move or eight at a time, save positions to come back to, and record a run of moves to replay from the same spot.
+- **Your best, kept**: the game stores your best solution to every level, in fewest moves and in fewest pushes, and starts you at the first level you haven't solved.
+
+**One more level. Then bed. Honest.**
 
 ## Controls
 

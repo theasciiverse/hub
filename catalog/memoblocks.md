@@ -1,12 +1,20 @@
-A memory game. The board is 16 tiles wide and 8 high, and every tile
-hides a glyph: a digit, a letter or a punctuation mark, in one of six
-colours. Each glyph is on exactly two tiles. Turn a tile to see its
-glyph, then try to find its twin.
+**128 TILES. 64 PAIRS. ONE GOOD MEMORY.**
 
-Only the tile you turned last stays visible. A pair is made when you turn
-a tile directly after its match, and then both stay face up; turn any
-other tile and the first one hides again. The game is over when all 64
-pairs are found, and it tells you how long that took.
+Every tile on a board 16 wide and 8 high hides a glyph: a digit, a letter
+or a punctuation mark, in one of six colours. Every glyph is on exactly
+two tiles. Turn a tile, see its glyph, find its twin.
+
+Here's the twist: only the tile you turned last stays visible. A pair
+counts only when you turn a tile directly after its match; turn anything
+else and the first one hides again. So remember where everything was,
+because the board won't. Find all 64 pairs and it tells you how long it
+took you: "You solved it!"
+
+- **Keys or mouse**: arrows, hjkl or wasd and Enter, or just click.
+- **Against the clock**: your time is shown when the last pair is found.
+- **Help at hand**: F1 for the controls, F2 for how to play.
+
+**Turn. Remember. Match.**
 
 ## Controls
 

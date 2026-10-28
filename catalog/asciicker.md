@@ -1,4 +1,4 @@
-Let's kick some ASCII.
+**LET'S KICK SOME ASCII.**
 
 Asciicker is a real 3D world made of characters. Hills rise in blocks of
 green and dotted grass, pines stand in dark teal stacks, a grey boulder

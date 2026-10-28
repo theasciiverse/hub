@@ -1,9 +1,23 @@
-Rogue grown into something bigger at Bell Labs. Before you go down into
-the Dungeons of Doom you choose to be a fighter, a magic user, a cleric
-or a thief, each with abilities of its own: spells, prayers, turning
-the undead, stealing from monsters. Over a hundred monsters wait below,
-many of them clever, and you are on a quest for one of the unique
-artifacts some of them carry. Experience, not gold, is your score.
+**THE DUNGEONS OF DOOM. FEW PEOPLE EVER MAKE IT OUT ALIVE.**
+
+Rogue went to Bell Labs and came back bigger. Before you go down, choose
+what you are: a fighter, strong enough to strike several times a turn; a
+magic user with a growing book of spells; a cleric who prays, and turns the
+undead; or a thief, who slinks past sleeping monsters, picks pockets and
+stabs them in the back.
+
+Then go after your quest. Deep in the dungeon, a few monsters carry unique
+artifacts: the Wand of Orcus, the Rod of Asmodeus, the Flail of Yeenoghu,
+the Horn of Geryon, the Mandolin of Brian. Bring one back and you are a
+Complete Winner. Or keep going, as the manual dares you, "to match wits
+with an arch-devil, demon prince, or even a deity found far down in the
+dungeon."
+
+- **Four classes**, each with powers of its own: spells, prayers, turning
+  the undead, stealing and backstabbing
+- **Over a hundred monsters**, many of them clever
+- **Trading posts** down in the dungeon, to buy and sell
+- **Experience, not gold, is your score**
 
 ## Controls
 

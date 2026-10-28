@@ -1,18 +1,29 @@
-The classic game of interstellar commerce for one to four players, taking
-turns at one keyboard. Each turn you pick one of five sectors on the star
-map. Land next to a star or an infant company and you found a shipping
-company, with five free shares for the founder; land next to a company and
-it grows. Then you trade: buy stock in the companies you think will
-prosper, sell what looks doomed.
+**BUY LOW. MERGE BIG. FEED YOUR RIVALS TO A BLACK HOLE.**
 
-A company is worth $100 a share for every sector it holds, plus $500 for
-every sector next to a star and minus $500 for every sector next to a black
-hole. Push a rival's company into a black hole and its stock is gone. When
-two companies touch, the bigger swallows the smaller: shares in the loser
-turn into half as many in the winner, and its shareholders get a cash bonus.
-Prices over $3,000 split two for one. Every turn pays you 5% of your
-holdings in cash. The game ends when companies fill 54% of the map, and the
-richest player wins.
+The star lanes are open and the money is out there for whoever moves
+first. Each turn you claim one of five sectors on the star map. Land
+beside a star and you can found a shipping company ("A new shipping
+company has been formed!") with free shares for the founder; land
+beside a company and it grows. Then the trading floor opens: buy into
+the lines you believe in, and dump the ones that look doomed.
+
+Altair Starways, Capella Freight Co., Eridani Expediters: every company
+is worth more for each sector it holds and each star it touches. When
+two companies meet, the bigger swallows the smaller, its shares turn
+into half as many in the winner, and the shareholders get a cash bonus.
+Push past $3,000 a share and the stock splits two for one.
+
+And then there are the black holes, which the 1977 original never had.
+Beej added them, he says, "to give players who have fallen behind a
+chance to shaft the leaders." Push a company your rival owns more of
+than you against one, and if its price drops to nothing, the whole line
+"has been sucked into a black hole!" with everyone's shares in it.
+
+- **One to four players** at one keyboard, taking turns
+- **Mergers, splits and a 5% holdings bonus** every turn
+- **The richest tycoon wins** when the companies fill 54% of the map
+
+**Out-trade them. Out-merge them. Out-smart your friends and enemies.**
 
 ## Controls
 

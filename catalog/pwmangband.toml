@@ -2,7 +2,7 @@ schema_version = 1
 id = "pwmangband"
 kind = "game"
 title = "PWMAngband"
-description = "Multiplayer Angband: go down a hundred levels to face Morgoth, alone on your own server or with others on someone else's"
+description = "Multiplayer Angband: go down a hundred levels to face Morgoth, Lord of Darkness, alone on your own server or with friends on your local network."
 # docs/copying.rst: GNU GPL version 2 (no "or later") or the non-commercial
 # Angband licence, at the user's choice; Asciiverse distributes it under the GPL
 license = "GPL-2.0-only"

@@ -1,18 +1,10 @@
-Minesweeper turned around, for two. Treasure is hidden under the field,
-and two sides, Percent (**%**) and Square (**#**), take turns opening
-cells. A cell without treasure shows how many of its eight neighbours
-hold some, found or not, and a cell with none around opens its
-neighbours too. Find treasure and you score it and dig again, a few
-times in a row at most. Whoever finds more than half of the treasure
-wins; there is always an odd number of it, so there is no draw.
+**THE TREASURE IS DOWN THERE. GET TO IT FIRST.**
 
-In the game's own words: *Like Mines but you need to find stuff instead
-of avoiding them. Try to trick the AI into doing useless stuff.*
+Minesweeper, turned around, for two. Treasure lies hidden under the field, and two sides, Percent (**%**) and Square (**#**), take turns opening cells. A cell without treasure shows how many of its eight neighbours hold some, found or not, and a cell with none around opens its neighbours too. Strike treasure and you score it and dig again, a few times in a row at most. Find more than half of it and you win; there is always an odd number of treasures, so there is no draw.
 
-At the start it asks who plays each side. Press **Enter** twice to play
-Percent against the computer, which plays Square; you go first. Press
-**Enter** and then **h** for two players taking turns at one keyboard,
-or **c** and then **Enter** to watch the computer play both sides.
+In the game's own words: *Like Mines but you need to find stuff instead of avoiding them. Try to trick the AI into doing useless stuff.*
+
+At the start it asks who plays each side. Press **Enter** twice to play Percent against the computer, which plays Square; you go first. Press **Enter** and then **h** for two players taking turns at one keyboard, or **c** and then **Enter** to watch the computer play both sides.
 
 ## Controls
 

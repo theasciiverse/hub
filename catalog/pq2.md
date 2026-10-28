@@ -1,18 +1,12 @@
-A role-playing game that plays itself. You roll up a hero, pick a race
-and a class from lists of splendidly silly ones (Half Halfling, Land
-Squid, Battle-Felon, Fighter/Organist), and from then on there is
-nothing to do but watch: your hero kills monsters, loots their parts,
-sells them in town, buys better gear, learns spells, gains levels and
-works through quests and the acts of an epic plot, all as progress bars
-filling on their own.
+**THE ROLE-PLAYING GAME THAT PLAYS ITSELF.**
 
-pq2 is Nick Bollom's remake of Progress Quest, the parody of
-level-grinding RPGs that Eric Fredricksen released in 2002, rebuilt in
-C++ with the same races, classes, monsters, spells and items. It is not
-the original, which you can still play at
-[progressquest.com](http://progressquest.com). Leave it running in a
-spare terminal and check in on your hero now and then; it only advances
-while it is open.
+Roll up a hero. Pick a race (Half Halfling? Land Squid? Talking Pony?) and a class (Ur-Paladin, Voodoo Princess, Battle-Felon, Fighter/Organist), roll the stats until you like them, and press **Sold!**. Then sit back. Your work here is done.
+
+Your hero takes it from there. "Experiencing an enigmatic and foreboding night vision." Off on a long and dangerous journey. "Heading to the killing fields." Slaying Cub Scouts and Bugboars, looting their parts, "Heading to market to sell loot", "Negotiating purchase of better equipment", learning spells like Cone of Annoyance and Holy Batpole, gaining levels and working through quests and the acts of an epic plot, all as progress bars filling on their own.
+
+pq2 is Nick Bollom's remake of Progress Quest, the send-up of level-grinding RPGs that Eric Fredricksen released in 2002, rebuilt in C++ with the same races, classes, monsters, spells and items. It is not the original, which you can still play at [progressquest.com](http://progressquest.com). Leave it running in a spare terminal and check in on your hero now and then; it only advances while it is open.
+
+**THERE IS MUCH TO BE DONE. YOU ARE CHOSEN!**
 
 ## Controls
 

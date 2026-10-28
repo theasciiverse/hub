@@ -1,14 +1,15 @@
-Warp is a space war in real time: the enemies keep moving and shooting
-whether you act or not. You command an Enterprise and a Base at the same
-time, in a universe that wraps around at every edge, against Klingons,
-Romulans, Gorns, Tholians, space amoebas, planet crushers and homing
-torpedoes. Things that blow up damage what is near them, and a dense
-universe can go up in a chain reaction.
+**THEY KEEP SHOOTING WHILE YOU THINK.**
 
-Each wave ends when your Enterprise and Base are both gone or every
-enemy is destroyed, and the waves get harder. Besides phasers and photon
-torpedoes you have tractor beams and a cloaking device, and the shape of
-each universe's star field changes how you have to fight.
+Warp is a space war in real time: the enemies keep moving and firing whether you act or not. You command an Enterprise and a Base at the same time, in a universe that wraps around at every edge, against Klingons, Romulans, Gorns, Tholians, pirates, space amoebas, planet crushers and homing torpedoes. Harry Mudd turns up too. Anything that blows up damages what is near it, and a crowded universe can go up in a chain reaction.
+
+Every wave is harder than the last, from difficulty 1 up to 99. In the words of its own manual: "You're not likely to get that far."
+
+Besides phasers and photon torpedoes you have attractor and repulsor beams, a cloaking device, and a warp mode in which your keys change your speed, not your position. Phasers strike where a target is about to be, so phaser a Klingon that is about to ram you and you get phasered too. "This can be embarrassing, not to mention deadly."
+
+- **Two ships, one captain**: switch between the Enterprise and the Base mid-fight
+- **Chain reactions**: blasts spread, and a dense universe can go up all at once
+- **Every universe different**: the shape of the star field changes how you fight
+- **Before Perl, there was Warp**: Larry Wall wrote it from 1983
 
 ## Controls
 

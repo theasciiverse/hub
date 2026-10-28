@@ -1,4 +1,26 @@
-A dead-end alley in a foreign capital, and a plain metal door with no handle. You are a tourist, or so you say. Your interrogator has other ideas, and the story of how you got past that door is told, and retold, under questioning. Pay attention to what you say, and to what you do not.
+**"DON'T BE ABSURD."**
+
+You are a tourist. You have seen the grain-gold plains, the mountains,
+the spires of the capital. And at the end of a bare brick alley you have
+found a plain metal door with no handle, no keyhole and no sign, only a
+dull black plate in the wall beside it.
+
+Then the glaring light. You are strapped into a steel chair in a dim
+metal room, and the man behind the desk of monitors is losing patience:
+"You're no more a sightseer than the Old Tree in Capitol Square; and if
+you'd had enough sense to walk away from that door, you wouldn't be
+here." Now you are going to tell him how you got through it. You can
+answer yes, no, or nothing at all. What you play is the story you tell
+him, and he is listening very carefully.
+
+- **A spy story told under interrogation**, where what you did and what
+  you say you did are not always the same thing
+- **"The strangest game I know"**, says its author, Andrew Plotkin, "and
+  understanding what's happening is entirely your problem"
+- **Play it straight through:** mistakes are part of the story, until
+  the point where heartbeats count
+
+**Start from the beginning. And this time, tell the truth.**
 
 ## How to play
 

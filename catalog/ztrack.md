@@ -1,14 +1,10 @@
-Get as far as you can down an endless three-lane road full of stupid but
-dangerous traffic. You score more the faster you go, and the top speed is
-150 mph. Run into the back of a car, or swerve into a lane that is
-occupied, and you lose one of your three cars.
+**150 MPH. THREE LANES. STUPID BUT DANGEROUS TRAFFIC.**
 
-You see the road from behind the wheel, over your bonnet. Cars level with
-you are out of sight, but your wing mirrors light up with a blob when a lane
-beside you is taken, so check them before you change lanes.
+Get as far as you can down an endless three-lane road, and score the most by doing it flat out at 150 mph. You can go slower, of course, as its author put it, "if you enjoy doing pointless boring things." Run into the back of a car, or swerve into a lane that is already taken, and you lose one of your three cars.
 
-You don't hold a pedal: you set a mode. Accel keeps speeding up, decel keeps
-slowing down, and cruise holds your speed exactly.
+You see the road from behind the wheel, over your bonnet. Cars level with you are out of sight, but your wing mirrors light up with a blob when a lane beside you is taken, so check them before you change lanes.
+
+There is no pedal to hold: you set a mode. Accel keeps speeding up, decel keeps slowing down, and cruise holds your speed exactly.
 
 ## Controls
 

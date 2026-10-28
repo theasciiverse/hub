@@ -1,15 +1,14 @@
-Each side starts with 12 men. Men move one square diagonally forward;
-a man that reaches the far side becomes a king (**K**), which moves
-diagonally both ways. You capture by jumping over an enemy piece, and
-can capture several in one turn with a chain of jumps. If you can jump,
-you must. A side wins when the other cannot move, and 50 turns without
-any gain for either side is a draw.
+**IT LETS YOU WIN. ONCE.**
 
-At the start the game asks who plays each side: by default you play
-black, shown in red, which moves first, and the computer plays white.
-Two people can share one keyboard, and the computer can play itself.
-Without `-p` the computer starts out weak, so a beginner can win the
-first game, and after that it adjusts to how well you play.
+The computer in this checkers starts out playing badly on purpose, so your first game is likely a win. Its author's plan, written into the code: the second game you're likely to lose, so you don't think the computer is stupid, and after that it works out how good you are and plays on par with you. Beat it and it promises: "I'd play better next time." Keep beating it at its strongest and it can only ask: "Are you human?"
+
+Twelve men a side. Men step one square diagonally forward; reach the far side and you're crowned a king (**K**), free to move both ways. Capture by jumping over an enemy piece, and string jumps into a chain to take several in one turn. And if you can jump, you must. Win when your opponent cannot move; fifty turns without gain for either side is a draw.
+
+- **You against the computer,** a friend on the same keyboard, or the computer against itself. By default you play black, shown in red, and black moves first.
+- **Keyboard or mouse:** arrows, hjkl or wasd, or just click.
+- **A fixed strength** if you'd rather: `-p` from 1 to 127.
+
+**YOUR MOVE.**
 
 ## Controls
 

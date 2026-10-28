@@ -1,10 +1,31 @@
-The game every roguelike is named after. You are an adventurer at the
-top of the Dungeons of Doom, and somewhere below the 20th level lies the
-Amulet of Yendor. Each level is a new map of rooms and corridors, drawn
-as you explore it, full of monsters, gold, potions, scrolls, wands,
-rings, weapons and armour, most of which you will not recognise until
-you try them. Death is final; your score is the gold you bring back,
-with a tenth off for getting killed.
+**THE GUILD SENDS YOU IN. THE DUNGEON DECIDES IF YOU COME BACK.**
+
+Your years at the local fighters' guild are over, and the guildmasters
+have one last test for you: go down into the Dungeons of Doom and bring
+back the Amulet of Yendor. You get an enchanted mace, a bow, a quiver of
+arrows, a suit of armour and enough food to reach the ruins at the
+entrance. After that you are on your own.
+
+Every level is a new map of rooms and corridors, drawn only as you
+explore it. Down there wait twenty-six monsters, one for each letter:
+bats and hobgoblins near the top, then the aquator that rusts your
+armour, the leprechaun that steals your gold, the medusa, the xeroc that
+is not what it looks like, the jabberwock and the dragon. Potions,
+scrolls, wands and rings are unknown until you try them, and trying them
+is half the danger.
+
+- **The Amulet lies 26 levels down**, and the stairs back up stay shut
+  until you hold it: "your way is magically blocked"
+- **Death is final.** Your score is the gold you carry, less a tenth if
+  you die down there
+- **A new dungeon every game**, so no map and no walkthrough will save
+  you
+
+Make it out and the guild takes you in at last: "You return home, sell
+all your treasures at great profit and retire into comfort." Most never
+do.
+
+**This is where the whole genre started. Go and see why.**
 
 ## Controls
 

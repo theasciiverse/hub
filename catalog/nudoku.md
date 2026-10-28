@@ -1,14 +1,14 @@
-Sudoku on the classic 9x9 board: fill every row, column and 3x3 box
-with the numbers 1 to 9, each once. nudoku makes a new puzzle each
-time, easy, normal or hard, and keeps out of the way: move around the
-board, type numbers into the empty cells, and ask it to check your work
-whenever you like.
+**NINE ROWS. NINE COLUMNS. NINE BOXES. ONE OF EACH.**
 
-When you are stuck, a hint fills in one cell for you, and the count of
-hints used is shown when you finish. Marks light up every copy of the
-number under the cursor, which makes it easy to see where a number can
-still go. Mistakes can be deleted or undone, and a game in progress can
-be saved and picked up again later.
+Fill every row, column and 3x3 box with the numbers 1 to 9, each exactly once. nudoku deals you a fresh puzzle every time, easy, normal or hard, and then stays out of your way: move around the board, type numbers into the empty cells, and ask it to check your work whenever you like. "Correct so far"? Keep going.
+
+- **Marks** light up every copy of the number under the cursor, so you can see at a glance where a 7 can still go.
+- **Hints** when you are stuck: one cell filled in for you, and the count shown when you finish.
+- **Undo, save and come back later**: a game in progress picks up where you left it.
+- **Your own puzzles**: give one as a line of 81 characters.
+- **Help in nine more languages**, from German and Japanese to Georgian and Vietnamese (Linux builds).
+
+**JUST ONE MORE PUZZLE.**
 
 ## Controls
 

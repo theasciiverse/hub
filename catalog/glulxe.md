@@ -1,9 +1,11 @@
-Glulxe plays stories written for Glulx, the virtual machine Andrew Plotkin
-designed in 1999 when Inform games outgrew the Z-machine. Most Inform 7
-games are Glulx stories: Counterfeit Monkey, Kerkerkruip, Rover's Day
-Out and many more. Here they run in the terminal with GlkTerm, so status
-lines, side panels and Unicode text all work. Give it a story file and
-play.
+**WHEN INFORM OUTGREW THE Z-MACHINE, GLULX WAS WAITING.**
+
+Glulxe plays stories written for Glulx, the virtual machine Andrew
+Plotkin designed in 1999 when Inform games outgrew the Z-machine. Most
+Inform 7 games are Glulx stories: Counterfeit Monkey, Kerkerkruip, Rover's
+Day Out and many more. Here they run in the terminal with GlkTerm, so
+status lines, side panels and Unicode text all work. Give it a story file
+and play.
 
 ## Use
 

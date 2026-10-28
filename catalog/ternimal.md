@@ -1,10 +1,12 @@
-A lifeform made of light creeps around the window: its body stretches and
-contracts as it crawls along a path of circular arcs that never ends and
-never repeats, glowing white along its spine and fading to blue and violet
-at its edges. Leave it running and watch it coil.
+**TERNIMAL. NOTE THE SPELLING.**
 
-Ternimal draws with half blocks in 24-bit colour, so the body is smooth at
-twice the vertical resolution of the text.
+A lifeform made of light creeps around the window. Its body stretches and contracts as it crawls along a path of circular arcs that never ends and never repeats, glowing white along its spine and fading to blue and violet at its edges. Leave it running and watch it coil.
+
+Its maker is honest about it: "From a practical perspective, the program is not very useful." What it does have is a glow renderer, a skeleton that bends along the path, and a body shaped by Fourier series, all in about a thousand lines of Rust with no dependencies at all.
+
+- **Smooth as silk**: half blocks in 24-bit colour, so the body moves at twice the vertical resolution of the text
+- **Never the same twice**: the path is generated as it goes
+- **A shape-shifter**: one line of arguments turns it into an anaconda or a swarm (see Options)
 
 ## Controls
 

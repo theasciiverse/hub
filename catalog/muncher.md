@@ -1,15 +1,16 @@
-You steer the muncher, the **r**, around a walled board. It keeps moving
-in the direction you last gave it, so every turn counts. Eat the food,
-the **%**, and keep clear of the traps, the **^**: running into a trap or
-a wall ends the game.
+**EAT THE FOOD. AVOID THE TRAPS. NEVER STOP MOVING.**
 
-Each time you eat, new food appears somewhere else, often with new
-traps, and more of them the higher your score. Past 2000 points a
-flashing food sometimes shows up that makes you immune for a while:
-traps you run into then just vanish. The muncher moves at
-half speed up and down. The board fits the terminal, from 40 by 10 up to
-80 by 24, and a smaller board scores more for each food. When the game
-ends, your score goes on a top-ten list.
+You are the muncher, the **r**, and you do not stop. You keep going in the direction you last gave, so every turn counts. Eat the food, the **%**, and new food appears somewhere else on the board, often with new traps, the **^**, beside it. The higher your score, the more traps there are. Touch one, or a wall, and it's over.
+
+- **A board that fills up**: the better you do, the more traps you have to weave between.
+- **Flashing food past 2000 points** makes you immune for a while. Run into traps then and they just vanish.
+- **Small board, big points**: the board fits your terminal, from 40 by 10 up to 80 by 24, and a smaller board scores more for each food.
+- **Up and down is slower**: the muncher moves at half speed vertically, so plan your turns.
+- **A top-ten list** for your best runs.
+
+Flashing too much? The game has thought of that: "Suffering PSE? Press e."
+
+**HOW LONG CAN YOU KEEP EATING?**
 
 ## Controls
 

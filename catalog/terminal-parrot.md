@@ -1,6 +1,11 @@
+**PARTY. PARROT. FOREVER.**
+
 The party parrot, the dancing kakapo of a thousand chat rooms, in ASCII
-art in your terminal: it bobs and spins in a loop, changing colour every
-frame, for as long as you let it.
+art in your terminal. It bobs, it spins, it changes colour on every
+frame, and it does not stop until you press a key. Speed it up, turn it
+upside down for the Aussie edition, or give it a set number of dances.
+
+**Every terminal deserves a parrot.**
 
 ## Controls
 

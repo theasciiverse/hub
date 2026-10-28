@@ -1,11 +1,13 @@
-A grid of pipe pieces, scrambled: straights, corners, T junctions and
-dead ends. The tile at the centre is the source, and everything joined to
-it lights up green. Turn the tiles one by one until every piece is part
-of a single network, with no loose ends and no loops. The count under the
-board shows how many tiles are connected so far.
+**ONE SOURCE. ONE NETWORK. NO LOOSE ENDS.**
 
-Lock a tile once you are sure of it, so a stray key cannot turn it again.
-When the whole board lights up, press n for a fresh puzzle.
+A grid of scrambled pipe pieces: straights, corners, T junctions and dead ends. At the centre sits the source, and everything joined to it glows green. Turn the tiles one by one until every single piece is part of one network, with no loose ends and no loops. The count under the board tells you how close you are.
+
+- **Turn either way**: clockwise or anticlockwise, one key each.
+- **Lock what you're sure of**, so a stray key cannot turn it again.
+- **Any size you like**, from 2 to 99 tiles a side, and a wrapping mode where pipes run off one edge and back in at the other.
+- **A fresh puzzle on n**, the moment the whole board lights up.
+
+**LIGHT IT ALL UP.**
 
 ## Controls
 

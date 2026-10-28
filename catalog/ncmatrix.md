@@ -1,9 +1,6 @@
-The falling green code of The Matrix, as CMatrix has drawn it in
-terminals since 1999, with one thing more: your computer's network
-traffic falls in it too. Every packet sent and received since the last
-moment is painted into the rain as a bold run, red for what goes out and
-magenta for what comes in, so a download pours magenta down the screen
-and a quiet machine rains plain green.
+**THE CODE IS FALLING. SOME OF IT IS YOURS.**
+
+The falling green code of The Matrix, as CMatrix has drawn it in terminals since 1999, with one thing more: your own computer's network traffic falls in it too. Every packet sent and received is painted into the rain as a bold run, red for what goes out and magenta for what comes in. Start a download and watch magenta pour down the screen; leave the machine idle and it rains plain green.
 
 ## Controls
 

@@ -1,17 +1,17 @@
-Sewage is about to flow out of a source somewhere on the board, and you
-have to keep a pipeline ahead of it. Pipes come from a queue: the next
-five are shown on the left, and Enter lays the first of them under the
-cursor. There are corners, straights and crossovers, and you get no say
-in which comes next, so the ones that do not fit have to go somewhere
-out of the way.
+**THE SEWAGE IS COMING. YOU HAVE 70 SECONDS.**
 
-You have 70 seconds before the flow starts; after that it moves on by one
-pipe every five seconds. Every pipe the sewage passes through scores a
-point. Fast flow (**f**) moves it on much quicker for three extra points
-per pipe, and running it through a crossover a second time scores six
-more. Replacing a pipe that is already down costs a point, and pipes the
-sewage has reached cannot be replaced. The game is over when the sewage
-leaks out of the pipeline, and the score goes on a top-ten list.
+Somewhere on the board is a source, and when the countdown ends, sewage starts pouring out of it. Your job: keep a pipeline ahead of the flow. Pipes come from a queue, the next five shown on the left, and you get no say in what comes next. Corners, straights, crossovers: lay them where they fit, and dump the ones that don't somewhere out of the way.
+
+Once the flow starts it moves on one pipe every five seconds, and the moment it leaks out of your pipeline, the game is over. Its author warns you plainly: "This is a challenging game. Needs practice."
+
+- **A point for every pipe** the sewage passes through.
+- **Fast flow** (**f**) rushes it along for three extra points a pipe. Feeling brave?
+- **Crossovers pay twice**: run the flow through one a second time for six more.
+- **Can't wait?** **g** starts the flow now.
+- **Second thoughts cost**: replacing a pipe costs a point, and pipes the sewage has reached are set for good.
+- **A top-ten list** for the best plumbers.
+
+**KEEP IT IN THE PIPES.**
 
 ## Controls
 

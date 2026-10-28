@@ -2,7 +2,7 @@ schema_version = 1
 id = "beneath-a-typographic-sky"
 kind = "game"
 title = "Beneath a Typographic Sky"
-description = "Revolution's Beneath a Steel Sky in the terminal: Union City rebuilt out of Braille dots, its words set in type"
+description = "Revolution's Beneath a Steel Sky, the whole game, in your terminal: Union City rebuilt out of Braille dots, every word set in type, the speech and music as in 1994."
 year = 1994
 # the engine is GPL (a port of ScummVM's); Revolution's game data is
 # freeware: free to share and to modify, never to be sold

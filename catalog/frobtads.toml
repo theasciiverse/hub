@@ -2,7 +2,7 @@ schema_version = 1
 id = "frobtads"
 kind = "program"
 title = "FrobTADS"
-description = "The terminal player for TADS 2 and TADS 3 stories, I Am Prey among them"
+description = "Plays TADS 2 and TADS 3 text adventures in your terminal, from the 1990s classics to I Am Prey. Give it a story file and go."
 # TADS 2 and TADS 3 Freeware Source Code Licenses (no SPDX id exists):
 # free to copy and give away, never sold or bundled with anything sold
 license = "LicenseRef-TADS-Freeware"

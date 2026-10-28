@@ -1,3 +1,5 @@
+**THE GROUND IS FULL OF HOLES. THE SKY IS FULL OF SAUCERS. GOOD LUCK, CADET.**
+
 "Be careful, they come with mega bombers fleet. Their bombs make huge
 craters in the ground. Good luck cadet!"
 
@@ -10,13 +12,13 @@ at once, straight ahead to crack the rocks and straight up to pop
 whatever is hovering, and your jump has to land on all three wheels or
 the suspension goes and so do you.
 
-It is Moon Patrol, lovingly rebuilt in ASCII art by someone who grew up
-on it: a parallax sky of mountains and cities, a thumping tracker
+Marcin Sokalski grew up on Moon Patrol, his favourite arcade game as a
+child, and this is his love letter to it, built in ASCII art: a parallax sky of mountains and cities, a thumping tracker
 soundtrack, and between sectors a radio drama with your Commander about
 minefields, missiles, alien eggs and plants that may not be as friendly
 as they look. Two full missions, Mission One and The Lowering, five
-sectors each. Make it through the minefield and the Commander may even
-call you sergeant.
+sectors each. Get through the minefield, keep going, and the Commander may
+even call you sergeant.
 
 And it is your face on the radio: build an avatar from hair, eyes, nose
 and chin in the Player Profile before you set off.
