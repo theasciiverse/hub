@@ -737,7 +737,7 @@ year = 2026
 new = true
 kind = "game"
 title = "Ohm's Workshop"
-description = "The old master's workshop is yours now. Fix the town's gadgets with real circuits and watch them glow, click and blink... or smoke, pop and bang!"
+description = "The old master's workshop is yours now. Fix the town's gadgets with real circuits and watch them glow, click and blink... or smoke, sizzle and pop!"
 provenance = "Asciiverse made Ohm's Workshop in Rust in 2026, in the family of SHENZHEN I/O, Retro Gadgets and Turing Complete, with a real circuit solver at its heart."
 genre = "puzzle"
 license = "GPL-3.0-or-later"
@@ -753,14 +753,14 @@ page = """**THE OLD MASTER'S BENCH IS YOURS NOW.**
 
 Welcome to Ohms Verkstad, the little electronics repair shop the whole town still calls Ohm's. It's the early eighties, you're the new apprentice, the old master's notebook is on the shelf, and the inbox is already filling up.
 
-Mrs Berg's bike lamp eats batteries. Elsa, who is eight, wants every room of her doll's house lit. Café Ohlsson wants a sign in the window, Mr Holm needs a lighthouse flasher down at the harbour, and Mr Nilsson's model railway needs a level crossing that actually works.
+Mrs Berg's bike lamp keeps blowing its bulb. Elsa, who is eight, wants her doll's house lit upstairs and down. The last repairman's resistor in Café Ohlsson's van sign went up in smoke, the harbour club's model lighthouse has to flash like the real one, and on Mr Nilsson's model railway the barrier drops before the little cars are across.
 
-Pull open the parts drawers, lay the copper, drop in a resistor... and watch. The circuit is alive while you build it: current ripples through the traces, LEDs glow, relays click and capacitors slowly fill. And get it wrong? That's a show too! Resistors glow red, then smoke. LEDs flare and die. A capacitor in backwards goes BANG. One key puts the burnt parts back.
+Pull open the parts drawers, lay the copper, drop in a resistor... and watch. The circuit is alive while you build it: current ripples through the traces, LEDs glow, relays click and capacitors slowly fill. And get it wrong? That's a show too! Resistors glow red, then smoke. LEDs flare and die. A capacitor in backwards vents with a CRACK. One key puts the burnt parts back.
 
 Then the test bench has its say: fresh batteries and tired ones, a bright day and a dark night. Pass, and the gadget goes home to its owner. Then see if you can match the old master himself: as cheap as his build, and lasting as long on a battery.
 
 - **A real circuit solver underneath:** real volts, real milliamps, real parts, real kronor. What works here works on a breadboard.
-- **From a bike lamp to your first chip:** resistors, capacitors, relays, diodes, transistors and logic, one customer at a time.
+- **From a bike lamp to your first chip:** 34 jobs in six chapters, through resistors, capacitors, relays, diodes, transistors and logic, one customer at a time.
 - **The Master's Notebook:** a page for every idea, each with a live circuit you can switch and measure.
 - **A multimeter and a scope** that read whatever you point at, and a sandbox to build anything you like.
 - **No timer, no pressure.** Poke, measure, think, and try again.
@@ -771,13 +771,16 @@ The whole town is counting on you. **DON'T LET THE MAGIC SMOKE OUT!**
 
 Mouse and keyboard work together: point at a part with the mouse and press a key to act on it.
 
-- **Arrow keys**, **W A S D** or **H J K L**: move the cursor; with **Shift**: lay copper behind it
-- **Mouse**: drag to lay copper, click to place a part, right click to erase, click a switch to flip it, the wheel turns a knob
-- **Space**: place the selected part, **R**: rotate, **X** or **Del**: erase
-- **Tab** or **1** to **9**: pick a drawer, **E**: operate the part under the cursor
-- **T**: run the test bench, **U** or **Ctrl+Z**: undo, **Ctrl+Y**: redo, **Esc**: back
+- **Arrow keys**: move the cursor; with **Shift**: lay copper behind it; **C**: lay copper with plain arrows
+- **Mouse**: drag to lay copper, click to place a part, right click to erase, click a switch to flip it, the wheel turns a knob, a middle drag moves round the workbench
+- **Space** or **Enter**: place the selected part, **R**: rotate, **X** or **Del**: erase
+- **Tab** or **0** to **9**: pick a drawer (0 is copper), **D**: every drawer as cards
+- **E**: operate the part under the cursor, **P**: clip the scope's probe on
+- **T**: run the test bench, **F**: mend burnt parts
+- **U** or **Ctrl+Z**: undo, **Ctrl+Y**: redo
+- **N**: the Master's Notebook, **B**: the card binder, **PgUp** and **PgDn**: the previous or next job
+- **M**: sound on or off, **Esc**: back, **Ctrl+Q**: quit
 - **F1** or **?**: help, anywhere
-- **Gamepad**: d-pad moves, hold A to lay copper, B erases, X rotates, Y operates, the shoulders change drawer
 
 ## Options
 
