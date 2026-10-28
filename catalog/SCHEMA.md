@@ -242,11 +242,20 @@ from `<id>.md`, unrendered, so each consumer renders it its own way:
       "cast_url": "https://...",
       "platforms": {
         "x86_64-unknown-linux-gnu": { "url": "...", "sha256": "...", "size": 123456 }
-      }
+      },
+      "news": [
+        { "version": "1.4.1", "date": "2026-10-06", "notes": "- Undo now goes back to the deal\n- ..." }
+      ]
     }
   }
 }
 ```
+
+`news` is the latest releases' notes, newest first (a few are enough; `av`
+shows three): for `source = "github"` each GitHub Release's body and its date,
+for `source = "direct"` the `notes_url` page's text when it is plain Markdown,
+else nothing. `notes` is in the same Markdown subset as the page. A title with
+no notes has `"news": []`.
 
 One file for the whole catalog to start with. Split it (by kind, or an index
 plus per-title files) only once size actually becomes a problem.

@@ -9,7 +9,7 @@ is faked here; the real generator reads it from GitHub Releases.
 Mockup-only fields, not in SCHEMA.md: featured (carousel order), old and new
 (the OLD! and NEW! banners, manual curation), duration (cast length, computed here).
 """
-import getpass, hashlib, io, json, pathlib, re, sys, tarfile, tomllib
+import getpass, hashlib, io, json, pathlib, re, subprocess, sys, tarfile, tomllib
 
 SITE = pathlib.Path(__file__).resolve().parent.parent
 HUB = SITE.parent / "catalog"
@@ -126,6 +126,32 @@ def cast_duration(path):
             total += min(gap, idle)
     return round(total, 1)
 
+def local_news(t):
+    """Stand-in release notes for the mockup: the "## <version>: built"
+    section of the game's ROADMAP.md, dated by its v<version> tag, else the
+    section of its CHANGELOG.md headed with
+    that version. hub's generator takes the GitHub
+    Release bodies instead (SCHEMA.md, "news")."""
+    for d in (GAMES / t["id"], GAMES / t["id"].replace("-", " ")):
+        if not d.is_dir():
+            continue
+        roadmap, changelog = d / "ROADMAP.md", d / "CHANGELOG.md"
+        if roadmap.is_file() and t.get("version"):
+            text = roadmap.read_text()
+            m = re.search(rf"^## {re.escape(t['version'])}: built\n(.*?)(?=^## |\Z)", text, re.M | re.S)
+            if m:
+                tag = subprocess.run(["git", "-C", str(d), "log", "-1", "--format=%as", f"v{t['version']}"],
+                                     capture_output=True, text=True).stdout.strip()
+                notes = re.sub(r"^- \[x\] ", "- ", m.group(1).strip(), flags=re.M)
+                return [{"version": t["version"], "date": tag, "notes": notes}]
+        if changelog.is_file() and t.get("version"):
+            # only the section for the version the catalog offers, and never an unreleased one
+            for m in re.finditer(r"^## (.*?)\n(.*?)(?=^## |\Z)", changelog.read_text(), re.M | re.S):
+                head = m.group(1)
+                if t["version"] in head.split() and "unreleased" not in head.lower():
+                    return [{"version": t["version"], "date": "", "notes": m.group(2).strip()}]
+    return []
+
 def fake_release(t):
     tri = ["x86_64-unknown-linux-musl", "aarch64-apple-darwin", "x86_64-pc-windows-msvc"]
     if t.get("system_deps"):
@@ -171,6 +197,7 @@ def main():
         t["cast_url"] = f"/casts/{id_}.cast?v={int(cast.stat().st_mtime)}"
         t["duration"] = cast_duration(cast)
         t["platforms"] = real_release(t) or dev_release(t) or fake_release(t)
+        t["news"] = local_news(t)
         out[id_] = t
     cols = HUB / "collections.toml"
     collections = tomllib.loads(cols.read_text()) if cols.exists() else {}

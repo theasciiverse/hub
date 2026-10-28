@@ -107,7 +107,8 @@
      "sha256": "6b14c8a09f9a500150a1ad83bc0f8cdefc23275ca7df408d8cceea0f33f26495",
      "size": 413246
     }
-   }
+   },
+   "news": []
   },
   "2048": {
    "schema_version": 1,
@@ -167,7 +168,8 @@
      "sha256": "3d00b68a048c63e6e0e0a98e20d673ce53a73f219bc05c4b5ca0dde95f2d26ac",
      "size": 20952
     }
-   }
+   },
+   "news": []
   },
   "all-things-devours": {
    "schema_version": 1,
@@ -227,7 +229,8 @@
      "sha256": "0c4ca897ec83cf4640f948f5c81f2746f172fb7a7b93cf2bc798b6f5119c7f5e",
      "size": 275209
     }
-   }
+   },
+   "news": []
   },
   "andromeda-apocalypse": {
    "schema_version": 1,
@@ -287,7 +290,8 @@
      "sha256": "beb3901465981b3af0c0f718e4f6efdf3e7f82a5ecf5338083c7c93572a5f6ac",
      "size": 7081466
     }
-   }
+   },
+   "news": []
   },
   "angband": {
    "schema_version": 1,
@@ -349,7 +353,8 @@
      "sha256": "cc6360ecf44521715a22a6dbc440fa0f7c2ea47c563f023245fa2c80fd473e6b",
      "size": 1382374
     }
-   }
+   },
+   "news": []
   },
   "aquest": {
    "schema_version": 1,
@@ -423,7 +428,8 @@
      "sha256": "ff06d2228ee77b14d19c34c8042d2adf339ec2b3df1575034407917f0d1ea2ef",
      "size": 1322987
     }
-   }
+   },
+   "news": []
   },
   "armoured-commander-ii": {
    "schema_version": 1,
@@ -486,7 +492,8 @@
      "sha256": "1b9b3a047753e519822cad88811ec6818a55118dea6bda647607a78ad56d7e76",
      "size": 5826663
     }
-   }
+   },
+   "news": []
   },
   "armoured-commander": {
    "schema_version": 1,
@@ -549,7 +556,8 @@
      "sha256": "5be2b6e36e133c3206af55756767f1dd3080d85fbbad1b96fb757bdaa5f4d5e3",
      "size": 5114753
     }
-   }
+   },
+   "news": []
   },
   "arogue": {
    "schema_version": 1,
@@ -611,7 +619,8 @@
      "sha256": "1e891f7c61234d851022748294c298e0567397e52133f6eb0b61a931986c16d7",
      "size": 556241
     }
-   }
+   },
+   "news": []
   },
   "ascii-fluid": {
    "schema_version": 1,
@@ -672,7 +681,8 @@
      "sha256": "85ae6c4344a90da58154e742918a69da06367ceafe8a0299aea96a288f5c883a",
      "size": 58522
     }
-   }
+   },
+   "news": []
   },
   "ascii-patrol": {
    "schema_version": 1,
@@ -735,7 +745,8 @@
      "sha256": "e06f014166aac2d4f8572162d176e40067e1ee3d060dbfc5b5de3d75a4f684af",
      "size": 469285
     }
-   }
+   },
+   "news": []
   },
   "ascii-wars": {
    "schema_version": 1,
@@ -803,7 +814,8 @@
      "sha256": "ca57257820f86b7a62988cda2e7efecb84c495f60af3d13806e8979286698b2d",
      "size": 1112392
     }
-   }
+   },
+   "news": []
   },
   "asciicker": {
    "schema_version": 1,
@@ -865,7 +877,8 @@
      "sha256": "008d4b8a16c49c650004b324cb7e09d56459c2000702211c247864b7ecd134e8",
      "size": 4346114
     }
-   }
+   },
+   "news": []
   },
   "atc": {
    "schema_version": 1,
@@ -927,7 +940,8 @@
      "sha256": "36b513506d13106d4e166a1b56c42faf90333c4bf5a40eadcdfe959accf688b5",
      "size": 158021
     }
-   }
+   },
+   "news": []
   },
   "bastet": {
    "schema_version": 1,
@@ -986,7 +1000,8 @@
      "sha256": "c87591ccc65edf0808f7ea559fb6f760a2e2eb956e593575d533acdfdbabc466",
      "size": 598296
     }
-   }
+   },
+   "news": []
   },
   "battlestar": {
    "schema_version": 1,
@@ -1048,7 +1063,8 @@
      "sha256": "68c3e6e0d7ebe178cf6ba7a0e1fb2756ee99ab64f8372a0f61332bbc9183e96c",
      "size": 193483
     }
-   }
+   },
+   "news": []
   },
   "beneath-a-typographic-sky": {
    "schema_version": 1,
@@ -1117,7 +1133,14 @@
      "sha256": "6e627fc21ac7017edf11c38df6e9d5d24f242561e04ddbba0da4a0975350f314",
      "size": 70699311
     }
-   }
+   },
+   "news": [
+    {
+     "version": "0.9.0",
+     "date": "2026-10-28",
+     "notes": "- ScummVM's sky engine ported to Rust, running the original CD data\n- Truecolour Braille, half blocks or quadrants (F2 cycles); game text as\n  real type over the picture; the mouse through the terminal\n- Speech, sound effects, AdLib music, the CD intro\n- A headless walkthrough that plays the whole game, with saves at 23\n  story points\n- Packaging, the preview cast, the catalog entry"
+    }
+   ]
   },
   "blightmud": {
    "schema_version": 1,
@@ -1186,7 +1209,8 @@
      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
      "size": 1233000
     }
-   }
+   },
+   "news": []
   },
   "blue-chairs": {
    "schema_version": 1,
@@ -1246,7 +1270,8 @@
      "sha256": "dbba5cf955b632c7fc13c8c3da203031464b733fb474c647c20731ba8900f1eb",
      "size": 370470
     }
-   }
+   },
+   "news": []
   },
   "book-and-volume": {
    "schema_version": 1,
@@ -1306,7 +1331,8 @@
      "sha256": "3ca094cecb6485d524165e91fd2bf3fcaaaf5dafaefff991154dbe2e8b39344c",
      "size": 348413
     }
-   }
+   },
+   "news": []
   },
   "braincurses": {
    "schema_version": 1,
@@ -1366,7 +1392,8 @@
      "sha256": "0af2a05aabc63538eb88a9f3a0bbaa995ace9b6aa2d0a7895d2fcfe3bd7b9ab1",
      "size": 540408
     }
-   }
+   },
+   "news": []
   },
   "bsd-backgammon": {
    "schema_version": 1,
@@ -1429,7 +1456,8 @@
      "sha256": "d490382e6276f59f45c6916bacf15e7caf757a967233b02388bd70f5c13cdf62",
      "size": 197867
     }
-   }
+   },
+   "news": []
   },
   "bsdtrek": {
    "schema_version": 1,
@@ -1489,7 +1517,8 @@
      "sha256": "c3d3b3d46d859d150a1362023a2e7f98b091f91db649dc6106cb5e6eb9446054",
      "size": 37291
     }
-   }
+   },
+   "news": []
   },
   "candybox2": {
    "schema_version": 1,
@@ -1552,7 +1581,8 @@
      "sha256": "8d276558b3ce4e43a800a8953749869646448db5569347253e7ee1b69069f1e7",
      "size": 1485359
     }
-   }
+   },
+   "news": []
   },
   "canfield": {
    "schema_version": 1,
@@ -1614,7 +1644,8 @@
      "sha256": "27ec6c39628b3a478d0d3113b571b3bfe93894a21988117637411e46ca0f7bc0",
      "size": 339611
     }
-   }
+   },
+   "news": []
   },
   "cataclysm-dda": {
    "schema_version": 1,
@@ -1675,7 +1706,8 @@
      "sha256": "2c95f08da4af2e3a6b934ad8502af6ccc3c86456d0e506b93fe681d6d44025a0",
      "size": 107621180
     }
-   }
+   },
+   "news": []
   },
   "cataclysm2": {
    "schema_version": 1,
@@ -1736,7 +1768,8 @@
      "sha256": "f7b84dbe059663d7eaba112f56d3a82c8a866f18680742639e1ba1eaffe0f767",
      "size": 1311552
     }
-   }
+   },
+   "news": []
   },
   "cbirds": {
    "schema_version": 1,
@@ -1801,7 +1834,8 @@
      "sha256": "7ac2dec0eef609df5c9a04f0ca117afc9d78052313b19e6e1f73ec0de272d4cd",
      "size": 201586
     }
-   }
+   },
+   "news": []
   },
   "cblocks": {
    "schema_version": 1,
@@ -1862,7 +1896,8 @@
      "sha256": "a1e4009e7c26481c860b2fd60dd538b72effa6730f85fa336f87032256c97d6c",
      "size": 175608
     }
-   }
+   },
+   "news": []
   },
   "cbonsai": {
    "schema_version": 1,
@@ -1925,7 +1960,8 @@
      "sha256": "79e5da48c74f43ec0cf4317612823bab181da8a8b41e0d1c7cdeb64771017af6",
      "size": 170103
     }
-   }
+   },
+   "news": []
   },
   "cgram": {
    "schema_version": 1,
@@ -1986,7 +2022,8 @@
      "sha256": "33f9763d660b8629c57cbf36c3d443b98c46bd731472ed1598a03edd86a088a6",
      "size": 362700
     }
-   }
+   },
+   "news": []
   },
   "changes": {
    "schema_version": 1,
@@ -2046,7 +2083,8 @@
      "sha256": "cb58d29341391edc6edc12db9bd4548d384a264f0a7005ec7bda9ac72684b903",
      "size": 388448
     }
-   }
+   },
+   "news": []
   },
   "checkers": {
    "schema_version": 1,
@@ -2109,7 +2147,8 @@
      "sha256": "18128f4cc5d3ca2ab88911c76b195b90ac6343ff9d40372083bd70f6662c88f1",
      "size": 155778
     }
-   }
+   },
+   "news": []
   },
   "chess-tui": {
    "schema_version": 1,
@@ -2172,7 +2211,8 @@
      "sha256": "ffc2c172e60b5cf22e8cd9b4b50c3c84b6d68fdd414082bc47be48d44fe40a76",
      "size": 3859915
     }
-   }
+   },
+   "news": []
   },
   "christbashtree": {
    "schema_version": 1,
@@ -2231,7 +2271,8 @@
      "sha256": "88751b4fc1b144b1be430dabba6a9f2889d23e7346da63fcc76e07c6292f845d",
      "size": 21276
     }
-   }
+   },
+   "news": []
   },
   "chroma": {
    "schema_version": 1,
@@ -2292,7 +2333,8 @@
      "sha256": "ee31502ce6be4d42c81d885fc9da85642626b9f1df4c83d21f27e294e528eb66",
      "size": 226594
     }
-   }
+   },
+   "news": []
   },
   "clani": {
    "schema_version": 1,
@@ -2356,7 +2398,8 @@
      "sha256": "ee0de8f3a9c1a31cf7e7b98edc800e4c4d359e346403832b61ea87d853eb5b25",
      "size": 559666
     }
-   }
+   },
+   "news": []
   },
   "clidle": {
    "schema_version": 1,
@@ -2417,7 +2460,8 @@
      "sha256": "f8ed4e02854086930f22744a59fcdd8186326e466869f55e7e4916c91640c4e8",
      "size": 4131976
     }
-   }
+   },
+   "news": []
   },
   "clines": {
    "schema_version": 1,
@@ -2478,7 +2522,8 @@
      "sha256": "15375af152c857d3839b7498595696310ff422db8045fecd61ef094e45e36903",
      "size": 163235
     }
-   }
+   },
+   "news": []
   },
   "cmines": {
    "schema_version": 1,
@@ -2539,7 +2584,8 @@
      "sha256": "4e04f515cc44becca72ab3a5d8d24ab222e585d7a8f910d304fd1e75db0a1924",
      "size": 159997
     }
-   }
+   },
+   "news": []
   },
   "colossal-cave": {
    "schema_version": 1,
@@ -2600,7 +2646,8 @@
      "sha256": "770862731a8966f77cceb78c784ea97952fc11ad074a0047c3325d4c9b660424",
      "size": 231730
     }
-   }
+   },
+   "news": []
   },
   "counterfeit-monkey": {
    "schema_version": 1,
@@ -2660,7 +2707,8 @@
      "sha256": "c2dab9efd3f50af99a29e5f63213b5aff778e37f6005912afca97e34bc9fcb28",
      "size": 5685799
     }
-   }
+   },
+   "news": []
   },
   "crawl": {
    "schema_version": 1,
@@ -2720,7 +2768,8 @@
      "sha256": "644189665ee62909902171a8b6549e211f5cceed7be1921e240eb866b6ee5c6a",
      "size": 10591504
     }
-   }
+   },
+   "news": []
   },
   "cribbage": {
    "schema_version": 1,
@@ -2781,7 +2830,8 @@
      "sha256": "c4c15dc063eeb71699c281ff613ccfa52c1184f6a5e2e05ac0634d62034242fc",
      "size": 148920
     }
-   }
+   },
+   "news": []
   },
   "csokoban": {
    "schema_version": 1,
@@ -2842,7 +2892,8 @@
      "sha256": "24fb2b96add8a76e6738826dbcd8f9149bc48cef57cff5f3ea38ab4e014e185e",
      "size": 216635
     }
-   }
+   },
+   "news": []
   },
   "curse-of-war": {
    "schema_version": 1,
@@ -2916,7 +2967,8 @@
      "sha256": "983518f4150e10eddeeef8a5427a49d2552f23fdd8b87f2fae6a8f87b9e0c79a",
      "size": 196059
     }
-   }
+   },
+   "news": []
   },
   "curses": {
    "schema_version": 1,
@@ -2977,7 +3029,8 @@
      "sha256": "07a669cc667d16bb2cead0ba86b25358e28cfe421333a7d5f55166db85f663e2",
      "size": 397796
     }
-   }
+   },
+   "news": []
   },
   "dab": {
    "schema_version": 1,
@@ -3038,7 +3091,8 @@
      "sha256": "b3d0e0328cffd71fd26f37afd46b6a06c2ff1bbe7b244d75326e571935728f2b",
      "size": 145366
     }
-   }
+   },
+   "news": []
   },
   "darrt": {
    "schema_version": 1,
@@ -3099,7 +3153,8 @@
      "sha256": "1548e2f938b48a1f751785de1cc9e27d21050ba0db4c463848ba039de3cf1f1b",
      "size": 163357
     }
-   }
+   },
+   "news": []
   },
   "doctor-m": {
    "schema_version": 1,
@@ -3159,7 +3214,8 @@
      "sha256": "34d5142129de97896250e3337efe7929940798b47aabaeda5fe2b2aa894c4294",
      "size": 868782
     }
-   }
+   },
+   "news": []
   },
   "dopewars": {
    "schema_version": 1,
@@ -3232,7 +3288,8 @@
      "sha256": "0ab2c9d868863b9f037d6645ab7729d704af3db907719c3ba6ee67274703cc25",
      "size": 3503761
     }
-   }
+   },
+   "news": []
   },
   "drop4": {
    "schema_version": 1,
@@ -3294,7 +3351,8 @@
      "sha256": "054ea4e18b9a39de7f3e5d0f43f970d2daf8d515b58c2b8325a8ba466c53c65f",
      "size": 146513
     }
-   }
+   },
+   "news": []
   },
   "durthang": {
    "schema_version": 1,
@@ -3362,7 +3420,8 @@
      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
      "size": 1196000
     }
-   }
+   },
+   "news": []
   },
   "fate": {
    "schema_version": 1,
@@ -3422,7 +3481,8 @@
      "sha256": "13c8b818bb0921717f8ebe56cfd519823318e764c7928f492a6d58427e7271eb",
      "size": 490475
     }
-   }
+   },
+   "news": []
   },
   "fifteen": {
    "schema_version": 1,
@@ -3483,7 +3543,8 @@
      "sha256": "e9ed3c1bf3d94e46b2a0118f7c52c524cfc1c708e5ede45eb5f48a7588ea68b5",
      "size": 150656
     }
-   }
+   },
+   "news": []
   },
   "firework-rs": {
    "schema_version": 1,
@@ -3543,7 +3604,8 @@
      "sha256": "e52bc2190e87ac1ef90ef43f1bec89d2acaaf4249b7676e38791bbed7813fcd7",
      "size": 569241
     }
-   }
+   },
+   "news": []
   },
   "fisher": {
    "schema_version": 1,
@@ -3603,7 +3665,8 @@
      "sha256": "dd1b3a3ff71cd7a3ff4ec8916bf46546c140969b5cf1700a489e55022c805ad6",
      "size": 150703
     }
-   }
+   },
+   "news": []
   },
   "fortress-earth": {
    "schema_version": 1,
@@ -3665,7 +3728,8 @@
      "sha256": "ad344b0dd7c85710e2f4b86382c83bc95ff114131011ef575b9a43f0e9a91397",
      "size": 3000469
     }
-   }
+   },
+   "news": []
   },
   "frobtads": {
    "schema_version": 1,
@@ -3724,7 +3788,8 @@
      "sha256": "4a6368e4b492d16613d09001487396d59f273c1f3828a587ad3256fee58149bd",
      "size": 1626914
     }
-   }
+   },
+   "news": []
   },
   "frotz": {
    "schema_version": 1,
@@ -3798,7 +3863,8 @@
      "sha256": "dc0534adb97dce2967fe86d9f075b35fb41f13198ffa7de2bd682a07e912ba13",
      "size": 211539
     }
-   }
+   },
+   "news": []
   },
   "galaxis": {
    "schema_version": 1,
@@ -3860,7 +3926,8 @@
      "sha256": "13434793fa8fb7cfa7a28aa38573a756db1f6489ec8bd03d56b4bc97bf7a5f9c",
      "size": 144171
     }
-   }
+   },
+   "news": []
   },
   "glider": {
    "schema_version": 1,
@@ -3933,7 +4000,14 @@
      "sha256": "5246d27efb9e02c3c3c977c02ba5fa64ec9fedad49918cd1dc10348ed232d54e",
      "size": 9418830
     }
-   }
+   },
+   "news": [
+    {
+     "version": "0.8.0",
+     "date": "2026-10-28",
+     "notes": "- The play loop translated from Calhoun's Pascal, reading his files\n  directly: every built-in house, and any Glider 4 house file from disk\n- Sounds and music\n- Keyboard (hold or tap), the original's mouse control, gamepad\n- Two views: Calhoun's art, and the silhouette view (V switches)\n- High scores per house; \"Ozma\""
+    }
+   ]
   },
   "glulxe": {
    "schema_version": 1,
@@ -3993,7 +4067,8 @@
      "sha256": "41c38c2193234df3ed99314f397a5a4dfeaee76256dec7042b4f5be25b7059c3",
      "size": 287536
     }
-   }
+   },
+   "news": []
   },
   "gofish": {
    "schema_version": 1,
@@ -4054,7 +4129,8 @@
      "sha256": "1a4c8b913d5d1142155c6f35e821f5c89203d10102c7a552876a1bb519998c41",
      "size": 144289
     }
-   }
+   },
+   "news": []
   },
   "gomoku": {
    "schema_version": 1,
@@ -4117,7 +4193,8 @@
      "sha256": "63266e87dd74f8133eeeb7db0851f7f4044e3aa3779e7a638ac6870714499a84",
      "size": 148951
     }
-   }
+   },
+   "news": []
   },
   "gorched": {
    "schema_version": 1,
@@ -4201,7 +4278,8 @@
      "sha256": "7d4f530679c18f6df129413a4b67b169909c31c6bd94516c62beee172fcf8496",
      "size": 1818913
     }
-   }
+   },
+   "news": []
   },
   "greed": {
    "schema_version": 1,
@@ -4283,7 +4361,8 @@
      "sha256": "255bb5f30d99be03f3b43f48368075bd86ca96c443709ad5582c48f6f3e872d0",
      "size": 314846
     }
-   }
+   },
+   "news": []
   },
   "hack": {
    "schema_version": 1,
@@ -4345,7 +4424,8 @@
      "sha256": "8e71c4ade38849a322c5d29a5deb9d9615d85ae497f5335d3c739d8cd69f7e49",
      "size": 461088
     }
-   }
+   },
+   "news": []
   },
   "hangman": {
    "schema_version": 1,
@@ -4411,7 +4491,8 @@
      "sha256": "b295a698819e049c9e4f29ac3d7e1338892a9f8fd88277bea59de64b9cd0af84",
      "size": 314270
     }
-   }
+   },
+   "news": []
   },
   "hauberk": {
    "schema_version": 1,
@@ -4472,7 +4553,8 @@
      "sha256": "d014a65fad95361a5427d50c668f2c85688b9e0466a998fe6af3d6bd8a509b10",
      "size": 3524613
     }
-   }
+   },
+   "news": []
   },
   "hoosegow": {
    "schema_version": 1,
@@ -4532,7 +4614,8 @@
      "sha256": "b2fe8a16bea157ae7e38d11d6256a5261cbcb3ec25df69713a4d9ca1f056973e",
      "size": 1994112
     }
-   }
+   },
+   "news": []
   },
   "huarongdao": {
    "schema_version": 1,
@@ -4592,7 +4675,8 @@
      "sha256": "d1a83ac26f8c45e7cc04df171faf1333832df1c184e575620d00a50091c27151",
      "size": 521078
     }
-   }
+   },
+   "news": []
   },
   "hunt": {
    "schema_version": 1,
@@ -4655,7 +4739,8 @@
      "sha256": "89a58e4cb6d1e31b4abe93eaf2bf5cce1f62d31ad3a72eb2b9e728e2974eb9c3",
      "size": 599208
     }
-   }
+   },
+   "news": []
   },
   "i-am-prey": {
    "schema_version": 1,
@@ -4715,7 +4800,8 @@
      "sha256": "a06dacf97205093bf9c5dc1630a37330cc84967b415ef6811045dd910e2c13e1",
      "size": 3207289
     }
-   }
+   },
+   "news": []
   },
   "ioccc-chaos": {
    "schema_version": 1,
@@ -4776,7 +4862,8 @@
      "sha256": "7fb5c37e7248f61068f35f214486d5850a87ed9505f6eb76db49288804d4dc52",
      "size": 199971
     }
-   }
+   },
+   "news": []
   },
   "jewels": {
    "schema_version": 1,
@@ -4836,7 +4923,8 @@
      "sha256": "272902c0db2b6a04d59c76a285cb23f9ec67339444a18c6804db6c7f28f5074a",
      "size": 149875
     }
-   }
+   },
+   "news": []
   },
   "kerkerkruip": {
    "schema_version": 1,
@@ -4896,7 +4984,8 @@
      "sha256": "3af8d908ef17e087e29ec53b39475b70f1fe79284087aeaf54b960094363813f",
      "size": 19458724
     }
-   }
+   },
+   "news": []
   },
   "klondike": {
    "schema_version": 1,
@@ -4957,7 +5046,8 @@
      "sha256": "bfb16ae36d2d0a0aa4baf56c7344134b55d443ff4b82002b2b03633ce33dc880",
      "size": 144132
     }
-   }
+   },
+   "news": []
   },
   "larn": {
    "schema_version": 1,
@@ -5019,7 +5109,8 @@
      "sha256": "5525034ccf7af22997a2f49b1bfc50c7bf059ba2d1943ab928f48429c8ce2c64",
      "size": 389469
     }
-   }
+   },
+   "news": []
   },
   "lexter": {
    "schema_version": 1,
@@ -5081,7 +5172,8 @@
      "sha256": "96f05d9b36afc52c3d44d35892618d720b9d71aaf1c0642d0b4e640f909767b6",
      "size": 381502
     }
-   }
+   },
+   "news": []
   },
   "lost-pig": {
    "schema_version": 1,
@@ -5141,7 +5233,8 @@
      "sha256": "f4da22a6bca9c724c7f0129a87deca862595f328fa68fe35444402d2da0d8046",
      "size": 376549
     }
-   }
+   },
+   "news": []
   },
   "mahjongg": {
    "schema_version": 1,
@@ -5227,7 +5320,8 @@
      "sha256": "eddba2d2e43b363e58c16c50048f67297b780708e8890115f3eb3bc16ce01860",
      "size": 424355
     }
-   }
+   },
+   "news": []
   },
   "mandelbrot": {
    "schema_version": 1,
@@ -5287,7 +5381,8 @@
      "sha256": "502140aeb00653f1c3bff222c392a0fac1ed4527b9c39e16bb03b477eefb9e6d",
      "size": 154150
     }
-   }
+   },
+   "news": []
   },
   "memoblocks": {
    "schema_version": 1,
@@ -5348,7 +5443,8 @@
      "sha256": "b31394329b6e99d38ab19e0a17051db22cddee68c59fc4fa86ada34bb1359f7e",
      "size": 149496
     }
-   }
+   },
+   "news": []
   },
   "miketron": {
    "schema_version": 1,
@@ -5408,7 +5504,8 @@
      "sha256": "e11788c1b4a30ecf0b141a9203ba28bc511f609db20f1a7e9894cc0c654e4ec8",
      "size": 152266
     }
-   }
+   },
+   "news": []
   },
   "miscom": {
    "schema_version": 1,
@@ -5469,7 +5566,8 @@
      "sha256": "73150c26a77f7bca1ab4fa27a13a698cd5dc3a5604a319120cd16c01a9d40556",
      "size": 233656
     }
-   }
+   },
+   "news": []
   },
   "moon-buggy": {
    "schema_version": 1,
@@ -5530,7 +5628,8 @@
      "sha256": "633b75311686893b780c6a84a18e9834018c654dcb3be9976a9dfb84e83eb068",
      "size": 201924
     }
-   }
+   },
+   "news": []
   },
   "muncher": {
    "schema_version": 1,
@@ -5590,7 +5689,8 @@
      "sha256": "a7b875407c98d4b93ffdf895697aaddc49021a90f85e24b1eb868e8df6247fc5",
      "size": 150992
     }
-   }
+   },
+   "news": []
   },
   "myman": {
    "schema_version": 1,
@@ -5649,7 +5749,8 @@
      "sha256": "9af35659ccafc95a4ee5c3355c6765f7fef181b5aad075a133273e1d0367303a",
      "size": 774299
     }
-   }
+   },
+   "news": []
   },
   "nbsd-sos": {
    "schema_version": 1,
@@ -5711,7 +5812,8 @@
      "sha256": "2e4f8bdd41156aefb8ca47919d64b844ed19134d396aa04b97a61da1e116b305",
      "size": 153128
     }
-   }
+   },
+   "news": []
   },
   "ncmatrix": {
    "schema_version": 1,
@@ -5777,7 +5879,8 @@
      "sha256": "88018fd0384a0df7131198cd5792521ff1f05d61fd69b4bb506f21a72193c4d6",
      "size": 164731
     }
-   }
+   },
+   "news": []
   },
   "neon-rain": {
    "schema_version": 1,
@@ -5834,7 +5937,8 @@
      "sha256": "937a3c9f89db3cdb2348a98317d0003e3a6bea2b7190b441d1c0d0bea2d7478b",
      "size": 767919
     }
-   }
+   },
+   "news": []
   },
   "netgame": {
    "schema_version": 1,
@@ -5894,7 +5998,8 @@
      "sha256": "d8c48e01d4f6607fca3ce77d84de4f94f6e5d66329061485dca2ba0ffff13be2",
      "size": 423643
     }
-   }
+   },
+   "news": []
   },
   "nethack": {
    "schema_version": 1,
@@ -5956,7 +6061,8 @@
      "sha256": "0de8dc0830e6d0f5ee26f2889862468965da651571bf829e5bf19b1a6b0f1274",
      "size": 2682652
     }
-   }
+   },
+   "news": []
   },
   "nettoe": {
    "schema_version": 1,
@@ -6017,7 +6123,8 @@
      "sha256": "9e0861d52f2117abf8c452daca85a91a130f242b2ab3f2c1f7627e3f5305c02c",
      "size": 118252
     }
-   }
+   },
+   "news": []
   },
   "nflood": {
    "schema_version": 1,
@@ -6080,7 +6187,8 @@
      "sha256": "7aaebeec834386fc03ed504d8388a22e5203dfb7166591d081c746a4e58538b7",
      "size": 160552
     }
-   }
+   },
+   "news": []
   },
   "nhfourk": {
    "schema_version": 1,
@@ -6140,7 +6248,8 @@
      "sha256": "e6b0b40fce999c3b88808bad9f9167ce89856a1b0f946cb58a620ea1407bfe8f",
      "size": 1638643
     }
-   }
+   },
+   "news": []
   },
   "ninvaders": {
    "schema_version": 1,
@@ -6200,7 +6309,8 @@
      "sha256": "bb1428a5e1be51a01f5edb437add93010a3f1d4fd0d5eaf623ab4f3949bffdb1",
      "size": 162788
     }
-   }
+   },
+   "news": []
   },
   "nsnake": {
    "schema_version": 1,
@@ -6260,7 +6370,8 @@
      "sha256": "1b99d671d9f2758aa3a5c28cfce558211f69bca4bd8b87ae21f6a3ef3a1f4746",
      "size": 697647
     }
-   }
+   },
+   "news": []
   },
   "nstars": {
    "schema_version": 1,
@@ -6324,7 +6435,8 @@
      "sha256": "edeca0085c3f57337a7a85a6902be3ed55f2fd97d54d3a5c28cc5d3b09040ace",
      "size": 154133
     }
-   }
+   },
+   "news": []
   },
   "nudoku": {
    "schema_version": 1,
@@ -6384,7 +6496,8 @@
      "sha256": "914116b798547b20773ff42ff00f404e88d54d3ae4ed6a0379a1a8e99be54ba7",
      "size": 176996
     }
-   }
+   },
+   "news": []
   },
   "nuzzle": {
    "schema_version": 1,
@@ -6444,7 +6557,8 @@
      "sha256": "9a8bd71523ae6a6bba09f9a244fddb68e482f5b1f9dd11641f5143adb5b1f577",
      "size": 178408
     }
-   }
+   },
+   "news": []
   },
   "particles": {
    "schema_version": 1,
@@ -6505,7 +6619,8 @@
      "sha256": "f2cf3b1b62c0aed9cc9d59eeb44779ec6c5385ac61cd2a68ff936e6a519e6ac8",
      "size": 217107
     }
-   }
+   },
+   "news": []
   },
   "pipes": {
    "schema_version": 1,
@@ -6566,7 +6681,8 @@
      "sha256": "6e70a3ee5a33984e14ce05559c828c41b7551e1564f006c600152bd11afbe86f",
      "size": 151452
     }
-   }
+   },
+   "news": []
   },
   "pokertui": {
    "schema_version": 1,
@@ -6629,7 +6745,8 @@
      "sha256": "6fab038459f2d0ccd71972084020eb11a9a4c5720a5edd4983c969978e12a716",
      "size": 1845484
     }
-   }
+   },
+   "news": []
   },
   "pq2": {
    "schema_version": 1,
@@ -6690,7 +6807,8 @@
      "sha256": "24cfda903ccb4538927c210d7ee2ff2784d8280cc84a016f32be77ddb18210a5",
      "size": 1009084
     }
-   }
+   },
+   "news": []
   },
   "pwmangband": {
    "schema_version": 1,
@@ -6750,7 +6868,8 @@
      "sha256": "e947b72cce097d99375acc6b777682f9f228e46a347e20dd9b9f13a96783116e",
      "size": 1476177
     }
-   }
+   },
+   "news": []
   },
   "rabbithole": {
    "schema_version": 1,
@@ -6810,7 +6929,8 @@
      "sha256": "2aaa91cbfb3025a775f28dae05372c11aa6fa546746a1906b5bce312db8e82a0",
      "size": 150457
     }
-   }
+   },
+   "news": []
   },
   "rain": {
    "schema_version": 1,
@@ -6871,7 +6991,8 @@
      "sha256": "a39a4e1757c8ae5fc68bcc9c644622502951fa92f3a1188e93576b589377368d",
      "size": 320073
     }
-   }
+   },
+   "news": []
   },
   "rantaiwarna": {
    "schema_version": 1,
@@ -6931,7 +7052,8 @@
      "sha256": "8ce4073a6cfd289771c14c2d484e8b748ae3b13e10be35061dc45d6426dfe5af",
      "size": 160865
     }
-   }
+   },
+   "news": []
   },
   "redsquare": {
    "schema_version": 1,
@@ -6991,7 +7113,8 @@
      "sha256": "9a017a39aa237d707b29b91886939014393c4b7cfcdb99b8ffbb01c78f610357",
      "size": 155672
     }
-   }
+   },
+   "news": []
   },
   "revenge": {
    "schema_version": 1,
@@ -7051,7 +7174,8 @@
      "sha256": "8fa40f4b6ab38b30520d777d421d8cd766cc45dc5a6539e027ab40c346aabd50",
      "size": 152793
     }
-   }
+   },
+   "news": []
   },
   "reversi": {
    "schema_version": 1,
@@ -7113,7 +7237,8 @@
      "sha256": "2c6390c135b3d8211a49f66081f3e8cfa86cd07a92dfadead757181e844fc33a",
      "size": 152220
     }
-   }
+   },
+   "news": []
   },
   "risorgimento-represso": {
    "schema_version": 1,
@@ -7173,7 +7298,8 @@
      "sha256": "292146cc7f6c033a411d37eeadc27cde0754215ffd9af0380f1bf5bf28a3dc08",
      "size": 521136
     }
-   }
+   },
+   "news": []
   },
   "robotfindskitten": {
    "schema_version": 1,
@@ -7233,7 +7359,8 @@
      "sha256": "0860b9f5e5ac321ee91b18d5e352ee0082d25ad91a537cc6d5d64411bd33377f",
      "size": 164990
     }
-   }
+   },
+   "news": []
   },
   "robots": {
    "schema_version": 1,
@@ -7295,7 +7422,8 @@
      "sha256": "1cfff60660b9fb38e986c3e6e811336be32b78130089a49641329e116312b10f",
      "size": 146642
     }
-   }
+   },
+   "news": []
   },
   "rogue": {
    "schema_version": 1,
@@ -7357,7 +7485,8 @@
      "sha256": "a8349cce476326a2e5f5b3fbbecfe52ffa7fceccd297ad995f0da6e3bd7a22d2",
      "size": 436212
     }
-   }
+   },
+   "news": []
   },
   "rogue36": {
    "schema_version": 1,
@@ -7419,7 +7548,8 @@
      "sha256": "c0000a52e181bee4a7cd349c91377ddad94c55bf879ad8affae8b866af68b2e0",
      "size": 451968
     }
-   }
+   },
+   "news": []
   },
   "rogue52": {
    "schema_version": 1,
@@ -7481,7 +7611,8 @@
      "sha256": "940d7bc0a4fd5c625ea45fbed7706ca40ca09d8d8a4ea8c0846596285b056031",
      "size": 467156
     }
-   }
+   },
+   "news": []
   },
   "rovers-day-out": {
    "schema_version": 1,
@@ -7541,7 +7672,8 @@
      "sha256": "2abadd17caf27355a8034f06b6da2e3db246accc5c90d40b2f7b40b83dacff35",
      "size": 1396885
     }
-   }
+   },
+   "news": []
   },
   "sail": {
    "schema_version": 1,
@@ -7603,7 +7735,8 @@
      "sha256": "91ad5a769fc3fd252a693338a639f3d7658238c6277fa3d34c424440291a5f23",
      "size": 173381
     }
-   }
+   },
+   "news": []
   },
   "salvo": {
    "schema_version": 1,
@@ -7666,7 +7799,8 @@
      "sha256": "dbcf5d153ef7e47f4959ca3e7b2fcfc4ba5abf77fc151b435fd713259ed2a467",
      "size": 21029
     }
-   }
+   },
+   "news": []
   },
   "savoir-faire": {
    "schema_version": 1,
@@ -7726,7 +7860,8 @@
      "sha256": "4c4dd0817c3a5aa91dccf2d0df53b1e705eadf6c64d7b54c8a642f40bf26a844",
      "size": 495029
     }
-   }
+   },
+   "news": []
   },
   "scissor": {
    "schema_version": 1,
@@ -7787,7 +7922,8 @@
      "sha256": "161498b05ad62f0e39459398ff7ad2a819fcfd8df852fa5ed870f37071f8bc92",
      "size": 157597
     }
-   }
+   },
+   "news": []
   },
   "scrap": {
    "schema_version": 1,
@@ -7847,7 +7983,8 @@
      "sha256": "a329ed3b649b4b6fc6720ec80dfba5cce5df07cd263ee94ab7ce124a621f89f7",
      "size": 567184
     }
-   }
+   },
+   "news": []
   },
   "shade": {
    "schema_version": 1,
@@ -7907,7 +8044,8 @@
      "sha256": "233f01d0dfbe039c4259c3eee19831c8121f762a53b274204dd2749007e9e041",
      "size": 275113
     }
-   }
+   },
+   "news": []
   },
   "sil-q": {
    "schema_version": 1,
@@ -7968,7 +8106,8 @@
      "sha256": "8249a4676481d290dc9bc781d4e4311c6d2d1477a8d90c680da44737c3614ef0",
      "size": 1767880
     }
-   }
+   },
+   "news": []
   },
   "silent-night": {
    "schema_version": 1,
@@ -8027,7 +8166,8 @@
      "sha256": "e0ee6d3c04fb1ab983d3aed3b3ce946ab84011f379879bdbd6e6ec3caa935469",
      "size": 847770
     }
-   }
+   },
+   "news": []
   },
   "sjump": {
    "schema_version": 1,
@@ -8087,7 +8227,8 @@
      "sha256": "0a4dac676cdf5f5b8cd96b5e1aa047b271eeaf1e5cca1d9ab365bc9d4dea7e3c",
      "size": 150615
     }
-   }
+   },
+   "news": []
   },
   "snake": {
    "schema_version": 1,
@@ -8149,7 +8290,8 @@
      "sha256": "f59750e232cfdb3d44855965a45e0d589dbb6acf418b0b4016b6e6301191f3f3",
      "size": 147766
     }
-   }
+   },
+   "news": []
   },
   "snakeduel": {
    "schema_version": 1,
@@ -8210,7 +8352,8 @@
      "sha256": "9a94f2b6b1ed28f48e6d889ef822d78d40ab48f789bb5bd6d039b19bf5a1bef9",
      "size": 154800
     }
-   }
+   },
+   "news": []
   },
   "so-far": {
    "schema_version": 1,
@@ -8270,7 +8413,8 @@
      "sha256": "fa88cca22f9833310460c250456c0986d80e89c7ae4fbd6b8babaac522456f58",
      "size": 381621
     }
-   }
+   },
+   "news": []
   },
   "solitty": {
    "schema_version": 1,
@@ -8332,7 +8476,8 @@
      "sha256": "f358f11786112a94b7b99314fa60e455377ac5aa9ec5b416fdbdbf291aa880ad",
      "size": 45593
     }
-   }
+   },
+   "news": []
   },
   "spider-and-web": {
    "schema_version": 1,
@@ -8392,7 +8537,8 @@
      "sha256": "8419e833ae04dc8f23f1816919d173fa91c6fc0c75cdd85ac6081cd60d321182",
      "size": 343567
     }
-   }
+   },
+   "news": []
   },
   "spirhunt": {
    "schema_version": 1,
@@ -8454,7 +8600,8 @@
      "sha256": "c665f1201bb6e9e90b242927e5590e6ec62a3529baa981db5ab7d3979aebab12",
      "size": 165357
     }
-   }
+   },
+   "news": []
   },
   "srogue": {
    "schema_version": 1,
@@ -8516,7 +8663,8 @@
      "sha256": "c333984df1ce52d175a033b36e44bc40b9ea8fc43a9fef1cd4ecf828bb380171",
      "size": 476841
     }
-   }
+   },
+   "news": []
   },
   "sshtron": {
    "schema_version": 1,
@@ -8579,7 +8727,8 @@
      "sha256": "49cb8ad46d4efb9555452814c2970c3ef3b55fc24ca23eebd23649e3f6f4e17e",
      "size": 2011781
     }
-   }
+   },
+   "news": []
   },
   "starlanes": {
    "schema_version": 1,
@@ -8641,7 +8790,8 @@
      "sha256": "ae68fcc75622c86620a246e1d3ddbce29a560a1120031ce21ca14f4e86d8a553",
      "size": 167023
     }
-   }
+   },
+   "news": []
   },
   "sudoku": {
    "schema_version": 1,
@@ -8703,7 +8853,8 @@
      "sha256": "1857b427eda555d37f6478e3cd52892bd13953f5401177ef9eb7173b809c8e60",
      "size": 155775
     }
-   }
+   },
+   "news": []
   },
   "swarm": {
    "schema_version": 1,
@@ -8787,7 +8938,8 @@
      "sha256": "4b8c3a30506aa265cd477aab1604e6d1ed632940c2d17437d8e2ba9fcd1b2c94",
      "size": 21253323
     }
-   }
+   },
+   "news": []
   },
   "tarts": {
    "schema_version": 1,
@@ -8854,7 +9006,8 @@
      "sha256": "e18d0c3c843c9218481bcc7f97541a4e8a2a94ff840e0f58040e57c3eff0df4a",
      "size": 808336
     }
-   }
+   },
+   "news": []
   },
   "termcraft": {
    "schema_version": 1,
@@ -8918,7 +9071,8 @@
      "sha256": "2d30ddad5f237bc82d64ab293ecf869f07b35c659be98d773553424fb6995fd0",
      "size": 2425904
     }
-   }
+   },
+   "news": []
   },
   "terminal-parrot": {
    "schema_version": 1,
@@ -8978,7 +9132,8 @@
      "sha256": "630158b330c396a2ddb09f9d67df686bf52290e64df3f6dd1230d537299ccf70",
      "size": 1006217
     }
-   }
+   },
+   "news": []
   },
   "terminal-pong": {
    "schema_version": 1,
@@ -9064,7 +9219,8 @@
      "sha256": "3147882378b3b6ccc76a932f428ae3457c6a370d3483a71cb5fe5868b3c31fda",
      "size": 407611
     }
-   }
+   },
+   "news": []
   },
   "terminal-rain-lightning": {
    "schema_version": 1,
@@ -9127,7 +9283,8 @@
      "sha256": "1c83a5e9d2c42147a7a468a36e61f7baf577921eb1835910164c49976c2c31e7",
      "size": 2214261
     }
-   }
+   },
+   "news": []
   },
   "termsuji": {
    "schema_version": 1,
@@ -9190,7 +9347,8 @@
      "sha256": "f5891266be0bb6ae1005e51185139b671164789fde27a6a12f4835df370c4551",
      "size": 4522922
     }
-   }
+   },
+   "news": []
   },
   "ternimal": {
    "schema_version": 1,
@@ -9252,7 +9410,8 @@
      "sha256": "6c8c54c6f37d83a3bd3cd726ee0af7a689e1433da26a27bb4c7a34428f03e1b8",
      "size": 315376
     }
-   }
+   },
+   "news": []
   },
   "tintin": {
    "schema_version": 1,
@@ -9321,7 +9480,8 @@
      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
      "size": 1122000
     }
-   }
+   },
+   "news": []
   },
   "tinyfugue": {
    "schema_version": 1,
@@ -9390,7 +9550,8 @@
      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
      "size": 1233000
     }
-   }
+   },
+   "news": []
   },
   "tristam-island": {
    "schema_version": 1,
@@ -9450,7 +9611,8 @@
      "sha256": "b48bfbf6b9343250a7df71c0fba7ee4e49c01947f45e82491534054d0c846e76",
      "size": 305462
     }
-   }
+   },
+   "news": []
   },
   "trsr": {
    "schema_version": 1,
@@ -9512,7 +9674,8 @@
      "sha256": "51ee2665a6298d34a087014e5864e59d099afaf441719589420f9153b6e12d94",
      "size": 152218
     }
-   }
+   },
+   "news": []
   },
   "tugow": {
    "schema_version": 1,
@@ -9572,7 +9735,8 @@
      "sha256": "110940f8f0f10a43ae1a97a4d33cb0fefce323f2d87e16fc9d499d9ef7f9778c",
      "size": 150268
     }
-   }
+   },
+   "news": []
   },
   "typespeed": {
    "schema_version": 1,
@@ -9646,7 +9810,8 @@
      "sha256": "4afa7d8a06b02c16c177babd6d09080c5799d2ff4b463b16f2ef1d2d32506b5b",
      "size": 207164
     }
-   }
+   },
+   "news": []
   },
   "umoria": {
    "schema_version": 1,
@@ -9707,7 +9872,8 @@
      "sha256": "e4aac0a5c34f62a7c8406482432f10efb86dfce864f7bf938ab6bd97f31b3af5",
      "size": 760131
     }
-   }
+   },
+   "news": []
   },
   "unnethack": {
    "schema_version": 1,
@@ -9767,7 +9933,8 @@
      "sha256": "a5d06298732c3d179fe67a3d25e634209a25c6b2eecbb7678d5a3694b9ed8162",
      "size": 3084622
     }
-   }
+   },
+   "news": []
   },
   "urogue": {
    "schema_version": 1,
@@ -9829,7 +9996,8 @@
      "sha256": "2b194eec2df077dc0bbdeda4c3029ff422c460a01f3d89d2c1ffbc6c9f838eb4",
      "size": 589168
     }
-   }
+   },
+   "news": []
   },
   "vms-empire": {
    "schema_version": 1,
@@ -9908,7 +10076,8 @@
      "sha256": "e8c8013f73788bb5dfbb076139cb900830f9e156ca15ed700a26333341b7d4fb",
      "size": 188920
     }
-   }
+   },
+   "news": []
   },
   "warp": {
    "schema_version": 1,
@@ -9970,7 +10139,8 @@
      "sha256": "3e221f7c985a104fecb2c31173a930d61f0fde39ae6280d33e29209e9b0bc06b",
      "size": 383405
     }
-   }
+   },
+   "news": []
   },
   "westering": {
    "schema_version": 1,
@@ -10030,7 +10200,14 @@
      "sha256": "03c032f3d1d11fc5ef8a5dd9050a3972650cccfe10cc9c44da4a7a9e6ea7d4ae",
      "size": 6888614
     }
-   }
+   },
+   "news": [
+    {
+     "version": "0.5.0",
+     "date": "2026-10-28",
+     "notes": "- The party and outfitting in Independence, spring 1848; the departure month\n- The trail: pace, rations, health, weather by month and region\n- The real route, landmark by landmark, with a note in our own words at\n  each; forts with stores at rising prices\n- Events and illness, river crossings, hunting as text\n- The end: score and an epitaph for each who died; play again\n- Balanced over 200 bot journeys\n- Landmark scenes and a map of the road"
+    }
+   ]
   },
   "wolfpack-empire": {
    "schema_version": 1,
@@ -10094,7 +10271,8 @@
      "sha256": "7edc390a23e4db9cc0ba5ebf247a004c912420f937247214d394fdaaed41df6f",
      "size": 213452
     }
-   }
+   },
+   "news": []
   },
   "worm": {
    "schema_version": 1,
@@ -10156,7 +10334,8 @@
      "sha256": "54fcd3572dc1017252ba7adce8267a25bf7c16aa1f3c60d51a54747aae0c105b",
      "size": 143030
     }
-   }
+   },
+   "news": []
   },
   "worms": {
    "schema_version": 1,
@@ -10222,7 +10401,8 @@
      "sha256": "9c8d2d54aa5963997b674133d68f93a054e7120524ad801bc91947ecaa1f7b3a",
      "size": 326393
     }
-   }
+   },
+   "news": []
   },
   "wump": {
    "schema_version": 1,
@@ -10284,7 +10464,8 @@
      "sha256": "7af5e3abb301bbf36545ba6df5213f21278fc96abb53031ba4008a81ef6262fe",
      "size": 26575
     }
-   }
+   },
+   "news": []
   },
   "xrogue": {
    "schema_version": 1,
@@ -10346,7 +10527,8 @@
      "sha256": "88cccecdf49dc1c2bab8769d971b3232fcd90e9e7ed5c7a37722df3c5a58a6ac",
      "size": 615274
     }
-   }
+   },
+   "news": []
   },
   "zork1": {
    "schema_version": 1,
@@ -10422,7 +10604,8 @@
      "sha256": "6b0ff52ed79b310f9361d2cf7a71a6dc6c33e8360ebc86b3597920290509e213",
      "size": 275453
     }
-   }
+   },
+   "news": []
   },
   "zork2": {
    "schema_version": 1,
@@ -10498,7 +10681,8 @@
      "sha256": "a3bd9bb36b4a20297282c07ab5e54082e140bb1c45c8d38d777eab8c1269e7d8",
      "size": 280756
     }
-   }
+   },
+   "news": []
   },
   "zork3": {
    "schema_version": 1,
@@ -10574,7 +10758,8 @@
      "sha256": "864fb39b3090e622dd9abbfaf8452399f90e592da3c0b27a01c4ac818ed23a0e",
      "size": 274672
     }
-   }
+   },
+   "news": []
   },
   "ztrack": {
    "schema_version": 1,
@@ -10654,7 +10839,8 @@
      "sha256": "17ce279312ff430d5bc8d28f348779122e154fd8172d790fca32bf88db71b7a3",
      "size": 143336
     }
-   }
+   },
+   "news": []
   },
   "prince-of-braille": {
    "id": "prince-of-braille",
@@ -10702,10 +10888,11 @@
    "platforms": {
     "x86_64-unknown-linux-gnu": {
      "url": "/dev-releases/prince-of-braille-x86_64-unknown-linux-gnu.tar.gz",
-     "sha256": "38d0dcbbf0af7fcfaf4bfcd208c93f24bcb22604d9b9f78f8950710d4bdec6a4",
-     "size": 7335808
+     "sha256": "ea786962da86cbee72a7b92563dfe4fc9fb731b2780a6034d14aa56de55ba7c4",
+     "size": 7344448
     }
-   }
+   },
+   "news": []
   },
   "tetrix": {
    "id": "tetrix",
@@ -10752,7 +10939,14 @@
      "sha256": "ed3a6cf7e99bc598db19684c196fa06d8af7fc2a4480ecce33905ee677e7984e",
      "size": 33181972
     }
-   }
+   },
+   "news": [
+    {
+     "version": "0.6.0",
+     "date": "2026-10-28",
+     "notes": "- Title menu; solo play against up to five bots at four strengths\n- LAN play for up to six: automatic discovery, a lobby, bots in empty seats\n- The full TetriNET special set, classic lines, level averaging\n- Win list across rounds\n- Juice pass; a layout that scales with the terminal\n- Direct join across networks (`tetrix --join <id>`)"
+    }
+   ]
   },
   "sleighride": {
    "id": "sleighride",
@@ -10796,7 +10990,8 @@
      "sha256": "ca8257007f762648f0843b74f5cc310bc602eff017c052f63703b24502e590a1",
      "size": 35148727
     }
-   }
+   },
+   "news": []
   },
   "panzer": {
    "id": "panzer",
@@ -10840,7 +11035,8 @@
      "sha256": "c59e091bb2e5bba4e9b8eb9e89d4e531421de7c44eb4af2368a4503c355d3202",
      "size": 34333384
     }
-   }
+   },
+   "news": []
   },
   "rusty-pinball": {
    "id": "rusty-pinball",
@@ -10884,7 +11080,14 @@
      "sha256": "aed685c5817c16be895c0dec8a522df5c22f1ac496b3f02ece79217a2a9b5f19",
      "size": 3899866
     }
-   }
+   },
+   "news": [
+    {
+     "version": "0.8.0",
+     "date": "2026-10-28",
+     "notes": "- Eight tables, every one with its table script: centre pieces, moving\n  parts, multiball, ball locks and jackpots\n- Ball savers (mercy ball, multiball saver), extra balls, the stuck-ball\n  bump, unlimited balls\n- Game messages on the DMD, the original's sounds and score-driven music\n- Score animations and ball trails, both switchable"
+    }
+   ]
   },
   "sigpipe": {
    "id": "sigpipe",
@@ -10928,7 +11131,14 @@
      "sha256": "b263509d61f0e3da1cb20cde5cba327f38b3b1ceaef7eb69e654e624d9cd1e69",
      "size": 33897068
     }
-   }
+   },
+   "news": [
+    {
+     "version": "0.3.0",
+     "date": "2026-10-28",
+     "notes": "- Classic rules on a 10 by 7 board: the countdown, replacing pieces, fast flow\n- The Unix data-stream theme: process boxes, `[exit 0]`, `Broken pipe`\n- Crossover and `tee`, buffers, one-way valves, the `nul` sink, locked cells\n- Endless levels that tighten; a saved hi score\n- Synthesised sound\n- Versus over iroh on the LAN, first to three rounds\n- Keyboard, mouse and gamepad; session logging"
+    }
+   ]
   },
   "tty-rex": {
    "id": "tty-rex",
@@ -10974,7 +11184,14 @@
      "sha256": "2e5ba89d8d2b3f537e4a3a5c966f6d1d55a31e76e92eb08893907818c5c53ff0",
      "size": 8752130
     }
-   }
+   },
+   "news": [
+    {
+     "version": "1.0.0",
+     "date": "2026-10-28",
+     "notes": "- Chromium's rules, timings, speed curve, sprites and its three sounds\n- Day and night, moon phases and stars\n- Braille graphics at several scales, and the blocks look\n- Keyboard and gamepad (Chrome's mapping)\n- Auto mode: he runs on his own, for a strip in a tmux split"
+    }
+   ]
   },
   "uxo": {
    "id": "uxo",
@@ -11014,7 +11231,14 @@
      "sha256": "9f5d7b99a62d6b054460bfd50bfd4ac594aba47aec05a77cc5ca3c2a9cd31816",
      "size": 7887463
     }
-   }
+   },
+   "news": [
+    {
+     "version": "0.4.0",
+     "date": "2026-10-28",
+     "notes": "- The surge: a bomb whose blast floods outward round corners, for open\n  spaces\n- Puzzle tiles: crates to push, keys and doors, switches and gates,\n  parts and sockets\n- UXOs: bombs that fizzle and lie there live; the Duds disease; a\n  battle setting for how often\n- purged's charges go off with a real blast\n- Names: Dot the hero, purged the villain, checked against games\n- Act 1's opening, the title line, and World 1's cards and ending\n- Dot's own art, with the blinking cursor underscore\n- World 1, the Screensaver: the Orchard rebuilt, stages that mix bomb\n  puzzles and fast action, with crates, keys and doors, gates, parts and the\n  surge; starting a stage over from the pause screen\n- World 1 played through and tuned\n- The store page and README with the story"
+    }
+   ]
   },
   "brickspire": {
    "id": "brickspire",
@@ -11054,7 +11278,14 @@
      "sha256": "e9810f3ed75c465c3c73958476e11485fb5401daf6ec1001c8ab31abf6e72909",
      "size": 8299727
     }
-   }
+   },
+   "news": [
+    {
+     "version": "0.8.0",
+     "date": "2026-10-28",
+     "notes": "- Five themed towers, 50 floors, one new brick type per tower\n- The paddle on a line, an arc (mini-bosses) and a circle (roofs)\n- Five mini-bosses and five roof bosses, the Mason last\n- The story: the stars go out tower by tower; the ending lights them\n  again, then a second lap\n- Power-ups: Plank, Mortar, Chisel, Hourglass, Flock, Spare, Stair\n- Synthesised sound effects, the title, the best score kept\n- Keyboard, mouse and gamepad; session logging"
+    }
+   ]
   },
   "kaiku": {
    "id": "kaiku",
@@ -11107,7 +11338,8 @@
      "sha256": "d9e64553df771564d53e387d753b9d7ecc7cd8cd4a95e0c673911b81eea3a426",
      "size": 8001036
     }
-   }
+   },
+   "news": []
   },
   "ceres": {
    "id": "ceres",
@@ -11150,7 +11382,8 @@
      "sha256": "1f497f58fab4a286434e7a234e9bf08bb438afe05097aa09430f3f7d21a9ac97",
      "size": 8052856
     }
-   }
+   },
+   "news": []
   },
   "entity": {
    "id": "entity",
@@ -11187,15 +11420,16 @@
    },
    "version": "0.2.0",
    "updated_at": "2026-10-10T00:00:00Z",
-   "cast_url": "/casts/entity.cast?v=1791898524",
-   "duration": 27.5,
+   "cast_url": "/casts/entity.cast?v=1793222130",
+   "duration": 20.1,
    "platforms": {
     "x86_64-unknown-linux-gnu": {
      "url": "/dev-releases/entity-x86_64-unknown-linux-gnu.tar.gz",
-     "sha256": "1f2b5d5882b538f3f17ebd0c81171ee3219f2f3b737928404d59d25b896e4081",
-     "size": 1379172
+     "sha256": "bb7f1525e5737833d68bf8d06e137272553f6fad6778d72530d6e8dbd467fb4d",
+     "size": 1296226
     }
-   }
+   },
+   "news": []
   },
   "marble-recovery": {
    "id": "marble-recovery",
@@ -11238,7 +11472,8 @@
      "sha256": "426a5e61e142e5f9385d97545ca4aea28a2c33725c0622e67fc29f01d844c6f0",
      "size": 7539148
     }
-   }
+   },
+   "news": []
   },
   "moraen": {
    "id": "moraen",
@@ -11278,7 +11513,14 @@
      "sha256": "bca28fe187c4ab76071be4e338d41dd66d25ad1766a14a99d0bedc4eafdffea2",
      "size": 7076597
     }
-   }
+   },
+   "news": [
+    {
+     "version": "0.4.0",
+     "date": "2026-10-28",
+     "notes": "- The BD1 engine: every BD1 element and its rules, under test\n- Glyph and half-block graphics, switchable in the game\n- Keyboard and gamepad; session logging\n- The first world: 20 caves and 5 intermissions, the stone trolls in the\n  last four, five difficulty levels, a start menu and cave cards"
+    }
+   ]
   },
   "ohm": {
    "id": "ohm",
@@ -11321,7 +11563,8 @@
      "sha256": "eb7e53b88ac8bbebcc0ef6b29ac6bf41bcdf2fc605b69d554c2bb431a3e92127",
      "size": 8632137
     }
-   }
+   },
+   "news": []
   },
   "achaea": {
    "id": "achaea",
@@ -11474,7 +11717,8 @@
      "sha256": "00363f3b7415548cd3e94ad95907d622733aa14d67c9800d866d9c7dd9f63a91",
      "size": 3850562
     }
-   }
+   },
+   "news": []
   },
   "nannymud": {
    "id": "nannymud",
@@ -12008,7 +12252,8 @@
      "sha256": "b35411756d83fa43ff80d2207a83ec0e46641dc56e551c0c2841b8fe1240c4d9",
      "size": 7082253
     }
-   }
+   },
+   "news": []
   },
   "royal-ur": {
    "id": "royal-ur",
@@ -12056,7 +12301,8 @@
      "sha256": "c13e3c7591565ba20dd9c8e396a4f8a87d9feb50cffc60b18b8d5e4b06189f9c",
      "size": 820849
     }
-   }
+   },
+   "news": []
   },
   "senet": {
    "id": "senet",
@@ -12105,7 +12351,8 @@
      "sha256": "a9ce069b54b6cb8ed22144c05887d8ef2c0ad851990a479371a6a445b660af87",
      "size": 807709
     }
-   }
+   },
+   "news": []
   },
   "mehen": {
    "id": "mehen",
@@ -12155,7 +12402,8 @@
      "sha256": "5c745575dbfa52ea4192eaec16e7188ff88548c69bd47cbb1cca4b3308ffca75",
      "size": 812027
     }
-   }
+   },
+   "news": []
   },
   "hnefatafl": {
    "id": "hnefatafl",
@@ -12204,7 +12452,8 @@
      "sha256": "8e37914ad4275d471576db726aa2826951fa33dceb6bdd894b225f3b4c961bd8",
      "size": 834275
     }
-   }
+   },
+   "news": []
   },
   "fox-and-geese": {
    "id": "fox-and-geese",
@@ -12252,7 +12501,8 @@
      "sha256": "e8a92e11a48e9e60b94f4ad0b406480863bd09a2a0fb8b289e69d785b0441796",
      "size": 833599
     }
-   }
+   },
+   "news": []
   },
   "mancala": {
    "id": "mancala",
@@ -12302,7 +12552,8 @@
      "sha256": "1b945197351d089911a86b587cbdcb754f2e792243f5ff0d959dba3534b3ac97",
      "size": 849436
     }
-   }
+   },
+   "news": []
   },
   "morris": {
    "id": "morris",
@@ -12352,7 +12603,8 @@
      "sha256": "7d011a8be1f12ccbf4a362f7ad706df1c1b2444a5be984b5cd80d4e69a348d33",
      "size": 874913
     }
-   }
+   },
+   "news": []
   },
   "mu-torere": {
    "id": "mu-torere",
@@ -12401,7 +12653,8 @@
      "sha256": "d9923f6aa9da711e4741f0294d827be3335aae59fd6b06eec9fdd2b63ef934f4",
      "size": 806759
     }
-   }
+   },
+   "news": []
   },
   "konane": {
    "id": "konane",
@@ -12450,7 +12703,8 @@
      "sha256": "228ad536f979284edd833127455ac8ca0ca7cb1f39a6c81dc53e8eac48232275",
      "size": 815766
     }
-   }
+   },
+   "news": []
   },
   "seega": {
    "id": "seega",
@@ -12499,7 +12753,8 @@
      "sha256": "1b4aacda14629732f786145e2e6fc0b1bb79ba59d4c3b853642ce9c06787fc0c",
      "size": 822909
     }
-   }
+   },
+   "news": []
   },
   "alquerque": {
    "id": "alquerque",
@@ -12549,7 +12804,8 @@
      "sha256": "fac8908f0e972111f1c97442a9e7059a2b89fde726b68b78fe802712dcb8c1de",
      "size": 848644
     }
-   }
+   },
+   "news": []
   },
   "tabula": {
    "id": "tabula",
@@ -12599,7 +12855,8 @@
      "sha256": "49e9e818a613439d59b555fd58d0e08aea8efbebcbbe5d08973331ac0fa2476a",
      "size": 834977
     }
-   }
+   },
+   "news": []
   },
   "pachisi": {
    "id": "pachisi",
@@ -12649,7 +12906,8 @@
      "sha256": "81bf0dd71c329042c9d4e4ff3cb4df492fbf331a3660de7f62704623f2ab3f56",
      "size": 851755
     }
-   }
+   },
+   "news": []
   },
   "shatranj": {
    "id": "shatranj",
@@ -12699,7 +12957,8 @@
      "sha256": "933c9e7e2031c8ada2cee9f9d0b9df39ad3c108fb6975c5cabe2409edfeff34b",
      "size": 837740
     }
-   }
+   },
+   "news": []
   },
   "patolli": {
    "id": "patolli",
@@ -12749,7 +13008,8 @@
      "sha256": "55cba7baeef1796df79b7861759e7e1d1586b5d6fdbc78a5baa929373e3ff0ce",
      "size": 798829
     }
-   }
+   },
+   "news": []
   },
   "nard": {
    "id": "nard",
@@ -12801,7 +13061,14 @@
      "sha256": "e7487d2e5a7d91d9bf80da691de905a9e719d2f57483174da02b630b10648c6e",
      "size": 9850341
     }
-   }
+   },
+   "news": [
+    {
+     "version": "0.7.0",
+     "date": "2026-10-28",
+     "notes": "- Money play: single games with the cube, gammons and backgammons\n- bgsage as the opponent at three strengths; two people at one keyboard\n- The tavla board in four sizes, centred, with the braille ornament\n- Keys and mouse, F1 help, `--demo`, `--seed`"
+    }
+   ]
   },
   "dominos": {
    "id": "dominos",
@@ -12849,7 +13116,14 @@
      "sha256": "9709e08ed9fcd9d2dff78906bb0ef098ca82a4aeaaa97b46b3bf1537edaef2fb",
      "size": 1095777
     }
-   }
+   },
+   "news": [
+    {
+     "version": "0.5.0",
+     "date": "2026-10-28",
+     "notes": "- The Block game, the Draw game and All Fives, chosen on the menu\n- Two to four players, partners at four (sitting opposite)\n- The computer at three strengths\n- Local network play: the host runs the game, tables found by LAN\n  broadcast or a typed address, empty seats filled by the computer, the\n  host moves players between seats\n- Keys and mouse, help (F1 or ?), `--demo`"
+    }
+   ]
   }
  }
 }
