@@ -1,0 +1,11 @@
+<!doctype html><meta charset="utf-8">
+<link rel="stylesheet" href="../vendor/asciinema-player/asciinema-player.css">
+<link rel="stylesheet" href="../css/site.css">
+<div style="width:600px" class="term" id="a"></div><div style="width:600px" class="term" id="b"></div><div style="width:600px" class="term" id="c"></div>
+<script src="../vendor/asciinema-player/asciinema-player.min.js"></script>
+<script>
+const o={poster:'npt:12',fit:'width',controls:false,theme:'asciiverse'};
+AsciinemaPlayer.create('../casts/solitty.cast',document.getElementById('a'),o);
+AsciinemaPlayer.create('../casts/solitty.cast',document.getElementById('b'),{...o,terminalFontFamily:'"Iosevka Term AV", monospace'});
+AsciinemaPlayer.create('../casts/solitty.cast',document.getElementById('c'),{...o,terminalLineHeight:1.2});
+</script>

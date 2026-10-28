@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Programs on Asciiverse</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="vendor/asciinema-player/asciinema-player.css">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+<main id="app"></main>
+<script src="vendor/asciinema-player/asciinema-player.min.js"></script>
+<script src="js/site.js"></script>
+<script>
+(async () => {
+  const app = document.getElementById("app");
+  const items = (await loadCatalog().catch(() => [])).filter(t => t.kind === "program");
+  app.append(header("Catalog", "programs"));
+  const wrap = el(`<div class="wrap"></div>`);
+  app.append(wrap);
+  wrap.append(library({
+    label: "Programs", items,
+    // grouped by what they are
+    groups: [
+      { label: "MUD clients", items: items.filter(t => (t.topics || []).includes("mud-client")).sort((a, b) => a.title.localeCompare(b.title)), keepOrder: true },
+      { label: "Interpreters", items: items.filter(t => (t.topics || []).includes("interpreter")) },
+      { label: "Other programs", items: items.filter(t => !["mud-client", "interpreter"].some(k => (t.topics || []).includes(k))) },
+    ].filter(g => g.items.length),
+    badge: t => t.title[0].toUpperCase(),
+    detail: gameDetail,
+    empty: "Nothing here yet.",
+    home: main => {
+      if (items.length) { main.append(shelf("Programs", `${items.length}`, items)); return; }
+      main.append(el(`<section class="lib-empty"><h2>Programs are coming</h2>
+        <p>Terminal tools and toys: utilities, players and editors that live in the terminal, installed and launched through av like any game.</p>
+        <p>Nothing is in this part of the catalog yet. Made something that belongs here? <a href="submit.html">Submit a title</a>.</p></section>`));
+    },
+  }));
+  app.append(footer());
+})();
+</script>
+</body>
+</html>

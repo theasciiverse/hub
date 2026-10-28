@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Games on Asciiverse</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="vendor/asciinema-player/asciinema-player.css">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+<main id="app"></main>
+<script src="vendor/asciinema-player/asciinema-player.min.js"></script>
+<script src="js/site.js"></script>
+<script>
+(async () => {
+  const app = document.getElementById("app");
+  const titles = (await loadCatalog()).filter(t => t.kind === "game");
+  app.append(header("Catalog", "games"));
+  const wrap = el(`<div class="wrap"></div>`);
+  app.append(wrap);
+  const has = (t, ...words) => words.some(w => t.genre === w || (t.topics || []).includes(w));
+  wrap.append(library({
+    label: "Games", items: titles,
+    badge: t => t.title[0].toUpperCase(),
+    mark: t => t.old ? `<span class="m old-m">OLD!</span>` : t.new ? `<span class="m new-m">NEW!</span>` : "",
+    detail: gameDetail,
+    home: main => {
+      const shelves = [
+        ["New", "fresh in the catalog", titles.filter(t => t.new)],
+        ["OLD! Classics, rebuilt", "restorations and ports", titles.filter(t => t.old)],
+        ["Play together", "one keyboard or the LAN", titles.filter(t => has(t, "multiplayer", "lan", "hot-seat"))],
+        ["Puzzle", "", titles.filter(t => has(t, "puzzle"))],
+        ["Platformers", "", titles.filter(t => has(t, "platformer"))],
+        ["Action and arcade", "", titles.filter(t => has(t, "action", "arcade", "artillery", "pinball", "runner", "racing"))],
+        ["Every game", "A to Z", [...titles].sort((a, b) => a.title.localeCompare(b.title))],
+      ];
+      for (const [title, sub, list] of shelves) if (list.length) main.append(shelf(title, [sub, list.length].filter(Boolean).join(" · "), list));
+    },
+  }));
+  app.append(footer());
+})();
+</script>
+</body>
+</html>

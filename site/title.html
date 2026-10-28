@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Asciiverse</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="vendor/asciinema-player/asciinema-player.css">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+<main id="app"></main>
+<script src="vendor/asciinema-player/asciinema-player.min.js"></script>
+<script src="js/site.js"></script>
+<script>
+(async () => {
+  const app = document.getElementById("app");
+  const titles = await loadCatalog();
+  const id = new URLSearchParams(location.search).get("id") || "solitty";
+  const t = titles.find(x => x.id === id) || titles[0];
+  document.title = t.title + " on Asciiverse";
+  // the subnav tab and the breadcrumb follow the title's kind
+  const PAGES = { game: ["games", "games.html"], adventure: ["adventures", "adventures.html"], program: ["programs", "programs.html"], art: ["art", "art.html"], mud: ["muds", "muds.html"], movie: ["movies", "movies.html"] };
+  const [sub, page] = PAGES[t.kind] || ["games", "games.html"];
+  app.append(header("Catalog", sub));
+  const main = el(`<div class="wrap"></div>`);
+  app.append(main);
+
+  main.append(el(`<div class="crumbs"><a href="${page}">All ${t.kind}s</a> › ${t.genre ? `<a href="${page}">${esc(t.genre)}</a> › ` : ""}${esc(t.title)}</div>`));
+  main.append(el(`<div class="title-head"><h1>${esc(t.title)}</h1><span class="kind">${esc(t.kind)}</span>${t.old ? `<span class="old-pill">OLD!</span>` : ""}${t.new ? `<span class="old-pill" style="background:var(--green-hi);color:#07120a">NEW!</span>` : ""}</div>`));
+
+  // ---- top: big player + summary ----
+  const top = el(`<section class="app-top"><div class="left"></div><aside class="app-side"></aside></section>`);
+  const box = el(`<div class="term live"></div>`);
+  top.querySelector(".left").append(box);
+  main.append(top);
+  const player = AsciinemaPlayer.create(t.cast_url, box, { ...PLAYER_OPTS, controls: true, autoPlay: true, loop: true });
+  const ctl = el(`<div class="player-ctl"><div class="strip"></div></div>`);
+  const d = t.duration || 30;
+  [0.15, 0.4, 0.65, 0.9].forEach(f => {
+    const at = Math.round(d * f * 10) / 10;
+    const b = el(`<button aria-label="jump to ${at}s"></button>`);
+    b.append(tile(t, { hover: false, at }));
+    b.onclick = () => player.seek(at).then(() => player.play());
+    ctl.querySelector(".strip").append(b);
+  });
+  top.querySelector(".left").append(ctl);
+
+  const coll = t.collection ? (COLLECTIONS[t.collection] || { name: t.collection }) : null;
+  const side = top.querySelector(".app-side");
+  const still = tile(t, { hover: false });
+  if (t.old) still.append(el(`<div class="old">OLD!</div>`));
+  if (t.new) still.append(el(`<div class="new">NEW!</div>`));
+  side.append(still);
+  side.append(el(`<p class="one">${esc(t.description)}</p>`));
+  side.append(el(`<dl class="facts">
+      <dt>Version</dt><dd class="mono">${esc(t.version)}</dd>
+      <dt>Updated</dt><dd>${esc((t.updated_at || "").slice(0, 10))}</dd>
+      <dt>Developer</dt><dd><a href="${esc(t.developer?.url)}">${esc(t.developer?.name)}</a></dd>
+      ${t.upstream ? `<dt>Original</dt><dd><a href="${esc(t.upstream.url)}">${esc(t.upstream.name)}</a></dd>` : ""}
+      ${coll ? `<dt>Part of</dt><dd><a href="#collection">${esc(coll.name)}</a></dd>` : ""}
+      <dt>License</dt><dd class="mono">${esc(t.license)}</dd></dl>`));
+  side.append(el(`<div class="tags">${(t.topics || []).map(x => `<a class="tag" href="#">${esc(x)}</a>`).join("")}</div>`));
+
+  // ---- main column + sidebar ----
+  const body = el(`<div class="app-main"><div class="col"></div><aside></aside></div>`);
+  const col = body.querySelector(".col");
+  const get = el(`<div class="getbox"><span class="free">FREE</span><h2>Get ${esc(t.title)}</h2>
+    <p>Install and launch it with av. Updates are checked for you and only applied when you say so.</p></div>`);
+  get.append(installLine(t));
+  const plats = Object.entries(t.platforms || {});
+  get.append(el(`<div class="alt">or download directly: ${plats.map(([k, v]) => `<a href="${esc(v.url)}">${esc(k)}</a>`).join(" · ") || "no builds yet"}</div>`));
+  col.append(get);
+  const pv = provenance(t);
+  if (pv) col.append(pv);
+  col.append(el(`<article class="page">${renderPage(t.page || "")}</article>`));
+
+  const aside = body.querySelector("aside");
+  const r = t.requires || {};
+  const mt = t.min_terminal || {};
+  aside.append(el(`<div class="box"><h3>Terminal requirements</h3><ul class="req">
+    <li><span>Minimum size</span><span class="mono">${mt.cols || "?"}×${mt.rows || "?"}</span></li>
+    <li><span>Colors</span><span class="mono">${esc(r.color || "basic")}</span></li>
+    <li><span>UTF-8</span><span class="ok">${r.utf8 ? "yes" : "no"}</span></li>
+    <li><span>Mouse</span><span class="mono">${r.mouse ? "supported" : "no"}</span></li>
+    ${r.gamepad ? `<li><span>Gamepad</span><span class="mono">supported</span></li>` : ""}
+    ${(r.glyphs || []).length ? `<li><span>Font glyphs</span><span class="mono">${esc(r.glyphs.join(", "))}</span></li>` : ""}
+    ${(t.system_deps || []).length ? `<li><span>System libraries</span><span class="mono">${esc(t.system_deps.join(", "))}</span></li>` : ""}
+  </ul></div>`));
+  aside.append(el(`<div class="box"><h3>Platforms</h3><ul class="req">
+    ${plats.map(([k, v]) => `<li><span class="mono" style="font-size:11.5px">${esc(k)}</span><span class="mono">${(v.size / 1024 | 0)} KB</span></li>`).join("")}
+  </ul></div>`));
+  aside.append(el(`<div class="box links"><h3>Links</h3>
+    ${t.repo ? `<a href="https://github.com/${esc(t.repo)}">Source code</a>` : ""}
+    <a href="#">Release notes</a>
+    ${t.funding ? `<a href="${esc(t.funding)}">Support the developer</a>` : ""}
+    <a href="#">Report a problem</a></div>`));
+  main.append(body);
+
+  // ---- the rest of its collection ----
+  if (coll) {
+    const others = titles.filter(x => x.collection === t.collection && x.id !== t.id);
+    main.append(el(`<section class="sect" id="collection"><div class="sect-head"><h2>Also in ${esc(coll.name)}</h2>
+      <span class="sub">${others.length + 1} games${coll.url ? ` · <a href="${esc(coll.url)}">${esc(coll.url.replace(/^https?:\/\/(www\.)?/, ""))}</a>` : ""}</span></div>
+      ${coll.description ? `<p class="coll-desc">${esc(coll.description)}</p>` : ""}
+      <div class="coll-list">${others.map(x => `<a class="tag" href="title.html?id=${esc(x.id)}">${esc(x.title)}</a>`).join("")}</div></section>`));
+  }
+
+  // ---- more like this ----
+  const more = el(`<section class="sect"><div class="sect-head"><h2>More like this</h2></div><div class="grid"></div></section>`);
+  titles.filter(x => x.id !== t.id).slice(0, 3).forEach(x => {
+    const c = el(`<a class="cap" href="title.html?id=${x.id}"></a>`);
+    const tl = tile(x); if (x.old) tl.append(el(`<div class="old">OLD!</div>`));
+    c.append(tl);
+    c.append(el(`<div class="cap-body"><h4>${esc(x.title)}</h4><p>${esc(x.description)}</p><div class="cap-foot"><span class="genre">${esc(x.genre || x.kind)}</span><span class="plat">${platformsLabel(x)}</span></div></div>`));
+    more.querySelector(".grid").append(c);
+  });
+  main.append(more);
+  app.append(footer());
+})();
+</script>
+</body>
+</html>

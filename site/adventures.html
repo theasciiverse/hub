@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Text adventures on Asciiverse</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="vendor/asciinema-player/asciinema-player.css">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+<main id="app"></main>
+<script src="vendor/asciinema-player/asciinema-player.min.js"></script>
+<script src="js/site.js"></script>
+<script>
+(async () => {
+  const app = document.getElementById("app");
+  const all = await loadCatalog().catch(() => []);
+  const stories = all.filter(t => t.kind === "adventure");
+  app.append(header("Catalog", "adventures"));
+  const wrap = el(`<div class="wrap"></div>`);
+  app.append(wrap);
+
+  // For everyone who has never typed GO NORTH: what this is, before anything else
+  const WHAT = `<section class="what">
+    <div class="what-text">
+      <h1>A story you play <em>word by word.</em></h1>
+      <p>A text adventure tells you where you are, and you answer in plain words: go north, open the mailbox, take the lamp. The game understands, and the story moves on. No graphics, only your imagination. Adventure (1976) and Zork (1977) started it on university computers; people still write new ones every year.</p>
+      <div class="what-points">
+        <div><b>Type to play</b><span>Short sentences: look, take lamp, open door, inventory, help.</span></div>
+        <div><b>Take your time</b><span>Nothing happens until you type. Think, take notes, draw a map.</span></div>
+        <div><b>One player, many stories</b><span>An interpreter plays the story files, the way a music player plays songs.</span></div>
+      </div>
+      <p class="what-start">To start: pick a story. Each one comes with its interpreter built in.</p>
+    </div>
+    <pre class="what-demo"><span class="d">Forest Clearing</span>
+You are in a small clearing. Sunlight falls through the leaves onto an old stone well. A path leads east.
+
+<span class="p">&gt;</span> look in well
+Far below, something glints.
+
+<span class="p">&gt;</span> take rope
+<span class="a">Taken.</span>
+
+<span class="p">&gt;</span> tie rope to well<span class="c">_</span></pre>
+  </section>`;
+
+  const interpreters = IF_INTERPRETERS;
+  wrap.append(library({
+    label: "Text adventures", items: [...interpreters, ...stories],
+    groups: [
+      { label: "Interpreters", items: interpreters },
+      { label: "Stories", items: stories, empty: "The first stories are on their way: Zork I, II and III, Colossal Cave and Pirate Adventure." },
+    ],
+    badge: t => t.title[0].toUpperCase(),
+    detail: t => t.kind === "client" ? clientDetail(t) : gameDetail(t),
+    home: main => {
+      main.append(el(WHAT));
+      main.append(shelf("Interpreters", "one program plays many stories", interpreters, null, clientCard));
+      if (stories.length) main.append(shelf("Stories", `${stories.length}`, stories));
+      else main.append(el(`<section class="lib-empty"><h2>The stories are coming</h2>
+        <p>First up: <b>Zork I, II and III</b>, Infocom's originals, open source since 2025; <b>Colossal Cave Adventure</b> (1976), where it all began; and Scott Adams' <b>Pirate Adventure</b> (1978). After them, a curated set of new games from the yearly Interactive Fiction Competition.</p></section>`));
+    },
+  }));
+  app.append(footer());
+})();
+</script>
+</body>
+</html>

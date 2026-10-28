@@ -1,0 +1,4 @@
+{"version":3,"term":{"cols":100,"rows":30,"type":"xterm-256color"},"timestamp":1791823965,"idle_time_limit":2.0,"env":{"LANG":"C.UTF-8","COLORTERM":"truecolor","TERM":"xterm-256color"}}
+[0.362, "o", "~o0O*WELLECOME TO HELLEMOO*O0o~\r\r\n"]
+[0.159, "o", "\r\r\nYou must be 18 years old to play this game.\r\r\n\r\r\nTo request a character:\r\r\n\u001b[1m  request <player_name> for <email_address>\u001b[0m\r\r\nTo connect with an existing player: \r\r\n\u001b[1m  connect <player> <password>\u001b[0m\r\r\nIf you forgot your password: \r\r\n\u001b[1m  password <player> for <email_address>\u001b[0m\r\r\n\r\r\n(server v1.10.4 up 11:22:51:43, 0 players and 1 admins connected out of 19 active players)\r\r\n"]
+[11.751, "x", "0"]

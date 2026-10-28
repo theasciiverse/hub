@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Asciiverse</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="vendor/asciinema-player/asciinema-player.css">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+<main id="app"></main>
+<script src="vendor/asciinema-player/asciinema-player.min.js"></script>
+<script src="js/site.js"></script>
+<script>
+(async () => {
+  const app = document.getElementById("app");
+  const catalog = await loadCatalog();
+  const titles = catalog.filter(t => t.kind === "game");
+  const muds = catalog.filter(t => t.kind === "mud");
+  app.append(header("Catalog", "home"));
+  const main = el(`<div class="wrap"></div>`);
+  app.append(main);
+
+  // ---- banner: say what this is first, because the previews look like anything but a terminal ----
+  const banner = el(`<section class="banner">
+    <div class="win"><div class="win-bar"><b class="hb-btn" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M7 3h2v4h4v2H9v4H7V9H3V7h4z"/></svg></b><span>player@asciiverse: ~</span><b class="hb-btn" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M6.5 2a4.5 4.5 0 0 1 3.6 7.2l3.6 3.6-1.4 1.4-3.6-3.6A4.5 4.5 0 1 1 6.5 2zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z"/></svg></b><b class="hb-btn" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M2 3h12v2H2zm0 4h12v2H2zm0 4h12v2H2z"/></svg></b><b class="wc" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M4 10h8v1.5H4z"/></svg></b><b class="wc" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M4 4h8v8H4zm1.5 1.5v5h5v-5z"/></svg></b><b class="wc" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M4.4 3.3 8 6.9l3.6-3.6 1.1 1.1L9.1 8l3.6 3.6-1.1 1.1L8 9.1l-3.6 3.6-1.1-1.1L6.9 8 3.3 4.4z"/></svg></b></div><div class="term live" id="av-demo"></div></div>
+    <div class="pitch">
+      <h1><em>Take back</em><br>your terminal.</h1>
+      <p>Games were born in the terminal. The Oregon Trail, Trek, Adventure, Zork and MUD were played on teletypes and green screens, one character at a time. Then came windows, Macs and game consoles, and the terminal was relegated to work.</p>
+      <p>Well, <b>we are taking it back!</b> Every game, demo and adventure on Asciiverse is a homage to the terminal era, and everything runs in a glorious tty. Every glyph, character and block. Nothing more, nothing less.</p>
+      <p>Made something for the terminal? <a href="submit.html">Bring yours home too.</a></p>
+      <a class="cta" href="get-av.html">Install av</a>
+      <div class="small">${catalog.length} titles and counting · Linux, macOS and Windows</div>
+    </div></section>`);
+  main.append(banner);
+  mountPlayer(banner.querySelector("#av-demo"), "casts/av-demo.cast", { ...PLAYER_OPTS, autoPlay: true, loop: true });
+
+  // ---- featured carousel ----
+  const featured = titles.filter(t => t.featured).sort((a, b) => a.featured - b.featured);
+  const sect = el(`<section class="sect"><div class="sect-head"><h2>Featured</h2><span class="sub">watch it play, then install it from your terminal</span></div></section>`);
+  // Steam's carousel: dimmed neighbours either side, arrows over them, dots below
+  const carousel = el(`<div class="carousel" tabindex="-1">
+    <button class="peek prev" aria-label="previous title"><span class="arrow">‹</span></button>
+    <div class="hero"><div class="hero-term"></div><aside class="hero-side"></aside></div>
+    <button class="peek next" aria-label="next title"><span class="arrow">›</span></button></div>`);
+  const hero = carousel.querySelector(".hero");
+  const dots = el(`<div class="dots"></div>`);
+  sect.append(carousel, dots);
+  main.append(sect);
+  let idx = 0, current;
+  function show(i) {
+    idx = (i + featured.length) % featured.length;
+    const t = featured[idx];
+    current?.player?.dispose?.();
+    const box = el(`<div class="term live"></div>`);
+    current = box;
+    const ht = hero.querySelector(".hero-term"); ht.replaceChildren(box);
+    box.player = AsciinemaPlayer.create(t.cast_url, box, { ...PLAYER_OPTS, autoPlay: true, loop: true, startAt: Math.max(0, (t.thumbnail_at || 5) - 4) });
+    if (t.old) box.append(el(`<div class="old big">OLD!</div>`));
+    if (t.new) box.append(el(`<div class="new big">NEW!</div>`));
+    const side = hero.querySelector(".hero-side");
+    side.replaceChildren(el(`<div>
+      <h3><a href="title.html?id=${t.id}" style="color:inherit">${esc(t.title)}</a></h3></div>`));
+    side.append(el(`<p class="one">${esc(t.description)}</p>`));
+    const strip = el(`<div class="strip"></div>`);
+    const d = t.duration || 30;
+    [0.2, 0.4, 0.6, 0.8].forEach(f => {
+      const b = el(`<button aria-label="jump"></button>`);
+      const at = Math.round(d * f * 10) / 10;
+      b.append(tile(t, { hover: false, at }));
+      b.onclick = () => box.player?.seek(at).then(() => box.player.play());
+      strip.append(b);
+    });
+    side.append(strip);
+    side.append(el(`<div class="tags">${(t.topics || []).slice(0, 5).map(x => `<a class="tag" href="#">${esc(x)}</a>`).join("")}</div>`));
+    side.append(installLine(t));
+    side.append(el(`<dl class="meta">
+      <dt>Developer</dt><dd>${esc(t.developer?.name)}</dd>
+      ${t.upstream ? `<dt>Original</dt><dd>${esc(t.upstream.name)}</dd>` : ""}
+      <dt>Runs on</dt><dd class="mono">${platformsLabel(t) || "LNX"}</dd></dl>`));
+    dots.querySelectorAll("button").forEach((b, j) => b.classList.toggle("on", j === idx));
+    for (const [cls, d] of [["prev", -1], ["next", 1]]) {
+      const n = featured[(idx + d + featured.length) % featured.length];
+      const peek = carousel.querySelector(`.peek.${cls}`);
+      peek.querySelector(".term")?.player?.dispose?.();
+      peek.querySelector(".term")?.remove();
+      peek.prepend(tile(n, { hover: false }));
+      peek.setAttribute("aria-label", (d < 0 ? "previous: " : "next: ") + n.title);
+    }
+  }
+  // moves on by itself, holds still while the pointer or focus is on it
+  let timer, held = false;
+  const go = i => { show(i); clearInterval(timer); timer = setInterval(() => { if (!held && !document.hidden) show(idx + 1); }, 10000); };
+  carousel.querySelector(".peek.prev").onclick = () => go(idx - 1);
+  carousel.querySelector(".peek.next").onclick = () => go(idx + 1);
+  carousel.addEventListener("pointerenter", () => (held = true));
+  carousel.addEventListener("pointerleave", () => (held = false));
+  carousel.addEventListener("focusin", () => (held = true));
+  carousel.addEventListener("focusout", () => (held = false));
+  carousel.addEventListener("keydown", e => {
+    if (e.target.closest("input, .ap-player")) return;
+    if (e.key === "ArrowLeft") go(idx - 1);
+    if (e.key === "ArrowRight") go(idx + 1);
+  });
+  featured.forEach((t, j) => { const b = el(`<button aria-label="${esc(t.title)}"></button>`); b.onclick = () => go(j); dots.append(b); });
+  if (featured.length) go(0);
+
+  // ---- topic shelves ----
+  const has = (t, ...words) => words.some(w => t.genre === w || (t.topics || []).includes(w));
+  const shelves = [
+    ["OLD! Classics, rebuilt", "restorations and ports of games that earned their place", titles.filter(t => t.old)],
+    ["Originals and homages", "made for the terminal", titles.filter(t => !t.old)],
+    ["Puzzle", "think first, then move", titles.filter(t => has(t, "puzzle"))],
+    ["Platformers", "run, jump, fall, again", titles.filter(t => has(t, "platformer"))],
+    ["Play together", "on one keyboard or across the LAN", titles.filter(t => has(t, "multiplayer", "lan", "hot-seat"))],
+    ["Action and arcade", "quick hands", titles.filter(t => has(t, "action", "arcade", "artillery", "pinball", "runner", "racing"))],
+  ];
+  for (const [title, sub, list] of shelves) if (list.length) main.append(shelf(title, sub + ` · ${list.length}`, list, "games.html"));
+
+  // text adventures: stories you play word by word
+  const stories = catalog.filter(t => t.kind === "adventure");
+  if (stories.length) main.append(shelf("Text adventures", `stories you play word by word · ${stories.length}`, stories, "adventures.html"));
+
+  // art & demos: art in text, still or in motion
+  const art = catalog.filter(t => t.kind === "art");
+  if (art.length) main.append(shelf("Art & Demos", `art in text, still or in motion · ${art.length}`, art, "art.html"));
+
+  const mudSect = el(`<section class="sect"><div class="sect-head"><h2>MUDs</h2><span class="sub">persistent online worlds, some running for more than thirty years</span><a class="more" href="muds.html">see all ${muds.length}</a></div><div class="rows"></div></section>`);
+  const mr = mudSect.querySelector(".rows");
+  [...muds].sort((a, b) => (a.since || 9999) - (b.since || 9999)).slice(0, 3).forEach(m => {
+    const addr = `${m.connect.host} ${m.connect.port}`;
+    const r = el(`<div class="row home-mud"><div class="since">${m.since || "?"}</div>
+      <div><h4><a href="muds.html" style="color:inherit">${esc(m.title)}</a></h4><p>${esc(m.description)}</p></div>
+      <div class="side"></div></div>`);
+    const line = el(`<div class="install"><code>telnet ${esc(addr)}</code><button>copy</button></div>`);
+    copyButton(line.querySelector("button"), "telnet " + addr);
+    r.querySelector(".side").append(line);
+    mr.append(r);
+  });
+  main.append(mudSect);
+
+  main.append(el(`<section class="sect"><div class="soon-pair">
+    <a class="soon-card" href="programs.html"><h3>Programs</h3><p>Terminal tools and toys: utilities, players and editors that live in the terminal.</p><span>coming</span></a>
+    <a class="soon-card" href="movies.html"><h3>Movies</h3><p>ASCII films and animations, made to be watched in a terminal.</p><span>coming</span></a>
+  </div></section>`));
+
+  app.append(footer());
+})();
+</script>
+</body>
+</html>

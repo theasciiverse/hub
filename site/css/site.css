@@ -1,0 +1,650 @@
+/* Asciiverse website, design mockup.
+   Structure after the Steam client and store (dense, panelled, dark slate),
+   browsing after itch.io (tags, grids), terminal identity from the casts
+   themselves: every preview is a black terminal tile. */
+
+:root {
+  /* surfaces, darker than Steam's #1b2838 / #23262e */
+  --bg: #0a0d11;
+  --bg-deep: #06080b;
+  --panel: #10151b;
+  --panel-2: #161c24;
+  --panel-3: #1d2530;
+  --line: #222b36;
+  --line-2: #2e3946;
+
+  /* text, after Steam's #dcdedf / #8b929a / #67707b */
+  --text: #d5dbe1;
+  --text-dim: #8a949e;
+  --text-faint: #5b6570;
+
+  /* Asciiverse accents: phosphor green for actions, amber for highlights */
+  --green: #5fbf45;
+  --green-hi: #7fdc5e;
+  --green-deep: #2f6b23;
+  --amber: #ffb000;
+  --amber-soft: #e9c27a;
+  --red: #d9534f;
+
+  --term-bg: #0a0c0e;
+  --radius: 3px;
+
+  --font-ui: "IBM Plex Sans", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+
+/* The Asciiverse palette for every cast, in av and on the website.
+   Basic colors are the only thing a theme changes; 256-color and RGB stay exact.
+   Green doubles as card-table felt (solitty), so it is a felt green, not neon. */
+.asciinema-player-theme-asciiverse {
+  --term-color-foreground: #c9d1cb;
+  --term-color-background: #0a0c0e;
+  --term-color-0: #0a0c0e; /* the same as the background: curses games mix explicit black and the default background, and a different black showed as ghost patches */
+  --term-color-1: #d9474f;
+  --term-color-2: #3e9b4f;
+  --term-color-3: #e3a33b;
+  --term-color-4: #3a78c9;
+  --term-color-5: #a85cc4;
+  --term-color-6: #35a8a0;
+  --term-color-7: #c4c9ce;
+  --term-color-8: #4a525a;
+  --term-color-9: #ff6b6b;
+  --term-color-10: #7bdc62;
+  --term-color-11: #ffc857;
+  --term-color-12: #6aa6ff;
+  --term-color-13: #d68cf0;
+  --term-color-14: #6fe0d4;
+  --term-color-15: #f2f4f5;
+}
+
+/* terminal font for every cast: Iosevka Term, subset to Latin, symbols, box
+   drawing, blocks, Braille, legacy computing and octants (fonts/, OFL-1.1) */
+@font-face { font-family: "Iosevka Term AV"; font-weight: 400; font-display: swap;
+  src: url("../fonts/IosevkaTerm-Regular.sub.woff2?v=2") format("woff2"); }
+@font-face { font-family: "Iosevka Term AV"; font-weight: 700; font-display: swap;
+  src: url("../fonts/IosevkaTerm-Bold.sub.woff2?v=2") format("woff2"); }
+
+* { box-sizing: border-box; }
+html { background: var(--bg-deep); }
+body {
+  margin: 0;
+  background:
+    radial-gradient(1200px 500px at 50% -120px, #13202a 0%, transparent 70%),
+    var(--bg);
+  color: var(--text);
+  font: 14px/1.5 var(--font-ui);
+  min-height: 100vh;
+}
+a { color: var(--amber-soft); text-decoration: none; }
+a:hover { color: var(--amber); }
+code, kbd, .mono { font-family: var(--font-mono); }
+
+.wrap { width: min(1180px, 100% - 32px); margin: 0 auto; }
+
+/* ---------- header (Steam's top bar) ---------- */
+.top {
+  background: var(--bg-deep);
+  border-bottom: 1px solid #000;
+}
+.top .wrap { display: flex; align-items: center; gap: 64px; height: 100px; }
+.logo {
+  display: block;
+  font: 600 15px/1.0 var(--font-mono);
+  white-space: pre;
+  letter-spacing: 0;
+  background: linear-gradient(90deg, var(--green-hi), var(--green) 45%, var(--amber));
+  -webkit-background-clip: text; background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 0 6px rgba(95, 191, 69, .25));
+}
+.logo small {
+  display: block; margin-top: 6px;
+  font: 500 10px/1 var(--font-mono); letter-spacing: .32em;
+  color: var(--text-dim); -webkit-text-fill-color: var(--text-dim);
+}
+.mainnav { display: flex; gap: 48px; }
+.mainnav a {
+  font: 500 15px/1 var(--font-mono); letter-spacing: .1em; text-transform: uppercase;
+  color: var(--text); padding: 10px 0; border-bottom: 2px solid transparent;
+}
+.mainnav a.on { color: var(--green-hi); border-bottom-color: var(--green); }
+.mainnav a:hover { color: var(--green-hi); }
+.top .right { margin-left: auto; display: flex; gap: 10px; align-items: center; }
+.btn-av {
+  font: 600 12px/1 var(--font-mono); color: #0a0d11; background: var(--green);
+  padding: 7px 10px; border-radius: var(--radius);
+}
+.btn-av:hover { background: var(--green-hi); color: #0a0d11; }
+/* Support: a small menu of the donation pages */
+.support { position: relative; }
+.support summary { list-style: none; cursor: pointer; }
+.support summary::-webkit-details-marker { display: none; }
+.support-menu { position: absolute; right: 0; top: calc(100% + 8px); z-index: 40; min-width: 230px;
+  background: var(--term-bg); border: 1px solid var(--line-2); border-radius: 6px; padding: 6px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.45); }
+.support-menu a { display: block; padding: 8px 10px; border-radius: var(--radius); color: var(--text); }
+.support-menu a:hover { background: var(--line); }
+.support-menu b { display: block; font: 600 13px/1.3 var(--font-mono); color: var(--green-hi); }
+.support-menu span { font-size: 12px; color: var(--text-faint); }
+.top .right .mini { font-size: 12px; color: var(--text-faint); }
+
+/* ---------- sub nav (Steam's Browse / Categories bar) ---------- */
+/* the header (logo, menu row, catalog row) stays at the top of every page */
+.site-head { position: sticky; top: 0; z-index: 30; }
+.subnav { background: rgba(22, 28, 36, .94);
+  backdrop-filter: blur(6px); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line-2);
+  box-shadow: 0 6px 18px rgba(0,0,0,.35); }
+.subnav .wrap { display: flex; align-items: center; gap: 6px; height: 58px; }
+.subnav a { color: var(--text); font: 600 15px var(--font-mono); letter-spacing: .03em; padding: 9px 16px;
+  border-radius: var(--radius); border: 1px solid transparent; }
+.subnav a:hover { color: var(--green-hi); background: var(--panel-3); }
+.subnav a.on { color: var(--green-hi); background: #0d1a10; border-color: var(--green-deep); }
+.search {
+  margin-left: auto; display: flex; align-items: center; width: 320px;
+  background: var(--bg-deep); border: 1px solid var(--line-2); border-radius: var(--radius);
+}
+.search span { color: var(--green); font-family: var(--font-mono); padding: 0 8px; }
+.search input {
+  flex: 1; background: none; border: 0; outline: 0; color: var(--text);
+  font: 14px var(--font-mono); padding: 10px 8px 10px 0;
+}
+.search input::placeholder { color: var(--text-faint); }
+
+/* ---------- home banner: what this is, before anything else ---------- */
+.banner { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 56px; align-items: center;
+  padding: 48px 0 18px; }
+.win { background: var(--term-bg); border: 1px solid #1d1d20; border-radius: 12px 12px 8px 8px; overflow: hidden;
+  box-shadow: 0 18px 50px rgba(0,0,0,.55); }
+/* GNOME Terminal's header bar (libadwaita, dark): new tab on the left, title in
+   the middle, search, menu and round window buttons on the right */
+.win-bar { display: flex; align-items: center; gap: 6px; height: 40px; padding: 0 8px; background: #2e2e32;
+  border-bottom: 1px solid #1d1d20; font: 600 13px "Cantarell", "Inter", system-ui, sans-serif; color: #e8e8ea; }
+.win-bar span { flex: 1; text-align: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.win-bar b { display: grid; place-items: center; flex: none; }
+.win-bar svg { width: 14px; height: 14px; fill: currentColor; }
+.win-bar .hb-btn { width: 30px; height: 28px; border-radius: 6px; color: #e8e8ea; }
+.win-bar .hb-btn:first-child { background: #3a3a3f; }
+.win-bar .wc { width: 22px; height: 22px; border-radius: 50%; background: #3f3f45; color: #e8e8ea; margin-left: 4px; }
+.win-bar .wc svg { width: 12px; height: 12px; }
+.win .term { border: 0; box-shadow: none; }
+.pitch h1 { margin: 0 0 22px; font: 700 46px/1.08 var(--font-mono); letter-spacing: -.01em; }
+.pitch h1 em { font-style: normal; color: var(--amber); }
+.pitch p { margin: 0 0 16px; color: var(--text-dim); font-size: 17px; line-height: 1.6; max-width: 46ch; }
+.pitch p b { color: var(--text); font-weight: 600; }
+.pitch .cta { display: inline-block; margin-top: 10px; font: 600 16px/1 var(--font-mono); color: #07120a;
+  background: var(--green); padding: 15px 26px; border-radius: var(--radius); }
+.pitch .cta:hover { background: var(--green-hi); color: #07120a; }
+.pitch .small { margin-top: 18px; font: 13px var(--font-mono); color: var(--text-faint); }
+@media (max-width: 1000px) { .banner { grid-template-columns: 1fr; gap: 28px; padding-top: 28px; } .pitch h1 { font-size: 36px; } }
+
+/* ---------- section heads ---------- */
+.sect { margin: 34px 0 0; }
+.sect-head { display: flex; align-items: baseline; gap: 14px; margin-bottom: 10px; }
+.sect-head h2 {
+  margin: 0; font: 600 13px/1 var(--font-mono); letter-spacing: .14em; text-transform: uppercase;
+  color: var(--text);
+}
+.sect-head h2::before { content: "> "; color: var(--green); }
+.sect-head .sub { color: var(--text-faint); font-size: 12px; }
+.sect-head .more { margin-left: auto; font: 12px var(--font-mono); color: var(--text-dim);
+  border: 1px solid var(--line-2); padding: 3px 8px; border-radius: var(--radius); }
+.sect-head .more:hover { color: var(--text); border-color: var(--text-faint); }
+
+/* ---------- terminal tile (the capsule art) ---------- */
+.term {
+  position: relative; background: var(--term-bg); overflow: hidden;
+  border: 1px solid #000; box-shadow: 0 0 0 1px var(--line) inset;
+}
+.term .ap-wrapper, .term .ap-player { background: var(--term-bg) !important; }
+/* tiles keep the shape of a 100x30 terminal, so a narrower cast (rusty-pinball
+   at 56x30) sits centered with black at the sides instead of making its card taller */
+.term.fixed { aspect-ratio: 50 / 36; }
+.term.fixed .ap-wrapper { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; }
+.term .ap-overlay-start { display: none !important; }
+.term .ap-player { border-radius: 0 !important; }
+/* faint scanlines, the CRT nod; never strong enough to hurt legibility */
+.term::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: repeating-linear-gradient(to bottom, rgba(0,0,0,0) 0 2px, rgba(0,0,0,.10) 2px 3px);
+  mix-blend-mode: multiply;
+}
+.term.live::after { opacity: .6; }
+
+/* the OLD! banner: a diagonal badge of honor for classics */
+.old {
+  position: absolute; top: 14px; left: -34px; z-index: 3; transform: rotate(-45deg);
+  width: 130px; text-align: center;
+  font: 700 12px/22px var(--font-mono); letter-spacing: .18em;
+  color: #1a1000; background: var(--amber);
+  box-shadow: 0 2px 0 rgba(0,0,0,.4);
+}
+.old.big { top: 22px; left: -42px; width: 170px; font-size: 15px; line-height: 28px; }
+/* NEW! for fresh releases: same badge, phosphor green, opposite corner */
+.new {
+  position: absolute; top: 14px; right: -34px; z-index: 3; transform: rotate(45deg);
+  width: 130px; text-align: center;
+  font: 700 12px/22px var(--font-mono); letter-spacing: .18em;
+  color: #07120a; background: var(--green-hi);
+  box-shadow: 0 2px 0 rgba(0,0,0,.4);
+}
+.new.big { top: 22px; right: -42px; width: 170px; font-size: 15px; line-height: 28px; }
+
+/* ---------- hero (Steam's Featured & Recommended) ---------- */
+.carousel { position: relative; outline: none; }
+.carousel .peek { position: absolute; top: 7%; bottom: 7%; padding: 0; border: 0; cursor: pointer; overflow: hidden;
+  background: var(--term-bg); width: clamp(0px, calc((100vw - 1180px) / 2 - 24px), 230px); }
+.carousel .peek.prev { right: calc(100% + 12px); }
+.carousel .peek.next { left: calc(100% + 12px); }
+/* the neighbour's front picture at full panel size, cut off by the peek like Steam's */
+.carousel .peek .term { position: absolute; top: 0; bottom: 0; width: 840px; height: 100%; aspect-ratio: auto; border: 0;
+  opacity: .38; filter: saturate(.6); pointer-events: none; transition: opacity .15s ease; }
+.carousel .peek.prev .term { right: 0; }
+.carousel .peek.next .term { left: 0; }
+.carousel .peek:hover .term { opacity: .6; }
+.carousel .peek .arrow { position: absolute; top: 50%; transform: translateY(-50%); z-index: 2;
+  font: 300 64px/1 var(--font-mono); color: var(--text); text-shadow: 0 2px 12px #000; }
+.carousel .peek.prev .arrow { right: 14px; }
+.carousel .peek.next .arrow { left: 14px; }
+.carousel .peek:hover .arrow { color: var(--green-hi); }
+/* no room beside the panel: the arrows sit on its edges instead */
+@media (max-width: 1340px) {
+  .carousel .peek { top: 0; bottom: auto; height: 100%; width: 44px; background: transparent; z-index: 3; }
+  .carousel .peek .term { display: none; }
+  .carousel .peek.prev { right: auto; left: -6px; }
+  .carousel .peek.next { left: auto; right: -6px; }
+  .carousel .peek .arrow { font-size: 44px; left: 50% !important; right: auto !important; transform: translate(-50%, -50%); }
+}
+.hero { display: grid; grid-template-columns: 1fr 340px; background: var(--panel);
+  border: 1px solid var(--line); box-shadow: 0 10px 40px rgba(0,0,0,.45); }
+.hero .term { border: 0; box-shadow: none; }
+.hero-side { padding: 18px 18px 16px; display: flex; flex-direction: column; gap: 12px;
+  background: linear-gradient(180deg, var(--panel-2), var(--panel)); border-left: 1px solid var(--line); }
+.hero-side h3 { margin: 0; font: 600 22px/1.15 var(--font-mono); letter-spacing: .02em; }
+.hero-side .one { color: var(--text-dim); margin: 0; }
+.strip { display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px; }
+.strip button { padding: 0; border: 1px solid var(--line-2); background: var(--term-bg); cursor: pointer; }
+.strip button:hover, .strip button.on { border-color: var(--green); }
+.strip .term { pointer-events: none; }
+.hero-side .meta { margin-top: auto; display: grid; grid-template-columns: auto 1fr; gap: 3px 12px;
+  font-size: 12px; }
+.hero-side .meta dt { color: var(--text-faint); text-transform: uppercase; font: 11px/1.7 var(--font-mono); }
+.hero-side .meta dd { margin: 0; }
+.dots { display: flex; justify-content: center; gap: 6px; margin: 10px 0 0; }
+.dots button { width: 18px; height: 6px; border: 0; padding: 0; background: var(--line-2); border-radius: 2px; cursor: pointer; }
+.dots button.on { background: var(--green); width: 26px; }
+
+/* ---------- install line (av is the install button) ---------- */
+.install {
+  display: flex; align-items: stretch; border: 1px solid var(--green-deep); border-radius: var(--radius);
+  background: #07120a; overflow: hidden;
+}
+.install code { flex: 1; padding: 8px 10px; color: var(--green-hi); font-size: 13px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.install code::before { content: "$ "; color: var(--text-faint); }
+.install button {
+  border: 0; background: var(--green); color: #07120a; font: 600 12px var(--font-mono);
+  padding: 0 12px; cursor: pointer;
+}
+.install button:hover { background: var(--green-hi); }
+
+/* av's own one-line installer: tabs over an install line that wraps */
+.av-tabs { display: flex; gap: 2px; }
+.av-tabs button { border: 1px solid var(--line-2); border-bottom: 0; background: var(--panel-3);
+  color: var(--text-dim); font: 12px var(--font-mono); padding: 6px 12px; cursor: pointer;
+  border-radius: var(--radius) var(--radius) 0 0; }
+.av-tabs button:hover { color: var(--text); }
+.av-tabs button[aria-selected="true"] { background: #07120a; color: var(--green-hi); border-color: var(--green-deep); }
+.av-get .install { border-top-left-radius: 0; }
+.av-get .install code { white-space: normal; overflow-wrap: anywhere; line-height: 1.5; }
+.getav .note { margin: 10px 0 0; font-size: 12px; color: var(--text-faint); }
+
+/* ---------- tags ---------- */
+.tags { display: flex; flex-wrap: wrap; gap: 4px; }
+.tag { font: 11px/1 var(--font-mono); color: var(--text-dim); background: var(--panel-3);
+  padding: 4px 6px; border-radius: 2px; }
+.tag:hover { color: var(--text); background: var(--line-2); }
+
+/* ---------- capsule grid ---------- */
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 14px; }
+.cap { display: block; color: var(--text); background: var(--panel); border: 1px solid var(--line);
+  transition: transform .12s ease, border-color .12s ease, box-shadow .12s ease; }
+.cap:hover { color: var(--text); transform: translateY(-2px); border-color: var(--green-deep);
+  box-shadow: 0 8px 24px rgba(0,0,0,.5), 0 0 0 1px var(--green-deep); }
+.cap .term { border: 0; box-shadow: none; border-bottom: 1px solid var(--line); }
+.cap-body { padding: 9px 11px 11px; }
+.cap-body h4 { margin: 0; font: 600 15px/1.25 var(--font-mono); }
+.cap-body p { margin: 3px 0 8px; color: var(--text-dim); font-size: 12.5px; line-height: 1.4;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; min-height: 35px; }
+.cap-foot { display: flex; align-items: center; gap: 8px; font: 11px/1 var(--font-mono); color: var(--text-faint); }
+.cap-foot .genre { color: var(--amber-soft); }
+.cap-foot .plat { margin-left: auto; letter-spacing: .06em; }
+.cap .playing { position: absolute; right: 8px; bottom: 8px; z-index: 2; font: 10px/1 var(--font-mono);
+  color: var(--green-hi); background: rgba(0,0,0,.7); padding: 3px 5px; opacity: 0; transition: opacity .15s; }
+.cap:hover .playing { opacity: 1; }
+
+/* a list row variant, for the "everything" section (Steam's tabbed list) */
+.rows { border: 1px solid var(--line); background: var(--panel); }
+.row { display: grid; grid-template-columns: 184px 1fr auto; gap: 14px; align-items: center;
+  padding: 6px; color: var(--text); border-bottom: 1px solid var(--line); }
+.row:last-child { border-bottom: 0; }
+.row:hover { background: var(--panel-2); color: var(--text); }
+.row .term { border: 0; }
+.row h4 { margin: 0 0 2px; font: 600 14px var(--font-mono); }
+.row p { margin: 0; color: var(--text-dim); font-size: 12.5px; }
+.row .side { text-align: right; font: 11px/1.6 var(--font-mono); color: var(--text-faint); padding-right: 8px; }
+.row .side .genre { color: var(--amber-soft); }
+
+/* ---------- get av band ---------- */
+.getav { margin-top: 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+  border: 1px solid var(--line); background: var(--panel); }
+.getav > div { padding: 22px 24px; }
+.getav > * { min-width: 0; }
+.getav h3 { margin: 0 0 8px; font: 600 18px var(--font-mono); }
+.getav h3 b { color: var(--green-hi); }
+.getav p { margin: 0 0 14px; color: var(--text-dim); max-width: 48ch; }
+.getav pre { margin: 0; height: 100%; background: var(--term-bg); color: var(--term-fg, #c9d1cb);
+  font: 13px/1.55 var(--font-mono); padding: 18px 20px; border-left: 1px solid var(--line); overflow-x: auto; }
+.getav pre .p { color: var(--text-faint); }
+.getav pre .g { color: var(--green-hi); }
+.getav pre .a { color: var(--amber); }
+.getav pre .d { color: var(--text-faint); }
+
+/* ---------- scrolling topic shelves (Steam's rows) ---------- */
+.shelf { margin-top: 26px; }
+.shelf-body { position: relative; }
+.shelf-track { display: grid; grid-auto-flow: column; grid-auto-columns: calc((100% - 4 * 12px) / 5); gap: 12px;
+  overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; overscroll-behavior-x: contain; padding: 2px 0 4px; }
+.shelf-track::-webkit-scrollbar { display: none; }
+.shelf-track > .cap { scroll-snap-align: start; }
+.shelf .cap-body { padding: 7px 9px 9px; }
+.shelf .cap-body h4 { font-size: 13.5px; }
+.shelf .cap-body p { font-size: 12px; margin: 2px 0 6px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.shelf-arrow { position: absolute; top: 0; bottom: 0; width: 44px; border: 0; padding: 0; cursor: pointer; z-index: 3;
+  font: 300 46px/1 var(--font-mono); color: var(--text); background: transparent; }
+.shelf-arrow.prev { right: calc(100% + 4px); }
+.shelf-arrow.next { left: calc(100% + 4px); }
+.shelf-arrow:hover { color: var(--green-hi); background: linear-gradient(90deg, transparent, rgba(127,220,94,.06), transparent); }
+.shelf-arrow:disabled { opacity: .18; cursor: default; color: var(--text); background: transparent; }
+.shelf-dots { margin-top: 8px; }
+.shelf-dots button { width: 14px; height: 4px; }
+.shelf-dots button.on { width: 22px; }
+.shelf.fits .shelf-arrow, .shelf.fits .shelf-dots { visibility: hidden; }
+@media (max-width: 1290px) {
+  .shelf-arrow { width: 34px; background: rgba(6,8,11,.7); }
+  .shelf-arrow.prev { right: auto; left: 0; }
+  .shelf-arrow.next { left: auto; right: 0; }
+  .shelf-arrow:disabled { display: none; }
+}
+@media (max-width: 1000px) { .shelf-track { grid-auto-columns: calc((100% - 2 * 12px) / 3); } }
+@media (max-width: 620px) { .shelf-track { grid-auto-columns: 72%; } }
+
+/* ---------- home: MUD shelf and the branches still to come ---------- */
+.row.home-mud { grid-template-columns: 70px 1fr 260px; align-items: center; cursor: default; }
+.home-mud .since { font: 700 20px var(--font-mono); color: var(--amber); }
+.home-mud .side .install code { font-size: 12px; }
+.soon-pair { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+.soon-card { display: block; color: var(--text); background: var(--panel); border: 1px dashed var(--line-2); padding: 18px 20px; }
+.soon-card:hover { color: var(--text); border-color: var(--text-faint); }
+.soon-card h3 { margin: 0 0 6px; font: 600 16px var(--font-mono); }
+.soon-card p { margin: 0 0 10px; color: var(--text-dim); font-size: 13.5px; }
+.soon-card span { font: 11px var(--font-mono); letter-spacing: .14em; text-transform: uppercase; color: var(--amber); }
+@media (max-width: 900px) {
+  .soon-pair { grid-template-columns: 1fr; }
+  .row.home-mud { grid-template-columns: 56px 1fr; }
+  .row.home-mud .side { display: block; grid-column: 1 / -1; }
+}
+
+/* ---------- footer ---------- */
+.foot { margin-top: 56px; padding: 26px 0 40px; background: var(--bg-deep); border-top: 1px solid #000;
+  color: var(--text-faint); font-size: 12px; }
+.foot .wrap { display: flex; gap: 28px; flex-wrap: wrap; }
+.foot a { color: var(--text-dim); }
+.foot .ascii { font: 11px/1.2 var(--font-mono); white-space: pre; color: var(--line-2); }
+
+/* ---------- title page (Steam's app page) ---------- */
+.crumbs { margin: 22px 0 4px; font-size: 12px; color: var(--text-faint); }
+.crumbs a { color: var(--text-dim); }
+.title-head { display: flex; align-items: center; gap: 14px; margin-bottom: 12px; }
+.title-head h1 { margin: 0; font: 600 30px/1.1 var(--font-mono); letter-spacing: .01em; }
+.title-head .kind { font: 11px var(--font-mono); letter-spacing: .14em; text-transform: uppercase;
+  color: var(--text-faint); border: 1px solid var(--line-2); padding: 3px 6px; }
+.title-head .old-pill { font: 700 11px var(--font-mono); letter-spacing: .14em; background: var(--amber); color: #1a1000; padding: 4px 7px; }
+
+.app-top { display: grid; grid-template-columns: 1fr 324px; gap: 16px; padding: 16px; background:
+  linear-gradient(180deg, rgba(22,28,36,.85), rgba(16,21,27,.85)); border: 1px solid var(--line); }
+.player-ctl { display: flex; gap: 6px; margin-top: 8px; align-items: center; }
+.player-ctl .strip { grid-template-columns: repeat(4, 1fr); flex: 1; }
+.app-side { display: flex; flex-direction: column; gap: 12px; }
+.app-side .one { margin: 0; color: var(--text); font-size: 14px; line-height: 1.45; }
+.facts { display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; font-size: 12.5px; margin: 0; }
+.facts dt { color: var(--text-faint); font: 11px/1.75 var(--font-mono); text-transform: uppercase; }
+.facts dd { margin: 0; }
+
+.app-main { display: grid; grid-template-columns: 1fr 324px; gap: 22px; margin-top: 22px; }
+.getbox { background: linear-gradient(90deg, var(--panel-3), var(--panel-2)); border: 1px solid var(--line-2);
+  padding: 16px 18px; position: relative; }
+.getbox h2 { margin: 0 0 4px; font: 600 19px var(--font-mono); }
+.getbox p { margin: 0 0 12px; color: var(--text-dim); font-size: 12.5px; }
+.getbox .install { max-width: 520px; }
+.getbox .alt { margin-top: 10px; font-size: 12px; color: var(--text-faint); }
+.getbox .alt a { font-family: var(--font-mono); }
+.getbox .free { position: absolute; right: 16px; top: 16px; font: 600 12px var(--font-mono);
+  color: var(--green-hi); border: 1px solid var(--green-deep); padding: 3px 7px; letter-spacing: .1em; }
+
+.page { margin-top: 26px; }
+.page h2 { font: 600 13px/1 var(--font-mono); letter-spacing: .14em; text-transform: uppercase;
+  margin: 30px 0 10px; padding-bottom: 8px; border-bottom: 1px solid var(--line); color: var(--text); }
+.page h2::before { content: "## "; color: var(--green); }
+.page h3 { font: 600 14px var(--font-mono); margin: 18px 0 6px; }
+.page p { margin: 0 0 12px; color: #bcc4cc; max-width: 72ch; font-size: 14.5px; line-height: 1.65; }
+.page ul, .page ol { margin: 0 0 12px; padding-left: 22px; color: #bcc4cc; max-width: 72ch; }
+.page li { margin: 3px 0; line-height: 1.55; }
+.page li::marker { color: var(--green); }
+.page strong { color: var(--text); font-weight: 600; }
+.page code { font-size: 12.5px; background: var(--panel-3); color: var(--amber-soft); padding: 1px 5px; border-radius: 2px; }
+.page > p:first-child { font-size: 16px; color: var(--text); }
+
+.box { background: var(--panel); border: 1px solid var(--line); padding: 12px 14px; margin-bottom: 14px; }
+.box h3 { margin: 0 0 10px; font: 600 11px var(--font-mono); letter-spacing: .14em; text-transform: uppercase; color: var(--text-dim); }
+.req { list-style: none; margin: 0; padding: 0; font-size: 12.5px; }
+.req li { display: flex; justify-content: space-between; gap: 10px; padding: 5px 0; border-bottom: 1px solid var(--line); }
+.req li:last-child { border-bottom: 0; }
+.req li span:first-child { color: var(--text-faint); }
+.req .ok { color: var(--green-hi); font-family: var(--font-mono); }
+.links a { display: block; padding: 6px 8px; margin: 0 -8px; font-size: 13px; border-radius: 2px; }
+.links a:hover { background: var(--panel-2); }
+.links a::before { content: "→ "; color: var(--text-faint); }
+
+@media (max-width: 900px) {
+  .hero, .app-top, .app-main, .getav { grid-template-columns: 1fr; }
+  .getav pre { border-left: 0; border-top: 1px solid var(--line); }
+  .hero-side { border-left: 0; border-top: 1px solid var(--line); }
+  .top .wrap { height: auto; padding: 14px 0; flex-wrap: wrap; gap: 14px; }
+  .mainnav { gap: 22px; flex-wrap: wrap; }
+  .search { width: 100%; }
+  .subnav .wrap { flex-wrap: wrap; height: auto; padding: 6px 0; }
+  .row { grid-template-columns: 120px 1fr; }
+  .row .side { display: none; }
+}
+/* tighter shelf cards: developer name left out, platforms kept on one line */
+.shelf .cap-foot > span:nth-child(2) { display: none; }
+.shelf .cap-foot .plat { white-space: nowrap; }
+@media (max-width: 620px) { .mainnav { gap: 18px; } .mainnav a { font-size: 13px; letter-spacing: .06em; } }
+
+/* ---------- library pages (Steam's library: sidebar list, shelves or the selected title) ---------- */
+.lib { display: grid; grid-template-columns: 270px minmax(0, 1fr); gap: 0; margin-top: 22px;
+  border: 1px solid var(--line); background: var(--panel); min-height: 70vh; }
+.lib-side { border-right: 1px solid var(--line); background: var(--bg-deep); padding: 10px 0 14px;
+  display: flex; flex-direction: column; min-height: 0; }
+.lib-home { margin: 0 10px 8px; text-align: left; font: 600 14px var(--font-mono); color: var(--text); cursor: pointer;
+  background: var(--panel-3); border: 1px solid var(--line-2); border-radius: var(--radius); padding: 9px 12px; }
+.lib-home:hover, .lib-home.on { color: var(--green-hi); border-color: var(--green-deep); background: #0d1a10; }
+.lib-kind { display: flex; justify-content: space-between; margin: 4px 12px 8px; font: 600 11px var(--font-mono);
+  letter-spacing: .14em; text-transform: uppercase; color: var(--text-faint); }
+.lib-filter { display: flex; align-items: center; margin: 0 10px 8px; background: var(--panel); border: 1px solid var(--line-2); border-radius: var(--radius); }
+.lib-filter span { color: var(--green); font-family: var(--font-mono); padding: 0 8px; }
+.lib-filter input { flex: 1; min-width: 0; background: none; border: 0; outline: 0; color: var(--text); font: 13px var(--font-mono); padding: 8px 8px 8px 0; }
+.lib-list { overflow-y: auto; flex: 1; scrollbar-width: thin; scrollbar-color: var(--line-2) transparent; }
+.lib-list a { display: flex; align-items: center; gap: 10px; padding: 5px 12px; color: var(--text-dim); font-size: 14px; }
+.lib-list a:hover { color: var(--text); background: var(--panel-2); }
+.lib-list a.on { color: var(--text); background: var(--panel-3); box-shadow: inset 3px 0 0 var(--green); }
+.lib-list .badge { flex: none; width: 22px; height: 22px; display: grid; place-items: center; border-radius: 3px;
+  font: 700 12px var(--font-mono); color: #0a0d11; background: var(--green-deep); }
+.lib-list .name { flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.lib-list .m { font: 700 10px var(--font-mono); letter-spacing: .08em; }
+.lib-list .old-m { color: var(--amber); } .lib-list .new-m { color: var(--green-hi); }
+.lib-none { margin: 10px 14px; color: var(--text-faint); font-size: 13px; }
+.lib-main { min-width: 0; padding: 4px 24px 30px; }
+/* shelves inside the library: arrows top right, as in Steam's library */
+.lib .shelf { position: relative; margin-top: 22px; }
+.lib .shelf-body { position: static; }
+.lib .shelf-arrow { top: -4px; bottom: auto; width: 30px; height: 30px; font-size: 30px; line-height: 26px;
+  background: transparent; border-radius: var(--radius); }
+.lib .shelf-arrow.prev { left: auto; right: 38px; }
+.lib .shelf-arrow.next { left: auto; right: 0; }
+.lib .shelf-arrow:disabled { display: block; }
+.lib .shelf .sect-head { padding-right: 80px; }
+.lib .shelf-track { grid-auto-columns: calc((100% - 3 * 12px) / 4); }
+/* the selected title */
+.lib-detail { padding-top: 20px; }
+.lib-hero { background: var(--term-bg); border: 1px solid var(--line); }
+.lib-hero .term { border: 0; box-shadow: none; }
+.lib-bar { display: flex; align-items: center; gap: 22px; flex-wrap: wrap; margin: 0 0 18px; padding: 12px 14px;
+  background: linear-gradient(90deg, var(--panel-3), var(--panel-2)); border: 1px solid var(--line); border-top: 0; }
+.lib-bar .install { min-width: 260px; }
+.lib-bar dl { display: flex; gap: 6px 14px; margin: 0; font-size: 13px; flex-wrap: wrap; }
+.lib-bar dt { color: var(--text-faint); font: 11px/1.7 var(--font-mono); text-transform: uppercase; }
+.lib-bar dd { margin: 0 8px 0 0; }
+.lib-bar .store { margin-left: auto; font: 600 13px var(--font-mono); }
+.lib-detail h1 { margin: 0 0 8px; font: 600 28px/1.15 var(--font-mono); }
+.lib-detail .one { margin: 0 0 12px; color: var(--text-dim); font-size: 15px; max-width: 70ch; }
+.lib-detail .by { color: var(--text-faint); font-size: 13px; margin: 12px 0 0; }
+.new-pill { font: 700 11px var(--font-mono); letter-spacing: .14em; background: var(--green); color: #07120a; padding: 4px 7px; vertical-align: middle; }
+.lib-detail .old-pill { font: 700 11px var(--font-mono); letter-spacing: .14em; background: var(--amber); color: #1a1000; padding: 4px 7px; vertical-align: middle; }
+@media (max-width: 900px) {
+  .lib { grid-template-columns: 1fr; }
+  .lib-side { position: static; max-height: 320px; border-right: 0; border-bottom: 1px solid var(--line); }
+  .lib-main { padding: 4px 14px 24px; }
+  .lib .shelf-track { grid-auto-columns: calc((100% - 12px) / 2); }
+}
+
+/* MUD cards and page: no recording, so the face is the world's age and name */
+.mud-face, .mud-hero { position: relative; display: flex; flex-direction: column; justify-content: center; gap: 6px;
+  background: radial-gradient(ellipse at 30% 20%, #18221a, var(--term-bg) 70%); font-family: var(--font-mono); overflow: hidden; }
+.mud-face { aspect-ratio: 50 / 36; padding: 14px 16px; border-bottom: 1px solid var(--line); }
+.mud-face .yr, .mud-hero .yr { color: var(--amber); font-weight: 700; }
+.mud-face .yr { font-size: 30px; line-height: 1; }
+.mud-face .th, .mud-hero .th { color: var(--text-faint); font-size: 11px; letter-spacing: .16em; text-transform: uppercase; }
+.mud-face .nm { color: var(--green-hi); font-size: 15px; font-weight: 600; }
+.mud-hero { min-height: 300px; padding: 40px 44px; border: 1px solid var(--line); }
+.mud-hero .yr { font-size: 14px; letter-spacing: .14em; text-transform: uppercase; }
+.mud-hero .nm { color: var(--green-hi); font-size: 52px; font-weight: 700; line-height: 1.05; }
+.lib-main > .lera { margin-top: 22px; }
+.lib-empty { margin-top: 22px; padding: 40px 34px; border: 1px dashed var(--line-2); background: var(--panel-2); }
+.lib-empty h2 { margin: 0 0 10px; font: 600 24px var(--font-mono); }
+.lib-empty p { margin: 0 0 10px; color: var(--text-dim); max-width: 60ch; font-size: 15px; }
+
+/* the note under a tabbed install line */
+.tab-note { margin: 8px 0 0; font-size: 12.5px; line-height: 1.5; color: var(--text-dim); max-width: 70ch; }
+.tab-note .warn { color: var(--amber); }
+.tab-note .safe { color: var(--green-hi); }
+.tab-note code { font: 12px var(--font-mono); color: var(--amber-soft); }
+.lib-bar .av-get { flex: 1 1 420px; }
+.lib-group { margin: 10px 12px 4px; font: 600 10px var(--font-mono); letter-spacing: .16em; text-transform: uppercase; color: var(--text-faint); }
+
+/* the wordmark inside a terminal demo: the same green-to-amber gradient as the logo */
+.getav pre .wm { display: inline-block; background: linear-gradient(90deg, var(--green-hi), var(--green) 45%, var(--amber));
+  -webkit-background-clip: text; background-clip: text; color: transparent; }
+
+.since-badge { position: absolute; left: 8px; top: 8px; z-index: 2; font: 700 12px var(--font-mono); color: #1a1000;
+  background: var(--amber); padding: 3px 6px; }
+
+/* MUD clients */
+.client-hero { padding: 34px 40px; border: 1px solid var(--line); background: radial-gradient(ellipse at 20% 10%, #1b2018, var(--term-bg) 70%); font-family: var(--font-mono); }
+.client-hero .nm { display: block; color: var(--green-hi); font-size: 44px; font-weight: 700; line-height: 1.1; }
+.client-hero .th { display: block; margin-top: 6px; color: var(--text-faint); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; }
+.client-hero p { margin: 14px 0 0; color: var(--text-dim); font: 15px/1.55 var(--font-ui); max-width: 60ch; }
+.plat-row { display: grid; grid-template-columns: repeat(3, 1fr); border: 1px solid var(--line); border-top: 0; }
+.plat-cell { padding: 10px 14px; border-left: 1px solid var(--line); }
+.plat-cell:first-child { border-left: 0; }
+.plat-cell b { display: block; font: 600 13px var(--font-mono); }
+.plat-cell span { font-size: 12.5px; color: var(--text-dim); }
+.plat-cell.ok b { color: var(--green-hi); }
+.plat-cell.no b { color: var(--text-faint); }
+.plat-cell.no span { color: var(--amber); }
+.client-plat .off { opacity: .3; text-decoration: line-through; }
+
+/* the "what is this?" explainer at the top of a catalog section (MUDs, text adventures) */
+.what { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: 28px; align-items: center;
+  margin-top: 22px; padding: 26px 28px; background: var(--panel-2); border: 1px solid var(--line); }
+.what h1 { margin: 0 0 14px; font: 700 30px/1.15 var(--font-mono); }
+.what h1 em { font-style: normal; color: var(--amber); }
+.what p { margin: 0 0 14px; color: var(--text-dim); font-size: 15.5px; line-height: 1.6; max-width: 62ch; }
+.what-points { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 6px 0 14px; }
+.what-points div { background: var(--panel); border: 1px solid var(--line); padding: 10px 12px; }
+.what-points b { display: block; font: 600 13px var(--font-mono); color: var(--green-hi); margin-bottom: 4px; }
+.what-points span { color: var(--text-dim); font-size: 13px; line-height: 1.45; }
+.what .what-start { margin: 0; color: var(--text); font-size: 14px; }
+.what-demo { margin: 0; background: var(--term-bg); border: 1px solid var(--line-2); border-radius: 6px; padding: 16px 18px;
+  font: 13px/1.55 var(--font-mono); color: #c9d1cb; white-space: pre-wrap; }
+.what-demo .d { color: var(--text); font-weight: 600; }
+.what-demo .g { color: var(--green-hi); }
+.what-demo .a { color: var(--amber); }
+.what-demo .p { color: var(--text-faint); }
+.what-demo .c { color: var(--amber); }
+@media (max-width: 1100px) { .what { grid-template-columns: 1fr; } .what-points { grid-template-columns: 1fr; } }
+
+/* the Lera block (MUDs and Programs pages) */
+.lera { display: grid; grid-template-columns: 1fr 360px; border: 1px solid var(--line); background: var(--panel);
+  box-shadow: 0 10px 40px rgba(0,0,0,.45); }
+.lera-art { background: var(--term-bg); padding: 28px 30px; font: 13px/1.25 "Iosevka Term AV", var(--font-mono);
+  color: #8b8f86; white-space: pre; overflow: hidden; position: relative; min-height: 340px; }
+.lera-art .w { color: #c9a26b; font-size: 22px; line-height: 1.0; }
+.lera-art .g { color: var(--green-hi); }
+.lera-art .a { color: var(--amber); }
+.lera-art .d { color: #4a525a; }
+.lera-art .tag { position: absolute; right: 14px; top: 12px; font: 11px var(--font-mono); letter-spacing: .14em;
+  color: var(--amber); border: 1px solid #6b4a00; padding: 3px 7px; background: transparent; }
+.lera-side { padding: 20px; display: flex; flex-direction: column; gap: 12px; border-left: 1px solid var(--line);
+  background: linear-gradient(180deg, var(--panel-2), var(--panel)); }
+.lera-side h3 { margin: 0; font: 600 24px var(--font-mono); }
+.lera-side h3 small { display: block; margin-top: 4px; font: 12px var(--font-ui); color: var(--text-faint); }
+.lera-side p { margin: 0; color: var(--text-dim); }
+.lera-side ul { margin: 0; padding-left: 18px; color: var(--text); font-size: 13px; }
+.lera-side li { margin: 3px 0; }
+.lera-side li::marker { color: var(--green); }
+.lera .soon, .lera-side .soon { font: 11px var(--font-mono); color: var(--text-faint); }
+@media (max-width: 900px) { .lera { grid-template-columns: 1fr; } }
+
+/* Library pages (Games, Text adventures, MUDs, Programs, Movies) work like
+   an app: the header and the sidebar stay put, the sidebar list and the
+   main pane scroll on their own, and the footer sits at the end of the pane. */
+body.lib-page { height: 100vh; overflow: hidden; }
+body.lib-page #app { display: flex; flex-direction: column; height: 100vh; }
+body.lib-page #app > .site-head { flex: none; position: static; }
+body.lib-page #app > .wrap { flex: 1; min-height: 0; display: flex; flex-direction: column; padding-bottom: 14px; }
+body.lib-page #app > .foot { display: none; }
+body.lib-page .lib { flex: 1; min-height: 0; margin-top: 14px; grid-template-rows: minmax(0, 1fr); }
+body.lib-page .lib-side { height: 100%; overflow: hidden; }
+body.lib-page .lib-list { flex: 1; min-height: 0; }
+body.lib-page .lib-main { height: 100%; overflow-y: auto; scrollbar-width: thin; scrollbar-color: var(--line-2) transparent; }
+body.lib-page .lib-main > .foot { margin: 40px -24px -30px; }
+@media (max-width: 900px) {
+  .site-head { position: static; }
+  body.lib-page { height: auto; overflow: visible; }
+  body.lib-page #app { display: block; height: auto; }
+  body.lib-page .lib-main { height: auto; overflow: visible; }
+}
+
+/* Where it comes from: provenance text and the links to the original, our source and our changes */
+.prov p { margin: 0 0 10px; font-size: 13.5px; line-height: 1.55; color: var(--text); }
+.prov-links a { display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; padding: 5px 8px; margin: 0 -8px; font-size: 13px; border-radius: 2px; }
+.prov-links a:hover { background: var(--panel-2); }
+.prov-links b { min-width: 92px; font: 600 11px var(--font-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--text-faint); }
+.prov-links .host { font: 11.5px var(--font-mono); color: var(--text-faint); }
+.lib-prov { margin-top: 14px; border-top: 1px solid var(--line); padding-top: 12px; }
+.lib-prov h3 { margin: 0 0 8px; font: 600 11px var(--font-mono); letter-spacing: .14em; text-transform: uppercase; color: var(--text-dim); }
+.col > .prov { margin-top: 14px; padding: 14px 16px; }
+
+/* a collection's other games on a title page (SCHEMA.md, "Collections") */
+.coll-desc { color: var(--text-dim); font-size: 14px; margin: 0 0 10px; }
+.coll-list { display: flex; flex-wrap: wrap; gap: 6px; }
