@@ -1315,7 +1315,7 @@ new = true
 kind = "game"
 title = "Royal Game of Ur"
 description = "The oldest board game with known rules: race your pieces past the rosettes of a 4,500-year-old board, in four reconstructions"
-provenance = "Asciiverse made Royal Game of Ur in Rust in 2026. The rules are Irving Finkel's reconstructions from a Babylonian tablet of 177 BC, and R. C. Bell's from 1960."
+provenance = "Asciiverse made Royal Game of Ur in Rust in 2026. The rules are Irving Finkel's reconstructions from a Babylonian tablet of 177 or 176 BC, and R. C. Bell's from 1960."
 genre = "board"
 license = "GPL-3.0-or-later"
 repo = "theasciiverse/ancient-games"
@@ -1336,7 +1336,9 @@ Pick your rules:
 - **Finkel 2017**: the one most people play today
 - **British Museum 1990s**: five pieces and no safe rosette, a meaner race
 - **R. C. Bell 1960**: a betting game; pieces enter only on a five, and a rosette makes your opponent pay
-- **The Babylonian tablet**: five different birds, knucklebones you dare to throw, and the scribe's own fortunes ("You will draw fine beer")
+- **The Babylonian tablet**: five different birds, knucklebones you dare to throw, and every rosette a bet, won by landing and paid for by passing
+
+In the two betting games your purse carries over from game to game. Lose it all and you'll know why the Babylonians kept their accounts in clay.
 
 Play the computer at three strengths, or a friend at the same keyboard.
 
@@ -1345,13 +1347,15 @@ Play the computer at three strengths, or a friend at the same keyboard.
 - **Space** or **Enter**: throw
 - **Arrows** or **Tab**: choose a piece; **Enter**: move it
 - **D**: dare the ox bone (tablet rules)
-- **Mouse**: click a lit piece
-- **F1**: the rules and where they come from; **M**: menu; **Q**: quit
+- **Mouse**: click to throw, then click a lit piece
+- **F1** or **?**: the rules and where they come from; **M**: menu; **Q**: quit
+- **O**: the braille ornament on or off
 
 ## Options
 
 - `--demo`: the computer plays both sides
 - `--seed N`: the same throws every time
+- `--plain`: start without the ornament, for fonts that draw braille thin
 """
 
 [[title]]
@@ -1375,7 +1379,7 @@ page = """**PLAY YOUR WAY THROUGH THE NETHERWORLD.**
 
 For three thousand years, Egypt played Senet. Pharaohs played it, scribes played it, and in time the dead played it too: the board became the soul's journey through the netherworld, and sets were buried with their owners, Tutankhamun among them.
 
-Throw the four sticks, count the light sides, and race your pieces along the S-shaped track and off the board. Guard your pieces in pairs, block with three in a row, swap places with a lonely enemy. The House of Beauty must be landed on. The House of Water must not. And the last three houses each want an exact throw, and the gods are not in a hurry.
+Throw the four sticks, count the light sides, and race your pieces along the S-shaped track and off the board. Guard your pieces in pairs, block with three in a row, swap places with a lonely enemy. The House of Beauty must be landed on. The House of Water must not. And the last houses want just the right throw, and the gods are not in a hurry.
 
 Nobody kept the rules, only thirty squares, a handful of sticks and a lot of tomb paintings of people having a great time. So choose your reconstruction:
 
@@ -1390,13 +1394,15 @@ Play the computer at three strengths, or a friend at the same keyboard.
 - **Space** or **Enter**: throw
 - **Arrows** or **Tab**: choose a move; **Enter**: make it
 - **R**: rescue a piece from the water (Kendall, seven pieces)
-- **Mouse**: click a lit piece
-- **F1**: the rules and what is known; **M**: menu; **Q**: quit
+- **Mouse**: click to throw, then click a lit piece
+- **F1** or **?**: the rules and what is known; **M**: menu; **Q**: quit
+- **O**: the braille ornament on or off
 
 ## Options
 
 - `--demo`: the computer plays both sides
 - `--seed N`: the same throws every time
+- `--plain`: start without the ornament, for fonts that draw braille thin
 """
 
 [[title]]
@@ -1420,9 +1426,9 @@ page = """**RACE YOUR PHARAOHS UP THE COILED SNAKE. MIND THE LIONS.**
 
 Five thousand years ago, Egyptians played a game on a snake: a serpent coiled round its own head, its body cut into squares, with little lions, lionesses and marbles. Then everyone stopped playing it, and the rules went with them. This is a 2024 reconstruction, built from the old boards, pieces and tomb pictures of clenched fists and open hands.
 
-Your pharaoh is a marble at the snake's tail. Hide one to five marbles in your fist, and your opponent guesses how many. Guess wrong, and your pharaoh slithers forward that far. Guess right, and theirs moves instead, and they may set a lion on yours!
+Your pharaoh is a marble at the snake's tail. Hide one to five marbles in your fist; your opponent guesses how many. They guess wrong: your pharaoh slithers forward that far. They guess right: theirs moves instead, and they may set a lion on yours!
 
-A pharaoh held by a lion goes nowhere until the lion is dead, and killing a lion is another guessing game, with smaller numbers and worse odds. Land on an enemy and you swap places. Two right guesses in a row bring a dead lion back. The first team to get every pharaoh to the head is reborn, and wins.
+A pharaoh held by a lion goes nowhere until the lion is dead, and killing a lion is a guessing game of its own: they hide one to three marbles, and one right guess kills it. Land on an enemy and you swap places. Two right guesses in a row bring a dead lion back. The first team to get every pharaoh to the head is reborn, and wins.
 
 Play one against one, or teams of two or three. The computer bluffs with the mix game theory says is safest, and on hard it notices that you always hide five. Two people at one keyboard get a look-away screen while the other hides.
 
@@ -1430,14 +1436,16 @@ Play one against one, or teams of two or three. The computer bluffs with the mix
 
 - **1** to **5**, or **arrows** and **Enter**: hide or guess
 - **Arrows** and **Enter**: choose a pharaoh
-- **Y** or **N**: set a lion loose
+- **Y** (or **Enter**) or **N**: set a lion loose
 - **Mouse**: click numbers, pharaohs and answers
-- **F1**: the rules and what is known; **M**: menu; **Q**: quit
+- **F1** or **?**: the rules and what is known; **M**: menu; **Q**: quit
+- **O**: the braille ornament on or off
 
 ## Options
 
 - `--demo`: the computer plays both teams
 - `--seed N`: the same choices every time
+- `--plain`: start without the ornament, for fonts that draw braille thin
 """
 
 [[title]]
@@ -1469,7 +1477,7 @@ The Norse rules are lost, so choose your reconstruction:
 - **Fetlar 11x11**: the Shetland rules, no shield wall and no fort
 - **Brandubh 7x7**: the quick Irish game, a king and four princes against eight Viking invaders
 - **Tablut 9x9, Linnaeus**: written down by Linnaeus in Lapland in 1732, the only tafl game anyone recorded while it was still played
-- **Tablut 9x9, Bell 1960**: the same game as an 1811 mistranslation left it, where the king can only be taken from all four sides. It is not fair, and it is fun
+- **Tablut 9x9, Bell 1960**: the same game as an 1811 mistranslation left it, where the king can only be taken from all four sides, and the game shouts Raichi! when he sees one way out, Tuichi! when he sees two. It is not fair, and it is fun
 
 Play the computer at three strengths, from either side, or a friend at the same keyboard.
 
@@ -1478,12 +1486,14 @@ Play the computer at three strengths, from either side, or a friend at the same 
 - **Arrows**: move the cursor
 - **Enter**: pick up a piece, then put it down on a lit square; **Esc**: drop it
 - **Mouse**: click a piece, then a square
-- **F1**: the rules and where they come from; **M**: menu; **Q**: quit
+- **F1** or **?**: the rules and where they come from; **M**: menu; **Q**: quit
+- **O**: the braille ornament on or off
 
 ## Options
 
 - `--demo`: the computer plays both sides
 - `--seed N`: the same game every time
+- `--plain`: start without the ornament, for fonts that draw braille thin
 """
 
 [[title]]
@@ -1505,16 +1515,16 @@ min_terminal = { cols = 100, rows = 30 }
 requires = { utf8 = true, color = "truecolor", mouse = true }
 page = """**ONE FOX. A WHOLE GAGGLE OF GEESE. SOMEBODY GETS EATEN.**
 
-One fox, thirteen geese (or seventeen, if you'd like the geese to stand a chance), and a board shaped like a plus sign.
+One fox, thirteen geese (or seventeen, if you like a crowd), and a board shaped like a plus sign.
 
 The fox jumps geese like a draughts piece and takes them off the board, several in one move if they're careless. The geese can't take anything at all. All they can do is waddle, one step at a time, and close in until the fox has nowhere left to go.
 
-Play the fox and it's a hunt: find the gap, wait for the slip, pick the gaggle apart. Play the geese and it's a siege: hold the line, never leave a goose with an empty point behind it, and squeeze. Get the fox down to three geese and he wins, because three can never trap him.
+Play the fox and it's a hunt: find the gap, wait for the slip, pick the gaggle apart. Play the geese and it's a siege: hold the line, never leave a goose with an empty point behind it, and squeeze. Thin the gaggle down to three and the fox wins, because three can never trap him. Hover a landing point and every goose the jump would eat turns red.
 
 Hunt games like this are old in the north: a medieval saga mentions one, and an English king's household bought silver-gilt foxes and hounds for one in the 1460s.
 
-- **Thirteen geese**: the older form; geese step any way along a line, and the fox has the better of it
-- **Seventeen geese**: more geese that never step back; played well, the geese should win
+- **Thirteen geese**: the older form; geese step any way along a line, and Bell swears that geese played right must win
+- **Seventeen geese**: four more geese, but none may ever step back; wedge them in and the fox wins anyway
 
 Play the computer at three strengths, as fox or geese, or a friend at the same keyboard.
 
@@ -1523,12 +1533,14 @@ Play the computer at three strengths, as fox or geese, or a friend at the same k
 - **Arrows**: move the cursor
 - **Enter**: pick up a piece, then put it down on a lit point; **Esc**: drop it
 - **Mouse**: click a piece, then a point
-- **F1**: the rules and where they come from; **M**: menu; **Q**: quit
+- **F1** or **?**: the rules and where they come from; **M**: menu; **Q**: quit
+- **O**: the braille ornament on or off
 
 ## Options
 
 - `--demo`: the computer plays both sides
 - `--seed N`: the same game every time
+- `--plain`: start without the ornament, for fonts that draw braille thin
 """
 
 [[title]]
@@ -1561,7 +1573,9 @@ That's mancala, and it isn't one game but hundreds, played from West Africa to t
 - **Congkak**: the Malay game on a boat-shaped board, where the sowing runs on and on from every loaded hole
 - **Pallanguli**: the Tamil game, where four seeds in a hole make a cow for its owner
 - **Toguz Kumalak**: nine holes of nine stones from the Kazakh steppe, where three stones in an enemy hole make it yours for good
-- **Bohnenspiel**: the bean game found in a Baltic manor house in 1908
+- **Bohnenspiel**: the bean game Fritz Jahn found on a Baltic baron's estate in 1908
+
+Some games run over several boards: Kalah to 40 points, Lane's Cairo games to 60, Pallanguli round after round until someone is cleaned out.
 
 Play the computer at three strengths, from either side, or a friend at the same keyboard.
 
@@ -1570,7 +1584,8 @@ Play the computer at three strengths, from either side, or a friend at the same 
 - **Left, Right**: choose a pit; **Enter**: sow it
 - **Mouse**: click a pit
 - **Any key or click** while seeds are moving: finish the move
-- **F1**: the rules and where they come from; **M**: menu; **Q**: quit
+- **Lane's games**: **Up** and **Down** drop a pebble in or take one out, **Tab** jumps to the other row, **R** scatters the rest, **Enter** when your hand is empty; then **T** turns the board round, **Enter** keeps it
+- **F1** or **?**: the rules and where they come from; **M**: menu; **Q**: quit
 
 ## Options
 
@@ -1585,7 +1600,7 @@ new = true
 kind = "game"
 title = "Morris"
 description = "Three in a row takes a man: Nine Men's Morris and its family, from the Roman game boards to Morabaraba of South Africa"
-provenance = "Asciiverse made Morris in Rust in 2026. Its rules follow R. C. Bell (1969), the World Mill Association's rules, Ralph Gasser (1996) and Mind Sports South Africa's Morabaraba rules."
+provenance = "Asciiverse made Morris in Rust in 2026. Its rules follow R. C. Bell (1960), the World Mill Association's rules, Ralph Gasser (1996) and Mind Sports South Africa's Morabaraba rules."
 genre = "board"
 license = "GPL-3.0-or-later"
 repo = "theasciiverse/ancient-games"
@@ -1612,15 +1627,17 @@ Play the computer at three strengths, from either side, or a friend at the same 
 
 ## Controls
 
-- **Arrows**: move the cursor; **Enter** or **Space**: enter a man, or pick one up and put it down on a lit point; **Esc**: let go
+- **Arrows**: move the cursor; **Enter** or **Space**: enter a man, or pick one up and put it down on a lit point; **Esc**: let go, or take back a mill before it bites
+- **O**: the carved ornament on or off
 - **Mouse**: click a point
 - After a mill, the men you may take are lit red: choose one
-- **F1**: the rules and where they come from; **M**: menu; **Q**: quit
+- **F1** or **?**: the rules and where they come from; **M**: menu; **Q**: quit
 
 ## Options
 
 - `--demo`: the computer plays both sides
 - `--seed N`: the same game every time
+- `--plain`: start without the ornament, for fonts that draw braille thin
 """
 
 [[title]]
@@ -1657,7 +1674,7 @@ Play the computer at three strengths, from either side, or a friend at the same 
 
 - **Arrows**: move the cursor; **Enter** or **Space**: move the man under it; the men that may move are lit
 - **Mouse**: click a man
-- **F1**: the rules and where they come from; **M**: menu; **Q**: quit
+- **F1** or **?**: the rules and where they come from; **M**: menu; **Q**: quit
 
 ## Options
 
@@ -1684,7 +1701,7 @@ min_terminal = { cols = 100, rows = 30 }
 requires = { utf8 = true, color = "truecolor", mouse = true }
 page = """**EVERY MOVE IS A JUMP. RUN OUT OF JUMPS AND YOU LOSE.**
 
-Every hollow of the board starts full, black and white in turn. Two stones are lifted out, and from then on every move is a jump: leap one of your opponent's stones into the empty hollow beyond and take it, and keep jumping along the same line if you can. The first player who can't jump has lost.
+Every hollow of the board starts full, black and white in turn. Two stones are lifted out, and from then on every move is a jump: leap one of your opponent's stones into the empty hollow beyond and take it, and keep jumping along the same line if you dare. The first player who can't jump has lost.
 
 Kōnane was played all across Hawaiʻi on boards cut into lava stone, with pebbles of coral and lava for stones. An officer on Captain Cook's third voyage saw it in 1779 on a board of 238 squares and thought it "much more intricate" than draughts. King Kamehameha, the story goes, sometimes beat his opponent in a single move.
 
@@ -1700,12 +1717,14 @@ Play the computer at three strengths, from either side, or a friend at the same 
 - **Arrows**: move the cursor; **Enter** or **Space**: lift a stone at the start, or pick one up and land it on a lit hollow; **Esc**: let go
 - **Mouse**: click
 - The stones a jump would take turn red when the cursor is on its landing
-- **F1**: the rules and where they come from; **M**: menu; **Q**: quit
+- **F1** or **?**: the rules and where they come from; **M**: menu; **Q**: quit
+- **O**: the braille ornament on or off
 
 ## Options
 
 - `--demo`: the computer plays both sides
 - `--seed N`: the same game every time
+- `--plain`: start without the ornament, for fonts that draw braille thin
 """
 
 [[title]]
@@ -1714,8 +1733,8 @@ year = 2026
 new = true
 kind = "game"
 title = "Seega"
-description = "Fill a square of holes with your kelbs, then step and trap: the Egyptian game Lane saw cut into the top of the Great Pyramid"
-provenance = "Asciiverse made Seega in Rust in 2026. Its rules follow Edward William Lane's Manners and Customs of the Modern Egyptians (1836), which gives them in full."
+description = "Fill a square of holes with your kelbs, then step and trap: the Egyptian game whose boards were cut into the top of the Great Pyramid"
+provenance = "Asciiverse made Seega in Rust in 2026. Its rules follow Edward William Lane's Manners and Customs of the Modern Egyptians (1836), the only early account of the game."
 genre = "board"
 license = "GPL-3.0-or-later"
 repo = "theasciiverse/ancient-games"
@@ -1727,9 +1746,9 @@ min_terminal = { cols = 100, rows = 30 }
 requires = { utf8 = true, color = "truecolor", mouse = true }
 page = """**FILL THE BOARD. THEN THE TRAPPING STARTS.**
 
-A square of holes, every one filled but the centre, two kelbs at a time. Then someone steps into that empty centre, and the game cracks open. Move a kelb so that an enemy lies trapped between it and another of yours, and you take it; as long as you can take, you keep moving. Box your opponent in completely, and they must give up a kelb just to open a way.
+A square of holes, every one filled but the centre, two kelbs at a time. Then someone steps into that empty centre, and the game cracks open. Move a kelb so that an enemy lies trapped between it and another of yours, and you take it; as long as you can take, you keep moving. Box your opponent in completely, and you must hand over a kelb of your own to open a way for them: even winning has its price.
 
-In the 1830s, an Englishman living in Cairo watched Egypt's farmers play seega in holes made in the ground, and saw seega boards cut into the stones on top of the Great Pyramid by the guides who took travellers up it.
+In the 1830s, an Englishman living in Cairo wrote down the seega Egypt's farmers played in holes made in the ground, and noted boards cut into the stones on top of the Great Pyramid by the guides who took travellers up it.
 
 - **Seega of five**: 5 by 5, twelve kelbs each
 - **Seega of seven**: 7 by 7, twenty-four kelbs each
@@ -1742,12 +1761,14 @@ Play the computer at three strengths, from either side, or a friend at the same 
 - **Arrows**: move the cursor; **Enter** or **Space**: set a kelb down, give one up, or pick one up and put it on a lit hole; **Esc**: let go
 - **Mouse**: click a hole
 - The kelbs a step would take are marked ✕ when the cursor is on where it goes
-- **F1**: the rules and where they come from; **M**: menu; **Q**: quit
+- **F1** or **?**: the rules and where they come from; **M**: menu; **Q**: quit
+- **O**: the braille ornament on or off
 
 ## Options
 
 - `--demo`: the computer plays both sides
 - `--seed N`: the same game every time
+- `--plain`: start without the ornament, for fonts that draw braille thin
 """
 
 [[title]]
@@ -1757,7 +1778,7 @@ new = true
 kind = "game"
 title = "Alquerque and Fanorona"
 description = "Leap and take on the lined board of Alfonso X's Book of Games, or sweep whole lines away in Madagascar's Fanorona"
-provenance = "Asciiverse made Alquerque and Fanorona in Rust in 2026. Its rules follow Alfonso X's Book of Games (1283, in Sonja Musser Golladay's translation), R. C. Bell (1969), W. Montgomery's account of Fanorona (1886) and Schadd and colleagues (2008)."
+provenance = "Asciiverse made Alquerque and Fanorona in Rust in 2026. Its rules follow Alfonso X's Book of Games (1283, in Sonja Musser Golladay's translation), R. C. Bell (1960), W. Montgomery's account of Fanorona (1886) and Schadd and colleagues (2008)."
 genre = "board"
 license = "GPL-3.0-or-later"
 repo = "theasciiverse/ancient-games"
@@ -1777,22 +1798,24 @@ Alquerque's first rules are in the Book of Games a Spanish king had made in 1283
 - **Alquerque after Bell**: the stricter game; taking compulsory, and no man steps backwards
 - **Fanorona, today's rules**: 9 by 5, twenty-two men each, approach and withdrawal
 - **Fanorona after Montgomery**: the rules as first written down, in 1886
-- **Vela**: the handicap game the winner must play after a defeat
+- **Vela**: the game after a defeat; last game's winner must hand over seventeen men, one at a time, before taking a single one back
 - **Fanoron-dimy**: fanorona on the little board of five by five
 
 Play the computer at three strengths, from either side, or a friend at the same keyboard.
 
 ## Controls
 
-- **Arrows**: move the cursor; **Enter** or **Space**: pick up a man, then put it on a lit point; a turn that takes again goes on from where the man stands; **Esc**: stop, where stopping is allowed
+- **Arrows**: move the cursor; **Enter** or **Space**: pick up a man, then put it on a lit point; a turn that takes again goes on from where the man stands; where one step could take two lines, point at the line you want swept away; **Esc**: let go of a man, or stop taking where the rules allow
 - **Mouse**: click
 - The men a step would take are marked ✕ when the cursor is on where it goes
-- **F1**: the rules and where they come from; **M**: menu; **Q**: quit
+- **F1** or **?**: the rules and where they come from; **M**: menu; **Q**: quit
+- **O**: the braille ornament on or off
 
 ## Options
 
 - `--demo`: the computer plays both sides
 - `--seed N`: the same game every time
+- `--plain`: start without the ornament, for fonts that draw braille thin
 """
 
 [[title]]
@@ -1802,7 +1825,7 @@ new = true
 kind = "game"
 title = "Tabula"
 description = "The Roman ancestor of backgammon: fifteen men, three dice, and the one game position that survives from antiquity"
-provenance = "Asciiverse made Tabula in Rust in 2026. Its rules follow the reconstructions of Louis Becq de Fouquières (1869), R. G. Austin (1934), R. C. Bell (1969) and H. J. R. Murray."
+provenance = "Asciiverse made Tabula in Rust in 2026. Its rules follow the reconstructions of Louis Becq de Fouquières (1869), R. G. Austin (1934), R. C. Bell (1960) and H. J. R. Murray."
 genre = "board"
 license = "GPL-3.0-or-later"
 repo = "theasciiverse/ancient-games"
@@ -1816,7 +1839,7 @@ page = """**THE GAME THE EMPEROR LOST.**
 
 Fifteen men each, three dice, and a race round the board and off it. Each die moves one man. Two of your men together close a point; a single man is hit when an enemy lands on him, and must start all over again. The first to bear off all fifteen wins. If that sounds like backgammon, it should: this is its Roman ancestor.
 
-The Romans left boards by the hundred, dice towers, a tavern wall at Pompeii showing two players quarrelling over a throw, and exactly one recorded game: a poem tells how the emperor Zeno lost with a throw of 2, 5 and 6. Play it here, and the program finds the poet was right: that throw leaves Zeno only one play, and it ruins him.
+The Romans left boards by the hundred, dice towers, a tavern wall at Pompeii showing two players quarrelling over a throw, and exactly one recorded game: a poem tells how the emperor Zeno lost with a throw of 2, 5 and 6. Press F1 and see for yourself: the program sets up Zeno's board, and the poet was right. That throw leaves Zeno exactly one play, and it leaves eight of his men standing alone.
 
 - **Tabula, the colours opposite**: the sides run against each other, as in backgammon
 - **Tabula, the colours the same way**: both run the same way round, so every point is contested from the start
@@ -1828,12 +1851,14 @@ Play the computer at three strengths, from either side, or a friend at the same 
 
 - **Enter** or **Space**: throw; then arrows to a lit man, **Enter** to pick it up, a lit point to put it down, one die at a time; **Esc**: let go, or take back the last step
 - **Mouse**: click
-- **F1**: the rules and where they come from; **M**: menu; **Q**: quit
+- **F1** or **?**: the rules and where they come from; **M**: menu; **Q**: quit
+- **O**: the braille ornament on or off
 
 ## Options
 
 - `--demo`: the computer plays both sides
 - `--seed N`: the same game every time
+- `--plain`: start without the ornament, for fonts that draw braille thin
 """
 
 [[title]]
@@ -1855,26 +1880,28 @@ min_terminal = { cols = 100, rows = 30 }
 requires = { utf8 = true, color = "truecolor", mouse = true }
 page = """**THE GAME THAT BECAME LUDO, AS EMPERORS PLAYED IT.**
 
-A cross of four arms, four colours of four men, partners sitting opposite. Each man leaves the middle, runs right round the cross and comes home again: 84 steps. Land on a lone enemy man and he goes back to the start, unless he's safe on a castle. The partnership with all eight men home first wins.
+A cross of four arms, four colours of four men, partners sitting opposite. Each man leaves the middle (in chaupar they start out on the board), runs right round the cross and comes home again: 84 steps. Land on an enemy and he goes back to the start, unless he sits on a castle. A pair holds its square; but play Falkener's rules and a pair is at its own peril, and one man takes them both! The partnership with all eight men home first wins.
 
-At the emperor Akbar's court, around 1590, games could last three months, and a player who lost patience had to drink a cup of wine. The name comes from the best throw of the cowrie shells, twenty-five: pachis. The English took it home in the 1880s, and called it Ludo.
+At the emperor Akbar's court, around 1590, a sitting of sixteen games could last three months, and a player who lost patience had to drink a cup of wine. The name comes from the best throw of the cowrie shells, twenty-five: pachis. The English took it home in the 1880s, and called it Ludo.
 
 - **Pachisi after Tylor**: six cowries, the rules as recorded from Calcutta in 1879
-- **Pachisi after Falkener**: the rules of 1892
+- **Pachisi after Falkener**: the rules of 1892, as Bell reprinted them
 - **Chaupar after Abu'l-Fazl**: three long dice and no castles, the game of Akbar's court
 
-Play the computer at three strengths, or a friend at the same keyboard; each side plays both colours of its partnership.
+Play the computer at three strengths, from either partnership, or a friend at the same keyboard; each side plays both colours of its partnership.
 
 ## Controls
 
-- **Enter** or **Space**: throw; then arrows to a lit man, **Enter** to pick it up, a lit square to put it down; **P**: leave the rest of the throws unused
+- **Enter** or **Space**: throw; then arrows to a lit man, **Enter** to pick it up, a lit square to put it down; men sharing a square can march on together; **Esc**: let go; **P**: leave the rest of the throws unused
 - **Mouse**: click
-- **F1**: the rules and where they come from; **M**: menu; **Q**: quit
+- **F1** or **?**: the rules and where they come from; **M**: menu; **Q**: quit
+- **O**: the braille ornament on or off
 
 ## Options
 
 - `--demo`: the computer plays both sides
 - `--seed N`: the same game every time
+- `--plain`: start without the ornament, for fonts that draw braille thin
 """
 
 [[title]]
@@ -1900,10 +1927,10 @@ This is chess as it was a thousand years ago. The king, knight and rook move as 
 
 The masters of Baghdad played it at the caliph's court in the 9th and 10th centuries, and wrote it down, with over 1,600 problems that survive to this day. It came from India by way of Persia, and went on to Europe, where in time the counsellor and the elephant became the queen and the bishop.
 
-- **Shatranj**: the Baghdad masters' game; stalemating the enemy shah wins
+- **Shatranj**: the Baghdad masters' game; stalemate the enemy shah and you win, and a shah stripped bare can still bare yours straight back for a draw
 - **The Medinese victory**: whoever first strips the other's king bare wins at once
 - **Chaturanga, the Indian rules**: where a stalemated shah wins
-- **The elephant in the corner**: the Indian game, its elephant leaping along the ranks and files
+- **The elephant in the corner**: the Indian game, its elephant starting in the corner and leaping two squares straight along the ranks and files
 - **Al-Biruni's elephant**: "the trunk and the four feet", one more old elephant
 
 Play the computer at three strengths, from either side, or a friend at the same keyboard.
@@ -1912,12 +1939,14 @@ Play the computer at three strengths, from either side, or a friend at the same 
 
 - **Arrows**: move the cursor; **Enter** or **Space**: pick up a man, then put it on a lit square; **Esc**: let go
 - **Mouse**: click
-- **F1**: the rules and where they come from; **M**: menu; **Q**: quit
+- **F1** or **?**: the rules and where they come from; **M**: menu; **Q**: quit
+- **O**: the braille ornament on or off
 
 ## Options
 
 - `--demo`: the computer plays both sides
 - `--seed N`: the same game every time
+- `--plain`: start without the ornament, for fonts that draw braille thin
 """
 
 [[title]]
@@ -1943,18 +1972,22 @@ A cross painted on a mat, six stones each, and five black beans, each with a sin
 
 A Spanish friar in Mexico described patolli around 1579: the mat, the stones, the beans, the god of the beans, and the gamblers who, with nothing left, staked themselves, and became slaves for ever if they couldn't buy themselves back. The authorities tore up the mats and burned the beans, and nobody wrote the rules down. What you play here are the rules a games historian suggested in 1969, on the friar's equipment.
 
-Play the computer at three strengths, or a friend at the same keyboard.
+Your first throw picks the way round for every stone you own; one stone to a compartment, so nobody is ever taken.
+
+Play the computer at three strengths, as Red or Blue, or a friend at the same keyboard.
 
 ## Controls
 
 - **Enter** or **Space**: cast the beans; then arrows to a lit compartment, **Enter** to send a stone there; **B**: bear a stone off
 - **Mouse**: click
-- **F1**: the rules and where they come from; **M**: menu; **Q**: quit
+- **F1** or **?**: the rules and where they come from; **M**: menu; **Q**: quit
+- **O**: the braille ornament on or off
 
 ## Options
 
 - `--demo`: the computer plays both sides
 - `--seed N`: the same game every time
+- `--plain`: start without the ornament, for fonts that draw braille thin
 """
 
 [[title]]
