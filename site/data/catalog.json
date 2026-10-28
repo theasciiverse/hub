@@ -9941,6 +9941,65 @@
     }
    }
   },
+  "westering": {
+   "schema_version": 1,
+   "id": "westering",
+   "kind": "game",
+   "title": "Westering",
+   "description": "Take a wagon party two thousand miles from Independence to the Willamette Valley in 1848: outfit, pace and rations, hunting, seven rivers and the forts between.",
+   "year": 2026,
+   "license": "MIT",
+   "repo": "theasciiverse/westering",
+   "provenance": "A journey game in the line of The Oregon Trail (Don Rawitsch, Bill Heinemann and Paul Dillenberger, 1971), on the real road of 1848, written for Asciiverse in 2026.",
+   "topics": [
+    "oregon trail",
+    "journey",
+    "history",
+    "survival",
+    "wagon",
+    "1848",
+    "rust"
+   ],
+   "genre": "strategy",
+   "developer": {
+    "name": "Asciiverse",
+    "url": "https://asciiverse.sh"
+   },
+   "exec": {
+    "game": "westering",
+    "args": []
+   },
+   "min_terminal": {
+    "cols": 72,
+    "rows": 24
+   },
+   "requires": {
+    "utf8": false,
+    "color": "truecolor",
+    "mouse": false,
+    "gamepad": false
+   },
+   "media": {
+    "cast": "asciiverse/westering.cast",
+    "thumbnail_at": 29.5
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**TWO THOUSAND MILES. FIVE OF YOU. ONE WAGON.**\n\nIndependence, Missouri, spring 1848. Between you and the Willamette Valley\nlie the prairie, the Platte, the Rockies, the Snake River desert and the\nBlue Mountains. Name your party, choose the month you leave, and spend your\n$800 at the store: oxen, provisions, clothing, powder and shot, and spare\nparts for a wagon that will break.\n\nThen the road. Set the pace and the rations, rest when someone is failing,\nhunt buffalo on the plains and elk in the mountains, trade with the trains\nyou meet. Every grave you leave behind gets the words you give it.\n\n## The road\n\n- Twenty-five landmarks of the 1848 road, from Chimney Rock and\n  Independence Rock to South Pass, Fort Hall and the Blue Mountains, each\n  with a note on what stood there that year\n- Seven rivers to ford, float or ferry, high with snowmelt in May and June\n- Two forks: the dry Sublette Cutoff or Fort Bridger; the Barlow Road over\n  Mount Hood or a raft down the Columbia\n- Forts with trade rooms, dearer the further west you go\n\n## Controls\n\n- Arrow keys to choose, Enter to do it, Esc to go back\n- On the trail, the number keys pick from the menu at once, and Esc asks\n  before you leave the journey\n- In the store, Right or `+` buys and Left or `-` puts back\n",
+   "version": "0.1.0",
+   "updated_at": "2026-10-10T00:00:00Z",
+   "thumbnail_at": 29.5,
+   "cast_url": "/casts/westering.cast?v=1793169090",
+   "duration": 42.8,
+   "platforms": {
+    "x86_64-unknown-linux-gnu": {
+     "url": "/dev-releases/westering-x86_64-unknown-linux-gnu.tar.gz",
+     "sha256": "03c032f3d1d11fc5ef8a5dd9050a3972650cccfe10cc9c44da4a7a9e6ea7d4ae",
+     "size": 6888614
+    }
+   }
+  },
   "wolfpack-empire": {
    "schema_version": 1,
    "id": "wolfpack-empire",
