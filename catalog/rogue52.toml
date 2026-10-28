@@ -4,6 +4,7 @@ kind = "game"
 title = "Rogue 5.2"
 description = "Rogue as Berkeley had it in 1982: the Dungeons of Doom and the Amulet of Yendor, now with a list of everything you have identified and a way to ask what a trap is."
 year = 1982
+old = true
 license = "BSD-3-Clause"
 repo = "theasciiverse/rogue-restoration"
 collection = "rogue-restoration"

@@ -4,6 +4,7 @@ kind = "game"
 title = "UltraRogue"
 description = "Ten classes, Friendly Fiend's Flea Market, and eight unique artifacts deep in the Dungeons of Doom, from the Phial of Galadriel to the Wand of Yendor. Carry one home, if you can stand the side effects."
 year = 1985
+old = true
 # the BSD licence plus two clauses: "UltraRogue" and "urogue" may not
 # endorse or promote derived products, and "Products derived from this
 # software may not be called "UltraRogue" or "urogue" ... without prior

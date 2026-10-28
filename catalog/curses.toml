@@ -4,6 +4,7 @@ kind = "adventure"
 title = "Curses"
 description = "All you wanted was the old tourist map of Paris from the attic. Graham Nelson's long, witty and famously hard puzzle game turns a search of the family house into something much stranger."
 year = 1993
+old = true
 license = "LicenseRef-Free-Noncommercial"
 repo = "theasciiverse/stories"
 provenance = "Graham Nelson's Curses (1993) is a landmark of the years after Infocom."

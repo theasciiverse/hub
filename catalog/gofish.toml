@@ -1,6 +1,7 @@
 schema_version = 1
 id = "gofish"
 kind = "game"
+old = true
 title = "Go Fish"
 description = "The children's card game against a computer that remembers what you asked for: ask for ranks, go fish, and collect the most books of four."
 license = "BSD-3-Clause"

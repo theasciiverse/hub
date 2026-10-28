@@ -4,6 +4,7 @@ kind = "game"
 title = "Hack"
 description = "The 1985 dungeon crawl that NetHack grew from: down through the Dungeons of Doom for the Amulet of Yendor, with your little dog at your side."
 year = 1982
+old = true
 license = "BSD-3-Clause"
 repo = "theasciiverse/netbsd-games"
 collection = "bsdgames"

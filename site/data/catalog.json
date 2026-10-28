@@ -296,6 +296,7 @@
    "title": "Angband",
    "description": "A hundred levels of dungeon under a little town, and Morgoth, Lord of Darkness, waiting at the bottom. Choose a race and a class, buy what you can, and go down.",
    "year": 1990,
+   "old": true,
    "license": "GPL-2.0-only",
    "repo": "theasciiverse/angband",
    "provenance": "Alex Cutler and Andy Astrand wrote Angband at the University of Warwick in 1990 from the code of Umoria, and a line of maintainers, now the Angband Dev Team, has kept it going since.",
@@ -357,6 +358,7 @@
    "title": "AQuest",
    "description": "Mark Mackey's XQuest in the terminal: steer a drifting ship round the arena, grab every crystal, dodge the mines and leave through the gate, fifty levels deep",
    "year": 1994,
+   "old": true,
    "license": "LicenseRef-Free-Noncommercial",
    "repo": "theasciiverse/aquest",
    "provenance": "Mark Mackey wrote XQuest for DOS in Turbo Pascal and released it as shareware from 1994 to 1996. David ported version 1.3 to C and SDL2 as xquest-sdl, and AQuest carries that port's game logic line by line into Rust and Ratatui for the terminal.",
@@ -410,7 +412,6 @@
     "source": "github"
    },
    "page": "**NO INVASION FLEET. NO HIDEOUS MUCOIDS. JUST GEMS, MINES AND FIFTY LEVELS OF TROUBLE.**\n\n\"You're a jolly little ship dingus which shoots around a rather abstract\nlandscape collecting little gem thingies, while avoiding mines. Boring, you\nsay? Well, we kept the Super Kill-o-Zapper, and added LOTS of things to blow\nup. Happy?\" So promised Mark Mackey's XQuest manual in 1994, and he meant\nevery word.\n\nPick up every crystal on the level and the gate at the top opens; fly out through\nit to the next one. Fifty levels, each with more crystals, more mines, a\nnarrower gate, and from level 33 a gate that won't keep still.\n\nEvery level has a par time, counting down in the corner. Beat it and\neach second left is worth 500 points; overstay it and the whole game\nstarts to speed up. An extra ship comes every 15,000 points on the first\nlevels, every 100,000 later.\n\nYour ship steers by thrust and drifts on when you let go, so brake before\nthe wall: on every difficulty but Wimp, the wall is as deadly as a mine.\nYour shots fly the way you do, as fast as you do. Enemies come in through\nthe side gates, eighteen kinds of them: Grungers wander, Zippos curve,\nZingers and Snipes shoot, Miners lay mines, Meebies follow you,\nRetaliators fire back when they die, Tribblers burst into five, Clusters\ninto fifteen shots, and the Repulsor shoves you away. Catch a Supercrystal\nfor a power-up (Shield, AimedFire, RapidFire, MultiFire, AssFire,\nHeavyFire or Bounce; a banner says what you got and what it does, and the\nstatus bar shows all seven, lit while they last), and keep a smart bomb\nfor the moment it all goes wrong.\n\nThe game is the original, rule for rule: the same physics, levels, enemies\nand sounds, and Mark Mackey's sprites drawn in Braille dots and half\nblocks, cell by cell, so even a small terminal shows them in fine detail\nand full colour; at full size, his own status bar.\n\n## Controls\n\n- **Arrows**, **WASD** or the numpad: thrust\n- **Space** or **Enter**: fire (hold it with RapidFire)\n- **Shift**, **Z** or numpad **5**: brake\n- **B** or **X**: smart bomb\n- **P**: pause; **Esc**: quit the game; **V**: graphics (Mixed, Blocks\n  or Braille); **M**: sound\n- Mouse: move to thrust, left button fires, right bombs, middle brakes\n- Gamepad: stick or d-pad to thrust, **A** fires, **B** bombs, **X** or a\n  shoulder brakes, **Start** pauses\n\nBest in a terminal that reports key releases (kitty, foot, WezTerm,\nGhostty, Alacritty, iTerm2 and others), with the mouse or with a gamepad;\nelsewhere a held key stutters until the terminal's repeats start.\n\n## Options\n\n- `--mixed`, `--blocks`, `--braille`: how to draw\n- `--demo`: watch the built-in demo\n- `--record FILE`, `--play FILE`: record and play back demos in the\n  original `xquest.dmo` format\n- `--difficulty N`: 0 Wimp to 4 Inhuman\n- `--mute`: no sound\n\n## History\n\nMark Mackey wrote XQuest in Turbo Pascal for DOS, a Mode X game at\n320x240, and released it as shareware from 1994 to 1996. Make it to\nInhuman, the manual promised, and he'd send you a UUencoded GIF of a\ntenner.\n\nThirty years on, David, who played it as shareware in the mid-90s, ported\nversion 1.3 to C and SDL2 as xquest-sdl. AQuest\ncarries that port's game logic over to the terminal line by line: a demo\nrecorded in either one plays back in the other, frame for frame. The Hall\nof Fame and the demos keep the original file formats.\n\n## Credits\n\n- **XQuest**: Mark Mackey, 1994 to 1996\n- **xquest-sdl**: David, the C and SDL2 port this edition is built on\n- **AQuest**: the terminal edition, for Asciiverse\n\nFree to play and share, never sold.\n",
-   "new": true,
    "version": "1.0.8-av.1",
    "updated_at": "2026-10-27T16:47:58Z",
    "thumbnail_at": 41.0,
@@ -557,6 +558,7 @@
    "title": "Advanced Rogue 5.8",
    "description": "Fighter, magician, cleric or thief: go down into the Dungeons of Doom, take one of its unique artifacts from the monster that carries it, and bring it back. Few people ever make it out alive.",
    "year": 1984,
+   "old": true,
    "license": "LicenseRef-BSD-3-Clause-Name-Restriction",
    "repo": "theasciiverse/rogue-restoration",
    "collection": "rogue-restoration",
@@ -789,7 +791,6 @@
     "source": "github"
    },
    "page": "**TEN BOSSES. EACH ONE A GLYPH WITH A GRUDGE.**\n\nThe Sentinel. The Hoarder. The Watcher. The Infernal Imp. The Spiral Beast.\nThe Guardian of Order. The Swarm King. The Celestial Tyrant. The Clockwork\nLeviathan. And at the end of it all, The Chaos Reaper.\n\nYou fire at the boss whenever you move, and only then: standing still is\nsafe from nothing, so every dodge is an attack.\n\nEach boss fights in phases, with names like Compound Interest, Thousand\nEyes, Supernova and Last Rites. It opens with its old attack, then starts to\nmove and brings out new ones: aimed fans, rings that turn into spirals,\nshots raining from the top, walls with one gap, bullets that curve, speed\nup, bounce off the edges or home in, and lasers that show as a dotted\nline before they burn. Break a phase and every shot on screen turns into\npoints; break it without a scratch for a bonus.\n\nHold focus to move slowly through the tight spots, drop a bomb to clear\nthe shots round you, and brush past bullets to graze them for points and\nthe next bomb. A hit makes you blink for a moment; the sixth one ends it.\n\n## Modes\n\n- **Arcade**: all ten bosses in a row, with one score and your health\n  carried from fight to fight\n- **Practice**: any boss you have reached, with your best time\n- **Classic**: the original game as it was, rule for rule\n- Easy, Normal and Hard; a demo plays itself when the title is left alone\n\n## Controls\n\n- **Arrows** or **WASD**: move (and fire)\n- **Shift**, **Z** or **J** (hold): focus\n- **X**, **K** or **Space**: bomb\n- **Esc** or **P**: pause; **M**: sound on and off\n- **Enter**: choose; the mouse works in the menus\n- Gamepad: stick or d-pad to move, **A** or a shoulder button to focus,\n  **B** or **Y** to bomb, **Start** to pause\n\nBest in a terminal that reports key releases (kitty, foot, WezTerm,\nGhostty, Alacritty, iTerm2 and others) or with a gamepad; elsewhere a\nmove runs on a little after the key is let go.\n\n## Options\n\n- `--level N`: start Arcade at boss N\n- `--classic`: the original game\n- `--demo`: watch the computer play\n- `--mute`: no sound or music\n\n## History\n\nCarlos Alvarez made ASCII Wars! in Rust with the Bevy engine in January\n2025: ten bosses drawn with a CP437 font in a graphical window, each\nfiring rings and aimed shots at a ship that fires back while it moves.\nThis edition brings it to the terminal and builds a fuller game around\nit, with phases, moving bosses, new attacks, bombs, grazing, a score,\ncolour, sound and a chiptune for every boss. The original lives on\nunchanged as Classic.\n\n## Credits\n\n- ASCII Wars!: Carlos Alvarez (VikingosTeam), 2025,\n  [github.com/Alvarz/ascii-wars](https://github.com/Alvarz/ascii-wars)\n- Terminal port, and the Arcade game built round the original: Asciiverse\n- License: MIT\n",
-   "new": true,
    "version": "1.0.0-av.1",
    "updated_at": "2026-10-20T12:00:00Z",
    "thumbnail_at": 36.0,
@@ -872,6 +873,7 @@
    "title": "ATC",
    "description": "You're in the tower: type orders to jets and prop planes, launch them, land them, send them out the right exit, and never let two of them touch.",
    "year": 1986,
+   "old": true,
    "license": "BSD-3-Clause",
    "repo": "theasciiverse/bsdgames",
    "collection": "bsdgames",
@@ -992,6 +994,7 @@
    "title": "Battlestar",
    "description": "The last battlestar is coming apart around you: get off the ship, survive the fight in space, and explore a tropical island all the way to the goddess's throne.",
    "year": 1979,
+   "old": true,
    "license": "BSD-3-Clause",
    "repo": "theasciiverse/bsdgames",
    "collection": "bsdgames",
@@ -1053,6 +1056,7 @@
    "title": "Beneath a Typographic Sky",
    "description": "Revolution's Beneath a Steel Sky, the whole game, in your terminal: Union City rebuilt out of Braille dots, every word set in type, the speech and music as in 1994.",
    "year": 1994,
+   "old": true,
    "license": "GPL-3.0-or-later AND LicenseRef-Free-Noncommercial",
    "repo": "theasciiverse/beneath-a-typographic-sky",
    "provenance": "Revolution Software made Beneath a Steel Sky in 1994 and released it as freeware in 2003. This edition brings it to the terminal through a Rust port of ScummVM's engine.",
@@ -1370,6 +1374,7 @@
    "title": "BSD Backgammon",
    "description": "Backgammon as BSD shipped it in 1980: you against the computer or a friend, with the doubling cube, saved games and Teachgammon to teach you the rules.",
    "year": 1980,
+   "old": true,
    "license": "BSD-3-Clause",
    "repo": "theasciiverse/netbsd-games",
    "collection": "bsdgames",
@@ -1432,6 +1437,7 @@
    "title": "BSD Trek",
    "description": "Eric Allman's 1976 Trek for BSD Unix: hunt down the invading Klingons by warp, phaser and photon torpedo before the stardates run out, one typed command at a time.",
    "year": 1976,
+   "old": true,
    "license": "BSD-3-Clause",
    "repo": "theasciiverse/bsdtrek",
    "provenance": "Eric Allman wrote Trek at UC Berkeley in 1976 and it shipped with BSD's games; Kenji Rikitake's bsdtrek later made the FreeBSD and DragonFly BSD version build on Linux.",
@@ -1472,7 +1478,6 @@
    },
    "page": "**THE KLINGONS ARE INVADING. YOU HAVE ONE SHIP AND NOT MUCH TIME.**\n\nKlingon warships are spreading across the galaxy. Starbases are calling for\nhelp, inhabited star systems are under attack, and you have a limited number\nof stardates to destroy every last invader. You command the Enterprise.\n\nWarp between the quadrants, scan near and far, fight with phasers and photon\ntorpedoes, raise the shields, cloak, and dock at a starbase to refuel and\nrepair. Your bridge crew keep up a running commentary (\"Chekov: But captain,\nwe are not adjacent to a starbase.\"), and there are novas, black holes,\ntractor beams and a self-destruct sequence that asks for the password.\n\nGet it wrong and the game has a long list of ways to tell you. \"You ran into\nthe negative energy barrier.\" \"You have burned up in a star.\" \"Well, you\ndestroyed yourself, but it didn't do any good.\" Abandon ship and you are\n\"hereby put in charge of an antiquated but still functional ship, the Fairie\nQueene.\" Win, and you may even be promoted.\n\nIt plays like a 1970s terminal session: type a command, read the result.\nNothing is on screen until you ask for it, so the scans are your eyes.\n\n- **Eric Allman's original Trek**, written at Berkeley in 1976 and a BSD\n  game ever since\n- **Short, medium or long games**, at skill levels from novice to\n  impossible\n- **Every command can be shortened**, and `?` lists what each prompt\n  accepts\n\n## Controls\n\nType a command and press Enter. Each command can be shortened to its\nfirst letters, and anything the game needs that you leave out, it asks\nfor. `?` lists what it accepts at any prompt.\n\n- `srscan` and `lrscan`: short and long range scans\n- `move`: travel under warp power, at the factor set with `warp`;\n  `impulse` for short hops\n- `phasers` and `torpedo`: fight\n- `shield up` or `shield down`, `cloak`\n- `dock` and `undock` at a starbase, `rest` to repair\n- `status`, `damages`, `computer` for charts and course calculations\n- `dump` saves the game; answer `restart` to \"What length game\" to\n  continue it\n- `terminate` ends the game\n\nAt the start you choose the length (`short`, `medium`, `long`) and the\nskill (`novice` to `impossible`).\n\n## History\n\nEric Allman wrote Trek at UC Berkeley in 1976, and it was part of BSD's\ngames from then on. This edition comes from Kenji Rikitake's bsdtrek,\nthe FreeBSD and DragonFly BSD version made to build on Linux. The\nAsciiverse fixes the build for current compilers and Windows, keeps the\nsaved game safe from updates, and makes restoring work again: it had\nbeen broken on every current system.\n\nThe same game, without the Star Trek names and with the whole map always\non screen, is in the catalog as Space Pirate Hunt, from BSD Games.\n",
    "thumbnail_at": 12.0,
-   "old": true,
    "version": "0.1.0",
    "updated_at": "2026-10-10T00:00:00Z",
    "cast_url": "/casts/bsdtrek.cast?v=1791661841",
@@ -1555,6 +1560,7 @@
    "title": "Canfield",
    "description": "Solitaire for money: buy the deal for $13, earn $5 a card on the foundations, pay $1 a minute to think, and see whether your account is up at the end.",
    "year": 1980,
+   "old": true,
    "license": "BSD-3-Clause",
    "repo": "theasciiverse/netbsd-games",
    "collection": "bsdgames",
@@ -2541,6 +2547,7 @@
    "title": "Colossal Cave Adventure",
    "description": "The cave that started it all: find the way in, get the treasures past dwarves, a pirate and a troll, and say the magic word. The original text adventure, in its authors' final 430-point version.",
    "year": 1976,
+   "old": true,
    "license": "BSD-2-Clause",
    "repo": "theasciiverse/colossal-cave",
    "provenance": "Will Crowther wrote Adventure in 1976 and Don Woods expanded it in 1977. Eric S. Raymond ported their last version, Adventure 2.5 (1995, 430 points), to modern C as Open Adventure.",
@@ -2721,6 +2728,7 @@
    "title": "Cribbage",
    "description": "Fifteen-two, fifteen-four, and a pair is six: cribbage against a computer that counts every hand for you, first to 61, in a seven-game match where a skunk counts double.",
    "year": 1980,
+   "old": true,
    "license": "BSD-3-Clause",
    "repo": "theasciiverse/bsdgames",
    "collection": "bsdgames",
@@ -2916,6 +2924,7 @@
    "title": "Curses",
    "description": "All you wanted was the old tourist map of Paris from the attic. Graham Nelson's long, witty and famously hard puzzle game turns a search of the family house into something much stranger.",
    "year": 1993,
+   "old": true,
    "license": "LicenseRef-Free-Noncommercial",
    "repo": "theasciiverse/stories",
    "provenance": "Graham Nelson's Curses (1993) is a landmark of the years after Infocom.",
@@ -3231,6 +3240,7 @@
    "title": "Drop4",
    "description": "The shapes keep falling and the well keeps filling: turn them, slide them, pack every row tight before the stack hits the top.",
    "year": 1992,
+   "old": true,
    "license": "BSD-3-Clause",
    "repo": "theasciiverse/bsdgames",
    "collection": "bsdgames",
@@ -3796,6 +3806,7 @@
    "title": "Galaxis",
    "description": "Four lifeboats adrift, the passengers' air running out, and nothing to find them with but probes that count what they can see. Find all four in as few tries as you can.",
    "year": 1994,
+   "old": true,
    "license": "BSD-2-Clause",
    "repo": "theasciiverse/galaxis",
    "provenance": "Eric S. Raymond began Galaxis in 1994 as a curses clone of Christian Franz's Macintosh freeware game, and still maintains it.",
@@ -3857,6 +3868,7 @@
    "title": "Glider",
    "description": "John Calhoun's Glider 4.0 in the terminal: fly a paper glider through a house, riding the air from the floor vents past candles, toasters, darts and sparking outlets",
    "year": 1991,
+   "old": true,
    "license": "MIT",
    "repo": "theasciiverse/glider",
    "provenance": "John Calhoun wrote Glider 4.0 for the Macintosh in THINK Pascal, published by Casady & Greene in 1991, and released its source, art, sounds and houses in 2016.",
@@ -3909,7 +3921,6 @@
     "source": "github"
    },
    "page": "**A PAPER GLIDER. A WHOLE HOUSE. NOTHING HOLDING YOU UP BUT THE AIR.**\n\nYou are at the controls of a paper glider loose in a big old house, and\nthe way out is through every room of it. A glider only falls; what keeps\nit up is the air from the floor vents, so you drift from vent to vent,\nsteering left and right and climbing to the ceiling, while the room does\nits best to bring you down. \"Foresight and daring are rewarded,\" as John\nCalhoun put it in 1991.\n\nHe also confessed he had no intention of telling you what everything in\nthe rooms does: the floor, tables, shelves and books are most certainly\nbad, the clocks most certainly good (\"points, points, what's a game\nwithout points?\"), and you'll enjoy figuring out the rest. A few\nfreebies: candles lift you too, \"but not too close!\"; toast leaps from\nthe toaster, fish from their bowls; outlets spark, grease spills,\nshredders wait. And through the air come the balloons (\"slow and\nharmless looking, but not party invitations!\"), paper 'copters (\"of\nmysterious origin, but of dire design!\") and the darts: \"Fast and\nunforgiving... Out of way!\" Folded paper is an extra glider, a battery a\nburst of speed, rubber bands your only defense. Ducts and stairs lead on,\nswitches bring back the lights, the air or a fan, and the faster you\ncross a room, the bigger its time bonus.\n\nTwelve houses come with it, from The House and Calhoun's own Mad House to\nthe fans' houses of the day: the 120 rooms of the House of the Rising\nSun, the Glass House with a window in every room, and Hands-off House,\nwhich plays itself. Any Glider 4 house file plays too.\n\nIt is Calhoun's game, translated from his Pascal, with his art, sounds\nand houses read from his own files. The silhouette view is made for the\nterminal: the room softened behind box-drawn furniture, and everything\nthat moves or hurts drawn sharp in solid colour. Or press **V** for his\nart itself, in half blocks.\n\n**Catch the air. Mind the darts.**\n\n## Controls\n\n- **Left** and **Right** (or **,** and **.**): fly; let go and the glider\n  just falls\n- **Up** or **Enter**: burn the battery; **Space** or **Down**: fire a\n  rubber band\n- Mouse: point left or right of the room's middle to fly that way, as on\n  the Mac; the button burns the battery\n- Gamepad: d-pad or stick to fly, **A** fires, **B** or the right\n  trigger boosts, **Start** pauses\n- **Tab**: pause; **V**: the other view; **M**: sound; **B**: music;\n  **Q**: end the game\n- Type **Ozma** on the title screen for fifty gliders, as in the original\n\nBest in a terminal that reports key releases (kitty, foot, WezTerm,\nGhostty and others). Elsewhere a tap sets the glider going that way, as\nGlider's own tap control did; the mouse and a gamepad don't depend on it.\n\n## Options\n\n- `glider \"Mad House\"`: start in a built-in house; `--houses` lists them\n- `glider path/to/house`: play a Glider 4 house file from disk\n- `--watch`: no controls, for Hands-off House\n- `--silhouette`, `--original`: which view to start in\n- `--mute`: no sound\n\n## History\n\nCalhoun wrote Glider 4.0 for the Macintosh in THINK Pascal, and Casady &\nGreene published it in 1991, \"a wistful flight of fancy for those rainy\ndays\". It came with a Room Editor, and players built houses of their own\nand passed them around on America Online. Steve Sullivan offered $10 to\nthe first player to send him a screenshot of his House of the Rising Sun\nfinished, and soon after, Calhoun wrote asking to include it in a\ncollection of houses to be sold. Calhoun followed Glider 4 with Glider\nPRO in 1994, and released Glider 4's source, art, sounds and houses\nunder the MIT licence in 2016.\n\nThis edition keeps his rules and his house files as they were. Three\ntimers in Hands-off House are moved, as it was tuned on a slower Mac, so\nit still plays itself to the end.\n\n## Credits\n\n- **Glider 4.0**: John Calhoun, 1991, published by Casady & Greene;\n  sound code by Patrick Buckland, electric bass by John Gnaegy\n- **Houses**: John Calhoun (The House, Mad House), Ward Hartenstein\n  (Hands-off House, Glass House), Steve Sullivan (House of the Rising\n  Sun), JeffrC (House Full of Stuff and the one Next Door, House of\n  Doom), Tony Korlath (Lumpy's Home), Brian Eaton (Usher House); Combo\n  House joins The House to Mad House\n- **Terminal edition**: Asciiverse\n- License: MIT\n",
-   "new": true,
    "version": "0.1.0",
    "updated_at": "2026-10-10T00:00:00Z",
    "thumbnail_at": 12.0,
@@ -3987,6 +3998,7 @@
    "schema_version": 1,
    "id": "gofish",
    "kind": "game",
+   "old": true,
    "title": "Go Fish",
    "description": "The children's card game against a computer that remembers what you asked for: ask for ranks, go fish, and collect the most books of four.",
    "license": "BSD-3-Clause",
@@ -4050,6 +4062,7 @@
    "title": "Gomoku",
    "description": "Five in a row on a 19 by 19 board against a computer that builds threats and blocks yours. Beat it to the fifth stone.",
    "year": 1994,
+   "old": true,
    "license": "BSD-3-Clause",
    "repo": "theasciiverse/bsdgames",
    "collection": "bsdgames",
@@ -4196,6 +4209,7 @@
    "title": "Greed",
    "description": "Munch through a screen full of numbers, where every number you land on decides how far you move next. Eat as much as you can before you box yourself in.",
    "year": 1990,
+   "old": true,
    "license": "BSD-2-Clause",
    "repo": "theasciiverse/greed",
    "provenance": "Matt Day wrote Greed in C (to 3.0a, 1990); Eric S. Raymond has maintained it since and ported it to Rust in 2026.",
@@ -4237,7 +4251,6 @@
     "source": "github"
    },
    "page": "**EAT THE SCREEN. EVERY NUMBER DECIDES HOW FAR.**\n\nYou are the @, standing in a field of numbers that fills the screen. Pick\nany of eight directions and you munch your way along it: as many squares\nas the first number you meet. Wherever you stop, the next number is\nalready waiting. As the game's own readme warns: \"Beware! the length of\nyour next move is forced by the number you land on.\"\n\nYou can't leave the board, and you can't cross a square you've already\neaten. Paint yourself into a corner and that's it: when no move is left,\nthe game is over. Your score is every square you ate, shown beside it as\na share of the whole board.\n\n- **One rule, eight directions**: learn it in a minute, then try to stop.\n- **See your options**: press p and every move you can make lights up.\n- **The whole window**: av starts Greed fitted to your terminal, so a\n  big window means a big feast.\n- **High scores**: `greed -s` shows the best games.\n\n**Greedy? Good. Now don't get stuck.**\n\n## Controls\n\n- **Arrow keys**, **h j k l y u b n** or the **numeric keypad**: move in any of eight directions\n- **p**: show or hide the moves you can make\n- **Ctrl+L**: redraw the screen\n- **q**: quit\n\nMoving eats as many squares in that direction as the first number you\nmeet. You cannot leave the board or cross a square you have already eaten;\nwhen no move is left, the game ends. Your score is the number of squares\neaten.\n\n## Options\n\n- `-f`: fit the board to the terminal (av starts Greed this way)\n- `-w N`, `-h N`: set the board's width and height\n- `-p`: start with possible moves highlighted\n- `-r N`: fixed random seed, for replaying the same board\n- `-s`: show the high scores\n\n## History\n\nMatt Day wrote the C version and released it up to 3.0a in 1990; it\nprobably goes back to a DOS game of the 1980s. Eric S. Raymond took over\nmaintenance and has kept it going since, porting it to Rust in 2026.\n\n## Credits\n\n- C version: Matt Day\n- Maintainer and Rust port: [Eric S. Raymond](https://gitlab.com/esr/greed)\n- Asciiverse edition: Asciiverse\n- License: BSD-2-Clause\n",
-   "old": true,
    "version": "5.2-av.1",
    "updated_at": "2026-10-10T13:01:29Z",
    "thumbnail_at": 16.0,
@@ -4278,6 +4291,7 @@
    "title": "Hack",
    "description": "The 1985 dungeon crawl that NetHack grew from: down through the Dungeons of Doom for the Amulet of Yendor, with your little dog at your side.",
    "year": 1982,
+   "old": true,
    "license": "BSD-3-Clause",
    "repo": "theasciiverse/netbsd-games",
    "collection": "bsdgames",
@@ -4339,6 +4353,7 @@
    "title": "Hangman",
    "description": "Guess the computer's word a letter at a time, from 61,494 words of six letters or more. Seven misses and the gallows is finished.",
    "year": 1983,
+   "old": true,
    "license": "BSD-3-Clause",
    "repo": "theasciiverse/bsdgames",
    "collection": "bsdgames",
@@ -4582,6 +4597,7 @@
    "schema_version": 1,
    "id": "hunt",
    "kind": "game",
+   "old": true,
    "title": "Hunt",
    "description": "Deathmatch in a maze over your local network: no rooms, no treasure, no monsters, just the other hunters, your gun and a very, very big bomb.",
    "license": "BSD-3-Clause",
@@ -4949,6 +4965,7 @@
    "title": "Larn",
    "description": "Your daughter is dying of dianthroritis, and the only cure is somewhere in the caverns of Larn or the volcano below. Noah Morgan's 1986 roguelike, against the clock.",
    "year": 1986,
+   "old": true,
    "license": "LicenseRef-Free-Noncommercial",
    "repo": "theasciiverse/netbsd-games",
    "collection": "bsdgames",
@@ -5132,6 +5149,7 @@
    "title": "Mahjongg",
    "description": "Mahjong solitaire in the terminal: all ten of GNOME Mahjongg's layouts, from the Turtle to the Red Dragon, every deal solvable, by mouse or keys.",
    "year": 2026,
+   "new": true,
    "license": "GPL-3.0-or-later",
    "repo": "theasciiverse/mahjongg",
    "provenance": "radha wrote this terminal Mahjongg in Rust in 2026, with layouts and game logic from GNOME Mahjongg.",
@@ -5398,6 +5416,7 @@
    "title": "Miscom",
    "description": "Defend six cities from falling missiles: aim, fire, and catch the warheads in chains of explosions before they land. There are no bonus cities.",
    "year": 1995,
+   "old": true,
    "license": "GPL-2.0-or-later",
    "repo": "theasciiverse/miscom",
    "provenance": "Graham Richards wrote Miscom in C on curses (1995 to 1996), a terminal take on Missile Command; Russell Marks, who wrote Ztrack, added colour and sound and released it in 1998.",
@@ -5746,7 +5765,6 @@
     "source": "github"
    },
    "page": "**THE CODE IS FALLING. SOME OF IT IS YOURS.**\n\nThe falling green code of The Matrix, as CMatrix has drawn it in terminals since 1999, with one thing more: your own computer's network traffic falls in it too. Every packet sent and received is painted into the rain as a bold run, red for what goes out and magenta for what comes in. Start a download and watch magenta pour down the screen; leave the machine idle and it rains plain green.\n\n## Controls\n\n- **Any key**: quit (Asciiverse starts it in screensaver mode)\n\n## Options\n\nFrom a terminal, `ncmatrix` without `-s` takes keys while it runs: `N`\nturns the network display off and on, `a` asynchronous scroll, `b` and\n`B` bold, `0` to `9` the speed, `! @ # $ % ^ &` the colour, `p` pause,\n`q` quit. `-I wlan0` (or `en0` on a Mac, `Wi-Fi` on Windows) shows one\ninterface only, `-T` and `-R` change the traffic colours, `-c` uses\nJapanese characters. `ncmatrix -h` lists them all.\n\n## Credits\n\n- CMatrix: [Chris Allegretta, Abishek V Ashok and contributors](https://github.com/abishekvashok/cmatrix)\n- Network display: Thomas Bloedorn, NCMatrix 1.0 (2005)\n- Asciiverse edition: the network display carried over to CMatrix\n  and fixed, traffic read on macOS and Windows too, quits cleanly\n  on SIGTERM and SIGHUP\n- License: GPL-3.0-or-later\n",
-   "new": true,
    "version": "2.0+20231209-av.1",
    "updated_at": "2026-10-20T15:39:03Z",
    "thumbnail_at": 12.0,
@@ -5804,7 +5822,6 @@
     "source": "github"
    },
    "page": "**THE CITY NEVER SLEEPS. TONIGHT IT'S JUST GETTING WET.**\n\nA city street at night in the rain, seen from straight above. NOODLES, KARAOKE, PACHINKO, 24H MART: neon signs hum over the shopfronts, buzz off now and then or lose a letter, and their colours run down the wet road in shimmering streaks. Cars, trucks and scooters swish past with their headlight beams sweeping the tarmac, and now and then a police car flashes red and blue. People under umbrellas walk the pavements, wait at the crossing while the traffic stops, or mill about in a lit lobby. Steam drifts from the manholes, rain streaks pick up the colour of whatever light they fall through, puddles ripple, and once in a while lightning flashes over the rooftops.\n\nEvery start lays out a new street to fit the window.\n\n## Controls\n\n- **Any key**: quit\n\n## Options\n\nFrom a terminal, `neon-rain -s 7` lays out the same street every time.\nIt draws in full RGB colour, and in 256 colours on terminals that do not\nreport truecolor.\n\n## Credits\n\n- Neon Rain: Asciiverse, after a GIF of Terminal Rain, an unreleased\n  cyberpunk roguelike shown on the TIGSource forums\n- License: MIT\n",
-   "new": true,
    "version": "1.0.0-av.1",
    "updated_at": "2026-10-20T11:29:07Z",
    "thumbnail_at": 18.0,
@@ -5885,6 +5902,7 @@
    "title": "NetHack",
    "description": "The great dungeon crawl: down through the Mazes of Menace and Gehennom for the Amulet of Yendor, with your pet at your side",
    "year": 1987,
+   "old": true,
    "license": "NGPL",
    "repo": "theasciiverse/nethack",
    "provenance": "Mike Stephenson merged the descendants of Andries Brouwer's Hack into NetHack 1.4 in 1987, and the NetHack DevTeam has developed it ever since.",
@@ -6556,6 +6574,7 @@
    "title": "pokertui",
    "description": "Texas Hold'em at a six-seat table: read the bots, watch the odds rail, and take their chips one pot at a time",
    "year": 2026,
+   "new": true,
    "license": "MIT OR Apache-2.0",
    "repo": "theasciiverse/pokertui",
    "provenance": "pokertui is Aleksandr Babarika's terminal Texas Hold'em in Rust and Ratatui, from 2026.",
@@ -7202,7 +7221,6 @@
     "source": "github"
    },
    "page": "**YOU ARE ROBOT. YOUR JOB IS TO FIND KITTEN.**\n\nThis task is complicated by the existence of various things which are not kitten. Every one of them looks like a random character on the screen, just as kitten does, so robot must touch each thing to find out what it is. Perhaps \"A stack of 7 inch floppies wobbles precariously.\" Perhaps \"Some coconut crabs are milling about here.\" Perhaps \"A wireframe model of a hot dog rotates in space here.\" There are 726 of them to meet, and only one kitten.\n\nThere is no score, no timer and no way to lose. The game ends when robotfindskitten.\n\n**\"YOU FOUND KITTEN! WAY TO GO, ROBOT!\"**\n\n## Controls\n\n- **Arrow keys**, **hjkl** or the number pad: move robot; **yubn** (or\n  **Home**, **PgUp**, **End**, **PgDn**) move diagonally\n- **Ctrl-L**: redraw the screen\n- **q** or **Ctrl-C**: give up\n\n## Options\n\nStarted from a shell in its folder: `-n NUM` puts NUM things on the\nscreen (20 by default), `-s SEED` sets the layout, and `-f FILE` reads\nthe things from another list. Your own `.nki` files in\n`~/.robotfindskitten` join the 726.\n\n## History\n\nIn 1997 Peter A. Peterson II held a contest in his magazine Nerth Pork\nfor the best piece of art entitled \"robotfindskitten\". Leonard\nRichardson submitted the winning (read: only) entry. This is the\ncanonical C version for terminals: Alexey Toptygin's 2004 to 2005 code,\nmerged by Eric S. Raymond in 2012 when he recovered the project's\nhistory, and maintained since by Ryan Finnie, who moved it to Codeberg\nin 2026. The game is upstream's, unchanged.\n\n## Credits\n\n- Game: Leonard Richardson and contributors\n- C version: Alexey Toptygin, Eric S. Raymond, Ryan Finnie and contributors\n- Windows console support: [PDCurses](https://pdcurses.org)\n- Asciiverse edition: Asciiverse\n- License: GPL-2.0-or-later\n",
-   "old": true,
    "version": "3.0000000.726-av.1",
    "updated_at": "2026-10-18T07:52:34Z",
    "thumbnail_at": 14.0,
@@ -7223,6 +7241,7 @@
    "title": "Robots",
    "description": "Evil robots close in one step at a time, and all you have is a teleporter. Make them crash into each other before one of them reaches you.",
    "year": 1980,
+   "old": true,
    "license": "BSD-3-Clause",
    "repo": "theasciiverse/bsdgames",
    "collection": "bsdgames",
@@ -7284,6 +7303,7 @@
    "title": "Rogue",
    "description": "The game that named the roguelikes: the guild sends you into the Dungeons of Doom for the Amulet of Yendor, 26 levels down, and death is for good.",
    "year": 1980,
+   "old": true,
    "license": "LicenseRef-Free-Noncommercial",
    "repo": "theasciiverse/netbsd-games",
    "collection": "bsdgames",
@@ -7345,6 +7365,7 @@
    "title": "Rogue 3.6",
    "description": "Rogue as Berkeley shipped it in 1981: 26 monsters from giant ant to zombie, the Dungeons of Doom, and the Amulet of Yendor more than 25 levels down.",
    "year": 1981,
+   "old": true,
    "license": "BSD-3-Clause",
    "repo": "theasciiverse/rogue-restoration",
    "collection": "rogue-restoration",
@@ -7406,6 +7427,7 @@
    "title": "Rogue 5.2",
    "description": "Rogue as Berkeley had it in 1982: the Dungeons of Doom and the Amulet of Yendor, now with a list of everything you have identified and a way to ask what a trap is.",
    "year": 1982,
+   "old": true,
    "license": "BSD-3-Clause",
    "repo": "theasciiverse/rogue-restoration",
    "collection": "rogue-restoration",
@@ -7527,6 +7549,7 @@
    "title": "Sail",
    "description": "Command a man-of-war in the age of sail: work the wind, choose your shot and board the enemy in 31 sea battles against the computer.",
    "year": 1980,
+   "old": true,
    "license": "BSD-3-Clause",
    "repo": "theasciiverse/bsdgames",
    "collection": "bsdgames",
@@ -7711,6 +7734,7 @@
    "title": "Scissor",
    "description": "Rock, paper, scissors as a live action game: steer your scissor into the papers, dodge the rocks, and keep the scissors alive as long as you can.",
    "year": 2025,
+   "new": true,
    "license": "CC0-1.0 OR Apache-2.0",
    "repo": "theasciiverse/nbsdgames",
    "collection": "nbsdgames",
@@ -7991,7 +8015,6 @@
     "source": "github"
    },
    "page": "**THE WIND PICKS UP. THE SNOW STARTS TO MOVE.**\n\nNight in a snowy forest. Snow drifts down at three depths, near flakes\nfast and large, far ones faint. Then a gust sweeps in from one side,\nbends the spruces, shakes the snow off their branches in clumps and\nlifts the snow off the open field in a low blizzard, laying it down\nagain behind the cabin and the trees. Watch long enough and the drifts\ngrow and creep downwind, and the snow on the roof builds until it\nslides off.\n\nA log cabin glows at its windows with smoke drifting from the chimney,\na spruce beside it is lit for Christmas, and above the mountains the\nstars twinkle, the moon shines and a faint aurora moves. Every now and\nthen a sleigh crosses the sky.\n\nThe sound is made as it plays, nothing recorded: the wind in the trees\nrises and falls with the gusts you see, whistles in the strongest, snow\nthumps off the branches and the roof, an owl calls far off, and sleigh\nbells ring while the sleigh is up.\n\n**Turn the lights down and let it snow.**\n\n## Controls\n\n- **m**: sound off and on\n- **Any other key**: quit\n\n## Options\n\nFrom a terminal: `silent-night --mute` starts quiet, `--no-sound` has no\nsound at all, and `-s N` builds the same forest every time.\n\n## Sound\n\nOn Linux the sound goes to PipeWire, PulseAudio or ALSA (through\n`pw-cat`, `paplay` or `aplay`), or to `ffplay`, whichever is there; on\nmacOS and Windows to the default output. Without any of them it is a\nsilent night.\n\n## Credits\n\n- Silent Night: made by Asciiverse, 2026\n- License: MIT\n",
-   "new": true,
    "version": "1.0.0-av.1",
    "updated_at": "2026-10-20T14:57:41Z",
    "thumbnail_at": 18.0,
@@ -8072,6 +8095,7 @@
    "title": "Snake",
    "description": "Grab the money, reach the exit, and don't get eaten: the 1980 BSD chase game where the snake gets hungrier the richer you get.",
    "year": 1980,
+   "old": true,
    "license": "BSD-3-Clause",
    "repo": "theasciiverse/bsdgames",
    "collection": "bsdgames",
@@ -8296,7 +8320,6 @@
    },
    "page": "**FIFTY-TWO CARDS. SEVEN COLUMNS. ONE WAY HOME.**\n\nThe patience game everybody knows, laid out properly in your terminal:\nreal card frames drawn in Unicode, red and black suits (or four colours,\none for each suit, if you prefer), and a cursor you can drive with the\nkeyboard or the mouse.\n\nTurn cards from the stock. Build down the seven columns in alternating\ncolours, uncovering the face-down cards as you go. Send every card up to\nthe four foundations, ace to king. Double-tap a card and, if there is a\nplace for it, it goes home by itself. Get them all up and solitty knows\nyou have won.\n\n- **Keyboard or mouse**, click to pick up, click to put down\n- **Pick up whole runs** or just the cards you want\n- **Three passes through the stock** by default, or as many as you set\n- **Your terminal's own background**, if you would rather keep it\n\n**Deal. Build. Win.**\n\n## Controls\n\n- **Arrow keys** or **h j k l**: move the cursor\n- **Space**: turn a card from the stock, flip a face-down card, or pick\n  up a card and put it down where the cursor is\n- **Space** twice on the same card: send it to a foundation if it fits\n- **m** / **n**: while holding a column, take one more or one fewer card\n- **M** / **N**: take every face-up card in the column, or only the top one\n- **Esc**: put the held cards back\n- **Left click**: pick up or put down; **right click**: cancel\n- **q**: quit\n\n## Options\n\n- `--passes N`: how many times you may go through the stock (default 3)\n- `--four-color-deck`: give each suit its own color\n- `--no-background-color`: keep your terminal's own background\n\n## History\n\nsolitty was written by Murilo Pereira, first released in 2017, and\ndeveloped through 2025. The Asciiverse edition adds a fairer\nFisher-Yates shuffle, a terminal that is restored properly when the\ngame is interrupted, and further fixes and tests.\n\n## Credits\n\n- Original game: [Murilo Pereira](http://murilopereira.com)\n- Asciiverse edition: Asciiverse\n- License: MIT\n",
    "featured": 3,
-   "old": false,
    "version": "0.1.0",
    "updated_at": "2026-10-10T00:00:00Z",
    "thumbnail_at": 5.0,
@@ -8377,6 +8400,7 @@
    "title": "Space Pirate Hunt",
    "description": "The galaxy is overrun with space pirates and the clock is running: warp between sectors, fire plasers and torpedoes, take prisoners, and watch out for supernovas.",
    "year": 1976,
+   "old": true,
    "license": "BSD-3-Clause",
    "repo": "theasciiverse/bsdgames",
    "collection": "bsdgames",
@@ -8438,6 +8462,7 @@
    "title": "Super-Rogue",
    "description": "Bell Labs' bigger Rogue: 52 monsters, magic pools, mazes, Friendly Fiend's Flea Market, and the devil Asmodeus waiting below everything else.",
    "year": 1982,
+   "old": true,
    "license": "LicenseRef-BSD-3-Clause-Name-Restriction",
    "repo": "theasciiverse/rogue-restoration",
    "collection": "rogue-restoration",
@@ -8562,6 +8587,7 @@
    "title": "Star Lanes",
    "description": "Found shipping lines between the stars, buy their stock, force the mergers, and shove your rivals' companies into black holes: the classic trading game for one to four players.",
    "year": 1995,
+   "old": true,
    "license": "GPL-2.0-only",
    "repo": "theasciiverse/starlanes",
    "provenance": "Brian \"Beej\" Hall wrote this curses Star Lanes in C (1995 to 1997, 1.2.2), after the Osborne version of Steven Faber's game, and modernised it himself in 2026 (1.4.0).",
@@ -8836,6 +8862,7 @@
    "title": "Termcraft",
    "description": "Punch a tree, survive the night, then dig your way to the Nether and the dragon beyond: a whole block world drawn in terminal pixels, for up to eight players.",
    "year": 2026,
+   "new": true,
    "license": "AGPL-3.0-only",
    "repo": "theasciiverse/termcraft",
    "provenance": "Termcraft is Sebastian Pagel's 2D survival sandbox in Rust from 2026, after Minecraft.",
@@ -8879,7 +8906,6 @@
     "source": "github"
    },
    "page": "**THE SUN IS GOING DOWN. YOU OWN NOTHING BUT YOUR FISTS.**\n\nPunch a tree. Turn the wood into planks, the planks into a crafting table,\nthe table into a pickaxe. Dig into the hillside before the zombies come\nout, light it with a torch, and listen for the creeper you did not see.\nTermcraft is the whole survival loop of a block world, turned on its side\nand drawn in terminal pixels: lit caves, rain and snow, rooms cut away so\nyou can see inside, and every creature with its own silhouette.\n\nThen keep going. Smelt iron, find diamonds, raise a farm and breed the\nanimals that wander into it. Trade glances with villagers, raid dungeons,\nbuild a portal of obsidian and step through into the Nether, where ghasts\nspit fire and blazes guard the fortresses. Craft the Eyes of Ender, follow\nthem to the stronghold, and at the end of everything the Ender Dragon is\nwaiting.\n\nYou do not have to do it alone. One command hosts a world and drops you\ninto it; friends join from their own terminals, on the same network or\nthrough SSH, up to eight players in all, with their own inventories,\nshared building, chat and, if you leave it on, PvP.\n\nShort on time? **Lantern Run** is a compact challenge route: cross a\nbroken trail, take back a ruin from its guards, raid the supply chest,\nbridge the chasm and relight the signal.\n\n## Controls\n\n- **A** / **D** or **Left** / **Right**: walk; double-tap and hold to\n  sprint (needs a terminal that reports key releases, such as kitty,\n  Ghostty, foot or WezTerm)\n- **W**, **Up** or **Space**: jump, swim up, climb ladders\n- **Left mouse**: mine and attack; **right mouse**: place and use;\n  **F**: use the block under the pointer\n- **E**: inventory and crafting (the recipe book is on the left)\n- **1** to **9**: hotbar; **V** / **Shift+V**: drop one or the stack\n- **F4**: cycle the Detail, Overview and Wide views; **+** / **-**: zoom\n- **T**: chat in co-op, commands in solo; **O**: settings (difficulty and\n  game rules); **F3**: diagnostics\n- **Q** or **Esc**: close a screen, or save and quit\n\nThe game autosaves. It plays at any size, best at 120x40 or larger.\n\n## Options\n\n- `termcraft trial`: play Lantern Run\n- `termcraft host`: host a co-op world and play in it (**T** shows the\n  address); friends run `termcraft client ADDRESS --player NAME`\n- `termcraft join USER@HOST --player NAME`: join through an SSH account\n- `termcraft world list`: your saved worlds; `termcraft world play ID`\n  opens one\n\nEveryone in a co-op game needs the same version. The full guides\n(multiplayer, hosting, saves) are in the `docs` folder of the install.\n\n## Credits\n\n- Termcraft: Sebastian Pagel\n  ([github.com/pagel-s/termcraft](https://github.com/pagel-s/termcraft)),\n  2026, written in Rust\n- License: AGPL-3.0-only\n",
-   "new": true,
    "version": "0.2.0-av.1",
    "updated_at": "2026-10-27T09:21:17Z",
    "thumbnail_at": 13.0,
@@ -8960,6 +8986,7 @@
    "title": "terminal.pong",
    "description": "Ping pong in the terminal: beat the computer, take on a friend at one keyboard, or lean back and watch two AIs rally, with ten power shots a side.",
    "year": 2025,
+   "new": true,
    "license": "MIT",
    "repo": "theasciiverse/terminal-pong",
    "provenance": "terminal.pong is IshmamR's Pong in Rust and Ratatui (2025).",
@@ -9088,7 +9115,6 @@
     "source": "github"
    },
    "page": "**RAIN ON THE SCREEN. THUNDER IN THE SPEAKERS.**\n\nRain streams down the terminal in cyan strokes and dots. Switch on the\nthunderstorm and it pours harder and brighter, and now and then a bolt\nof lightning forks down from the sky, flares and fades. With sound on,\nthe rain patters along and thunder rolls in a moment after each strike.\n\nSlow it down, speed it up, turn the volume to taste, and pick your own\ncolours for the rain and the lightning.\n\n**Stay in. It's pouring.**\n\n## Controls\n\n- **t**: thunderstorm on or off (Asciiverse starts in the storm)\n- **s**: speed: fast, medium, slow\n- **m**: sound on or off (needs `ffplay` from FFmpeg)\n- **v**: volume: quiet, normal, loud\n- **q** or **Esc**: quit\n\n## Options\n\nFrom a terminal: `terminal-rain --sound` starts with sound,\n`--rain-color` and `--lightning-color` take black, red, green, yellow,\nblue, magenta, cyan or white, and `--speed` and `--volume` set where they\nstart. `terminal-rain --help` lists them all.\n\n## Credits\n\n- Terminal Rain: [rmaake1](https://github.com/rmaake1/terminal-rain-lightning)\n- Slow motion: plasma (xXBlackPlasmaXx)\n- Rain and thunder sounds: Pixabay sound effects contributed to the\n  project, cut and varied by rmaake1\n- Asciiverse edition: the script ported to Rust, one program for Linux,\n  macOS and Windows, with the same rain, lightning, keys and sounds\n- License: MIT\n",
-   "new": true,
    "version": "0.1.0+20260430-av.1",
    "updated_at": "2026-10-20T13:57:15Z",
    "thumbnail_at": 9.8,
@@ -9628,6 +9654,7 @@
    "title": "Umoria",
    "description": "The original Moria. Below the town, the mines go down and down, and past the 49th level the Balrog is waiting. Roll a hero, buy what you can, go down. Death is final.",
    "year": 1981,
+   "old": true,
    "license": "GPL-3.0-or-later",
    "repo": "theasciiverse/umoria",
    "provenance": "Robert A. Koeneke wrote Moria at the University of Oklahoma from 1981 to 1986, James E. Wilson made it Umoria for Unix from 1987 to 1994, and Michael R. Cook restored it as Umoria 5.7.",
@@ -9748,6 +9775,7 @@
    "title": "UltraRogue",
    "description": "Ten classes, Friendly Fiend's Flea Market, and eight unique artifacts deep in the Dungeons of Doom, from the Phial of Galadriel to the Wand of Yendor. Carry one home, if you can stand the side effects.",
    "year": 1985,
+   "old": true,
    "license": "LicenseRef-BSD-3-Clause-Name-Restriction",
    "repo": "theasciiverse/rogue-restoration",
    "collection": "rogue-restoration",
@@ -9806,6 +9834,7 @@
    "schema_version": 1,
    "id": "vms-empire",
    "kind": "game",
+   "old": true,
    "title": "VMS Empire",
    "description": "Two emperors, one world, and only room for one. Build armies, fleets and planes city by city and conquer a world against the computer, in the 1970s ancestor of Civilization.",
    "license": "GPL-2.0-or-later",
@@ -9887,6 +9916,7 @@
    "title": "Warp",
    "description": "Larry Wall's real-time space war: fly an Enterprise and a Base at once against Klingons, Romulans and the Space Amoeba, in a universe where explosions chain-react. You're not likely to get far.",
    "year": 1983,
+   "old": true,
    "license": "BSD-2-Clause",
    "repo": "theasciiverse/netbsd-games",
    "collection": "bsdgames",
@@ -9948,6 +9978,7 @@
    "title": "Westering",
    "description": "Take a wagon party two thousand miles from Independence to the Willamette Valley in 1848: outfit, pace and rations, hunting, seven rivers and the forts between.",
    "year": 2026,
+   "new": true,
    "license": "MIT",
    "repo": "theasciiverse/westering",
    "provenance": "A journey game in the line of The Oregon Trail (Don Rawitsch, Bill Heinemann and Paul Dillenberger, 1971), on the real road of 1848, written for Asciiverse in 2026.",
@@ -10004,6 +10035,7 @@
    "schema_version": 1,
    "id": "wolfpack-empire",
    "kind": "game",
+   "old": true,
    "title": "Wolfpack Empire",
    "description": "Rule a country on a shared world against real people: farm, mine, build fleets and armies, make alliances and declare war. Empire has been played over the Internet since the 1980s, and the world keeps turning while you sleep.",
    "license": "GPL-3.0-or-later",
@@ -10070,6 +10102,7 @@
    "title": "Worm",
    "description": "Steer a hungry worm to the numbers and watch it grow. It never stops moving, and the longer it gets, the harder it is not to run into something.",
    "year": 1980,
+   "old": true,
    "license": "BSD-3-Clause",
    "repo": "theasciiverse/bsdgames",
    "collection": "bsdgames",
@@ -10197,6 +10230,7 @@
    "title": "Hunt the Wumpus",
    "description": "Somewhere in a cave of twenty rooms lives the evil Wumpus. Track it by smell, dodge bottomless pits and giant bats, and shoot it with a crooked arrow before it makes you dinner.",
    "year": 1973,
+   "old": true,
    "license": "BSD-3-Clause",
    "repo": "theasciiverse/bsdgames",
    "collection": "bsdgames",
@@ -10258,6 +10292,7 @@
    "title": "XRogue",
    "description": "Nine classes, over 200 monsters, many of them clever, and a quest for one unique artifact deep in the Dungeons of Doom. In its own guide's words: very few players have won this game.",
    "year": 1989,
+   "old": true,
    "license": "BSD-3-Clause",
    "repo": "theasciiverse/rogue-restoration",
    "collection": "rogue-restoration",
@@ -10319,6 +10354,7 @@
    "title": "Zork I: The Great Underground Empire",
    "description": "West of a white house there is a small mailbox. Below lies the Great Underground Empire: nineteen treasures, one thief, and a grue in every dark corner.",
    "year": 1980,
+   "old": true,
    "license": "MIT",
    "repo": "theasciiverse/zork",
    "provenance": "Infocom released Zork I in 1980; Marc Blank, Dave Lebling, Bruce Daniels and Tim Anderson wrote it.",
@@ -10394,6 +10430,7 @@
    "title": "Zork II: The Wizard of Frobozz",
    "description": "Deeper into the Great Underground Empire, where the Wizard of Frobozz whispers a word beginning with F and your day gets worse. A dragon, a unicorn, a robot and the Bank of Zork await.",
    "year": 1981,
+   "old": true,
    "license": "MIT",
    "repo": "theasciiverse/zork",
    "provenance": "Infocom released Zork II in 1981; Marc Blank, Dave Lebling, Bruce Daniels and Tim Anderson wrote it.",
@@ -10469,6 +10506,7 @@
    "title": "Zork III: The Dungeon Master",
    "description": "The end of the trilogy, at the foot of the Endless Stair. The Dungeon Master is waiting for an adventurer worthy to take his place. Is it you?",
    "year": 1982,
+   "old": true,
    "license": "MIT",
    "repo": "theasciiverse/zork",
    "provenance": "Infocom released Zork III in 1982; Marc Blank, Dave Lebling, Bruce Daniels and Tim Anderson wrote it.",
@@ -10544,6 +10582,7 @@
    "title": "Ztrack",
    "description": "An endless three-lane road full of stupid but dangerous traffic, and you score most at 150 mph. Check your mirrors before you change lanes.",
    "year": 1995,
+   "old": true,
    "license": "LicenseRef-Public-Domain",
    "repo": "theasciiverse/ztrack",
    "provenance": "Russell Marks wrote Ztrack in C on curses (1995, version 1.0 in 1996).",
@@ -10619,6 +10658,7 @@
   "prince-of-braille": {
    "id": "prince-of-braille",
    "year": 1989,
+   "old": true,
    "kind": "game",
    "title": "Prince of Braille",
    "description": "Sixty minutes, fourteen levels, and a palace full of spikes, loose floors and gates. Jordan Mechner's 1989 Apple II original, run from his own released source, with the prince drawn in Braille.",
@@ -10633,7 +10673,6 @@
    ],
    "thumbnail_at": 12.0,
    "featured": 1,
-   "old": true,
    "developer": {
     "name": "Asciiverse",
     "url": "https://asciiverse.sh"
@@ -10670,6 +10709,7 @@
   "tetrix": {
    "id": "tetrix",
    "year": 2026,
+   "new": true,
    "kind": "game",
    "title": "Tetrix",
    "description": "Six fields. Nine dirty tricks. One survivor! The late-90s LAN-party block buster legend is back: clear lines, grab specials, and Quake, Bomb and Switch your friends into oblivion!",
@@ -10760,6 +10800,7 @@
   "panzer": {
    "id": "panzer",
    "year": 2026,
+   "new": true,
    "kind": "game",
    "title": "Panzer",
    "description": "It is time to make a stand in toyland! Toy tanks - real ricochets! Bank your shells off the walls, plant your mines, and outfox nine enemy tanks with nine nasty tricks, all the way to the Last Stand!",
@@ -10847,6 +10888,7 @@
   "sigpipe": {
    "id": "sigpipe",
    "year": 2026,
+   "new": true,
    "kind": "game",
    "title": "SIGPIPE",
    "description": "The data is already on its way! Lay pipe as fast as your fingers allow: loop it, split it, buffer it, and pray it never hits an open end. cat: write error: Broken pipe!",
@@ -10936,6 +10978,7 @@
   "uxo": {
    "id": "uxo",
    "year": 2026,
+   "new": true,
    "kind": "game",
    "title": "uXo",
    "description": "BOOM! Drop bombs, chain the blasts and blow your way through the Orchard, or grab three friends and blast each other sky-high in Battle! Kick them, punch them, throw them, and watch out for the skull!",
@@ -10975,6 +11018,7 @@
   "brickspire": {
    "id": "brickspire",
    "year": 2026,
+   "new": true,
    "kind": "game",
    "title": "Brickspire",
    "description": "The stars are going out! The Mason has walled up the Lamplighter at the top of his tower. Five towers, fifty floors, one ball: smash your way up before the last star fades!",
@@ -11014,6 +11058,7 @@
   "kaiku": {
    "id": "kaiku",
    "year": 2026,
+   "new": true,
    "kind": "game",
    "title": "Kaiku: Echoes Home",
    "description": "A savage blast hurls you deep into enemy territory, where no human has ever flown! Fight through two hostile fleets, decode the lost voices of Earth, and find the one gate that leads home. Can you make it back alive?!",
@@ -11029,7 +11074,6 @@
     "braille"
    ],
    "thumbnail_at": 38.0,
-   "new": true,
    "version": "1.0.0",
    "updated_at": "2026-10-19T12:00:00Z",
    "developer": {
@@ -11110,6 +11154,7 @@
   "entity": {
    "id": "entity",
    "year": 2026,
+   "new": true,
    "kind": "game",
    "title": "Entity",
    "description": "N-inspired precision platformer: momentum, wall jumps, gold, mines, instant death",
@@ -11154,6 +11199,7 @@
   "marble-recovery": {
    "id": "marble-recovery",
    "year": 2026,
+   "new": true,
    "kind": "game",
    "title": "Marble Recovery",
    "description": "They say you've lost your marbles. They're right: twelve of them, rolled off into places that should not exist. Roll, tilt and tumble through strange worlds to bring every one of them home!",
@@ -11196,6 +11242,7 @@
   "moraen": {
    "id": "moraen",
    "year": 2026,
+   "new": true,
    "kind": "game",
    "title": "Moraen",
    "description": "The ice is gone, and the dwarves' treasure lies buried in the rubble it left behind. Dig in, gather the gems and bring the clan's treasure home, before the stone trolls awake!",
@@ -11909,6 +11956,7 @@
   "braillestorm": {
    "id": "braillestorm",
    "year": 2026,
+   "new": true,
    "kind": "game",
    "title": "Braillestorm",
    "description": "Your terminal is in a storm! Wildcard globs, rogue cursors and runaway forks swarm the screen, and you're the last prompt standing. Twin-stick fury in glorious Braille, over a grid that ripples with every blast!",
@@ -11924,7 +11972,6 @@
     "braille"
    ],
    "thumbnail_at": 12.2,
-   "new": true,
    "version": "0.2.0",
    "updated_at": "2026-10-20T14:00:00Z",
    "developer": {
@@ -11961,6 +12008,7 @@
   "royal-ur": {
    "id": "royal-ur",
    "year": 2026,
+   "new": true,
    "kind": "game",
    "title": "Royal Game of Ur",
    "description": "The oldest board game with known rules: race your pieces past the rosettes of a 4,500-year-old board, in four reconstructions",
@@ -11979,7 +12027,6 @@
     "hot-seat"
    ],
    "thumbnail_at": 60.0,
-   "new": true,
    "developer": {
     "name": "Asciiverse",
     "url": "https://asciiverse.sh"
@@ -12009,6 +12056,7 @@
   "senet": {
    "id": "senet",
    "year": 2026,
+   "new": true,
    "kind": "game",
    "title": "Senet",
    "description": "The Egyptian game of passing through the netherworld, played for three thousand years, with every honest reconstruction of its lost rules",
@@ -12028,7 +12076,6 @@
     "hot-seat"
    ],
    "thumbnail_at": 60.0,
-   "new": true,
    "developer": {
     "name": "Asciiverse",
     "url": "https://asciiverse.sh"
@@ -12058,6 +12105,7 @@
   "mehen": {
    "id": "mehen",
    "year": 2026,
+   "new": true,
    "kind": "game",
    "title": "Mehen",
    "description": "Race your pharaohs up the coiled snake by guessing marbles in a fist, and set lions on the other team: one of Egypt's oldest games, reconstructed in 2024",
@@ -12078,7 +12126,6 @@
     "party"
    ],
    "thumbnail_at": 60.8,
-   "new": true,
    "developer": {
     "name": "Asciiverse",
     "url": "https://asciiverse.sh"
@@ -12108,6 +12155,7 @@
   "hnefatafl": {
    "id": "hnefatafl",
    "year": 2026,
+   "new": true,
    "kind": "game",
    "title": "Hnefatafl",
    "description": "The Viking game of the king: twenty-four attackers, one king and his guard, and five rule sets from Copenhagen to Lapland",
@@ -12127,7 +12175,6 @@
     "hot-seat"
    ],
    "thumbnail_at": 60.0,
-   "new": true,
    "developer": {
     "name": "Asciiverse",
     "url": "https://asciiverse.sh"
@@ -12157,6 +12204,7 @@
   "fox-and-geese": {
    "id": "fox-and-geese",
    "year": 2026,
+   "new": true,
    "kind": "game",
    "title": "Fox and Geese",
    "description": "One fox, a whole gaggle of geese, and a cross-shaped board: the medieval hunt game, as R. C. Bell gives it",
@@ -12175,7 +12223,6 @@
     "hot-seat"
    ],
    "thumbnail_at": 60.0,
-   "new": true,
    "developer": {
     "name": "Asciiverse",
     "url": "https://asciiverse.sh"
@@ -12205,6 +12252,7 @@
   "mancala": {
    "id": "mancala",
    "year": 2026,
+   "new": true,
    "kind": "game",
    "title": "Mancala",
    "description": "Seeds, pits and a lot of counting: the sowing games of Africa, Asia and Europe, from Ghana's Oware to Toguz Kumalak of the steppe, each with its own rules",
@@ -12225,7 +12273,6 @@
     "hot-seat"
    ],
    "thumbnail_at": 40.0,
-   "new": true,
    "developer": {
     "name": "Asciiverse",
     "url": "https://asciiverse.sh"
@@ -12255,6 +12302,7 @@
   "morris": {
    "id": "morris",
    "year": 2026,
+   "new": true,
    "kind": "game",
    "title": "Morris",
    "description": "Three in a row takes a man: Nine Men's Morris and its family, from the Roman game boards to Morabaraba of South Africa",
@@ -12275,7 +12323,6 @@
     "hot-seat"
    ],
    "thumbnail_at": 40.0,
-   "new": true,
    "developer": {
     "name": "Asciiverse",
     "url": "https://asciiverse.sh"
@@ -12305,6 +12352,7 @@
   "mu-torere": {
    "id": "mu-torere",
    "year": 2026,
+   "new": true,
    "kind": "game",
    "title": "Mū tōrere",
    "description": "Four men each on an eight-pointed star and one empty point: the Māori blocking game of New Zealand's East Coast",
@@ -12324,7 +12372,6 @@
     "hot-seat"
    ],
    "thumbnail_at": 40.0,
-   "new": true,
    "developer": {
     "name": "Asciiverse",
     "url": "https://asciiverse.sh"
@@ -12354,6 +12401,7 @@
   "konane": {
    "id": "konane",
    "year": 2026,
+   "new": true,
    "kind": "game",
    "title": "Kōnane",
    "description": "Black and white stones, every hollow full, and every move a jump: the Hawaiian game Cook's expedition saw in 1779",
@@ -12373,7 +12421,6 @@
     "hot-seat"
    ],
    "thumbnail_at": 40.0,
-   "new": true,
    "developer": {
     "name": "Asciiverse",
     "url": "https://asciiverse.sh"
@@ -12403,6 +12450,7 @@
   "seega": {
    "id": "seega",
    "year": 2026,
+   "new": true,
    "kind": "game",
    "title": "Seega",
    "description": "Fill a square of holes with your kelbs, then step and trap: the Egyptian game Lane saw cut into the top of the Great Pyramid",
@@ -12422,7 +12470,6 @@
     "hot-seat"
    ],
    "thumbnail_at": 40.0,
-   "new": true,
    "developer": {
     "name": "Asciiverse",
     "url": "https://asciiverse.sh"
@@ -12452,6 +12499,7 @@
   "alquerque": {
    "id": "alquerque",
    "year": 2026,
+   "new": true,
    "kind": "game",
    "title": "Alquerque and Fanorona",
    "description": "Leap and take on the lined board of Alfonso X's Book of Games, or sweep whole lines away in Madagascar's Fanorona",
@@ -12472,7 +12520,6 @@
     "hot-seat"
    ],
    "thumbnail_at": 40.0,
-   "new": true,
    "developer": {
     "name": "Asciiverse",
     "url": "https://asciiverse.sh"
@@ -12502,6 +12549,7 @@
   "tabula": {
    "id": "tabula",
    "year": 2026,
+   "new": true,
    "kind": "game",
    "title": "Tabula",
    "description": "The Roman ancestor of backgammon: fifteen men, three dice, and the one game position that survives from antiquity",
@@ -12522,7 +12570,6 @@
     "hot-seat"
    ],
    "thumbnail_at": 40.0,
-   "new": true,
    "developer": {
     "name": "Asciiverse",
     "url": "https://asciiverse.sh"
@@ -12552,6 +12599,7 @@
   "pachisi": {
    "id": "pachisi",
    "year": 2026,
+   "new": true,
    "kind": "game",
    "title": "Pachisi and Chaupar",
    "description": "Four colours round a cross of four arms, thrown with six cowrie shells or three long dice: the game that became Ludo",
@@ -12572,7 +12620,6 @@
     "hot-seat"
    ],
    "thumbnail_at": 40.0,
-   "new": true,
    "developer": {
     "name": "Asciiverse",
     "url": "https://asciiverse.sh"
@@ -12602,6 +12649,7 @@
   "shatranj": {
    "id": "shatranj",
    "year": 2026,
+   "new": true,
    "kind": "game",
    "title": "Shatranj",
    "description": "Chess before the queen and the bishop, as the masters of Baghdad played it, and the Indian chaturanga they wrote down",
@@ -12622,7 +12670,6 @@
     "hot-seat"
    ],
    "thumbnail_at": 40.0,
-   "new": true,
    "developer": {
     "name": "Asciiverse",
     "url": "https://asciiverse.sh"
@@ -12652,6 +12699,7 @@
   "patolli": {
    "id": "patolli",
    "year": 2026,
+   "new": true,
    "kind": "game",
    "title": "Patolli",
    "description": "Five black beans, a cross painted on a mat, six stones each: the Aztec game that players staked themselves on",
@@ -12672,7 +12720,6 @@
     "hot-seat"
    ],
    "thumbnail_at": 40.0,
-   "new": true,
    "developer": {
     "name": "Asciiverse",
     "url": "https://asciiverse.sh"
@@ -12702,6 +12749,7 @@
   "nard": {
    "id": "nard",
    "year": 2026,
+   "new": true,
    "kind": "game",
    "title": "Nard",
    "description": "Fifteen men, two dice, and a neural-network opponent that doubles like it means it: backgammon on an inlaid bazaar board, the oldest game in the family.",
@@ -12718,7 +12766,6 @@
     "hot-seat"
    ],
    "thumbnail_at": 24.0,
-   "new": true,
    "version": "0.1.0",
    "updated_at": "2026-10-26T13:00:00Z",
    "developer": {
@@ -12754,6 +12801,7 @@
   "dominos": {
    "id": "dominos",
    "year": 2026,
+   "new": true,
    "kind": "game",
    "title": "Dominos",
    "description": "Clack! Ivory tiles on green baize: the Block game, the Draw game and All Fives, against a sly computer or your friends round the table on the local network.",
@@ -12772,7 +12820,6 @@
     "classic"
    ],
    "thumbnail_at": 3.0,
-   "new": true,
    "version": "0.2.0",
    "updated_at": "2026-10-26T13:00:00Z",
    "developer": {

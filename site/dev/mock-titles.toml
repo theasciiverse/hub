@@ -5,11 +5,11 @@
 [[title]]
 id = "solitty"
 featured = 3
-old = false
 
 [[title]]
 id = "prince-of-braille"
 year = 1989
+old = true
 kind = "game"
 title = "Prince of Braille"
 description = "Sixty minutes, fourteen levels, and a palace full of spikes, loose floors and gates. Jordan Mechner's 1989 Apple II original, run from his own released source, with the prince drawn in Braille."
@@ -19,7 +19,6 @@ license = "MIT"
 topics = ["platformer", "restoration", "braille", "classic"]
 thumbnail_at = 12.0
 featured = 1
-old = true
 developer = { name = "Asciiverse", url = "https://asciiverse.sh" }
 upstream = { name = "Jordan Mechner", url = "https://www.jordanmechner.com" }
 min_terminal = { cols = 70, rows = 25 }
@@ -42,6 +41,7 @@ The first playable cut: all 14 original levels, the kid's movement and the traps
 [[title]]
 id = "tetrix"
 year = 2026
+new = true
 kind = "game"
 title = "Tetrix"
 description = "Six fields. Nine dirty tricks. One survivor! The late-90s LAN-party block buster legend is back: clear lines, grab specials, and Quake, Bomb and Switch your friends into oblivion!"
@@ -112,7 +112,7 @@ Tetrix needs a terminal of at least 92 columns by 28 rows.
 [[title]]
 id = "sleighride"
 year = 2026
-new = true  # demo of the NEW! banner; which titles get it is David's call
+new = true
 kind = "game"
 title = "Sleighride"
 description = "Second day of Christmas, Santa's asleep and the elves have found the keys! Grab a sleigh, a reindeer or a broomstick and race like mad, before Santa fires up the snowplough and comes for the ringleader!"
@@ -173,6 +173,7 @@ On terminals without the kitty keyboard protocol, Up latches the gas on, Down tu
 [[title]]
 id = "panzer"
 year = 2026
+new = true
 kind = "game"
 title = "Panzer"
 description = "It is time to make a stand in toyland! Toy tanks - real ricochets! Bank your shells off the walls, plant your mines, and outfox nine enemy tanks with nine nasty tricks, all the way to the Last Stand!"
@@ -282,6 +283,7 @@ Eight tables, each with its own rules. On Round and Round the bumpers orbit. On 
 [[title]]
 id = "sigpipe"
 year = 2026
+new = true
 kind = "game"
 title = "SIGPIPE"
 description = "The data is already on its way! Lay pipe as fast as your fingers allow: loop it, split it, buffer it, and pray it never hits an open end. cat: write error: Broken pipe!"
@@ -383,6 +385,7 @@ Holding jump for a higher jump needs a terminal that reports key releases (the k
 [[title]]
 id = "uxo"
 year = 2026
+new = true
 kind = "game"
 title = "uXo"
 description = "BOOM! Drop bombs, chain the blasts and blow your way through the Orchard, or grab three friends and blast each other sky-high in Battle! Kick them, punch them, throw them, and watch out for the skull!"
@@ -428,6 +431,7 @@ Every bomb on the grid is unexploded ordnance. For now. **IF YOU SEE ME RUNNING,
 [[title]]
 id = "brickspire"
 year = 2026
+new = true
 kind = "game"
 title = "Brickspire"
 description = "The stars are going out! The Mason has walled up the Lamplighter at the top of his tower. Five towers, fifty floors, one ball: smash your way up before the last star fades!"
@@ -480,6 +484,7 @@ At the top, the Mason is still laying bricks, as fast as you can break them. Bre
 [[title]]
 id = "kaiku"
 year = 2026
+new = true
 kind = "game"
 title = "Kaiku: Echoes Home"
 description = "A savage blast hurls you deep into enemy territory, where no human has ever flown! Fight through two hostile fleets, decode the lost voices of Earth, and find the one gate that leads home. Can you make it back alive?!"
@@ -488,7 +493,6 @@ genre = "action"
 license = "MIT"
 topics = ["shmup", "typing", "space", "co-op", "gamepad", "braille"]
 thumbnail_at = 38.0             # both fleets, a drop, and an echo decoding in the receiver
-new = true
 version = "1.0.0"
 updated_at = "2026-10-19T12:00:00Z"
 developer = { name = "Asciiverse", url = "https://asciiverse.sh" }
@@ -610,6 +614,7 @@ In 2015, Maddy Thorson and Noel Berry made a hardcore little platformer for the 
 [[title]]
 id = "entity"
 year = 2026
+new = true
 kind = "game"
 title = "Entity"
 description = "N-inspired precision platformer: momentum, wall jumps, gold, mines, instant death"
@@ -625,6 +630,7 @@ requires = { utf8 = true, color = "truecolor", mouse = false, glyphs = ["braille
 [[title]]
 id = "marble-recovery"
 year = 2026
+new = true
 kind = "game"
 title = "Marble Recovery"
 description = "They say you've lost your marbles. They're right: twelve of them, rolled off into places that should not exist. Roll, tilt and tumble through strange worlds to bring every one of them home!"
@@ -669,6 +675,7 @@ Twelve marbles, every one of them out there somewhere. **GO AND GET THEM BACK!**
 [[title]]
 id = "moraen"
 year = 2026
+new = true
 kind = "game"
 title = "Moraen"
 description = "The ice is gone, and the dwarves' treasure lies buried in the rubble it left behind. Dig in, gather the gems and bring the clan's treasure home, before the stone trolls awake!"
@@ -722,7 +729,7 @@ The clock is the thaw, and the trolls are waking. **DIG FAST!**
 [[title]]
 id = "ohm"
 year = 2026
-new = true  # demo of the NEW! banner
+new = true
 kind = "game"
 title = "Ohm's Workshop"
 description = "The old master's workshop is yours now. Fix the town's gadgets with real circuits and watch them glow, click and blink... or smoke, pop and bang!"
@@ -842,11 +849,9 @@ website = "https://www.legendsofthejedi.com"
 
 [[title]]
 id = "greed"
-old = true  # 1990 original; real manifest in hub/catalog/greed.toml
 
 [[title]]
 id = "robotfindskitten"
-old = true
 
 [[title]]
 id = "terminal-orbit"
@@ -907,7 +912,6 @@ genre = "strategy"
 license = "BSD-3-Clause"
 topics = ["strategy", "space", "classic", "teletype"]
 thumbnail_at = 12.0
-old = true
 repo = "theasciiverse/bsdtrek"
 developer = { name = "Asciiverse", url = "https://asciiverse.sh" }
 upstream = { name = "Eric Allman, UC Berkeley (1976)", url = "https://github.com/jj1bdx/bsdtrek" }
@@ -1194,42 +1198,35 @@ website = "https://startrekkin.net/"
 # a hub title (hub/catalog/ascii-wars.toml); only the banner is set here
 [[title]]
 id = "ascii-wars"
-new = true
 
 # a hub title (hub/catalog/aquest.toml); only the banner is set here.
 # Added 2026-10-20: Mark Mackey's XQuest (1994) in the terminal, built on
 # David's xquest-sdl
 [[title]]
 id = "aquest"
-new = true
 
 # John Calhoun's Glider 4.0 (games/glider); a hub title, only the banner is set here
 [[title]]
 id = "glider"
-new = true
 
 # a hub title (hub/catalog/neon-rain.toml); only the banner is set here
 [[title]]
 id = "neon-rain"
-new = true
 
 # a hub title (hub/catalog/terminal-rain-lightning.toml); only the banner is
 # set here. Added 2026-10-20: rmaake1's Terminal Rain ported to Rust
 [[title]]
 id = "terminal-rain-lightning"
-new = true
 
 # a hub title (hub/catalog/silent-night.toml); only the banner is set here.
 # Added 2026-10-20: our own snowy forest for Christmas, with its sound
 [[title]]
 id = "silent-night"
-new = true
 
 # a hub title (hub/catalog/ncmatrix.toml); only the banner is set here.
 # Added 2026-10-20: Thomas Bloedorn's network display on current CMatrix
 [[title]]
 id = "ncmatrix"
-new = true
 
 # Added 2026-10-20: an original Asciiverse game, first playable loop; local
 # Linux build from games/braillestorm, preview from its own --demo
@@ -1238,6 +1235,7 @@ new = true
 [[title]]
 id = "braillestorm"
 year = 2026
+new = true
 kind = "game"
 title = "Braillestorm"
 description = "Your terminal is in a storm! Wildcard globs, rogue cursors and runaway forks swarm the screen, and you're the last prompt standing. Twin-stick fury in glorious Braille, over a grid that ripples with every blast!"
@@ -1246,7 +1244,6 @@ genre = "action"
 license = "GPL-3.0-or-later"
 topics = ["shmup", "twin-stick", "arena", "arcade", "gamepad", "braille"]
 thumbnail_at = 12.2             # the wave 4 banner in big Braille letters, wave 3's clear bonus under it
-new = true
 version = "0.2.0"
 updated_at = "2026-10-20T14:00:00Z"
 developer = { name = "Asciiverse", url = "https://asciiverse.sh" }
@@ -1300,6 +1297,7 @@ Best in a terminal that reports key releases (kitty, foot, WezTerm, Ghostty, Ala
 [[title]]
 id = "royal-ur"
 year = 2026
+new = true
 kind = "game"
 title = "Royal Game of Ur"
 description = "The oldest board game with known rules: race your pieces past the rosettes of a 4,500-year-old board, in four reconstructions"
@@ -1310,7 +1308,6 @@ repo = "theasciiverse/ancient-games"
 collection = "ancient-games"
 topics = ["board", "race", "dice", "ancient", "history", "vs-computer", "hot-seat"]
 thumbnail_at = 60.0             # both sides strung across the board, the lots mid-throw
-new = true
 developer = { name = "Asciiverse", url = "https://asciiverse.sh" }
 min_terminal = { cols = 100, rows = 30 }
 requires = { utf8 = true, color = "truecolor", mouse = true }
@@ -1346,6 +1343,7 @@ Play the computer at three strengths, or a friend at the same keyboard.
 [[title]]
 id = "senet"
 year = 2026
+new = true
 kind = "game"
 title = "Senet"
 description = "The Egyptian game of passing through the netherworld, played for three thousand years, with every honest reconstruction of its lost rules"
@@ -1356,7 +1354,6 @@ repo = "theasciiverse/ancient-games"
 collection = "ancient-games"
 topics = ["board", "race", "dice", "ancient", "egypt", "history", "vs-computer", "hot-seat"]
 thumbnail_at = 60.0             # the S of thirty houses half crossed, sticks just thrown
-new = true
 developer = { name = "Asciiverse", url = "https://asciiverse.sh" }
 min_terminal = { cols = 100, rows = 30 }
 requires = { utf8 = true, color = "truecolor", mouse = true }
@@ -1391,6 +1388,7 @@ Play the computer at three strengths, or a friend at the same keyboard.
 [[title]]
 id = "mehen"
 year = 2026
+new = true
 kind = "game"
 title = "Mehen"
 description = "Race your pharaohs up the coiled snake by guessing marbles in a fist, and set lions on the other team: one of Egypt's oldest games, reconstructed in 2024"
@@ -1401,7 +1399,6 @@ repo = "theasciiverse/ancient-games"
 collection = "ancient-games"
 topics = ["board", "race", "guessing", "ancient", "egypt", "history", "vs-computer", "hot-seat", "party"]
 thumbnail_at = 60.8             # an open hand of five marbles, guessed right
-new = true
 developer = { name = "Asciiverse", url = "https://asciiverse.sh" }
 min_terminal = { cols = 100, rows = 30 }
 requires = { utf8 = true, color = "truecolor", mouse = true }
@@ -1432,6 +1429,7 @@ Play one against one, or teams of two or three. The computer bluffs with the mix
 [[title]]
 id = "hnefatafl"
 year = 2026
+new = true
 kind = "game"
 title = "Hnefatafl"
 description = "The Viking game of the king: twenty-four attackers, one king and his guard, and five rule sets from Copenhagen to Lapland"
@@ -1442,7 +1440,6 @@ repo = "theasciiverse/ancient-games"
 collection = "ancient-games"
 topics = ["board", "strategy", "abstract", "ancient", "viking", "history", "vs-computer", "hot-seat"]
 thumbnail_at = 60.0             # the attackers' ring tightening, a gap opening at the top
-new = true
 developer = { name = "Asciiverse", url = "https://asciiverse.sh" }
 min_terminal = { cols = 100, rows = 30 }
 requires = { utf8 = true, color = "truecolor", mouse = true }
@@ -1478,6 +1475,7 @@ Play the computer at three strengths, from either side, or a friend at the same 
 [[title]]
 id = "fox-and-geese"
 year = 2026
+new = true
 kind = "game"
 title = "Fox and Geese"
 description = "One fox, a whole gaggle of geese, and a cross-shaped board: the medieval hunt game, as R. C. Bell gives it"
@@ -1488,7 +1486,6 @@ repo = "theasciiverse/ancient-games"
 collection = "ancient-games"
 topics = ["board", "hunt", "abstract", "medieval", "history", "vs-computer", "hot-seat"]
 thumbnail_at = 60.0             # seventeen geese closing in on the fox
-new = true
 developer = { name = "Asciiverse", url = "https://asciiverse.sh" }
 min_terminal = { cols = 100, rows = 30 }
 requires = { utf8 = true, color = "truecolor", mouse = true }
@@ -1523,6 +1520,7 @@ Play the computer at three strengths, as fox or geese, or a friend at the same k
 [[title]]
 id = "mancala"
 year = 2026
+new = true
 kind = "game"
 title = "Mancala"
 description = "Seeds, pits and a lot of counting: the sowing games of Africa, Asia and Europe, from Ghana's Oware to Toguz Kumalak of the steppe, each with its own rules"
@@ -1533,7 +1531,6 @@ repo = "theasciiverse/ancient-games"
 collection = "ancient-games"
 topics = ["board", "mancala", "count-and-capture", "abstract", "africa", "asia", "history", "vs-computer", "hot-seat"]
 thumbnail_at = 40.0             # Oware in mid-game, a capture flashing
-new = true
 developer = { name = "Asciiverse", url = "https://asciiverse.sh" }
 min_terminal = { cols = 100, rows = 30 }
 requires = { utf8 = true, color = "truecolor", mouse = true }
@@ -1570,6 +1567,7 @@ Play the computer at three strengths, from either side, or a friend at the same 
 [[title]]
 id = "morris"
 year = 2026
+new = true
 kind = "game"
 title = "Morris"
 description = "Three in a row takes a man: Nine Men's Morris and its family, from the Roman game boards to Morabaraba of South Africa"
@@ -1580,7 +1578,6 @@ repo = "theasciiverse/ancient-games"
 collection = "ancient-games"
 topics = ["board", "morris", "mill", "abstract", "europe", "africa", "history", "vs-computer", "hot-seat"]
 thumbnail_at = 40.0
-new = true
 developer = { name = "Asciiverse", url = "https://asciiverse.sh" }
 min_terminal = { cols = 100, rows = 30 }
 requires = { utf8 = true, color = "truecolor", mouse = true }
@@ -1615,6 +1612,7 @@ Play the computer at three strengths, from either side, or a friend at the same 
 [[title]]
 id = "mu-torere"
 year = 2026
+new = true
 kind = "game"
 title = "Mū tōrere"
 description = "Four men each on an eight-pointed star and one empty point: the Māori blocking game of New Zealand's East Coast"
@@ -1625,7 +1623,6 @@ repo = "theasciiverse/ancient-games"
 collection = "ancient-games"
 topics = ["board", "blocking", "abstract", "oceania", "new-zealand", "history", "vs-computer", "hot-seat"]
 thumbnail_at = 40.0
-new = true
 developer = { name = "Asciiverse", url = "https://asciiverse.sh" }
 min_terminal = { cols = 100, rows = 30 }
 requires = { utf8 = true, color = "truecolor", mouse = true }
@@ -1657,6 +1654,7 @@ Play the computer at three strengths, from either side, or a friend at the same 
 [[title]]
 id = "konane"
 year = 2026
+new = true
 kind = "game"
 title = "Kōnane"
 description = "Black and white stones, every hollow full, and every move a jump: the Hawaiian game Cook's expedition saw in 1779"
@@ -1667,7 +1665,6 @@ repo = "theasciiverse/ancient-games"
 collection = "ancient-games"
 topics = ["board", "jumping", "abstract", "oceania", "hawaii", "history", "vs-computer", "hot-seat"]
 thumbnail_at = 40.0
-new = true
 developer = { name = "Asciiverse", url = "https://asciiverse.sh" }
 min_terminal = { cols = 100, rows = 30 }
 requires = { utf8 = true, color = "truecolor", mouse = true }
@@ -1700,6 +1697,7 @@ Play the computer at three strengths, from either side, or a friend at the same 
 [[title]]
 id = "seega"
 year = 2026
+new = true
 kind = "game"
 title = "Seega"
 description = "Fill a square of holes with your kelbs, then step and trap: the Egyptian game Lane saw cut into the top of the Great Pyramid"
@@ -1710,7 +1708,6 @@ repo = "theasciiverse/ancient-games"
 collection = "ancient-games"
 topics = ["board", "capture", "abstract", "africa", "egypt", "history", "vs-computer", "hot-seat"]
 thumbnail_at = 40.0
-new = true
 developer = { name = "Asciiverse", url = "https://asciiverse.sh" }
 min_terminal = { cols = 100, rows = 30 }
 requires = { utf8 = true, color = "truecolor", mouse = true }
@@ -1742,6 +1739,7 @@ Play the computer at three strengths, from either side, or a friend at the same 
 [[title]]
 id = "alquerque"
 year = 2026
+new = true
 kind = "game"
 title = "Alquerque and Fanorona"
 description = "Leap and take on the lined board of Alfonso X's Book of Games, or sweep whole lines away in Madagascar's Fanorona"
@@ -1752,7 +1750,6 @@ repo = "theasciiverse/ancient-games"
 collection = "ancient-games"
 topics = ["board", "capture", "abstract", "europe", "africa", "madagascar", "history", "vs-computer", "hot-seat"]
 thumbnail_at = 40.0
-new = true
 developer = { name = "Asciiverse", url = "https://asciiverse.sh" }
 min_terminal = { cols = 100, rows = 30 }
 requires = { utf8 = true, color = "truecolor", mouse = true }
@@ -1787,6 +1784,7 @@ Play the computer at three strengths, from either side, or a friend at the same 
 [[title]]
 id = "tabula"
 year = 2026
+new = true
 kind = "game"
 title = "Tabula"
 description = "The Roman ancestor of backgammon: fifteen men, three dice, and the one game position that survives from antiquity"
@@ -1797,7 +1795,6 @@ repo = "theasciiverse/ancient-games"
 collection = "ancient-games"
 topics = ["board", "dice", "race", "backgammon", "europe", "rome", "history", "vs-computer", "hot-seat"]
 thumbnail_at = 40.0
-new = true
 developer = { name = "Asciiverse", url = "https://asciiverse.sh" }
 min_terminal = { cols = 100, rows = 30 }
 requires = { utf8 = true, color = "truecolor", mouse = true }
@@ -1828,6 +1825,7 @@ Play the computer at three strengths, from either side, or a friend at the same 
 [[title]]
 id = "pachisi"
 year = 2026
+new = true
 kind = "game"
 title = "Pachisi and Chaupar"
 description = "Four colours round a cross of four arms, thrown with six cowrie shells or three long dice: the game that became Ludo"
@@ -1838,7 +1836,6 @@ repo = "theasciiverse/ancient-games"
 collection = "ancient-games"
 topics = ["board", "dice", "race", "partnership", "asia", "india", "history", "vs-computer", "hot-seat"]
 thumbnail_at = 40.0
-new = true
 developer = { name = "Asciiverse", url = "https://asciiverse.sh" }
 min_terminal = { cols = 100, rows = 30 }
 requires = { utf8 = true, color = "truecolor", mouse = true }
@@ -1869,6 +1866,7 @@ Play the computer at three strengths, or a friend at the same keyboard; each sid
 [[title]]
 id = "shatranj"
 year = 2026
+new = true
 kind = "game"
 title = "Shatranj"
 description = "Chess before the queen and the bishop, as the masters of Baghdad played it, and the Indian chaturanga they wrote down"
@@ -1879,7 +1877,6 @@ repo = "theasciiverse/ancient-games"
 collection = "ancient-games"
 topics = ["board", "chess", "abstract", "asia", "persia", "india", "history", "vs-computer", "hot-seat"]
 thumbnail_at = 40.0
-new = true
 developer = { name = "Asciiverse", url = "https://asciiverse.sh" }
 min_terminal = { cols = 100, rows = 30 }
 requires = { utf8 = true, color = "truecolor", mouse = true }
@@ -1912,6 +1909,7 @@ Play the computer at three strengths, from either side, or a friend at the same 
 [[title]]
 id = "patolli"
 year = 2026
+new = true
 kind = "game"
 title = "Patolli"
 description = "Five black beans, a cross painted on a mat, six stones each: the Aztec game that players staked themselves on"
@@ -1922,7 +1920,6 @@ repo = "theasciiverse/ancient-games"
 collection = "ancient-games"
 topics = ["board", "dice", "race", "americas", "mexico", "aztec", "history", "vs-computer", "hot-seat"]
 thumbnail_at = 40.0
-new = true
 developer = { name = "Asciiverse", url = "https://asciiverse.sh" }
 min_terminal = { cols = 100, rows = 30 }
 requires = { utf8 = true, color = "truecolor", mouse = true }
@@ -1949,6 +1946,7 @@ Play the computer at three strengths, or a friend at the same keyboard.
 [[title]]
 id = "nard"
 year = 2026
+new = true
 kind = "game"
 title = "Nard"
 description = "Fifteen men, two dice, and a neural-network opponent that doubles like it means it: backgammon on an inlaid bazaar board, the oldest game in the family."
@@ -1958,7 +1956,6 @@ license = "MIT"
 repo = "theasciiverse/nard"
 topics = ["board", "backgammon", "dice", "doubling cube", "vs-computer", "hot-seat"]
 thumbnail_at = 24.0             # mid-game, the cube turned to 2, both dice just used
-new = true
 version = "0.1.0"
 updated_at = "2026-10-26T13:00:00Z"
 developer = { name = "Asciiverse", url = "https://asciiverse.sh" }
@@ -1997,6 +1994,7 @@ Money play with the doubling cube, gammons and backgammons, and the score kept a
 [[title]]
 id = "dominos"
 year = 2026
+new = true
 kind = "game"
 title = "Dominos"
 description = "Clack! Ivory tiles on green baize: the Block game, the Draw game and All Fives, against a sly computer or your friends round the table on the local network."
@@ -2006,7 +2004,6 @@ license = "MIT"
 repo = "theasciiverse/dominos"
 topics = ["dominoes", "tiles", "vs-computer", "multiplayer", "lan", "partners", "family", "classic"]
 thumbnail_at = 3.0              # the spinner down in All Fives, ten points scored
-new = true
 version = "0.2.0"
 updated_at = "2026-10-26T13:00:00Z"
 developer = { name = "Asciiverse", url = "https://asciiverse.sh" }
@@ -2043,4 +2040,3 @@ The computer comes in three strengths, and in All Fives the hard one is sly: it 
 # Added 2026-10-27: Sebastian Pagel's Termcraft 0.2.0, released 2026-10-26
 [[title]]
 id = "termcraft"
-new = true

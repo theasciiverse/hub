@@ -4,6 +4,7 @@ kind = "game"
 title = "Worm"
 description = "Steer a hungry worm to the numbers and watch it grow. It never stops moving, and the longer it gets, the harder it is not to run into something."
 year = 1980
+old = true
 license = "BSD-3-Clause"
 repo = "theasciiverse/bsdgames"
 collection = "bsdgames"

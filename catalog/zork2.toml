@@ -4,6 +4,7 @@ kind = "adventure"
 title = "Zork II: The Wizard of Frobozz"
 description = "Deeper into the Great Underground Empire, where the Wizard of Frobozz whispers a word beginning with F and your day gets worse. A dragon, a unicorn, a robot and the Bank of Zork await."
 year = 1981
+old = true
 license = "MIT"
 repo = "theasciiverse/zork"
 provenance = "Infocom released Zork II in 1981; Marc Blank, Dave Lebling, Bruce Daniels and Tim Anderson wrote it."

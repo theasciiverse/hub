@@ -4,6 +4,7 @@ kind = "game"
 title = "XRogue"
 description = "Nine classes, over 200 monsters, many of them clever, and a quest for one unique artifact deep in the Dungeons of Doom. In its own guide's words: very few players have won this game."
 year = 1989
+old = true
 license = "BSD-3-Clause"
 repo = "theasciiverse/rogue-restoration"
 collection = "rogue-restoration"

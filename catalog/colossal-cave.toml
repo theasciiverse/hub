@@ -4,6 +4,7 @@ kind = "adventure"
 title = "Colossal Cave Adventure"
 description = "The cave that started it all: find the way in, get the treasures past dwarves, a pirate and a troll, and say the magic word. The original text adventure, in its authors' final 430-point version."
 year = 1976
+old = true
 license = "BSD-2-Clause"
 repo = "theasciiverse/colossal-cave"
 provenance = "Will Crowther wrote Adventure in 1976 and Don Woods expanded it in 1977. Eric S. Raymond ported their last version, Adventure 2.5 (1995, 430 points), to modern C as Open Adventure."

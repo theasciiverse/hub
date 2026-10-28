@@ -4,6 +4,7 @@ kind = "game"
 title = "Mahjongg"
 description = "Mahjong solitaire in the terminal: all ten of GNOME Mahjongg's layouts, from the Turtle to the Red Dragon, every deal solvable, by mouse or keys."
 year = 2026
+new = true
 license = "GPL-3.0-or-later"
 repo = "theasciiverse/mahjongg"
 provenance = "radha wrote this terminal Mahjongg in Rust in 2026, with layouts and game logic from GNOME Mahjongg."

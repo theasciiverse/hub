@@ -4,6 +4,7 @@ kind = "game"
 title = "Rogue 3.6"
 description = "Rogue as Berkeley shipped it in 1981: 26 monsters from giant ant to zombie, the Dungeons of Doom, and the Amulet of Yendor more than 25 levels down."
 year = 1981
+old = true
 license = "BSD-3-Clause"
 repo = "theasciiverse/rogue-restoration"
 collection = "rogue-restoration"

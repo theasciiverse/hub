@@ -4,6 +4,7 @@ kind = "game"
 title = "Larn"
 description = "Your daughter is dying of dianthroritis, and the only cure is somewhere in the caverns of Larn or the volcano below. Noah Morgan's 1986 roguelike, against the clock."
 year = 1986
+old = true
 license = "LicenseRef-Free-Noncommercial"
 repo = "theasciiverse/netbsd-games"
 collection = "bsdgames"

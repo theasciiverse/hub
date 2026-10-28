@@ -4,6 +4,7 @@ kind = "game"
 title = "Advanced Rogue 5.8"
 description = "Fighter, magician, cleric or thief: go down into the Dungeons of Doom, take one of its unique artifacts from the monster that carries it, and bring it back. Few people ever make it out alive."
 year = 1984
+old = true
 # the BSD licence plus two clauses: "Advanced Rogue" and "ARogue" may not
 # endorse or promote derived products, and "Products derived from this
 # software may not be called "Advanced Rogue" or "ARogue" ... without

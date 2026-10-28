@@ -4,6 +4,7 @@ kind = "game"
 title = "Space Pirate Hunt"
 description = "The galaxy is overrun with space pirates and the clock is running: warp between sectors, fire plasers and torpedoes, take prisoners, and watch out for supernovas."
 year = 1976
+old = true
 license = "BSD-3-Clause"
 repo = "theasciiverse/bsdgames"
 collection = "bsdgames"

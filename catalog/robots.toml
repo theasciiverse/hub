@@ -4,6 +4,7 @@ kind = "game"
 title = "Robots"
 description = "Evil robots close in one step at a time, and all you have is a teleporter. Make them crash into each other before one of them reaches you."
 year = 1980
+old = true
 license = "BSD-3-Clause"
 repo = "theasciiverse/bsdgames"
 collection = "bsdgames"

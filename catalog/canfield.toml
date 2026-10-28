@@ -4,6 +4,7 @@ kind = "game"
 title = "Canfield"
 description = "Solitaire for money: buy the deal for $13, earn $5 a card on the foundations, pay $1 a minute to think, and see whether your account is up at the end."
 year = 1980
+old = true
 license = "BSD-3-Clause"
 repo = "theasciiverse/netbsd-games"
 collection = "bsdgames"

@@ -4,6 +4,7 @@ kind = "game"
 title = "Greed"
 description = "Munch through a screen full of numbers, where every number you land on decides how far you move next. Eat as much as you can before you box yourself in."
 year = 1990
+old = true
 license = "BSD-2-Clause"
 repo = "theasciiverse/greed"
 provenance = "Matt Day wrote Greed in C (to 3.0a, 1990); Eric S. Raymond has maintained it since and ported it to Rust in 2026."

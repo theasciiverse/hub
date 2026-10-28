@@ -4,6 +4,7 @@ kind = "game"
 title = "NetHack"
 description = "The great dungeon crawl: down through the Mazes of Menace and Gehennom for the Amulet of Yendor, with your pet at your side"
 year = 1987
+old = true
 license = "NGPL"
 repo = "theasciiverse/nethack"
 provenance = "Mike Stephenson merged the descendants of Andries Brouwer's Hack into NetHack 1.4 in 1987, and the NetHack DevTeam has developed it ever since."

@@ -4,6 +4,7 @@ kind = "game"
 title = "AQuest"
 description = "Mark Mackey's XQuest in the terminal: steer a drifting ship round the arena, grab every crystal, dodge the mines and leave through the gate, fifty levels deep"
 year = 1994
+old = true
 # Mark Mackey's shareware terms, carried by xquest-sdl's LICENSE to the port
 # and to this edition: free to share, credited, unofficial, never sold
 license = "LicenseRef-Free-Noncommercial"

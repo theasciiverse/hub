@@ -4,6 +4,7 @@ kind = "adventure"
 title = "Zork III: The Dungeon Master"
 description = "The end of the trilogy, at the foot of the Endless Stair. The Dungeon Master is waiting for an adventurer worthy to take his place. Is it you?"
 year = 1982
+old = true
 license = "MIT"
 repo = "theasciiverse/zork"
 provenance = "Infocom released Zork III in 1982; Marc Blank, Dave Lebling, Bruce Daniels and Tim Anderson wrote it."

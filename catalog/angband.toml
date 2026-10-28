@@ -4,6 +4,7 @@ kind = "game"
 title = "Angband"
 description = "A hundred levels of dungeon under a little town, and Morgoth, Lord of Darkness, waiting at the bottom. Choose a race and a class, buy what you can, and go down."
 year = 1990
+old = true
 # GPL-2 or the non-commercial "Angband licence", at the user's choice
 # (docs/copying.rst); taken under the GPL, which says "version 2" only
 license = "GPL-2.0-only"

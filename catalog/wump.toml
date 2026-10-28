@@ -4,6 +4,7 @@ kind = "game"
 title = "Hunt the Wumpus"
 description = "Somewhere in a cave of twenty rooms lives the evil Wumpus. Track it by smell, dodge bottomless pits and giant bats, and shoot it with a crooked arrow before it makes you dinner."
 year = 1973
+old = true
 license = "BSD-3-Clause"
 repo = "theasciiverse/bsdgames"
 collection = "bsdgames"

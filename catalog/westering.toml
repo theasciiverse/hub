@@ -4,6 +4,7 @@ kind = "game"
 title = "Westering"
 description = "Take a wagon party two thousand miles from Independence to the Willamette Valley in 1848: outfit, pace and rations, hunting, seven rivers and the forts between."
 year = 2026
+new = true
 license = "MIT"
 repo = "theasciiverse/westering"
 provenance = "A journey game in the line of The Oregon Trail (Don Rawitsch, Bill Heinemann and Paul Dillenberger, 1971), on the real road of 1848, written for Asciiverse in 2026."

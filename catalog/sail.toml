@@ -4,6 +4,7 @@ kind = "game"
 title = "Sail"
 description = "Command a man-of-war in the age of sail: work the wind, choose your shot and board the enemy in 31 sea battles against the computer."
 year = 1980
+old = true
 license = "BSD-3-Clause"
 repo = "theasciiverse/bsdgames"
 collection = "bsdgames"

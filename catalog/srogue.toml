@@ -4,6 +4,7 @@ kind = "game"
 title = "Super-Rogue"
 description = "Bell Labs' bigger Rogue: 52 monsters, magic pools, mazes, Friendly Fiend's Flea Market, and the devil Asmodeus waiting below everything else."
 year = 1982
+old = true
 # the BSD licence plus two clauses: "Super-Rogue" may not endorse or
 # promote derived products, and "Products derived from this software may
 # not be called "Super-Rogue" ... without prior written permission";

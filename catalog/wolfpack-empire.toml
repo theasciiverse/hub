@@ -1,6 +1,7 @@
 schema_version = 1
 id = "wolfpack-empire"
 kind = "game"
+old = true
 title = "Wolfpack Empire"
 description = "Rule a country on a shared world against real people: farm, mine, build fleets and armies, make alliances and declare war. Empire has been played over the Internet since the 1980s, and the world keeps turning while you sleep."
 license = "GPL-3.0-or-later"

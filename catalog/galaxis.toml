@@ -4,6 +4,7 @@ kind = "game"
 title = "Galaxis"
 description = "Four lifeboats adrift, the passengers' air running out, and nothing to find them with but probes that count what they can see. Find all four in as few tries as you can."
 year = 1994
+old = true
 license = "BSD-2-Clause"
 repo = "theasciiverse/galaxis"
 provenance = "Eric S. Raymond began Galaxis in 1994 as a curses clone of Christian Franz's Macintosh freeware game, and still maintains it."

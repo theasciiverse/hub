@@ -4,6 +4,7 @@ kind = "game"
 title = "Ztrack"
 description = "An endless three-lane road full of stupid but dangerous traffic, and you score most at 150 mph. Check your mirrors before you change lanes."
 year = 1995
+old = true
 # public domain by its author; SPDX has no id for that, so a LicenseRef
 license = "LicenseRef-Public-Domain"
 repo = "theasciiverse/ztrack"

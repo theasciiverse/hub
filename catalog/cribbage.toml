@@ -4,6 +4,7 @@ kind = "game"
 title = "Cribbage"
 description = "Fifteen-two, fifteen-four, and a pair is six: cribbage against a computer that counts every hand for you, first to 61, in a seven-game match where a skunk counts double."
 year = 1980
+old = true
 license = "BSD-3-Clause"
 repo = "theasciiverse/bsdgames"
 collection = "bsdgames"

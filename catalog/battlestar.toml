@@ -4,6 +4,7 @@ kind = "game"
 title = "Battlestar"
 description = "The last battlestar is coming apart around you: get off the ship, survive the fight in space, and explore a tropical island all the way to the goddess's throne."
 year = 1979
+old = true
 license = "BSD-3-Clause"
 repo = "theasciiverse/bsdgames"
 collection = "bsdgames"

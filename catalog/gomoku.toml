@@ -4,6 +4,7 @@ kind = "game"
 title = "Gomoku"
 description = "Five in a row on a 19 by 19 board against a computer that builds threats and blocks yours. Beat it to the fifth stone."
 year = 1994
+old = true
 license = "BSD-3-Clause"
 repo = "theasciiverse/bsdgames"
 collection = "bsdgames"

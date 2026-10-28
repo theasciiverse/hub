@@ -1,6 +1,7 @@
 schema_version = 1
 id = "vms-empire"
 kind = "game"
+old = true
 title = "VMS Empire"
 description = "Two emperors, one world, and only room for one. Build armies, fleets and planes city by city and conquer a world against the computer, in the 1970s ancestor of Civilization."
 license = "GPL-2.0-or-later"

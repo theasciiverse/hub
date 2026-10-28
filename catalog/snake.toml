@@ -4,6 +4,7 @@ kind = "game"
 title = "Snake"
 description = "Grab the money, reach the exit, and don't get eaten: the 1980 BSD chase game where the snake gets hungrier the richer you get."
 year = 1980
+old = true
 license = "BSD-3-Clause"
 repo = "theasciiverse/bsdgames"
 collection = "bsdgames"
