@@ -744,7 +744,9 @@ license = "GPL-3.0-or-later"
 topics = ["puzzle", "electronics", "simulation", "teaching"]
 thumbnail_at = 21.5
 developer = { name = "Asciiverse", url = "https://asciiverse.sh" }
-requires = { utf8 = true, color = "truecolor", mouse = true }
+requires = { utf8 = true, color = "truecolor", mouse = true, gamepad = true }
+# the local dev build links libudev dynamically (gamepads)
+system_deps = ["libudev1"]
 
 # ---- MUDs: kind = "mud", proposed in hub/catalog/SCHEMA.md ----
 # Servers checked reachable 2026-10-10 with a plain TCP connect.
@@ -763,6 +765,7 @@ Then the test bench has its say: fresh batteries and tired ones, a bright day an
 - **From a bike lamp to your first chip:** 34 jobs in six chapters, through resistors, capacitors, relays, diodes, transistors and logic, one customer at a time.
 - **The Master's Notebook:** a page for every idea, each with a live circuit you can switch and measure.
 - **A multimeter and a scope** that read whatever you point at, and a sandbox to build anything you like.
+- **Mouse, keyboard or gamepad,** whichever sits best in your hands.
 - **No timer, no pressure.** Poke, measure, think, and try again.
 
 The whole town is counting on you. **DON'T LET THE MAGIC SMOKE OUT!**
@@ -781,6 +784,7 @@ Mouse and keyboard work together: point at a part with the mouse and press a key
 - **N**: the Master's Notebook, **B**: the card binder, **PgUp** and **PgDn**: the previous or next job
 - **M**: sound on or off, **Esc**: back, **Ctrl+Q**: quit
 - **F1** or **?**: help, anywhere
+- **Gamepad**: d-pad or left stick moves, **A** places (hold it and move to lay copper), **B** erases, **X** rotates, **Y** operates, the shoulders change drawer, the triggers undo and redo, **Start** runs the test bench; hold **Back** for the Notebook, the binder, help and the rest
 
 ## Options
 
