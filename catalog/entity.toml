@@ -1,0 +1,48 @@
+schema_version = 1
+id = "entity"
+kind = "game"
+title = "Entity"
+description = "N-inspired precision platformer: momentum, wall jumps, gold, mines, instant death"
+year = 2026
+new = true
+license = "MIT"
+repo = "theasciiverse/entity"
+provenance = "Asciiverse made Entity in Rust in 2026 inspired by N (Metanet Software). It ports N's physics and object types and has a campaign of 100 levels of its own."
+topics = ["platformer", "precision", "physics", "ninja", "level editor", "gamepad", "rust"]
+genre = "platformer"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# the archive holds entity, README.md and LICENSE; the levels are built in
+# and nothing is saved
+[exec]
+game = "entity"
+args = []
+
+# the whole room on one screen; below 64x25 it asks for a bigger terminal
+[min_terminal]
+cols = 64
+rows = 25
+
+# block glyphs for the rooms, the ninja in Braille, RGB colours; gamepads
+# through udev on Linux
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = false
+gamepad = true
+glyphs = ["braille"]
+
+system_deps = ["libudev1"]
+
+# 100x30, `ENTITY_NINJA_SCALE=2.0 entity --demo 3:4` (the route bot's own
+# route): the last door, from the ramp to the exit; the still is the ninja
+# in mid-air between the drone and the thwomp
+[media]
+cast = "asciiverse/entity.cast"
+thumbnail_at = 9.0
+
+[release]
+source = "github"

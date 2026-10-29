@@ -3423,6 +3423,73 @@
    },
    "news": []
   },
+  "entity": {
+   "schema_version": 1,
+   "id": "entity",
+   "kind": "game",
+   "title": "Entity",
+   "description": "N-inspired precision platformer: momentum, wall jumps, gold, mines, instant death",
+   "year": 2026,
+   "new": true,
+   "license": "MIT",
+   "repo": "theasciiverse/entity",
+   "provenance": "Asciiverse made Entity in Rust in 2026 inspired by N (Metanet Software). It ports N's physics and object types and has a campaign of 100 levels of its own.",
+   "topics": [
+    "platformer",
+    "precision",
+    "physics",
+    "ninja",
+    "level editor",
+    "gamepad",
+    "rust"
+   ],
+   "genre": "platformer",
+   "developer": {
+    "name": "Asciiverse",
+    "url": "https://asciiverse.sh"
+   },
+   "exec": {
+    "game": "entity",
+    "args": []
+   },
+   "min_terminal": {
+    "cols": 64,
+    "rows": 25
+   },
+   "requires": {
+    "utf8": true,
+    "color": "truecolor",
+    "mouse": false,
+    "gamepad": true,
+    "glyphs": [
+     "braille"
+    ],
+    "system_deps": [
+     "libudev1"
+    ]
+   },
+   "media": {
+    "cast": "asciiverse/entity.cast",
+    "thumbnail_at": 9.0
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**ONE NINJA. ONE HUNDRED ROOMS. ONE SECOND IS A LONG TIME.**\n\nRun, jump and wall-jump through rooms full of mines, drones, lasers,\nturrets, thwomps and homing rockets. Touch the switch, the door opens,\nreach it. Gold buys you time, and every five levels share one clock.\nDeath is instant, and so is the next try.\n\n## The campaign\n\n- 100 levels in twenty episodes of five, each episode teaching one thing\n  before it mixes them: jumps and slopes, doors and keys, mines, launch\n  pads and bounce blocks, drones, thwomps, lasers, turrets, rockets and\n  chainguns, one-way gates, then everything at once\n- N's momentum, wall jumps and wall slides, and its rule that only a hard\n  landing kills\n- The whole room on one screen, filling the terminal, the ninja drawn in\n  Braille dots\n- A level editor and a route bot that finds a way through your own levels\n\n## Controls\n\n- Arrows, WASD or HJKL to run; Up, W, Space or Z to jump, held for height\n- Down or S to stop, R to try again, N and P for the next and previous level\n- Esc asks before you quit\n- Gamepad: d-pad or stick to run, A or B to jump, Y to try again, A, B or\n  Start for the next level\n\nBest in a terminal that reports key releases (kitty, foot, Ghostty,\nAlacritty), or with a gamepad.\n",
+   "updated_at": "2026-10-29T06:54:07Z",
+   "version": "0.9.0",
+   "thumbnail_at": 9.0,
+   "cast_url": "/casts/entity.cast?v=1793222130",
+   "duration": 20.1,
+   "platforms": {
+    "x86_64-unknown-linux-gnu": {
+     "url": "/dev-releases/entity/entity-x86_64-unknown-linux-gnu.tar.gz",
+     "sha256": "4618875ad3d330bcc5d552df4b56d6ce2fd7f2809c20f57bf2524d7e259ab908",
+     "size": 1137193
+    }
+   },
+   "news": []
+  },
   "fate": {
    "schema_version": 1,
    "id": "fate",
@@ -11400,52 +11467,6 @@
      "url": "/dev-releases/ceres-x86_64-unknown-linux-gnu.tar.gz",
      "sha256": "1f497f58fab4a286434e7a234e9bf08bb438afe05097aa09430f3f7d21a9ac97",
      "size": 8052856
-    }
-   },
-   "news": []
-  },
-  "entity": {
-   "id": "entity",
-   "year": 2026,
-   "new": true,
-   "kind": "game",
-   "title": "Entity",
-   "description": "N-inspired precision platformer: momentum, wall jumps, gold, mines, instant death",
-   "provenance": "Asciiverse made Entity in Rust in 2026 inspired by N (Metanet Software). It ports N's physics and object types, and plays the 150 levels of N v1.2.",
-   "genre": "platformer",
-   "license": "MIT",
-   "topics": [
-    "platformer",
-    "precision",
-    "physics",
-    "ninja"
-   ],
-   "thumbnail_at": 9.0,
-   "developer": {
-    "name": "Asciiverse",
-    "url": "https://asciiverse.sh"
-   },
-   "min_terminal": {
-    "cols": 64,
-    "rows": 25
-   },
-   "requires": {
-    "utf8": true,
-    "color": "truecolor",
-    "mouse": false,
-    "glyphs": [
-     "braille"
-    ]
-   },
-   "version": "0.2.0",
-   "updated_at": "2026-10-10T00:00:00Z",
-   "cast_url": "/casts/entity.cast?v=1793222130",
-   "duration": 20.1,
-   "platforms": {
-    "x86_64-unknown-linux-gnu": {
-     "url": "/dev-releases/entity-x86_64-unknown-linux-gnu.tar.gz",
-     "sha256": "025c748b71c0a0d6c1dcc357991bbb70b5bc30f8518f72b01acc0f84ca21a5cb",
-     "size": 1316504
     }
    },
    "news": []

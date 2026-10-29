@@ -589,22 +589,6 @@ In 2015, Maddy Thorson and Noel Berry made a hardcore little platformer for the 
 """
 
 [[title]]
-id = "entity"
-year = 2026
-new = true
-kind = "game"
-title = "Entity"
-description = "N-inspired precision platformer: momentum, wall jumps, gold, mines, instant death"
-provenance = "Asciiverse made Entity in Rust in 2026 inspired by N (Metanet Software). It ports N's physics and object types, and plays the 150 levels of N v1.2."
-genre = "platformer"
-license = "MIT"
-topics = ["platformer", "precision", "physics", "ninja"]
-thumbnail_at = 9.0
-developer = { name = "Asciiverse", url = "https://asciiverse.sh" }
-min_terminal = { cols = 64, rows = 25 }
-requires = { utf8 = true, color = "truecolor", mouse = false, glyphs = ["braille"] }
-
-[[title]]
 id = "marble-recovery"
 year = 2026
 new = true
