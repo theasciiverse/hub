@@ -1718,6 +1718,78 @@
    },
    "news": []
   },
+  "calvary": {
+   "schema_version": 1,
+   "id": "calvary",
+   "kind": "game",
+   "title": "Calvary",
+   "description": "An action-RTS built from Crack dot Com's unfinished Golgotha: drive the supertank yourself while your army rolls down the roads, through a campaign from Basrah to Nineveh in 2048.",
+   "year": 1998,
+   "license": "MIT",
+   "repo": "theasciiverse/calvary",
+   "provenance": "Crack dot Com was making Golgotha when the studio closed in 1998, and gave away its source, graphics, music and levels; Patrick Grawehr's Golgotha Forever kept the code alive. Asciiverse built Calvary from them in 2026, with a campaign of its own.",
+   "changes": "CLAUDE.md",
+   "topics": [
+    "rts",
+    "tanks",
+    "campaign",
+    "crack dot com",
+    "golgotha",
+    "braille",
+    "rust"
+   ],
+   "genre": "strategy",
+   "developer": {
+    "name": "Asciiverse",
+    "url": "https://asciiverse.sh"
+   },
+   "upstream": {
+    "name": "Crack dot Com, 1998",
+    "url": "https://github.com/pgrawehr/golgotha"
+   },
+   "exec": {
+    "game": "calvary",
+    "args": []
+   },
+   "min_terminal": {
+    "cols": 100,
+    "rows": 30
+   },
+   "requires": {
+    "utf8": true,
+    "color": "truecolor",
+    "mouse": true,
+    "gamepad": true,
+    "glyphs": [
+     "braille"
+    ]
+   },
+   "media": {
+    "cast": "asciiverse/calvary.cast",
+    "thumbnail_at": 25.0
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**2048. THEY TOLD US AN AMERICAN WAS DEAD. SHE WAS. THEY LIED ABOUT WHO KILLED HER.**\n\nDr. Ruth Calloway dug beneath Golgotha, the place of the skull, and found\none: human in shape, three times too large. Then she was murdered, Iraq\nwas blamed, and America went in. Commander John Fisher leads the\nincursion. At every site on his orders his column finds her trenches, and\nwhat she found in them.\n\nYou drive the supertank yourself: shell towers from across the water,\nlock the turret on what moves, rearm at your HQ, and earn upgrades for\nyour next tank with every kill. Behind you the garage builds the army\nand sends it down the roads to the enemy: peon tanks, rocket tanks,\nelectric cars, trikes, engineers that take banks and towers, bridgers\nthat lay themselves across a gap. Junctions decide where they go, and you\nswitch them. Banks fill crates of money, and planes fly them home.\n\n**Act I, The Incursion**, seven missions through Iraq:\n\n- **Al Basrah:** the beachhead, the supertank alone against the road north\n- **Shatt al-Arab:** marsh channels, every bridge blown; bridgers first\n- **Ur:** hold Calloway's first dig, under the ziggurat\n- **Nakhayb:** her abandoned camp between the mesas; whoever's engineer\n  gets there first takes it\n- **Babylon:** the bones in the open, ringed by electric towers\n- **The Euphrates line:** six trucks, two roads, a night of changing orders\n- **Nineveh:** Fisher refuses to raze the site, and both armies turn on him\n\nGolgotha's own levels are on the title menu too: a battle on the Greek\ncoast, a skirmish in a Swiss valley, a walled town in Egypt. Play from\nabove, from the strategy map with its road network, or from behind the\nsupertank in the follow view, with the original's music and radio voices.\n\n## Controls\n\n- **W**/**S** gears, **A**/**D** turn, **Q**/**E** turret, **T** turret\n  lock\n- **Space** main gun, **F** machine gun, **Enter** rockets; or the mouse:\n  the turret follows the pointer, the left button fires\n- **1** to **8** build at the garage, **V** a bridger, **9** **0** **B**\n  aircraft\n- **J** switches the nearest junction (or click it); click or drag to\n  select units, right-click to send them; **G** rally, **X** hold, **R**\n  back to the road\n- **Tab** map, **M** follow view, **+**/**-** zoom, **F1** all the keys\n- A gamepad plays it too: left stick drives, right stick aims, triggers\n  fire\n\n## Options\n\n- `calvary --no-intro`: straight to the title\n- `calvary --edit maps/x.cmap`: the map editor\n- `calvary --mute`: no sound\n\n## History\n\nCrack dot Com, the studio of Abuse, was making Golgotha, an arcade tank\ngame fused with real-time strategy, when it closed in 1998. It released\nthe source, graphics, music and levels so the work would not disappear,\nand Patrick Grawehr's Golgotha Forever kept the code alive. Calvary\nbuilds the game in the terminal from that source, its balance table, its\nlevels, music and sounds, and finishes the story its team had begun.\n\n## Credits\n\nGolgotha by Crack dot Com: Dave Taylor, Jonathan Clark, Carly Taylor, who\ncreated the name and the plot, and the whole team. The globe is NASA's\nBlue Marble. Calvary by Asciiverse, MIT licensed.\n",
+   "system_deps": [
+    "libasound2",
+    "libudev1"
+   ],
+   "version": "0.5.0",
+   "updated_at": "2026-10-10T00:00:00Z",
+   "thumbnail_at": 25.0,
+   "cast_url": "/casts/calvary.cast?v=1793260617",
+   "duration": 45.3,
+   "platforms": {
+    "x86_64-unknown-linux-gnu": {
+     "url": "/dev-releases/calvary-x86_64-unknown-linux-gnu.tar.gz",
+     "sha256": "2286d5514cadd79edb5f2b631313b1baae52dc3a2e1095afac6f5d30b0a9d9aa",
+     "size": 44887749
+    }
+   },
+   "news": []
+  },
   "candybox2": {
    "schema_version": 1,
    "id": "candybox2",
