@@ -36,7 +36,7 @@ rows = 25
 utf8 = true
 color = "truecolor"
 mouse = false
-gamepad = false
+gamepad = true
 glyphs = ["braille"]
 
 system_deps = ["libasound2"]

@@ -26,7 +26,7 @@ block glyphs. One key switches to the Apple II's own picture.
 - All fourteen levels, the shadow, the skeleton, the vizier and the mouse
 - The DOS title, story and credits, the princess's room between levels,
   and both endings
-- The speaker sound effects as the Apple played them, and the DOS music
+- The DOS sound effects and music
 - `--demo` plays the original's attract demo
 
 ## Controls
@@ -40,6 +40,8 @@ block glyphs. One key switches to the Apple II's own picture.
 - From level 3 on the game is saved on each new level, and Ctrl-G saves
   it on the spot; Ctrl-L continues a saved game from the title
 - Esc twice quits
+- A gamepad works too: d-pad or stick, Y up, A down, X or a trigger for
+  the button, Start pauses
 
 Held keys are read exactly in terminals with the kitty keyboard protocol;
 elsewhere from the keyboard's repeat.
