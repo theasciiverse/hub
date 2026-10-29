@@ -1,0 +1,38 @@
+schema_version = 1
+id = "senet"
+kind = "game"
+title = "Senet"
+description = "The Egyptian game of passing through the netherworld, played for three thousand years, with every honest reconstruction of its lost rules"
+year = 2026
+new = true
+license = "GPL-3.0-or-later"
+repo = "theasciiverse/ancient-games"
+provenance = "Asciiverse made Senet in Rust in 2026. No ancient rules survive; it plays Timothy Kendall's reconstruction in two forms and R. C. Bell's."
+topics = ["board", "race", "dice", "ancient", "egypt", "history", "vs-computer", "hot-seat"]
+genre = "board"
+collection = "ancient-games"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[exec]
+game = "senet"
+args = []
+
+[min_terminal]
+cols = 100
+rows = 30
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = true
+gamepad = false
+
+[media]
+cast = "asciiverse/casts/senet.cast"
+thumbnail_at = 60.0
+
+[release]
+source = "github"

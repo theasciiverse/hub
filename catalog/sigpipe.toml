@@ -1,0 +1,39 @@
+schema_version = 1
+id = "sigpipe"
+kind = "game"
+title = "SIGPIPE"
+description = "The data is already on its way! Lay pipe as fast as your fingers allow: loop it, split it, buffer it, and pray it never hits an open end. cat: write error: Broken pipe!"
+year = 2026
+new = true
+license = "MIT"
+repo = "theasciiverse/sigpipe"
+provenance = "Asciiverse made SIGPIPE in Rust in 2026, after the pipe-laying puzzle games of the late 1980s."
+topics = ["puzzle", "pipes", "versus", "lan"]
+genre = "puzzle"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[exec]
+game = "sigpipe"
+args = []
+
+[min_terminal]
+cols = 71
+rows = 24
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = true
+gamepad = true
+
+system_deps = ["libasound2", "libudev1"]
+
+[media]
+cast = "asciiverse/sigpipe.cast"
+thumbnail_at = 14.0
+
+[release]
+source = "github"

@@ -1,0 +1,38 @@
+schema_version = 1
+id = "konane"
+kind = "game"
+title = "Kōnane"
+description = "Black and white stones, every hollow full, and every move a jump: the Hawaiian game Cook's expedition saw in 1779"
+year = 2026
+new = true
+license = "GPL-3.0-or-later"
+repo = "theasciiverse/ancient-games"
+provenance = "Asciiverse made Kōnane in Rust in 2026. Its rules follow Michael Ernst (1995), after Kenneth Emory (1924) and Peter Buck (1957), and the National Park Service at Puʻuhonua o Hōnaunau; its largest board is the one James King described in 1779."
+topics = ["board", "jumping", "abstract", "oceania", "hawaii", "history", "vs-computer", "hot-seat"]
+genre = "board"
+collection = "ancient-games"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[exec]
+game = "konane"
+args = []
+
+[min_terminal]
+cols = 100
+rows = 30
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = true
+gamepad = false
+
+[media]
+cast = "asciiverse/casts/konane.cast"
+thumbnail_at = 40.0
+
+[release]
+source = "github"

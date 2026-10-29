@@ -1,0 +1,38 @@
+schema_version = 1
+id = "fox-and-geese"
+kind = "game"
+title = "Fox and Geese"
+description = "One fox, a whole gaggle of geese, and a cross-shaped board: the medieval hunt game, as R. C. Bell gives it"
+year = 2026
+new = true
+license = "GPL-3.0-or-later"
+repo = "theasciiverse/ancient-games"
+provenance = "Asciiverse made Fox and Geese in Rust in 2026. The rules are R. C. Bell's (1960), with thirteen or seventeen geese."
+topics = ["board", "hunt", "abstract", "medieval", "history", "vs-computer", "hot-seat"]
+genre = "board"
+collection = "ancient-games"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[exec]
+game = "fox-and-geese"
+args = []
+
+[min_terminal]
+cols = 100
+rows = 30
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = true
+gamepad = false
+
+[media]
+cast = "asciiverse/casts/fox-and-geese.cast"
+thumbnail_at = 60.0
+
+[release]
+source = "github"

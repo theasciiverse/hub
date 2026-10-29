@@ -1,0 +1,39 @@
+schema_version = 1
+id = "panzer"
+kind = "game"
+title = "Panzer"
+description = "It is time to make a stand in toyland! Toy tanks - real ricochets! Bank your shells off the walls, plant your mines, and outfox nine enemy tanks with nine nasty tricks, all the way to the Last Stand!"
+year = 2026
+new = true
+license = "MIT"
+repo = "theasciiverse/panzer"
+provenance = "Asciiverse made Panzer in Rust in 2026, after Wii Play's Tanks (Nintendo, 2006)."
+topics = ["action", "tanks", "co-op", "lan"]
+genre = "action"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[exec]
+game = "panzer"
+args = []
+
+[min_terminal]
+cols = 48
+rows = 18
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = true
+gamepad = true
+
+system_deps = ["libasound2", "libudev1"]
+
+[media]
+cast = "asciiverse/panzer.cast"
+thumbnail_at = 12.0
+
+[release]
+source = "github"

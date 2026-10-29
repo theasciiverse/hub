@@ -1,0 +1,37 @@
+schema_version = 1
+id = "dominos"
+kind = "game"
+title = "Dominos"
+description = "Clack! Ivory tiles on green baize: the Block game, the Draw game and All Fives, against a sly computer or your friends round the table on the local network."
+year = 2026
+new = true
+license = "MIT"
+repo = "theasciiverse/dominos"
+provenance = "Asciiverse made Dominos in Rust in 2026. Rules after pagat.com's Block, Draw and All Fives."
+topics = ["dominoes", "tiles", "vs-computer", "multiplayer", "lan", "partners", "family", "classic"]
+genre = "board"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[exec]
+game = "dominos"
+args = []
+
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = true
+gamepad = false
+
+[media]
+cast = "asciiverse/dominos.cast"
+thumbnail_at = 3.0
+
+[release]
+source = "github"

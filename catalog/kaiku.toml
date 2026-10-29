@@ -1,0 +1,41 @@
+schema_version = 1
+id = "kaiku"
+kind = "game"
+title = "Kaiku: Echoes Home"
+description = "A savage blast hurls you deep into enemy territory, where no human has ever flown! Fight through two hostile fleets, decode the lost voices of Earth, and find the one gate that leads home. Can you make it back alive?!"
+year = 2026
+new = true
+license = "MIT"
+repo = "theasciiverse/kaiku"
+provenance = "Asciiverse made Kaiku in Rust in 2026. The echoes are NASA mission audio and John F. Kennedy's speeches; Gates of Zendocon (Epyx, 1989), ZType and Typespeed inspired it."
+topics = ["shmup", "typing", "space", "co-op", "gamepad", "braille"]
+genre = "action"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[exec]
+game = "kaiku"
+args = []
+
+# the game's own check: a 40x12 play area inside the header, frame, panel and HUD
+[min_terminal]
+cols = 42
+rows = 20
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = false
+gamepad = true
+glyphs = ["braille"]
+
+system_deps = ["libasound2", "libudev1"]
+
+[media]
+cast = "asciiverse/kaiku.cast"
+thumbnail_at = 38.0
+
+[release]
+source = "github"

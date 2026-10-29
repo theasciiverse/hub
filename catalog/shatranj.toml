@@ -1,0 +1,38 @@
+schema_version = 1
+id = "shatranj"
+kind = "game"
+title = "Shatranj"
+description = "Chess before the queen and the bishop, as the masters of Baghdad played it, and the Indian chaturanga they wrote down"
+year = 2026
+new = true
+license = "GPL-3.0-or-later"
+repo = "theasciiverse/ancient-games"
+provenance = "Asciiverse made Shatranj in Rust in 2026. Its rules follow H. J. R. Murray's A History of Chess (1913), from the books of al-'Adli and as-Suli, and al-Biruni's account of India (about 1030)."
+topics = ["board", "chess", "abstract", "asia", "persia", "india", "history", "vs-computer", "hot-seat"]
+genre = "board"
+collection = "ancient-games"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[exec]
+game = "shatranj"
+args = []
+
+[min_terminal]
+cols = 100
+rows = 30
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = true
+gamepad = false
+
+[media]
+cast = "asciiverse/casts/shatranj.cast"
+thumbnail_at = 40.0
+
+[release]
+source = "github"

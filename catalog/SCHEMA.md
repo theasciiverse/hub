@@ -65,7 +65,9 @@ mouse = true
 gamepad = false                # optional: true when it also plays with a gamepad
 glyphs = []                    # optional: "braille", "octants", ... so av can warn about fonts
 
-system_deps = ["libncursesw6"] # free-text hint; av warns, never installs
+system_deps = ["libncursesw6"] # free-text hint; av warns, never installs. In TOML it
+                               # belongs to [requires]; catalog.json carries it at
+                               # the title's top level, where av reads it
 
 [media]
 cast = "resources/solitty.cast" # path in `repo`, or a full https URL

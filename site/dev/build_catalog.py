@@ -168,6 +168,10 @@ def main():
         t = tomllib.loads(toml.read_text())
         md = toml.with_suffix(".md")
         t["page"] = md.read_text() if md.exists() else ""
+        # written under [requires] in a manifest (SCHEMA.md), read by av at
+        # the title's top level
+        if "system_deps" in t.get("requires", {}):
+            t["system_deps"] = t["requires"].pop("system_deps")
         titles[t["id"]] = t
     if MOCK.exists():
         for t in tomllib.loads(MOCK.read_text()).get("title", []):

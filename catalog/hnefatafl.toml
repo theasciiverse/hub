@@ -1,0 +1,38 @@
+schema_version = 1
+id = "hnefatafl"
+kind = "game"
+title = "Hnefatafl"
+description = "The Viking game of the king: twenty-four attackers, one king and his guard, and five rule sets from Copenhagen to Lapland"
+year = 2026
+new = true
+license = "GPL-3.0-or-later"
+repo = "theasciiverse/ancient-games"
+provenance = "Asciiverse made Hnefatafl in Rust in 2026. No Norse rules survive; it plays today's reconstructions as the World Tafl Federation and Aage Nielsen give them, and R. C. Bell's Tablut of 1960."
+topics = ["board", "strategy", "abstract", "ancient", "viking", "history", "vs-computer", "hot-seat"]
+genre = "board"
+collection = "ancient-games"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[exec]
+game = "hnefatafl"
+args = []
+
+[min_terminal]
+cols = 100
+rows = 30
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = true
+gamepad = false
+
+[media]
+cast = "asciiverse/casts/hnefatafl.cast"
+thumbnail_at = 60.0
+
+[release]
+source = "github"

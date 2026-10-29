@@ -1,0 +1,38 @@
+schema_version = 1
+id = "patolli"
+kind = "game"
+title = "Patolli"
+description = "Five black beans, a cross painted on a mat, six stones each: the Aztec game that players staked themselves on"
+year = 2026
+new = true
+license = "GPL-3.0-or-later"
+repo = "theasciiverse/ancient-games"
+provenance = "Asciiverse made Patolli in Rust in 2026. Its rules are R. C. Bell's suggested rules (1969), on the equipment Diego Durán describes (about 1579)."
+topics = ["board", "dice", "race", "americas", "mexico", "aztec", "history", "vs-computer", "hot-seat"]
+genre = "board"
+collection = "ancient-games"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[exec]
+game = "patolli"
+args = []
+
+[min_terminal]
+cols = 100
+rows = 30
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = true
+gamepad = false
+
+[media]
+cast = "asciiverse/casts/patolli.cast"
+thumbnail_at = 40.0
+
+[release]
+source = "github"

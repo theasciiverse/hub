@@ -1,0 +1,38 @@
+schema_version = 1
+id = "mu-torere"
+kind = "game"
+title = "Mū tōrere"
+description = "Four men each on an eight-pointed star and one empty point: the Māori blocking game of New Zealand's East Coast"
+year = 2026
+new = true
+license = "GPL-3.0-or-later"
+repo = "theasciiverse/ancient-games"
+provenance = "Asciiverse made Mū tōrere in Rust in 2026. Its rules follow Elsdon Best's Games and Pastimes of the Maori (1925), as Tuta Nihoniho of Ngāti Porou explained the game to him, and the rule most often played today."
+topics = ["board", "blocking", "abstract", "oceania", "new-zealand", "history", "vs-computer", "hot-seat"]
+genre = "board"
+collection = "ancient-games"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[exec]
+game = "mu-torere"
+args = []
+
+[min_terminal]
+cols = 100
+rows = 30
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = true
+gamepad = false
+
+[media]
+cast = "asciiverse/casts/mu-torere.cast"
+thumbnail_at = 40.0
+
+[release]
+source = "github"

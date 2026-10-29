@@ -1,0 +1,38 @@
+schema_version = 1
+id = "mehen"
+kind = "game"
+title = "Mehen"
+description = "Race your pharaohs up the coiled snake by guessing marbles in a fist, and set lions on the other team: one of Egypt's oldest games, reconstructed in 2024"
+year = 2026
+new = true
+license = "GPL-3.0-or-later"
+repo = "theasciiverse/ancient-games"
+provenance = "Asciiverse made Mehen in Rust in 2026. No ancient rules survive; it plays James F. R. Masters' 2024 reconstruction."
+topics = ["board", "race", "guessing", "ancient", "egypt", "history", "vs-computer", "hot-seat", "party"]
+genre = "board"
+collection = "ancient-games"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[exec]
+game = "mehen"
+args = []
+
+[min_terminal]
+cols = 100
+rows = 30
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = true
+gamepad = false
+
+[media]
+cast = "asciiverse/casts/mehen.cast"
+thumbnail_at = 60.8
+
+[release]
+source = "github"

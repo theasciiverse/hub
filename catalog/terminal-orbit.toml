@@ -1,0 +1,41 @@
+schema_version = 1
+id = "terminal-orbit"
+kind = "game"
+title = "Terminal Orbit"
+description = "The aliens are already here! Fly real Newtonian orbits across the solar system in a starfighter drawn in Braille, from the Moon to the rings of Saturn and all the way out to Pluto."
+year = 1999
+license = "GPL-2.0-or-later"
+repo = "theasciiverse/terminal-orbit"
+provenance = "Asciiverse ported Steve Belczyk's ORBIT, a 1999 OpenGL space combat simulator, from its original C source. The original campaign is all here, and the first part of Episode Two is new."
+topics = ["space", "simulation", "combat", "braille", "port"]
+genre = "simulation"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "Steve Belczyk (ORBIT, 1999)"
+url = "http://genesis.nred.ma.us/orbit/"
+
+# the archive holds terminal-orbit with its maps/, missions/ and models/
+# folders, read from the install folder av starts it in
+[exec]
+game = "terminal-orbit"
+args = []
+
+# no [min_terminal]: it scales to the terminal and checks no minimum
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = false
+gamepad = false
+glyphs = ["braille"]
+
+[media]
+cast = "asciiverse/terminal-orbit.cast"
+thumbnail_at = 14.0
+
+[release]
+source = "github"

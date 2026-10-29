@@ -1,0 +1,38 @@
+schema_version = 1
+id = "marble-recovery"
+kind = "game"
+title = "Marble Recovery"
+description = "They say you've lost your marbles. They're right: twelve of them, rolled off into places that should not exist. Roll, tilt and tumble through strange worlds to bring every one of them home!"
+year = 2026
+new = true
+license = "GPL-3.0-or-later"
+repo = "theasciiverse/marble-recovery"
+provenance = "Asciiverse made Marble Recovery in Rust in 2026, after Marble Madness (Mark Cerny, Atari, 1984), with twelve levels of its own."
+topics = ["platformer", "isometric", "physics", "story"]
+genre = "platformer"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[exec]
+game = "marble-recovery"
+args = []
+
+# no [min_terminal]: it scales to the terminal and checks no minimum
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = true
+gamepad = true
+glyphs = ["braille"]
+
+system_deps = ["libudev1"]
+
+[media]
+cast = "asciiverse/marble-recovery.cast"
+thumbnail_at = 24.0
+
+[release]
+source = "github"

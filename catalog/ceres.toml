@@ -1,0 +1,40 @@
+schema_version = 1
+id = "ceres"
+kind = "game"
+title = "Ceres"
+description = "Ceres Mountain: three thousand metres of ice, spikes and wind. Jump, dash and wall-kick your way to the summit, and try not to read the memorial on the way up!"
+year = 2015
+license = "MIT"
+repo = "theasciiverse/ceres"
+provenance = "Asciiverse restored Celeste Classic (Maddy Thorson and Noel Berry, PICO-8, 2015), from Noel Berry's C# port and checked against the original."
+topics = ["platformer", "restoration", "pico-8", "precision"]
+genre = "platformer"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "Maddy Thorson and Noel Berry"
+url = "https://www.lexaloffle.com/bbs/?tid=2145"
+
+[exec]
+game = "ceres"
+args = []
+
+# no [min_terminal]: it scales to the terminal and checks no minimum
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = false
+gamepad = true
+
+system_deps = ["libasound2", "libudev1"]
+
+[media]
+cast = "asciiverse/ceres.cast"
+thumbnail_at = 12.0
+
+[release]
+source = "github"

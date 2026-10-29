@@ -1,0 +1,38 @@
+schema_version = 1
+id = "morris"
+kind = "game"
+title = "Morris"
+description = "Three in a row takes a man: Nine Men's Morris and its family, from the Roman game boards to Morabaraba of South Africa"
+year = 2026
+new = true
+license = "GPL-3.0-or-later"
+repo = "theasciiverse/ancient-games"
+provenance = "Asciiverse made Morris in Rust in 2026. Its rules follow R. C. Bell (1960), the World Mill Association's rules, Ralph Gasser (1996) and Mind Sports South Africa's Morabaraba rules."
+topics = ["board", "morris", "mill", "abstract", "europe", "africa", "history", "vs-computer", "hot-seat"]
+genre = "board"
+collection = "ancient-games"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[exec]
+game = "morris"
+args = []
+
+[min_terminal]
+cols = 100
+rows = 30
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = true
+gamepad = false
+
+[media]
+cast = "asciiverse/casts/morris.cast"
+thumbnail_at = 40.0
+
+[release]
+source = "github"

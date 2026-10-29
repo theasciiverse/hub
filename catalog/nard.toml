@@ -1,0 +1,42 @@
+schema_version = 1
+id = "nard"
+kind = "game"
+title = "Nard"
+description = "Fifteen men, two dice, and a neural-network opponent that doubles like it means it: backgammon on an inlaid bazaar board, the oldest game in the family."
+year = 2026
+new = true
+license = "MIT"
+repo = "theasciiverse/nard"
+provenance = "Asciiverse made Nard in Rust in 2026. The computer player is Mark Higgins' bgsage (Open Sage), and the board's look follows Pouya Hadidi's Backgammon TUI."
+topics = ["board", "backgammon", "dice", "doubling cube", "vs-computer", "hot-seat"]
+genre = "board"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[exec]
+game = "nard"
+args = []
+
+# the game's own check; larger points and the ornament from bigger sizes up
+[min_terminal]
+cols = 100
+rows = 26
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = true
+gamepad = false
+glyphs = ["braille"]
+
+# the engine is C++; on Intel and AMD it needs AVX2 (2013 or newer)
+system_deps = ["libstdc++6"]
+
+[media]
+cast = "asciiverse/nard.cast"
+thumbnail_at = 24.0
+
+[release]
+source = "github"

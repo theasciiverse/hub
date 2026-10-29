@@ -1,0 +1,38 @@
+schema_version = 1
+id = "seega"
+kind = "game"
+title = "Seega"
+description = "Fill a square of holes with your kelbs, then step and trap: the Egyptian game whose boards were cut into the top of the Great Pyramid"
+year = 2026
+new = true
+license = "GPL-3.0-or-later"
+repo = "theasciiverse/ancient-games"
+provenance = "Asciiverse made Seega in Rust in 2026. Its rules follow Edward William Lane's Manners and Customs of the Modern Egyptians (1836), the only early account of the game."
+topics = ["board", "capture", "abstract", "africa", "egypt", "history", "vs-computer", "hot-seat"]
+genre = "board"
+collection = "ancient-games"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[exec]
+game = "seega"
+args = []
+
+[min_terminal]
+cols = 100
+rows = 30
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = true
+gamepad = false
+
+[media]
+cast = "asciiverse/casts/seega.cast"
+thumbnail_at = 40.0
+
+[release]
+source = "github"

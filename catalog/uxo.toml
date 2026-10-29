@@ -1,0 +1,37 @@
+schema_version = 1
+id = "uxo"
+kind = "game"
+title = "uXo"
+description = "3:14 AM. One key pressed, and the machine pulled you in! A rogue program called purged has wired the whole system to blow. Defuse its charges, outwit its puzzles and blast your way out to the real world! Or grab three friends and blow each other sky-high in Battle!"
+year = 2026
+new = true
+license = "MIT"
+repo = "theasciiverse/uxo"
+provenance = "Asciiverse made uXo in Rust in 2026, a love letter to the 90s bomb-arena games."
+topics = ["action", "arena", "party", "gamepad"]
+genre = "action"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[exec]
+game = "uxo"
+args = []
+
+# no [min_terminal]: it scales to the terminal and checks no minimum
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = false
+gamepad = true
+
+system_deps = ["libudev1"]
+
+[media]
+cast = "asciiverse/uxo.cast"
+thumbnail_at = 13.0
+
+[release]
+source = "github"

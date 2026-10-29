@@ -1,0 +1,38 @@
+schema_version = 1
+id = "mancala"
+kind = "game"
+title = "Mancala"
+description = "Seeds, pits and a lot of counting: the sowing games of Africa, Asia and Europe, from Ghana's Oware to Toguz Kumalak of the steppe, each with its own rules"
+year = 2026
+new = true
+license = "GPL-3.0-or-later"
+repo = "theasciiverse/ancient-games"
+provenance = "Asciiverse made Mancala in Rust in 2026. Each of its nine games follows a source: the Oware Society's tournament rules, R. C. Bell (1960), E. W. Lane's account of Cairo (1836), W. J. Champion's Kalah patent (1955), M. Hellier on Malay congkak (1907), Mrs H. G. Durai on Pallanguli (1928), the Kazakh competition rules of 2013 and Fritz Jahn (1917)."
+topics = ["board", "mancala", "count-and-capture", "abstract", "africa", "asia", "history", "vs-computer", "hot-seat"]
+genre = "board"
+collection = "ancient-games"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[exec]
+game = "mancala"
+args = []
+
+[min_terminal]
+cols = 100
+rows = 30
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = true
+gamepad = false
+
+[media]
+cast = "asciiverse/casts/mancala.cast"
+thumbnail_at = 40.0
+
+[release]
+source = "github"

@@ -1,0 +1,38 @@
+schema_version = 1
+id = "tabula"
+kind = "game"
+title = "Tabula"
+description = "The Roman ancestor of backgammon: fifteen men, three dice, and the one game position that survives from antiquity"
+year = 2026
+new = true
+license = "GPL-3.0-or-later"
+repo = "theasciiverse/ancient-games"
+provenance = "Asciiverse made Tabula in Rust in 2026. Its rules follow the reconstructions of Louis Becq de Fouquières (1869), R. G. Austin (1934), R. C. Bell (1960) and H. J. R. Murray."
+topics = ["board", "dice", "race", "backgammon", "europe", "rome", "history", "vs-computer", "hot-seat"]
+genre = "board"
+collection = "ancient-games"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[exec]
+game = "tabula"
+args = []
+
+[min_terminal]
+cols = 100
+rows = 30
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = true
+gamepad = false
+
+[media]
+cast = "asciiverse/casts/tabula.cast"
+thumbnail_at = 40.0
+
+[release]
+source = "github"

@@ -1,0 +1,38 @@
+schema_version = 1
+id = "pachisi"
+kind = "game"
+title = "Pachisi and Chaupar"
+description = "Four colours round a cross of four arms, thrown with six cowrie shells or three long dice: the game that became Ludo"
+year = 2026
+new = true
+license = "GPL-3.0-or-later"
+repo = "theasciiverse/ancient-games"
+provenance = "Asciiverse made Pachisi and Chaupar in Rust in 2026. Its rules follow Rajendralala Mitra's account printed by Edward Tylor (1879), Edward Falkener (1892, reprinted by R. C. Bell) and Abu'l-Fazl's Ain-i Akbari (about 1590)."
+topics = ["board", "dice", "race", "partnership", "asia", "india", "history", "vs-computer", "hot-seat"]
+genre = "board"
+collection = "ancient-games"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[exec]
+game = "pachisi"
+args = []
+
+[min_terminal]
+cols = 100
+rows = 30
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = true
+gamepad = false
+
+[media]
+cast = "asciiverse/casts/pachisi.cast"
+thumbnail_at = 40.0
+
+[release]
+source = "github"

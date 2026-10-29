@@ -1,0 +1,41 @@
+schema_version = 1
+id = "rusty-pinball"
+kind = "game"
+title = "Rusty Pinball"
+description = "Eight physics pinball tables drawn in Braille vector lines: orbiting bumpers, a spinning triangle round a pyramid, a real star map and multiball wherever the table has it. After Brian Nenninger's Vector Pinball."
+year = 2010
+license = "GPL-3.0-only"
+repo = "theasciiverse/rusty-pinball"
+provenance = "Asciiverse ported Brian Nenninger's Vector Pinball for Android, written from its source code."
+topics = ["pinball", "physics", "braille", "port"]
+genre = "pinball"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "Vector Pinball"
+url = "https://github.com/dozingcat/Vector-Pinball"
+
+[exec]
+game = "rusty-pinball"
+args = []
+
+# no [min_terminal]: it scales to the terminal and checks no minimum
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = false
+gamepad = false
+glyphs = ["braille"]
+
+system_deps = ["libasound2"]
+
+[media]
+cast = "asciiverse/rusty-pinball.cast"
+thumbnail_at = 5.0
+
+[release]
+source = "github"

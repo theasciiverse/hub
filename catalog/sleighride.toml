@@ -1,0 +1,38 @@
+schema_version = 1
+id = "sleighride"
+kind = "game"
+title = "Sleighride"
+description = "Second day of Christmas, Santa's asleep and the elves have found the keys! Grab a sleigh, a reindeer or a broomstick and race like mad, before Santa fires up the snowplough and comes for the ringleader!"
+year = 2026
+new = true
+license = "GPL-3.0-or-later"
+repo = "theasciiverse/sleighride"
+provenance = "Asciiverse made Sleighride in Rust in 2026, out of the Christmas folklore of Julbocken, La Befana, the Yule Cat, the Yule Lads, Ded Moroz and Snegurochka."
+topics = ["racing", "multiplayer", "christmas", "voxel"]
+genre = "racing"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[exec]
+game = "sleighride"
+args = []
+
+# no [min_terminal]: it scales to the terminal and checks no minimum
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = false
+gamepad = true
+glyphs = ["braille"]
+
+system_deps = ["libasound2", "libudev1"]
+
+[media]
+cast = "asciiverse/sleighride.cast"
+thumbnail_at = 16.0
+
+[release]
+source = "github"

@@ -1,0 +1,38 @@
+schema_version = 1
+id = "royal-ur"
+kind = "game"
+title = "Royal Game of Ur"
+description = "The oldest board game with known rules: race your pieces past the rosettes of a 4,500-year-old board, in four reconstructions"
+year = 2026
+new = true
+license = "GPL-3.0-or-later"
+repo = "theasciiverse/ancient-games"
+provenance = "Asciiverse made Royal Game of Ur in Rust in 2026. The rules are Irving Finkel's reconstructions from a Babylonian tablet of 177 or 176 BC, and R. C. Bell's from 1960."
+topics = ["board", "race", "dice", "ancient", "history", "vs-computer", "hot-seat"]
+genre = "board"
+collection = "ancient-games"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[exec]
+game = "royal-ur"
+args = []
+
+[min_terminal]
+cols = 100
+rows = 30
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = true
+gamepad = false
+
+[media]
+cast = "asciiverse/casts/royal-ur.cast"
+thumbnail_at = 60.0
+
+[release]
+source = "github"

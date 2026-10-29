@@ -1,0 +1,40 @@
+schema_version = 1
+id = "brickspire"
+kind = "game"
+title = "Brickspire"
+description = "The stars are going out! The Mason has walled up the Lamplighter at the top of his tower. Five towers, fifty floors, one ball: smash your way up before the last star fades!"
+year = 2026
+new = true
+license = "MIT"
+repo = "theasciiverse/brickspire"
+provenance = "Asciiverse made Brickspire in Rust in 2026: a brick breaker after the great arcade and 16-bit ones, played up a turning tower in the manner of the late-80s tower climbers."
+topics = ["arcade", "breakout", "bosses", "gamepad"]
+genre = "arcade"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[exec]
+game = "brickspire"
+args = []
+
+# the smallest playfield layout, a 67x19 field, fits 80x24
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = true
+gamepad = true
+
+system_deps = ["libasound2", "libudev1"]
+
+[media]
+cast = "asciiverse/brickspire.cast"
+thumbnail_at = 8.0
+
+[release]
+source = "github"

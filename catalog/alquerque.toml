@@ -1,0 +1,38 @@
+schema_version = 1
+id = "alquerque"
+kind = "game"
+title = "Alquerque and Fanorona"
+description = "Leap and take on the lined board of Alfonso X's Book of Games, or sweep whole lines away in Madagascar's Fanorona"
+year = 2026
+new = true
+license = "GPL-3.0-or-later"
+repo = "theasciiverse/ancient-games"
+provenance = "Asciiverse made Alquerque and Fanorona in Rust in 2026. Its rules follow Alfonso X's Book of Games (1283, in Sonja Musser Golladay's translation), R. C. Bell (1960), W. Montgomery's account of Fanorona (1886) and Schadd and colleagues (2008)."
+topics = ["board", "capture", "abstract", "europe", "africa", "madagascar", "history", "vs-computer", "hot-seat"]
+genre = "board"
+collection = "ancient-games"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[exec]
+game = "alquerque"
+args = []
+
+[min_terminal]
+cols = 100
+rows = 30
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = true
+gamepad = false
+
+[media]
+cast = "asciiverse/casts/alquerque.cast"
+thumbnail_at = 40.0
+
+[release]
+source = "github"

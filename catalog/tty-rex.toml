@@ -1,0 +1,44 @@
+schema_version = 1
+id = "tty-rex"
+kind = "game"
+title = "tty-rex"
+description = "No internet? No problem. The browser's offline T-Rex runs again in your terminal, rebuilt from Chromium's own source: jump the cacti, duck the pterodactyls, run through the night."
+year = 2014
+license = "BSD-3-Clause"
+repo = "theasciiverse/tty-rex"
+provenance = "Asciiverse recreated Chrome's offline T-Rex runner, written from Chromium's own source: the same rules, timings, sprites and sounds."
+topics = ["runner", "endless", "braille", "total-conversion"]
+genre = "runner"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "The Chromium Authors"
+url = "https://www.chromium.org"
+
+[exec]
+game = "tty-rex"
+args = []
+
+# the Braille sprites rescale down to a 20x7 split pane
+[min_terminal]
+cols = 20
+rows = 7
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = false
+gamepad = true
+glyphs = ["braille", "octants"]
+
+system_deps = ["libasound2", "libudev1"]
+
+[media]
+cast = "asciiverse/tty-rex.cast"
+thumbnail_at = 5.0
+
+[release]
+source = "github"

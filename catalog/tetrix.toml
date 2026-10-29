@@ -1,0 +1,38 @@
+schema_version = 1
+id = "tetrix"
+kind = "game"
+title = "Tetrix"
+description = "Six fields. Nine dirty tricks. One survivor! The late-90s LAN-party block buster legend is back: clear lines, grab specials, and Quake, Bomb and Switch your friends into oblivion!"
+year = 2026
+new = true
+license = "GPL-2.0-or-later"
+repo = "theasciiverse/tetrix"
+provenance = "Asciiverse made Tetrix in Rust in 2026, after St0rmCat's TetriNET, the late-90s multiplayer falling-block game with attack blocks. Its rules follow TetriNET 1.13, and the rotation table and core rules are ported from Andrew Church's tetrinet 0.11."
+topics = ["puzzle", "multiplayer", "lan", "blocks"]
+genre = "puzzle"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[exec]
+game = "tetrix"
+args = []
+
+[min_terminal]
+cols = 100
+rows = 30
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = false
+gamepad = false
+glyphs = ["braille"]
+
+[media]
+cast = "asciiverse/tetrix.cast"
+thumbnail_at = 15.0
+
+[release]
+source = "github"

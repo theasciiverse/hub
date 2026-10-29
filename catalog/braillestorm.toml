@@ -1,0 +1,42 @@
+schema_version = 1
+id = "braillestorm"
+kind = "game"
+title = "Braillestorm"
+description = "Your terminal is in a storm! Wildcard globs, rogue cursors and runaway forks swarm the screen, and you're the last prompt standing. Twin-stick fury in glorious Braille, over a grid that ripples with every blast!"
+year = 2026
+new = true
+license = "GPL-3.0-or-later"
+repo = "theasciiverse/braillestorm"
+provenance = "Asciiverse made Braillestorm in Rust in 2026, inspired by Mark Incitti's freeware GridWars (2005); no code, art or sound is taken from it."
+topics = ["shmup", "twin-stick", "arena", "arcade", "gamepad", "braille"]
+genre = "action"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[exec]
+game = "braillestorm"
+args = []
+
+# the field fits any window and follows resizes; the game has no size check,
+# below about 60x20 it gets cramped
+[min_terminal]
+cols = 60
+rows = 20
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = true
+gamepad = true
+glyphs = ["braille"]
+
+system_deps = ["libudev1"]
+
+[media]
+cast = "asciiverse/braillestorm.cast"
+thumbnail_at = 12.2
+
+[release]
+source = "github"

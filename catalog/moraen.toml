@@ -1,0 +1,37 @@
+schema_version = 1
+id = "moraen"
+kind = "game"
+title = "Moraen"
+description = "The ice is gone, and the dwarves' treasure lies buried in the rubble it left behind. Dig in, gather the gems and bring the clan's treasure home, before the stone trolls awake!"
+year = 2026
+new = true
+license = "MIT"
+repo = "theasciiverse/moraen"
+provenance = "Asciiverse made Moraen in Rust in 2026, a love letter to the 1984 cave-digging classic."
+topics = ["puzzle", "action", "caves", "boulder-dash"]
+genre = "puzzle"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[exec]
+game = "moraen"
+args = []
+
+# no [min_terminal]: it scales to the terminal and checks no minimum
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = false
+gamepad = true
+
+system_deps = ["libudev1"]
+
+[media]
+cast = "asciiverse/moraen.cast"
+thumbnail_at = 8.0
+
+[release]
+source = "github"
