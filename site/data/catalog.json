@@ -1730,7 +1730,7 @@
    "id": "calvary",
    "kind": "game",
    "title": "Calvary",
-   "description": "An action-RTS built from Crack dot Com's unfinished Golgotha: drive the supertank yourself while your army rolls down the roads, through a campaign from Basrah to Nineveh in 2048.",
+   "description": "An action-RTS built from Crack dot Com's unfinished Golgotha: drive the supertank yourself while your army rolls down the roads, through a campaign from Basrah to Alexandria in 2048.",
    "year": 1998,
    "license": "MIT",
    "repo": "theasciiverse/calvary",
@@ -1778,7 +1778,7 @@
    "release": {
     "source": "github"
    },
-   "page": "**2048. THEY TOLD US AN AMERICAN WAS DEAD. SHE WAS. THEY LIED ABOUT WHO KILLED HER.**\n\nDr. Ruth Calloway dug beneath Golgotha, the place of the skull, and found\none: human in shape, three times too large. Then she was murdered, Iraq\nwas blamed, and America went in. Commander John Fisher leads the\nincursion. At every site on his orders his column finds her trenches, and\nwhat she found in them.\n\nYou drive the supertank yourself: shell towers from across the water,\nlock the turret on what moves, rearm at your HQ, and earn upgrades for\nyour next tank with every kill. Behind you the garage builds the army\nand sends it down the roads to the enemy: peon tanks, rocket tanks,\nelectric cars, trikes, engineers that take banks and towers, bridgers\nthat lay themselves across a gap. Junctions decide where they go, and you\nswitch them. Banks fill crates of money, and planes fly them home.\n\n**Act I, The Incursion**, seven missions through Iraq:\n\n- **Al Basrah:** the beachhead, the supertank alone against the road north\n- **Shatt al-Arab:** marsh channels, every bridge blown; bridgers first\n- **Ur:** hold Calloway's first dig, under the ziggurat\n- **Nakhayb:** her abandoned camp between the mesas; whoever's engineer\n  gets there first takes it\n- **Babylon:** the bones in the open, ringed by electric towers\n- **The Euphrates line:** six trucks, two roads, a night of changing orders\n- **Nineveh:** Fisher refuses to raze the site, and both armies turn on him\n\nGolgotha's own levels are on the title menu too: a battle on the Greek\ncoast, a skirmish in a Swiss valley, a walled town in Egypt. Play from\nabove, from the strategy map with its road network, or from behind the\nsupertank in the follow view, with the original's music and radio voices.\n\n## Controls\n\n- **W**/**S** gears, **A**/**D** turn, **Q**/**E** turret, **T** turret\n  lock\n- **Space** main gun, **F** machine gun, **Enter** rockets; or the mouse:\n  the turret follows the pointer, the left button fires\n- **1** to **8** build at the garage, **V** a bridger, **9** **0** **B**\n  aircraft\n- **J** switches the nearest junction (or click it); click or drag to\n  select units, right-click to send them; **G** rally, **X** hold, **R**\n  back to the road\n- **Tab** map, **M** follow view, **+**/**-** zoom, **F1** all the keys\n- A gamepad plays it too: left stick drives, right stick aims, triggers\n  fire\n\n## Options\n\n- `calvary --no-intro`: straight to the title\n- `calvary --edit maps/x.cmap`: the map editor\n- `calvary --mute`: no sound\n\n## History\n\nCrack dot Com, the studio of Abuse, was making Golgotha, an arcade tank\ngame fused with real-time strategy, when it closed in 1998. It released\nthe source, graphics, music and levels so the work would not disappear,\nand Patrick Grawehr's Golgotha Forever kept the code alive. Calvary\nbuilds the game in the terminal from that source, its balance table, its\nlevels, music and sounds, and finishes the story its team had begun.\n\n## Credits\n\nGolgotha by Crack dot Com: Dave Taylor, Jonathan Clark, Carly Taylor, who\ncreated the name and the plot, and the whole team. The globe is NASA's\nBlue Marble. Calvary by Asciiverse, MIT licensed.\n",
+   "page": "**2048. THEY TOLD US AN AMERICAN WAS DEAD. SHE WAS. THEY LIED ABOUT WHO KILLED HER.**\n\nDr. Ruth Calloway dug beneath Golgotha, the place of the skull, and found\none: human in shape, three times too large. Then she was murdered, Iraq\nwas blamed, and America went in. Commander John Fisher leads the\nincursion. At every site on his orders his column finds her trenches, and\nwhat she found in them.\n\nYou drive the supertank yourself: shell towers from across the water,\nlock the turret on what moves, rearm at your HQ, and earn upgrades for\nyour next tank with every kill. Behind you the garage builds the army\nand sends it down the roads to the enemy: peon tanks, rocket tanks,\nelectric cars, trikes, engineers that take banks and towers, bridgers\nthat lay themselves across a gap. Junctions decide where they go, and you\nswitch them. Banks fill crates of money, and planes fly them home.\n\n**Act I, The Incursion**, seven missions through Iraq:\n\n- **Al Basrah:** the beachhead, the supertank alone against the road north\n- **Shatt al-Arab:** marsh channels, every bridge blown; bridgers first\n- **Ur:** hold Calloway's first dig, under the ziggurat\n- **Nakhayb:** her abandoned camp between the mesas; whoever's engineer\n  gets there first takes it\n- **Babylon:** the bones in the open, ringed by electric towers\n- **The Euphrates line:** six trucks, two roads, a night of changing orders\n- **Nineveh:** Fisher refuses to raze the site, and both armies turn on him\n\n**Act II, The Desertion**, seven more, through the Levant and Egypt:\n\n- **Palmyra:** five minutes of rearguard among the columns\n- **The King's Highway:** trucks south past Kerak, the canyon of Wadi Mujib\n- **Sinai:** four thousand in the chest; banks are taken, not owned\n- **The Suez Canal:** bridgers under fire, trucks waiting at the gaps\n- **Cairo:** street war in the walled town, and the first helicopters\n- **Giza:** under the pyramids a third army shows itself, at war with all\n- **Alexandria:** board the ships for Greece while the jets come in\n\nGolgotha's own levels are on the title menu too: a battle on the Greek\ncoast, a skirmish in a Swiss valley, a walled town in Egypt. Play from\nabove, from the strategy map with its road network, or from behind the\nsupertank in the follow view, with the original's music and radio voices.\n\n## Controls\n\n- **W**/**S** gears, **A**/**D** turn, **Q**/**E** turret, **T** turret\n  lock\n- **Space** main gun, **F** machine gun, **Enter** rockets; or the mouse:\n  the turret follows the pointer, the left button fires\n- **1** to **8** build at the garage, **V** a bridger, **9** **0** **B**\n  aircraft\n- **J** switches the nearest junction (or click it); click or drag to\n  select units, right-click to send them; **G** rally, **X** hold, **R**\n  back to the road\n- **Tab** map, **M** follow view, **+**/**-** zoom, **F1** all the keys\n- A gamepad plays it too: left stick drives, right stick aims, triggers\n  fire\n\n## Options\n\n- `calvary --no-intro`: straight to the title\n- `calvary --edit maps/x.cmap`: the map editor\n- `calvary --mute`: no sound\n\n## History\n\nCrack dot Com, the studio of Abuse, was making Golgotha, an arcade tank\ngame fused with real-time strategy, when it closed in 1998. It released\nthe source, graphics, music and levels so the work would not disappear,\nand Patrick Grawehr's Golgotha Forever kept the code alive. Calvary\nbuilds the game in the terminal from that source, its balance table, its\nlevels, music and sounds, and finishes the story its team had begun.\n\n## Credits\n\nGolgotha by Crack dot Com: Dave Taylor, Jonathan Clark, Carly Taylor, who\ncreated the name and the plot, and the whole team. The globe is NASA's\nBlue Marble. Calvary by Asciiverse, MIT licensed.\n",
    "system_deps": [
     "libasound2",
     "libudev1"
@@ -1791,8 +1791,8 @@
    "platforms": {
     "x86_64-unknown-linux-gnu": {
      "url": "/dev-releases/calvary-x86_64-unknown-linux-gnu.tar.gz",
-     "sha256": "2286d5514cadd79edb5f2b631313b1baae52dc3a2e1095afac6f5d30b0a9d9aa",
-     "size": 44887749
+     "sha256": "efe3e55c7e6ca189ffbd3d0c6c14ebd3e553a6166dc80416ba58977e381aa262",
+     "size": 45042018
     }
    },
    "news": []
@@ -8300,7 +8300,7 @@
    "version": "0.9.0",
    "updated_at": "2026-10-29T06:00:00Z",
    "thumbnail_at": 25.0,
-   "cast_url": "/casts/prince-of-braille.cast?v=1793261974",
+   "cast_url": "/casts/prince-of-braille.cast?v=1793264256",
    "duration": 28.0,
    "platforms": {
     "x86_64-unknown-linux-gnu": {
@@ -12226,7 +12226,7 @@
    "id": "uxo",
    "kind": "game",
    "title": "uXo",
-   "description": "3:14 AM. One key pressed, and the machine pulled you in! A rogue program called purged has wired the whole system to blow. Defuse its charges, outwit its puzzles and blast your way out to the real world! Or grab three friends and blow each other sky-high in Battle!",
+   "description": "3:14 AM. One key pressed, and the machine pulled Dot in! A rogue program called purged has wired the whole system to blow. Defuse its charges, outwit its puzzles and blast your way out to the real world! Or grab three friends and blow each other sky-high in Battle!",
    "year": 2026,
    "new": true,
    "license": "MIT",
@@ -12255,32 +12255,32 @@
    },
    "media": {
     "cast": "asciiverse/uxo.cast",
-    "thumbnail_at": 13.0
+    "thumbnail_at": 18.8
    },
    "release": {
     "source": "github"
    },
-   "page": "**BLAST YOUR WAY OUT TO THE REAL WORLD!**\n\n3:14 in the morning. One key pressed, and the screen pulled you in!\n\nInside the machine, a program called **purged** is cleaning house. Its charges are planted all through the system, every last one set to wipe the disk clean when the countdown ends. And you're still inside, Dot!\n\nYou come down in an old garden screensaver, and its creatures have gone strange. Grubs, ladybeetles, hedgehogs that pretend to be hedges, frogs, rams, crows... and something big and prickly guarding the way out.\n\nSo drop a bomb, run, and BOOM: the blast rips out in a cross and flattens everything in its path. Line them up right and one sets off the next, and the next, and the next... Set off purged's charges, and watch out, because they blow for real! Caught in your own blast? That one's on you.\n\nBut not every bomb goes off. Some fizzle, and lie there grey and smoking, live... until a blast finds them, or you kick one, or it just decides it's time. Every bomb is unexploded ordnance. Every single one.\n\n- **Bombs AND brains!** Push crates for cover, or onto switches to hold the gates open. Hunt down keys for locked doors, lost parts for the sealed sockets. Some stages are a race, some are a puzzle, most are both!\n- **The surge!** Out in the open, your bombs flood outward every way at once, round corners. Mind where it spreads!\n- **Ride your enemies!** Beat a Hopper or a Ram and it might leave an egg. Hatch it, climb on: hop clean over hedges, or charge. And when a blast catches you, your mount takes the hit.\n- **Adventure, alone or with a friend:** nine stages through the Screensaver, from Windfall Lane, past the Hedge Maze and the Cider Press, all the way to the Bramblehog.\n- **Battle for up to four!** Six arenas, from the Ice Rink to the Catacombs. Blown up? Ride the edge and lob bombs back in for revenge. Let the clock run down and the walls close in.\n- **Eighteen power-ups, and the dreaded skull.** Catch a disease and you might drop bombs nonstop, run backwards, turn invisible, or watch every bomb you drop fizzle. Bump into a rival and it's theirs instead!\n- **Every gamepad is a player,** and two can share the keyboard.\n\nCan you beat purged before the countdown ends? **IF YOU SEE ME RUNNING, TRY TO KEEP UP!**\n\n## Controls\n\n- **Move**: stick, d-pad, **W A S D** or the **arrow keys**\n- **Bomb**: A or X on a pad, **Space** (W A S D player) or **Enter** (arrows player); press again standing on your bomb with the line bomb to lay a row\n- **Ride** (your mount's hop or charge): Y, **E** or **.**\n- **Action**: B, **F** or **/**: throw what you carry, else punch the bomb ahead, else pick up the bomb underfoot, else set off your oldest remote bomb\n- **Push a crate**: walk into it and lean on it a moment\n- **Start** or **P**: pause (in the adventure, bomb then starts the stage over, for a life), **+** and **-**: zoom (**0**: automatic), **Esc** or Select: back to the title\n\n## Credits\n\n- Game: Asciiverse\n- A love letter to the 90s bomb-arena games\n",
+   "page": "**BLAST YOUR WAY OUT TO THE REAL WORLD!**\n\n3:14 in the morning. One key pressed, and the machine pulled Dot in!\n\nEvery night at 3:14 a cleaning program called **purged** tidies the disk. Tonight it has decided the tidiest disk is an empty one. Its charges are planted all through the system, every last one set to wipe everything at four o'clock. Dot included!\n\nDot comes down in an old garden screensaver, where purged has rewritten every creature to guard its charges. Grubs, ladybeetles, hedgehogs that pretend to be hedges, frogs, rams, crows... and something big and prickly guarding the way out.\n\nIn here every bomb is a kill, and purged's creatures can't start one. So drop a bomb, run, and BOOM: the blast rips out in a cross and flattens everything in its path. Line them up right and one sets off the next, and the next, and the next... Set off purged's charges, and watch out, because they blow for real! Caught in your own blast? That one's on you.\n\nBut not every kill goes off. Some hang, and lie there grey and smoking, live... until a blast finds them, or you kick one, or it just decides it's time. Every bomb is unexploded ordnance. Every single one.\n\n- **Bombs AND brains!** Push crates for cover, or onto switches to hold the gates open. Hunt down keys for locked doors, lost parts for the sealed sockets. Some stages are a race, some are a puzzle, most are both!\n- **The surge!** Out in the open, your bombs flood outward every way at once, round corners. Mind where it spreads!\n- **Ride your enemies!** Beat a Hopper or a Ram and it might leave an egg. Hatch it, climb on: hop clean over hedges, or charge. And when a blast catches you, your mount takes the hit.\n- **Adventure, alone or with a friend:** nine stages through the Screensaver for Dot alone, or Dot and Caret together, from Windfall Lane, past the Hedge Maze and the Cider Press, all the way to the Bramblehog.\n- **Battle for up to four!** Six arenas, from the Ice Rink to the Catacombs. Blown up? Ride the edge and lob bombs back in for revenge. Let the clock run down and the walls close in.\n- **Eighteen power-ups, and the dreaded skull.** Catch a disease and you might drop bombs nonstop, run backwards, turn invisible, or watch every bomb you drop fizzle. Bump into a rival and it's theirs instead!\n- **Every gamepad is a player,** and two can share the keyboard.\n\nCan you stop purged before four o'clock? **IF YOU SEE ME RUNNING, TRY TO KEEP UP!**\n\n## Controls\n\n- **Move**: stick, d-pad, **W A S D** or the **arrow keys**\n- **Bomb**: A or X on a pad, **Space** (W A S D player) or **Enter** (arrows player); press again standing on your bomb with the line bomb to lay a row\n- **Ride** (your mount's hop or charge): Y, **E** or **.**\n- **Action**: B, **F** or **/**: throw what you carry, else punch the bomb ahead, else pick up the bomb underfoot, else set off your oldest remote bomb\n- **Push a crate**: walk into it and lean on it a moment\n- **Start** or **P**: pause (in the adventure, bomb then starts the stage over, for a life), **+** and **-**: zoom (**0**: automatic), **Esc** or Select: back to the title\n\n## Credits\n\n- Game: Asciiverse\n- A love letter to the 90s bomb-arena games\n",
    "system_deps": [
     "libudev1"
    ],
-   "version": "0.4.0",
+   "version": "0.5.0",
    "updated_at": "2026-10-10T00:00:00Z",
-   "thumbnail_at": 13.0,
+   "thumbnail_at": 18.8,
    "cast_url": "/casts/uxo.cast?v=1791617899",
    "duration": 36.9,
    "platforms": {
     "x86_64-unknown-linux-gnu": {
      "url": "/dev-releases/uxo-x86_64-unknown-linux-gnu.tar.gz",
-     "sha256": "9f5d7b99a62d6b054460bfd50bfd4ac594aba47aec05a77cc5ca3c2a9cd31816",
-     "size": 7887463
+     "sha256": "606b33d7e989f89dbf7f3a406cbfefe1814f5d4b9120b2dad563dab7f443126c",
+     "size": 7902905
     }
    },
    "news": [
     {
-     "version": "0.4.0",
-     "date": "2026-10-28",
-     "notes": "- The surge: a bomb whose blast floods outward round corners, for open\n  spaces\n- Puzzle tiles: crates to push, keys and doors, switches and gates,\n  parts and sockets\n- UXOs: bombs that fizzle and lie there live; the Duds disease; a\n  battle setting for how often\n- purged's charges go off with a real blast\n- Names: Dot the hero, purged the villain, checked against games\n- Act 1's opening, the title line, and World 1's cards and ending\n- Dot's own art, with the blinking cursor underscore\n- World 1, the Screensaver: the Orchard rebuilt, stages that mix bomb\n  puzzles and fast action, with crates, keys and doors, gates, parts and the\n  surge; starting a stage over from the pause screen\n- World 1 played through and tuned\n- The store page and README with the story"
+     "version": "0.5.0",
+     "date": "2026-10-29",
+     "notes": "- The world's rules (`WORLD.md`): bombs are kills, a UXO is a hung\n  process, purged's run from 3:14 to the wipe at 4:00, nothing dies\n- Caret, the second hero in co-op, with a pointed head\n- The Screensaver's cards rewritten, each with the machine's clock;\n  the ending at 3:47\n- Beaten creatures flicker home; the Screensaver's redraw line; the\n  title's blinking cursor\n- A new preview recording with Dot and Caret"
     }
    ]
   },
