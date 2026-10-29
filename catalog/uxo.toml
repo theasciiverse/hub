@@ -2,7 +2,7 @@ schema_version = 1
 id = "uxo"
 kind = "game"
 title = "uXo"
-description = "3:14 AM. One key pressed, and the machine pulled you in! A rogue program called purged has wired the whole system to blow. Defuse its charges, outwit its puzzles and blast your way out to the real world! Or grab three friends and blow each other sky-high in Battle!"
+description = "3:14 AM. One key pressed, and the machine pulled Dot in! A rogue program called purged has wired the whole system to blow. Defuse its charges, outwit its puzzles and blast your way out to the real world! Or grab three friends and blow each other sky-high in Battle!"
 year = 2026
 new = true
 license = "MIT"
@@ -31,7 +31,7 @@ system_deps = ["libudev1"]
 
 [media]
 cast = "asciiverse/uxo.cast"
-thumbnail_at = 13.0
+thumbnail_at = 18.8
 
 [release]
 source = "github"
