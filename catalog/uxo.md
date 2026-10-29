@@ -13,7 +13,7 @@ But not every kill goes off. Some hang, and lie there grey and smoking, live... 
 - **Bombs AND brains!** Push crates for cover, or onto switches to hold the gates open. Hunt down keys for locked doors, lost parts for the sealed sockets. Some stages are a race, some are a puzzle, most are both!
 - **The surge!** Out in the open, your bombs flood outward every way at once, round corners. Mind where it spreads!
 - **Ride your enemies!** Beat a Hopper or a Ram and it might leave an egg. Hatch it, climb on: hop clean over hedges, or charge. And when a blast catches you, your mount takes the hit.
-- **Adventure, alone or with a friend:** nine stages through the Screensaver for Dot alone, or Dot and Caret together, from Windfall Lane, past the Hedge Maze and the Cider Press, all the way to the Bramblehog.
+- **Adventure, alone or with a friend:** twenty-seven stages for Dot alone, or Dot and Caret together. Through the Screensaver to the Bramblehog; into the Clock, where purged winds the time on toward four, the shutters open and shut on the beat and the Cuckoo waits to strike the hour; and down into the Buffer, where blocks come back as fast as you blow them away, and purged itself waits at the end.
 - **Battle for up to four!** Six arenas, from the Ice Rink to the Catacombs. Blown up? Ride the edge and lob bombs back in for revenge. Let the clock run down and the walls close in.
 - **Eighteen power-ups, and the dreaded skull.** Catch a disease and you might drop bombs nonstop, run backwards, turn invisible, or watch every bomb you drop fizzle. Bump into a rival and it's theirs instead!
 - **Every gamepad is a player,** and two can share the keyboard.
