@@ -35,6 +35,22 @@ switch them. Banks fill crates of money, and planes fly them home.
 - **Giza:** under the pyramids a third army shows itself, at war with all
 - **Alexandria:** board the ships for Greece while the jets come in
 
+**Act III, The European War**, thirteen more, from Greece to Vienna:
+
+- **Piraeus:** Golgotha's own battle on the Greek coast
+- **Delphi:** superguns on the heights above the sanctuary
+- **The Ionian crossing:** an island only bombers can reach
+- **Naples:** hold Herculaneum while Vesuvius wakes
+- **Pompeii:** a race at night for a casket in the ash
+- **Rome:** take the Palatine, with tank busters and cobras
+- **Turin:** stop the truck carrying the Shroud out of the city
+- **The Gotthard Pass:** trucks over the Alps, under the snow cornices
+- **Zurich:** the banks of the lake, there for the taking
+- **Chartres:** keep the Veil in the town for six minutes
+- **The Loire:** storm the Order's chateau
+- **Munich:** shut down the Order's tank factories
+- **Vienna:** the race for the Holy Lance
+
 Golgotha's own levels are on the title menu too: a battle on the Greek
 coast, a skirmish in a Swiss valley, a walled town in Egypt. Play from
 above, from the strategy map with its road network, or from behind the
