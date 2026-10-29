@@ -17,10 +17,11 @@ screen, and in her room the princess waits as the sand falls.
 ## The original, in the terminal
 
 Every routine is ported from Mechner's own 6502 source: the same moves,
-traps, guards and levels, the same 12 frames a second. The prince's
+traps, guards and levels, the same 12 frames a second. It is drawn with
+the DOS version's art and fills the window at any size. The prince's
 rotoscoped animation is drawn in Braille dots, so every frame of his run,
 his leap and his careful step survives; the stone around him is drawn in
-block glyphs, in four colour themes from dusk blue to the Apple's own.
+block glyphs. One key switches to the Apple II's own picture.
 
 - All fourteen levels, the shadow, the skeleton, the vizier and the mouse
 - The princess's room between levels, and both endings
@@ -33,8 +34,8 @@ block glyphs, in four colour themes from dusk blue to the Apple's own.
   (or `q` and `e`) jump up and to the side
 - Shift or Space: grab a ledge, step carefully, drink, strike with the
   sword; Up blocks
-- `r` restarts the level, `p` pauses, `m` turns the sound off, `c` changes
-  the colours
+- `r` restarts the level, `p` pauses, `m` turns the sound off, `v`
+  switches between the DOS art and the Apple picture
 - Esc twice quits
 
 Held keys are read exactly in terminals with the kitty keyboard protocol;

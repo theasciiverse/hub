@@ -25,8 +25,8 @@ url = "https://github.com/jmechner/Prince-of-Persia-Apple-II"
 game = "prince-of-braille"
 args = []
 
-# the 280x192 screen at half scale (70x24) and the status line; from
-# 140x49 it draws at full size
+# the picture fills the window at any size; below about 70x25 the
+# characters get too small to read
 [min_terminal]
 cols = 70
 rows = 25
