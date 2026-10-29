@@ -1,7 +1,5 @@
 # Verification case for SCHEMA.md: every field the generated catalog.json
 # needs should come from this file or from solitty's GitHub Release.
-# Not publishable yet: theasciiverse/solitty is private, has no release.yml
-# and no recorded .cast (see av/CLAUDE.md, open questions and first steps).
 
 schema_version = 1
 id = "solitty"
@@ -38,10 +36,10 @@ utf8 = true
 color = "basic"
 mouse = true
 
-system_deps = ["libncursesw6"]
+# ncurses is linked in on Linux (static musl) and is part of macOS
 
 [media]
-cast = "resources/solitty.cast"
+cast = "asciiverse/solitty.cast"
 thumbnail_at = 5.0
 
 [release]

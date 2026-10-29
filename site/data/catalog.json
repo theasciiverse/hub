@@ -10399,16 +10399,13 @@
     "mouse": true
    },
    "media": {
-    "cast": "resources/solitty.cast",
+    "cast": "asciiverse/solitty.cast",
     "thumbnail_at": 5.0
    },
    "release": {
     "source": "github"
    },
    "page": "**FIFTY-TWO CARDS. SEVEN COLUMNS. ONE WAY HOME.**\n\nThe patience game everybody knows, laid out properly in your terminal:\nreal card frames drawn in Unicode, red and black suits (or four colours,\none for each suit, if you prefer), and a cursor you can drive with the\nkeyboard or the mouse.\n\nTurn cards from the stock. Build down the seven columns in alternating\ncolours, uncovering the face-down cards as you go. Send every card up to\nthe four foundations, ace to king. Double-tap a card and, if there is a\nplace for it, it goes home by itself. Get them all up and solitty knows\nyou have won.\n\n- **Keyboard or mouse**, click to pick up, click to put down\n- **Pick up whole runs** or just the cards you want\n- **Three passes through the stock** by default, or as many as you set\n- **Your terminal's own background**, if you would rather keep it\n\n**Deal. Build. Win.**\n\n## Controls\n\n- **Arrow keys** or **h j k l**: move the cursor\n- **Space**: turn a card from the stock, flip a face-down card, or pick\n  up a card and put it down where the cursor is\n- **Space** twice on the same card: send it to a foundation if it fits\n- **m** / **n**: while holding a column, take one more or one fewer card\n- **M** / **N**: take every face-up card in the column, or only the top one\n- **Esc**: put the held cards back\n- **Left click**: pick up or put down; **right click**: cancel\n- **q**: quit\n\n## Options\n\n- `--passes N`: how many times you may go through the stock (default 3)\n- `--four-color-deck`: give each suit its own color\n- `--no-background-color`: keep your terminal's own background\n\n## History\n\nsolitty was written by Murilo Pereira, first released in 2017, and\ndeveloped through 2025. The Asciiverse edition adds a fairer\nFisher-Yates shuffle, a terminal that is restored properly when the\ngame is interrupted, and further fixes and tests.\n\n## Credits\n\n- Original game: [Murilo Pereira](http://murilopereira.com)\n- Asciiverse edition: Asciiverse\n- License: MIT\n",
-   "system_deps": [
-    "libncursesw6"
-   ],
    "featured": 3,
    "version": "0.1.0",
    "updated_at": "2026-10-10T00:00:00Z",
