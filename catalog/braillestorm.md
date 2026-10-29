@@ -7,6 +7,8 @@ You're a lone shell prompt, `❯`, with a twin stream of fire and three bombs. M
 - **Waves that never stop,** each announced in big glowing letters, each bigger and faster than the last. From the tenth, every fifth wave is a rush: cursors from every corner at once.
 - **Three bombs** that blast the field clear around you when it gets too close.
 - **A multiplier that climbs** with every kill you make without losing your ship, all the way to x10.
+- **Pick-ups** left behind by the fallen: wide fire, rapid fire, a shield or one more bomb. Grab them before they fade!
+- **Stages:** every five waves the whole grid turns a new colour.
 - **Every bang made from scratch:** each enemy bursts with its own synthesised sound, and pings climb the scale as your multiplier rises.
 - **Drawn in glorious Braille:** thin, glowing vector lines of dots, sixty frames a second.
 - **Gamepad, mouse or keyboard.** Clear a wave without losing your ship for a bonus, earn an extra life and bomb every 25,000 points (counted before the multiplier), and chase your own best score.
