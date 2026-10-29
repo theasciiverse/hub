@@ -1,0 +1,51 @@
+schema_version = 1
+id = "prince-of-braille"
+kind = "game"
+title = "Prince of Braille"
+description = "Jordan Mechner's Prince of Persia, ported from his own Apple II source: sixty minutes, fourteen levels, traps and swordfights, the prince drawn in Braille dots."
+year = 1989
+old = true
+license = "MIT"
+repo = "theasciiverse/prince-of-braille"
+provenance = "Jordan Mechner made Prince of Persia on the Apple II between 1985 and 1989, its running and leaping rotoscoped from video of his brother. He released its source code in 2012, and Asciiverse ported it to the terminal routine by routine."
+topics = ["prince of persia", "platformer", "swordfighting", "apple ii", "braille", "rust"]
+genre = "action"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "Jordan Mechner"
+url = "https://github.com/jmechner/Prince-of-Persia-Apple-II"
+
+# the archive holds prince-of-braille, README.md and LICENSE; the colour
+# theme is saved to ~/.config/prince-of-braille/theme
+[exec]
+game = "prince-of-braille"
+args = []
+
+# the 280x192 screen at half scale (70x24) and the status line; from
+# 140x49 it draws at full size
+[min_terminal]
+cols = 70
+rows = 25
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = false
+gamepad = false
+glyphs = ["braille"]
+
+system_deps = ["libasound2"]
+
+# 100x30, `prince-of-braille --demo`, recorded with hub/tools/castrec.py:
+# the original's attract demo, the kid running, jumping two pits, climbing
+# and fighting the first guard; the still is the swordfight at 25 s
+[media]
+cast = "asciiverse/prince-of-braille.cast"
+thumbnail_at = 25.0
+
+[release]
+source = "github"

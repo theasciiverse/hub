@@ -8,35 +8,7 @@ featured = 3
 
 [[title]]
 id = "prince-of-braille"
-year = 1989
-old = true
-kind = "game"
-title = "Prince of Braille"
-description = "Sixty minutes, fourteen levels, and a palace full of spikes, loose floors and gates. Jordan Mechner's 1989 Apple II original, run from his own released source, with the prince drawn in Braille."
-provenance = "Asciiverse ported Jordan Mechner's Prince of Persia (Apple II, 1989), written from the source code Mechner released."
-genre = "platformer"
-license = "MIT"
-topics = ["platformer", "restoration", "braille", "classic"]
-thumbnail_at = 12.0
 featured = 1
-developer = { name = "Asciiverse", url = "https://asciiverse.sh" }
-upstream = { name = "Jordan Mechner", url = "https://www.jordanmechner.com" }
-min_terminal = { cols = 70, rows = 25 }
-requires = { utf8 = true, color = "truecolor", mouse = false, glyphs = ["braille"] }
-page = """**SIXTY MINUTES. FOURTEEN LEVELS. WATCH YOUR STEP.**
-
-The clock is running, and it counts down in real minutes. Run, leap, climb, hang from ledges, and creep forward one careful step at a time, because here the floor itself wants you dead. Spikes spring from the stone. Loose tiles crumble under your feet and drop into the dark. Gates rise and fall on pressure plates.
-
-Every move comes from the source code Jordan Mechner released for his 1989 Apple II Prince of Persia: his own 6502 routines, ported routine by routine and run on his original level data, so the prince runs, stops and leaps exactly as Mechner animated him. He is drawn in Braille dots and the palace in block glyphs, coloured as an old colour monitor would show it, or in one of the new themes.
-
-- **All 14 original levels**, with the original traps and the original sixty-minute timer
-- **The whole repertoire**: run, stop, turn, careful step, jump, climb, hang, crouch, crawl, and drink what you find in the flasks
-- **Braille and blocks**: press **g** to compare the looks, **c** to change colour theme (dusk, phosphor, amber or the Apple's own classic)
-
-## Status
-
-The first playable cut: all 14 original levels, the kid's movement and the traps. Guards are not in yet.
-"""
 
 [[title]]
 id = "tetrix"

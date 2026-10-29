@@ -6810,6 +6810,77 @@
    },
    "news": []
   },
+  "prince-of-braille": {
+   "schema_version": 1,
+   "id": "prince-of-braille",
+   "kind": "game",
+   "title": "Prince of Braille",
+   "description": "Jordan Mechner's Prince of Persia, ported from his own Apple II source: sixty minutes, fourteen levels, traps and swordfights, the prince drawn in Braille dots.",
+   "year": 1989,
+   "old": true,
+   "license": "MIT",
+   "repo": "theasciiverse/prince-of-braille",
+   "provenance": "Jordan Mechner made Prince of Persia on the Apple II between 1985 and 1989, its running and leaping rotoscoped from video of his brother. He released its source code in 2012, and Asciiverse ported it to the terminal routine by routine.",
+   "topics": [
+    "prince of persia",
+    "platformer",
+    "swordfighting",
+    "apple ii",
+    "braille",
+    "rust"
+   ],
+   "genre": "action",
+   "developer": {
+    "name": "Asciiverse",
+    "url": "https://asciiverse.sh"
+   },
+   "upstream": {
+    "name": "Jordan Mechner",
+    "url": "https://github.com/jmechner/Prince-of-Persia-Apple-II"
+   },
+   "exec": {
+    "game": "prince-of-braille",
+    "args": []
+   },
+   "min_terminal": {
+    "cols": 70,
+    "rows": 25
+   },
+   "requires": {
+    "utf8": true,
+    "color": "truecolor",
+    "mouse": false,
+    "gamepad": false,
+    "glyphs": [
+     "braille"
+    ],
+    "system_deps": [
+     "libasound2"
+    ]
+   },
+   "media": {
+    "cast": "asciiverse/prince-of-braille.cast",
+    "thumbnail_at": 25.0
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**SIXTY MINUTES. FOURTEEN LEVELS. ONE PRINCESS.**\n\nThe Sultan is away at war, and the Grand Vizier Jaffar has seized the\npalace. He has given the princess an hour: marry him, or die when the last\nsand runs through the glass. You are in his dungeon, without a sword.\n\nRun, leap and climb your way up through the dungeons and the palace. Test\neach step for loose floor, time your run past the slicers, jump the spikes,\nfind the plate that opens the gate. Take a sword from the dungeon floor and\nfight your way past the guards, each with a style of his own, and past the\nskeleton that will not stay down. Drink the potions you find, if you dare,\nand beware the stranger who steps out of the mirror.\n\nThe clock never stops. Every few minutes the time left goes up on the\nscreen, and in her room the princess waits as the sand falls.\n\n## The original, in the terminal\n\nEvery routine is ported from Mechner's own 6502 source: the same moves,\ntraps, guards and levels, the same 12 frames a second. The prince's\nrotoscoped animation is drawn in Braille dots, so every frame of his run,\nhis leap and his careful step survives; the stone around him is drawn in\nblock glyphs, in four colour themes from dusk blue to the Apple's own.\n\n- All fourteen levels, the shadow, the skeleton, the vizier and the mouse\n- The princess's room between levels, and both endings\n- The speaker sound effects as the Apple played them, and the DOS music\n- `--demo` plays the original's attract demo\n\n## Controls\n\n- Arrow keys, WASD or hjkl to run, climb, crouch and jump; Home and PgUp\n  (or `q` and `e`) jump up and to the side\n- Shift or Space: grab a ledge, step carefully, drink, strike with the\n  sword; Up blocks\n- `r` restarts the level, `p` pauses, `m` turns the sound off, `c` changes\n  the colours\n- Esc twice quits\n\nHeld keys are read exactly in terminals with the kitty keyboard protocol;\nelsewhere from the keyboard's repeat.\n",
+   "featured": 1,
+   "version": "0.9.0",
+   "updated_at": "2026-10-29T06:00:00Z",
+   "thumbnail_at": 25.0,
+   "cast_url": "/casts/prince-of-braille.cast?v=1793251439",
+   "duration": 28.0,
+   "platforms": {
+    "x86_64-unknown-linux-gnu": {
+     "url": "/dev-releases/prince-of-braille/prince-of-braille-x86_64-unknown-linux-gnu.tar.gz",
+     "sha256": "476ecd8323484e4f293ddd2799aab96d5a8bac298c0c5975522fed2cab4da48c",
+     "size": 4441007
+    }
+   },
+   "news": []
+  },
   "pwmangband": {
    "schema_version": 1,
    "id": "pwmangband",
@@ -10842,58 +10913,6 @@
    },
    "news": []
   },
-  "prince-of-braille": {
-   "id": "prince-of-braille",
-   "year": 1989,
-   "old": true,
-   "kind": "game",
-   "title": "Prince of Braille",
-   "description": "Sixty minutes, fourteen levels, and a palace full of spikes, loose floors and gates. Jordan Mechner's 1989 Apple II original, run from his own released source, with the prince drawn in Braille.",
-   "provenance": "Asciiverse ported Jordan Mechner's Prince of Persia (Apple II, 1989), written from the source code Mechner released.",
-   "genre": "platformer",
-   "license": "MIT",
-   "topics": [
-    "platformer",
-    "restoration",
-    "braille",
-    "classic"
-   ],
-   "thumbnail_at": 12.0,
-   "featured": 1,
-   "developer": {
-    "name": "Asciiverse",
-    "url": "https://asciiverse.sh"
-   },
-   "upstream": {
-    "name": "Jordan Mechner",
-    "url": "https://www.jordanmechner.com"
-   },
-   "min_terminal": {
-    "cols": 70,
-    "rows": 25
-   },
-   "requires": {
-    "utf8": true,
-    "color": "truecolor",
-    "mouse": false,
-    "glyphs": [
-     "braille"
-    ]
-   },
-   "page": "**SIXTY MINUTES. FOURTEEN LEVELS. WATCH YOUR STEP.**\n\nThe clock is running, and it counts down in real minutes. Run, leap, climb, hang from ledges, and creep forward one careful step at a time, because here the floor itself wants you dead. Spikes spring from the stone. Loose tiles crumble under your feet and drop into the dark. Gates rise and fall on pressure plates.\n\nEvery move comes from the source code Jordan Mechner released for his 1989 Apple II Prince of Persia: his own 6502 routines, ported routine by routine and run on his original level data, so the prince runs, stops and leaps exactly as Mechner animated him. He is drawn in Braille dots and the palace in block glyphs, coloured as an old colour monitor would show it, or in one of the new themes.\n\n- **All 14 original levels**, with the original traps and the original sixty-minute timer\n- **The whole repertoire**: run, stop, turn, careful step, jump, climb, hang, crouch, crawl, and drink what you find in the flasks\n- **Braille and blocks**: press **g** to compare the looks, **c** to change colour theme (dusk, phosphor, amber or the Apple's own classic)\n\n## Status\n\nThe first playable cut: all 14 original levels, the kid's movement and the traps. Guards are not in yet.\n",
-   "version": "0.8.0",
-   "updated_at": "2026-10-10T00:00:00Z",
-   "cast_url": "/casts/prince-of-braille.cast?v=1791616345",
-   "duration": 31.3,
-   "platforms": {
-    "x86_64-unknown-linux-gnu": {
-     "url": "/dev-releases/prince-of-braille-x86_64-unknown-linux-gnu.tar.gz",
-     "sha256": "ea786962da86cbee72a7b92563dfe4fc9fb731b2780a6034d14aa56de55ba7c4",
-     "size": 7344448
-    }
-   },
-   "news": []
-  },
   "tetrix": {
    "id": "tetrix",
    "year": 2026,
@@ -11425,8 +11444,8 @@
    "platforms": {
     "x86_64-unknown-linux-gnu": {
      "url": "/dev-releases/entity-x86_64-unknown-linux-gnu.tar.gz",
-     "sha256": "bb7f1525e5737833d68bf8d06e137272553f6fad6778d72530d6e8dbd467fb4d",
-     "size": 1296226
+     "sha256": "025c748b71c0a0d6c1dcc357991bbb70b5bc30f8518f72b01acc0f84ca21a5cb",
+     "size": 1316504
     }
    },
    "news": []
