@@ -1,0 +1,54 @@
+schema_version = 1
+id = "calvary"
+kind = "game"
+title = "Calvary"
+description = "An action-RTS built from Crack dot Com's unfinished Golgotha: drive the supertank yourself while your army rolls down the roads, through a campaign from Basrah to Nineveh in 2048."
+year = 1998
+license = "MIT"
+repo = "theasciiverse/calvary"
+provenance = "Crack dot Com was making Golgotha when the studio closed in 1998, and gave away its source, graphics, music and levels; Patrick Grawehr's Golgotha Forever kept the code alive. Asciiverse built Calvary from them in 2026, with a campaign of its own."
+changes = "CLAUDE.md"
+topics = ["rts", "tanks", "campaign", "crack dot com", "golgotha", "braille", "rust"]
+genre = "strategy"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# Golgotha, Crack dot Com, 1998; Golgotha Forever is the maintained source
+[upstream]
+name = "Crack dot Com, 1998"
+url = "https://github.com/pgrawehr/golgotha"
+
+# the archive holds calvary, README.md and LICENSE; levels, campaign maps,
+# music and sounds are compiled in. Campaign progress is saved to
+# $XDG_DATA_HOME/calvary/campaign.txt (~/.local/share/calvary)
+[exec]
+game = "calvary"
+args = []
+
+# the battle HUD's ammunition and the longest briefing need 100x30
+[min_terminal]
+cols = 100
+rows = 30
+
+# terrain and units in half blocks with Braille contours, RGB colours;
+# mouse aiming and gamepads. Sound through ALSA, gamepads through udev
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = true
+gamepad = true
+glyphs = ["braille"]
+system_deps = ["libasound2", "libudev1"]
+
+# 100x30, scripted (asciiverse/record-preview.sh): the opening, the title,
+# mission 1's briefing, the supertank driving up the road at Al Basrah and
+# shelling the first turret, the follow view, the strategy map; the still
+# is the turret going up in the follow view
+[media]
+cast = "asciiverse/calvary.cast"
+thumbnail_at = 25.0
+
+[release]
+source = "github"
