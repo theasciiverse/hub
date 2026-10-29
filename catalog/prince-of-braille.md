@@ -36,6 +36,8 @@ block glyphs. One key switches to the Apple II's own picture.
   sword; Up blocks
 - `r` restarts the level, `p` pauses, `m` turns the sound off, `v`
   switches between the DOS art and the Apple picture
+- From level 3 on the game is saved on each new level, and Ctrl-G saves
+  it on the spot; Ctrl-L continues a saved game from the opening or the demo
 - Esc twice quits
 
 Held keys are read exactly in terminals with the kitty keyboard protocol;
