@@ -62,6 +62,14 @@ switch them. Banks fill crates of money, and planes fly them home.
 - **Svalbard:** Calloway's last letters, in a vault under the mountain
 - **The Nephilim Battle:** hold a frozen lake while the giants wake
 
+**Act V, Golgotha**, the last five, home to Jerusalem:
+
+- **Cyprus:** take Limassol harbour for the last voyage
+- **Jaffa:** the landing, with all three armies waiting
+- **The walls of Jerusalem:** hold the Old City without firing on its holy places
+- **The dig:** engineers clear Calloway's trench down to her chamber
+- **Beneath the place of the skull:** the keyhole, and what comes up out of it
+
 Golgotha's own levels are on the title menu too: a battle on the Greek
 coast, a skirmish in a Swiss valley, a walled town in Egypt. Play from
 above, from the strategy map with its road network, or from behind the
