@@ -25,6 +25,16 @@ switch them. Banks fill crates of money, and planes fly them home.
 - **The Euphrates line:** six trucks, two roads, a night of changing orders
 - **Nineveh:** Fisher refuses to raze the site, and both armies turn on him
 
+**Act II, The Desertion**, seven more, through the Levant and Egypt:
+
+- **Palmyra:** five minutes of rearguard among the columns
+- **The King's Highway:** trucks south past Kerak, the canyon of Wadi Mujib
+- **Sinai:** four thousand in the chest; banks are taken, not owned
+- **The Suez Canal:** bridgers under fire, trucks waiting at the gaps
+- **Cairo:** street war in the walled town, and the first helicopters
+- **Giza:** under the pyramids a third army shows itself, at war with all
+- **Alexandria:** board the ships for Greece while the jets come in
+
 Golgotha's own levels are on the title menu too: a battle on the Greek
 coast, a skirmish in a Swiss valley, a walled town in Egypt. Play from
 above, from the strategy map with its road network, or from behind the
