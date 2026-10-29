@@ -1,6 +1,6 @@
 **YOU ARE THE LAST PROMPT STANDING.**
 
-Something has gone badly wrong in your terminal. The globs have broken loose and tumble everywhere. Block cursors blink awake and come hunting. Forks multiply: shoot one and it splits into two quick children. Spinners whirl in place, then dash straight into your line. And the null device itself creeps after you, swallowing sparks, bending your shots and dragging you in. They just keep coming, wave after wave, faster every time.
+Something has gone badly wrong in your terminal. The globs have broken loose and tumble everywhere. Block cursors blink awake and come hunting. Forks multiply: shoot one and it splits into two quick children. Spinners whirl in place, then dash straight into your line. Zombies get back up unless you shoot their bodies too. Escapes vanish and reappear right beside you. And the null device itself creeps after you, swallowing sparks, bending your shots and dragging you in. They just keep coming, wave after wave, faster every time.
 
 You're a lone shell prompt, `❯`, with a twin stream of fire and three bombs. Move with one stick and shoot with the other, in any direction, all at once. Every shot dents the glowing grid beneath you, every burst sends it rippling, and every bomb rings the whole field like a bell.
 
@@ -9,7 +9,7 @@ You're a lone shell prompt, `❯`, with a twin stream of fire and three bombs. M
 - **A multiplier that climbs** with every kill you make without losing your ship, all the way to x10.
 - **Pick-ups** left behind by the fallen: wide fire, rapid fire, a shield or one more bomb. Grab them before they fade!
 - **Stages:** every five waves the whole grid turns a new colour.
-- **Every bang made from scratch:** each enemy bursts with its own synthesised sound, and pings climb the scale as your multiplier rises.
+- **Every bang made from scratch:** each enemy bursts with its own synthesised sound, pings climb the scale as your multiplier rises, and a driving soundtrack speeds up with the waves and swells as the field fills.
 - **Drawn in glorious Braille:** thin, glowing vector lines of dots, sixty frames a second.
 - **Gamepad, mouse or keyboard.** Clear a wave without losing your ship for a bonus, earn an extra life and bomb every 25,000 points (counted before the multiplier), and chase your own best score.
 - **Toys for the grid:** drop in a drifting black hole that drinks the sparks and sucks the grid down, change the grid's colour and density, or sit back and let the autopilot play.
@@ -22,7 +22,7 @@ How long can you hold back the storm? **JUST ONE MORE WAVE...**
 - **Arrow keys**: fire; or hold the **left mouse button** to fire at the pointer
 - **Space** or **right click**: bomb
 - **P** or **Enter**: pause; **Space** or **Enter**: play again after game over
-- **M**: sound on or off
+- **M**: sound on or off, **N**: music on or off
 - **Q** or **Esc**: quit
 - **B**: a black hole on or off, **H**: hide the top line
 - **F2**: glow, **F3**: grid colour, **F4** / **F5**: grid denser or sparser, **F6**: random blasts, **F7**: autopilot
@@ -34,6 +34,7 @@ Best in a terminal that reports key releases (kitty, foot, WezTerm, Ghostty, Ala
 
 - `--demo`: watch the computer play
 - `--mute`: start with the sound off
+- `--no-music`: the sound effects without the music
 - `--wave N`: start at wave N
 - `--fps N`: draw fewer frames a second (the game still runs at 60)
 
