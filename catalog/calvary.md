@@ -72,8 +72,9 @@ switch them. Banks fill crates of money, and planes fly them home.
 
 Golgotha's own levels are on the title menu too: a battle on the Greek
 coast, a skirmish in a Swiss valley, a walled town in Egypt. Play from
-above, from the strategy map with its road network, or from behind the
-supertank in the follow view, with the original's music and radio voices.
+above, from the strategy map with its road network, from behind the
+supertank in the follow view, or from its turret in first person, with
+the original's music and radio voices.
 
 ## Controls
 
@@ -86,7 +87,8 @@ supertank in the follow view, with the original's music and radio voices.
 - **J** switches the nearest junction (or click it); click or drag to
   select units, right-click to send them; **G** rally, **X** hold, **R**
   back to the road
-- **Tab** map, **M** follow view, **+**/**-** zoom, **F1** all the keys
+- **Tab** map, **M** follow view and first person, **+**/**-** zoom,
+  **F1** all the keys
 - A gamepad plays it too: left stick drives, right stick aims, triggers
   fire
 
