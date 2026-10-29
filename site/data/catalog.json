@@ -9283,11 +9283,11 @@
    "release": {
     "source": "github"
    },
-   "page": "**PULL THE PLUNGER. THE TABLE IS ALIVE.**\n\nReal-time pinball physics, drawn in Braille vector lines right in your terminal. The ball rolls and ricochets off bumpers, slingshots and drop targets, the camera follows it up and down the table, and a dot-matrix display keeps the score.\n\nEight tables, each with its own rules. On Round and Round the bumpers orbit. On Eye of Horus a spinning triangle guards the pyramid at the centre. On Orbiters five planets circle a sun and tug at the ball as it passes. Ad Astra carries a map of the real night sky, 1,500 stars, and asks you to light up Orion, Leo or Ursa Major one star at a time. Pool Party racks them up and dares you to \"Shoot the Eight Ball!\" Ball locks, multiball and jackpots wait on every table that has them.\n\n- **Eight tables**: Classic, Round and Round, Ringmaster, Compound Interest, Eye of Horus, Orbiters, Ad Astra and Pool Party\n- **Real physics**: flippers, kickers, ramps, loops and layered mini tables\n- **The original's sound**: score dings, rollover notes, and music that builds as you score\n- **Faithful rules**: ball savers, halving multipliers and \"Shoot Again\", as Vector Pinball plays them\n- **Unlimited balls** from the menu, when you just want to play\n\n## Controls\n\n- **Space**: launch the ball\n- **Z**, **Left** or **Left Shift**: left flipper\n- **X**, **Right** or **Right Shift**: right flipper (Shift works on terminals with the kitty keyboard protocol; elsewhere use the letters or arrows)\n- **Enter**: carry on after a lost ball, or start again after game over\n- **Esc**: back to the menu\n- In the menu: **Up** or **k**, **Down** or **j**, **Enter** to choose, **Q** to quit; sound, score animations, ball trails and unlimited balls are switched there\n\n## Credits\n\n- Tables 1 to 8: layouts and rules from [Vector Pinball](https://github.com/dozingcat/Vector-Pinball) by Brian Nenninger, GPL-3.0\n- Star map on Ad Astra: from Vector Pinball, which credits Sky Map's catalog\n- Terminal version: Asciiverse\n- License: GPL-3.0\n",
+   "page": "**PULL THE PLUNGER. THE TABLE IS ALIVE.**\n\nReal-time pinball physics, drawn in Braille vector lines right in your terminal. The ball rolls and ricochets off bumpers, slingshots and drop targets, the camera follows it up and down the table, and a dot-matrix display keeps the score.\n\nEight tables, each with its own rules. On Round and Round the bumpers orbit. On Eye of Horus a spinning triangle guards the pyramid at the centre. On Orbiters five planets circle a sun and tug at the ball as it passes. Ad Astra carries a map of the real night sky, 1,500 stars, and asks you to light up Orion, Leo or Ursa Major one star at a time. Pool Party racks them up and dares you to \"Shoot the Eight Ball!\" Ball locks, multiball and jackpots wait on every table that has them.\n\n- **Eight tables**: Classic, Round and Round, Ringmaster, Compound Interest, Eye of Horus, Orbiters, Ad Astra and Pool Party\n- **Real physics**: flippers, kickers, ramps, loops and layered mini tables\n- **The original's sound**: score dings, rollover notes, and music that builds as you score\n- **Faithful rules**: ball savers, halving multipliers and \"Shoot Again\", as Vector Pinball plays them\n- **Your best five** on every table, and the last game's score\n- **Settings** for music and effects apart, game speed, the whole table at once, and unlimited balls when you just want to play\n\n## Controls\n\n- **Space**: launch the ball; hold it to pull the plunger back for a softer or harder shot (on terminals with the kitty keyboard protocol)\n- **Z**, **Left** or **Left Shift**: left flipper\n- **X**, **Right** or **Right Shift**: right flipper (Shift works on terminals with the kitty keyboard protocol; elsewhere use the letters or arrows)\n- **P**: pause\n- **H**: help and the rules of the table in play\n- **Esc**: back to the menu\n- In the menu: **Up** or **k**, **Down** or **j**, **Enter** to choose, **Q** to quit; Settings, High scores and Help are below the tables\n\n## Credits\n\n- Tables 1 to 8: layouts and rules from [Vector Pinball](https://github.com/dozingcat/Vector-Pinball) by Brian Nenninger, GPL-3.0\n- Star map on Ad Astra: from Vector Pinball, which credits Sky Map's catalog\n- Terminal version: Asciiverse\n- License: GPL-3.0\n",
    "system_deps": [
     "libasound2"
    ],
-   "version": "0.8.0",
+   "version": "0.9.0",
    "updated_at": "2026-10-10T00:00:00Z",
    "thumbnail_at": 5.0,
    "cast_url": "/casts/rusty-pinball.cast?v=1791626460",
@@ -9295,15 +9295,15 @@
    "platforms": {
     "x86_64-unknown-linux-gnu": {
      "url": "/dev-releases/rusty-pinball-x86_64-unknown-linux-gnu.tar.gz",
-     "sha256": "aed685c5817c16be895c0dec8a522df5c22f1ac496b3f02ece79217a2a9b5f19",
-     "size": 3899866
+     "sha256": "06812103551c1a30912db462dc5a6e4f9fa3341a017851591bc43a3466903e36",
+     "size": 3949297
     }
    },
    "news": [
     {
-     "version": "0.8.0",
-     "date": "2026-10-28",
-     "notes": "- Eight tables, every one with its table script: centre pieces, moving\n  parts, multiball, ball locks and jackpots\n- Ball savers (mercy ball, multiball saver), extra balls, the stuck-ball\n  bump, unlimited balls\n- Game messages on the DMD, the original's sounds and score-driven music\n- Score animations and ball trails, both switchable"
+     "version": "0.9.0",
+     "date": "2026-10-29",
+     "notes": "- The top 5 high scores and the last score per table, a High scores\n  screen, and the original's after-game cycle on the DMD\n- Settings as the original has them: music and effects apart, game\n  speed, zoom (on follows the ball, off shows the whole table)\n- A help screen with the controls and each table's rules, also in game (H)\n- Inactive layers fade over a quarter second of game time, as in the original\n- The plunger: hold Space to pull it back, where the terminal reports key releases\n- The ball's spin dot, and its size from `ballradius`"
     }
    ]
   },

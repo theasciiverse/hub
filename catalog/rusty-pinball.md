@@ -8,16 +8,18 @@ Eight tables, each with its own rules. On Round and Round the bumpers orbit. On 
 - **Real physics**: flippers, kickers, ramps, loops and layered mini tables
 - **The original's sound**: score dings, rollover notes, and music that builds as you score
 - **Faithful rules**: ball savers, halving multipliers and "Shoot Again", as Vector Pinball plays them
-- **Unlimited balls** from the menu, when you just want to play
+- **Your best five** on every table, and the last game's score
+- **Settings** for music and effects apart, game speed, the whole table at once, and unlimited balls when you just want to play
 
 ## Controls
 
-- **Space**: launch the ball
+- **Space**: launch the ball; hold it to pull the plunger back for a softer or harder shot (on terminals with the kitty keyboard protocol)
 - **Z**, **Left** or **Left Shift**: left flipper
 - **X**, **Right** or **Right Shift**: right flipper (Shift works on terminals with the kitty keyboard protocol; elsewhere use the letters or arrows)
-- **Enter**: carry on after a lost ball, or start again after game over
+- **P**: pause
+- **H**: help and the rules of the table in play
 - **Esc**: back to the menu
-- In the menu: **Up** or **k**, **Down** or **j**, **Enter** to choose, **Q** to quit; sound, score animations, ball trails and unlimited balls are switched there
+- In the menu: **Up** or **k**, **Down** or **j**, **Enter** to choose, **Q** to quit; Settings, High scores and Help are below the tables
 
 ## Credits
 
