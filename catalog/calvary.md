@@ -51,6 +51,17 @@ switch them. Banks fill crates of money, and planes fly them home.
 - **Munich:** shut down the Order's tank factories
 - **Vienna:** the race for the Holy Lance
 
+**Act IV, The North**, eight more, from Berlin to the Arctic:
+
+- **Berlin:** the Order's empty command, taken by an engineer
+- **The Baltic crossing:** trucks over sea ice that breaks under shellfire
+- **Helsinki:** the Finns join the fight for the harbour city
+- **The Finnish lakes:** six narrows to bridge, the Europeans on the far shores
+- **Lapland:** the polar night, and two factories hidden in the fells
+- **The fjord:** one road on a ledge, and the Order's own supertank
+- **Svalbard:** Calloway's last letters, in a vault under the mountain
+- **The Nephilim Battle:** hold a frozen lake while the giants wake
+
 Golgotha's own levels are on the title menu too: a battle on the Greek
 coast, a skirmish in a Swiss valley, a walled town in Egypt. Play from
 above, from the strategy map with its road network, or from behind the
