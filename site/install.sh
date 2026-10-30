@@ -20,13 +20,19 @@
 #   AV_INSTALL_DIR   where the av binary goes (default ~/.local/bin)
 #   AV_DOWNLOAD_URL  folder holding the archives and SHA256SUMS
 #                    (default https://asciiverse.sh/releases/av/latest)
+#   AV_INSTALL       skip the questions, for scripts: user (just av, for
+#                    you), deb or rpm (that package), package (the one
+#                    for this system); a package needs root or sudo that
+#                    asks no password when there is no terminal
+#   NO_COLOR         plain text, no colors
 
 set -eu
 
 DOWNLOAD_URL="${AV_DOWNLOAD_URL:-https://asciiverse.sh/releases/av/latest}"
 INSTALL_DIR="${AV_INSTALL_DIR:-$HOME/.local/bin}"
+CHOICE="${AV_INSTALL:-}"
 
-if [ -t 1 ]; then
+if [ -t 1 ] && [ -z "${NO_COLOR:-}" ]; then
   G="$(printf '\033[32m')"; A="$(printf '\033[33m')"; R="$(printf '\033[31m')"
   D="$(printf '\033[2m')"; B="$(printf '\033[1m')"; N="$(printf '\033[0m')"
 else
@@ -283,6 +289,13 @@ install_pkg() {
   elif ! command -v sudo >/dev/null 2>&1; then
     say "  ${A}There is no sudo here${N}, so the .$kind can't be installed."
     return 1
+  elif ! (: </dev/tty) 2>/dev/null; then
+    # no terminal to type a password on: only sudo that asks none will do
+    sudo=sudo
+    if ! sudo -n true 2>/dev/null; then
+      say "  ${A}sudo wants a password and there is no terminal to type it on${N}, so the .$kind was not installed."
+      return 1
+    fi
   else
     sudo=sudo
     # the password now, before anything is downloaded
@@ -302,33 +315,45 @@ install_pkg() {
   verify "$pkg"
   # the package manager may read it as its own user
   chmod 755 "$tmp" && chmod 644 "$tmp/$pkg"
+  # it asks on the terminal when there is one
+  input=/dev/null
+  (: </dev/tty) 2>/dev/null && input=/dev/tty
   step "installing $pkg"
   if [ "$kind" = deb ]; then
     if command -v apt-get >/dev/null 2>&1; then
       # a fresh system is often updating in the background: wait for it
-      $sudo apt-get install -y -o DPkg::Lock::Timeout=300 "$tmp/$pkg" </dev/tty
+      $sudo apt-get install -y -o DPkg::Lock::Timeout=300 "$tmp/$pkg" <"$input"
     else
-      $sudo dpkg -i "$tmp/$pkg" </dev/tty
+      $sudo dpkg -i "$tmp/$pkg" <"$input"
     fi
   elif command -v dnf >/dev/null 2>&1; then
-    $sudo dnf install -y "$tmp/$pkg" </dev/tty
+    $sudo dnf install -y "$tmp/$pkg" <"$input"
   elif command -v zypper >/dev/null 2>&1; then
-    $sudo zypper --non-interactive install --allow-unsigned-rpm "$tmp/$pkg" </dev/tty
+    $sudo zypper --non-interactive install --allow-unsigned-rpm "$tmp/$pkg" <"$input"
   else
-    $sudo rpm -U "$tmp/$pkg" </dev/tty
+    $sudo rpm -U "$tmp/$pkg" <"$input"
   fi || {
     say "  ${A}The package manager did not install $pkg.${N}"
     return 1
   }
   # a copy from an earlier run of this script would start instead of the package
-  if [ -f "$INSTALL_DIR/av" ] && ask "Remove the av in $INSTALL_DIR, which would start instead of the package?"; then
+  if [ -f "$INSTALL_DIR/av" ] && [ -z "$CHOICE" ] && ask "Remove the av in $INSTALL_DIR, which would start instead of the package?"; then
     rm -f "$INSTALL_DIR/av"
   fi
   say ''
   say "  Done. Asciiverse is in your applications menu, or type ${B}${G}av${N} to open the catalog."
 }
 
-start_now() { # binary: offer to open av right away
+start_now() { # binary: offer to open av right away, said how big the terminal should be
+  [ -z "$CHOICE" ] || return 0
+  (: </dev/tty) 2>/dev/null || return 0
+  size="$(stty size </dev/tty 2>/dev/null || true)"
+  rows="${size% *}" cols="${size#* }"
+  if [ -n "$size" ] && { [ "$cols" -lt 128 ] || [ "$rows" -lt 40 ]; }; then
+    say ''
+    say "  This terminal is ${cols}x${rows}. av is made for 128x40 or more, where each title's"
+    say "  preview shows in full; a bigger window or a smaller font gets you there."
+  fi
   ask "Start av now?" || return 0
   # exec ends this script, so clean up first
   rm -rf "$tmp"
@@ -382,7 +407,18 @@ main() {
 
   list="$(routes)"
   have="$(from_package)"
-  if [ -n "$list" ] && (: </dev/tty) 2>/dev/null; then
+  if [ -n "$CHOICE" ]; then
+    case "$CHOICE" in
+      user) step "installing for this user only" ;;
+      deb | rpm | package)
+        line="$(printf '%s\n' "$list" | awk -v k="$CHOICE" 'NF && (k == "package" || $1 == k) { print; exit }')"
+        [ -n "$line" ] || die "AV_INSTALL=$CHOICE, but this release has no such package this machine can install"
+        kind="${line%% *}" pkg="${line#* }"
+        install_pkg || die "the .$kind was not installed"
+        return ;;
+      *) die "AV_INSTALL is user, deb, rpm or package, not \"$CHOICE\"" ;;
+    esac
+  elif [ -n "$list" ] && (: </dev/tty) 2>/dev/null; then
     choose "$list"
     case "$kind" in
       exit) say ''; say "  Nothing installed."; return ;;
