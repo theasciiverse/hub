@@ -29,6 +29,7 @@
       { label: "Other programs", items: items.filter(t => !["mud-client", "interpreter"].some(k => (t.topics || []).includes(k))) },
     ].filter(g => g.items.length),
     badge: t => t.title[0].toUpperCase(),
+    mark: t => t.old ? `<span class="m old-m">OLD!</span>` : t.new ? `<span class="m new-m">NEW!</span>` : "",
     detail: gameDetail,
     empty: "Nothing here yet.",
     home: main => {

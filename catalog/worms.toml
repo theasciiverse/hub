@@ -4,6 +4,7 @@ kind = "art"
 title = "Worms"
 description = "Eight coloured worms wander your screen, turning at random and crossing each other's paths: a BSD screen piece from 1980 that has never stopped crawling."
 year = 1980
+old = true
 license = "BSD-3-Clause"
 repo = "theasciiverse/netbsd-games"
 collection = "bsdgames"

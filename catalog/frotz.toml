@@ -3,6 +3,7 @@ id = "frotz"
 kind = "program"
 title = "Frotz"
 description = "Plays the Z-machine, Infocom's imaginary computer: Zork and the rest of Infocom's catalogue, and the Inform stories written for it since."
+old = true
 license = "GPL-2.0-or-later"
 repo = "theasciiverse/frotz"
 provenance = "Stefan Jokisch wrote Frotz, a player for Infocom's Z-machine games; David Griffith and contributors maintain it."

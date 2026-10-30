@@ -3,6 +3,7 @@ id = "durthang"
 kind = "program"
 title = "Durthang"
 description = "A MUD client named for an orc-hold in Mordor: your worlds and characters in one list, passwords in the system keyring, and an automap that draws itself as you explore."
+new = true
 license = "GPL-3.0-only"
 repo = "theasciiverse/durthang"
 provenance = "Durthang is Raimo Geisel's MUD client in Rust."

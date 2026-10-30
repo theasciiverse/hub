@@ -4,6 +4,7 @@ kind = "program"
 title = "TinTin++"
 description = "The Kickin Tickin Dikumud Client: connect to any MUD and make it do your bidding with triggers, aliases, a mapper and a scripting language of its own."
 year = 1992
+old = true
 license = "GPL-3.0-or-later"
 repo = "theasciiverse/tintin"
 provenance = "TinTin++ grew from Peter Unold's TinTin III (1992); Bill Reis and then Igor van den Hoven continued it, and Igor maintains it today."

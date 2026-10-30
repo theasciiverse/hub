@@ -4,6 +4,7 @@ kind = "art"
 title = "cbirds"
 description = "A flock of birds wheels across the terminal in braille: Reynolds' boids, with sliders, hawks and a mouse that scatters them"
 year = 2025
+new = true
 license = "MIT"
 repo = "theasciiverse/cbirds"
 provenance = "cbirds is by Alessandro Palliccia (clainstone), in C99 with nothing but the C library, from 2025."

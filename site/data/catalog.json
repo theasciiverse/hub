@@ -2112,7 +2112,8 @@
      "size": 201586
     }
    },
-   "news": []
+   "news": [],
+   "new": true
   },
   "cblocks": {
    "schema_version": 1,
@@ -3827,7 +3828,8 @@
      "size": 1196000
     }
    },
-   "news": []
+   "news": [],
+   "new": true
   },
   "entity": {
    "schema_version": 1,
@@ -4399,7 +4401,8 @@
      "size": 211539
     }
    },
-   "news": []
+   "news": [],
+   "old": true
   },
   "galaxis": {
    "schema_version": 1,
@@ -7116,7 +7119,8 @@
      "size": 767919
     }
    },
-   "news": []
+   "news": [],
+   "new": true
   },
   "netgame": {
    "schema_version": 1,
@@ -8493,7 +8497,8 @@
      "size": 320073
     }
    },
-   "news": []
+   "news": [],
+   "old": true
   },
   "rantaiwarna": {
    "schema_version": 1,
@@ -10057,7 +10062,8 @@
      "size": 847770
     }
    },
-   "news": []
+   "news": [],
+   "new": true
   },
   "sjump": {
    "schema_version": 1,
@@ -11363,7 +11369,8 @@
      "size": 2214261
     }
    },
-   "news": []
+   "news": [],
+   "new": true
   },
   "termsuji": {
    "schema_version": 1,
@@ -11628,7 +11635,8 @@
      "size": 1122000
     }
    },
-   "news": []
+   "news": [],
+   "old": true
   },
   "tinyfugue": {
    "schema_version": 1,
@@ -11698,7 +11706,8 @@
      "size": 1233000
     }
    },
-   "news": []
+   "news": [],
+   "old": true
   },
   "tristam-island": {
    "schema_version": 1,
@@ -12687,7 +12696,8 @@
      "size": 326393
     }
    },
-   "news": []
+   "news": [],
+   "old": true
   },
   "wump": {
    "schema_version": 1,

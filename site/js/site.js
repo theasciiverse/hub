@@ -470,7 +470,7 @@ function clientCard(c) {
 // Facts from Debian 13 (packages, versions, copyright files) and each
 // project's own pages, checked 2026-10-12. Only checked platforms are listed.
 const IF_INTERPRETERS = [
-  { id: "frotz", kind: "client", role: "Interpreter", title: "Frotz", theme: "client", lang: "C", license: "GPL-2.0-or-later",
+  { id: "frotz", kind: "client", role: "Interpreter", title: "Frotz", old: true, theme: "client", lang: "C", license: "GPL-2.0-or-later",
     version: "2.55", released: "February 2025", website: "https://davidgriffith.gitlab.io/frotz/",
     description: "The standard player for Z-machine stories: Infocom's games, Zork among them, and most classic interactive fiction",
     platforms: { Linux: "yes (x86-64, ARM64)", macOS: "yes (Intel, Apple silicon)", Windows: null }, windowsNote: "curses is for Unix terminals",

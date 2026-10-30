@@ -4,6 +4,7 @@ kind = "art"
 title = "Terminal Rain"
 description = "Rain streams down your terminal, and when the storm comes forked lightning cracks across it, with rain and thunder to listen to if you like."
 year = 2025
+new = true
 license = "MIT"
 repo = "theasciiverse/terminal-rain-lightning"
 provenance = "Terminal Rain is by rmaake1, in Python on curses, from 2025 to 2026, with slow motion by plasma and rain and thunder sounds contributed from Pixabay."
