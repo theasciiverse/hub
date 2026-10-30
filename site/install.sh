@@ -8,6 +8,11 @@
 # and puts the binary in ~/.local/bin (the same folder av links titles into).
 # Nothing outside your home folder is touched, no sudo, no shell rc edits.
 #
+# On a Linux distribution the release has a package for (a .deb for Debian
+# and Ubuntu so far), it offers that instead: av in the applications menu,
+# with tab completion, kept up to date by the package manager. That needs
+# sudo, so it asks first; without an answer it installs as above.
+#
 # Settings, all optional:
 #   AV_INSTALL_DIR   where the av binary goes (default ~/.local/bin)
 #   AV_DOWNLOAD_URL  folder holding the archives and SHA256SUMS
@@ -131,7 +136,7 @@ fetch_bar() { # url file
   pid=$!
   start="$(date +%s)"
   while kill -0 "$pid" 2>/dev/null; do
-    draw_bar "$(wc -c <"$2" 2>/dev/null || echo 0)" "${total:-0}" "$(($(date +%s) - start))"
+    draw_bar "$({ wc -c <"$2"; } 2>/dev/null || echo 0)" "${total:-0}" "$(($(date +%s) - start))"
     sleep 0.1 2>/dev/null || sleep 1
   done
   if wait "$pid"; then
@@ -141,6 +146,80 @@ fetch_bar() { # url file
     printf '\n'
     return 1
   fi
+}
+
+# ---- a package for this distribution ----
+
+ask() { # question: yes unless the answer starts with n; no when there is no terminal to ask on
+  (: </dev/tty) 2>/dev/null || return 1
+  printf '  %s [Y/n] ' "$1" >/dev/tty
+  read -r answer </dev/tty || return 1
+  case "$answer" in [Nn]*) return 1 ;; esac
+}
+
+pkg_file() { # extension arch: this release's package for the machine, from SHA256SUMS
+  awk '{ f = $2; sub(/^\*/, "", f); print f }' "$tmp/SHA256SUMS" | while read -r f; do
+    case "$f" in av[_-]*"$2"*".$1") say "$f"; break ;; esac
+  done
+}
+
+native() { # sets kind, pkg (empty when the release has none) and installed (av came from a package)
+  kind='' pkg='' installed=''
+  [ "$(uname -s)" = Linux ] && [ -r /etc/os-release ] || return 0
+  ids=" $(. /etc/os-release && echo "${ID:-} ${ID_LIKE:-}") "
+  case "$(uname -m)" in x86_64 | amd64) deb=amd64 rpm=x86_64 ;; *) deb=arm64 rpm=aarch64 ;; esac
+  case "$ids" in
+    *" debian "* | *" ubuntu "*)
+      kind=deb
+      pkg="$(pkg_file deb "$deb")"
+      dpkg-query -W -f='${Status}' av 2>/dev/null | grep -q 'ok installed' && installed=1 ;;
+    *" fedora "* | *" rhel "* | *" centos "* | *" suse "*)
+      kind=rpm
+      pkg="$(pkg_file rpm "$rpm")"
+      rpm -q av >/dev/null 2>&1 && installed=1 ;;
+  esac
+  return 0
+}
+
+install_pkg() {
+  fetch_bar "$DOWNLOAD_URL/$pkg" "$tmp/$pkg" || die "could not download $DOWNLOAD_URL/$pkg"
+  verify "$pkg"
+  # the package manager may read it as its own user
+  chmod 755 "$tmp" && chmod 644 "$tmp/$pkg"
+  if [ "$(id -u)" = 0 ]; then
+    sudo=
+  else
+    command -v sudo >/dev/null 2>&1 || die "installing a package needs sudo; run this again and answer n to install for this user only"
+    sudo=sudo
+  fi
+  step "installing $pkg"
+  if [ "$kind" = deb ]; then
+    if command -v apt-get >/dev/null 2>&1; then
+      $sudo apt-get install -y "$tmp/$pkg" </dev/tty
+    else
+      $sudo dpkg -i "$tmp/$pkg" </dev/tty
+    fi
+  elif command -v dnf >/dev/null 2>&1; then
+    $sudo dnf install -y "$tmp/$pkg" </dev/tty
+  elif command -v zypper >/dev/null 2>&1; then
+    $sudo zypper --non-interactive install --allow-unsigned-rpm "$tmp/$pkg" </dev/tty
+  else
+    $sudo rpm -U "$tmp/$pkg" </dev/tty
+  fi || die "the package manager did not install $pkg"
+  # a copy from an earlier run of this script would start instead of the package
+  if [ -f "$INSTALL_DIR/av" ] && ask "Remove the av in $INSTALL_DIR, which would start instead of the package?"; then
+    rm -f "$INSTALL_DIR/av"
+  fi
+  say ''
+  say "  Done. Asciiverse is in your applications menu, or type ${B}${G}av${N} to open the catalog."
+}
+
+verify() { # file in $tmp, against its line in SHA256SUMS
+  want="$(awk -v f="$1" '$2 == f || $2 == "*" f { print $1 }' "$tmp/SHA256SUMS")"
+  [ -n "$want" ] || die "SHA256SUMS has no line for $1"
+  got="$(sha256 "$tmp/$1")"
+  [ "$want" = "$got" ] || die "checksum mismatch for $1 (expected $want, got $got); nothing installed"
+  step "sha256 ${G}ok${N}"
 }
 
 sha256() { # file
@@ -169,13 +248,29 @@ main() {
 
   step "fetching av ($t)"
   fetch "$DOWNLOAD_URL/SHA256SUMS" "$tmp/SHA256SUMS" || die "could not download $DOWNLOAD_URL/SHA256SUMS"
-  fetch_bar "$DOWNLOAD_URL/$archive" "$tmp/$archive" || die "could not download $DOWNLOAD_URL/$archive"
 
-  want="$(awk -v f="$archive" '$2 == f || $2 == "*" f { print $1 }' "$tmp/SHA256SUMS")"
-  [ -n "$want" ] || die "SHA256SUMS has no line for $archive"
-  got="$(sha256 "$tmp/$archive")"
-  [ "$want" = "$got" ] || die "checksum mismatch for $archive (expected $want, got $got); nothing installed"
-  step "sha256 ${G}ok${N}"
+  native
+  if [ -n "$installed" ]; then
+    # av came from the .deb or .rpm: update that, never hide it behind a second copy
+    if [ -n "$pkg" ] && ask "av is installed as a .$kind package. Update it from this release (needs sudo)?"; then
+      install_pkg
+      return
+    fi
+    say "  av is installed as a .$kind package, so nothing was put in $INSTALL_DIR."
+    say "  Run this again to update the package."
+    return
+  elif [ -n "$pkg" ]; then
+    say "  There is a .$kind for your system: Asciiverse in the applications menu,"
+    say "  tab completion, and updates through your package manager."
+    if ask "Install the .$kind (needs sudo)?"; then
+      install_pkg
+      return
+    fi
+    step "installing for this user only"
+  fi
+
+  fetch_bar "$DOWNLOAD_URL/$archive" "$tmp/$archive" || die "could not download $DOWNLOAD_URL/$archive"
+  verify "$archive"
 
   mkdir -p "$tmp/x"
   tar -xzf "$tmp/$archive" -C "$tmp/x"

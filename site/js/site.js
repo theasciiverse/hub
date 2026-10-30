@@ -172,6 +172,8 @@ const AV_INSTALL = [
   ["curl", "curl -fsSL https://asciiverse.sh/install.sh | sh"],
   ["wget", "wget -qO- https://asciiverse.sh/install.sh | sh"],
   ["PowerShell", "irm https://asciiverse.sh/install.ps1 | iex"],
+  [".deb", "curl -fsSLO https://asciiverse.sh/releases/av/latest/av_amd64.deb && sudo apt install ./av_amd64.deb",
+    "Debian and Ubuntu: Asciiverse in your applications menu, and tab completion. On ARM, <code>av_arm64.deb</code>."],
 ];
 
 function avInstaller() {
