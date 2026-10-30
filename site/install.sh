@@ -8,10 +8,12 @@
 # and puts the binary in ~/.local/bin (the same folder av links titles into).
 # Nothing outside your home folder is touched, no sudo, no shell rc edits.
 #
-# On a Linux distribution the release has a package for (a .deb for Debian
-# and Ubuntu so far), it offers that instead: av in the applications menu,
-# with tab completion, kept up to date by the package manager. That needs
-# sudo, so it asks first; without an answer it installs as above.
+# On Linux, when the release has a package this machine can install (a .deb
+# so far; an .rpm where dnf, zypper or yum is), it asks which way: that
+# package (av in the applications menu, tab completion, updates through
+# the package manager; needs sudo), just av for you as above, or nothing.
+# The package for the distribution comes first and is the default. Without
+# a terminal to ask on, it installs for you only.
 #
 # Settings, all optional:
 #   AV_INSTALL_DIR   where the av binary goes (default ~/.local/bin)
@@ -163,22 +165,86 @@ pkg_file() { # extension arch: this release's package for the machine, from SHA2
   done
 }
 
-native() { # sets kind, pkg (empty when the release has none) and installed (av came from a package)
-  kind='' pkg='' installed=''
-  [ "$(uname -s)" = Linux ] && [ -r /etc/os-release ] || return 0
-  ids=" $(. /etc/os-release && echo "${ID:-} ${ID_LIKE:-}") "
+routes() { # the packages this machine could take, the suggested one first: "kind file" lines
+  [ "$(uname -s)" = Linux ] || return 0
+  ids=''
+  [ -r /etc/os-release ] && ids=" $(. /etc/os-release && echo "${ID:-} ${ID_LIKE:-}") "
   case "$(uname -m)" in x86_64 | amd64) deb=amd64 rpm=x86_64 ;; *) deb=arm64 rpm=aarch64 ;; esac
+  can_deb='' can_rpm=''
+  command -v dpkg >/dev/null 2>&1 && can_deb=1
+  { command -v dnf || command -v zypper || command -v yum; } >/dev/null 2>&1 && can_rpm=1
   case "$ids" in
-    *" debian "* | *" ubuntu "*)
-      kind=deb
-      pkg="$(pkg_file deb "$deb")"
-      dpkg-query -W -f='${Status}' av 2>/dev/null | grep -q 'ok installed' && installed=1 ;;
-    *" fedora "* | *" rhel "* | *" centos "* | *" suse "*)
-      kind=rpm
-      pkg="$(pkg_file rpm "$rpm")"
-      rpm -q av >/dev/null 2>&1 && installed=1 ;;
+    *" fedora "* | *" rhel "* | *" centos "* | *" suse "*) order="rpm deb" ;;
+    *) order="deb rpm" ;;
   esac
+  for k in $order; do
+    f=''
+    case "$k" in
+      deb) [ -n "$can_deb" ] && f="$(pkg_file deb "$deb")" ;;
+      rpm) [ -n "$can_rpm" ] && f="$(pkg_file rpm "$rpm")" ;;
+    esac
+    [ -n "$f" ] && say "$k $f"
+  done
   return 0
+}
+
+from_package() { # the kind of package av is installed from, if any
+  if command -v dpkg-query >/dev/null 2>&1 && dpkg-query -W -f='${Status}' av 2>/dev/null | grep -q 'ok installed'; then
+    say deb
+  elif command -v rpm >/dev/null 2>&1 && rpm -q av >/dev/null 2>&1; then
+    say rpm
+  fi
+}
+
+what() { # kind: what that package brings, for the menu
+  case "$1" in
+    deb) say "Asciiverse in your applications menu, tab completion, updates with apt" ;;
+    rpm) say "Asciiverse in your applications menu, tab completion, updates with dnf or zypper" ;;
+  esac
+}
+
+choose() { # list of "kind file" lines: sets kind and pkg, or kind=user, or kind=exit
+  n=0
+  say "  How would you like to install av?"
+  say ''
+  printf '%s\n' "$1" | while read -r k f; do
+    [ -n "$k" ] || continue
+    n=$((n + 1))
+    if [ "$k" = "$have" ]; then
+      printf '    %s%d%s  update the .%s package%s  (needs sudo)\n' "$B" "$n" "$N" "$k" "$([ "$n" = 1 ] && echo ', suggested')"
+    else
+      printf '    %s%d%s  the .%s package%s  (needs sudo)\n' "$B" "$n" "$N" "$k" "$([ "$n" = 1 ] && echo ', suggested')"
+    fi
+    printf '       %s%s%s\n' "$D" "$(what "$k")" "$N"
+  done
+  count="$(printf '%s\n' "$1" | grep -c .)"
+  printf '    %s%d%s  just av, for you only  (no sudo)\n' "$B" $((count + 1)) "$N"
+  if [ -n "$have" ]; then
+    printf '       %s%s/av, which would start instead of the .%s%s\n' "$D" "$INSTALL_DIR" "$have" "$N"
+  else
+    printf '       %s%s/av, nothing else%s\n' "$D" "$INSTALL_DIR" "$N"
+  fi
+  printf '    %s%d%s  exit, nothing installed\n' "$B" $((count + 2)) "$N"
+  say ''
+  while :; do
+    printf '  Choose 1 to %d [1]: ' $((count + 2)) >/dev/tty
+    read -r answer </dev/tty || answer=$((count + 2))
+    case "${answer:-1}" in
+      *[!0-9]*) continue ;;
+    esac
+    c=${answer:-1}
+    if [ "$c" -ge 1 ] && [ "$c" -le "$count" ]; then
+      line="$(printf '%s\n' "$1" | sed -n "${c}p")"
+      kind="${line%% *}" pkg="${line#* }"
+      return
+    elif [ "$c" -eq $((count + 1)) ]; then
+      kind='user'
+      return
+    elif [ "$c" -eq $((count + 2)) ]; then
+      kind='exit'
+      return
+    fi
+  done
 }
 
 install_pkg() {
@@ -249,23 +315,23 @@ main() {
   step "fetching av ($t)"
   fetch "$DOWNLOAD_URL/SHA256SUMS" "$tmp/SHA256SUMS" || die "could not download $DOWNLOAD_URL/SHA256SUMS"
 
-  native
-  if [ -n "$installed" ]; then
-    # av came from the .deb or .rpm: update that, never hide it behind a second copy
-    if [ -n "$pkg" ] && ask "av is installed as a .$kind package. Update it from this release (needs sudo)?"; then
-      install_pkg
-      return
-    fi
-    say "  av is installed as a .$kind package, so nothing was put in $INSTALL_DIR."
-    say "  Run this again to update the package."
+  list="$(routes)"
+  have="$(from_package)"
+  if [ -n "$list" ] && (: </dev/tty) 2>/dev/null; then
+    choose "$list"
+    case "$kind" in
+      exit) say ''; say "  Nothing installed."; return ;;
+      user) step "installing for this user only" ;;
+      *) install_pkg; return ;;
+    esac
+  elif [ -n "$have" ]; then
+    # no terminal to ask on: never hide the package behind a second copy
+    say "  av is installed as a .$have package, so nothing was put in $INSTALL_DIR."
+    say "  Run this again in a terminal to update it."
     return
-  elif [ -n "$pkg" ]; then
-    say "  There is a .$kind for your system: Asciiverse in the applications menu,"
-    say "  tab completion, and updates through your package manager."
-    if ask "Install the .$kind (needs sudo)?"; then
-      install_pkg
-      return
-    fi
+  elif [ -n "$list" ]; then
+    say "  There is a .${list%% *} for your system: Asciiverse in the applications menu and"
+    say "  tab completion. Run this again in a terminal to choose it."
     step "installing for this user only"
   fi
 
