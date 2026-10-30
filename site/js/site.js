@@ -176,8 +176,12 @@ const AV_INSTALL = [
     "Debian and Ubuntu: Asciiverse in your applications menu, and tab completion. On ARM, <code>av_arm64.deb</code>."],
 ];
 
+// The tab that works out of the box: Ubuntu's desktop ships wget but not
+// curl (its 24.04 and 26.04 image manifests), macOS ships curl.
 function avInstaller() {
-  return tabbedInstall(AV_INSTALL, /Windows/.test(navigator.userAgent) ? 2 : 0);
+  const ua = navigator.userAgent;
+  const first = /Windows/.test(ua) ? 2 : /Linux/.test(ua) && !/Android/.test(ua) ? 1 : 0;
+  return tabbedInstall(AV_INSTALL, first);
 }
 
 // Tabs over one install line: [[tab name, command, optional note], ...]

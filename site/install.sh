@@ -263,17 +263,45 @@ choose() { # list of "kind file" lines: sets kind and pkg, or kind to user, remo
   done
 }
 
+pick() { # highest number: a choice from 1 to it, 1 when Enter is pressed
+  while :; do
+    printf '  Choose 1 to %d [1]: ' "$1" >/dev/tty
+    read -r answer </dev/tty || answer=$1
+    case "${answer:-1}" in *[!0-9]*) continue ;; esac
+    if [ "${answer:-1}" -ge 1 ] && [ "${answer:-1}" -le "$1" ]; then
+      say "${answer:-1}"
+      return
+    fi
+  done
+}
+
+# install_pkg: 0 installed; 1 it could not, so offer av for the user; 2 the
+# user picked av for themselves instead; 3 the user chose to stop
 install_pkg() {
+  if [ "$(id -u)" = 0 ]; then
+    sudo=''
+  elif ! command -v sudo >/dev/null 2>&1; then
+    say "  ${A}There is no sudo here${N}, so the .$kind can't be installed."
+    return 1
+  else
+    sudo=sudo
+    # the password now, before anything is downloaded
+    while ! sudo -v </dev/tty; do
+      say ''
+      say "  ${A}sudo did not let this account in.${N}"
+      say "    ${B}1${N}  try sudo again"
+      say "    ${B}2${N}  just av, for you only  (no sudo)"
+      say "    ${B}3${N}  exit, nothing installed"
+      case "$(pick 3)" in
+        2) return 2 ;;
+        3) return 3 ;;
+      esac
+    done
+  fi
   fetch_bar "$DOWNLOAD_URL/$pkg" "$tmp/$pkg" || die "could not download $DOWNLOAD_URL/$pkg"
   verify "$pkg"
   # the package manager may read it as its own user
   chmod 755 "$tmp" && chmod 644 "$tmp/$pkg"
-  if [ "$(id -u)" = 0 ]; then
-    sudo=
-  else
-    command -v sudo >/dev/null 2>&1 || die "installing a package needs sudo; run this again and answer n to install for this user only"
-    sudo=sudo
-  fi
   step "installing $pkg"
   if [ "$kind" = deb ]; then
     if command -v apt-get >/dev/null 2>&1; then
@@ -288,13 +316,33 @@ install_pkg() {
     $sudo zypper --non-interactive install --allow-unsigned-rpm "$tmp/$pkg" </dev/tty
   else
     $sudo rpm -U "$tmp/$pkg" </dev/tty
-  fi || die "the package manager did not install $pkg"
+  fi || {
+    say "  ${A}The package manager did not install $pkg.${N}"
+    return 1
+  }
   # a copy from an earlier run of this script would start instead of the package
   if [ -f "$INSTALL_DIR/av" ] && ask "Remove the av in $INSTALL_DIR, which would start instead of the package?"; then
     rm -f "$INSTALL_DIR/av"
   fi
   say ''
   say "  Done. Asciiverse is in your applications menu, or type ${B}${G}av${N} to open the catalog."
+}
+
+start_now() { # binary: offer to open av right away
+  ask "Start av now?" || return 0
+  # exec ends this script, so clean up first
+  rm -rf "$tmp"
+  trap - EXIT INT TERM
+  exec "$1" </dev/tty
+}
+
+startup_file() { # where this user's shell takes a PATH line, written as shown to them
+  # shellcheck disable=SC2088
+  case "${SHELL:+${SHELL##*/}}" in
+    zsh) say "~/.zshrc" ;;
+    bash) if [ "$(uname -s)" = Darwin ]; then say "~/.bash_profile"; else say "~/.bashrc"; fi ;;
+    *) say "~/.profile" ;;
+  esac
 }
 
 verify() { # file in $tmp, against its line in SHA256SUMS
@@ -348,7 +396,17 @@ main() {
         fi
         return ;;
       user) step "installing for this user only" ;;
-      *) install_pkg; return ;;
+      *)
+        if install_pkg; then
+          start_now /usr/bin/av
+          return
+        else
+          case $? in
+            1) ask "Install just av, for you only, instead (no sudo)?" || { say ''; say "  Nothing installed."; return; } ;;
+            3) say ''; say "  Nothing installed."; return ;;
+          esac
+        fi
+        step "installing for this user only" ;;
     esac
   elif [ -n "$have" ]; then
     # no terminal to ask on: never hide the package behind a second copy
@@ -377,17 +435,29 @@ main() {
   step "installed to $INSTALL_DIR/av"
   say ''
 
+  short="$(printf '%s' "$INSTALL_DIR" | sed "s|^$HOME/|~/|")"
   case ":${PATH}:" in
     *":$INSTALL_DIR:"*)
       say "  Done. Type ${B}${G}av${N} to open the catalog." ;;
     *)
-      say "  Done, but ${A}$INSTALL_DIR is not on your PATH${N} yet."
-      say "  Add this line to your shell's startup file (~/.bashrc, ~/.zshrc, ...):"
+      if [ "$INSTALL_DIR" = "$HOME/.local/bin" ] && grep -qs '\.local/bin' "$HOME/.profile" "$HOME/.bash_profile" "$HOME/.bash_login" "$HOME/.zprofile"; then
+        # Debian and Ubuntu's ~/.profile adds the folder at login, if it existed then
+        say "  Done. Your login adds $short to your PATH, so once you have logged out"
+        say "  and back in, typing ${B}${G}av${N} opens the catalog."
+      elif [ "${SHELL:+${SHELL##*/}}" = fish ]; then
+        say "  Done. To start it by typing ${B}${G}av${N}, run this once:"
+        say ''
+        say "    fish_add_path $short"
+      else
+        say "  Done. To start it by typing ${B}${G}av${N}, add this line to $(startup_file)"
+        say "  and open a new terminal:"
+        say ''
+        say "    export PATH=\"$short:\$PATH\""
+      fi
       say ''
-      say "    export PATH=\"$INSTALL_DIR:\$PATH\""
-      say ''
-      say "  then open a new terminal and type ${B}${G}av${N}." ;;
+      say "  Until then, start it with ${B}${G}$short/av${N}" ;;
   esac
+  start_now "$INSTALL_DIR/av"
 }
 
 # Everything runs from here, so a download cut off halfway runs nothing.
