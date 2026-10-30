@@ -232,6 +232,7 @@ from `<id>.md`, unrendered, so each consumer renders it its own way:
 {
   "schema_version": 1,
   "catalog_generated_at": "2026-10-06T12:00:00Z",
+  "av": { "version": "0.9.8", "date": "2026-10-30", "notes": "- Says when a newer av is out" },
   "collections": {
     "nbsdgames": { "name": "New BSD Games", "url": "...", "description": "..." }
   },
@@ -252,6 +253,13 @@ from `<id>.md`, unrendered, so each consumer renders it its own way:
   }
 }
 ```
+
+`av` is `av`'s own latest release, from the newest published GitHub Release
+of theasciiverse/av: its version without the `v`, its date and its body as
+`notes`, in the page's Markdown subset. An older `av` uses it to say a newer
+one is out and how to update, also when it can't read a newer
+`schema_version`, which is why `av` reads it before that check. Optional,
+so a catalog without it still loads.
 
 `news` is the latest releases' notes, newest first (a few are enough; `av`
 shows three): for `source = "github"` each GitHub Release's body and its date,

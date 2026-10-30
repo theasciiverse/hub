@@ -15,6 +15,7 @@ SITE = pathlib.Path(__file__).resolve().parent.parent
 HUB = SITE.parent / "catalog"
 MOCK = SITE / "dev" / "mock-titles.toml"
 GAMES = SITE.parent.parent / "games"
+AV = SITE.parent.parent / "av"
 RELEASES = SITE / "dev-releases"
 TARGET = "x86_64-unknown-linux-gnu"
 
@@ -152,6 +153,21 @@ def local_news(t):
                     return [{"version": t["version"], "date": "", "notes": m.group(2).strip()}]
     return []
 
+def av_release():
+    """The catalog's top-level "av" entry (SCHEMA.md): the av next to hub,
+    its version from Cargo.toml and its notes from its ROADMAP.md section,
+    dated by the v<version> tag. hub's generator takes av's latest GitHub
+    Release instead."""
+    cargo = AV / "Cargo.toml"
+    if not cargo.is_file():
+        return None
+    version = re.search(r'^version = "([^"]+)"', cargo.read_text(), re.M).group(1)
+    m = re.search(rf"^## {re.escape(version)}: built\n(.*?)(?=^## |\Z)", (AV / "ROADMAP.md").read_text(), re.M | re.S)
+    notes = re.sub(r"^- \[x\] ", "- ", m.group(1).strip(), flags=re.M) if m else ""
+    date = subprocess.run(["git", "-C", str(AV), "log", "-1", "--format=%as", f"v{version}"],
+                          capture_output=True, text=True).stdout.strip()
+    return {"version": version, "date": date, "notes": notes}
+
 def fake_release(t):
     tri = ["x86_64-unknown-linux-musl", "aarch64-apple-darwin", "x86_64-pc-windows-msvc"]
     if t.get("system_deps"):
@@ -206,10 +222,11 @@ def main():
     cols = HUB / "collections.toml"
     collections = tomllib.loads(cols.read_text()) if cols.exists() else {}
     (SITE / "data").mkdir(exist_ok=True)
-    (SITE / "data" / "catalog.json").write_text(json.dumps(
-        {"schema_version": 1, "catalog_generated_at": "2026-10-10T00:00:00Z",
-         "collections": collections, "titles": out},
-        indent=1, ensure_ascii=False))
+    catalog = {"schema_version": 1, "catalog_generated_at": "2026-10-10T00:00:00Z",
+               "collections": collections, "titles": out}
+    if av := av_release():
+        catalog["av"] = av
+    (SITE / "data" / "catalog.json").write_text(json.dumps(catalog, indent=1, ensure_ascii=False))
     print(f"{len(out)} titles")
 
 main()

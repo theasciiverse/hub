@@ -1452,22 +1452,22 @@
     "libudev1"
    ],
    "updated_at": "2026-10-20T14:00:00Z",
-   "version": "0.5.0",
+   "version": "1.0.0",
    "thumbnail_at": 12.2,
    "cast_url": "/casts/braillestorm.cast?v=1792502188",
    "duration": 27.1,
    "platforms": {
     "x86_64-unknown-linux-gnu": {
      "url": "/dev-releases/braillestorm-x86_64-unknown-linux-gnu.tar.gz",
-     "sha256": "471d04c13788bdb418a5a4ea25f47bc8e5981a02a74481f4d3d434531241167a",
-     "size": 7763631
+     "sha256": "d8a1534da19b35565663c70525a2c9d5b341fc4702c21d48dacf2b96c4d4fd15",
+     "size": 7764130
     }
    },
    "news": [
     {
-     "version": "0.5.0",
+     "version": "1.0.0",
      "date": "2026-10-29",
-     "notes": "- Two more enemy kinds: the zombie, whose body gets back up unless it is\n  reaped, and the escape, which marks a spot by the ship and jumps there\n- Music, synthesised: faster with the waves, fuller as the field fills, a\n  key for each stage"
+     "notes": "- Everything above played through and tuned (David, 2026-10-29)"
     }
    ]
   },
@@ -2055,6 +2055,7 @@
    "title": "cbirds",
    "description": "A flock of birds wheels across the terminal in braille: Reynolds' boids, with sliders, hawks and a mouse that scatters them",
    "year": 2025,
+   "new": true,
    "license": "MIT",
    "repo": "theasciiverse/cbirds",
    "provenance": "cbirds is by Alessandro Palliccia (clainstone), in C99 with nothing but the C library, from 2025.",
@@ -2112,8 +2113,7 @@
      "size": 201586
     }
    },
-   "news": [],
-   "new": true
+   "news": []
   },
   "cblocks": {
    "schema_version": 1,
@@ -3767,6 +3767,7 @@
    "kind": "program",
    "title": "Durthang",
    "description": "A MUD client named for an orc-hold in Mordor: your worlds and characters in one list, passwords in the system keyring, and an automap that draws itself as you explore.",
+   "new": true,
    "license": "GPL-3.0-only",
    "repo": "theasciiverse/durthang",
    "provenance": "Durthang is Raimo Geisel's MUD client in Rust.",
@@ -3828,8 +3829,7 @@
      "size": 1196000
     }
    },
-   "news": [],
-   "new": true
+   "news": []
   },
   "entity": {
    "schema_version": 1,
@@ -4334,6 +4334,7 @@
    "kind": "program",
    "title": "Frotz",
    "description": "Plays the Z-machine, Infocom's imaginary computer: Zork and the rest of Infocom's catalogue, and the Inform stories written for it since.",
+   "old": true,
    "license": "GPL-2.0-or-later",
    "repo": "theasciiverse/frotz",
    "provenance": "Stefan Jokisch wrote Frotz, a player for Infocom's Z-machine games; David Griffith and contributors maintain it.",
@@ -4401,8 +4402,7 @@
      "size": 211539
     }
    },
-   "news": [],
-   "old": true
+   "news": []
   },
   "galaxis": {
    "schema_version": 1,
@@ -7070,6 +7070,7 @@
    "title": "Neon Rain",
    "description": "A rainy city street at night seen from above: buzzing neon signs mirrored on the wet road, cars with headlight beams, people under umbrellas and the odd flash of lightning",
    "year": 2026,
+   "new": true,
    "license": "MIT",
    "repo": "theasciiverse/neon-rain",
    "provenance": "Asciiverse made Neon Rain in Rust in 2026, after a GIF of Terminal Rain, a cyberpunk roguelike shown on the TIGSource forums from 2015 that was never released.",
@@ -7119,8 +7120,7 @@
      "size": 767919
     }
    },
-   "news": [],
-   "new": true
+   "news": []
   },
   "netgame": {
    "schema_version": 1,
@@ -8301,10 +8301,10 @@
     "libasound2"
    ],
    "featured": 1,
-   "version": "0.10.0",
-   "updated_at": "2026-10-29T12:00:00Z",
+   "version": "0.9.0",
+   "updated_at": "2026-10-29T06:00:00Z",
    "thumbnail_at": 25.0,
-   "cast_url": "/casts/prince-of-braille.cast?v=1793273800",
+   "cast_url": "/casts/prince-of-braille.cast?v=1793273828",
    "duration": 28.0,
    "platforms": {
     "x86_64-unknown-linux-gnu": {
@@ -8444,6 +8444,7 @@
    "title": "Rain",
    "description": "Raindrops land on a still pond and spread out in widening rings, one after another: the BSD screen piece from 1980",
    "year": 1980,
+   "old": true,
    "license": "BSD-3-Clause",
    "repo": "theasciiverse/netbsd-games",
    "collection": "bsdgames",
@@ -8497,8 +8498,7 @@
      "size": 320073
     }
    },
-   "news": [],
-   "old": true
+   "news": []
   },
   "rantaiwarna": {
    "schema_version": 1,
@@ -9288,11 +9288,11 @@
    "release": {
     "source": "github"
    },
-   "page": "**PULL THE PLUNGER. THE TABLE IS ALIVE.**\n\nReal-time pinball physics, drawn in Braille vector lines right in your terminal. The ball rolls and ricochets off bumpers, slingshots and drop targets, the camera follows it up and down the table, and a dot-matrix display keeps the score.\n\nEight tables, each with its own rules. On Round and Round the bumpers orbit. On Eye of Horus a spinning triangle guards the pyramid at the centre. On Orbiters five planets circle a sun and tug at the ball as it passes. Ad Astra carries a map of the real night sky, 1,500 stars, and asks you to light up Orion, Leo or Ursa Major one star at a time. Pool Party racks them up and dares you to \"Shoot the Eight Ball!\" Ball locks, multiball and jackpots wait on every table that has them.\n\n- **Eight tables**: Classic, Round and Round, Ringmaster, Compound Interest, Eye of Horus, Orbiters, Ad Astra and Pool Party\n- **Real physics**: flippers, kickers, ramps, loops and layered mini tables\n- **The original's sound**: score dings, rollover notes, and music that builds as you score\n- **Faithful rules**: ball savers, halving multipliers and \"Shoot Again\", as Vector Pinball plays them\n- **Unlimited balls** from the menu, when you just want to play\n\n## Controls\n\n- **Space**: launch the ball\n- **Z**, **Left** or **Left Shift**: left flipper\n- **X**, **Right** or **Right Shift**: right flipper (Shift works on terminals with the kitty keyboard protocol; elsewhere use the letters or arrows)\n- **Enter**: carry on after a lost ball, or start again after game over\n- **Esc**: back to the menu\n- In the menu: **Up** or **k**, **Down** or **j**, **Enter** to choose, **Q** to quit; sound, score animations, ball trails and unlimited balls are switched there\n\n## Credits\n\n- Tables 1 to 8: layouts and rules from [Vector Pinball](https://github.com/dozingcat/Vector-Pinball) by Brian Nenninger, GPL-3.0\n- Star map on Ad Astra: from Vector Pinball, which credits Sky Map's catalog\n- Terminal version: Asciiverse\n- License: GPL-3.0\n",
+   "page": "**PULL THE PLUNGER. THE TABLE IS ALIVE.**\n\nReal-time pinball physics, drawn in Braille vector lines right in your terminal. The ball rolls and ricochets off bumpers, slingshots and drop targets, the camera follows it up and down the table, and a dot-matrix display keeps the score.\n\nEight tables, each with its own rules. On Round and Round the bumpers orbit. On Eye of Horus a spinning triangle guards the pyramid at the centre. On Orbiters five planets circle a sun and tug at the ball as it passes. Ad Astra carries a map of the real night sky, 1,500 stars, and asks you to light up Orion, Leo or Ursa Major one star at a time. Pool Party racks them up and dares you to \"Shoot the Eight Ball!\" Ball locks, multiball and jackpots wait on every table that has them.\n\n- **Eight tables**: Classic, Round and Round, Ringmaster, Compound Interest, Eye of Horus, Orbiters, Ad Astra and Pool Party\n- **Real physics**: flippers, kickers, ramps, loops and layered mini tables\n- **The original's sound**: score dings, rollover notes, and music that builds as you score\n- **Faithful rules**: ball savers, halving multipliers and \"Shoot Again\", as Vector Pinball plays them\n- **Your best five** on every table, and the last game's score\n- **Settings** for music and effects apart, game speed, the whole table at once, and unlimited balls when you just want to play\n\n## Controls\n\n- **Space**: launch the ball; hold it to pull the plunger back for a softer or harder shot (on terminals with the kitty keyboard protocol)\n- **Z**, **Left** or **Left Shift**: left flipper\n- **X**, **Right** or **Right Shift**: right flipper (Shift works on terminals with the kitty keyboard protocol; elsewhere use the letters or arrows)\n- **P**: pause\n- **H**: help and the rules of the table in play\n- **Esc**: back to the menu\n- In the menu: **Up** or **k**, **Down** or **j**, **Enter** to choose, **Q** to quit; Settings, High scores and Help are below the tables\n\n## Credits\n\n- Tables 1 to 8: layouts and rules from [Vector Pinball](https://github.com/dozingcat/Vector-Pinball) by Brian Nenninger, GPL-3.0\n- Star map on Ad Astra: from Vector Pinball, which credits Sky Map's catalog\n- Terminal version: Asciiverse\n- License: GPL-3.0\n",
    "system_deps": [
     "libasound2"
    ],
-   "version": "0.8.0",
+   "version": "0.9.0",
    "updated_at": "2026-10-10T00:00:00Z",
    "thumbnail_at": 5.0,
    "cast_url": "/casts/rusty-pinball.cast?v=1791626460",
@@ -9300,15 +9300,15 @@
    "platforms": {
     "x86_64-unknown-linux-gnu": {
      "url": "/dev-releases/rusty-pinball-x86_64-unknown-linux-gnu.tar.gz",
-     "sha256": "aed685c5817c16be895c0dec8a522df5c22f1ac496b3f02ece79217a2a9b5f19",
-     "size": 3899866
+     "sha256": "06812103551c1a30912db462dc5a6e4f9fa3341a017851591bc43a3466903e36",
+     "size": 3949297
     }
    },
    "news": [
     {
-     "version": "0.8.0",
-     "date": "2026-10-28",
-     "notes": "- Eight tables, every one with its table script: centre pieces, moving\n  parts, multiball, ball locks and jackpots\n- Ball savers (mercy ball, multiball saver), extra balls, the stuck-ball\n  bump, unlimited balls\n- Game messages on the DMD, the original's sounds and score-driven music\n- Score animations and ball trails, both switchable"
+     "version": "0.9.0",
+     "date": "2026-10-29",
+     "notes": "- The top 5 high scores and the last score per table, a High scores\n  screen, and the original's after-game cycle on the DMD\n- Settings as the original has them: music and effects apart, game\n  speed, zoom (on follows the ball, off shows the whole table)\n- A help screen with the controls and each table's rules, also in game (H)\n- Inactive layers fade over a quarter second of game time, as in the original\n- The plunger: hold Space to pull it back, where the terminal reports key releases\n- The ball's spin dot, and its size from `ballradius`"
     }
    ]
   },
@@ -10011,6 +10011,7 @@
    "title": "Silent Night",
    "description": "A snowy forest at night where the weather really moves: gusts bend the spruces and blow the snow into drifts around a lit cabin, and the wind you hear rises with the wind you see.",
    "year": 2026,
+   "new": true,
    "license": "MIT",
    "repo": "theasciiverse/silent-night",
    "provenance": "Asciiverse made Silent Night in Rust in 2026 for Christmas, after finding no terminal snow with wind, drifting snow or depth.",
@@ -10062,8 +10063,7 @@
      "size": 847770
     }
    },
-   "news": [],
-   "new": true
+   "news": []
   },
   "sjump": {
    "schema_version": 1,
@@ -11314,6 +11314,7 @@
    "title": "Terminal Rain",
    "description": "Rain streams down your terminal, and when the storm comes forked lightning cracks across it, with rain and thunder to listen to if you like.",
    "year": 2025,
+   "new": true,
    "license": "MIT",
    "repo": "theasciiverse/terminal-rain-lightning",
    "provenance": "Terminal Rain is by rmaake1, in Python on curses, from 2025 to 2026, with slow motion by plasma and rain and thunder sounds contributed from Pixabay.",
@@ -11369,8 +11370,7 @@
      "size": 2214261
     }
    },
-   "news": [],
-   "new": true
+   "news": []
   },
   "termsuji": {
    "schema_version": 1,
@@ -11574,6 +11574,7 @@
    "title": "TinTin++",
    "description": "The Kickin Tickin Dikumud Client: connect to any MUD and make it do your bidding with triggers, aliases, a mapper and a scripting language of its own.",
    "year": 1992,
+   "old": true,
    "license": "GPL-3.0-or-later",
    "repo": "theasciiverse/tintin",
    "provenance": "TinTin++ grew from Peter Unold's TinTin III (1992); Bill Reis and then Igor van den Hoven continued it, and Igor maintains it today.",
@@ -11635,8 +11636,7 @@
      "size": 1122000
     }
    },
-   "news": [],
-   "old": true
+   "news": []
   },
   "tinyfugue": {
    "schema_version": 1,
@@ -11644,6 +11644,7 @@
    "kind": "program",
    "title": "TinyFugue",
    "description": "The MUD client its players have called tf since the early 1990s: several worlds at once, and triggers, hilites, gags and macros to shape every line the MUD sends.",
+   "old": true,
    "license": "GPL-2.0-or-later",
    "repo": "theasciiverse/tinyfugue",
    "provenance": "TinyFugue is Ken Keys' MUD client; 5.0 beta 8 (2007) was its last release.",
@@ -11706,8 +11707,7 @@
      "size": 1233000
     }
    },
-   "news": [],
-   "old": true
+   "news": []
   },
   "tristam-island": {
    "schema_version": 1,
@@ -12264,34 +12264,28 @@
    },
    "media": {
     "cast": "asciiverse/uxo.cast",
-    "thumbnail_at": 18.8
+    "thumbnail_at": 17.1
    },
    "release": {
     "source": "github"
    },
-   "page": "**BLAST YOUR WAY OUT TO THE REAL WORLD!**\n\n3:14 in the morning. One key pressed, and the machine pulled Dot in!\n\nEvery night at 3:14 a cleaning program called **purged** tidies the disk. Tonight it has decided the tidiest disk is an empty one. Its charges are planted all through the system, every last one set to wipe everything at four o'clock. Dot included!\n\nDot comes down in an old garden screensaver, where purged has rewritten every creature to guard its charges. Grubs, ladybeetles, hedgehogs that pretend to be hedges, frogs, rams, crows... and something big and prickly guarding the way out.\n\nIn here every bomb is a kill, and purged's creatures can't start one. So drop a bomb, run, and BOOM: the blast rips out in a cross and flattens everything in its path. Line them up right and one sets off the next, and the next, and the next... Set off purged's charges, and watch out, because they blow for real! Caught in your own blast? That one's on you.\n\nBut not every kill goes off. Some hang, and lie there grey and smoking, live... until a blast finds them, or you kick one, or it just decides it's time. Every bomb is unexploded ordnance. Every single one.\n\n- **Bombs AND brains!** Push crates for cover, or onto switches to hold the gates open. Hunt down keys for locked doors, lost parts for the sealed sockets. Some stages are a race, some are a puzzle, most are both!\n- **The surge!** Out in the open, your bombs flood outward every way at once, round corners. Mind where it spreads!\n- **Ride your enemies!** Beat a Hopper or a Ram and it might leave an egg. Hatch it, climb on: hop clean over hedges, or charge. And when a blast catches you, your mount takes the hit.\n- **Adventure, alone or with a friend:** nine stages through the Screensaver for Dot alone, or Dot and Caret together, from Windfall Lane, past the Hedge Maze and the Cider Press, all the way to the Bramblehog.\n- **Battle for up to four!** Six arenas, from the Ice Rink to the Catacombs. Blown up? Ride the edge and lob bombs back in for revenge. Let the clock run down and the walls close in.\n- **Eighteen power-ups, and the dreaded skull.** Catch a disease and you might drop bombs nonstop, run backwards, turn invisible, or watch every bomb you drop fizzle. Bump into a rival and it's theirs instead!\n- **Every gamepad is a player,** and two can share the keyboard.\n\nCan you stop purged before four o'clock? **IF YOU SEE ME RUNNING, TRY TO KEEP UP!**\n\n## Controls\n\n- **Move**: stick, d-pad, **W A S D** or the **arrow keys**\n- **Bomb**: A or X on a pad, **Space** (W A S D player) or **Enter** (arrows player); press again standing on your bomb with the line bomb to lay a row\n- **Ride** (your mount's hop or charge): Y, **E** or **.**\n- **Action**: B, **F** or **/**: throw what you carry, else punch the bomb ahead, else pick up the bomb underfoot, else set off your oldest remote bomb\n- **Push a crate**: walk into it and lean on it a moment\n- **Start** or **P**: pause (in the adventure, bomb then starts the stage over, for a life), **+** and **-**: zoom (**0**: automatic), **Esc** or Select: back to the title\n\n## Credits\n\n- Game: Asciiverse\n- A love letter to the 90s bomb-arena games\n",
+   "page": "**BLAST YOUR WAY OUT TO THE REAL WORLD!**\n\n3:14 in the morning. One key pressed, and the machine pulled Dot in!\n\nEvery night at 3:14 a cleaning program called **purged** tidies the disk. Tonight it has decided the tidiest disk is an empty one. Its charges are planted all through the system, every last one set to wipe everything at four o'clock. Dot included!\n\nDot comes down in an old garden screensaver, where purged has rewritten every creature to guard its charges. Grubs, ladybeetles, hedgehogs that pretend to be hedges, frogs, rams, crows... and something big and prickly guarding the way out.\n\nIn here every bomb is a kill, and purged's creatures can't start one. So drop a bomb, run, and BOOM: the blast rips out in a cross and flattens everything in its path. Line them up right and one sets off the next, and the next, and the next... Set off purged's charges, and watch out, because they blow for real! Caught in your own blast? That one's on you.\n\nBut not every kill goes off. Some hang, and lie there grey and smoking, live... until a blast finds them, or you kick one, or it just decides it's time. Every bomb is unexploded ordnance. Every single one.\n\n- **Bombs AND brains!** Push crates for cover, or onto switches to hold the gates open. Hunt down keys for locked doors, lost parts for the sealed sockets. Some stages are a race, some are a puzzle, most are both!\n- **The surge!** Out in the open, your bombs flood outward every way at once, round corners. Mind where it spreads!\n- **Ride your enemies!** Beat a Hopper or a Ram and it might leave an egg. Hatch it, climb on: hop clean over hedges, or charge. And when a blast catches you, your mount takes the hit.\n- **Adventure, alone or with a friend:** twenty-seven stages for Dot alone, or Dot and Caret together. Through the Screensaver to the Bramblehog; into the Clock, where purged winds the time on toward four, the shutters open and shut on the beat and the Cuckoo waits to strike the hour; and down into the Buffer, where blocks come back as fast as you blow them away, and purged itself waits at the end.\n- **Battle for up to four!** Six arenas, from the Ice Rink to the Catacombs. Blown up? Ride the edge and lob bombs back in for revenge. Let the clock run down and the walls close in.\n- **Eighteen power-ups, and the dreaded skull.** Catch a disease and you might drop bombs nonstop, run backwards, turn invisible, or watch every bomb you drop fizzle. Bump into a rival and it's theirs instead!\n- **Every gamepad is a player,** and two can share the keyboard.\n\nCan you stop purged before four o'clock? **IF YOU SEE ME RUNNING, TRY TO KEEP UP!**\n\n## Controls\n\n- **Move**: stick, d-pad, **W A S D** or the **arrow keys**\n- **Bomb**: A or X on a pad, **Space** (W A S D player) or **Enter** (arrows player); press again standing on your bomb with the line bomb to lay a row\n- **Ride** (your mount's hop or charge): Y, **E** or **.**\n- **Action**: B, **F** or **/**: throw what you carry, else punch the bomb ahead, else pick up the bomb underfoot, else set off your oldest remote bomb\n- **Push a crate**: walk into it and lean on it a moment\n- **Start** or **P**: pause (in the adventure, bomb then starts the stage over, for a life), **+** and **-**: zoom (**0**: automatic), **Esc** or Select: back to the title\n\n## Credits\n\n- Game: Asciiverse\n- A love letter to the 90s bomb-arena games\n",
    "system_deps": [
     "libudev1"
    ],
-   "version": "0.5.0",
+   "version": "0.6.0",
    "updated_at": "2026-10-10T00:00:00Z",
-   "thumbnail_at": 18.8,
+   "thumbnail_at": 17.1,
    "cast_url": "/casts/uxo.cast?v=1791617899",
    "duration": 36.9,
    "platforms": {
     "x86_64-unknown-linux-gnu": {
      "url": "/dev-releases/uxo-x86_64-unknown-linux-gnu.tar.gz",
-     "sha256": "606b33d7e989f89dbf7f3a406cbfefe1814f5d4b9120b2dad563dab7f443126c",
-     "size": 7902905
+     "sha256": "9fec453ef20954b6087e012cf0de68f5e906b71dddc9cf243657064940d902f5",
+     "size": 7946646
     }
    },
-   "news": [
-    {
-     "version": "0.5.0",
-     "date": "2026-10-29",
-     "notes": "- The world's rules (`WORLD.md`): bombs are kills, a UXO is a hung\n  process, purged's run from 3:14 to the wipe at 4:00, nothing dies\n- Caret, the second hero in co-op, with a pointed head\n- The Screensaver's cards rewritten, each with the machine's clock;\n  the ending at 3:47\n- Beaten creatures flicker home; the Screensaver's redraw line; the\n  title's blinking cursor\n- A new preview recording with Dot and Caret"
-    }
-   ]
+   "news": []
   },
   "vms-empire": {
    "schema_version": 1,
@@ -12638,6 +12632,7 @@
    "title": "Worms",
    "description": "Eight coloured worms wander your screen, turning at random and crossing each other's paths: a BSD screen piece from 1980 that has never stopped crawling.",
    "year": 1980,
+   "old": true,
    "license": "BSD-3-Clause",
    "repo": "theasciiverse/netbsd-games",
    "collection": "bsdgames",
@@ -12696,8 +12691,7 @@
      "size": 326393
     }
    },
-   "news": [],
-   "old": true
+   "news": []
   },
   "wump": {
    "schema_version": 1,
@@ -13720,5 +13714,10 @@
    "website": "https://startrekkin.net/",
    "cast_url": "/casts/typhon-accords.cast?v=1791906527"
   }
+ },
+ "av": {
+  "version": "0.9.8",
+  "date": "2026-10-30",
+  "notes": "- After the intro, a note when the terminal is smaller than 128x40,\n  following a resize as it happens\n- av says when a newer av is out and how to update it: in the menu\n  row, in help, after a shell command, and when the catalog is too new to\n  read\n- A log is always kept, and help, the README and the man page say\n  where to report a problem\n- How to remove av, in the README and the man page"
  }
 }
