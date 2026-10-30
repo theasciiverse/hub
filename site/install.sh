@@ -10,8 +10,9 @@
 #
 # On Linux, when the release has a package this machine can install (a .deb
 # so far; an .rpm where dnf, zypper or yum is), it asks which way: that
-# package (av in the applications menu, tab completion, updates through
-# the package manager; needs sudo), just av for you as above, or nothing.
+# package (av in the applications menu, tab completion, and what titles
+# need from the system; needs sudo), just av for you as above, or nothing.
+# Running this again updates whichever it was.
 # The package for the distribution comes first and is the default. Without
 # a terminal to ask on, it installs for you only.
 #
@@ -198,8 +199,7 @@ from_package() { # the kind of package av is installed from, if any
 
 what() { # kind: what that package brings, for the menu
   case "$1" in
-    deb) say "Asciiverse in your applications menu, tab completion, updates with apt" ;;
-    rpm) say "Asciiverse in your applications menu, tab completion, updates with dnf or zypper" ;;
+    deb | rpm) say "Asciiverse in your applications menu, tab completion, what titles need" ;;
   esac
 }
 
@@ -277,7 +277,8 @@ install_pkg() {
   step "installing $pkg"
   if [ "$kind" = deb ]; then
     if command -v apt-get >/dev/null 2>&1; then
-      $sudo apt-get install -y "$tmp/$pkg" </dev/tty
+      # a fresh system is often updating in the background: wait for it
+      $sudo apt-get install -y -o DPkg::Lock::Timeout=300 "$tmp/$pkg" </dev/tty
     else
       $sudo dpkg -i "$tmp/$pkg" </dev/tty
     fi
