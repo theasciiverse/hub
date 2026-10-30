@@ -203,7 +203,7 @@ what() { # kind: what that package brings, for the menu
   esac
 }
 
-choose() { # list of "kind file" lines: sets kind and pkg, or kind=user, or kind=exit
+choose() { # list of "kind file" lines: sets kind and pkg, or kind to user, remove or exit
   n=0
   say "  How would you like to install av?"
   say ''
@@ -218,17 +218,30 @@ choose() { # list of "kind file" lines: sets kind and pkg, or kind=user, or kind
     printf '       %s%s%s\n' "$D" "$(what "$k")" "$N"
   done
   count="$(printf '%s\n' "$1" | grep -c .)"
-  printf '    %s%d%s  just av, for you only  (no sudo)\n' "$B" $((count + 1)) "$N"
+  private=''
+  [ -f "$INSTALL_DIR/av" ] && private=1
+  printf '    %s%d%s  %sjust av, for you only  (no sudo)\n' "$B" $((count + 1)) "$N" "$([ -n "$private" ] && echo 'update ')"
   if [ -n "$have" ]; then
     printf '       %s%s/av, which would start instead of the .%s%s\n' "$D" "$INSTALL_DIR" "$have" "$N"
   else
     printf '       %s%s/av, nothing else%s\n' "$D" "$INSTALL_DIR" "$N"
   fi
-  printf '    %s%d%s  exit, nothing installed\n' "$B" $((count + 2)) "$N"
+  last=$((count + 2))
+  if [ -n "$private" ]; then
+    # the private copy can go: then the package starts, or av is uninstalled for this user
+    printf '    %s%d%s  remove the av in %s\n' "$B" "$last" "$N" "$INSTALL_DIR"
+    if [ -n "$have" ]; then
+      printf '       %sit starts instead of the .%s; without it, the .%s does%s\n' "$D" "$have" "$have" "$N"
+    else
+      printf '       %suninstalls av for you; saves, settings and installed titles stay%s\n' "$D" "$N"
+    fi
+    last=$((last + 1))
+  fi
+  printf '    %s%d%s  exit, nothing installed\n' "$B" "$last" "$N"
   say ''
   while :; do
-    printf '  Choose 1 to %d [1]: ' $((count + 2)) >/dev/tty
-    read -r answer </dev/tty || answer=$((count + 2))
+    printf '  Choose 1 to %d [1]: ' "$last" >/dev/tty
+    read -r answer </dev/tty || answer=$last
     case "${answer:-1}" in
       *[!0-9]*) continue ;;
     esac
@@ -240,7 +253,10 @@ choose() { # list of "kind file" lines: sets kind and pkg, or kind=user, or kind
     elif [ "$c" -eq $((count + 1)) ]; then
       kind='user'
       return
-    elif [ "$c" -eq $((count + 2)) ]; then
+    elif [ -n "$private" ] && [ "$c" -eq $((count + 2)) ]; then
+      kind='remove'
+      return
+    elif [ "$c" -eq "$last" ]; then
       kind='exit'
       return
     fi
@@ -321,6 +337,15 @@ main() {
     choose "$list"
     case "$kind" in
       exit) say ''; say "  Nothing installed."; return ;;
+      remove)
+        rm -f "$INSTALL_DIR/av"
+        say ''
+        if [ -n "$have" ]; then
+          say "  Removed $INSTALL_DIR/av. Typing ${B}${G}av${N} now starts the .$have."
+        else
+          say "  Removed $INSTALL_DIR/av."
+        fi
+        return ;;
       user) step "installing for this user only" ;;
       *) install_pkg; return ;;
     esac
@@ -328,6 +353,7 @@ main() {
     # no terminal to ask on: never hide the package behind a second copy
     say "  av is installed as a .$have package, so nothing was put in $INSTALL_DIR."
     say "  Run this again in a terminal to update it."
+    [ -f "$INSTALL_DIR/av" ] && say "  The av in $INSTALL_DIR starts instead of it; run this in a terminal to remove it."
     return
   elif [ -n "$list" ]; then
     say "  There is a .${list%% *} for your system: Asciiverse in the applications menu and"
