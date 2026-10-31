@@ -1,0 +1,48 @@
+schema_version = 1
+id = "pacvim"
+kind = "game"
+title = "PacVim"
+description = "Learn vim by playing it: steer the cursor over every letter in the maze with vim's motions, w, b, e, $, gg and the rest, while ghosts hunt you down. Ten levels."
+year = 2014
+license = "LGPL-3.0-or-later"
+repo = "theasciiverse/pacvim"
+provenance = "Jamal Moon wrote PacVim in C++ and ncurses in 2014 to make learning vim fun, with contributors adding to it until 2018."
+changes = "PATCHES.md"
+topics = ["vim", "learning", "maze", "ghosts", "curses"]
+genre = "puzzle"
+
+[developer]
+name = "Jamal Moon and contributors"
+url = "https://github.com/jmoon018/PacVim"
+
+# upstream's last commit (1.1.1 plus the LGPL relicence), with maps found
+# through PACVIM_MAPS and no errors.log; PATCHES.md in theasciiverse/pacvim
+[upstream]
+name = "Jamal Moon"
+url = "https://github.com/jmoon018/PacVim"
+
+# the start script points pacvim at its bundled maps
+[exec]
+game = "pacvim"
+
+# the widest map is 57 columns; the tallest, with the score lines under
+# it, needs 26 rows
+[min_terminal]
+cols = 60
+rows = 26
+
+# curses line drawing for the walls, keyboard only
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, asciiverse/record-preview.sh: asciiverse/drive.py plays normal
+# mode from level 0 and clears it at 40 s, 50 s in all; the still is
+# mid-level, the maze half green
+[media]
+cast = "asciiverse/pacvim.cast"
+thumbnail_at = 25.0
+
+[release]
+source = "github"
