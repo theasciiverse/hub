@@ -1783,16 +1783,16 @@
     "libasound2",
     "libudev1"
    ],
-   "version": "0.9.0",
-   "updated_at": "2026-10-10T00:00:00Z",
+   "version": "0.9.1",
+   "updated_at": "2026-10-31T09:24:24Z",
    "thumbnail_at": 25.0,
    "cast_url": "/casts/calvary.cast?v=1793260617",
    "duration": 45.3,
    "platforms": {
     "x86_64-unknown-linux-gnu": {
-     "url": "/dev-releases/calvary-x86_64-unknown-linux-gnu.tar.gz",
-     "sha256": "2eeceae3eb09a8a9a79698322e48f35b0771c6e69bd06a97d4bdcf6fe10aeeab",
-     "size": 45868203
+     "url": "/dev-releases/calvary/calvary-x86_64-unknown-linux-gnu.tar.gz",
+     "sha256": "514a111da407c00057cd5cd850ef9a6aeddca2e2ec08a1600b263adf3e009b53",
+     "size": 36542890
     }
    },
    "news": []
@@ -13716,8 +13716,8 @@
   }
  },
  "av": {
-  "version": "0.9.8",
+  "version": "0.9.10",
   "date": "2026-10-30",
-  "notes": "- After the intro, a note when the terminal is smaller than 128x40,\n  following a resize as it happens\n- av says when a newer av is out and how to update it: in the menu\n  row, in help, after a shell command, and when the catalog is too new to\n  read\n- A log is always kept, and help, the README and the man page say\n  where to report a problem\n- How to remove av, in the README and the man page"
+  "notes": "- Titles that left the catalog stay in the list, under \"No longer in\n  the catalog\", to play or uninstall\n- Searching and drawing the list does far less work each frame"
  }
 }
