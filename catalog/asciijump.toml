@@ -42,10 +42,10 @@ color = "basic"
 mouse = false
 
 # 100x30, played by asciiverse/drive.py, which reads the screen and lands
-# with a telemark; 10 s has the skier in flight over czumulungma k150
+# with a telemark; 9 s has the skier in flight over czumulungma k150
 [media]
 cast = "asciiverse/asciijump.cast"
-thumbnail_at = 10.0
+thumbnail_at = 9.0
 
 [release]
 source = "github"
