@@ -1,0 +1,51 @@
+schema_version = 1
+id = "asciijump"
+kind = "game"
+title = "asciijump"
+description = "Ski jumping in ASCII art: ride down the in-run, take off at the lip, lean into the flight and land with a telemark. Training, a World Cup against the computer, and network games."
+year = 2003
+old = true
+license = "GPL-2.0-or-later"
+repo = "theasciiverse/asciijump"
+provenance = "Grzegorz Moskal wrote asciijump in C on S-Lang, with Michal Moskal and Przemek Niezborala, in Poland in the early 2000s; Debian has carried it since 2003."
+changes = "PATCHES.md"
+topics = ["sports", "skiing", "arcade", "multiplayer", "classic", "slang"]
+genre = "arcade"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# 1.0.2~beta, the last release, with Debian's patches and ours (records
+# without setgid, relocatable data, hills that load on arm64); PATCHES.md
+# in theasciiverse/asciijump. The original home, asciijump.prv.pl, is gone,
+# so this points at Debian's packaging, where the source lives on.
+[upstream]
+name = "Grzegorz Moskal, Michal Moskal and Przemek Niezborala"
+url = "https://salsa.debian.org/games-team/asciijump"
+
+# the start script points asciijump at its bundled gfx/ and hills/
+[exec]
+game = "asciijump"
+
+# the game refuses anything at 40x16 or smaller (main.c), but the player
+# setup screen is laid out for 80 columns
+[min_terminal]
+cols = 80
+rows = 24
+
+# plain ASCII art in the 8 basic colors (the menu boxes use the terminal's
+# line-drawing set), keyboard only
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, played by asciiverse/drive.py, which reads the screen and lands
+# with a telemark; 10 s has the skier in flight over czumulungma k150
+[media]
+cast = "asciiverse/asciijump.cast"
+thumbnail_at = 10.0
+
+[release]
+source = "github"
