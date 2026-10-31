@@ -1,0 +1,47 @@
+schema_version = 1
+id = "ski"
+kind = "game"
+old = true
+title = "Ski!"
+description = "You are skiing down an endless slope with your jet-powered skis on backwards, and the man-eating Yeti is gaining. Jump, teleport, launch ICBMs and summon the Fire Demon."
+year = 1983
+license = "BSD-2-Clause"
+repo = "theasciiverse/ski"
+provenance = "Mark Stevans wrote Ski! for Roy's Games between 1983 and 1990, first in FORTRAN on DEC-10s and then in C for VT100 terminals; Eric S. Raymond took it up in 1993 and rewrote it in Python in 2003."
+changes = "PATCHES.md"
+topics = ["skiing", "yeti", "turn-based", "humor", "classic", "rust"]
+genre = "arcade"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# Mark Stevans' game in Eric S. Raymond's Python port (6.16), ported to
+# Rust so it needs no Python; built by .github/workflows/release.yml.
+[upstream]
+name = "Eric S. Raymond"
+url = "http://www.catb.org/~esr/ski/"
+
+[exec]
+game = "ski"
+
+# one 75-column line per turn plus the "? " prompt; scrolls like a VT100
+[min_terminal]
+cols = 80
+rows = 24
+
+# plain ASCII in the basic colours, keyboard only
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, asciiverse/record-preview.sh: seed 164 and fixed commands, 48 s;
+# the ICBM and the Fire Demon chase a Yeti, and the next one catches the
+# skier. The still has the demon closing in on the Yeti.
+[media]
+cast = "asciiverse/ski.cast"
+thumbnail_at = 23.0
+
+[release]
+source = "github"
