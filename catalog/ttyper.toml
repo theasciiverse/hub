@@ -1,0 +1,47 @@
+schema_version = 1
+id = "ttyper"
+kind = "game"
+title = "ttyper"
+description = "A typing test for the terminal: type the words as they light up, then see your speed, accuracy and the keys that tripped you. English, a dozen other languages, or code in a dozen programming languages."
+year = 2021
+license = "MIT"
+repo = "theasciiverse/ttyper"
+provenance = "Max Niederman started ttyper in Rust in 2021, and contributors have added languages and modes since."
+changes = "PATCHES.md"
+topics = ["typing", "typing test", "wpm", "practice", "rust"]
+genre = "typing"
+
+[developer]
+name = "Max Niederman and contributors"
+url = "https://github.com/max-niederman/ttyper"
+
+# upstream's master after 1.6.0, built unchanged
+[upstream]
+name = "Max Niederman"
+url = "https://github.com/max-niederman/ttyper"
+
+[exec]
+game = "ttyper"
+
+# the boxes and the word wrap follow the terminal; 50x12 still shows a
+# 50-word test whole
+[min_terminal]
+cols = 50
+rows = 12
+
+# box-drawing characters and Braille dots in the results chart
+[requires]
+utf8 = true
+color = "basic"
+mouse = false
+glyphs = ["braille"]
+
+# 100x30, asciiverse/record-preview.sh: a default test typed by
+# asciiverse/drive.py, a few typos fixed, then the results; 37 s, the
+# still is the results screen
+[media]
+cast = "asciiverse/ttyper.cast"
+thumbnail_at = 36.0
+
+[release]
+source = "github"
