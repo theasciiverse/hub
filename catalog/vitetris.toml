@@ -1,0 +1,47 @@
+schema_version = 1
+id = "vitetris"
+kind = "game"
+title = "vitetris"
+description = "Falling blocks the way the early Nintendo versions played them, in your terminal: marathon or 25-line races, two players on one keyboard, on two terminals or over the network."
+year = 2007
+license = "BSD-2-Clause"
+repo = "theasciiverse/vitetris"
+provenance = "Victor Geraldsson wrote vitetris in C from 2007, after Mike Taylor's 1989 Tetris for Terminals, and released it under a BSD licence; it is in most Linux distributions."
+changes = "PATCHES.md"
+topics = ["falling blocks", "puzzle", "arcade", "two-player", "multiplayer"]
+genre = "puzzle"
+
+[developer]
+name = "Victor Geraldsson"
+url = "https://github.com/vicgeralds/vitetris"
+
+# upstream master after 0.59.1 (744b509, 2025-02-08), built unchanged
+[upstream]
+name = "Victor Geraldsson"
+url = "https://github.com/vicgeralds/vitetris"
+
+[exec]
+game = "vitetris"
+
+# the layout adapts: at 40x22 the board shows whole (no next-piece box);
+# 60x25 adds the next piece and the piece statistics
+[min_terminal]
+cols = 40
+rows = 22
+
+# coloured blocks on 8 colours, ASCII or VT100 line drawing; keyboard
+# (joysticks are not built in)
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, asciiverse/record-preview.sh: a 1-player game played by
+# asciiverse/drive.py, 9 lines cleared in 40 s, then back to the menu;
+# 50 s, the still is mid-game
+[media]
+cast = "asciiverse/vitetris.cast"
+thumbnail_at = 30.0
+
+[release]
+source = "github"
