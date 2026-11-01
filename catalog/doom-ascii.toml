@@ -9,7 +9,7 @@ license = "GPL-2.0-or-later AND BSD-3-Clause"
 repo = "theasciiverse/doom-ascii"
 provenance = "id Software released the source of its 1993 engine in 1997; Chocolate Doom and doomgeneric carried it on, and Wojciech Graj made doom-ascii, the engine in the terminal, from 2022. The Freedoom project has made free levels, monsters, sounds and music for it since 2001."
 changes = "PATCHES.md"
-topics = ["shooter", "first-person", "fps", "freedoom", "classic", "music"]
+topics = ["shooter", "first-person", "fps", "freedoom", "classic", "music", "gamepad"]
 genre = "action"
 
 [developer]
@@ -32,13 +32,15 @@ game = "doom-ascii"
 
 # no [min_terminal]: the picture fits the terminal at 4:3; bigger is sharper
 
-# 24-bit colour and the upper half block (U+2580); keyboard only. Sound
+# 24-bit colour and the upper half block (U+2580); keyboard, and on Linux a
+# gamepad, read from /dev/input with no package needed. Sound
 # needs no package: the game loads ALSA or PulseAudio (Core Audio on macOS)
 # when it starts and plays silently without them
 [requires]
 utf8 = true
 color = "truecolor"
 mouse = false
+gamepad = true
 
 # 100x30, asciiverse/record-preview.py: Freedoom's title, then the game's
 # own demos, then a quit through the menu; re-encoded at 12 fps

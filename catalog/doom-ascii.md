@@ -16,6 +16,11 @@ The bigger your terminal window, the sharper the picture. It plays best in a ter
 - **Space**: fire; **E**: use doors and switches; **]**: run
 - **1** to **7**: weapons; **Tab**: map
 - **Esc**: menu, to load, save and quit
+- Gamepad, on Linux: left stick to move and strafe, right stick to turn,
+  **RT** fires, **LT** runs, **A** uses doors and switches, **LB** and
+  **RB** change weapons, **Back** shows the map, **Start** opens the menu;
+  in menus the d-pad or stick moves, **A** chooses and **B** goes back.
+  A game saved from the pad is named after its level
 
 ## Options
 
@@ -28,7 +33,7 @@ Settings and saved games are kept in `~/.local/share/doom-ascii`, where `.defaul
 
 ## History
 
-id Software released its engine's source in 1997. Chocolate Doom keeps it faithful to the original, doomgeneric made it easy to port, and doom-ascii brought it to the terminal. This edition adds the sound effects and the music, played through an emulated OPL synthesiser as a 1990s sound card would, exact key releases, and the half-block picture.
+id Software released its engine's source in 1997. Chocolate Doom keeps it faithful to the original, doomgeneric made it easy to port, and doom-ascii brought it to the terminal. This edition adds the sound effects and the music, played through an emulated OPL synthesiser as a 1990s sound card would, exact key releases, gamepads, and the half-block picture.
 
 ## Credits
 
