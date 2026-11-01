@@ -1,0 +1,46 @@
+schema_version = 1
+id = "terminal-phase"
+kind = "game"
+title = "Terminal Phase"
+description = "A side-scrolling space shooter in your terminal: fly through caverns of rock, dodge fire and shoot down squigglers, turrets, mines and kamikaze ships across a twinkling Braille starfield."
+year = 2019
+license = "GPL-3.0-or-later"
+repo = "theasciiverse/terminal-phase"
+provenance = "Christine Lemmer-Webber wrote Terminal Phase in Racket in 2019 as a test program for Spritely Goblins and a reward for Patreon supporters, who are named in its credits. This is the Racket version as it stood before the move to Guile."
+changes = "PATCHES.md"
+topics = ["shooter", "shmup", "space", "arcade", "racket"]
+genre = "arcade"
+
+[developer]
+name = "Christine Lemmer-Webber"
+url = "https://gitlab.com/dustyweb/terminal-phase"
+
+# the Racket version: 1.1 plus fixes to 2021-12-26 (upstream master is now
+# a Guile rewrite); standalone build with the Racket runtime bundled
+[upstream]
+name = "Christine Lemmer-Webber"
+url = "https://gitlab.com/dustyweb/terminal-phase"
+
+[exec]
+game = "terminal-phase"
+
+# the game itself asks for 60x22 and says so when smaller
+[min_terminal]
+cols = 60
+rows = 22
+
+# box-drawing frame and a Braille starfield
+[requires]
+utf8 = true
+color = "basic"
+mouse = false
+glyphs = ["braille"]
+
+# 100x30, asciiverse/record-preview.sh: the title menu, then level 1 flown
+# by asciiverse/drive.py, back to the menu; 50 s, the still is mid-level
+[media]
+cast = "asciiverse/terminal-phase.cast"
+thumbnail_at = 30.0
+
+[release]
+source = "github"
