@@ -1,0 +1,48 @@
+schema_version = 1
+id = "gnuski"
+kind = "game"
+title = "GNUSki"
+description = "Point your skis downhill and weave between trees and rocks as the slope rushes up at you. One trunk is all it takes. How far can you get?"
+year = 2007
+license = "GPL-2.0-or-later"
+repo = "theasciiverse/gnuski"
+provenance = "Rudolf Olah wrote GNUSki in 2007 as a small curses game in the spirit of SkiFree and released it on SourceForge."
+changes = "PATCHES.md"
+topics = ["skiing", "arcade", "endless", "curses", "classic"]
+genre = "arcade"
+
+[developer]
+name = "Rudolf Olah"
+url = "https://sourceforge.net/projects/gnuski/"
+
+# 0.3, the last release, with tracker patch #2 and ours (frame clock,
+# steering back to straight, no skiing through obstacles); PATCHES.md in
+# theasciiverse/gnuski
+[upstream]
+name = "Rudolf Olah"
+url = "https://sourceforge.net/projects/gnuski/"
+
+[exec]
+game = "gnuski"
+args = []
+
+# no fixed layout: the slope fills whatever terminal it gets, the skier
+# in the middle; below about 40x16 there is too little slope ahead to steer
+[min_terminal]
+cols = 40
+rows = 16
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, skied by asciiverse/record-preview.py, which reads the screen
+# and leans away from what is in its path; best of eight takes, ending at
+# its crash after about 30 s
+[media]
+cast = "asciiverse/gnuski.cast"
+thumbnail_at = 20.0
+
+[release]
+source = "github"
