@@ -1,0 +1,42 @@
+schema_version = 1
+id = "sl"
+kind = "art"
+title = "sl"
+description = "Typed sl instead of ls? A steam locomotive runs across your terminal, and Ctrl+C won't stop it. With an accident, a flying train, a little one and the C51."
+year = 1993
+license = "SL"
+repo = "theasciiverse/sl"
+provenance = "Toyoda Masashi wrote sl in 1993 as a joke punishment for typing sl instead of ls; it has been a Unix favourite ever since."
+changes = "PATCHES.md"
+topics = ["toy", "animation", "train", "joke", "classic"]
+
+[developer]
+name = "Toyoda Masashi"
+url = "https://github.com/mtoyoda/sl"
+
+# master after 5.02 (923e7d7), unchanged; PATCHES.md in theasciiverse/sl
+[upstream]
+name = "Toyoda Masashi"
+url = "https://github.com/mtoyoda/sl"
+
+[exec]
+game = "sl"
+args = []
+
+# runs across whatever width the terminal has; the C51 is 22 rows tall
+[min_terminal]
+cols = 40
+rows = 24
+
+[requires]
+utf8 = false
+color = "none"
+mouse = false
+
+# 100x30, asciiverse/record-preview.py: plain, -a, -F, -l and -c in turn
+[media]
+cast = "asciiverse/sl.cast"
+thumbnail_at = 3.5
+
+[release]
+source = "github"
