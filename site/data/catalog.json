@@ -3714,7 +3714,7 @@
    },
    "media": {
     "cast": "asciiverse/cursed-platformer.cast",
-    "thumbnail_at": 2.0
+    "thumbnail_at": 13.6
    },
    "release": {
     "source": "github"
@@ -3722,9 +3722,9 @@
    "page": "**THE PHARAOH HAS THE PRINCESS. YOU HAVE AN @.**\n\nThe evil pharaoh Tutankhascii has carried a princess off into his underground pyramid, and somebody has to go down after her. That somebody is you: one brave `@`, who enjoys jumping very much and will tell you so.\n\nCursed Pl@tformer is a classic side-on platformer drawn entirely in text. Run, jump three times your own height, climb, flip switches that open doors somewhere else, ride moving platforms across pits, and keep out of the way of munchers, bats and spikes on the way down.\n\n- **Ten levels**, from Muncher Meadows and the Railway to the Pit of Bats and the Pyramid of Tutankhascii\n- **Music and sound**: Kevin MacLeod's \"Midnight Tale\" and a jump with real spring in it\n- **Progress is saved** at every level exit; Continue picks up where you left off\n- **Make your own levels**: they are plain text files, a map and its colours\n\n## Controls\n\n- **Left** / **Right**: walk; **Space** or **Up**: jump\n- **R**: restart the level; **M**: music on or off; **C**: colours on or off; **Q**: quit\n- Gamepad: d-pad or left stick to walk, **A** or d-pad up to jump, **Y** restarts, **Back** quits\n\nHolding an arrow to walk works in a terminal with the kitty keyboard protocol, such as Ghostty, kitty, WezTerm or foot. In other terminals a tap starts walking and the next tap stops.\n\n## Credits\n\n- Cursed Pl@tformer: Samsai, Tuubi and Ysblokje, for the Linux Game Jam 2019\n- Music: \"Midnight Tale\" by Kevin MacLeod (incompetech.com), CC BY 3.0\n- Sound effects: freesound.org users jorickhoofd and javapimp (CC BY), and CC0 sounds\n- License: GPL-3.0-only\n",
    "version": "1.5-av.1",
    "updated_at": "2026-11-01T18:00:00Z",
-   "thumbnail_at": 2.0,
-   "cast_url": "/casts/cursed-platformer.cast?v=1793554686",
-   "duration": 20.2,
+   "thumbnail_at": 13.6,
+   "cast_url": "/casts/cursed-platformer.cast?v=1793557649",
+   "duration": 23.8,
    "platforms": {
     "x86_64-unknown-linux-gnu": {
      "url": "/dev-releases/cursed-platformer/cursed-platformer-x86_64-unknown-linux-gnu.tar.gz",

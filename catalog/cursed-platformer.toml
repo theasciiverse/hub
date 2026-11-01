@@ -43,11 +43,12 @@ color = "basic"
 mouse = false
 gamepad = true
 
-# 100x30, asciiverse/record-preview.py: the title screen, then a bot walks
-# level 1 up to the climb to its switch; thumbnail on the title screen
+# 100x30, asciiverse/record-preview.py: the title screen, then Continue
+# into Muncher Meadows, played to its exit by a bot (both munchers jumped);
+# the still is a jump over a muncher
 [media]
 cast = "asciiverse/cursed-platformer.cast"
-thumbnail_at = 2.0
+thumbnail_at = 13.6
 
 [release]
 source = "github"
