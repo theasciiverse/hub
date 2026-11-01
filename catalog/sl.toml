@@ -4,6 +4,7 @@ kind = "art"
 title = "sl"
 description = "Typed sl instead of ls? A steam locomotive runs across your terminal, and Ctrl+C won't stop it. With an accident, a flying train, a little one and the C51."
 year = 1993
+old = true
 license = "SL"
 repo = "theasciiverse/sl"
 provenance = "Toyoda Masashi wrote sl in 1993 as a joke punishment for typing sl instead of ls; it has been a Unix favourite ever since."
