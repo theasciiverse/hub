@@ -74,7 +74,9 @@ cast = "resources/solitty.cast" # path in `repo`, or a full https URL
 thumbnail_at = 5.0              # seconds into the cast for the still frame
 # crop = { follow = "player" }  # proposed: only for casts recorded bigger than
 #                               # 100x30 (RECORDING.md); hub's build cuts a 100x30
-#                               # window, centred or following the player
+#                               # window following the player ("player") or from
+#                               # the middle of the screen ("centre"). Used by
+#                               # brogue (100x34) and rebels-in-the-sky (160x48)
 
 [release]
 source = "github"              # github | direct
