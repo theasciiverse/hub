@@ -1,7 +1,6 @@
 schema_version = 1
 id = "gearhead-arena"
 kind = "game"
-old = false
 title = "GearHead: Arena"
 description = "The first roguelike mecha RPG. Make a pilot, wander a world of random adventures, talk your way into jobs and fight on foot or in giant robots you build and repair yourself."
 year = 2002

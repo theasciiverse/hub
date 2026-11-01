@@ -1,12 +1,12 @@
 **GIANT ROBOTS. A WHOLE WORLD. NO TWO STORIES THE SAME.**
 
-You are a pilot in the GearHead universe, a few generations after the Night of Fire. Make a character, pick a background, and set out from a small town with some money in your pocket. Talk to people: they have jobs, rumours and grudges. Buy a mecha, fit it out, and take it into the arena or out into the wilderness. Every campaign strings together randomly generated plots, so the story is yours alone.
+You are a pilot in the GearHead universe. Make a character, pick a background, and set out from a small town with some money in your pocket. Talk to people: they have jobs, rumours and grudges. Buy a mecha, fit it out, and take it into the arena or out into the wilderness. Every campaign strings together randomly generated plots, so the story is yours alone.
 
-It was the first roguelike mecha RPG, and it is deep: eight stats, thirty skills, mecha built part by part, called shots, and fighting on foot or in a robot ten storeys tall.
+It was the first roguelike mecha RPG, and it is deep: eight stats, thirty skills, mecha built part by part, called shots, and fighting on foot or in a mecha.
 
 - **A world of random adventures**: towns, jobs, rivals and plots that change every campaign
 - **Build your mecha**: frames, armour, weapons and systems, repaired and refitted in the field
-- **Talk your way through**: NPCs remember how you treat them
+- **Talk your way through**: every NPC has a job, a rumour or a reason to like or hate you
 - **Arena mode**: run a mecha team and fight battle after battle
 
 ## Controls
