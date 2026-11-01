@@ -1,0 +1,46 @@
+schema_version = 1
+id = "gtypist"
+kind = "program"
+title = "GNU Typist"
+description = "The GNU typing tutor: learn to touch-type from the home row up, with QWERTY, Dvorak and Colemak courses, number-pad and speed drills, and lessons in several languages."
+year = 1998
+license = "GPL-3.0-or-later"
+repo = "theasciiverse/gtypist"
+provenance = "Simon Baldwin wrote typist in 1998; it became GNU Typist, part of the GNU project, and is still maintained there."
+changes = "PATCHES.md"
+topics = ["typing", "tutor", "education", "classic", "gnu"]
+
+[developer]
+name = "Simon Baldwin, Mihai Gătejescu and the GNU Typist developers"
+url = "https://www.gnu.org/software/gtypist/"
+
+# signed release tarball 2.10.1; configure --prefix=/usr --disable-nls;
+# PATCHES.md in theasciiverse/gtypist
+[upstream]
+name = "GNU Project"
+url = "https://www.gnu.org/software/gtypist/"
+
+# the start script adds lib/lessons to GTYPIST_PATH; `gtypist esp.typ`
+# and the other lesson files work by name
+[exec]
+game = "gtypist"
+args = []
+
+# lessons and menus are laid out for 80x24
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = true
+color = "basic"
+mouse = false
+
+# 100x30, asciiverse/record-preview.py: lesson Q1, two drills typed at
+# about 65 wpm with one mistake; thumbnail mid-drill
+[media]
+cast = "asciiverse/gtypist.cast"
+thumbnail_at = 33.0
+
+[release]
+source = "github"
