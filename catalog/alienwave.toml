@@ -1,0 +1,46 @@
+schema_version = 1
+id = "alienwave"
+kind = "game"
+title = "Alienwave"
+description = "A shoot-'em-up in the terminal: waves of zorxians swoop down at your ship, you fire lasers and drop shields to hide behind, and after 5000 points their queen Xzarna comes for you."
+year = 2005
+license = "GPL-2.0-or-later"
+repo = "theasciiverse/alienwave"
+provenance = "Alessandro Pira wrote Alienwave in C with ncurses, a Galaga-like shooter for the terminal; it was out by 2005 and last updated in 2013."
+changes = "PATCHES.md"
+topics = ["shooter", "arcade", "space", "aliens", "ncurses"]
+genre = "arcade"
+
+[developer]
+name = "Alessandro Pira"
+url = "https://www.alessandropira.org/alienwave/aw.html"
+
+# 0.4.0, its last release, with fixes (an ARM crash, an array overrun, the
+# pause message, Esc)
+[upstream]
+name = "Alessandro Pira"
+url = "https://www.alessandropira.org/alienwave/aw.html"
+
+[exec]
+game = "alienwave"
+
+# the field is 80x25 and the game refuses to start in anything smaller;
+# bigger terminals centre it
+[min_terminal]
+cols = 80
+rows = 25
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, asciiverse/record-preview.py: the title screen, then a pilot
+# reading the screen slides under the aliens, fires and dodges (best of
+# several takes); the still is mid-wave
+[media]
+cast = "asciiverse/alienwave.cast"
+thumbnail_at = 12.0
+
+[release]
+source = "github"
