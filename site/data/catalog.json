@@ -171,6 +171,77 @@
    },
    "news": []
   },
+  "alienwave": {
+   "schema_version": 1,
+   "id": "alienwave",
+   "kind": "game",
+   "title": "Alienwave",
+   "description": "A shoot-'em-up in the terminal: waves of zorxians swoop down at your ship, you fire lasers and drop shields to hide behind, and after 5000 points their queen Xzarna comes for you.",
+   "year": 2005,
+   "license": "GPL-2.0-or-later",
+   "repo": "theasciiverse/alienwave",
+   "provenance": "Alessandro Pira wrote Alienwave in C with ncurses, a Galaga-like shooter for the terminal; it was out by 2005 and last updated in 2013.",
+   "changes": "PATCHES.md",
+   "topics": [
+    "shooter",
+    "arcade",
+    "space",
+    "aliens",
+    "ncurses"
+   ],
+   "genre": "arcade",
+   "developer": {
+    "name": "Alessandro Pira",
+    "url": "https://www.alessandropira.org/alienwave/aw.html"
+   },
+   "upstream": {
+    "name": "Alessandro Pira",
+    "url": "https://www.alessandropira.org/alienwave/aw.html"
+   },
+   "exec": {
+    "game": "alienwave"
+   },
+   "min_terminal": {
+    "cols": 80,
+    "rows": 25
+   },
+   "requires": {
+    "utf8": false,
+    "color": "basic",
+    "mouse": false
+   },
+   "media": {
+    "cast": "asciiverse/alienwave.cast",
+    "thumbnail_at": 12.0
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**THEY COME IN WAVES. YOU HAVE ONE SHIP.**\n\nThe zorxians fly down in formation, peel off and dive at you. Slide left and right along the bottom of the screen, fire your lasers into the swarm, and when it gets too hot, open a shield to hide behind. Shields don't move with you, though: they stay where you put them, and they only last as long as their charge.\n\nSurvive long enough, past 5000 points, and Xzarna, the zorxian queen, comes for you herself. You have one life, and the score is printed on the way out.\n\n## Controls\n\n- **Left** and **Right**: move your ship; **Down**: stop\n- **Space** or **Enter**: fire\n- **S**, **Up** or **Backspace**: open a shield (when it has charge)\n- **P**: pause; **Q** or **Esc**: quit\n\nThe charge indicator for the shields is in the top left corner.\n\n## Credits\n\n- Alienwave: Alessandro Pira\n- License: GPL-2.0-or-later\n",
+   "version": "0.1.0",
+   "updated_at": "2026-10-10T00:00:00Z",
+   "thumbnail_at": 12.0,
+   "cast_url": "/casts/alienwave.cast?v=1793547234",
+   "duration": 24.7,
+   "platforms": {
+    "x86_64-unknown-linux-musl": {
+     "url": "https://example.invalid/alienwave-x86_64-unknown-linux-musl.tar.gz",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1233000
+    },
+    "aarch64-apple-darwin": {
+     "url": "https://example.invalid/alienwave-aarch64-apple-darwin.tar.gz",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1233000
+    },
+    "x86_64-pc-windows-msvc": {
+     "url": "https://example.invalid/alienwave-x86_64-pc-windows-msvc.zip",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1233000
+    }
+   },
+   "news": []
+  },
   "all-things-devours": {
    "schema_version": 1,
    "id": "all-things-devours",
@@ -944,6 +1015,222 @@
    },
    "news": []
   },
+  "asciijump": {
+   "schema_version": 1,
+   "id": "asciijump",
+   "kind": "game",
+   "title": "asciijump",
+   "description": "Ski jumping in ASCII art: ride down the in-run, take off at the lip, lean into the flight and land with a telemark. Training, a World Cup against the computer, and network games.",
+   "year": 2003,
+   "old": true,
+   "license": "GPL-2.0-or-later",
+   "repo": "theasciiverse/asciijump",
+   "provenance": "Grzegorz Moskal wrote asciijump in C on S-Lang, with Michal Moskal and Przemek Niezborala, in Poland in the early 2000s; Debian has carried it since 2003.",
+   "changes": "PATCHES.md",
+   "topics": [
+    "sports",
+    "skiing",
+    "arcade",
+    "multiplayer",
+    "classic",
+    "slang"
+   ],
+   "genre": "arcade",
+   "developer": {
+    "name": "Asciiverse",
+    "url": "https://asciiverse.sh"
+   },
+   "upstream": {
+    "name": "Grzegorz Moskal, Michal Moskal and Przemek Niezborala",
+    "url": "https://salsa.debian.org/games-team/asciijump"
+   },
+   "exec": {
+    "game": "asciijump"
+   },
+   "min_terminal": {
+    "cols": 80,
+    "rows": 24
+   },
+   "requires": {
+    "utf8": false,
+    "color": "basic",
+    "mouse": false
+   },
+   "media": {
+    "cast": "asciiverse/asciijump.cast",
+    "thumbnail_at": 9.0
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**THE IN-RUN. THE LIP. THE TELEMARK.**\n\nA ski jumping game drawn in ASCII art. Pick a hill, push off and ride the\nin-run. At the lip of the take-off you jump, then hang in the air\nover the slope, leaning forward or back, while a rain of characters falls\nbehind you. Press **Enter** again to land in a telemark: too early or too\nlate and you crash. Five judges score the landing, and the longest jump on\neach hill stands as its record.\n\n- **Eight hills**, from England's K50 to the mighty Tarnica K180\n- **World Cup**: you, your friends on the same keyboard and computer\n  jumpers at three levels, over the hills you choose\n- **Training**, to find your timing on any hill\n- **Network games**: one player runs `aj-server`, invites the others, and\n  everyone joins from the menu\n\n## Controls\n\n- **Enter**: start the run, jump at the lip, land with a telemark\n- **Left** and **Right**: lean in the air\n- **q**: leave the hill\n- In menus: **Up**, **Down**, **Enter**, **Space** to select and **Tab**\n  for the next field\n\nHill records are kept in `~/.asciijump/`.\n\n## Credits\n\n- asciijump: Grzegorz Moskal, with Michal Moskal and Przemek Niezborala\n- Debian patches: Mario Iseli, Reiner Herrmann, TANIGUCHI Takaki, Adrian\n  Bunk and the Debian Games Team\n- Asciiverse edition: Asciiverse\n- License: GPL-2.0-or-later\n",
+   "version": "0.1.0",
+   "updated_at": "2026-10-10T00:00:00Z",
+   "thumbnail_at": 9.0,
+   "cast_url": "/casts/asciijump.cast?v=1793548131",
+   "duration": 58.1,
+   "platforms": {
+    "x86_64-unknown-linux-musl": {
+     "url": "https://example.invalid/asciijump-x86_64-unknown-linux-musl.tar.gz",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1233000
+    },
+    "aarch64-apple-darwin": {
+     "url": "https://example.invalid/asciijump-aarch64-apple-darwin.tar.gz",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1233000
+    },
+    "x86_64-pc-windows-msvc": {
+     "url": "https://example.invalid/asciijump-x86_64-pc-windows-msvc.zip",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1233000
+    }
+   },
+   "news": []
+  },
+  "asciiportal": {
+   "schema_version": 1,
+   "id": "asciiportal",
+   "kind": "game",
+   "title": "ASCIIpOrtal",
+   "description": "A puzzle platformer with a portal gun: shoot two linked portals onto walls to cross gaps, fling yourself and move boxes onto switches, through 25 levels and 14 more map packs.",
+   "year": 2009,
+   "license": "GPL-3.0-only",
+   "repo": "theasciiverse/asciiportal",
+   "provenance": "Joe Larson made ASCIIpOrtal at Cymon's Games in 2009, a 2D tribute to Valve's Portal with its own levels, and its players added many more map packs.",
+   "changes": "PATCHES.md",
+   "topics": [
+    "puzzle",
+    "platformer",
+    "portals",
+    "physics",
+    "fan-game"
+   ],
+   "genre": "puzzle",
+   "developer": {
+    "name": "Joe Larson (Cymon's Games)",
+    "url": "https://github.com/cymonsgames/ASCIIpOrtal"
+   },
+   "upstream": {
+    "name": "Cymon's Games",
+    "url": "https://github.com/cymonsgames/ASCIIpOrtal"
+   },
+   "exec": {
+    "game": "asciiportal",
+    "args": []
+   },
+   "min_terminal": {
+    "cols": 80,
+    "rows": 24
+   },
+   "requires": {
+    "utf8": true,
+    "color": "basic",
+    "mouse": false
+   },
+   "media": {
+    "cast": "asciiverse/asciiportal.cast",
+    "thumbnail_at": 30.4
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**THINK WITH PORTALS. IN TEXT.**\n\nYou wake up somewhere you are not supposed to be, and a voice on the speaker would really rather you left. Doors need switches, switches need boxes, and the way out is always on the other side of something. Luckily you have picked up a portal gun.\n\nASCIIpOrtal is a side-on puzzle platformer. Shoot a blue portal and a yellow one onto the walls, step into one and out of the other. Use them to cross gaps, reach ledges, carry boxes to switches, dodge boulders and fling yourself across the room: whatever falls into a portal keeps its speed on the way out. You can't jump, so you'll need to think.\n\n- **25 levels** in the main game, which teach every trick\n- **14 more map packs** from the community, from gentle to evil\n- **Doors, switches, conveyors, chain link, lasers, boulders** and companion cubes\n- **Make your own levels**: they are plain text files\n\n## Controls\n\n- **Left** / **Right**: walk; **Up** / **Down**: climb ladders, or aim\n- **Number pad**: aim in eight directions\n- **Z**: blue portal; **X**: yellow portal; **Space**: the next portal; **C**: clear portals\n- **R**: restart the level; **P**: pause; **Esc**: menu\n- **+** / **-**: game speed\n\nHolding a key to walk works best in a terminal with the kitty keyboard protocol (kitty, foot, WezTerm, Ghostty, Alacritty, iTerm2). Other terminals work too, with a short pause before a held key starts repeating.\n\nYour progress and your own map packs are kept in `~/.asciiportal`.\n\n## Credits\n\n- ASCIIpOrtal: Joe Larson (Cymon's Games)\n- Level design and testing: Joe Larson, Nicholas McGuire, Mads Lund and others (see Credits in the game)\n- Map packs: their authors, including Zugz (CC BY-SA 2.0)\n- Asciiverse edition: Asciiverse\n- License: GPL-3.0-only\n",
+   "version": "0.1.0",
+   "updated_at": "2026-10-10T00:00:00Z",
+   "thumbnail_at": 30.4,
+   "cast_url": "/casts/asciiportal.cast?v=1793547234",
+   "duration": 38.7,
+   "platforms": {
+    "x86_64-unknown-linux-musl": {
+     "url": "https://example.invalid/asciiportal-x86_64-unknown-linux-musl.tar.gz",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1307000
+    },
+    "aarch64-apple-darwin": {
+     "url": "https://example.invalid/asciiportal-aarch64-apple-darwin.tar.gz",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1307000
+    },
+    "x86_64-pc-windows-msvc": {
+     "url": "https://example.invalid/asciiportal-x86_64-pc-windows-msvc.zip",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1307000
+    }
+   },
+   "news": []
+  },
+  "asciiquarium": {
+   "schema_version": 1,
+   "id": "asciiquarium",
+   "kind": "art",
+   "title": "Asciiquarium",
+   "description": "An aquarium in your terminal: fish of every colour, bubbles, seaweed and a castle, visited now and then by sharks, whales, a sea monster, ships, ducks, a swan, dolphins and a fishhook.",
+   "year": 2005,
+   "license": "GPL-2.0-or-later",
+   "repo": "theasciiverse/asciiquarium",
+   "provenance": "Kirk Baucom wrote Asciiquarium in Perl in 2005, with most of the art by Joan Stark; it became one of the best-known terminal toys.",
+   "changes": "PATCHES.md",
+   "topics": [
+    "toy",
+    "animation",
+    "aquarium",
+    "screensaver",
+    "classic"
+   ],
+   "developer": {
+    "name": "Kirk Baucom (art: Joan Stark)",
+    "url": "https://robobunny.com/projects/asciiquarium"
+   },
+   "upstream": {
+    "name": "Kirk Baucom",
+    "url": "https://robobunny.com/projects/asciiquarium"
+   },
+   "exec": {
+    "game": "asciiquarium",
+    "args": []
+   },
+   "min_terminal": {
+    "cols": 40,
+    "rows": 20
+   },
+   "requires": {
+    "utf8": false,
+    "color": "basic",
+    "mouse": false
+   },
+   "media": {
+    "cast": "asciiverse/asciiquarium.cast",
+    "thumbnail_at": 8.5
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**AN AQUARIUM. IN ASCII. THAT'S IT, AND IT'S WONDERFUL.**\n\nPut it on a spare screen and leave it there. Fish in every colour drift by, blowing bubbles that rise to the surface. Seaweed sways in front of a little castle. Every so often something bigger comes along: a shark that will happily eat one of your fish, a whale spouting water, a sea monster rising through the waves, a sailing ship, a family of ducks, a swan, a pod of leaping dolphins, or a fishhook that comes down and catches someone.\n\nAsciiquarium has been a favourite terminal toy since 2005.\n\n## Controls\n\n- **p**: pause\n- **r**: redraw (the aquarium starts over)\n- **q**: quit\n\n## History\n\nKirk Baucom wrote Asciiquarium in Perl, on top of his own animation module. This edition is a faithful port to C: the same art, the same creatures and the same behaviour, in one small program with nothing else to install.\n\n## Credits\n\n- Asciiquarium: Kirk Baucom\n- Most of the ASCII art: Joan Stark\n- C port and Asciiverse edition: Asciiverse\n- License: GPL-2.0-or-later\n",
+   "version": "0.1.0",
+   "updated_at": "2026-10-10T00:00:00Z",
+   "thumbnail_at": 8.5,
+   "cast_url": "/casts/asciiquarium.cast?v=1793547234",
+   "duration": 39.9,
+   "platforms": {
+    "x86_64-unknown-linux-musl": {
+     "url": "https://example.invalid/asciiquarium-x86_64-unknown-linux-musl.tar.gz",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1344000
+    },
+    "aarch64-apple-darwin": {
+     "url": "https://example.invalid/asciiquarium-aarch64-apple-darwin.tar.gz",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1344000
+    },
+    "x86_64-pc-windows-msvc": {
+     "url": "https://example.invalid/asciiquarium-x86_64-pc-windows-msvc.zip",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1344000
+    }
+   },
+   "news": []
+  },
   "atc": {
    "schema_version": 1,
    "id": "atc",
@@ -1599,6 +1886,80 @@
      "notes": "- Five themed towers, 50 floors, one new brick type per tower\n- The paddle on a line, an arc (mini-bosses) and a circle (roofs)\n- Five mini-bosses and five roof bosses, the Mason last\n- The story: the stars go out tower by tower; the ending lights them\n  again, then a second lap\n- Power-ups: Plank, Mortar, Chisel, Hourglass, Flock, Spare, Stair\n- Synthesised sound effects, the title, the best score kept\n- Keyboard, mouse and gamepad; session logging"
     }
    ]
+  },
+  "brogue": {
+   "schema_version": 1,
+   "id": "brogue",
+   "kind": "game",
+   "title": "Brogue CE",
+   "description": "A beautiful, tightly designed roguelike: 26 levels down to the Amulet of Yendor, no classes and no grinding, just what you find, what you learn and the allies you free along the way.",
+   "year": 2009,
+   "license": "AGPL-3.0-or-later",
+   "repo": "theasciiverse/brogue",
+   "provenance": "Brian Walker made Brogue from 2009 to 2018; since 2019 a community team has kept it going as Brogue: Community Edition.",
+   "changes": "PATCHES.md",
+   "topics": [
+    "roguelike",
+    "dungeon",
+    "fantasy",
+    "turn-based",
+    "classic"
+   ],
+   "genre": "roguelike",
+   "developer": {
+    "name": "The Brogue CE team",
+    "url": "https://github.com/tmewett/BrogueCE"
+   },
+   "upstream": {
+    "name": "Brian Walker and the Brogue CE team",
+    "url": "https://github.com/tmewett/BrogueCE"
+   },
+   "exec": {
+    "game": "brogue"
+   },
+   "min_terminal": {
+    "cols": 100,
+    "rows": 34
+   },
+   "requires": {
+    "utf8": false,
+    "color": "256",
+    "mouse": false
+   },
+   "media": {
+    "cast": "asciiverse/brogue.cast",
+    "thumbnail_at": 29.0,
+    "crop": {
+     "follow": "player"
+    }
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**26 LEVELS. ONE AMULET. NOTHING WASTED.**\n\nBrogue strips the roguelike down to what makes it great. There are no classes and no experience levels: you grow by what you find, enchanting the items you choose to trust. Every level is new, with lakes, chasms, bridges, traps and secret doors, and every monster has a way it wants to fight. Free a captive and it fights at your side, learning as it goes.\n\nIt is turn-based, with one life and a dungeon that is different every time, but it is also easy to pick up: the mouse-free terminal version is fully playable from the keyboard, and **x** explores for you until something interesting happens.\n\n- **26 levels** to the Amulet of Yendor, and more below for the bold\n- **No grinding**: every item and every ally is a choice\n- **Allies** you can free, who learn new abilities\n- **Seeded games** and recordings you can replay\n\n## Controls\n\n- **Arrow keys**, the number pad or **h j k l y u b n**: move and attack\n- **x**: explore; **>** / **<**: travel to the stairs\n- **i**: inventory; **z**: rest; **s**: search\n- **S**: save and quit; **Q**: give up\n- **?**: every command\n\nYour saves, recordings and high scores are kept in `~/.local/share/Brogue`.\n\n## Credits\n\n- Brogue: Brian Walker\n- Brogue: Community Edition: the Brogue CE team\n- License: AGPL-3.0-or-later\n",
+   "version": "0.1.0",
+   "updated_at": "2026-10-10T00:00:00Z",
+   "thumbnail_at": 29.0,
+   "cast_url": "/casts/brogue.cast?v=1793547234",
+   "duration": 50.6,
+   "platforms": {
+    "x86_64-unknown-linux-musl": {
+     "url": "https://example.invalid/brogue-x86_64-unknown-linux-musl.tar.gz",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1122000
+    },
+    "aarch64-apple-darwin": {
+     "url": "https://example.invalid/brogue-aarch64-apple-darwin.tar.gz",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1122000
+    },
+    "x86_64-pc-windows-msvc": {
+     "url": "https://example.invalid/brogue-x86_64-pc-windows-msvc.zip",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1122000
+    }
+   },
+   "news": []
   },
   "bsd-backgammon": {
    "schema_version": 1,
@@ -3624,6 +3985,65 @@
     }
    ]
   },
+  "doom-ascii": {
+   "schema_version": 1,
+   "id": "doom-ascii",
+   "kind": "game",
+   "title": "doom-ascii",
+   "description": "The 1993 first-person shooter's engine in your terminal, in full colour, with music and sound, playing Freedoom's two free games: fight through bases and hells with shotgun and chaingun.",
+   "year": 1993,
+   "old": true,
+   "license": "GPL-2.0-or-later AND BSD-3-Clause",
+   "repo": "theasciiverse/doom-ascii",
+   "provenance": "id Software released the source of its 1993 engine in 1997; Chocolate Doom and doomgeneric carried it on, and Wojciech Graj made doom-ascii, the engine in the terminal, from 2022. The Freedoom project has made free levels, monsters, sounds and music for it since 2001.",
+   "changes": "PATCHES.md",
+   "topics": [
+    "shooter",
+    "first-person",
+    "fps",
+    "freedoom",
+    "classic",
+    "music"
+   ],
+   "genre": "action",
+   "developer": {
+    "name": "Wojciech Graj",
+    "url": "https://github.com/wojciech-graj/doom-ascii"
+   },
+   "upstream": {
+    "name": "Wojciech Graj",
+    "url": "https://github.com/wojciech-graj/doom-ascii"
+   },
+   "exec": {
+    "game": "doom-ascii"
+   },
+   "requires": {
+    "utf8": true,
+    "color": "truecolor",
+    "mouse": false
+   },
+   "media": {
+    "cast": "asciiverse/doom-ascii.cast",
+    "thumbnail_at": 31.0
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**THE ENGINE THAT DEFINED THE FIRST-PERSON SHOOTER, IN YOUR TERMINAL.**\n\nThe engine of the 1993 first-person shooter runs in your terminal: the real thing, with its doors, lifts, secrets and monsters, drawn in full colour two pixels to a character, and with its music and sound effects. It plays **Freedoom**, a complete free replacement for the original game's levels, monsters, sounds and music, so there is nothing else to buy or find.\n\nTwo games come with it:\n\n- **Freedoom: Phase 1**: four episodes in the style of the original\n- **Freedoom: Phase 2**: one long campaign of 32 levels, with the double-barrelled shotgun\n\nThe bigger your terminal window, the sharper the picture. It plays best in a terminal that reports key releases, such as Ghostty, kitty, WezTerm or foot: movement is then exact, and Ctrl, Shift and Alt work as fire, run and strafe.\n\n## Controls\n\n- **Arrow keys**: move and turn\n- **,** and **.**: strafe left and right\n- **Space**: fire; **E**: use doors and switches; **]**: run\n- **1** to **7**: weapons; **Tab**: map\n- **Esc**: menu, to load, save and quit\n\n## Options\n\n- `-iwad freedoom2.wad`: play Phase 2\n- `-skill 1` to `-skill 5`, `-warp E M` (or `-warp M` in Phase 2): start where you like\n- `-nosound`, `-nomusic`: play quietly\n- `-chars ascii`, `-chars block` or `-chars braille`: doom-ascii's own looks\n\nSettings and saved games are kept in `~/.local/share/doom-ascii`, where `.default.cfg` holds the key bindings.\n\n## History\n\nid Software released its engine's source in 1997. Chocolate Doom keeps it faithful to the original, doomgeneric made it easy to port, and doom-ascii brought it to the terminal. This edition adds the sound effects and the music, played through an emulated OPL synthesiser as a 1990s sound card would, exact key releases, and the half-block picture.\n\n## Credits\n\n- doom-ascii: Wojciech Graj\n- Engine: id Software, Chocolate Doom (Simon Howard and contributors), doomgeneric (ozkl)\n- OPL3 emulation: Nuked OPL3, Alexey Khokholov\n- Freedoom: the Freedoom project\n- License: GPL-2.0-or-later (the engine), BSD-3-Clause (Freedoom)\n",
+   "version": "0.3.2-av.3",
+   "updated_at": "2026-11-01T14:56:50Z",
+   "thumbnail_at": 31.0,
+   "cast_url": "/casts/doom-ascii.cast?v=1793547234",
+   "duration": 35.7,
+   "platforms": {
+    "x86_64-unknown-linux-gnu": {
+     "url": "/dev-releases/doom-ascii/doom-ascii-x86_64-unknown-linux-gnu.tar.gz",
+     "sha256": "b3b1fe8bc4c661079f85865f9e47e1e1fa9d3c18a15eaf0f7f5c31ca8b4f1472",
+     "size": 21764740
+    }
+   },
+   "news": []
+  },
   "dopewars": {
    "schema_version": 1,
    "id": "dopewars",
@@ -3694,6 +4114,79 @@
      "url": "/dev-releases/dopewars/dopewars-x86_64-unknown-linux-musl.tar.gz",
      "sha256": "0ab2c9d868863b9f037d6645ab7729d704af3db907719c3ba6ee67274703cc25",
      "size": 3503761
+    }
+   },
+   "news": []
+  },
+  "drl": {
+   "schema_version": 1,
+   "id": "drl",
+   "kind": "game",
+   "title": "DRL",
+   "description": "A fast, tactical roguelike: fight your way from a Martian moon base down into hell with shotguns, chainsaws and rocket launchers, and build your marine from traits and master traits.",
+   "year": 2002,
+   "license": "GPL-2.0-only",
+   "repo": "theasciiverse/drl",
+   "provenance": "Kornel Kisielewicz started DRL in 2002 as a fan roguelike, later developed by his studio ChaosForge, which still works on it.",
+   "changes": "PATCHES.md",
+   "topics": [
+    "roguelike",
+    "shooter",
+    "sci-fi",
+    "horror",
+    "tactical",
+    "classic"
+   ],
+   "genre": "roguelike",
+   "developer": {
+    "name": "Kornel Kisielewicz (ChaosForge)",
+    "url": "https://drl.chaosforge.org/"
+   },
+   "upstream": {
+    "name": "ChaosForge",
+    "url": "https://github.com/chaosforgeorg/drl"
+   },
+   "exec": {
+    "game": "drl",
+    "args": []
+   },
+   "min_terminal": {
+    "cols": 80,
+    "rows": 25
+   },
+   "requires": {
+    "utf8": false,
+    "color": "basic",
+    "mouse": false
+   },
+   "media": {
+    "cast": "asciiverse/drl.cast",
+    "thumbnail_at": 25.5
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**THE ONLY WAY OUT IS DOWN.**\n\nSomething has gone very wrong on the Phobos base. The comm is full of screams, then gunshots, then silence. You are the marine they send in, with a pistol and a bad feeling, and the only way out is down: through the moon bases, through the gates, and into hell itself.\n\nDRL is a fast, tactical roguelike. Every level is new, every death is final, and every fight is a question of where you stand: behind a barrel, next to a door, or far out of reach of whatever is coming around the corner. Pick up shotguns, chainguns, plasma rifles and rocket launchers, and modify them. Grow your marine with traits as you gain levels, and work towards a master trait that changes how you play.\n\n- **Three classes**: Marine, Scout and Technician\n- **Five difficulty levels**, from *I'm Too Young To Die!* to *Nightmare!*\n- **Challenge games** that change the rules, and seeded games\n- **Assemblies**: combine mods into unique weapons and armour\n\n## Controls\n\n- **Arrow keys** or the number pad: move (Home, End, PgUp, PgDn diagonally)\n- **Esc**: menu, help and Save & Quit\n- In menus: **Up**, **Down** and **Enter**\n\nYour settings, saves and scores are kept in `~/.local/share/drl`.\n\n## Credits\n\n- DRL: Kornel Kisielewicz (ChaosForge)\n- Additional coding: tehtmi, Game Hunter, shark20061, add and brisbang\n- Asciiverse edition: Asciiverse\n- License: GPL-2.0-only\n",
+   "version": "0.1.0",
+   "updated_at": "2026-10-10T00:00:00Z",
+   "thumbnail_at": 25.5,
+   "cast_url": "/casts/drl.cast?v=1793547234",
+   "duration": 37.6,
+   "platforms": {
+    "x86_64-unknown-linux-musl": {
+     "url": "https://example.invalid/drl-x86_64-unknown-linux-musl.tar.gz",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1011000
+    },
+    "aarch64-apple-darwin": {
+     "url": "https://example.invalid/drl-aarch64-apple-darwin.tar.gz",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1011000
+    },
+    "x86_64-pc-windows-msvc": {
+     "url": "https://example.invalid/drl-x86_64-pc-windows-msvc.zip",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1011000
     }
    },
    "news": []
@@ -3894,6 +4387,78 @@
      "url": "/dev-releases/entity/entity-x86_64-unknown-linux-gnu.tar.gz",
      "sha256": "4618875ad3d330bcc5d552df4b56d6ce2fd7f2809c20f57bf2524d7e259ab908",
      "size": 1137193
+    }
+   },
+   "news": []
+  },
+  "evilhack": {
+   "schema_version": 1,
+   "id": "evilhack",
+   "kind": "game",
+   "title": "EvilHack",
+   "description": "A much harder NetHack: tougher, smarter monsters that use your tricks against you, new races, roles, items and artifacts, and the Amulet of Yendor at the bottom of it all.",
+   "year": 2019,
+   "license": "NGPL",
+   "repo": "theasciiverse/evilhack",
+   "provenance": "Keith Simpson (k21971) began EvilHack in October 2018 as a much harder NetHack 3.6 variant, drawing on GruntHack, SporkHack and others; it opened for public play on the Hardfought servers in April 2019, and he still develops it.",
+   "changes": "PATCHES.md",
+   "topics": [
+    "roguelike",
+    "nethack",
+    "fantasy",
+    "dungeon",
+    "hard"
+   ],
+   "genre": "roguelike",
+   "developer": {
+    "name": "Keith Simpson (k21971)",
+    "url": "https://github.com/k21971/EvilHack"
+   },
+   "upstream": {
+    "name": "k21971",
+    "url": "https://github.com/k21971/EvilHack"
+   },
+   "exec": {
+    "game": "evilhack",
+    "args": []
+   },
+   "min_terminal": {
+    "cols": 80,
+    "rows": 24
+   },
+   "requires": {
+    "utf8": false,
+    "color": "basic",
+    "mouse": false
+   },
+   "media": {
+    "cast": "asciiverse/evilhack.cast",
+    "thumbnail_at": 29.5
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**NETHACK, BUT EVERYTHING IS OUT TO GET YOU.**\n\nYou know NetHack. You know about Elbereth, about praying when you are low, about the soldier ants. EvilHack knows you know. Its monsters have more hit points, fight in packs, wear the armour they find and zap the wands they pick up. Things that were safe are not safe any more.\n\nEvilHack is a NetHack 3.6 variant built to be very hard and still fair. It borrows the best of GruntHack, SporkHack, UnNetHack, xNetHack and others, and adds plenty of its own: new races such as centaurs, giants, illithids and tortles, new roles, new artifacts and item properties, player-made forges and much more. Winning is possible. It is just a long way down.\n\n- **Tougher, smarter monsters** that use items and fight together\n- **New races and roles**, and a reworked balance for the old ones\n- **New items, artifacts, materials and object properties**\n- **The full NetHack dungeon**, with new branches and changes on the way down\n\n## Controls\n\n- **h j k l y u b n**: move (shift to run); **.** wait; **s** search\n- **i** inventory; **,** pick up; **w** wield; **W** wear; **q** quaff; **r** read\n- **<** / **>**: stairs; **#**: extended commands; **?**: help\n- **S** saves and quits; **#quit** gives up (type the whole word *yes*)\n\nYour saves, scores and dumplogs are kept in `~/.local/share/evilhack`; your options go in `~/.evilhackrc`.\n\n## Credits\n\n- EvilHack: Keith Simpson (k21971), with code from many NetHack variants\n- NetHack: the NetHack DevTeam, Stichting Mathematisch Centrum and M. Stephenson\n- Asciiverse edition: Asciiverse\n- License: NetHack General Public License (NGPL)\n",
+   "version": "0.1.0",
+   "updated_at": "2026-10-10T00:00:00Z",
+   "thumbnail_at": 29.5,
+   "cast_url": "/casts/evilhack.cast?v=1793547234",
+   "duration": 38.9,
+   "platforms": {
+    "x86_64-unknown-linux-musl": {
+     "url": "https://example.invalid/evilhack-x86_64-unknown-linux-musl.tar.gz",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1196000
+    },
+    "aarch64-apple-darwin": {
+     "url": "https://example.invalid/evilhack-aarch64-apple-darwin.tar.gz",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1196000
+    },
+    "x86_64-pc-windows-msvc": {
+     "url": "https://example.invalid/evilhack-x86_64-pc-windows-msvc.zip",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1196000
     }
    },
    "news": []
@@ -4404,6 +4969,77 @@
    },
    "news": []
   },
+  "froxcomposband": {
+   "schema_version": 1,
+   "id": "froxcomposband",
+   "kind": "game",
+   "title": "FroxComposband",
+   "description": "The great kitchen-sink Angband variant: dozens of races and classes, monster races you can play as, a wilderness above the dungeons and a deep descent to Serpent, carried on with fixes and loads of polish.",
+   "year": 2018,
+   "license": "LicenseRef-Free-Noncommercial",
+   "repo": "theasciiverse/froxcomposband",
+   "provenance": "sulkasormi made FrogComposband in 2018 from PosChengband, itself grown from Hengband, Zangband and Angband; in 2026 Gliktch forked it as FroxComposband to keep it going.",
+   "changes": "PATCHES.md",
+   "topics": [
+    "roguelike",
+    "angband",
+    "dungeon",
+    "fantasy",
+    "turn-based"
+   ],
+   "genre": "roguelike",
+   "developer": {
+    "name": "Gliktch",
+    "url": "https://github.com/Gliktch/froxcomposband"
+   },
+   "upstream": {
+    "name": "Gliktch",
+    "url": "https://github.com/Gliktch/froxcomposband"
+   },
+   "exec": {
+    "game": "froxcomposband"
+   },
+   "min_terminal": {
+    "cols": 80,
+    "rows": 24
+   },
+   "requires": {
+    "utf8": false,
+    "color": "basic",
+    "mouse": false
+   },
+   "media": {
+    "cast": "asciiverse/froxcomposband.cast",
+    "thumbnail_at": 35.0
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**EVERY RACE. EVERY CLASS. EVERY MONSTER. ONE DUNGEON TOO FEW.**\n\nFroxComposband is the Angband family's great everything-included variant. Pick from dozens of races, among them monster races you play as a dragon, a vampire or a beholder would, and from classes from warrior and mage to necromancer, mystic and possessor. Walk out of town across a wilderness, take on the dungeons and the guardians at their bottoms, and go as deep as you dare.\n\nIt plays like Angband: turn-based, a single life, a level made new every time you take the stairs, and more items, spells and monsters than you will ever see in one game. FroxComposband carries FrogComposband on with many fixes and quality-of-life improvements, and loads Frog saves.\n\n- **Dozens of races and classes**, including playable monster races\n- **A wilderness and many dungeons**, each with its own boss\n- **Beginner mode** for a gentler start\n- **Huge variety**: artifacts, egos, spells, pets and more\n\n## Controls\n\n- **Arrow keys** or the number pad: move and attack; **`**: travel\n- **g**: pick up; **i**: inventory; **w**: wield; **q**: quaff; **r**: read\n- **<** / **>**: stairs; **?**: help, with every command\n- **Ctrl-X**: save and quit\n\nYour saves and scores are kept in `~/.local/share/FroxComposband`.\n\n## Credits\n\n- FroxComposband: Gliktch\n- FrogComposband: sulkasormi; before it PosChengband, Hengband, Zangband, Angband, and Moria by Robert Alan Koeneke\n- License: the Moria/Angband licence, free to share, not for profit\n",
+   "version": "0.1.0",
+   "updated_at": "2026-10-10T00:00:00Z",
+   "thumbnail_at": 35.0,
+   "cast_url": "/casts/froxcomposband.cast?v=1793547234",
+   "duration": 38.4,
+   "platforms": {
+    "x86_64-unknown-linux-musl": {
+     "url": "https://example.invalid/froxcomposband-x86_64-unknown-linux-musl.tar.gz",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1418000
+    },
+    "aarch64-apple-darwin": {
+     "url": "https://example.invalid/froxcomposband-aarch64-apple-darwin.tar.gz",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1418000
+    },
+    "x86_64-pc-windows-msvc": {
+     "url": "https://example.invalid/froxcomposband-x86_64-pc-windows-msvc.zip",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1418000
+    }
+   },
+   "news": []
+  },
   "galaxis": {
    "schema_version": 1,
    "id": "galaxis",
@@ -4463,6 +5099,150 @@
      "url": "/dev-releases/galaxis/galaxis-x86_64-unknown-linux-musl.tar.gz",
      "sha256": "13434793fa8fb7cfa7a28aa38573a756db1f6489ec8bd03d56b4bc97bf7a5f9c",
      "size": 144171
+    }
+   },
+   "news": []
+  },
+  "gearhead-2": {
+   "schema_version": 1,
+   "id": "gearhead-2",
+   "kind": "game",
+   "title": "GearHead 2",
+   "description": "A roguelike mecha RPG: make a pilot, take jobs among the space colonies, buy and build giant robots, and follow a story the game writes for your character as you go.",
+   "year": 2005,
+   "license": "LGPL-2.1-or-later",
+   "repo": "theasciiverse/gearhead-2",
+   "provenance": "Joseph Hewitt made GearHead 2, the sequel to his GearHead: Arena, in Free Pascal; it was first released in 2005, and 0.701 came out in 2017.",
+   "changes": "PATCHES.md",
+   "topics": [
+    "mecha",
+    "roguelike",
+    "rpg",
+    "procedural story",
+    "space colonies",
+    "classic"
+   ],
+   "genre": "roguelike",
+   "developer": {
+    "name": "Joseph Hewitt",
+    "url": "https://github.com/jwvhewitt/gearhead-2"
+   },
+   "upstream": {
+    "name": "Joseph Hewitt",
+    "url": "https://github.com/jwvhewitt/gearhead-2"
+   },
+   "exec": {
+    "game": "gearhead2"
+   },
+   "min_terminal": {
+    "cols": 80,
+    "rows": 24
+   },
+   "requires": {
+    "utf8": false,
+    "color": "basic",
+    "mouse": false
+   },
+   "media": {
+    "cast": "asciiverse/gearhead-2.cast",
+    "thumbnail_at": 31.0
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**PILOT. MERCENARY. HERO, IF YOU LIVE THAT LONG.**\n\nYou start with a pilot, a little money and a home in the space colonies, where spinning habitats each have their own laws, factions and feuds. Talk to people, take jobs at the clubhouse, buy a mecha and go out to fight in it. Every character gets a story of their own, built by the game from your choices and the people you meet, so no two campaigns run the same way.\n\nGearHead 2 is the sequel to GearHead: Arena, and the more ambitious game: more mecha, more factions, a world map to cross between cities, romance, lancemates who fight beside you, and quests that grow into a campaign-long plot.\n\n- **Mecha by the dozen**: buy, repair and customise giant robots, part by part\n- **On foot or in the cockpit**: fight hand to hand in town or in mecha out in the field\n- **A story every time**: plots and quests generated for your character\n- **Deep characters**: stats, skills, talents, relationships and reputations\n\n## Controls\n\n- **Arrow keys** or **1 to 9** on the number keys: move, diagonals with **Home**, **PgUp**, **End**, **PgDn** or **7 9 1 3**\n- **t**: talk; **a**: attack; **A**: the attack menu; **l**: look\n- **i**: inventory; **e**: equipment; **,**: pick up\n- **u**: use something nearby; **s**: use a skill; **S**: search\n- **>** or **<**: go through an entrance\n- **M**: choose your mecha; **H**: field HQ; **C**: character info\n- **m**: memos, email and news; **V**: past messages; **Z**: rest an hour\n- **h**: help; **X**: save; **Q**: save and return to the title menu\n\n## Options\n\n- `SCREENWIDTH` and `SCREENHEIGHT` in `~/.config/gearhead2/gearhead2.cfg`: a larger screen\n\n## History\n\nJoseph Hewitt released the first GearHead 2 in 2005, a few years after GearHead: Arena, and kept building it into the 2010s; 0.701 came out in 2017. It runs in a graphical window or as ASCII in a terminal. This edition is the ASCII version, with one fix so a first start always finds a place for its settings and saves.\n\n## Credits\n\n- GearHead 2: [Joseph Hewitt](https://github.com/jwvhewitt/gearhead-2)\n- Asciiverse edition: Asciiverse\n- License: LGPL-2.1-or-later\n",
+   "version": "0.1.0",
+   "updated_at": "2026-10-10T00:00:00Z",
+   "thumbnail_at": 31.0,
+   "cast_url": "/casts/gearhead-2.cast?v=1793547234",
+   "duration": 45.8,
+   "platforms": {
+    "x86_64-unknown-linux-musl": {
+     "url": "https://example.invalid/gearhead-2-x86_64-unknown-linux-musl.tar.gz",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1270000
+    },
+    "aarch64-apple-darwin": {
+     "url": "https://example.invalid/gearhead-2-aarch64-apple-darwin.tar.gz",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1270000
+    },
+    "x86_64-pc-windows-msvc": {
+     "url": "https://example.invalid/gearhead-2-x86_64-pc-windows-msvc.zip",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1270000
+    }
+   },
+   "news": []
+  },
+  "gearhead-arena": {
+   "schema_version": 1,
+   "id": "gearhead-arena",
+   "kind": "game",
+   "title": "GearHead: Arena",
+   "description": "The first roguelike mecha RPG. Make a pilot, wander a world of random adventures, talk your way into jobs and fight on foot or in giant robots you build and repair yourself.",
+   "year": 2002,
+   "license": "LGPL-3.0-or-later",
+   "repo": "theasciiverse/gearhead-arena",
+   "provenance": "Joseph Hewitt released GearHead: Arena in Free Pascal in 2002 and kept developing it for years; it moved to GitHub, where contributors still send fixes.",
+   "changes": "PATCHES.md",
+   "topics": [
+    "mecha",
+    "roguelike",
+    "rpg",
+    "science fiction",
+    "random adventures",
+    "pascal"
+   ],
+   "genre": "roguelike",
+   "developer": {
+    "name": "Joseph Hewitt and contributors",
+    "url": "https://github.com/jwvhewitt/gearhead-1"
+   },
+   "upstream": {
+    "name": "Joseph Hewitt",
+    "url": "https://github.com/jwvhewitt/gearhead-1"
+   },
+   "exec": {
+    "game": "gharena"
+   },
+   "min_terminal": {
+    "cols": 80,
+    "rows": 25
+   },
+   "requires": {
+    "utf8": false,
+    "color": "basic",
+    "mouse": false
+   },
+   "media": {
+    "cast": "asciiverse/gearhead-arena.cast",
+    "thumbnail_at": 25.0
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**GIANT ROBOTS. A WHOLE WORLD. NO TWO STORIES THE SAME.**\n\nYou are a pilot in the GearHead universe. Make a character, pick a background, and set out from a small town with some money in your pocket. Talk to people: they have jobs, rumours and grudges. Buy a mecha, fit it out, and take it into the arena or out into the wilderness. Every campaign strings together randomly generated plots, so the story is yours alone.\n\nIt was the first roguelike mecha RPG, and it is deep: eight stats, thirty skills, mecha built part by part, called shots, and fighting on foot or in a mecha.\n\n- **A world of random adventures**: towns, jobs, rivals and plots that change every campaign\n- **Build your mecha**: frames, armour, weapons and systems, repaired and refitted in the field\n- **Talk your way through**: every NPC has a job, a rumour or a reason to like or hate you\n- **Arena mode**: run a mecha team and fight battle after battle\n\n## Controls\n\n- **Arrow keys** or the **number pad**: walk in eight directions; **5** waits\n- **t**: talk to someone; **a**: attack; **A**: the attack menu\n- **i** / **e**: inventory and equipment; **,**: pick up\n- **u**: use a door, computer or other scenery; **>** or **<**: stairs and portals\n- **l**: look around; **C**: your character; **L**: spend experience\n- **m**: memos, email and news; **X**: save; **h**: help\n- **[** and **]** turn, **=** walks and **+** runs, for mecha; **.** changes movement mode\n- **Esc**: leave a conversation or a menu; **Q**: quit\n\n## History\n\nJoseph Hewitt released the first version of GearHead in 2002, written in Free Pascal, and kept extending it for years before going on to GearHead 2. The game later moved to GitHub, where it still gets fixes. This edition is the ASCII version, built for the terminal.\n\n## Credits\n\n- GearHead: Arena: [Joseph Hewitt](https://github.com/jwvhewitt/gearhead-1) and contributors\n- License: LGPL-3.0-or-later\n",
+   "version": "0.1.0",
+   "updated_at": "2026-10-10T00:00:00Z",
+   "thumbnail_at": 25.0,
+   "cast_url": "/casts/gearhead-arena.cast?v=1793547234",
+   "duration": 40.3,
+   "platforms": {
+    "x86_64-unknown-linux-musl": {
+     "url": "https://example.invalid/gearhead-arena-x86_64-unknown-linux-musl.tar.gz",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1418000
+    },
+    "aarch64-apple-darwin": {
+     "url": "https://example.invalid/gearhead-arena-aarch64-apple-darwin.tar.gz",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1418000
+    },
+    "x86_64-pc-windows-msvc": {
+     "url": "https://example.invalid/gearhead-arena-x86_64-pc-windows-msvc.zip",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1418000
     }
    },
    "news": []
@@ -4604,6 +5384,78 @@
      "url": "/dev-releases/glulxe/glulxe-x86_64-unknown-linux-musl.tar.gz",
      "sha256": "41c38c2193234df3ed99314f397a5a4dfeaee76256dec7042b4f5be25b7059c3",
      "size": 287536
+    }
+   },
+   "news": []
+  },
+  "gnuski": {
+   "schema_version": 1,
+   "id": "gnuski",
+   "kind": "game",
+   "title": "GNUSki",
+   "description": "Point your skis downhill and weave between trees and rocks as the slope rushes up at you. One trunk is all it takes. How far can you get?",
+   "year": 2007,
+   "license": "GPL-2.0-or-later",
+   "repo": "theasciiverse/gnuski",
+   "provenance": "Rudolf Olah wrote GNUSki in 2007 as a small curses game in the spirit of SkiFree and released it on SourceForge.",
+   "changes": "PATCHES.md",
+   "topics": [
+    "skiing",
+    "arcade",
+    "endless",
+    "curses",
+    "classic"
+   ],
+   "genre": "arcade",
+   "developer": {
+    "name": "Rudolf Olah",
+    "url": "https://sourceforge.net/projects/gnuski/"
+   },
+   "upstream": {
+    "name": "Rudolf Olah",
+    "url": "https://sourceforge.net/projects/gnuski/"
+   },
+   "exec": {
+    "game": "gnuski",
+    "args": []
+   },
+   "min_terminal": {
+    "cols": 40,
+    "rows": 16
+   },
+   "requires": {
+    "utf8": false,
+    "color": "basic",
+    "mouse": false
+   },
+   "media": {
+    "cast": "asciiverse/gnuski.cast",
+    "thumbnail_at": 20.0
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**RACE DOWNHILL. MIND THE TREES.**\n\nThe slope rushes up the screen at you: pine trees, rocks and snowy hills, scattered as thick as a forest. You lean left, you lean right, you straighten out again, and you look for the gap. Hit a trunk or a rock and the run is over. All that counts is how far you got.\n\nGNUSki is a little game in the spirit of SkiFree, the skiing game many of us played on Windows in the 1990s, drawn in plain characters for the terminal.\n\n- **Three speeds**: take it slow through the trees, or put on speed in open snow\n- **An endless slope**: new obstacles keep coming from below\n- **Your distance and time** at the top of the screen\n\n## Controls\n\n- **Left** / **h**: lean left; from a right lean, back to straight down\n- **Right** / **l**: lean right; from a left lean, back to straight down\n- **Down** / **j**: faster\n- **Up** / **k**: slower\n- **q**: stop the run\n\n## Credits\n\n- GNUSki: Rudolf Olah\n- Patch: Thierry Moisan\n- Asciiverse edition: Asciiverse\n- License: GPL-2.0-or-later\n",
+   "version": "0.1.0",
+   "updated_at": "2026-10-10T00:00:00Z",
+   "thumbnail_at": 20.0,
+   "cast_url": "/casts/gnuski.cast?v=1793547234",
+   "duration": 33.6,
+   "platforms": {
+    "x86_64-unknown-linux-musl": {
+     "url": "https://example.invalid/gnuski-x86_64-unknown-linux-musl.tar.gz",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1122000
+    },
+    "aarch64-apple-darwin": {
+     "url": "https://example.invalid/gnuski-aarch64-apple-darwin.tar.gz",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1122000
+    },
+    "x86_64-pc-windows-msvc": {
+     "url": "https://example.invalid/gnuski-x86_64-pc-windows-msvc.zip",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1122000
     }
    },
    "news": []
@@ -4898,6 +5750,77 @@
      "url": "/dev-releases/greed/greed-x86_64-unknown-linux-musl.tar.gz",
      "sha256": "255bb5f30d99be03f3b43f48368075bd86ca96c443709ad5582c48f6f3e872d0",
      "size": 314846
+    }
+   },
+   "news": []
+  },
+  "gtypist": {
+   "schema_version": 1,
+   "id": "gtypist",
+   "kind": "program",
+   "title": "GNU Typist",
+   "description": "The GNU typing tutor: learn to touch-type from the home row up, with QWERTY, Dvorak and Colemak courses, number-pad and speed drills, and lessons in several languages.",
+   "year": 1998,
+   "license": "GPL-3.0-or-later",
+   "repo": "theasciiverse/gtypist",
+   "provenance": "Simon Baldwin wrote typist in 1998; it became GNU Typist, part of the GNU project, and is still maintained there.",
+   "changes": "PATCHES.md",
+   "topics": [
+    "typing",
+    "tutor",
+    "education",
+    "classic",
+    "gnu"
+   ],
+   "developer": {
+    "name": "Simon Baldwin, Mihai Gătejescu and the GNU Typist developers",
+    "url": "https://www.gnu.org/software/gtypist/"
+   },
+   "upstream": {
+    "name": "GNU Project",
+    "url": "https://www.gnu.org/software/gtypist/"
+   },
+   "exec": {
+    "game": "gtypist",
+    "args": []
+   },
+   "min_terminal": {
+    "cols": 80,
+    "rows": 24
+   },
+   "requires": {
+    "utf8": true,
+    "color": "basic",
+    "mouse": false
+   },
+   "media": {
+    "cast": "asciiverse/gtypist.cast",
+    "thumbnail_at": 33.0
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**STOP LOOKING AT YOUR FINGERS.**\n\nGNU Typist is the patient teacher you never had in school. It starts with your fingers on the home row, introduces each key one at a time, and gives you a line to copy. Hit the wrong key and it marks it, quietly. Make too many mistakes and you do the line again. Before long you are typing the whole alphabet, numbers and punctuation without looking down.\n\nIt has been teaching people to type since 1998, and it still works the same: short drills, honest speed tests, and a personal best to beat.\n\n- **Courses for QWERTY, Dvorak and Colemak**, short and long\n- **Drills and speed tests**, including passages from Shakespeare\n- **Number pad, symbols and programming** lessons\n- **Lessons in other languages**: `gtypist esp.typ` for Spanish, plus Czech, Romanian, Russian and many KTouch keyboard courses\n\n## Controls\n\n- In menus: **arrow keys** and **Enter**; **Esc** goes back\n- In a drill: type the line you see, then **Enter**\n- After an exercise: **R** to repeat, **N** for the next one, **E** to leave the lesson\n\nYour personal bests are kept in `~/.gtypist-bestlog`.\n\n## Credits\n\n- GNU Typist: Simon Baldwin (original author), Mihai Gătejescu (maintainer) and the GNU Typist developers\n- Lessons: many contributors; see the lesson files\n- Asciiverse edition: Asciiverse\n- License: GPL-3.0-or-later\n",
+   "version": "0.1.0",
+   "updated_at": "2026-10-10T00:00:00Z",
+   "thumbnail_at": 33.0,
+   "cast_url": "/casts/gtypist.cast?v=1793547234",
+   "duration": 42.2,
+   "platforms": {
+    "x86_64-unknown-linux-musl": {
+     "url": "https://example.invalid/gtypist-x86_64-unknown-linux-musl.tar.gz",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1159000
+    },
+    "aarch64-apple-darwin": {
+     "url": "https://example.invalid/gtypist-aarch64-apple-darwin.tar.gz",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1159000
+    },
+    "x86_64-pc-windows-msvc": {
+     "url": "https://example.invalid/gtypist-x86_64-pc-windows-msvc.zip",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1159000
     }
    },
    "news": []
@@ -7868,6 +8791,77 @@
    },
    "news": []
   },
+  "pacvim": {
+   "schema_version": 1,
+   "id": "pacvim",
+   "kind": "game",
+   "title": "PacVim",
+   "description": "Learn vim by playing it: steer the cursor over every letter in the maze with vim's motions, w, b, e, $, gg and the rest, while ghosts hunt you down. Ten levels.",
+   "year": 2014,
+   "license": "LGPL-3.0-or-later",
+   "repo": "theasciiverse/pacvim",
+   "provenance": "Jamal Moon wrote PacVim in C++ and ncurses in 2014 to make learning vim fun, with contributors adding to it until 2018.",
+   "changes": "PATCHES.md",
+   "topics": [
+    "vim",
+    "learning",
+    "maze",
+    "ghosts",
+    "curses"
+   ],
+   "genre": "puzzle",
+   "developer": {
+    "name": "Jamal Moon and contributors",
+    "url": "https://github.com/jmoon018/PacVim"
+   },
+   "upstream": {
+    "name": "Jamal Moon",
+    "url": "https://github.com/jmoon018/PacVim"
+   },
+   "exec": {
+    "game": "pacvim"
+   },
+   "min_terminal": {
+    "cols": 60,
+    "rows": 26
+   },
+   "requires": {
+    "utf8": false,
+    "color": "basic",
+    "mouse": false
+   },
+   "media": {
+    "cast": "asciiverse/pacvim.cast",
+    "thumbnail_at": 25.0
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**THE GHOSTS DON'T USE VIM. YOU DO.**\n\nEvery level is a maze of words. Your cursor has to pass over every letter until the whole maze turns green, while red ghosts close in. Walls can't be walked through, but vim's motions jump over them: **w** to the next word, **$** to the end of the line, **gg** to the top. Step on a **~** and you lose a life.\n\nIt's the friendliest way there is to get vim's motions into your fingers, and a tense little maze game besides.\n\n- **Ten levels**, from a gentle first maze to word-filled labyrinths\n- **Real vim motions**: words, WORDs, line ends, line numbers\n- **A life back** after levels 0, 3, 6 and 9; after level 9 it starts again with faster ghosts\n- **Two speeds**: hard by default, or `pacvim n` for slower ghosts\n\n## Controls\n\n- **h j k l**: left, down, up, right\n- **w** / **W**: forward to the next word or WORD\n- **e** / **E**: forward to the end of a word or WORD\n- **b** / **B**: back to the start of a word or WORD\n- **0** / **$**: start or end of the line; **^**: first word on the line\n- **gg** or **1G**: first line; **G**: last line; a number then **G**: that line\n- **Enter**: start a level; **q**: quit (**Esc** too, on the screen before each level)\n\n## Options\n\n- `pacvim N`: start at level N (0 to 9)\n- `pacvim n` or `pacvim h`: normal or hard ghosts; `pacvim 4 n` combines them\n\n## Credits\n\n- PacVim: [Jamal Moon](https://github.com/jmoon018/PacVim) and contributors\n- License: LGPL-3.0-or-later\n",
+   "version": "0.1.0",
+   "updated_at": "2026-10-10T00:00:00Z",
+   "thumbnail_at": 25.0,
+   "cast_url": "/casts/pacvim.cast?v=1793547234",
+   "duration": 50.1,
+   "platforms": {
+    "x86_64-unknown-linux-musl": {
+     "url": "https://example.invalid/pacvim-x86_64-unknown-linux-musl.tar.gz",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1122000
+    },
+    "aarch64-apple-darwin": {
+     "url": "https://example.invalid/pacvim-aarch64-apple-darwin.tar.gz",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1122000
+    },
+    "x86_64-pc-windows-msvc": {
+     "url": "https://example.invalid/pacvim-x86_64-pc-windows-msvc.zip",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1122000
+    }
+   },
+   "news": []
+  },
   "panzer": {
    "schema_version": 1,
    "id": "panzer",
@@ -8052,6 +9046,79 @@
      "url": "/dev-releases/ancient-games/patolli-x86_64-unknown-linux-gnu.tar.gz",
      "sha256": "55cba7baeef1796df79b7861759e7e1d1586b5d6fdbc78a5baa929373e3ff0ce",
      "size": 798829
+    }
+   },
+   "news": []
+  },
+  "phantasia": {
+   "schema_version": 1,
+   "id": "phantasia",
+   "kind": "game",
+   "title": "Phantasia",
+   "description": "An old Unix fantasy role-playing game: make a character, roam an endless realm by its coordinates, fight what you meet, gather gold and gems, and climb the ranks towards king, valar and the Holy Grail.",
+   "year": 1979,
+   "old": true,
+   "license": "LicenseRef-Public-Domain",
+   "repo": "theasciiverse/netbsd-games",
+   "collection": "bsdgames",
+   "provenance": "Edward Estes first wrote Phantasia in the late 1970s on a high school's HP 2000 and later rewrote it in C for Unix, where it shipped with the BSD games; it was made for many players sharing one machine.",
+   "changes": "PATCHES.md",
+   "topics": [
+    "rpg",
+    "fantasy",
+    "classic",
+    "turn-based",
+    "curses"
+   ],
+   "genre": "rpg",
+   "developer": {
+    "name": "Asciiverse",
+    "url": "https://asciiverse.sh"
+   },
+   "upstream": {
+    "name": "Edward Estes (1979)",
+    "url": "https://github.com/NetBSD/src/tree/trunk/games/phantasia"
+   },
+   "exec": {
+    "game": "phantasia"
+   },
+   "min_terminal": {
+    "cols": 80,
+    "rows": 24
+   },
+   "requires": {
+    "utf8": false,
+    "color": "none",
+    "mouse": false
+   },
+   "media": {
+    "cast": "asciiverse/casts/phantasia.cast",
+    "thumbnail_at": 22.0
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**THE REALM IS ENDLESS. THE GRAIL IS OUT THERE.**\n\nPhantasia drops you into a realm laid out on coordinates, with the Lord of the Realm's castle at its centre. Pick a character class, roll your strength, magic and luck, and set out. Every step may bring a monster: fight it, cast a spell, try your luck or run. Win, and you take its gold and grow stronger. Buy armour and weapons at the trading posts, and keep going.\n\nClimb far enough and you can become a king, a council member, even one of the valar, and go in search of the Holy Grail. Phantasia was written for many players on one machine, who could meet, fight and rule over each other; alone, the whole realm and its monsters are yours.\n\n## Controls\n\n- **N**, **S**, **E**, **W** (or **K**, **J**, **L**, **H**): a step north, south, east or west\n- The number keys pick from the menu on screen: **1** moves to a point, **4** shows your stats, **5** quits\n- In a fight, the numbers on screen choose: fight, cast a spell, try your luck or flee\n- Your character is kept with a password you choose\n\n## History\n\nEdward Estes wrote the first Phantasia in the late 1970s on a high school's HP 2000 and rewrote it in C for Unix by the mid-eighties, where it became one of the BSD games. Later bsd-games collections dropped it as unplayable on single-user systems. This edition keeps the realm's files in your own data folder, so it plays alone.\n\n## Credits\n\n- Phantasia: Edward (Ted) Estes, with many ideas from Chris Robertson\n- License: public domain (its author put it out without copyright)\n",
+   "version": "netbsd-1fc61a5-1",
+   "updated_at": "2026-10-18T10:24:13Z",
+   "thumbnail_at": 22.0,
+   "cast_url": "/casts/phantasia.cast?v=1793547234",
+   "duration": 45.3,
+   "platforms": {
+    "x86_64-unknown-linux-musl": {
+     "url": "https://example.invalid/phantasia-x86_64-unknown-linux-musl.tar.gz",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1233000
+    },
+    "aarch64-apple-darwin": {
+     "url": "https://example.invalid/phantasia-aarch64-apple-darwin.tar.gz",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1233000
+    },
+    "x86_64-pc-windows-msvc": {
+     "url": "https://example.invalid/phantasia-x86_64-pc-windows-msvc.zip",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1233000
     }
    },
    "news": []
@@ -8557,6 +9624,78 @@
      "url": "/dev-releases/rantaiwarna/rantaiwarna-x86_64-unknown-linux-musl.tar.gz",
      "sha256": "8ce4073a6cfd289771c14c2d484e8b748ae3b13e10be35061dc45d6426dfe5af",
      "size": 160865
+    }
+   },
+   "news": []
+  },
+  "rebels-in-the-sky": {
+   "schema_version": 1,
+   "id": "rebels-in-the-sky",
+   "kind": "game",
+   "title": "Rebels in the Sky",
+   "description": "Space pirates playing basketball: gather a crew, fly your ship between planets, trade, explore, and challenge other crews, local or online, to matches you watch play out on the court.",
+   "year": 2024,
+   "license": "GPL-3.0-or-later",
+   "repo": "theasciiverse/rebels-in-the-sky",
+   "provenance": "Alessandro Ricottone started Rebels in the Sky in 2024, a terminal game written in Rust with Ratatui, with online play between players' own machines.",
+   "changes": "PATCHES.md",
+   "topics": [
+    "sports",
+    "basketball",
+    "space",
+    "management",
+    "multiplayer"
+   ],
+   "genre": "sports",
+   "developer": {
+    "name": "Alessandro Ricottone",
+    "url": "https://github.com/ricott1/rebels-in-the-sky"
+   },
+   "upstream": {
+    "name": "Alessandro Ricottone",
+    "url": "https://github.com/ricott1/rebels-in-the-sky"
+   },
+   "exec": {
+    "game": "rebels"
+   },
+   "min_terminal": {
+    "cols": 160,
+    "rows": 48
+   },
+   "requires": {
+    "utf8": true,
+    "color": "truecolor",
+    "mouse": true
+   },
+   "media": {
+    "cast": "asciiverse/rebels-in-the-sky.cast",
+    "thumbnail_at": 40.0,
+    "crop": {
+     "follow": "centre"
+    }
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**SPACE PIRATES. BASKETBALL. WHY NOT.**\n\nYou are the captain of a crew of space pirates, and in this galaxy disputes are settled on the court. Recruit players from across the planets, each with their own skills and quirks, fit out your spaceship and fly it between worlds to trade, explore and go on space adventures. When you meet another crew, challenge them to a match and watch it play out, play by play, with your tactics deciding the game.\n\nOther crews can be bots or other players: Rebels in the Sky finds other players online and lets you challenge their crews, or join tournaments.\n\n- **Build a crew** of players with their own stats, skills and personalities\n- **Fly between planets** to trade, explore and find new players\n- **Basketball matches** played out on the court, with your tactics\n- **Online play** against other players' crews, and tournaments\n\n## Controls\n\n- **Left** / **Right**: switch tabs\n- **Up** / **Down**: choose in a list; **[** / **]**: change the selection\n- **Tab**: cycle the view\n- The keys for each action are shown on its button, and the mouse works too\n- **?**: help; **Esc**: back or quit\n\n## Options\n\n- `-l`: play offline, without looking for other players\n- `-a`: no audio\n- `-f`: no local bot crews, only other players'\n\n## Credits\n\n- Rebels in the Sky: Alessandro Ricottone\n- License: GPL-3.0-or-later\n",
+   "system_deps": [
+    "libasound2"
+   ],
+   "version": "0.1.0",
+   "updated_at": "2026-10-10T00:00:00Z",
+   "thumbnail_at": 40.0,
+   "cast_url": "/casts/rebels-in-the-sky.cast?v=1793547234",
+   "duration": 54.7,
+   "platforms": {
+    "x86_64-unknown-linux-gnu": {
+     "url": "https://example.invalid/rebels-in-the-sky-x86_64-unknown-linux-gnu.tar.gz",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1529000
+    },
+    "aarch64-apple-darwin": {
+     "url": "https://example.invalid/rebels-in-the-sky-aarch64-apple-darwin.tar.gz",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1529000
     }
    },
    "news": []
@@ -10126,6 +11265,151 @@
    },
    "news": []
   },
+  "ski": {
+   "schema_version": 1,
+   "id": "ski",
+   "kind": "game",
+   "old": true,
+   "title": "Ski!",
+   "description": "You are skiing down an endless slope with your jet-powered skis on backwards, and the man-eating Yeti is gaining. Jump, teleport, launch ICBMs and summon the Fire Demon.",
+   "year": 1983,
+   "license": "BSD-2-Clause",
+   "repo": "theasciiverse/ski",
+   "provenance": "Mark Stevans wrote Ski! for Roy's Games between 1983 and 1990, first in FORTRAN on DEC-10s and then in C for VT100 terminals; Eric S. Raymond took it up in 1993 and rewrote it in Python in 2003.",
+   "changes": "PATCHES.md",
+   "topics": [
+    "skiing",
+    "yeti",
+    "turn-based",
+    "humor",
+    "classic",
+    "rust"
+   ],
+   "genre": "arcade",
+   "developer": {
+    "name": "Asciiverse",
+    "url": "https://asciiverse.sh"
+   },
+   "upstream": {
+    "name": "Eric S. Raymond",
+    "url": "http://www.catb.org/~esr/ski/"
+   },
+   "exec": {
+    "game": "ski"
+   },
+   "min_terminal": {
+    "cols": 80,
+    "rows": 24
+   },
+   "requires": {
+    "utf8": false,
+    "color": "basic",
+    "mouse": false
+   },
+   "media": {
+    "cast": "asciiverse/ski.cast",
+    "thumbnail_at": 23.0
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**THE YETI IS GAINING. YOUR SKIS ARE ON BACKWARDS.**\n\nYou are skiing down an infinite slope of trees, ice and bare ground, chased by the man-eating Yeti. Unfortunately, you have put your jet-powered skis on backwards, so you can't see where you are going, only where you have been. Each turn adds one line to the slope and asks for your next move.\n\nHazards grow in patches, so you can steer round them: trees are the worst, bare ground can throw you, ice can make you slip, and you cannot turn while you are on it. When the Yeti comes, jump over him, teleport away, fire an ICBM after him or call up the Fire Demon. Every one of them can go wrong.\n\n- **Many ways to come to grief**: trees, ice, bare ground, the Yeti, a bad landing, your own nuclear backpack and a spell gone wrong\n- **A score for every run**: meters skied, jumps made, Yetis melted, minus your injuries\n- **Very silly**: in its maintainer's words, \"a fun and very silly game that proves you don't need fancy graphical user interfaces to have a good time\"\n\n## Controls\n\nType a command and press **Enter**. Upper or lower case both work.\n\n- **Enter**: keep skiing\n- **l** / **r**: turn left or right (each press steers harder, up to five)\n- **j**: jump, over trees and Yetis\n- **h**: hop, a short jump\n- **t**: teleport to somewhere random on the slope\n- **i**: launch an ICBM at the Yeti\n- **d**: summon the Fire Demon to melt the Yeti\n- **?**: help and the map key\n- a number in front repeats a command: **5** skis five turns, **3l** turns left three times\n\nOn the map, **I** is you, **A** the Yeti, **\\*** an ICBM and **D** the Fire Demon; **Y** is a tree, **#** ice and **:** bare ground.\n\n## History\n\nMark Stevans wrote Ski! for Roy's Games, first in FORTRAN on DEC-10s, then in C for VT100 terminals; version 6.0 is from 1990. Eric S. Raymond took it up in 1993 and rewrote it in Python in 2003, adding the online help and, soon after, repeat counts. This edition is that Python version ported to Rust, so it needs no Python, and asks whether to play again when a run ends.\n\n## Credits\n\n- Original game: Mark Stevans\n- Python version and maintainer: [Eric S. Raymond](http://www.catb.org/~esr/ski/)\n- Asciiverse edition: Asciiverse\n- License: BSD-2-Clause\n",
+   "version": "0.1.0",
+   "updated_at": "2026-10-10T00:00:00Z",
+   "thumbnail_at": 23.0,
+   "cast_url": "/casts/ski.cast?v=1793547234",
+   "duration": 47.1,
+   "platforms": {
+    "x86_64-unknown-linux-musl": {
+     "url": "https://example.invalid/ski-x86_64-unknown-linux-musl.tar.gz",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1011000
+    },
+    "aarch64-apple-darwin": {
+     "url": "https://example.invalid/ski-aarch64-apple-darwin.tar.gz",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1011000
+    },
+    "x86_64-pc-windows-msvc": {
+     "url": "https://example.invalid/ski-x86_64-pc-windows-msvc.zip",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1011000
+    }
+   },
+   "news": []
+  },
+  "sl": {
+   "schema_version": 1,
+   "id": "sl",
+   "kind": "art",
+   "title": "sl",
+   "description": "Typed sl instead of ls? A steam locomotive runs across your terminal, and Ctrl+C won't stop it. With an accident, a flying train, a little one and the C51.",
+   "year": 1993,
+   "old": true,
+   "license": "SL",
+   "repo": "theasciiverse/sl",
+   "provenance": "Toyoda Masashi wrote sl in 1993 as a joke punishment for typing sl instead of ls; it has been a Unix favourite ever since.",
+   "changes": "PATCHES.md",
+   "topics": [
+    "toy",
+    "animation",
+    "train",
+    "joke",
+    "classic"
+   ],
+   "developer": {
+    "name": "Toyoda Masashi",
+    "url": "https://github.com/mtoyoda/sl"
+   },
+   "upstream": {
+    "name": "Toyoda Masashi",
+    "url": "https://github.com/mtoyoda/sl"
+   },
+   "exec": {
+    "game": "sl",
+    "args": []
+   },
+   "min_terminal": {
+    "cols": 40,
+    "rows": 24
+   },
+   "requires": {
+    "utf8": false,
+    "color": "none",
+    "mouse": false
+   },
+   "media": {
+    "cast": "asciiverse/sl.cast",
+    "thumbnail_at": 3.5
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**YOU MEANT LS.**\n\nEveryone mistypes `ls` sometimes. Since 1993, Toyoda Masashi's sl has made sure you remember it: a steam locomotive, smoke and all, rolls across your terminal from right to left, and nothing you type will hurry it along. Not even Ctrl+C.\n\nIt has become one of the best-known jokes in Unix, and it is still a pleasure to watch.\n\n- **sl**: the D51 steam locomotive with its coal car and carriages\n- **sl -a**: an accident, with people calling for help\n- **sl -F**: the train flies\n- **sl -l**: a little one\n- **sl -c**: the C51 instead\n\n## Controls\n\nNone. That is the point. Wait for the train to pass.\n\n## Credits\n\n- sl: Toyoda Masashi\n- Asciiverse edition: Asciiverse\n- License: SL (Toyoda Masashi's own: do anything with it, as long as you don't pretend you wrote it)\n",
+   "version": "0.1.0",
+   "updated_at": "2026-10-10T00:00:00Z",
+   "thumbnail_at": 3.5,
+   "cast_url": "/casts/sl.cast?v=1793547234",
+   "duration": 37.2,
+   "platforms": {
+    "x86_64-unknown-linux-musl": {
+     "url": "https://example.invalid/sl-x86_64-unknown-linux-musl.tar.gz",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 974000
+    },
+    "aarch64-apple-darwin": {
+     "url": "https://example.invalid/sl-aarch64-apple-darwin.tar.gz",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 974000
+    },
+    "x86_64-pc-windows-msvc": {
+     "url": "https://example.invalid/sl-x86_64-pc-windows-msvc.zip",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 974000
+    }
+   },
+   "news": []
+  },
   "sleighride": {
    "schema_version": 1,
    "id": "sleighride",
@@ -11220,6 +12504,80 @@
    },
    "news": []
   },
+  "terminal-phase": {
+   "schema_version": 1,
+   "id": "terminal-phase",
+   "kind": "game",
+   "title": "Terminal Phase",
+   "description": "A side-scrolling space shooter in your terminal: fly through caverns of rock, dodge fire and shoot down squigglers, turrets, mines and kamikaze ships across a twinkling Braille starfield.",
+   "year": 2019,
+   "license": "GPL-3.0-or-later",
+   "repo": "theasciiverse/terminal-phase",
+   "provenance": "Christine Lemmer-Webber wrote Terminal Phase in Racket in 2019 as a test program for Spritely Goblins and a reward for Patreon supporters, who are named in its credits. This is the Racket version as it stood before the move to Guile.",
+   "changes": "PATCHES.md",
+   "topics": [
+    "shooter",
+    "shmup",
+    "space",
+    "arcade",
+    "racket"
+   ],
+   "genre": "arcade",
+   "developer": {
+    "name": "Christine Lemmer-Webber",
+    "url": "https://gitlab.com/dustyweb/terminal-phase"
+   },
+   "upstream": {
+    "name": "Christine Lemmer-Webber",
+    "url": "https://gitlab.com/dustyweb/terminal-phase"
+   },
+   "exec": {
+    "game": "terminal-phase"
+   },
+   "min_terminal": {
+    "cols": 60,
+    "rows": 22
+   },
+   "requires": {
+    "utf8": true,
+    "color": "basic",
+    "mouse": false,
+    "glyphs": [
+     "braille"
+    ]
+   },
+   "media": {
+    "cast": "asciiverse/terminal-phase.cast",
+    "thumbnail_at": 30.0
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**A SPACE SHOOTER. IN YOUR TERMINAL. OF COURSE.**\n\nYour little **>** ship drifts through a cavern of rock while the stars twinkle past in Braille dots. Then the enemies come: squiggling ships that weave toward you, turrets that fire across your path, mines, kamikazes that turn and aim themselves at you, and cannons firing up from the ground. Keep shooting, keep moving, and don't scrape the walls.\n\nTwo levels, three lives, and a credits roll of everyone who backed it.\n\n- **Old-school shmup**: one ship, one gun, a lot of things that want you dead\n- **Terrain that fights back**: the cavern narrows and widens as you fly\n- **A starfield in Braille**: smooth, tiny stars in plain text\n- **Time travel**: start it with `-t` and press **t** to step back through the last moments of play\n\n## Controls\n\n- **Arrow keys**: move\n- **Space**: fire\n- **q** or **Esc**: leave the level; **q** on the title menu quits\n- In the menu: **Up** and **Down** to choose, **Enter** to pick\n\n## Options\n\n- `-t`: allow time travel with the **t** key\n- `-f`: show frames per second\n- `terminal-phase LEVEL-FILE ...`: play your own level files instead of the built-in ones\n\n## History\n\nTerminal Phase began in 2019 as a test program for Spritely Goblins, a library for programs built from communicating objects. Christine Lemmer-Webber later moved it to Guile; this is the Racket version, with the fixes and new enemies that came after its 1.1 release.\n\n## Credits\n\n- Terminal Phase: [Christine Lemmer-Webber](https://gitlab.com/dustyweb/terminal-phase), with thanks to the supporters named in its credits\n- License: GPL-3.0-or-later\n",
+   "version": "0.1.0",
+   "updated_at": "2026-10-10T00:00:00Z",
+   "thumbnail_at": 30.0,
+   "cast_url": "/casts/terminal-phase.cast?v=1793547234",
+   "duration": 47.5,
+   "platforms": {
+    "x86_64-unknown-linux-musl": {
+     "url": "https://example.invalid/terminal-phase-x86_64-unknown-linux-musl.tar.gz",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1418000
+    },
+    "aarch64-apple-darwin": {
+     "url": "https://example.invalid/terminal-phase-aarch64-apple-darwin.tar.gz",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1418000
+    },
+    "x86_64-pc-windows-msvc": {
+     "url": "https://example.invalid/terminal-phase-x86_64-pc-windows-msvc.zip",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1418000
+    }
+   },
+   "news": []
+  },
   "terminal-pong": {
    "schema_version": 1,
    "id": "terminal-pong",
@@ -11908,6 +13266,80 @@
     }
    ]
   },
+  "ttyper": {
+   "schema_version": 1,
+   "id": "ttyper",
+   "kind": "game",
+   "title": "ttyper",
+   "description": "A typing test for the terminal: type the words, then see your speed, your accuracy and the keys that tripped you up. English and a dozen other languages, or code in a dozen programming languages.",
+   "year": 2021,
+   "license": "MIT",
+   "repo": "theasciiverse/ttyper",
+   "provenance": "Max Niederman started ttyper in Rust in 2021, and contributors have added languages and modes since.",
+   "changes": "PATCHES.md",
+   "topics": [
+    "typing",
+    "typing test",
+    "wpm",
+    "practice",
+    "rust"
+   ],
+   "genre": "typing",
+   "developer": {
+    "name": "Max Niederman and contributors",
+    "url": "https://github.com/max-niederman/ttyper"
+   },
+   "upstream": {
+    "name": "Max Niederman",
+    "url": "https://github.com/max-niederman/ttyper"
+   },
+   "exec": {
+    "game": "ttyper"
+   },
+   "min_terminal": {
+    "cols": 50,
+    "rows": 12
+   },
+   "requires": {
+    "utf8": true,
+    "color": "basic",
+    "mouse": false,
+    "glyphs": [
+     "braille"
+    ]
+   },
+   "media": {
+    "cast": "asciiverse/ttyper.cast",
+    "thumbnail_at": 36.0
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**HOW FAST DO YOU REALLY TYPE?**\n\nFifty common words, one box to type them in. Each word lights up green or red as you go, and the moment you finish ttyper shows your words per minute, your accuracy, a chart of your speed through the test, and the keys you miss most.\n\nThen press **r** for a fresh test, or **p** to practise the words you got wrong.\n\n- **Many languages**: English (100, 200 or 1000 most common words, or advanced, or pirate), French, Galician, German, Korean, Norwegian, Portuguese, Russian, Spanish, Thai, Ukrainian\n- **Or code**: C, C++, C#, Go, HTML, Java, JavaScript, PHP, Python, Ruby, Rust, SQL and Qt\n- **Your own words**: any text file, line by line\n- **Hard modes**: sudden death restarts on your first mistake; turn off backspace or going back\n\n## Controls\n\n- Type the words; **Space** moves to the next one, **Backspace** fixes the current one\n- **Esc**: end the test\n- On the results screen: **r** for a new test, **p** to practise your mistakes, **q** or **Esc** to quit\n\n## Options\n\n- `-w N`: number of words (default 50)\n- `-l LANGUAGE`: word list, for example `-l english1000` or `-l rust`\n- `--list-languages`: every list built in\n- `--sudden-death`, `--no-backspace`, `--no-backtrack`: harder tests\n- `ttyper FILE`: type the lines of a text file\n\n## Credits\n\n- ttyper: [Max Niederman](https://github.com/max-niederman/ttyper) and contributors\n- License: MIT\n",
+   "version": "0.1.0",
+   "updated_at": "2026-10-10T00:00:00Z",
+   "thumbnail_at": 36.0,
+   "cast_url": "/casts/ttyper.cast?v=1793547234",
+   "duration": 37.1,
+   "platforms": {
+    "x86_64-unknown-linux-musl": {
+     "url": "https://example.invalid/ttyper-x86_64-unknown-linux-musl.tar.gz",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1122000
+    },
+    "aarch64-apple-darwin": {
+     "url": "https://example.invalid/ttyper-aarch64-apple-darwin.tar.gz",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1122000
+    },
+    "x86_64-pc-windows-msvc": {
+     "url": "https://example.invalid/ttyper-x86_64-pc-windows-msvc.zip",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1122000
+    }
+   },
+   "news": []
+  },
   "tugow": {
    "schema_version": 1,
    "id": "tugow",
@@ -12040,6 +13472,77 @@
      "url": "/dev-releases/typespeed/typespeed-x86_64-unknown-linux-musl.tar.gz",
      "sha256": "4afa7d8a06b02c16c177babd6d09080c5799d2ff4b463b16f2ef1d2d32506b5b",
      "size": 207164
+    }
+   },
+   "news": []
+  },
+  "typioca": {
+   "schema_version": 1,
+   "id": "typioca",
+   "kind": "game",
+   "title": "typioca",
+   "description": "A cozy typing speed test: race the clock or a word count, or type sentences from classic novels, then see your speed, accuracy and a chart of how you did.",
+   "year": 2022,
+   "license": "MIT",
+   "repo": "theasciiverse/typioca",
+   "provenance": "Lukas Bloznelis started typioca in Go in 2022, built on Bubble Tea, and contributors have added word lists and layouts since.",
+   "changes": "PATCHES.md",
+   "topics": [
+    "typing",
+    "typing test",
+    "wpm",
+    "practice",
+    "go"
+   ],
+   "genre": "typing",
+   "developer": {
+    "name": "Lukas Bloznelis and contributors",
+    "url": "https://github.com/bloznelis/typioca"
+   },
+   "upstream": {
+    "name": "Lukas Bloznelis",
+    "url": "https://github.com/bloznelis/typioca"
+   },
+   "exec": {
+    "game": "typioca"
+   },
+   "min_terminal": {
+    "cols": 60,
+    "rows": 24
+   },
+   "requires": {
+    "utf8": true,
+    "color": "basic",
+    "mouse": false
+   },
+   "media": {
+    "cast": "asciiverse/typioca.cast",
+    "thumbnail_at": 28.0
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**TYPE FAST. TYPE COZY.**\n\nPick a test from the menu and start typing. The words wait in a few calm lines; what you've typed turns white, mistakes turn red. When you're done typioca shows your words per minute, your accuracy, your raw speed and a chart of your pace through the test, and keeps your results so you can see whether you're getting faster.\n\n- **Three kinds of test**: against the clock (15, 30, 60 or 120 seconds), a word count (10 to 100 words) or a sentence count (1 to 30 sentences)\n- **Classic books**: word and sentence lists from Frankenstein, Dracula, Pride and Prejudice, Sherlock Holmes, Treasure Island and more\n- **Other keyboards**: Dvorak, Colemak DH and Gallium layouts\n- **Your own words**: add word lists in the config file\n\n## Controls\n\n- **Up** and **Down**: choose a test in the menu; **Left** and **Right** move to its settings, where **Up** and **Down** change them\n- **Enter**: start the test, or open Config\n- Type the words; **Space** moves to the next one, **Backspace** fixes the current one, **Ctrl+W** deletes the last word\n- **Ctrl+R**: restart the test; **Ctrl+Q**: back to the menu\n- **Esc** or **Ctrl+C**: quit\n\n## Options\n\n- In the menu's Config screen, **e** turns a word list or layout on or off and **s** downloads or deletes it; lists beyond the two built in download from typioca's own repository\n- `typioca serve`: run typioca as an SSH server on port 2229\n\n## Credits\n\n- typioca: [Lukas Bloznelis](https://github.com/bloznelis/typioca) and contributors\n- License: MIT\n",
+   "version": "0.1.0",
+   "updated_at": "2026-10-10T00:00:00Z",
+   "thumbnail_at": 28.0,
+   "cast_url": "/casts/typioca.cast?v=1793547234",
+   "duration": 28.1,
+   "platforms": {
+    "x86_64-unknown-linux-musl": {
+     "url": "https://example.invalid/typioca-x86_64-unknown-linux-musl.tar.gz",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1159000
+    },
+    "aarch64-apple-darwin": {
+     "url": "https://example.invalid/typioca-aarch64-apple-darwin.tar.gz",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1159000
+    },
+    "x86_64-pc-windows-msvc": {
+     "url": "https://example.invalid/typioca-x86_64-pc-windows-msvc.zip",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1159000
     }
    },
    "news": []
@@ -12283,6 +13786,77 @@
      "url": "/dev-releases/uxo-x86_64-unknown-linux-gnu.tar.gz",
      "sha256": "9fec453ef20954b6087e012cf0de68f5e906b71dddc9cf243657064940d902f5",
      "size": 7946646
+    }
+   },
+   "news": []
+  },
+  "vitetris": {
+   "schema_version": 1,
+   "id": "vitetris",
+   "kind": "game",
+   "title": "vitetris",
+   "description": "Falling blocks the way the early Nintendo versions played them, in your terminal: marathon or 25-line races, two players on one keyboard, on two terminals or over the network.",
+   "year": 2007,
+   "license": "BSD-2-Clause",
+   "repo": "theasciiverse/vitetris",
+   "provenance": "Victor Geraldsson wrote vitetris in C from 2007, after Mike Taylor's 1989 Tetris for Terminals, and released it under a BSD licence; it is in most Linux distributions.",
+   "changes": "PATCHES.md",
+   "topics": [
+    "falling blocks",
+    "puzzle",
+    "arcade",
+    "two-player",
+    "multiplayer"
+   ],
+   "genre": "puzzle",
+   "developer": {
+    "name": "Victor Geraldsson",
+    "url": "https://github.com/vicgeralds/vitetris"
+   },
+   "upstream": {
+    "name": "Victor Geraldsson",
+    "url": "https://github.com/vicgeralds/vitetris"
+   },
+   "exec": {
+    "game": "vitetris"
+   },
+   "min_terminal": {
+    "cols": 40,
+    "rows": 22
+   },
+   "requires": {
+    "utf8": false,
+    "color": "basic",
+    "mouse": false
+   },
+   "media": {
+    "cast": "asciiverse/vitetris.cast",
+    "thumbnail_at": 30.0
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**SEVEN SHAPES. TEN COLUMNS. NO MERCY.**\n\nThe blocks fall, you turn them and slot them in, full rows vanish, and the speed creeps up. vitetris plays the way the early Nintendo versions did, with the same rotation, scoring, levels and speed, plus a short lock delay so the high levels stay playable.\n\nPlay a marathon for points, or a B-type game where you race to clear 25 lines, starting from a field already half full of junk if you like. Bring a friend: two players can share one keyboard, sit at two terminals on the same machine, or play over the network, each choosing their own level and height.\n\n- **Two modes**: A-type marathon and B-type 25-line race\n- **Head to head**: two players on one keyboard, on two terminals, or across the internet\n- **Make it yours**: starting level and garbage height, rotation direction, soft-drop speed, block styles and colours, every key remappable\n- **High scores** kept for you\n\n## Controls\n\n- **Left** and **Right**: move\n- **Up**: rotate\n- **Down**: soft drop; **Space**: hard drop\n- **P** or **Enter**: pause\n- In the menus: arrow keys and **Enter**, **Esc** or **Backspace** to go back, **Q** to quit at once\n\n## Options\n\n- `-level N`, `-height N`: start level (0–9) and garbage height (0–5)\n- `-mode 1b`: B-type game; `-nomenu`: skip the menus\n- `-listen PORT` / `-connect HOST:PORT`: network play\n- `-hiscores`: print the high-score list\n- `-help`: every option\n\nSettings and high scores are saved in `~/.vitetris`.\n\n## Credits\n\n- vitetris: [Victor Geraldsson](https://github.com/vicgeralds/vitetris), after Mike Taylor's Tetris for Terminals (1989); the original game by Alexey Pajitnov (1985)\n- License: BSD-2-Clause\n",
+   "version": "0.1.0",
+   "updated_at": "2026-10-10T00:00:00Z",
+   "thumbnail_at": 30.0,
+   "cast_url": "/casts/vitetris.cast?v=1793547234",
+   "duration": 50.6,
+   "platforms": {
+    "x86_64-unknown-linux-musl": {
+     "url": "https://example.invalid/vitetris-x86_64-unknown-linux-musl.tar.gz",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1196000
+    },
+    "aarch64-apple-darwin": {
+     "url": "https://example.invalid/vitetris-aarch64-apple-darwin.tar.gz",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1196000
+    },
+    "x86_64-pc-windows-msvc": {
+     "url": "https://example.invalid/vitetris-x86_64-pc-windows-msvc.zip",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1196000
     }
    },
    "news": []
@@ -12752,6 +14326,78 @@
      "url": "/dev-releases/bsdgames/wump-x86_64-unknown-linux-musl.tar.gz",
      "sha256": "7af5e3abb301bbf36545ba6df5213f21278fc96abb53031ba4008a81ef6262fe",
      "size": 26575
+    }
+   },
+   "news": []
+  },
+  "xnethack": {
+   "schema_version": 1,
+   "id": "xnethack",
+   "kind": "game",
+   "title": "xNetHack",
+   "description": "NetHack with the tedium taken out and the balance put right: weapons and armour in many materials, crystal chests, reworked Gehennom mazes, new themed rooms, and the Amulet of Yendor still waiting at the bottom.",
+   "year": 2018,
+   "license": "NGPL",
+   "repo": "theasciiverse/xnethack",
+   "provenance": "copperwater began xNetHack in 2017 as a fork of NetHack, released it from 2018, and keeps it in step with the DevTeam's releases; version 10.0 is based on NetHack 5.0.0.",
+   "changes": "PATCHES.md",
+   "topics": [
+    "roguelike",
+    "dungeon",
+    "fantasy",
+    "turn-based",
+    "nethack-variant"
+   ],
+   "genre": "roguelike",
+   "developer": {
+    "name": "Asciiverse",
+    "url": "https://asciiverse.sh"
+   },
+   "upstream": {
+    "name": "copperwater and contributors",
+    "url": "https://github.com/copperwater/xNetHack"
+   },
+   "exec": {
+    "game": "xnethack",
+    "args": []
+   },
+   "min_terminal": {
+    "cols": 80,
+    "rows": 24
+   },
+   "requires": {
+    "utf8": false,
+    "color": "basic",
+    "mouse": false
+   },
+   "media": {
+    "cast": "asciiverse/xnethack.cast",
+    "thumbnail_at": 26.0
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**THE SAME DUNGEON. FEWER CHORES. MORE SURPRISES.**\n\nDown through the Dungeons of Doom, into Gehennom, and back out with the Amulet of Yendor: the quest is NetHack's. xNetHack sets out to \"fix gameplay balance issues\", \"remove tedious and frustrating parts of the game\" and \"make uninteresting parts of the game more interesting\", and it changes the game conservatively, deepening what is there rather than piling on more.\n\nSo that dagger might be silver, or glass. Armour comes in mithril, copper or bone. A crystal chest shows you what is inside and keeps it behind a lock no key can open. Gehennom's mazes are rebuilt around open caverns and themed rooms, and beneath Vlad's Tower there is a new level: a chasm of open air, home to vampires and a few demons.\n\nMany of xNetHack's ideas have gone on to the official game. This is where they get tried first.\n\n- **Object materials**: weapons, armour, boxes and amulets made of iron, silver, mithril, glass, bone and more, each with its own strengths\n- **Crystal chests**: see-through, magically locked, with an extra item inside\n- **A new Gehennom**: mazes rebuilt around open caverns and new special rooms\n- **More themed rooms** throughout the dungeon\n- **A tutorial** for first-timers, offered at the start\n\n## Controls\n\n- **hjkl yubn**: move, the last four diagonally; with **Shift**, run\n- **F** and a direction: fight; **t**: throw, **z**: zap a wand\n- **i**: inventory, **,**: pick up, **d**: drop\n- **e** eat, **q** quaff, **r** read, **w** wield, **W** wear, **T**\n  take off, **P** put on, **R** remove, **a** apply\n- **o** and **c**: open and close doors; **s**: search; **.**: rest\n- `>` and `<`: stairs down and up\n- **#**: extended commands, such as `#pray`\n- **?**: help, **;**: what is that symbol, **Ctrl-P**: earlier messages\n- **S**: save and quit\n\n## Saving and options\n\n**S** saves the game to your data folder (`~/.local/share/xnethack`),\nand starting xNetHack again carries on from there. Your options go in\n`~/.xnethackrc`, or in `xnethackrc` in that folder, as `OPTIONS=` lines;\n`OPTIONS=windowtype:curses` switches to the curses interface,\n`OPTIONS=role:Valkyrie,name:Ada` skips the questions at the start, and\n`OPTIONS=!tutorial` skips the tutorial offer. At the end of a game a\nfull account of it is written to `dumplog/` in the same folder.\n\n## History\n\ncopperwater started xNetHack in 2017 as an \"experimental\" fork of\nNetHack, a place to combine patches from the community and try new\nideas, and released it from 2018. It has followed the DevTeam ever\nsince: version 10.0, from May 2026, is built on NetHack 5.0.0. This\nedition is built for Linux and macOS, keeping everything it writes in\nyour own data folder.\n\n## Credits\n\n- Game: copperwater and the xNetHack contributors, after NetHack by the\n  NetHack DevTeam; object materials mostly from GruntHack\n- Asciiverse edition: Asciiverse\n- License: NetHack General Public License\n",
+   "version": "0.1.0",
+   "updated_at": "2026-10-10T00:00:00Z",
+   "thumbnail_at": 26.0,
+   "cast_url": "/casts/xnethack.cast?v=1793547234",
+   "duration": 49.9,
+   "platforms": {
+    "x86_64-unknown-linux-musl": {
+     "url": "https://example.invalid/xnethack-x86_64-unknown-linux-musl.tar.gz",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1196000
+    },
+    "aarch64-apple-darwin": {
+     "url": "https://example.invalid/xnethack-aarch64-apple-darwin.tar.gz",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1196000
+    },
+    "x86_64-pc-windows-msvc": {
+     "url": "https://example.invalid/xnethack-x86_64-pc-windows-msvc.zip",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1196000
     }
    },
    "news": []
