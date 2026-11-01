@@ -1,0 +1,47 @@
+schema_version = 1
+id = "drl"
+kind = "game"
+title = "DRL"
+description = "A fast, tactical roguelike: fight your way from a Martian moon base down into hell with shotguns, chainsaws and rocket launchers, and build your marine from traits and master traits."
+year = 2002
+license = "GPL-2.0-only"
+repo = "theasciiverse/drl"
+provenance = "Kornel Kisielewicz started DRL in 2002 as a fan roguelike, later developed by his studio ChaosForge, which still works on it."
+changes = "PATCHES.md"
+topics = ["roguelike", "shooter", "sci-fi", "horror", "tactical", "classic"]
+genre = "roguelike"
+
+[developer]
+name = "Kornel Kisielewicz (ChaosForge)"
+url = "https://drl.chaosforge.org/"
+
+# 0.10.12c with fpcvalkyrie 0_10_12 and two small engine patches (no
+# libX11; settings.lua under --write-path); PATCHES.md in theasciiverse/drl
+[upstream]
+name = "ChaosForge"
+url = "https://github.com/chaosforgeorg/drl"
+
+# the start script runs --console --no-sound from lib/ and keeps settings,
+# saves and scores in ${XDG_DATA_HOME:-~/.local/share}/drl
+[exec]
+game = "drl"
+args = []
+
+# bin/unix_notes.txt: "DRL requires that your console has size 80x25 or larger"
+[min_terminal]
+cols = 80
+rows = 25
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, asciiverse/record-preview.py: a new game, then a scripted marine
+# fighting on the first level (best of eleven takes: four kills)
+[media]
+cast = "asciiverse/drl.cast"
+thumbnail_at = 25.5
+
+[release]
+source = "github"
