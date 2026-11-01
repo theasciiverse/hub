@@ -1,0 +1,48 @@
+schema_version = 1
+id = "evilhack"
+kind = "game"
+title = "EvilHack"
+description = "A much harder NetHack: tougher, smarter monsters that use your tricks against you, new races, roles, items and artifacts, and the Amulet of Yendor at the bottom of it all."
+year = 2018
+license = "NGPL"
+repo = "theasciiverse/evilhack"
+provenance = "Keith Simpson (k21971) started EvilHack in 2018 as a much harder NetHack 3.6 variant, drawing on GruntHack, SporkHack and others, and still develops it."
+changes = "PATCHES.md"
+topics = ["roguelike", "nethack", "fantasy", "dungeon", "hard"]
+genre = "roguelike"
+
+[developer]
+name = "Keith Simpson (k21971)"
+url = "https://github.com/k21971/EvilHack"
+
+# v0.9.3, built with asciiverse/hints through upstream's setup.sh; no
+# source changes; PATCHES.md in theasciiverse/evilhack
+[upstream]
+name = "k21971"
+url = "https://github.com/k21971/EvilHack"
+
+# the start script gives each player a playground in
+# ${XDG_DATA_HOME:-~/.local/share}/evilhack (saves, bones, scores) and
+# sets NETHACKDIR; options in ~/.evilhackrc
+[exec]
+game = "evilhack"
+args = []
+
+# NetHack's classic 80x24 screen
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, asciiverse/record-preview.py: a new Valkyrie explored by a
+# simple bot (best of three takes: five kills, down to Dlvl 3)
+[media]
+cast = "asciiverse/evilhack.cast"
+thumbnail_at = 29.5
+
+[release]
+source = "github"
