@@ -13,7 +13,7 @@ Climb far enough and you can become a king, a council member, even one of the va
 
 ## History
 
-Edward Estes wrote the first Phantasia in 1978-79 for an HP 2000 and rewrote it in C for Unix in the mid-eighties, where it became one of the BSD games. Later bsd-games collections dropped it as unplayable on single-user systems. This edition keeps the realm's files in your own data folder, so it plays alone.
+Edward Estes wrote the first Phantasia in the late 1970s on a high school's HP 2000 and rewrote it in C for Unix by the mid-eighties, where it became one of the BSD games. Later bsd-games collections dropped it as unplayable on single-user systems. This edition keeps the realm's files in your own data folder, so it plays alone.
 
 ## Credits
 
