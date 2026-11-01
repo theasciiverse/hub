@@ -1,0 +1,51 @@
+schema_version = 1
+id = "xnethack"
+kind = "game"
+title = "xNetHack"
+description = "NetHack with the tedium taken out and the balance put right: weapons and armour in many materials, crystal chests, reworked Gehennom mazes, new themed rooms, and the Amulet of Yendor still waiting at the bottom."
+year = 2018
+license = "NGPL"
+repo = "theasciiverse/xnethack"
+provenance = "copperwater began xNetHack in 2017 as a fork of NetHack, released it from 2018, and keeps it in step with the DevTeam's releases; version 10.0 is based on NetHack 5.0.0."
+changes = "PATCHES.md"
+topics = ["roguelike", "dungeon", "fantasy", "turn-based", "nethack-variant"]
+genre = "roguelike"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# xNetHack 10.0 (tag xnh10.0, 2026-05-26); the per-player files and data
+# paths of theasciiverse/nethack carried over; PATCHES.md in
+# theasciiverse/xnethack
+[upstream]
+name = "copperwater and contributors"
+url = "https://github.com/copperwater/xNetHack"
+
+# the tty interface; OPTIONS=windowtype:curses in xnethackrc picks curses
+[exec]
+game = "xnethack"
+args = []
+
+# message line, the 80x21 map and two status lines, as NetHack 5.0; on a
+# smaller terminal the map scrolls (CLIPPING)
+[min_terminal]
+cols = 80
+rows = 24
+
+# 16 colours (8 plus bright), plain ASCII by default, keyboard only
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, Ada the Valkyrie played by asciiverse/record-preview.py, which
+# explores by breadth-first search and fights what she meets (best of six
+# takes, a lichen and a jackal killed); 50 s, the still is two rooms mapped
+# just after the jackal, her kitten beside her
+[media]
+cast = "asciiverse/xnethack.cast"
+thumbnail_at = 26.0
+
+[release]
+source = "github"
