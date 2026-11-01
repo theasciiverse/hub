@@ -27,18 +27,17 @@ The bigger your terminal window, the sharper the picture. It plays best in a ter
 - `-iwad freedoom2.wad`: play Phase 2
 - `-skill 1` to `-skill 5`, `-warp E M` (or `-warp M` in Phase 2): start where you like
 - `-nosound`, `-nomusic`: play quietly
-- `-chars ascii`, `-chars block` or `-chars braille`: doom-ascii's own looks
+- `-chars ascii`, `-chars block` or `-chars braille`: the engine's other looks
 
-Settings and saved games are kept in `~/.local/share/doom-ascii`, where `.default.cfg` holds the key bindings.
+Settings and saved games are kept in `~/.local/share/freedoom`, where `.default.cfg` holds the key bindings.
 
 ## History
 
-id Software released its engine's source in 1997. Chocolate Doom keeps it faithful to the original, doomgeneric made it easy to port, and doom-ascii brought it to the terminal. This edition adds the sound effects and the music, played through an emulated OPL synthesiser as a 1990s sound card would, exact key releases, gamepads, and the half-block picture.
+id Software released its engine's source in 1997. Chocolate Doom keeps it faithful to the original, doomgeneric made it easy to port, and Wojciech Graj brought it to the terminal. This edition adds the sound effects and the music, played through an emulated OPL synthesiser as a 1990s sound card would, exact key releases, gamepads, and the half-block picture.
 
 ## Credits
 
-- doom-ascii: Wojciech Graj
-- Engine: id Software, Chocolate Doom (Simon Howard and contributors), doomgeneric (ozkl)
+- Engine: Wojciech Graj, after id Software, Chocolate Doom (Simon Howard and contributors) and doomgeneric (ozkl)
 - OPL3 emulation: Nuked OPL3, Alexey Khokholov
 - Freedoom: the Freedoom project
 - License: GPL-2.0-or-later (the engine), BSD-3-Clause (Freedoom)

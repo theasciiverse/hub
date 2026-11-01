@@ -1,34 +1,34 @@
 schema_version = 1
-id = "doom-ascii"
+id = "freedoom"
 kind = "game"
-title = "doom-ascii"
+title = "Freedoom"
 description = "The 1993 first-person shooter's engine in your terminal, in full colour, with music and sound, playing Freedoom's two free games: fight through bases and hells with shotgun and chaingun."
 year = 1993
 old = true
 license = "GPL-2.0-or-later AND BSD-3-Clause"
-repo = "theasciiverse/doom-ascii"
-provenance = "id Software released the source of its 1993 engine in 1997; Chocolate Doom and doomgeneric carried it on, and Wojciech Graj made doom-ascii, the engine in the terminal, from 2022. The Freedoom project has made free levels, monsters, sounds and music for it since 2001."
+repo = "theasciiverse/freedoom"
+provenance = "id Software released the source of its 1993 engine in 1997; Chocolate Doom and doomgeneric carried it on, and Wojciech Graj brought it to the terminal in 2022. The Freedoom project has made free levels, monsters, sounds and music for it since 2001."
 changes = "PATCHES.md"
 topics = ["shooter", "first-person", "fps", "freedoom", "classic", "music", "gamepad"]
 genre = "action"
 
 [developer]
-name = "Wojciech Graj"
-url = "https://github.com/wojciech-graj/doom-ascii"
+name = "The Freedoom project and Wojciech Graj"
+url = "https://freedoom.github.io"
 
-# doom-ascii 0.3.2, with our sound effects and OPL music (miniaudio and
-# Chocolate Doom's OPL code), exact key releases through the kitty keyboard
-# protocol and the half-block picture (-chars half); Freedoom 0.13.0's
+# Freedoom on the doom-ascii 0.3.2 engine, with our sound effects and OPL
+# music (miniaudio and Chocolate Doom's OPL code), exact key releases
+# through the kitty keyboard protocol and the half-block picture (-chars half); Freedoom 0.13.0's
 # Phase 1 and Phase 2 ship in the archive. No id Software data.
 [upstream]
 name = "Wojciech Graj"
 url = "https://github.com/wojciech-graj/doom-ascii"
 
 # the start script plays Freedoom: Phase 1 with -chars half -scaling 1
-# from ${XDG_DATA_HOME:-~/.local/share}/doom-ascii, where the game keeps
+# from ${XDG_DATA_HOME:-~/.local/share}/freedoom, where the game keeps
 # its settings and saves; "-iwad freedoom2.wad" plays Phase 2
 [exec]
-game = "doom-ascii"
+game = "freedoom"
 
 # no [min_terminal]: the picture fits the terminal at 4:3; bigger is sharper
 
@@ -47,7 +47,7 @@ gamepad = true
 # (asciiverse/recast.py) from the game's 35; the still is a fight in a
 # green-lit base
 [media]
-cast = "asciiverse/doom-ascii.cast"
+cast = "asciiverse/freedoom.cast"
 thumbnail_at = 31.0
 
 [release]

@@ -4049,67 +4049,6 @@
     }
    ]
   },
-  "doom-ascii": {
-   "schema_version": 1,
-   "id": "doom-ascii",
-   "kind": "game",
-   "title": "doom-ascii",
-   "description": "The 1993 first-person shooter's engine in your terminal, in full colour, with music and sound, playing Freedoom's two free games: fight through bases and hells with shotgun and chaingun.",
-   "year": 1993,
-   "old": true,
-   "license": "GPL-2.0-or-later AND BSD-3-Clause",
-   "repo": "theasciiverse/doom-ascii",
-   "provenance": "id Software released the source of its 1993 engine in 1997; Chocolate Doom and doomgeneric carried it on, and Wojciech Graj made doom-ascii, the engine in the terminal, from 2022. The Freedoom project has made free levels, monsters, sounds and music for it since 2001.",
-   "changes": "PATCHES.md",
-   "topics": [
-    "shooter",
-    "first-person",
-    "fps",
-    "freedoom",
-    "classic",
-    "music",
-    "gamepad"
-   ],
-   "genre": "action",
-   "developer": {
-    "name": "Wojciech Graj",
-    "url": "https://github.com/wojciech-graj/doom-ascii"
-   },
-   "upstream": {
-    "name": "Wojciech Graj",
-    "url": "https://github.com/wojciech-graj/doom-ascii"
-   },
-   "exec": {
-    "game": "doom-ascii"
-   },
-   "requires": {
-    "utf8": true,
-    "color": "truecolor",
-    "mouse": false,
-    "gamepad": true
-   },
-   "media": {
-    "cast": "asciiverse/doom-ascii.cast",
-    "thumbnail_at": 31.0
-   },
-   "release": {
-    "source": "github"
-   },
-   "page": "**THE ENGINE THAT DEFINED THE FIRST-PERSON SHOOTER, IN YOUR TERMINAL.**\n\nThe engine of the 1993 first-person shooter runs in your terminal: the real thing, with its doors, lifts, secrets and monsters, drawn in full colour two pixels to a character, and with its music and sound effects. It plays **Freedoom**, a complete free replacement for the original game's levels, monsters, sounds and music, so there is nothing else to buy or find.\n\nTwo games come with it:\n\n- **Freedoom: Phase 1**: four episodes in the style of the original\n- **Freedoom: Phase 2**: one long campaign of 32 levels, with the double-barrelled shotgun\n\nThe bigger your terminal window, the sharper the picture. It plays best in a terminal that reports key releases, such as Ghostty, kitty, WezTerm or foot: movement is then exact, and Ctrl, Shift and Alt work as fire, run and strafe.\n\n## Controls\n\n- **Arrow keys**: move and turn\n- **,** and **.**: strafe left and right\n- **Space**: fire; **E**: use doors and switches; **]**: run\n- **1** to **7**: weapons; **Tab**: map\n- **Esc**: menu, to load, save and quit\n- Gamepad, on Linux: left stick to move and strafe, right stick to turn,\n  **RT** fires, **LT** runs, **A** uses doors and switches, **LB** and\n  **RB** change weapons, **Back** shows the map, **Start** opens the menu;\n  in menus the d-pad or stick moves, **A** chooses and **B** goes back.\n  A game saved from the pad is named after its level\n\n## Options\n\n- `-iwad freedoom2.wad`: play Phase 2\n- `-skill 1` to `-skill 5`, `-warp E M` (or `-warp M` in Phase 2): start where you like\n- `-nosound`, `-nomusic`: play quietly\n- `-chars ascii`, `-chars block` or `-chars braille`: doom-ascii's own looks\n\nSettings and saved games are kept in `~/.local/share/doom-ascii`, where `.default.cfg` holds the key bindings.\n\n## History\n\nid Software released its engine's source in 1997. Chocolate Doom keeps it faithful to the original, doomgeneric made it easy to port, and doom-ascii brought it to the terminal. This edition adds the sound effects and the music, played through an emulated OPL synthesiser as a 1990s sound card would, exact key releases, gamepads, and the half-block picture.\n\n## Credits\n\n- doom-ascii: Wojciech Graj\n- Engine: id Software, Chocolate Doom (Simon Howard and contributors), doomgeneric (ozkl)\n- OPL3 emulation: Nuked OPL3, Alexey Khokholov\n- Freedoom: the Freedoom project\n- License: GPL-2.0-or-later (the engine), BSD-3-Clause (Freedoom)\n",
-   "version": "0.3.2-av.3",
-   "updated_at": "2026-11-01T14:56:50Z",
-   "thumbnail_at": 31.0,
-   "cast_url": "/casts/doom-ascii.cast?v=1793547234",
-   "duration": 35.7,
-   "platforms": {
-    "x86_64-unknown-linux-gnu": {
-     "url": "/dev-releases/doom-ascii/doom-ascii-x86_64-unknown-linux-gnu.tar.gz",
-     "sha256": "b3b1fe8bc4c661079f85865f9e47e1e1fa9d3c18a15eaf0f7f5c31ca8b4f1472",
-     "size": 21764740
-    }
-   },
-   "news": []
-  },
   "dopewars": {
    "schema_version": 1,
    "id": "dopewars",
@@ -4895,6 +4834,67 @@
      "url": "/dev-releases/ancient-games/fox-and-geese-x86_64-unknown-linux-gnu.tar.gz",
      "sha256": "e8a92e11a48e9e60b94f4ad0b406480863bd09a2a0fb8b289e69d785b0441796",
      "size": 833599
+    }
+   },
+   "news": []
+  },
+  "freedoom": {
+   "schema_version": 1,
+   "id": "freedoom",
+   "kind": "game",
+   "title": "Freedoom",
+   "description": "The 1993 first-person shooter's engine in your terminal, in full colour, with music and sound, playing Freedoom's two free games: fight through bases and hells with shotgun and chaingun.",
+   "year": 1993,
+   "old": true,
+   "license": "GPL-2.0-or-later AND BSD-3-Clause",
+   "repo": "theasciiverse/freedoom",
+   "provenance": "id Software released the source of its 1993 engine in 1997; Chocolate Doom and doomgeneric carried it on, and Wojciech Graj brought it to the terminal in 2022. The Freedoom project has made free levels, monsters, sounds and music for it since 2001.",
+   "changes": "PATCHES.md",
+   "topics": [
+    "shooter",
+    "first-person",
+    "fps",
+    "freedoom",
+    "classic",
+    "music",
+    "gamepad"
+   ],
+   "genre": "action",
+   "developer": {
+    "name": "The Freedoom project and Wojciech Graj",
+    "url": "https://freedoom.github.io"
+   },
+   "upstream": {
+    "name": "Wojciech Graj",
+    "url": "https://github.com/wojciech-graj/doom-ascii"
+   },
+   "exec": {
+    "game": "freedoom"
+   },
+   "requires": {
+    "utf8": true,
+    "color": "truecolor",
+    "mouse": false,
+    "gamepad": true
+   },
+   "media": {
+    "cast": "asciiverse/freedoom.cast",
+    "thumbnail_at": 31.0
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**THE ENGINE THAT DEFINED THE FIRST-PERSON SHOOTER, IN YOUR TERMINAL.**\n\nThe engine of the 1993 first-person shooter runs in your terminal: the real thing, with its doors, lifts, secrets and monsters, drawn in full colour two pixels to a character, and with its music and sound effects. It plays **Freedoom**, a complete free replacement for the original game's levels, monsters, sounds and music, so there is nothing else to buy or find.\n\nTwo games come with it:\n\n- **Freedoom: Phase 1**: four episodes in the style of the original\n- **Freedoom: Phase 2**: one long campaign of 32 levels, with the double-barrelled shotgun\n\nThe bigger your terminal window, the sharper the picture. It plays best in a terminal that reports key releases, such as Ghostty, kitty, WezTerm or foot: movement is then exact, and Ctrl, Shift and Alt work as fire, run and strafe.\n\n## Controls\n\n- **Arrow keys**: move and turn\n- **,** and **.**: strafe left and right\n- **Space**: fire; **E**: use doors and switches; **]**: run\n- **1** to **7**: weapons; **Tab**: map\n- **Esc**: menu, to load, save and quit\n- Gamepad, on Linux: left stick to move and strafe, right stick to turn,\n  **RT** fires, **LT** runs, **A** uses doors and switches, **LB** and\n  **RB** change weapons, **Back** shows the map, **Start** opens the menu;\n  in menus the d-pad or stick moves, **A** chooses and **B** goes back.\n  A game saved from the pad is named after its level\n\n## Options\n\n- `-iwad freedoom2.wad`: play Phase 2\n- `-skill 1` to `-skill 5`, `-warp E M` (or `-warp M` in Phase 2): start where you like\n- `-nosound`, `-nomusic`: play quietly\n- `-chars ascii`, `-chars block` or `-chars braille`: the engine's other looks\n\nSettings and saved games are kept in `~/.local/share/freedoom`, where `.default.cfg` holds the key bindings.\n\n## History\n\nid Software released its engine's source in 1997. Chocolate Doom keeps it faithful to the original, doomgeneric made it easy to port, and Wojciech Graj brought it to the terminal. This edition adds the sound effects and the music, played through an emulated OPL synthesiser as a 1990s sound card would, exact key releases, gamepads, and the half-block picture.\n\n## Credits\n\n- Engine: Wojciech Graj, after id Software, Chocolate Doom (Simon Howard and contributors) and doomgeneric (ozkl)\n- OPL3 emulation: Nuked OPL3, Alexey Khokholov\n- Freedoom: the Freedoom project\n- License: GPL-2.0-or-later (the engine), BSD-3-Clause (Freedoom)\n",
+   "version": "0.3.2-av.5",
+   "updated_at": "2026-11-01T20:00:00Z",
+   "thumbnail_at": 31.0,
+   "cast_url": "/casts/freedoom.cast?v=1793562601",
+   "duration": 35.7,
+   "platforms": {
+    "x86_64-unknown-linux-gnu": {
+     "url": "/dev-releases/freedoom/freedoom-x86_64-unknown-linux-gnu.tar.gz",
+     "sha256": "278eaca1c827bc0e86b237479a2bd201700d3f516eac654172acc654df9d7c8d",
+     "size": 21773434
     }
    },
    "news": []
