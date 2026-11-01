@@ -1,0 +1,51 @@
+schema_version = 1
+id = "rebels-in-the-sky"
+kind = "game"
+title = "Rebels in the Sky"
+description = "Space pirates playing basketball: gather a crew, fly your ship between planets, trade, explore, and challenge other crews, local or online, to matches you watch play out on the court."
+year = 2024
+license = "GPL-3.0-or-later"
+repo = "theasciiverse/rebels-in-the-sky"
+provenance = "Alessandro Ricottone started Rebels in the Sky in 2024, a terminal game written in Rust with Ratatui, with online play between players' own machines."
+changes = "PATCHES.md"
+topics = ["sports", "basketball", "space", "management", "multiplayer"]
+genre = "sports"
+
+[developer]
+name = "Alessandro Ricottone"
+url = "https://github.com/ricott1/rebels-in-the-sky"
+
+# v1.8.1, unchanged, with upstream's default features (internet radio
+# audio on); online play goes peer to peer over libp2p
+[upstream]
+name = "Alessandro Ricottone"
+url = "https://github.com/ricott1/rebels-in-the-sky"
+
+[exec]
+game = "rebels"
+
+# laid out for 160x48; it shrinks to smaller windows, but parts of panels
+# are cut off, among them the crew panel's Challenge button
+[min_terminal]
+cols = 160
+rows = 48
+
+# RGB colours and half blocks; mouse and keyboard. Linux builds use ALSA
+# for the radio
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = true
+system_deps = ["libasound2"]
+
+# 160x48 (the game's own layout), asciiverse/record-preview.py: offline
+# with a fixed seed, the title, a new crew, a challenge to another crew, the
+# galaxy map, then the match on the court; cropped to 100x30 from the
+# centre (RECORDING.md); the still is the match
+[media]
+cast = "asciiverse/rebels-in-the-sky.cast"
+thumbnail_at = 40.0
+crop = { follow = "centre" }
+
+[release]
+source = "github"
