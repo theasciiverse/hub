@@ -1,0 +1,48 @@
+schema_version = 1
+id = "froxcomposband"
+kind = "game"
+title = "FroxComposband"
+description = "The great kitchen-sink Angband variant: dozens of races and classes, monster races you can play as, a wilderness above the dungeons and a deep descent to Serpent, carried on with fixes and loads of polish."
+year = 2018
+license = "LicenseRef-Free-Noncommercial"
+repo = "theasciiverse/froxcomposband"
+provenance = "sulkasormi made FrogComposband in 2018 from PosChengband, itself grown from Hengband, Zangband and Angband; in 2026 Gliktch forked it as FroxComposband to keep it going."
+changes = "PATCHES.md"
+topics = ["roguelike", "angband", "dungeon", "fantasy", "turn-based"]
+genre = "roguelike"
+
+[developer]
+name = "Gliktch"
+url = "https://github.com/Gliktch/froxcomposband"
+
+# v7.3.2, the terminal (curses) version, unchanged; saves load from
+# FrogComposband
+[upstream]
+name = "Gliktch"
+url = "https://github.com/Gliktch/froxcomposband"
+
+# the start script runs it from the folder that holds lib/; saves, scores
+# and bones in ${XDG_DATA_HOME:-~/.local/share}/FroxComposband
+[exec]
+game = "froxcomposband"
+
+# main-gcu.c quits with "Angband needs an 80x24 'curses' screen"; bigger
+# terminals show more of the map
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, asciiverse/record-preview.py: a new character, the town and the
+# Weapon Smiths, down the stairs and a fight on the first level (a rock
+# lizard, a grey mold, an icky thing and a wild cat); the still is mid-fight
+[media]
+cast = "asciiverse/froxcomposband.cast"
+thumbnail_at = 35.0
+
+[release]
+source = "github"
