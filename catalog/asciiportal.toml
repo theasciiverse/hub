@@ -1,0 +1,48 @@
+schema_version = 1
+id = "asciiportal"
+kind = "game"
+title = "ASCIIpOrtal"
+description = "A puzzle platformer with a portal gun: shoot two linked portals onto walls to cross gaps, fling yourself and move boxes onto switches, through 25 levels and 14 more map packs."
+year = 2009
+license = "GPL-3.0-only"
+repo = "theasciiverse/asciiportal"
+provenance = "Joe Larson made ASCIIpOrtal at Cymon's Games in 2009, a 2D tribute to Valve's Portal with its own levels, and its players added many more map packs."
+changes = "PATCHES.md"
+topics = ["puzzle", "platformer", "portals", "physics", "fan-game"]
+genre = "puzzle"
+
+[developer]
+name = "Joe Larson (Cymon's Games)"
+url = "https://github.com/cymonsgames/ASCIIpOrtal"
+
+# master after v1.3-beta8 (0d7fb09), terminal build (-D__NOSDL__
+# -D__NOSOUND__); PATCHES.md in theasciiverse/asciiportal
+[upstream]
+name = "Cymon's Games"
+url = "https://github.com/cymonsgames/ASCIIpOrtal"
+
+# the start script runs lib/asciiportal, which reads lib/maps; saves and
+# custom map packs go to ~/.asciiportal
+[exec]
+game = "asciiportal"
+args = []
+
+# the title art and menus are drawn for 80x24; levels scroll around the
+# player at any size
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = true
+color = "basic"
+mouse = false
+
+# 100x30, asciiverse/record-preview.py: level 2, from the start through
+# the portals (fixed moves); thumbnail with both portals up
+[media]
+cast = "asciiverse/asciiportal.cast"
+thumbnail_at = 30.4
+
+[release]
+source = "github"
