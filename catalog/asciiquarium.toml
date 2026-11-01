@@ -1,0 +1,44 @@
+schema_version = 1
+id = "asciiquarium"
+kind = "art"
+title = "Asciiquarium"
+description = "An aquarium in your terminal: fish of every colour, bubbles, seaweed and a castle, visited now and then by sharks, whales, a sea monster, ships, ducks, a swan, dolphins and a fishhook."
+year = 2005
+license = "GPL-2.0-or-later"
+repo = "theasciiverse/asciiquarium"
+provenance = "Kirk Baucom wrote Asciiquarium in Perl in 2005, with most of the art by Joan Stark; it became one of the best-known terminal toys."
+changes = "PATCHES.md"
+topics = ["toy", "animation", "aquarium", "screensaver", "classic"]
+
+[developer]
+name = "Kirk Baucom (art: Joan Stark)"
+url = "https://robobunny.com/projects/asciiquarium"
+
+# C port of 1.1; the original Perl script is kept in the repo; PATCHES.md
+# in theasciiverse/asciiquarium lists the few differences
+[upstream]
+name = "Kirk Baucom"
+url = "https://robobunny.com/projects/asciiquarium"
+
+[exec]
+game = "asciiquarium"
+args = []
+
+# fills any size; the castle is 32x13 and the fish swim below row 9
+[min_terminal]
+cols = 40
+rows = 20
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, asciiverse/record-preview.py: 40 s of aquarium (best of three:
+# a fishhook, a shark eating a fish, the sea monster)
+[media]
+cast = "asciiverse/asciiquarium.cast"
+thumbnail_at = 8.5
+
+[release]
+source = "github"
