@@ -1,0 +1,46 @@
+schema_version = 1
+id = "typioca"
+kind = "game"
+title = "typioca"
+description = "A cozy typing speed test: race the clock or a word count, or type sentences from classic novels, then see your speed, accuracy and a chart of how you did."
+year = 2022
+license = "MIT"
+repo = "theasciiverse/typioca"
+provenance = "Lukas Bloznelis started typioca in Go in 2022, built on Bubble Tea, and contributors have added word lists and layouts since."
+changes = "PATCHES.md"
+topics = ["typing", "typing test", "wpm", "practice", "go"]
+genre = "typing"
+
+[developer]
+name = "Lukas Bloznelis and contributors"
+url = "https://github.com/bloznelis/typioca"
+
+# upstream's master after 3.1.0 (README commits only), built unchanged
+[upstream]
+name = "Lukas Bloznelis"
+url = "https://github.com/bloznelis/typioca"
+
+[exec]
+game = "typioca"
+
+# the menu and tests fit 50x14; the Config screen lists every word list
+# and wants about 30 rows, so 60x24 keeps it readable
+[min_terminal]
+cols = 60
+rows = 24
+
+# box-drawing characters in the results chart
+[requires]
+utf8 = true
+color = "basic"
+mouse = false
+
+# 100x30, asciiverse/record-preview.sh: a word count run (25 common words)
+# typed by asciiverse/drive.py, a few typos fixed, the results, back to
+# the menu; 34 s, the still is the results screen
+[media]
+cast = "asciiverse/typioca.cast"
+thumbnail_at = 28.0
+
+[release]
+source = "github"
