@@ -1,0 +1,46 @@
+schema_version = 1
+id = "phantasia"
+kind = "game"
+title = "Phantasia"
+description = "An old Unix fantasy role-playing game: make a character, roam an endless realm by its coordinates, fight what you meet, gather gold and gems, and climb the ranks towards king, valar and the Holy Grail."
+year = 1979
+old = true
+license = "LicenseRef-Public-Domain"
+repo = "theasciiverse/netbsd-games"
+collection = "bsdgames"
+provenance = "Edward Estes wrote Phantasia on an HP 2000 in 1978-79 and rewrote it in C for Unix, where it shipped with the BSD games; it was made for many players sharing one machine."
+changes = "PATCHES.md"
+topics = ["rpg", "fantasy", "classic", "turn-based", "curses"]
+genre = "rpg"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "Edward Estes (1979)"
+url = "https://github.com/NetBSD/src/tree/trunk/games/phantasia"
+
+[exec]
+game = "phantasia"
+
+# its screen is laid out for 80x24
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = false
+color = "none"
+mouse = false
+
+# 100x30, played by asciiverse/record/phantasia.py: a new Fighter named
+# Terminus wanders out, fights gnolls, a beetle, spiders, an idiot, a
+# cluricaun and a centipede and takes the gold (best of several takes); the
+# still is the spider fight
+[media]
+cast = "asciiverse/casts/phantasia.cast"
+thumbnail_at = 22.0
+
+[release]
+source = "github"
