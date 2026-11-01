@@ -1,0 +1,48 @@
+schema_version = 1
+id = "gearhead-2"
+kind = "game"
+title = "GearHead 2"
+description = "A roguelike mecha RPG: make a pilot, take jobs among the space colonies, buy and build giant robots, and follow a story the game writes for your character as you go."
+year = 2005
+license = "LGPL-2.1-or-later"
+repo = "theasciiverse/gearhead-2"
+provenance = "Joseph Hewitt made GearHead 2, the sequel to his GearHead: Arena, in Free Pascal; it was first released in 2005, and 0.701 came out in 2017."
+changes = "PATCHES.md"
+topics = ["mecha", "roguelike", "rpg", "procedural story", "space colonies", "classic"]
+genre = "roguelike"
+
+[developer]
+name = "Joseph Hewitt"
+url = "https://github.com/jwvhewitt/gearhead-2"
+
+# 0.701 plus upstream's later commits, ASCII version, with the settings
+# folder made in full on a first start; PATCHES.md in theasciiverse/gearhead-2
+[upstream]
+name = "Joseph Hewitt"
+url = "https://github.com/jwvhewitt/gearhead-2"
+
+# the start script changes into the folder with the game's data
+[exec]
+game = "gearhead2"
+
+# the ASCII screen is 80x24 (SCREENWIDTH, SCREENHEIGHT in gearhead2.cfg)
+[min_terminal]
+cols = 80
+rows = 24
+
+# plain ASCII in the basic colours, keyboard only
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, asciiverse/record-preview.sh: asciiverse/drive.py makes a
+# character in Basic mode, starts a campaign, explores the first building
+# and walks out into the town in a mecha; 46 s, the still is the mecha in
+# the town streets
+[media]
+cast = "asciiverse/gearhead-2.cast"
+thumbnail_at = 31.0
+
+[release]
+source = "github"
