@@ -2,7 +2,7 @@ schema_version = 1
 id = "cursed-platformer"
 kind = "game"
 title = "Cursed Pl@tformer"
-description = "Rescue the princess from the pharaoh Tutankhascii: jump, ride moving platforms, flip switches and dodge munchers, bats and spikes through ten levels down into his underground pyramid."
+description = "Rescue the princess from the pharaoh Tutankhascii: jump, ride moving platforms, flip switches and dodge munchers, bats and spikes down into his underground pyramid, then follow his map across the sea to a Maya jungle."
 year = 2019
 # GPL-3.0 code; Kevin MacLeod's "Midnight Tale" CC BY 3.0, sound effects
 # CC BY (freesound.org: jorickhoofd, javapimp) and CC0
@@ -10,7 +10,7 @@ license = "GPL-3.0-only"
 repo = "theasciiverse/cursed-platformer"
 provenance = "Samsai, Tuubi and Ysblokje made Cursed Pl@tformer in C with curses for the Linux Game Jam 2019, with levels that are plain text files."
 changes = "PATCHES.md"
-topics = ["platformer", "jam game", "egypt", "level editor", "music", "gamepad"]
+topics = ["platformer", "jam game", "egypt", "maya", "level editor", "music", "gamepad"]
 genre = "platformer"
 
 [developer]
