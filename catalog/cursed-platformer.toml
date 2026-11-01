@@ -1,0 +1,53 @@
+schema_version = 1
+id = "cursed-platformer"
+kind = "game"
+title = "Cursed Pl@tformer"
+description = "Rescue the princess from the pharaoh Tutankhascii: jump, ride moving platforms, flip switches and dodge munchers, bats and spikes through ten levels down into his underground pyramid."
+year = 2019
+# GPL-3.0 code; Kevin MacLeod's "Midnight Tale" CC BY 3.0, sound effects
+# CC BY (freesound.org: jorickhoofd, javapimp) and CC0
+license = "GPL-3.0-only"
+repo = "theasciiverse/cursed-platformer"
+provenance = "Samsai, Tuubi and Ysblokje made Cursed Pl@tformer in C with curses for the Linux Game Jam 2019, with levels that are plain text files."
+changes = "PATCHES.md"
+topics = ["platformer", "jam game", "egypt", "level editor", "music", "gamepad"]
+genre = "platformer"
+
+[developer]
+name = "Samsai, Tuubi and Ysblokje"
+url = "https://samsai.itch.io/cursed-platformer"
+
+# 1.5 (710a1b4, 2019-05-12), terminal version with SDL sound and gamepad;
+# PATCHES.md in theasciiverse/cursed-platformer
+[upstream]
+name = "Samsai"
+url = "https://gitlab.com/Samsai/linux-game-jam-2019-game"
+
+# the start script runs lib/cursed-platformer beside lib/data (levels and
+# sounds); progress goes to ~/.local/share/cursed-platformer
+[exec]
+game = "cursed-platformer"
+args = []
+
+# the game is drawn at 80x25, centred in a bigger terminal
+[min_terminal]
+cols = 80
+rows = 25
+
+# line-drawing message boxes (curses ACS), eight colours; sound through
+# SDL, which loads PipeWire, PulseAudio or ALSA and plays silently without
+# them; gamepads through SDL
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+gamepad = true
+
+# 100x30, asciiverse/record-preview.py: the title screen, then a bot walks
+# level 1 up to the climb to its switch; thumbnail on the title screen
+[media]
+cast = "asciiverse/cursed-platformer.cast"
+thumbnail_at = 2.0
+
+[release]
+source = "github"

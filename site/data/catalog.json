@@ -3670,6 +3670,70 @@
    },
    "news": []
   },
+  "cursed-platformer": {
+   "schema_version": 1,
+   "id": "cursed-platformer",
+   "kind": "game",
+   "title": "Cursed Pl@tformer",
+   "description": "Rescue the princess from the pharaoh Tutankhascii: jump, ride moving platforms, flip switches and dodge munchers, bats and spikes through ten levels down into his underground pyramid.",
+   "year": 2019,
+   "license": "GPL-3.0-only",
+   "repo": "theasciiverse/cursed-platformer",
+   "provenance": "Samsai, Tuubi and Ysblokje made Cursed Pl@tformer in C with curses for the Linux Game Jam 2019, with levels that are plain text files.",
+   "changes": "PATCHES.md",
+   "topics": [
+    "platformer",
+    "jam game",
+    "egypt",
+    "level editor",
+    "music",
+    "gamepad"
+   ],
+   "genre": "platformer",
+   "developer": {
+    "name": "Samsai, Tuubi and Ysblokje",
+    "url": "https://samsai.itch.io/cursed-platformer"
+   },
+   "upstream": {
+    "name": "Samsai",
+    "url": "https://gitlab.com/Samsai/linux-game-jam-2019-game"
+   },
+   "exec": {
+    "game": "cursed-platformer",
+    "args": []
+   },
+   "min_terminal": {
+    "cols": 80,
+    "rows": 25
+   },
+   "requires": {
+    "utf8": false,
+    "color": "basic",
+    "mouse": false,
+    "gamepad": true
+   },
+   "media": {
+    "cast": "asciiverse/cursed-platformer.cast",
+    "thumbnail_at": 2.0
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**THE PHARAOH HAS THE PRINCESS. YOU HAVE AN @.**\n\nThe evil pharaoh Tutankhascii has carried a princess off into his underground pyramid, and somebody has to go down after her. That somebody is you: one brave `@`, who enjoys jumping very much and will tell you so.\n\nCursed Pl@tformer is a classic side-on platformer drawn entirely in text. Run, jump three times your own height, climb, flip switches that open doors somewhere else, ride moving platforms across pits, and keep out of the way of munchers, bats and spikes on the way down.\n\n- **Ten levels**, from Muncher Meadows and the Railway to the Pit of Bats and the Pyramid of Tutankhascii\n- **Music and sound**: Kevin MacLeod's \"Midnight Tale\" and a jump with real spring in it\n- **Progress is saved** at every level exit; Continue picks up where you left off\n- **Make your own levels**: they are plain text files, a map and its colours\n\n## Controls\n\n- **Left** / **Right**: walk; **Space** or **Up**: jump\n- **R**: restart the level; **M**: music on or off; **C**: colours on or off; **Q**: quit\n- Gamepad: d-pad or left stick to walk, **A** or d-pad up to jump, **Y** restarts, **Back** quits\n\nHolding an arrow to walk works in a terminal with the kitty keyboard protocol, such as Ghostty, kitty, WezTerm or foot. In other terminals a tap starts walking and the next tap stops.\n\n## Credits\n\n- Cursed Pl@tformer: Samsai, Tuubi and Ysblokje, for the Linux Game Jam 2019\n- Music: \"Midnight Tale\" by Kevin MacLeod (incompetech.com), CC BY 3.0\n- Sound effects: freesound.org users jorickhoofd and javapimp (CC BY), and CC0 sounds\n- License: GPL-3.0-only\n",
+   "version": "1.5-av.1",
+   "updated_at": "2026-11-01T18:00:00Z",
+   "thumbnail_at": 2.0,
+   "cast_url": "/casts/cursed-platformer.cast?v=1793554686",
+   "duration": 20.2,
+   "platforms": {
+    "x86_64-unknown-linux-gnu": {
+     "url": "/dev-releases/cursed-platformer/cursed-platformer-x86_64-unknown-linux-gnu.tar.gz",
+     "sha256": "e8553c3c0eef9e3c33757e867c58ecfa84e7c8a30cb1c572056ca253a139e0fc",
+     "size": 4812238
+    }
+   },
+   "news": []
+  },
   "curses": {
    "schema_version": 1,
    "id": "curses",
@@ -4003,7 +4067,8 @@
     "fps",
     "freedoom",
     "classic",
-    "music"
+    "music",
+    "gamepad"
    ],
    "genre": "action",
    "developer": {
@@ -4020,7 +4085,8 @@
    "requires": {
     "utf8": true,
     "color": "truecolor",
-    "mouse": false
+    "mouse": false,
+    "gamepad": true
    },
    "media": {
     "cast": "asciiverse/doom-ascii.cast",
@@ -4029,7 +4095,7 @@
    "release": {
     "source": "github"
    },
-   "page": "**THE ENGINE THAT DEFINED THE FIRST-PERSON SHOOTER, IN YOUR TERMINAL.**\n\nThe engine of the 1993 first-person shooter runs in your terminal: the real thing, with its doors, lifts, secrets and monsters, drawn in full colour two pixels to a character, and with its music and sound effects. It plays **Freedoom**, a complete free replacement for the original game's levels, monsters, sounds and music, so there is nothing else to buy or find.\n\nTwo games come with it:\n\n- **Freedoom: Phase 1**: four episodes in the style of the original\n- **Freedoom: Phase 2**: one long campaign of 32 levels, with the double-barrelled shotgun\n\nThe bigger your terminal window, the sharper the picture. It plays best in a terminal that reports key releases, such as Ghostty, kitty, WezTerm or foot: movement is then exact, and Ctrl, Shift and Alt work as fire, run and strafe.\n\n## Controls\n\n- **Arrow keys**: move and turn\n- **,** and **.**: strafe left and right\n- **Space**: fire; **E**: use doors and switches; **]**: run\n- **1** to **7**: weapons; **Tab**: map\n- **Esc**: menu, to load, save and quit\n\n## Options\n\n- `-iwad freedoom2.wad`: play Phase 2\n- `-skill 1` to `-skill 5`, `-warp E M` (or `-warp M` in Phase 2): start where you like\n- `-nosound`, `-nomusic`: play quietly\n- `-chars ascii`, `-chars block` or `-chars braille`: doom-ascii's own looks\n\nSettings and saved games are kept in `~/.local/share/doom-ascii`, where `.default.cfg` holds the key bindings.\n\n## History\n\nid Software released its engine's source in 1997. Chocolate Doom keeps it faithful to the original, doomgeneric made it easy to port, and doom-ascii brought it to the terminal. This edition adds the sound effects and the music, played through an emulated OPL synthesiser as a 1990s sound card would, exact key releases, and the half-block picture.\n\n## Credits\n\n- doom-ascii: Wojciech Graj\n- Engine: id Software, Chocolate Doom (Simon Howard and contributors), doomgeneric (ozkl)\n- OPL3 emulation: Nuked OPL3, Alexey Khokholov\n- Freedoom: the Freedoom project\n- License: GPL-2.0-or-later (the engine), BSD-3-Clause (Freedoom)\n",
+   "page": "**THE ENGINE THAT DEFINED THE FIRST-PERSON SHOOTER, IN YOUR TERMINAL.**\n\nThe engine of the 1993 first-person shooter runs in your terminal: the real thing, with its doors, lifts, secrets and monsters, drawn in full colour two pixels to a character, and with its music and sound effects. It plays **Freedoom**, a complete free replacement for the original game's levels, monsters, sounds and music, so there is nothing else to buy or find.\n\nTwo games come with it:\n\n- **Freedoom: Phase 1**: four episodes in the style of the original\n- **Freedoom: Phase 2**: one long campaign of 32 levels, with the double-barrelled shotgun\n\nThe bigger your terminal window, the sharper the picture. It plays best in a terminal that reports key releases, such as Ghostty, kitty, WezTerm or foot: movement is then exact, and Ctrl, Shift and Alt work as fire, run and strafe.\n\n## Controls\n\n- **Arrow keys**: move and turn\n- **,** and **.**: strafe left and right\n- **Space**: fire; **E**: use doors and switches; **]**: run\n- **1** to **7**: weapons; **Tab**: map\n- **Esc**: menu, to load, save and quit\n- Gamepad, on Linux: left stick to move and strafe, right stick to turn,\n  **RT** fires, **LT** runs, **A** uses doors and switches, **LB** and\n  **RB** change weapons, **Back** shows the map, **Start** opens the menu;\n  in menus the d-pad or stick moves, **A** chooses and **B** goes back.\n  A game saved from the pad is named after its level\n\n## Options\n\n- `-iwad freedoom2.wad`: play Phase 2\n- `-skill 1` to `-skill 5`, `-warp E M` (or `-warp M` in Phase 2): start where you like\n- `-nosound`, `-nomusic`: play quietly\n- `-chars ascii`, `-chars block` or `-chars braille`: doom-ascii's own looks\n\nSettings and saved games are kept in `~/.local/share/doom-ascii`, where `.default.cfg` holds the key bindings.\n\n## History\n\nid Software released its engine's source in 1997. Chocolate Doom keeps it faithful to the original, doomgeneric made it easy to port, and doom-ascii brought it to the terminal. This edition adds the sound effects and the music, played through an emulated OPL synthesiser as a 1990s sound card would, exact key releases, gamepads, and the half-block picture.\n\n## Credits\n\n- doom-ascii: Wojciech Graj\n- Engine: id Software, Chocolate Doom (Simon Howard and contributors), doomgeneric (ozkl)\n- OPL3 emulation: Nuked OPL3, Alexey Khokholov\n- Freedoom: the Freedoom project\n- License: GPL-2.0-or-later (the engine), BSD-3-Clause (Freedoom)\n",
    "version": "0.3.2-av.3",
    "updated_at": "2026-11-01T14:56:50Z",
    "thumbnail_at": 31.0,
