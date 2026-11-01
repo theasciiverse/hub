@@ -1,0 +1,48 @@
+schema_version = 1
+id = "gearhead-arena"
+kind = "game"
+old = false
+title = "GearHead: Arena"
+description = "The first roguelike mecha RPG. Make a pilot, wander a world of random adventures, talk your way into jobs and fight on foot or in giant robots you build and repair yourself."
+year = 2002
+license = "LGPL-3.0-or-later"
+repo = "theasciiverse/gearhead-arena"
+provenance = "Joseph Hewitt released GearHead: Arena in Free Pascal in 2002 and kept developing it for years; it moved to GitHub, where contributors still send fixes."
+changes = "PATCHES.md"
+topics = ["mecha", "roguelike", "rpg", "science fiction", "random adventures", "pascal"]
+genre = "roguelike"
+
+[developer]
+name = "Joseph Hewitt and contributors"
+url = "https://github.com/jwvhewitt/gearhead-1"
+
+# upstream's master (1.310 and later fixes), ASCII version, with the
+# settings folder made with ForceDirectories; PATCHES.md in
+# theasciiverse/gearhead-arena
+[upstream]
+name = "Joseph Hewitt"
+url = "https://github.com/jwvhewitt/gearhead-1"
+
+# the start script changes into the folder with the game's data
+[exec]
+game = "gharena"
+
+# the classic 80x25 PC text screen
+[min_terminal]
+cols = 80
+rows = 25
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, asciiverse/record-preview.sh: a new campaign in Basic mode, the
+# backstory, a talk and a walk through the first town, played by
+# asciiverse/drive.py, 40 s; the still is the town map
+[media]
+cast = "asciiverse/gearhead-arena.cast"
+thumbnail_at = 25.0
+
+[release]
+source = "github"
