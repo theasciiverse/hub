@@ -1,0 +1,50 @@
+schema_version = 1
+id = "tetro-tui"
+kind = "game"
+title = "Tetro TUI"
+description = "A modern tetromino stacker for the terminal: seven game modes and two to unlock, every handling timing, ten palettes, fireworks on every line, and replays of your best runs."
+year = 2024
+license = "MIT"
+repo = "theasciiverse/tetro-tui"
+provenance = "Strophox started Tetro TUI in June 2024 as a terminal stacker that could be tuned like the modern competitive ones, on a game engine of their own, falling-tetromino-engine."
+changes = "PATCHES.md"
+topics = ["tetromino", "falling blocks", "puzzle", "replays", "rust"]
+genre = "puzzle"
+
+[developer]
+name = "Strophox"
+url = "https://github.com/Strophox/tetro-tui"
+
+# packaged by Asciiverse, the game unchanged; PATCHES.md in
+# theasciiverse/tetro-tui
+[upstream]
+name = "Strophox"
+url = "https://github.com/Strophox/tetro-tui"
+
+# settings, scores, stats and replays in one save file,
+# ~/.config/.tetro-tui_v3.6_savefile.ron (what it keeps is set in Advanced
+# Settings)
+[exec]
+game = "tetro-tui"
+args = []
+
+# the whole game fits at 60x22; only the "lines remain" note beside the
+# well is cut off at that width (it shows in full from about 76 columns)
+[min_terminal]
+cols = 60
+rows = 22
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = false
+
+# 100x30, asciiverse/record-preview.py: a Regular game played by a driver
+# that reads the screen, about 17 lines in 50 s with confetti clears; the
+# still is mid-game
+[media]
+cast = "asciiverse/tetro-tui.cast"
+thumbnail_at = 30.0
+
+[release]
+source = "github"

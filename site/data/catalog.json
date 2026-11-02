@@ -13381,6 +13381,68 @@
     }
    ]
   },
+  "tetro-tui": {
+   "schema_version": 1,
+   "id": "tetro-tui",
+   "kind": "game",
+   "title": "Tetro TUI",
+   "description": "A modern tetromino stacker for the terminal: seven game modes and two to unlock, every handling timing, ten palettes, fireworks on every line, and replays of your best runs.",
+   "year": 2024,
+   "license": "MIT",
+   "repo": "theasciiverse/tetro-tui",
+   "provenance": "Strophox started Tetro TUI in June 2024 as a terminal stacker that could be tuned like the modern competitive ones, on a game engine of their own, falling-tetromino-engine.",
+   "changes": "PATCHES.md",
+   "topics": [
+    "tetromino",
+    "falling blocks",
+    "puzzle",
+    "replays",
+    "rust"
+   ],
+   "genre": "puzzle",
+   "developer": {
+    "name": "Strophox",
+    "url": "https://github.com/Strophox/tetro-tui"
+   },
+   "upstream": {
+    "name": "Strophox",
+    "url": "https://github.com/Strophox/tetro-tui"
+   },
+   "exec": {
+    "game": "tetro-tui",
+    "args": []
+   },
+   "min_terminal": {
+    "cols": 60,
+    "rows": 22
+   },
+   "requires": {
+    "utf8": true,
+    "color": "truecolor",
+    "mouse": false
+   },
+   "media": {
+    "cast": "asciiverse/tetro-tui.cast",
+    "thumbnail_at": 30.0
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**FOUR SQUARES. SEVEN SHAPES. AS MANY SETTINGS AS YOU LIKE.**\n\nPieces fall, you turn them and slot them in, full lines clear. The idea\nis old; this is the modern way to play it, in your terminal, with the\nhandling a serious stacker expects: hold, previews, hard drops, and every\ntiming (DAS, ARR, soft drop, line clear and spawn delays) yours to set.\n\n- **Seven modes and two to unlock**: Regular (160 lines as gravity\n  climbs), Swift (40 lines against the clock), Puzzle (24 hand-made\n  boards), Cheese, Survival, Combo and Custom; finish Regular for Classic\n  and Master.\n- **Your rules**: four rotation systems, piece randomizers from pure\n  chance to bags, preview count, keys of your own.\n- **Your look**: Unicode, ASCII, Braille or Elektronika 60 tiles, ten tile\n  palettes, and line clears that burn, pop, sparkle or rain confetti.\n- **Scores, replays and all-time stats**, kept in one save file.\n\n**STACK CLEAN.**\n\n## Controls\n\n- **Left** / **Right**: move; **A** / **D**: rotate left / right\n- **Down**: soft drop; **Up**: hard drop; **Space**: hold\n- **Esc**: pause; **?**: every key, at any time\n- Menus: arrows and **Enter**, or Vim keys\n\nKeys, handling and graphics are all in Settings.\n\n## Options\n\n- `--seed N`: the piece sequence for a custom game\n- `--board \"...\"`: a starting board for a custom game\n\n## Credits\n\n- Tetro TUI: [Strophox](https://github.com/Strophox/tetro-tui)\n- License: MIT\n",
+   "version": "3.6.2-av.1",
+   "updated_at": "2026-11-02T20:30:00Z",
+   "thumbnail_at": 30.0,
+   "cast_url": "/casts/tetro-tui.cast?v=1793647080",
+   "duration": 55.1,
+   "platforms": {
+    "x86_64-unknown-linux-musl": {
+     "url": "/dev-releases/tetro-tui/tetro-tui-x86_64-unknown-linux-musl.tar.gz",
+     "sha256": "c0a240a9294456cf6dc5115c38792efe35644117a5ee2f5667c4844bd98dfd64",
+     "size": 1403600
+    }
+   },
+   "news": []
+  },
   "tintin": {
    "schema_version": 1,
    "id": "tintin",
