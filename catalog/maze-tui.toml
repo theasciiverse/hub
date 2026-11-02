@@ -39,10 +39,11 @@ color = "truecolor"
 mouse = false
 
 # 100x30 (hub's tools/castrec.py): the home screen, then -b prim -s
-# bfs-hunt sped up with >; Prim's builder, then four BFS threads hunting
+# bfs-hunt sped up with >, then -b kruskal -s distance -w round; still
+# stretches cut to 0.8 s (asciiverse/cast-squeeze.py), 24 s
 [media]
 cast = "asciiverse/maze-tui.cast"
-thumbnail_at = 11.5
+thumbnail_at = 21.0
 
 [release]
 source = "github"
