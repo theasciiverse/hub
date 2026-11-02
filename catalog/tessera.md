@@ -14,6 +14,10 @@ land, so you always know what the next jump does. Start in the top left
 corner of the first slice; the pink `◆` waits in the far corner of the
 last.
 
+And when you are lost, turn the maze. Any two of its four directions can
+be the slices, so every maze can be seen six ways, and a way that winds
+through slice after slice in one view may run straight in another.
+
 - **Campaign**: twelve mazes, the same for everyone, from two slices side
   by side to twelve slices of five by five; each one opens the next
 - **Fog**: two campaign mazes, and any endless one you like, show only
@@ -31,10 +35,11 @@ last.
 - **J** and **L**: step to the slice on the left or right
 - **I** and **K**: step to the slice above or below
   (**Shift** with the arrows works too)
+- **V** or **Tab**: turn the maze to its next view
 - **H**: hint (+10 s); **P**: pause; **R**: start the maze over;
   **Esc**: back
 - **Gamepad**: left stick or d-pad walk, right stick or the face buttons
-  step between slices, LB hints, Start pauses
+  step between slices, the triggers turn the maze, LB hints, Start pauses
 
 The largest mazes need a terminal of about 95×39; the game asks for more
 room when a maze does not fit.
@@ -44,7 +49,7 @@ room when a maze does not fit.
 - `--daily`: straight into today's maze
 - `--level N`: campaign maze N
 - `--endless small`, `medium`, `large` or `huge`, with `--fog` for fog
-- `--watch`: watch the way through being walked
+- `--watch`: watch the way through being walked, the maze turning as it goes
 
 ## Credits
 

@@ -34,7 +34,8 @@ gamepad = true
 system_deps = ["libudev1"]
 
 # 100x30, hub/tools/castrec.py: the title, then Watch (--seed 7), the way
-# through walked on 5x5x3x2 mazes; the still is mid-walk
+# through walked on 4x4x3x2 mazes, each turned to two other views on the
+# way; the still is mid-walk
 [media]
 cast = "asciiverse/tessera.cast"
 thumbnail_at = 12.0

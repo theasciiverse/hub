@@ -13679,27 +13679,27 @@
    "release": {
     "source": "github"
    },
-   "page": "**FOUR DIMENSIONS. ONE WAY THROUGH.**\n\nA maze with two more directions than you are used to. Tessera lays it\nout as slices: every box on screen is one flat maze, the boxes beside it\nare its neighbours in the third dimension, and the boxes above and below\nare its neighbours in the fourth. Walk inside a slice, and where a cell\nsays so, step straight through into the slice beside it, or above, or\nbelow, landing in the same spot.\n\nThe marks tell you where: cyan `◂ ▸ ↔` for a way through to the slices\nleft and right, amber `▴ ▾ ↕` for the slices above and below. Your place\nshows faintly in every slice and lights up where a step through would\nland, so you always know what the next jump does. Start in the top left\ncorner of the first slice; the pink `◆` waits in the far corner of the\nlast.\n\n- **Campaign**: twelve mazes, the same for everyone, from two slices side\n  by side to twelve slices of five by five; each one opens the next\n- **Fog**: two campaign mazes, and any endless one you like, show only\n  what you have already walked past\n- **Daily maze**: one new maze a day, the same for every player\n- **Endless**: a fresh maze every time, in four sizes\n- **Hints** when you are stuck, at ten seconds each, and your best time\n  for every maze\n\n**STEP THROUGH.**\n\n## Controls\n\n- **Arrows** or **WASD**: walk inside a slice\n- **J** and **L**: step to the slice on the left or right\n- **I** and **K**: step to the slice above or below\n  (**Shift** with the arrows works too)\n- **H**: hint (+10 s); **P**: pause; **R**: start the maze over;\n  **Esc**: back\n- **Gamepad**: left stick or d-pad walk, right stick or the face buttons\n  step between slices, LB hints, Start pauses\n\nThe largest mazes need a terminal of about 95×39; the game asks for more\nroom when a maze does not fit.\n\n## Options\n\n- `--daily`: straight into today's maze\n- `--level N`: campaign maze N\n- `--endless small`, `medium`, `large` or `huge`, with `--fog` for fog\n- `--watch`: watch the way through being walked\n\n## Credits\n\n- Tessera: Asciiverse\n- After bleuje's 4D maze\n- License: MIT\n",
+   "page": "**FOUR DIMENSIONS. ONE WAY THROUGH.**\n\nA maze with two more directions than you are used to. Tessera lays it\nout as slices: every box on screen is one flat maze, the boxes beside it\nare its neighbours in the third dimension, and the boxes above and below\nare its neighbours in the fourth. Walk inside a slice, and where a cell\nsays so, step straight through into the slice beside it, or above, or\nbelow, landing in the same spot.\n\nThe marks tell you where: cyan `◂ ▸ ↔` for a way through to the slices\nleft and right, amber `▴ ▾ ↕` for the slices above and below. Your place\nshows faintly in every slice and lights up where a step through would\nland, so you always know what the next jump does. Start in the top left\ncorner of the first slice; the pink `◆` waits in the far corner of the\nlast.\n\nAnd when you are lost, turn the maze. Any two of its four directions can\nbe the slices, so every maze can be seen six ways, and a way that winds\nthrough slice after slice in one view may run straight in another.\n\n- **Campaign**: twelve mazes, the same for everyone, from two slices side\n  by side to twelve slices of five by five; each one opens the next\n- **Fog**: two campaign mazes, and any endless one you like, show only\n  what you have already walked past\n- **Daily maze**: one new maze a day, the same for every player\n- **Endless**: a fresh maze every time, in four sizes\n- **Hints** when you are stuck, at ten seconds each, and your best time\n  for every maze\n\n**STEP THROUGH.**\n\n## Controls\n\n- **Arrows** or **WASD**: walk inside a slice\n- **J** and **L**: step to the slice on the left or right\n- **I** and **K**: step to the slice above or below\n  (**Shift** with the arrows works too)\n- **V** or **Tab**: turn the maze to its next view\n- **H**: hint (+10 s); **P**: pause; **R**: start the maze over;\n  **Esc**: back\n- **Gamepad**: left stick or d-pad walk, right stick or the face buttons\n  step between slices, the triggers turn the maze, LB hints, Start pauses\n\nThe largest mazes need a terminal of about 95×39; the game asks for more\nroom when a maze does not fit.\n\n## Options\n\n- `--daily`: straight into today's maze\n- `--level N`: campaign maze N\n- `--endless small`, `medium`, `large` or `huge`, with `--fog` for fog\n- `--watch`: watch the way through being walked, the maze turning as it goes\n\n## Credits\n\n- Tessera: Asciiverse\n- After bleuje's 4D maze\n- License: MIT\n",
    "system_deps": [
     "libudev1"
    ],
-   "version": "0.1.0",
+   "version": "0.2.0",
    "updated_at": "2026-10-10T00:00:00Z",
    "thumbnail_at": 12.0,
-   "cast_url": "/casts/tessera.cast?v=1793657079",
+   "cast_url": "/casts/tessera.cast?v=1793657754",
    "duration": 43.7,
    "platforms": {
     "x86_64-unknown-linux-gnu": {
      "url": "/dev-releases/tessera-x86_64-unknown-linux-gnu.tar.gz",
-     "sha256": "14bbb0c20a676c5a8b13637bf89c60ee252547f1a21edf6a9c8d3164fad81669",
-     "size": 7021064
+     "sha256": "0b707dfd43c10d264f3fa5ab51078ce1833cf8019cf688d04e59c546a1edbf06",
+     "size": 7034576
     }
    },
    "news": [
     {
-     "version": "0.1.0",
+     "version": "0.2.0",
      "date": "2026-11-02",
-     "notes": "- Four-dimensional mazes grown as a weighted growing tree (passages inside\n  a slice three times as likely as between slices), the longest way of 48\n  variants of the seed, so every maze is a walk\n- Slices drawn as box-drawing mazes, z side by side and w stacked; marks in\n  every cell for the ways through to other slices; your place shown in\n  every slice, lit where a step through would land\n- Campaign of twelve fixed mazes, each opening the next, two in fog;\n  a daily maze from the date; endless in four sizes, fog optional\n- Hints (the next four steps, +10 s), pause, restart, best times saved\n- Watch mode: the way through walked by the computer\n- Keyboard and gamepads; session logging"
+     "notes": "- Turn the maze (V or Tab, the gamepad's triggers): any two of the four\n  axes can be the slices and the other two lay them out, six views of the\n  same maze; walking follows the screen, the status line names the view,\n  and only views that fit the terminal come up\n- Watch mode walks 4×4×3×2 mazes and turns them a third and two thirds\n  of the way through"
     }
    ]
   },
