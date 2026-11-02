@@ -14397,6 +14397,68 @@
    },
    "news": []
   },
+  "xaos": {
+   "schema_version": 1,
+   "id": "xaos",
+   "kind": "art",
+   "title": "XaoS",
+   "description": "Fly into the Mandelbrot set in real time, drawn in ASCII art: hold a button to zoom smoothly towards any point, watch Julia sets change under the pointer, cycle the colours or let the autopilot find the way.",
+   "year": 1996,
+   "license": "GPL-3.0-or-later",
+   "repo": "theasciiverse/xaos",
+   "provenance": "Jan Hubicka and Thomas Marsh wrote XaoS in 1996, a fractal zoomer fast enough to fly through the set instead of waiting for each picture; Jan Hubicka's AAlib let it draw in plain text. The XaoS project has carried it on since.",
+   "changes": "PATCHES.md",
+   "topics": [
+    "fractal",
+    "mandelbrot",
+    "julia",
+    "math",
+    "explorer",
+    "ascii art",
+    "classic"
+   ],
+   "developer": {
+    "name": "Jan Hubicka, Thomas Marsh and the XaoS project",
+    "url": "https://xaos-project.github.io"
+   },
+   "upstream": {
+    "name": "The XaoS project",
+    "url": "https://github.com/xaos-project/XaoS"
+   },
+   "exec": {
+    "game": "xaos"
+   },
+   "min_terminal": {
+    "cols": 60,
+    "rows": 20
+   },
+   "requires": {
+    "utf8": false,
+    "color": "basic",
+    "mouse": true
+   },
+   "media": {
+    "cast": "asciiverse/xaos.cast",
+    "thumbnail_at": 20.5
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**THE FRACTAL ZOOMER. IN YOUR TERMINAL.**\n\nHold the mouse button and fly into the Mandelbrot set, smoothly and\nwithout stopping, as fast as you dare. XaoS reuses the points it worked\nout for the frames before, so the zoom never waits for a picture to be\ndrawn. Here it all comes out as ASCII art, each character standing for\nfour points of the picture.\n\nTwenty-nine kinds of fractal, from the Mandelbrot set and its higher\npowers to Newton, Barnsley, Phoenix, Magnet and the Sierpinski carpet,\nwith their Julia sets, plus a formula of your own. Watch a Julia set\nchange as you move the pointer, swap the colouring, run the colour\ncycling, put on filters, or hand the controls to the autopilot and watch\nit hunt for the interesting edges.\nThe built-in tutorials explain fractals as they play.\n\n**Pick a spot on the edge. Hold the button.**\n\n## Controls\n\n- **Left mouse button**: hold to zoom in towards the pointer; drag to steer\n- **Right mouse button**: hold to zoom out\n- **Middle button** (or both): drag to move\n- **Arrow keys**: up and down for zoom speed, left and right for detail\n- **a**: autopilot\n- **m**: from the Mandelbrot set to the Julia set under the pointer, and back\n- **j**: fast Julia mode, a small Julia set for the point under the pointer\n- **1** to **0**: fractal types\n- **c** and **f**: outside and inside colouring; **p**: a random palette;\n  **y**: colour cycling\n- **e**: filters; **u**: undo\n- **Enter**, or the pointer on the top row: the menu bar; **h**: help, with\n  every key and menu explained\n- **q**: quit\n\nThe Help menu's tutorials start with an introduction to fractals; try it\nfirst.\n\n## Credits\n\n- XaoS: Jan Hubicka and Thomas Marsh, with Zoltan Kovacs, J.B. Langston\n  and the [XaoS project](https://xaos-project.github.io) (CREDITS.md\n  names everyone)\n- AAlib: Jan Hubicka, Kamil Toman and others\n- Asciiverse edition: dragging steers the zoom, the arrow keys, q and the\n  full built-in help work in the terminal again\n- License: GPL-3.0-or-later\n",
+   "version": "3.7-av.1",
+   "updated_at": "2026-11-02T13:50:45Z",
+   "thumbnail_at": 20.5,
+   "cast_url": "/casts/xaos.cast?v=1793627349",
+   "duration": 26.2,
+   "platforms": {
+    "x86_64-unknown-linux-musl": {
+     "url": "/dev-releases/xaos/xaos-x86_64-unknown-linux-musl.tar.gz",
+     "sha256": "919ca0632fc5a9612c82579b1b14dc981475df1c8a6b27e223aef86ef04e9208",
+     "size": 799599
+    }
+   },
+   "news": []
+  },
   "xnethack": {
    "schema_version": 1,
    "id": "xnethack",

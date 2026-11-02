@@ -1,0 +1,55 @@
+schema_version = 1
+id = "xaos"
+kind = "art"
+title = "XaoS"
+description = "Fly into the Mandelbrot set in real time, drawn in ASCII art: hold a button to zoom smoothly towards any point, watch Julia sets change under the pointer, cycle the colours or let the autopilot find the way."
+year = 1996
+# XaoS GPL-2.0-or-later, AAlib LGPL-2.0-or-later, GSL GPL-3.0-or-later:
+# the binary, which links all three, is GPL-3.0-or-later
+license = "GPL-3.0-or-later"
+repo = "theasciiverse/xaos"
+provenance = "Jan Hubicka and Thomas Marsh wrote XaoS in 1996, a fractal zoomer fast enough to fly through the set instead of waiting for each picture; Jan Hubicka's AAlib let it draw in plain text. The XaoS project has carried it on since."
+changes = "PATCHES.md"
+topics = ["fractal", "mandelbrot", "julia", "math", "explorer", "ascii art", "classic"]
+
+[developer]
+name = "Jan Hubicka, Thomas Marsh and the XaoS project"
+url = "https://xaos-project.github.io"
+
+# release-3.7 (1709b93, 2019-05-11), the last release with the AAlib text
+# driver (XaoS 4 is Qt only), with AAlib 1.4rc5 and Debian's patches in
+# aalib/; PATCHES.md in theasciiverse/xaos
+[upstream]
+name = "The XaoS project"
+url = "https://github.com/xaos-project/XaoS"
+
+# the start script runs lib/xaos by its full path, so it finds help/,
+# tutorial/, catalogs/ and examples/ beside it; files it saves go to the
+# folder it was started in
+[exec]
+game = "xaos"
+
+# AAlib draws two picture rows per text row and fits the terminal; below
+# about 60x20 the menus and help no longer fit
+[min_terminal]
+cols = 60
+rows = 20
+
+# plain ASCII, white on black with bold; the mouse zooms (left in, right
+# out, middle moves), and the arrows, a (autopilot) and the menu bar
+# (Enter) work from the keyboard
+[requires]
+utf8 = false
+color = "basic"
+mouse = true
+
+# 100x30, asciiverse/record-preview.py: XaoS plays asciiverse/preview.xaf,
+# the whole set, a dive into Elephant Valley and back, a Julia set
+# morphing into Douady's rabbit, colour cycling; about 26 s at 25 fps.
+# The still is the Julia set mid-morph
+[media]
+cast = "asciiverse/xaos.cast"
+thumbnail_at = 20.5
+
+[release]
+source = "github"
