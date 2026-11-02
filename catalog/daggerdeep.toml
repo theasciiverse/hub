@@ -1,0 +1,44 @@
+schema_version = 1
+id = "daggerdeep"
+kind = "game"
+title = "Dagger Deep"
+description = "Ten levels down to the undying Lich: a fast, bump-to-fight roguelike for one player, or two in co-op on a local network."
+year = 2026
+new = true
+license = "GPL-1.0-or-later"
+repo = "theasciiverse/daggerdeep"
+provenance = "Chad Lung wrote Dagger Deep, Return to Dagger Deep on its title screen, in Rust and Ratatui in 2026."
+changes = "PATCHES.md"
+topics = ["roguelike", "dungeon", "co-op", "multiplayer", "rust"]
+genre = "roguelike"
+
+[developer]
+name = "Chad Lung"
+url = "https://github.com/chadlung/daggerdeep"
+
+# packaged by Asciiverse with session logging; PATCHES.md in
+# theasciiverse/daggerdeep
+[upstream]
+name = "Chad Lung"
+url = "https://github.com/chadlung/daggerdeep"
+
+[exec]
+game = "daggerdeep"
+args = []
+
+# src/main.rs check_terminal_size: refuses to start below 100x30
+[min_terminal]
+cols = 100
+rows = 30
+
+[requires]
+utf8 = true
+color = "basic"
+mouse = false
+
+[media]
+cast = "asciiverse/daggerdeep.cast"
+thumbnail_at = 24.0
+
+[release]
+source = "github"

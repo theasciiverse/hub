@@ -3922,6 +3922,69 @@
    },
    "news": []
   },
+  "daggerdeep": {
+   "schema_version": 1,
+   "id": "daggerdeep",
+   "kind": "game",
+   "title": "Dagger Deep",
+   "description": "Ten levels down to the undying Lich: a fast, bump-to-fight roguelike for one player, or two in co-op on a local network.",
+   "year": 2026,
+   "new": true,
+   "license": "GPL-1.0-or-later",
+   "repo": "theasciiverse/daggerdeep",
+   "provenance": "Chad Lung wrote Dagger Deep, Return to Dagger Deep on its title screen, in Rust and Ratatui in 2026.",
+   "changes": "PATCHES.md",
+   "topics": [
+    "roguelike",
+    "dungeon",
+    "co-op",
+    "multiplayer",
+    "rust"
+   ],
+   "genre": "roguelike",
+   "developer": {
+    "name": "Chad Lung",
+    "url": "https://github.com/chadlung/daggerdeep"
+   },
+   "upstream": {
+    "name": "Chad Lung",
+    "url": "https://github.com/chadlung/daggerdeep"
+   },
+   "exec": {
+    "game": "daggerdeep",
+    "args": []
+   },
+   "min_terminal": {
+    "cols": 100,
+    "rows": 30
+   },
+   "requires": {
+    "utf8": true,
+    "color": "basic",
+    "mouse": false
+   },
+   "media": {
+    "cast": "asciiverse/daggerdeep.cast",
+    "thumbnail_at": 24.0
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**THE LICH IS WAITING AT THE BOTTOM.**\n\nTen levels of rooms and corridors lie between you and the undying Lich, and every one is deeper and meaner than the last. Walk into a monster to fight it. Every blow is a roll of the die, every kill makes you a little tougher for good, and your hit points never reset between floors, so whatever you carry down is all you have.\n\nGoblins, Mages and Rats crowd the first floors. Skeletons guard the last room of the middle levels, Worms soak up blow after blow further down, and from level seven every hit lands harder. On the ninth and tenth the Lich itself may rise: it hits for up to twelve, and when it's nearly beaten it vanishes and turns up somewhere else.\n\n- **Potions** restore you to full the moment you step on one.\n- **Chests** hold food that heals the whole party, a trap, or nothing at all. Do you risk it?\n- **The stairs** only appear once every monster on the floor is dead.\n- **Two players in co-op** on a local network: one hosts, the other joins by address, and you fight through the same dungeon together. Monsters get tougher to match, and each of you gets two respawns.\n\nReach the stairs on level ten to win. **HOW DEEP CAN YOU GO?**\n\n## Controls\n\n- **Arrow keys**: move; walk into a monster to attack it\n- **Esc**: quit, then **Y** or **Enter** to confirm and **N** or **Esc** to keep playing\n- **Main menu**: **S** single player, **H** host a co-op game, **J** join one, **Q** quit\n\n## Co-op\n\nBoth players on the same local network. The host chooses **Host** and waits for the other player on **TCP port 4444**; the other player chooses **Join** and types in the host's address.\n\n## Credits\n\n- Game: Chad Lung\n- Packaged for Asciiverse; licence GPL\n",
+   "version": "1.1.0",
+   "updated_at": "2026-10-10T00:00:00Z",
+   "thumbnail_at": 24.0,
+   "cast_url": "/casts/daggerdeep.cast?v=1793645914",
+   "duration": 35.5,
+   "platforms": {
+    "x86_64-unknown-linux-gnu": {
+     "url": "/dev-releases/daggerdeep-x86_64-unknown-linux-gnu.tar.gz",
+     "sha256": "931b45e1142333538176b9715fbe2c8b6e7e9f665d8492854bdfe7c9f78811b4",
+     "size": 1092913
+    }
+   },
+   "news": []
+  },
   "darrt": {
    "schema_version": 1,
    "id": "darrt",
