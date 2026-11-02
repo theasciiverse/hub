@@ -1,0 +1,49 @@
+schema_version = 1
+id = "pokete"
+kind = "game"
+title = "Pokete"
+description = "Leave home with one little Pokete and become the best trainer around: catch, train and evolve nearly sixty creatures across towns, caves and forests, and battle every trainer you meet. A whole monster-catching adventure in your terminal."
+year = 2021
+license = "GPL-3.0-only"
+repo = "theasciiverse/pokete"
+provenance = "lxgr-linux started Pokete in 2021, a monster-catching role-playing game for the terminal in the style of Game Freak's classics, written in Python with contributions from many others."
+changes = "PATCHES.md"
+topics = ["rpg", "monster-catching", "adventure", "python"]
+genre = "rpg"
+
+[developer]
+name = "lxgr-linux and contributors"
+url = "https://github.com/lxgr-linux/pokete"
+
+# packaged by Asciiverse with Python and the audio library bundled, and two
+# fixes; PATCHES.md in theasciiverse/pokete
+[upstream]
+name = "lxgr-linux"
+url = "https://github.com/lxgr-linux/pokete"
+
+[exec]
+game = "pokete"
+args = []
+
+# src/pokete/base/tss.py: it asks for a bigger window below 70x20
+[min_terminal]
+cols = 70
+rows = 20
+
+# 256 colours (base/color.py); keyboard only
+[requires]
+utf8 = true
+color = "256"
+mouse = false
+
+# Linux: oto plays sound through ALSA
+system_deps = ["libasound2"]
+
+# 100x30, asciiverse/record-preview.sh: a trainer in Nice Town walks into
+# the tall grass and fights a wild Vogli; at 24 s, mid-battle
+[media]
+cast = "asciiverse/pokete.cast"
+thumbnail_at = 24.0
+
+[release]
+source = "github"
