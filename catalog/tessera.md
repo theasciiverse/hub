@@ -45,8 +45,9 @@ through slice after slice in one view may run straight in another.
 - **Gamepad**: left stick or d-pad walk, right stick or the face buttons
   step between slices, the triggers turn the maze, LB hints, Start pauses
 
-The largest mazes need a terminal of about 95×39; the game asks for more
-room when a maze does not fit.
+The first six campaign mazes play in 80×24, turned to a view that fits
+when they need it; the largest mazes want about 95×39, and the game asks
+for more room when a maze does not fit.
 
 ## Options
 

@@ -19,8 +19,9 @@ url = "https://asciiverse.sh"
 game = "tessera"
 args = []
 
-# the menus, the first campaign mazes and small endless ones; bigger mazes
-# ask for more (src/render.rs needed()): the daily 71x39, the largest 95x39
+# the menus, the first six campaign mazes (turned to a view that fits where
+# needed) and small endless ones; bigger mazes ask for more (src/render.rs
+# needed()): the daily 71x39, the largest 95x39
 [min_terminal]
 cols = 80
 rows = 24

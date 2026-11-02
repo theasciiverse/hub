@@ -13679,12 +13679,12 @@
    "release": {
     "source": "github"
    },
-   "page": "**FOUR DIMENSIONS. ONE WAY THROUGH.**\n\nA maze with two more directions than you are used to. Tessera lays it\nout as slices: every box on screen is one flat maze, the boxes beside it\nare its neighbours in the third dimension, and the boxes above and below\nare its neighbours in the fourth. Walk inside a slice, and where a cell\nsays so, step straight through into the slice beside it, or above, or\nbelow, landing in the same spot.\n\nThe marks tell you where: cyan `◂ ▸ ↔` for a way through to the slices\nleft and right, amber `▴ ▾ ↕` for the slices above and below. Your place\nshows faintly in every slice and lights up where a step through would\nland, so you always know what the next jump does. Start in the top left\ncorner of the first slice; the pink `◆` waits in the far corner of the\nlast.\n\nAnd when you are lost, turn the maze. Any two of its four directions can\nbe the slices, so every maze can be seen six ways, and a way that winds\nthrough slice after slice in one view may run straight in another.\n\n- **Campaign**: twelve mazes, the same for everyone, from two slices side\n  by side to twelve slices of five by five; each one opens the next\n- **Fog**: two campaign mazes, and any endless one you like, show only\n  what you have already walked past\n- **Daily maze**: one new maze a day, the same for every player; solve\n  it on days in a row and Tessera counts the streak\n- **Endless**: a fresh maze every time, in four sizes\n- **Hints** when you are stuck, at ten seconds each, and your best time\n  for every maze\n- **Race yourself**: beat a campaign or daily maze, and next time your\n  best run walks beside you as a grey `@`\n\n**STEP THROUGH.**\n\n## Controls\n\n- **Arrows** or **WASD**: walk inside a slice\n- **J** and **L**: step to the slice on the left or right\n- **I** and **K**: step to the slice above or below\n  (**Shift** with the arrows works too)\n- **V** or **Tab**: turn the maze to its next view\n- **H**: hint (+10 s); **P**: pause; **R**: start the maze over;\n  **M**: sound off and on; **G**: show or hide your best run;\n  **Esc**: back\n- **Gamepad**: left stick or d-pad walk, right stick or the face buttons\n  step between slices, the triggers turn the maze, LB hints, Start pauses\n\nThe largest mazes need a terminal of about 95×39; the game asks for more\nroom when a maze does not fit.\n\n## Options\n\n- `--daily`: straight into today's maze\n- `--level N`: campaign maze N\n- `--endless small`, `medium`, `large` or `huge`, with `--fog` for fog\n- `--watch`: watch the way through being walked, the maze turning as it goes\n- `--mute`: no sound\n\n## Credits\n\n- Tessera: Asciiverse\n- After bleuje's 4D maze\n- License: MIT\n",
+   "page": "**FOUR DIMENSIONS. ONE WAY THROUGH.**\n\nA maze with two more directions than you are used to. Tessera lays it\nout as slices: every box on screen is one flat maze, the boxes beside it\nare its neighbours in the third dimension, and the boxes above and below\nare its neighbours in the fourth. Walk inside a slice, and where a cell\nsays so, step straight through into the slice beside it, or above, or\nbelow, landing in the same spot.\n\nThe marks tell you where: cyan `◂ ▸ ↔` for a way through to the slices\nleft and right, amber `▴ ▾ ↕` for the slices above and below. Your place\nshows faintly in every slice and lights up where a step through would\nland, so you always know what the next jump does. Start in the top left\ncorner of the first slice; the pink `◆` waits in the far corner of the\nlast.\n\nAnd when you are lost, turn the maze. Any two of its four directions can\nbe the slices, so every maze can be seen six ways, and a way that winds\nthrough slice after slice in one view may run straight in another.\n\n- **Campaign**: twelve mazes, the same for everyone, from two slices side\n  by side to twelve slices of five by five; each one opens the next\n- **Fog**: two campaign mazes, and any endless one you like, show only\n  what you have already walked past\n- **Daily maze**: one new maze a day, the same for every player; solve\n  it on days in a row and Tessera counts the streak\n- **Endless**: a fresh maze every time, in four sizes\n- **Hints** when you are stuck, at ten seconds each, and your best time\n  for every maze\n- **Race yourself**: beat a campaign or daily maze, and next time your\n  best run walks beside you as a grey `@`\n\n**STEP THROUGH.**\n\n## Controls\n\n- **Arrows** or **WASD**: walk inside a slice\n- **J** and **L**: step to the slice on the left or right\n- **I** and **K**: step to the slice above or below\n  (**Shift** with the arrows works too)\n- **V** or **Tab**: turn the maze to its next view\n- **H**: hint (+10 s); **P**: pause; **R**: start the maze over;\n  **M**: sound off and on; **G**: show or hide your best run;\n  **Esc**: back\n- **Gamepad**: left stick or d-pad walk, right stick or the face buttons\n  step between slices, the triggers turn the maze, LB hints, Start pauses\n\nThe first six campaign mazes play in 80×24, turned to a view that fits\nwhen they need it; the largest mazes want about 95×39, and the game asks\nfor more room when a maze does not fit.\n\n## Options\n\n- `--daily`: straight into today's maze\n- `--level N`: campaign maze N\n- `--endless small`, `medium`, `large` or `huge`, with `--fog` for fog\n- `--watch`: watch the way through being walked, the maze turning as it goes\n- `--mute`: no sound\n\n## Credits\n\n- Tessera: Asciiverse\n- After bleuje's 4D maze\n- License: MIT\n",
    "system_deps": [
     "libasound2",
     "libudev1"
    ],
-   "version": "0.5.0",
+   "version": "0.6.0",
    "updated_at": "2026-10-10T00:00:00Z",
    "thumbnail_at": 12.0,
    "cast_url": "/casts/tessera.cast?v=1793658124",
@@ -13692,15 +13692,15 @@
    "platforms": {
     "x86_64-unknown-linux-gnu": {
      "url": "/dev-releases/tessera-x86_64-unknown-linux-gnu.tar.gz",
-     "sha256": "3a5ea72aac198fa2dc3afe5a2e2916b36bcc36bbf7b281df3041600fc1a7957c",
-     "size": 7649774
+     "sha256": "ecedbffeec00a4b0c7c33eef084739ba2b4b15a7914a5e6b729b93c9b17826e6",
+     "size": 7653257
     }
    },
    "news": [
     {
-     "version": "0.5.0",
+     "version": "0.6.0",
      "date": "2026-11-02",
-     "notes": "- The daily streak: solve the daily maze on days in a row and the title\n  counts them (\"4 days running\"); a missed day starts it over\n- The campaign's difficulty curve measured (path, forks, steps through\n  per level; `cargo test campaign_curve -- --ignored --nocapture`)"
+     "notes": "- A maze that does not fit the terminal in the usual view starts in one\n  that does, and says so; when none fits, the message offers V if\n  another view would. At 80×24 the first six campaign mazes play\n- A test drives every screen with 20,000 random commands at random\n  terminal sizes: no panics, no step off the grid or through a wall"
     }
    ]
   },
