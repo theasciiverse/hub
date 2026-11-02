@@ -2537,6 +2537,70 @@
    },
    "news": []
   },
+  "cavezofphear": {
+   "schema_version": 1,
+   "id": "cavezofphear",
+   "kind": "game",
+   "title": "CAVEZ of PHEAR",
+   "description": "Dig through the caves for every diamond while stones tumble down around you, blast a way through with bombs and crush the monsters before they catch you",
+   "year": 2003,
+   "license": "GPL-3.0-or-later",
+   "repo": "theasciiverse/cavezofphear",
+   "provenance": "Tom Rune Flo wrote CAVEZ of PHEAR in C and ncurses from 2003, in the spirit of Boulder Dash; Dmitry Marakasov has maintained it since 2021.",
+   "changes": "PATCHES.md",
+   "topics": [
+    "boulder dash",
+    "digging",
+    "diamonds",
+    "falling stones",
+    "bombs",
+    "level editor",
+    "ncurses"
+   ],
+   "genre": "puzzle",
+   "developer": {
+    "name": "Tom Rune Flo",
+    "url": "https://github.com/AMDmi3/cavezofphear"
+   },
+   "upstream": {
+    "name": "Tom Rune Flo, maintained by Dmitry Marakasov",
+    "url": "https://github.com/AMDmi3/cavezofphear"
+   },
+   "exec": {
+    "game": "phear",
+    "args": []
+   },
+   "min_terminal": {
+    "cols": 80,
+    "rows": 25
+   },
+   "requires": {
+    "utf8": false,
+    "color": "basic",
+    "mouse": false
+   },
+   "media": {
+    "cast": "asciiverse/cavezofphear.cast",
+    "thumbnail_at": 30.0
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**YOU ARE TRAPPED IN THE CAVEZ OF PHEAR. DEATH AWAITS YOU.**\n\nEleven caves stand between you and freedom, and the only way out of each\none is to find every diamond hidden in it. Dig through the earth, and the\nstones above you start to move: they fall into the tunnels you leave\nbehind, roll off each other's backs, and crush whatever is underneath,\nincluding you.\n\nPick up the bombs you find, plant them where you need a door, and set\nthem all off at once. The bombs fall and roll like stones too, so plan\nwhere they will land. Monsters roam the deeper caves: let them catch you\nand you die, or drop a stone on them, or blow them up.\n\nDiamonds are worth 10 points and money 100, and every thousand points\nearns an extra life. Got yourself walled in? Give up the life and try the\ncave again.\n\n**Dig carefully.**\n\n## Controls\n\n- **Arrow keys** (or **8**, **2**, **4**, **6**): dig and move\n- **b**: plant a bomb; **t**: set off every bomb you have planted\n- **k**: give up this life, when you are stuck\n- **s**: sound on and off; **w**: show where you are\n- **q**: quit (it asks first); **Ctrl+C** quits at once\n\n## The editor\n\nFrom a terminal, `phear -e mycave` opens the cave editor: the number keys\nplace things, **l** locks drawing to the arrow keys, **s** saves and **q**\nquits. Play your cave with `phear mycave`.\n\n## Credits\n\n- CAVEZ of PHEAR: Tom Rune Flo (2003 to 2011)\n- Maintained since 2021 by [Dmitry Marakasov](https://github.com/AMDmi3/cavezofphear)\n- License: GPL-3.0-or-later\n",
+   "version": "0.6.2-av.1",
+   "updated_at": "2026-11-02T21:15:46Z",
+   "thumbnail_at": 30.0,
+   "cast_url": "/casts/cavezofphear.cast?v=1793654146",
+   "duration": 40.4,
+   "platforms": {
+    "x86_64-unknown-linux-musl": {
+     "url": "/dev-releases/cavezofphear/cavezofphear-x86_64-unknown-linux-musl.tar.gz",
+     "sha256": "6c798794a8898ae62e19cb4db34e29ee277066f79a640447a81717c4d419b920",
+     "size": 172029
+    }
+   },
+   "news": []
+  },
   "cbirds": {
    "schema_version": 1,
    "id": "cbirds",

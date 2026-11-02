@@ -1,0 +1,46 @@
+schema_version = 1
+id = "cavezofphear"
+kind = "game"
+title = "CAVEZ of PHEAR"
+description = "Dig through the caves for every diamond while stones tumble down around you, blast a way through with bombs and crush the monsters before they catch you"
+year = 2003
+license = "GPL-3.0-or-later"
+repo = "theasciiverse/cavezofphear"
+provenance = "Tom Rune Flo wrote CAVEZ of PHEAR in C and ncurses from 2003, in the spirit of Boulder Dash; Dmitry Marakasov has maintained it since 2021."
+changes = "PATCHES.md"
+topics = ["boulder dash", "digging", "diamonds", "falling stones", "bombs", "level editor", "ncurses"]
+genre = "puzzle"
+
+[developer]
+name = "Tom Rune Flo"
+url = "https://github.com/AMDmi3/cavezofphear"
+
+# packaged by Asciiverse; PATCHES.md in theasciiverse/cavezofphear
+[upstream]
+name = "Tom Rune Flo, maintained by Dmitry Marakasov"
+url = "https://github.com/AMDmi3/cavezofphear"
+
+# no arguments: the title screen, then cave 1; data/ sits beside the binary
+[exec]
+game = "phear"
+args = []
+
+# the caves are 80x23 plus two status lines; below 80x25 it refuses to start
+[min_terminal]
+cols = 80
+rows = 25
+
+# plain ASCII in colour; keyboard only
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, cave 1 played for twelve diamonds along a planned route
+# (asciiverse/record-preview.sh); the still is mid-cave with the tunnels dug
+[media]
+cast = "asciiverse/cavezofphear.cast"
+thumbnail_at = 30.0
+
+[release]
+source = "github"
