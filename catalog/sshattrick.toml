@@ -1,0 +1,51 @@
+schema_version = 1
+id = "sshattrick"
+kind = "game"
+title = "ssHattrick"
+description = "One-on-one ice hockey at full tilt: skate, steal, wind up and shoot past a goalie who copies your opponent's every move. Against the computer, or a friend on your local network who joins with nothing but ssh."
+year = 2024
+license = "GPL-3.0-only"
+repo = "theasciiverse/sshattrick"
+provenance = "ricott1 made ssHattrick in Rust in 2024, a hockey game anyone could play with nothing but ssh, after Bally Sente's arcade Hat Trick (1984)."
+changes = "PATCHES.md"
+topics = ["sports", "hockey", "multiplayer", "lan", "ssh", "rust"]
+genre = "arcade"
+
+[developer]
+name = "ricott1"
+url = "https://github.com/ricott1/sshattrick"
+
+# packaged by Asciiverse with local play, a computer player and a fix;
+# PATCHES.md in theasciiverse/sshattrick
+[upstream]
+name = "ricott1"
+url = "https://github.com/ricott1/sshattrick"
+
+# with no arguments it plays here (the lobby: the computer, watch,
+# practice, a friend), open to the local network on port 3020
+[exec]
+game = "sshattrick"
+args = []
+
+# the rink is a fixed 160x50 (UI_SCREEN_SIZE); it waits for a big enough
+# window and says so
+[min_terminal]
+cols = 160
+rows = 50
+
+# half-block pixels in true colour; keyboard only
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = false
+
+# 160x50, sshattrick --watch --offline (asciiverse/record-preview.sh): two
+# computers playing; cropped to 100x30 from the centre (RECORDING.md); at
+# 34 s both skaters fight for the puck in the centre circle
+[media]
+cast = "asciiverse/sshattrick.cast"
+thumbnail_at = 34.0
+crop = { follow = "centre" }
+
+[release]
+source = "github"

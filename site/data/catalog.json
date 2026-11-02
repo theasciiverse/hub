@@ -12290,6 +12290,72 @@
    },
    "news": []
   },
+  "sshattrick": {
+   "schema_version": 1,
+   "id": "sshattrick",
+   "kind": "game",
+   "title": "ssHattrick",
+   "description": "One-on-one ice hockey at full tilt: skate, steal, wind up and shoot past a goalie who copies your opponent's every move. Against the computer, or a friend on your local network who joins with nothing but ssh.",
+   "year": 2024,
+   "license": "GPL-3.0-only",
+   "repo": "theasciiverse/sshattrick",
+   "provenance": "ricott1 made ssHattrick in Rust in 2024, a hockey game anyone could play with nothing but ssh, after Bally Sente's arcade Hat Trick (1984).",
+   "changes": "PATCHES.md",
+   "topics": [
+    "sports",
+    "hockey",
+    "multiplayer",
+    "lan",
+    "ssh",
+    "rust"
+   ],
+   "genre": "arcade",
+   "developer": {
+    "name": "ricott1",
+    "url": "https://github.com/ricott1/sshattrick"
+   },
+   "upstream": {
+    "name": "ricott1",
+    "url": "https://github.com/ricott1/sshattrick"
+   },
+   "exec": {
+    "game": "sshattrick",
+    "args": []
+   },
+   "min_terminal": {
+    "cols": 160,
+    "rows": 50
+   },
+   "requires": {
+    "utf8": true,
+    "color": "truecolor",
+    "mouse": false
+   },
+   "media": {
+    "cast": "asciiverse/sshattrick.cast",
+    "thumbnail_at": 34.0,
+    "crop": {
+     "follow": "centre"
+    }
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**ONE SKATER EACH. ONE PUCK. NINETY SECONDS.**\n\nssHattrick is one-on-one ice hockey, drawn in chunky pixels and played at full tilt. Your skater glides on real ice: lean on the arrows to build up speed, and lean the other way to stop. Skate into the puck to take it, skate into your opponent to steal it back, and hit space to wind up a shot you can still steer before it flies.\n\nThe twist comes straight from the arcade: **each goalie copies its own skater**, up and down the rink. Keep level with the puck and your goal is covered. Drift off to chase the play and your net lies wide open. Score while the other keeper is out of position, and don't leave yours stranded.\n\n- **Play the computer** at easy, normal or hard. It skates, steals and aims for the empty side of the net.\n- **Play a friend on your local network.** They don't need to install a thing: the lobby shows the one `ssh` line they type, and you're on the ice together.\n- **Practice** against a wandering goalie, or **watch** two computers go at it.\n- **Most goals in ninety seconds wins.** Forfeit with Esc if it's hopeless.\n\n## Controls\n\n- **Arrow keys**: skate\n- **Space**: shoot; keep pressing the arrows during the wind-up to steer it\n- **Esc**: forfeit and back to the lobby; in the lobby, leave\n- **Lobby**: **c** play the computer, **l** change its level, **w** watch two computers, **p** practice, **a** play the next person who also presses a, **g** play a friend by code\n\n## Options\n\n- `--cpu easy|normal|hard`: straight into a match against the computer\n- `--practice`: straight into practice\n- `--watch`: two computers, one match after another\n- `--offline`: play without opening the game to the network\n- `--join HOST[:PORT]`: join a friend's game\n- `--server`: run only the server, for people connecting with ssh\n- `-p PORT`: the port friends connect to (default 3020)\n\n## Credits\n\n- Game: ricott1\n- After Bally Sente's Hat Trick (1984)\n- This edition's local play and computer player: Asciiverse\n",
+   "version": "0.2.1",
+   "updated_at": "2026-10-10T00:00:00Z",
+   "thumbnail_at": 34.0,
+   "cast_url": "/casts/sshattrick.cast?v=1793649681",
+   "duration": 47.6,
+   "platforms": {
+    "x86_64-unknown-linux-gnu": {
+     "url": "/dev-releases/sshattrick-x86_64-unknown-linux-gnu.tar.gz",
+     "sha256": "15843d4290cf3e3ee2ab510fe660825bdcaf64328e2db37173b561c7a8b306ed",
+     "size": 2508587
+    }
+   },
+   "news": []
+  },
   "sshtron": {
    "schema_version": 1,
    "id": "sshtron",
