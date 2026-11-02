@@ -1,0 +1,51 @@
+schema_version = 1
+id = "csol"
+kind = "game"
+title = "csol"
+description = "Eleven solitaires in one: Klondike, FreeCell, Spider in one, two or four suits, Yukon, Russian, Eight Off, Golf and more, played by keyboard or mouse."
+year = 2017
+license = "MIT"
+repo = "theasciiverse/csol"
+provenance = "Niels Sonnich Poulsen wrote csol in C in 2017 as a small collection of solitaire games, each one a short file of rules, and later ported it to DOS and Windows."
+changes = "PATCHES.md"
+topics = ["card", "solitaire", "patience", "klondike", "freecell", "spider", "mouse", "curses"]
+genre = "card"
+
+[developer]
+name = "Niels Sonnich Poulsen"
+url = "https://github.com/nielssp/csol"
+
+# packaged by Asciiverse with one fix (csolrc found beside the program,
+# settings and scores kept in the user's folders); PATCHES.md in
+# theasciiverse/csol
+[upstream]
+name = "Niels Sonnich Poulsen"
+url = "https://github.com/nielssp/csol"
+
+# no arguments: Klondike, or the game saved as the default; `csol freecell`
+# and so on pick a game, the menu bar switches games and themes. Scores and
+# stats in ~/.local/share/csol, saved settings in ~/.config/csol
+[exec]
+game = "csol"
+args = []
+
+# every game deals within 80 columns and 20 rows in the default theme; the
+# board scrolls as columns grow, and the compact themes fit smaller
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = true
+color = "basic"
+mouse = true
+
+# 100x30, asciiverse/record-preview.py: FreeCell deal 1 read off the
+# screen, solved and played with the mouse in 88 moves, then the victory
+# animation; the still is mid-game
+[media]
+cast = "asciiverse/csol.cast"
+thumbnail_at = 20.0
+
+[release]
+source = "github"

@@ -3787,6 +3787,71 @@
    },
    "news": []
   },
+  "csol": {
+   "schema_version": 1,
+   "id": "csol",
+   "kind": "game",
+   "title": "csol",
+   "description": "Eleven solitaires in one: Klondike, FreeCell, Spider in one, two or four suits, Yukon, Russian, Eight Off, Golf and more, played by keyboard or mouse.",
+   "year": 2017,
+   "license": "MIT",
+   "repo": "theasciiverse/csol",
+   "provenance": "Niels Sonnich Poulsen wrote csol in C in 2017 as a small collection of solitaire games, each one a short file of rules, and later ported it to DOS and Windows.",
+   "changes": "PATCHES.md",
+   "topics": [
+    "card",
+    "solitaire",
+    "patience",
+    "klondike",
+    "freecell",
+    "spider",
+    "mouse",
+    "curses"
+   ],
+   "genre": "card",
+   "developer": {
+    "name": "Niels Sonnich Poulsen",
+    "url": "https://github.com/nielssp/csol"
+   },
+   "upstream": {
+    "name": "Niels Sonnich Poulsen",
+    "url": "https://github.com/nielssp/csol"
+   },
+   "exec": {
+    "game": "csol",
+    "args": []
+   },
+   "min_terminal": {
+    "cols": 80,
+    "rows": 24
+   },
+   "requires": {
+    "utf8": true,
+    "color": "basic",
+    "mouse": true
+   },
+   "media": {
+    "cast": "asciiverse/csol.cast",
+    "thumbnail_at": 20.0
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**ELEVEN WAYS TO LAY OUT A DECK.**\n\nA whole shelf of patience games in one small program. Deal a Klondike,\nthen a FreeCell, then lose an evening to Spider: every game is played the\nsame way, with the arrow keys or the mouse, on proper drawn cards with\ntheir suits in colour.\n\n- **Klondike**, the one everyone knows, and **Klondike FreeCell**\n- **FreeCell** and **Eight Off**, every card in view from the start and\n  free cells to juggle with\n- **Spider** with one, two or four suits\n- **Yukon**, **Yukon FreeCell** and **Russian**, where whole stacks move at\n  once\n- **Golf**, up or down by one to clear the table\n\nUndo and redo as far back as you like, a smart cursor that always lands on\na card, scores and times for every game, and a victory dance when the last\ncard goes home. Eight themes, from big framed cards to compact ones for a\nsmall terminal, or plain ASCII.\n\n**PICK A GAME. DEAL.**\n\n## Controls\n\n- **Arrows** or **HJKL**: move the cursor; with **Shift**, to the far end\n  or the top or bottom of a pile\n- **Space**: pick up the card (and those on it); again to send it home or\n  to a free cell\n- **Enter** or **M**: put it down on the pile under the cursor\n- **Mouse**: left click picks up, right click puts down\n- **A**: send a card to a foundation; **S** and **W**: deal from the stock,\n  play from the waste; **1** to **9**: play from a free cell\n- **U** or **Ctrl+Z**: undo; **Shift+U** or **Ctrl+Y**: redo\n- **R**: deal again; **Q**: quit; **F10** or **Alt** with a letter: the\n  menu bar, for games, themes and settings; **?**: how to play\n\n## Options\n\n- `csol freecell`, `csol spider2`, ...: start a game; `-l` lists them\n- `-t compact`, `-t ascii`, ...: a theme; `-T` lists them\n- `-S`: your stats for every game; `-S klondike`: every score in one\n- `-s 12345`: deal from a fixed seed; `-m`: no colours\n\n## Credits\n\n- csol: [Niels Sonnich Poulsen](https://github.com/nielssp/csol)\n- License: MIT\n",
+   "version": "1.6.0+20250719-av.1",
+   "updated_at": "2026-11-02T22:40:00Z",
+   "thumbnail_at": 20.0,
+   "cast_url": "/casts/csol.cast?v=1793655224",
+   "duration": 54.0,
+   "platforms": {
+    "x86_64-unknown-linux-musl": {
+     "url": "/dev-releases/csol/csol-x86_64-unknown-linux-musl.tar.gz",
+     "sha256": "bb889b2653c79e41e65a8fb63b40d7408869c493a5453ef1c24dbd6a5dcecea3",
+     "size": 184690
+    }
+   },
+   "news": []
+  },
   "curse-of-war": {
    "schema_version": 1,
    "id": "curse-of-war",
