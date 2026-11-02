@@ -1,0 +1,52 @@
+schema_version = 1
+id = "terminal-space-program"
+kind = "game"
+title = "Terminal Space Program"
+description = "A real orbital-mechanics rocket simulator in braille: fly a Saturn V to orbit by hand, plan the transfer to the Moon, rendezvous, dock and come home under parachute."
+year = 2026
+new = true
+license = "MIT"
+repo = "theasciiverse/terminal-space-program"
+provenance = "jasonfen began Terminal Space Program in April 2026, in Go, to bring Kerbal Space Program to the terminal; its solar-system foundation comes from Francis' go-solar-system."
+changes = "PATCHES.md"
+topics = ["space", "rockets", "orbital mechanics", "simulation", "braille", "multiplayer", "go"]
+genre = "simulation"
+
+[developer]
+name = "jasonfen"
+url = "https://github.com/jasonfen/terminal-space-program"
+
+# packaged by Asciiverse, the game unchanged; PATCHES.md in
+# theasciiverse/terminal-space-program
+[upstream]
+name = "jasonfen"
+url = "https://github.com/jasonfen/terminal-space-program"
+
+# saves in ~/.local/state/terminal-space-program, mods (systems, vessels,
+# parts, missions as JSON) in ~/.config/terminal-space-program
+[exec]
+game = "terminal-space-program"
+args = []
+
+# below 104x24 it shows "terminal too small"; designed for 140x40
+[min_terminal]
+cols = 104
+rows = 24
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = true
+glyphs = ["braille"]
+
+# recorded at 140x40, its design size (it cannot run at 100x30): the
+# README's quick start, the Moon targeted, the transfer planted, the
+# instruments cleared, then the camera pulled back along the path; cropped
+# to 100x30 from the centre (RECORDING.md); the still is the path out
+[media]
+cast = "asciiverse/terminal-space-program.cast"
+thumbnail_at = 40.0
+crop = { follow = "centre" }
+
+[release]
+source = "github"
