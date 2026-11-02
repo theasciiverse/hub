@@ -1,16 +1,16 @@
 **HAVE YOU GOT WHAT IT TAKES TO SOLVE CHROMA?**
 
-That's the question its author, Amf, asks. Twenty-one levels are waiting for your answer.
+That's the question its author, Amf, asks. Thirty-three levels are waiting for your answer.
 
 Each one is a pattern of colourful shapes forming, in Amf's words, "fiendish traps that must be disarmed and mysterious puzzles that must be manipulated in order to give up their subtle secrets." You have two octagonal player pieces. Collect every star, then leave through the door. That's all.
 
 Nobody tells you the rules. Arrows slide the way they point whenever there is room, and a moving one will crush a player piece flat. Bombs, circles and dots have rules of their own, and they set each other off. Experiment. Watch what happens. Then use it. The first six levels of each set bring the pieces in one by one; by the end you'll need both player pieces working together, move by careful move.
 
-- **Two sets, 21 levels:** Initiation, nine for beginners, from Invitation onward; and Coronation, twelve for experts, all the way to Culmination. Play them in any order.
+- **Three sets, 33 levels:** Initiation, nine for beginners, from Invitation onward; Coronation, twelve for experts, all the way to Culmination; and Enigma, twelve more. Play them in any order.
 - **Mistakes cost nothing:** undo as far back as you like, and redo plays it forward again.
 - **Save, load and replay:** keep positions, and watch a saved solution replay move by move.
 - **A level editor:** build your own, test it and verify it.
-- **More puzzles:** Chroma also plays levels from the similar games XOR and Enigma.
+- **Enigma's twelve levels:** the original levels of Enigma, a puzzle game of falling blocks, exploding bombs and pushing things around, from Darkness Falls to Shrouded Glory, played by Enigma's own rules.
 
 **THE DOOR IS RIGHT THERE. GETTING TO IT IS ANOTHER MATTER.**
 
