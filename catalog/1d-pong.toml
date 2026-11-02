@@ -1,0 +1,40 @@
+schema_version = 1
+id = "1d-pong"
+kind = "game"
+title = "1D-Pong"
+description = "Pong with one dimension! The whole court is a single line: wait for the ball, hit it late for a blistering return, but not too late. Starts with nothing but the line and unfolds as you play."
+year = 2026
+new = true
+license = "MIT"
+repo = "theasciiverse/1d-pong"
+provenance = "Asciiverse made 1D-Pong in Rust in 2026, after the one-dimensional Pong that hobbyists build from a strip of LEDs with a button at each end."
+topics = ["arcade", "pong", "one-button", "multiplayer", "gamepad"]
+genre = "arcade"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[exec]
+game = "1d-pong"
+args = []
+
+# src/render.rs MIN_W, MIN_H
+[min_terminal]
+cols = 40
+rows = 12
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = false
+gamepad = true
+
+system_deps = ["libasound2", "libudev1"]
+
+[media]
+cast = "asciiverse/1d-pong.cast"
+thumbnail_at = 3.0
+
+[release]
+source = "github"

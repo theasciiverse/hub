@@ -110,6 +110,69 @@
    },
    "news": []
   },
+  "1d-pong": {
+   "schema_version": 1,
+   "id": "1d-pong",
+   "kind": "game",
+   "title": "1D-Pong",
+   "description": "Pong with one dimension! The whole court is a single line: wait for the ball, hit it late for a blistering return, but not too late. Starts with nothing but the line and unfolds as you play.",
+   "year": 2026,
+   "new": true,
+   "license": "MIT",
+   "repo": "theasciiverse/1d-pong",
+   "provenance": "Asciiverse made 1D-Pong in Rust in 2026, after the one-dimensional Pong that hobbyists build from a strip of LEDs with a button at each end.",
+   "topics": [
+    "arcade",
+    "pong",
+    "one-button",
+    "multiplayer",
+    "gamepad"
+   ],
+   "genre": "arcade",
+   "developer": {
+    "name": "Asciiverse",
+    "url": "https://asciiverse.sh"
+   },
+   "exec": {
+    "game": "1d-pong",
+    "args": []
+   },
+   "min_terminal": {
+    "cols": 40,
+    "rows": 12
+   },
+   "requires": {
+    "utf8": true,
+    "color": "truecolor",
+    "mouse": false,
+    "gamepad": true
+   },
+   "media": {
+    "cast": "asciiverse/1d-pong.cast",
+    "thumbnail_at": 3.0
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**ONE LINE. ONE BUTTON. NOWHERE TO HIDE.**\n\nForget up and down. In 1D-Pong the whole court is a single glowing line, your paddle is the stretch of it at your end, and the ball can only come straight at you. All you decide is *when*.\n\nPress while the ball is in your zone and it flies back. Hit it early and it goes back slow and safe. Wait, let it get deep, hit it at the very last moment and it screams back as a **SMASH!** Wait one moment too long and it's gone. Press before it arrives and your paddle goes dim, and for a heartbeat you can't hit at all.\n\nEvery rally gets faster. The ball heats from green through amber and red to white hot, the line throws sparks, and the whole game holds its breath for a split second on every hit. And whoever is ahead plays with a shorter paddle, so no lead is ever safe.\n\n- **It unfolds as you play.** You start with nothing but the line. Sound, the score, the trail, the sparks, the menu: each one arrives the first time you earn it.\n- **Four computer players,** from Easy to the King of Lineland. Beat the King and see what lies beyond the line.\n- **Two players at one keyboard,** or with two gamepads: one button each, nothing else.\n- **Watch** two Kings rally on their own.\n- **The pure view:** press V for just the line and the score, nothing else at all.\n\nFirst to seven. **ONE MORE MATCH...**\n\n## Controls\n\n- **Space**: hit (also A, Z, ← or Enter); you are on the left\n- **Two players**: left A, right L, or one gamepad each\n- **Gamepad**: any face, shoulder or d-pad button hits; Start pauses\n- **P**: pause, **M**: sound on or off, **V**: the pure view\n- **Esc**: back to the menu, **Q**: quit from the menu\n\n## Options\n\n- `--cpu easy|normal|hard|king`: straight into a match against that computer\n- `--two`: straight into a two-player match\n- `--watch`: the computer plays itself\n- `--to N`: points to win a match (default 7)\n- `--pure`: start in the pure view\n- `--mute`: start with the sound off\n- `--unfold all`: skip the unfolding; `--unfold 0` starts it over\n\n## Credits\n\n- Game: Asciiverse\n- After the one-dimensional Pong built from LED strips\n",
+   "system_deps": [
+    "libasound2",
+    "libudev1"
+   ],
+   "version": "0.5.0",
+   "updated_at": "2026-10-10T00:00:00Z",
+   "thumbnail_at": 3.0,
+   "cast_url": "/casts/1d-pong.cast?v=1793645367",
+   "duration": 39.7,
+   "platforms": {
+    "x86_64-unknown-linux-gnu": {
+     "url": "/dev-releases/1d-pong-x86_64-unknown-linux-gnu.tar.gz",
+     "sha256": "fb0cf86ce8f0e187b4f59dfd9df9fe63b9e94f7a6cca1f48d19c33de753a9972",
+     "size": 7575025
+    }
+   },
+   "news": []
+  },
   "2048": {
    "schema_version": 1,
    "id": "2048",
@@ -12920,6 +12983,77 @@
      "url": "/dev-releases/terminal-rain-lightning/terminal-rain-lightning-x86_64-unknown-linux-musl.tar.gz",
      "sha256": "1c83a5e9d2c42147a7a468a36e61f7baf577921eb1835910164c49976c2c31e7",
      "size": 2214261
+    }
+   },
+   "news": []
+  },
+  "terminal-space-program": {
+   "schema_version": 1,
+   "id": "terminal-space-program",
+   "kind": "game",
+   "title": "Terminal Space Program",
+   "description": "A real orbital-mechanics rocket simulator in braille: fly a Saturn V to orbit by hand, plan the transfer to the Moon, rendezvous, dock and come home under parachute.",
+   "year": 2026,
+   "new": true,
+   "license": "MIT",
+   "repo": "theasciiverse/terminal-space-program",
+   "provenance": "jasonfen began Terminal Space Program in April 2026, in Go, to bring Kerbal Space Program to the terminal; its solar-system foundation comes from Francis' go-solar-system.",
+   "changes": "PATCHES.md",
+   "topics": [
+    "space",
+    "rockets",
+    "orbital mechanics",
+    "simulation",
+    "braille",
+    "multiplayer",
+    "go"
+   ],
+   "genre": "simulation",
+   "developer": {
+    "name": "jasonfen",
+    "url": "https://github.com/jasonfen/terminal-space-program"
+   },
+   "upstream": {
+    "name": "jasonfen",
+    "url": "https://github.com/jasonfen/terminal-space-program"
+   },
+   "exec": {
+    "game": "terminal-space-program",
+    "args": []
+   },
+   "min_terminal": {
+    "cols": 104,
+    "rows": 24
+   },
+   "requires": {
+    "utf8": true,
+    "color": "truecolor",
+    "mouse": true,
+    "glyphs": [
+     "braille"
+    ]
+   },
+   "media": {
+    "cast": "asciiverse/terminal-space-program.cast",
+    "thumbnail_at": 40.0,
+    "crop": {
+     "follow": "centre"
+    }
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**REAL ROCKETS. REAL ORBITS. ONE TERMINAL.**\n\nKerbal Space Program, in your terminal. Our own solar system at full\nscale: low Earth orbit takes about 9.4 km/s, the Moon's orbit is tilted,\nand the rockets on the pad are the real ones (Saturn V, SLS, Falcon 9)\nwith their real thrust and fuel.\n\nFly a launch off the pad by hand in the chase cam, drop your spent stages,\nand watch the projected high point climb until ORBIT READY. Then plant a\nburn and go: target the Moon, press **H**, and a transfer appears with\nthe orbit it will leave you in drawn on the map.\n\n- **Five star systems**: Sol at full scale, Lumen at a tenth (the home\n  planet Kern with its moons Cursor and Glyph, and the red planet Rust),\n  Alpha Centauri, Kepler-452 and TRAPPIST-1.\n- **Plan like a flight director**: burn nodes, one-key Hohmann transfers,\n  Lambert and porkchop solvers for the planets.\n- **Rendezvous and dock** port to port, with a true-scale Proximity view.\n- **Build your own** in the Vehicle Assembly Building, with live\n  delta-v, TWR and mass.\n- **Flight School** walks you from the camera to orbit to your first\n  docking; a Challenge ladder waits after it.\n- **Play together**: host a session from your own game and friends on\n  your local network join from their terminals, each with their own space\n  program and their own clock.\n\n**GO FOR LAUNCH.**\n\n## Controls\n\n- **F1**: every key, in the game\n- **t** / **T**: set / clear the target; **H**: plan a transfer to it;\n  **G**: warp to the next burn\n- **z** / **x**: full throttle / cut; **b**: light the engine;\n  **Space**: drop a stage\n- **W**: point along your ground speed (the gravity turn);\n  **→** / **←**: tip the nose toward / back from your heading\n- **.** / **,**: warp faster / slower; **+** / **-**: zoom; **V**: launch\n  view; **F2**: hide the instruments\n- **M**: missions; **n**: new vessel; **Tab**: next star system\n- **F5** / **F9**: quicksave / quickload; **Esc**: menu;\n  **Ctrl+C**: quit\n\n## Options\n\n- `--launch-site KSC --loadout Saturn-V`: start on the pad\n- `--orbit moon --altitude 100km`: start around the Moon\n- `--system Lumen`: start in the Lumen system\n- `--serve`: host a session for your local network\n\n## Credits\n\n- Terminal Space Program: [jasonfen](https://github.com/jasonfen/terminal-space-program)\n- Solar-system foundation: Francis' go-solar-system\n- License: MIT\n",
+   "version": "0.64.8-av.1",
+   "updated_at": "2026-11-02T20:00:00Z",
+   "thumbnail_at": 40.0,
+   "cast_url": "/casts/terminal-space-program.cast?v=1793645419",
+   "duration": 43.3,
+   "platforms": {
+    "x86_64-unknown-linux-musl": {
+     "url": "/dev-releases/terminal-space-program/terminal-space-program-x86_64-unknown-linux-musl.tar.gz",
+     "sha256": "eac59ea9d4d8a58e49adb87aaf6d591702ee8b574cc2bcc3f3d51937beba9c0e",
+     "size": 5064790
     }
    },
    "news": []
