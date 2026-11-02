@@ -15174,6 +15174,70 @@
    },
    "news": []
   },
+  "zoridor": {
+   "schema_version": 1,
+   "id": "zoridor",
+   "kind": "game",
+   "title": "Zoridor",
+   "description": "Quoridor against the machine: race your pawn across the board while the two of you wall each other in, ten fences each, and never quite shut the way.",
+   "year": 2024,
+   "new": true,
+   "license": "MIT",
+   "repo": "theasciiverse/zoridor",
+   "provenance": "Toby Jaffey of Ringtail Software wrote Zoridor in Zig in 2024, for the terminal and the web, after Quoridor, the board game Mirko Marchesi designed for Gigamic in 1997.",
+   "changes": "PATCHES.md",
+   "topics": [
+    "board",
+    "quoridor",
+    "vs-computer",
+    "hot-seat",
+    "strategy",
+    "zig"
+   ],
+   "genre": "board",
+   "developer": {
+    "name": "Ringtail Software",
+    "url": "https://github.com/ringtailsoftware/zoridor"
+   },
+   "upstream": {
+    "name": "Ringtail Software",
+    "url": "https://github.com/ringtailsoftware/zoridor"
+   },
+   "exec": {
+    "game": "zoridor",
+    "args": []
+   },
+   "min_terminal": {
+    "cols": 80,
+    "rows": 29
+   },
+   "requires": {
+    "utf8": false,
+    "color": "256",
+    "mouse": false
+   },
+   "media": {
+    "cast": "asciiverse/zoridor.cast",
+    "thumbnail_at": 36.0
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**WALL THEM IN. NEVER SHUT THEM OUT.**\n\nQuoridor, the board game of pawns and fences, at your keyboard against\nthe machine. Your pawn starts on one side of a 9 by 9 board, the\nmachine's on the other, and the first to reach the far side wins.\n\nEach turn you either step your pawn one square or put down one of your\nten fences, two squares long, to lengthen the machine's road. It does the\nsame to you. A fence may cross nothing and must always leave both pawns a\nway through, so the board turns into a maze you are building together,\nand the shortest path is never where it was a turn ago.\n\n- **One move or one fence**: every turn is a choice between racing and\n  blocking\n- **Pawns jump**: face to face, you can hop over the other pawn\n- **The machine counts paths**: it weighs every move by how much it\n  shortens its road and lengthens yours\n- **Two at one keyboard**: hand the other side to a friend\n\n**FIND THE WAY THROUGH.**\n\n## Controls\n\n- **Arrows**: pick the square for your pawn, or move the fence\n- **Tab**: switch between pawn and fence; **Space**: turn the fence\n- **Enter**: make the move (a green mark is legal, red is not)\n- **Q**: quit\n\n## Options\n\n- `-2 human`: two players at one keyboard\n- `-r 50`: shake up the machine's choices, 0 to 100 (the higher, the\n  more it errs); `-s 12345`: fix its seed\n- `-f`: play game after game, counting wins\n- `-m`: a smaller board for 80x24\n\n## Credits\n\n- Zoridor: Toby Jaffey, [Ringtail Software](https://github.com/ringtailsoftware/zoridor)\n- Quoridor designed by Mirko Marchesi, published by Gigamic\n- License: MIT\n",
+   "version": "0.0.0+20250117-av.1",
+   "updated_at": "2026-11-02T22:10:00Z",
+   "thumbnail_at": 36.0,
+   "cast_url": "/casts/zoridor.cast?v=1793653629",
+   "duration": 45.6,
+   "platforms": {
+    "x86_64-unknown-linux-musl": {
+     "url": "/dev-releases/zoridor/zoridor-x86_64-unknown-linux-musl.tar.gz",
+     "sha256": "998787cf5b811b11b8ecf3f1d53136b6f3cdf95ed3232d231a2cc844210dd6fb",
+     "size": 188152
+    }
+   },
+   "news": []
+  },
   "zork1": {
    "schema_version": 1,
    "id": "zork1",

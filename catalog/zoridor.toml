@@ -1,0 +1,52 @@
+schema_version = 1
+id = "zoridor"
+kind = "game"
+title = "Zoridor"
+description = "Quoridor against the machine: race your pawn across the board while the two of you wall each other in, ten fences each, and never quite shut the way."
+year = 2024
+new = true
+license = "MIT"
+repo = "theasciiverse/zoridor"
+provenance = "Toby Jaffey of Ringtail Software wrote Zoridor in Zig in 2024, for the terminal and the web, after Quoridor, the board game Mirko Marchesi designed for Gigamic in 1997."
+changes = "PATCHES.md"
+topics = ["board", "quoridor", "vs-computer", "hot-seat", "strategy", "zig"]
+genre = "board"
+
+[developer]
+name = "Ringtail Software"
+url = "https://github.com/ringtailsoftware/zoridor"
+
+# packaged by Asciiverse with four fixes (builds with Zig 0.14.0, a turned
+# fence is checked again, -s works, the terminal comes back as it was);
+# PATCHES.md in theasciiverse/zoridor
+[upstream]
+name = "Ringtail Software"
+url = "https://github.com/ringtailsoftware/zoridor"
+
+# no arguments: you (player 1) against the machine; -2 human for two
+# players at one keyboard. Saves nothing
+[exec]
+game = "zoridor"
+args = []
+
+# a fixed 80 by 29 screen at the top left; -m fits 80x24
+[min_terminal]
+cols = 80
+rows = 29
+
+# ASCII only; the eight basic colours, written as 256-colour escapes
+[requires]
+utf8 = false
+color = "256"
+mouse = false
+
+# 100x30, asciiverse/record-preview.py: a whole game against the machine,
+# player 1's moves typed in with the game's own keys (the machine's answers
+# are deterministic), ending in a win; the still is the late game, every
+# fence down
+[media]
+cast = "asciiverse/zoridor.cast"
+thumbnail_at = 36.0
+
+[release]
+source = "github"
