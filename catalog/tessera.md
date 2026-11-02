@@ -22,7 +22,8 @@ through slice after slice in one view may run straight in another.
   by side to twelve slices of five by five; each one opens the next
 - **Fog**: two campaign mazes, and any endless one you like, show only
   what you have already walked past
-- **Daily maze**: one new maze a day, the same for every player
+- **Daily maze**: one new maze a day, the same for every player; solve
+  it on days in a row and Tessera counts the streak
 - **Endless**: a fresh maze every time, in four sizes
 - **Hints** when you are stuck, at ten seconds each, and your best time
   for every maze
