@@ -11,6 +11,10 @@ SCRIPT is a ;-separated list of steps:
   s<text>           send text literally (no ';' inside)
   m<click|right|move|up|down>,<col>,<row>  SGR mouse left click, right
                     click, pointer move or wheel at a 1-based cell
+  m<press|drag|release>,<col>,<row>[,<button>]  hold a button down, move
+                    with it held, let it go (button 0 left, 1 middle,
+                    2 right; default 0), for programs that act while a
+                    button is held
 
 The program runs with the terminal identity of the spec (TERM=xterm-256color,
 COLORTERM=truecolor, UTF-8), without variables that identify the real
@@ -79,8 +83,15 @@ def main():
             os.write(fd, KEYS.get(arg, arg).encode())
             alive = pump(time.time() + 0.02)
         elif kind == "m":
-            what, x, y = arg.split(",")
-            if what == "click":
+            what, x, y, *rest = arg.split(",")
+            b = int(rest[0]) if rest else 0
+            if what == "press":
+                os.write(fd, f"\x1b[<{b};{x};{y}M".encode())
+            elif what == "drag":
+                os.write(fd, f"\x1b[<{32 + b};{x};{y}M".encode())
+            elif what == "release":
+                os.write(fd, f"\x1b[<{b};{x};{y}m".encode())
+            elif what == "click":
                 os.write(fd, f"\x1b[<0;{x};{y}M\x1b[<0;{x};{y}m".encode())
             elif what == "right":
                 os.write(fd, f"\x1b[<2;{x};{y}M\x1b[<2;{x};{y}m".encode())
