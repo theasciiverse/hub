@@ -7229,6 +7229,70 @@
    },
    "news": []
   },
+  "maze-tui": {
+   "schema_version": 1,
+   "id": "maze-tui",
+   "kind": "art",
+   "title": "Maze TUI",
+   "description": "Mazes carved and solved before your eyes: ten building algorithms, fourteen solvers racing on several threads in colour, and eight wall styles, all on a timeline you can pause, slow down and step back through",
+   "year": 2023,
+   "license": "MIT",
+   "repo": "theasciiverse/maze-tui",
+   "provenance": "Maze TUI is by Alex G. Lopez, written in Rust from 2023 as a way to explore maze algorithms by watching them, and grown into his \"Rosetta Stones and Mazes\" articles.",
+   "changes": "PATCHES.md",
+   "topics": [
+    "maze",
+    "algorithms",
+    "visualization",
+    "pathfinding",
+    "screensaver",
+    "box-drawing",
+    "colour",
+    "educational"
+   ],
+   "developer": {
+    "name": "Alex G. Lopez",
+    "url": "https://github.com/agl-alexglopez/maze-tui"
+   },
+   "upstream": {
+    "name": "Alex G. Lopez",
+    "url": "https://github.com/agl-alexglopez/maze-tui"
+   },
+   "exec": {
+    "game": "maze-tui",
+    "args": []
+   },
+   "min_terminal": {
+    "cols": 60,
+    "rows": 20
+   },
+   "requires": {
+    "utf8": true,
+    "color": "truecolor",
+    "mouse": false
+   },
+   "media": {
+    "cast": "asciiverse/maze-tui.cast",
+    "thumbnail_at": 11.5
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**EVERY MAZE TELLS YOU HOW IT WAS MADE.**\n\nWatch a maze being carved, wall by wall, and then watch it being solved.\nMaze TUI animates the classic maze algorithms in your terminal: a\nrandomized depth-first search tunnelling ahead and backing out of dead\nends, Prim's maze spreading like frost, Kruskal's joining scattered\npieces, Eller's sweeping row by row, Wilson's loop-erased random walks,\nrecursive division splitting open floor into rooms. Then the solvers move\nin, several threads at once, each painting its own colour as it races for\nthe finish, gathers every prize or hunts for the corners.\n\nEvery animation is a timeline. Pause it, slow it to a crawl or speed it\nup, step forward and back one change at a time, or run the whole thing in\nreverse and watch the maze unbuild itself. Press **i** while it plays and\na page explains the algorithm on screen.\n\nLeave it at the home screen and a new random maze builds and solves itself\nbehind the menu, over and over.\n\n**Pick an algorithm and watch it think.**\n\n## Controls\n\n- **Enter**: a random maze, or the one your flags describe\n- **Space**: pause and play\n- **<** and **>**: slower and faster\n- **Left** and **Right**: step back or forward, and set the direction\n- **i**: about the algorithm on screen\n- **Up** and **Down**: scroll the help or the algorithm page\n- **Esc**: back to the home screen, and quit from there; **Ctrl+C** quits\n  from anywhere\n\n## Flags\n\nType them on the home screen, in any order, then press Enter. Anything\nleft out is chosen for you.\n\n- `-b`: the builder: `rdfs`, `hunt-kill`, `kruskal`, `prim`, `eller`,\n  `wilson`, `wilson-walls`, `fractal`, `grid` or `arena`\n- `-s`: the solver: depth-first, randomized depth-first, flood fill or\n  breadth-first, each as `-hunt`, `-gather` or `-corner` (for example\n  `bfs-gather`), or `distance` and `runs` to paint the maze by path\n  length\n- `-m`: shortcuts through the middle: `cross` or `x`\n- `-w`: the walls: `mini`, `sharp`, `round`, `doubles`, `bold`,\n  `contrast`, `half` or `spikes`\n\nFor example `-b wilson -s bfs-hunt -w round`, or `-b fractal -s distance`.\n\n## Credits\n\n- Maze TUI: [Alex G. Lopez](https://github.com/agl-alexglopez/maze-tui);\n  his [wiki](https://github.com/agl-alexglopez/maze-tui/wiki) covers every\n  algorithm\n- License: MIT\n",
+   "version": "0.1.0+20251024-av.1",
+   "updated_at": "2026-11-02T18:48:56Z",
+   "thumbnail_at": 11.5,
+   "cast_url": "/casts/maze-tui.cast?v=1793645336",
+   "duration": 21.2,
+   "platforms": {
+    "x86_64-unknown-linux-musl": {
+     "url": "/dev-releases/maze-tui/maze-tui-x86_64-unknown-linux-musl.tar.gz",
+     "sha256": "c0127f8fefe711d3b04acf1d2df5c3facc42ece8601769177ab63c3896e04d35",
+     "size": 549091
+    }
+   },
+   "news": []
+  },
   "mehen": {
    "schema_version": 1,
    "id": "mehen",

@@ -1,0 +1,48 @@
+schema_version = 1
+id = "maze-tui"
+kind = "art"
+title = "Maze TUI"
+description = "Mazes carved and solved before your eyes: ten building algorithms, fourteen solvers racing on several threads in colour, and eight wall styles, all on a timeline you can pause, slow down and step back through"
+year = 2023
+license = "MIT"
+repo = "theasciiverse/maze-tui"
+provenance = "Maze TUI is by Alex G. Lopez, written in Rust from 2023 as a way to explore maze algorithms by watching them, and grown into his \"Rosetta Stones and Mazes\" articles."
+changes = "PATCHES.md"
+topics = ["maze", "algorithms", "visualization", "pathfinding", "screensaver", "box-drawing", "colour", "educational"]
+
+[developer]
+name = "Alex G. Lopez"
+url = "https://github.com/agl-alexglopez/maze-tui"
+
+[upstream]
+name = "Alex G. Lopez"
+url = "https://github.com/agl-alexglopez/maze-tui"
+
+# no arguments: the home screen, with a random maze playing behind the
+# instructions; Enter plays a random maze, typed flags choose the
+# algorithms; Esc and Ctrl+C quit
+[exec]
+game = "maze-tui"
+args = []
+
+# mazes fill the window and rebuild on resize; below 12x12 it asks for a
+# bigger window, and 60x20 is the smallest where the title and help fit
+# (tried from 1x1 up to 400x120)
+[min_terminal]
+cols = 60
+rows = 20
+
+# box-drawing and block characters in 24-bit colour; keyboard only
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = false
+
+# 100x30 (hub's tools/castrec.py): the home screen, then -b prim -s
+# bfs-hunt sped up with >; Prim's builder, then four BFS threads hunting
+[media]
+cast = "asciiverse/maze-tui.cast"
+thumbnail_at = 11.5
+
+[release]
+source = "github"
