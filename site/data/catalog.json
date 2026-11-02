@@ -13679,12 +13679,12 @@
    "release": {
     "source": "github"
    },
-   "page": "**FOUR DIMENSIONS. ONE WAY THROUGH.**\n\nA maze with two more directions than you are used to. Tessera lays it\nout as slices: every box on screen is one flat maze, the boxes beside it\nare its neighbours in the third dimension, and the boxes above and below\nare its neighbours in the fourth. Walk inside a slice, and where a cell\nsays so, step straight through into the slice beside it, or above, or\nbelow, landing in the same spot.\n\nThe marks tell you where: cyan `◂ ▸ ↔` for a way through to the slices\nleft and right, amber `▴ ▾ ↕` for the slices above and below. Your place\nshows faintly in every slice and lights up where a step through would\nland, so you always know what the next jump does. Start in the top left\ncorner of the first slice; the pink `◆` waits in the far corner of the\nlast.\n\nAnd when you are lost, turn the maze. Any two of its four directions can\nbe the slices, so every maze can be seen six ways, and a way that winds\nthrough slice after slice in one view may run straight in another.\n\n- **Campaign**: twelve mazes, the same for everyone, from two slices side\n  by side to twelve slices of five by five; each one opens the next\n- **Fog**: two campaign mazes, and any endless one you like, show only\n  what you have already walked past\n- **Daily maze**: one new maze a day, the same for every player\n- **Endless**: a fresh maze every time, in four sizes\n- **Hints** when you are stuck, at ten seconds each, and your best time\n  for every maze\n\n**STEP THROUGH.**\n\n## Controls\n\n- **Arrows** or **WASD**: walk inside a slice\n- **J** and **L**: step to the slice on the left or right\n- **I** and **K**: step to the slice above or below\n  (**Shift** with the arrows works too)\n- **V** or **Tab**: turn the maze to its next view\n- **H**: hint (+10 s); **P**: pause; **R**: start the maze over;\n  **M**: sound off and on; **Esc**: back\n- **Gamepad**: left stick or d-pad walk, right stick or the face buttons\n  step between slices, the triggers turn the maze, LB hints, Start pauses\n\nThe largest mazes need a terminal of about 95×39; the game asks for more\nroom when a maze does not fit.\n\n## Options\n\n- `--daily`: straight into today's maze\n- `--level N`: campaign maze N\n- `--endless small`, `medium`, `large` or `huge`, with `--fog` for fog\n- `--watch`: watch the way through being walked, the maze turning as it goes\n- `--mute`: no sound\n\n## Credits\n\n- Tessera: Asciiverse\n- After bleuje's 4D maze\n- License: MIT\n",
+   "page": "**FOUR DIMENSIONS. ONE WAY THROUGH.**\n\nA maze with two more directions than you are used to. Tessera lays it\nout as slices: every box on screen is one flat maze, the boxes beside it\nare its neighbours in the third dimension, and the boxes above and below\nare its neighbours in the fourth. Walk inside a slice, and where a cell\nsays so, step straight through into the slice beside it, or above, or\nbelow, landing in the same spot.\n\nThe marks tell you where: cyan `◂ ▸ ↔` for a way through to the slices\nleft and right, amber `▴ ▾ ↕` for the slices above and below. Your place\nshows faintly in every slice and lights up where a step through would\nland, so you always know what the next jump does. Start in the top left\ncorner of the first slice; the pink `◆` waits in the far corner of the\nlast.\n\nAnd when you are lost, turn the maze. Any two of its four directions can\nbe the slices, so every maze can be seen six ways, and a way that winds\nthrough slice after slice in one view may run straight in another.\n\n- **Campaign**: twelve mazes, the same for everyone, from two slices side\n  by side to twelve slices of five by five; each one opens the next\n- **Fog**: two campaign mazes, and any endless one you like, show only\n  what you have already walked past\n- **Daily maze**: one new maze a day, the same for every player\n- **Endless**: a fresh maze every time, in four sizes\n- **Hints** when you are stuck, at ten seconds each, and your best time\n  for every maze\n- **Race yourself**: beat a campaign or daily maze, and next time your\n  best run walks beside you as a grey `@`\n\n**STEP THROUGH.**\n\n## Controls\n\n- **Arrows** or **WASD**: walk inside a slice\n- **J** and **L**: step to the slice on the left or right\n- **I** and **K**: step to the slice above or below\n  (**Shift** with the arrows works too)\n- **V** or **Tab**: turn the maze to its next view\n- **H**: hint (+10 s); **P**: pause; **R**: start the maze over;\n  **M**: sound off and on; **G**: show or hide your best run;\n  **Esc**: back\n- **Gamepad**: left stick or d-pad walk, right stick or the face buttons\n  step between slices, the triggers turn the maze, LB hints, Start pauses\n\nThe largest mazes need a terminal of about 95×39; the game asks for more\nroom when a maze does not fit.\n\n## Options\n\n- `--daily`: straight into today's maze\n- `--level N`: campaign maze N\n- `--endless small`, `medium`, `large` or `huge`, with `--fog` for fog\n- `--watch`: watch the way through being walked, the maze turning as it goes\n- `--mute`: no sound\n\n## Credits\n\n- Tessera: Asciiverse\n- After bleuje's 4D maze\n- License: MIT\n",
    "system_deps": [
     "libasound2",
     "libudev1"
    ],
-   "version": "0.3.0",
+   "version": "0.4.0",
    "updated_at": "2026-10-10T00:00:00Z",
    "thumbnail_at": 12.0,
    "cast_url": "/casts/tessera.cast?v=1793658124",
@@ -13692,15 +13692,15 @@
    "platforms": {
     "x86_64-unknown-linux-gnu": {
      "url": "/dev-releases/tessera-x86_64-unknown-linux-gnu.tar.gz",
-     "sha256": "2278d70e84898c1b6a3b2b8b1d33e2fee62334711b9cdd4d315c21cd70a68dc4",
-     "size": 7616174
+     "sha256": "5d9e8d6ceb79aecbc3405be2218ef99947408f6ca9a3ccba20866245d6398072",
+     "size": 7639770
     }
    },
    "news": [
     {
-     "version": "0.3.0",
+     "version": "0.4.0",
      "date": "2026-11-02",
-     "notes": "- Sound, all synthesised: soft steps, a two-note chime for stepping\n  through (higher across, lower up and down), a thud at walls, a sweep\n  when the maze turns, a run of notes for a hint, a fanfare when solved\n  and a longer one for a new best\n- M turns the sound off and on anywhere, remembered; `--mute`"
+     "notes": "- Race your best run: a new best on a campaign or daily maze keeps the\n  run, and next time it walks beside you as a grey @ on your clock,\n  through fog too; the status line shows the time to beat; G hides or\n  shows it. A kept run that does not walk its maze is dropped; only\n  today's daily run is kept\n- Tests keep their files in a folder of their own, never the player's"
     }
    ]
   },

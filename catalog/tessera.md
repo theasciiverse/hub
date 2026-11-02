@@ -26,6 +26,8 @@ through slice after slice in one view may run straight in another.
 - **Endless**: a fresh maze every time, in four sizes
 - **Hints** when you are stuck, at ten seconds each, and your best time
   for every maze
+- **Race yourself**: beat a campaign or daily maze, and next time your
+  best run walks beside you as a grey `@`
 
 **STEP THROUGH.**
 
@@ -37,7 +39,8 @@ through slice after slice in one view may run straight in another.
   (**Shift** with the arrows works too)
 - **V** or **Tab**: turn the maze to its next view
 - **H**: hint (+10 s); **P**: pause; **R**: start the maze over;
-  **M**: sound off and on; **Esc**: back
+  **M**: sound off and on; **G**: show or hide your best run;
+  **Esc**: back
 - **Gamepad**: left stick or d-pad walk, right stick or the face buttons
   step between slices, the triggers turn the maze, LB hints, Start pauses
 
