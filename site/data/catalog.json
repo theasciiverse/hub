@@ -1556,6 +1556,71 @@
     }
    ]
   },
+  "blackguard": {
+   "schema_version": 1,
+   "id": "blackguard",
+   "kind": "game",
+   "title": "Blackguard",
+   "description": "The deck is the dungeon: fight black-suit monsters, wield diamonds that dull with every kill, sip hearts to heal, and try to survive all 44 cards of Scoundrel",
+   "year": 2026,
+   "new": true,
+   "license": "MIT",
+   "repo": "theasciiverse/blackguard",
+   "provenance": "Blackguard is Elnur Badalov's terminal version of Scoundrel, the solo card roguelike Zach Gage and Kurt Bieg designed in 2011, written in Rust and Ratatui in 2026.",
+   "changes": "PATCHES.md",
+   "topics": [
+    "card game",
+    "roguelike",
+    "scoundrel",
+    "solitaire",
+    "daily challenge",
+    "seeded",
+    "rust"
+   ],
+   "genre": "card",
+   "developer": {
+    "name": "Elnur Badalov",
+    "url": "https://github.com/ElnurBDa/blackguard"
+   },
+   "upstream": {
+    "name": "Elnur Badalov",
+    "url": "https://github.com/ElnurBDa/blackguard"
+   },
+   "exec": {
+    "game": "blackguard",
+    "args": []
+   },
+   "min_terminal": {
+    "cols": 80,
+    "rows": 24
+   },
+   "requires": {
+    "utf8": true,
+    "color": "truecolor",
+    "mouse": false
+   },
+   "media": {
+    "cast": "asciiverse/blackguard.cast",
+    "thumbnail_at": 22.5
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**THE DECK IS THE DUNGEON.**\n\nForty-four cards, twenty hit points, one way out: through every card.\nEach room deals four. The black cards are monsters, and they hurt as much\nas they are worth. Diamonds are weapons that soak up the damage, but a\nblade grows dull: once it has killed a monster, it can only kill weaker\nones after. Hearts are potions, and only the first one in a room does you\nany good.\n\nPlay three cards and the fourth waits for you in the next room. Run from a\nroom you cannot face and it goes to the bottom of the deck for later, just\nnever twice in a row. Do you spend your sharp sword on the jack now, or\nsave it for the king still to come? Fight the queen bare-handed and hope\nthe next room has hearts?\n\nClear the whole deck to win, scored by the health you have left. Every\ndungeon comes from a seed, so you can replay one, share one, or take on\nthe daily dungeon that everyone plays on the same day.\n\n**Choose your fights.**\n\n## Controls\n\n- **Left** and **Right** (or **h** and **l**): choose a card\n- **Enter** or **Space**: use it: fight, equip or drink, whichever fits\n- **f**: fight the chosen monster with your blade\n- **b**: fight it bare-handed\n- **a**: avoid the room\n- **n**: a new dungeon; **r**: the same dungeon again\n- **t**: switch the weapon rule and replay the same deck\n- **?**: the rules; **q**, **Esc** or **Ctrl+C**: quit\n\n## The weapon rule\n\nScoundrel's own rules leave open whether a dulled blade may kill a monster\nof exactly the value it last killed. Blackguard starts with the strict\nreading, only weaker monsters, and **t** switches to the equal reading\nmid-game, on the same deck, so you can see what it changes.\n\n## Options\n\nFrom a terminal: `blackguard --seed 42` for a dungeon you can share,\n`--daily` for today's dungeon, and `--rule equal` to start with the equal\nreading.\n\n## Credits\n\n- Blackguard: [Elnur Badalov](https://github.com/ElnurBDa/blackguard)\n- Scoundrel, the card game: Zach Gage and Kurt Bieg (2011),\n  [rules](http://stfj.net/art/2011/Scoundrel.pdf)\n- License: MIT\n",
+   "version": "0.1.1-av.1",
+   "updated_at": "2026-11-02T19:18:34Z",
+   "thumbnail_at": 22.5,
+   "cast_url": "/casts/blackguard.cast?v=1793647114",
+   "duration": 29.9,
+   "platforms": {
+    "x86_64-unknown-linux-musl": {
+     "url": "/dev-releases/blackguard/blackguard-x86_64-unknown-linux-musl.tar.gz",
+     "sha256": "a949d19dfb7a498440d1435c3f5036eb4bb0fbbd1eb702119d52adef78acbdb5",
+     "size": 1074607
+    }
+   },
+   "news": []
+  },
   "blightmud": {
    "schema_version": 1,
    "id": "blightmud",

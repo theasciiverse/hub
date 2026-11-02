@@ -1,0 +1,49 @@
+schema_version = 1
+id = "blackguard"
+kind = "game"
+title = "Blackguard"
+description = "The deck is the dungeon: fight black-suit monsters, wield diamonds that dull with every kill, sip hearts to heal, and try to survive all 44 cards of Scoundrel"
+year = 2026
+new = true
+license = "MIT"
+repo = "theasciiverse/blackguard"
+provenance = "Blackguard is Elnur Badalov's terminal version of Scoundrel, the solo card roguelike Zach Gage and Kurt Bieg designed in 2011, written in Rust and Ratatui in 2026."
+changes = "PATCHES.md"
+topics = ["card game", "roguelike", "scoundrel", "solitaire", "daily challenge", "seeded", "rust"]
+genre = "card"
+
+[developer]
+name = "Elnur Badalov"
+url = "https://github.com/ElnurBDa/blackguard"
+
+# packaged by Asciiverse; PATCHES.md in theasciiverse/blackguard
+[upstream]
+name = "Elnur Badalov"
+url = "https://github.com/ElnurBDa/blackguard"
+
+# no arguments: a random dungeon. Stats (best score, wins, games played) in
+# $XDG_DATA_HOME/blackguard (the platform data folder elsewhere)
+[exec]
+game = "blackguard"
+args = []
+
+# everything fits at 80x24 (the last word of the key bar is cut there);
+# tried from 1x1 to 150x50 without a crash
+[min_terminal]
+cols = 80
+rows = 24
+
+# card faces in box drawing and suit symbols, 24-bit colour; keyboard only
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = false
+
+# 100x30, seed 7 played for five rooms (hub's tools/castrec.py); the still
+# is the fifth room, a queen to face and the blade's kills beside it
+[media]
+cast = "asciiverse/blackguard.cast"
+thumbnail_at = 22.5
+
+[release]
+source = "github"
