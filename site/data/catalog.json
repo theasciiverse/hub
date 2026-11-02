@@ -12354,6 +12354,69 @@
    },
    "news": []
   },
+  "sssnake": {
+   "schema_version": 1,
+   "id": "sssnake",
+   "kind": "game",
+   "title": "sssnake",
+   "description": "Snake that can play itself: steer it, race it in arcade mode, or sit back while A* or BFS hunts the food, faster and faster, as a screensaver.",
+   "year": 2022,
+   "license": "MIT",
+   "repo": "theasciiverse/sssnake",
+   "provenance": "AngelJumbo wrote sssnake in C in 2022 as an A* exercise on the snake game, then gave its autopilot a greedy solver after chuyangliu's snake AI; the name is for smart and sexy snake.",
+   "changes": "PATCHES.md",
+   "topics": [
+    "snake",
+    "autopilot",
+    "pathfinding",
+    "screensaver",
+    "arcade",
+    "c"
+   ],
+   "genre": "arcade",
+   "developer": {
+    "name": "AngelJumbo",
+    "url": "https://github.com/AngelJumbo/sssnake"
+   },
+   "upstream": {
+    "name": "AngelJumbo",
+    "url": "https://github.com/AngelJumbo/sssnake"
+   },
+   "exec": {
+    "game": "sssnake",
+    "args": []
+   },
+   "min_terminal": {
+    "cols": 10,
+    "rows": 5
+   },
+   "requires": {
+    "utf8": true,
+    "color": "basic",
+    "mouse": false
+   },
+   "media": {
+    "cast": "asciiverse/sssnake.cast",
+    "thumbnail_at": 38.0
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**SMART. FAST. HUNGRY. IT CAN PLAY WITHOUT YOU.**\n\nThe snake game you know, drawn in solid blocks instead of letters: eat the\nfood, grow longer, don't run into yourself or the walls. Steer it with the\narrows, WASD or Vim keys, or try arcade mode, where every bite makes it\nfaster.\n\nThen hand over the controls. In autopilot the snake hunts the food on its\nown with A* or breadth-first search, and with `--try-hard` it plans ahead\nso it never traps itself, curling round the board until it nearly fills\nit. Turn the speed up and leave it running as a screensaver.\n\n- **Four modes**: normal, arcade, autopilot and screensaver\n- **Four looks**: fancy, full, ASCII and dots\n- **Your board**: any size, walls that teleport you across, and random\n  junk to steer round\n\n**LET IT EAT.**\n\n## Controls\n\n- **Arrows**, **WASD** or **HJKL**: steer\n- **Space**: pause; **Q**: quit\n- Autopilot and screensaver: **+** and **-** change the speed; in the\n  screensaver any other key quits\n\n## Options\n\n- `-m arcade`, `-m autopilot`, `-m screensaver`: the mode\n- `-l full`, `-l ascii`, `-l dots`: the look\n- `-s 15`: the speed, 1 to 20; `-x 30 -y 20`: the board size\n- `-j 3`: junk on the board, 1 to 5; `-t`: teleport through the walls;\n  `-z`: show the snake's size\n- `--try-hard 1` or `2`: an autopilot that keeps itself alive;\n  `--short-path=bfs`: breadth-first search instead of A*\n\n## Credits\n\n- sssnake: [AngelJumbo](https://github.com/AngelJumbo/sssnake)\n- Autopilot solvers after chuyangliu's greedy snake solver\n- License: MIT\n",
+   "version": "0.4.0+20261025-av.1",
+   "updated_at": "2026-11-02T21:00:00Z",
+   "thumbnail_at": 38.0,
+   "cast_url": "/casts/sssnake.cast?v=1793648210",
+   "duration": 44.1,
+   "platforms": {
+    "x86_64-unknown-linux-musl": {
+     "url": "/dev-releases/sssnake/sssnake-x86_64-unknown-linux-musl.tar.gz",
+     "sha256": "ced1d0ff588fb5a5b0e0feade79cfa0586890df8113008cfbc8cce2a35912b2c",
+     "size": 64422
+    }
+   },
+   "news": []
+  },
   "starlanes": {
    "schema_version": 1,
    "id": "starlanes",

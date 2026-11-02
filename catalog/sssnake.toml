@@ -1,0 +1,49 @@
+schema_version = 1
+id = "sssnake"
+kind = "game"
+title = "sssnake"
+description = "Snake that can play itself: steer it, race it in arcade mode, or sit back while A* or BFS hunts the food, faster and faster, as a screensaver."
+year = 2022
+license = "MIT"
+repo = "theasciiverse/sssnake"
+provenance = "AngelJumbo wrote sssnake in C in 2022 as an A* exercise on the snake game, then gave its autopilot a greedy solver after chuyangliu's snake AI; the name is for smart and sexy snake."
+changes = "PATCHES.md"
+topics = ["snake", "autopilot", "pathfinding", "screensaver", "arcade", "c"]
+genre = "arcade"
+
+[developer]
+name = "AngelJumbo"
+url = "https://github.com/AngelJumbo/sssnake"
+
+# packaged by Asciiverse with one fix (terminals too small for a board are
+# refused instead of crashing); PATCHES.md in theasciiverse/sssnake
+[upstream]
+name = "AngelJumbo"
+url = "https://github.com/AngelJumbo/sssnake"
+
+# no arguments: the normal game, steered by hand; the modes, looks, speed
+# and board size are command-line options. Saves nothing
+[exec]
+game = "sssnake"
+args = []
+
+# the board fills the terminal; it needs a 5 by 5 board (10x5, 10x7 with
+# -z); arcade mode is a fixed board and needs 64x22
+[min_terminal]
+cols = 10
+rows = 5
+
+[requires]
+utf8 = true
+color = "basic"
+mouse = false
+
+# 100x30, asciiverse/record-preview.py: the autopilot at speed 18 on a
+# walled 30 by 24 board with the --try-hard 2 solver, from size 3 to about
+# 77 in 45 s; the still is a long snake coiled through the board
+[media]
+cast = "asciiverse/sssnake.cast"
+thumbnail_at = 38.0
+
+[release]
+source = "github"
