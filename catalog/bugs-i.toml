@@ -1,0 +1,48 @@
+schema_version = 1
+id = "bugs-i"
+kind = "game"
+title = "BUGS I"
+description = "Two-letter pieces fall onto a board crawling with bugs: line up four of a letter with a bug among them and it is gone. Clear every bug for the next level, as the pieces come faster."
+year = 1991
+old = true
+license = "LicenseRef-Public-Domain"
+repo = "theasciiverse/bugs-i"
+provenance = "Scott Noecker wrote BUGS I in C and curses in 1991, at SUNY Utica/Rome and then UNCW, and gave it to the public domain; Ken Corey brought it to Linux in 1992, and a 2015 cleanup is the copy that survived."
+changes = "PATCHES.md"
+topics = ["falling blocks", "bugs", "matching", "levels", "curses", "1991"]
+genre = "puzzle"
+
+[developer]
+name = "Scott Noecker"
+url = "https://github.com/theasciiverse/bugs-i"
+
+# restored and packaged by Asciiverse; PATCHES.md in theasciiverse/bugs-i
+[upstream]
+name = "Scott Noecker"
+url = "https://www.ibiblio.org/pub/historic-linux/ftp-archives/sunsite.unc.edu/Sep-29-1996/games/"
+
+# no arguments: the title screen, where level and speed are chosen
+[exec]
+game = "bugs-i"
+args = []
+
+# the 1991 layout as one 42x21 frame, centred; below that it asks for a
+# bigger window (tried from 1x1 to 150x45)
+[min_terminal]
+cols = 42
+rows = 21
+
+# letters in colour, bugs in reverse video; keyboard only
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, played by asciiverse/bot.py (asciiverse/record-preview.sh): the
+# title, then levels 0 and 1 cleared; the still is level 1 just dealt
+[media]
+cast = "asciiverse/bugs-i.cast"
+thumbnail_at = 19.0
+
+[release]
+source = "github"

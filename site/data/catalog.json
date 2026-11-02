@@ -2214,6 +2214,70 @@
    },
    "news": []
   },
+  "bugs-i": {
+   "schema_version": 1,
+   "id": "bugs-i",
+   "kind": "game",
+   "title": "BUGS I",
+   "description": "Two-letter pieces fall onto a board crawling with bugs: line up four of a letter with a bug among them and it is gone. Clear every bug for the next level, as the pieces come faster.",
+   "year": 1991,
+   "old": true,
+   "license": "LicenseRef-Public-Domain",
+   "repo": "theasciiverse/bugs-i",
+   "provenance": "Scott Noecker wrote BUGS I in C and curses in 1991, at SUNY Utica/Rome and then UNCW, and gave it to the public domain; Ken Corey brought it to Linux in 1992, and a 2015 cleanup is the copy that survived.",
+   "changes": "PATCHES.md",
+   "topics": [
+    "falling blocks",
+    "bugs",
+    "matching",
+    "levels",
+    "curses",
+    "1991"
+   ],
+   "genre": "puzzle",
+   "developer": {
+    "name": "Scott Noecker",
+    "url": "https://github.com/theasciiverse/bugs-i"
+   },
+   "upstream": {
+    "name": "Scott Noecker",
+    "url": "https://www.ibiblio.org/pub/historic-linux/ftp-archives/sunsite.unc.edu/Sep-29-1996/games/"
+   },
+   "exec": {
+    "game": "bugs-i",
+    "args": []
+   },
+   "min_terminal": {
+    "cols": 42,
+    "rows": 21
+   },
+   "requires": {
+    "utf8": false,
+    "color": "basic",
+    "mouse": false
+   },
+   "media": {
+    "cast": "asciiverse/bugs-i.cast",
+    "thumbnail_at": 19.0
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**THE BOARD IS CRAWLING WITH BUGS. SQUASH EVERY LAST ONE.**\n\nBugs are hiding in the board, letters in reverse video: A, L and S. Two\nletters at a time come falling from the top. Steer them, turn them, and\ndrop them where they count: four of a letter in a line, across or down,\nand they vanish, along with every bug caught among them. Whatever was\nresting on top falls into the gap, and if it lines up four more, those go\ntoo.\n\nClear every bug and the next level brings more of them. Every ten pieces\nthe fall gets a little quicker, and when the next piece has nowhere to\nland, the game is over.\n\nScott Noecker wrote it on a university Unix machine in the summer of 1991\nand gave it away, and it travelled the early Linux archives from there.\n\n**Squash them all.**\n\n## Controls\n\n- **Left** and **Right** (or **h** and **l**): move the piece\n- **Down** (or **j**): move it down a row\n- **Up**, **x** or **s**: turn it clockwise; **z** or **a**: the other way\n- **Space**: drop it\n- **p**: pause\n- **q** or **Esc**: leave the game; **Ctrl+C** quits at once\n\nOn the title screen, choose the level (0 to 20, more bugs each) and the\nspeed (1 to 3) with the arrow keys, then press Enter. Your best score is\nkept between games.\n\n## Credits\n\n- BUGS I: Scott Noecker (1991)\n- Linux release: Ken Corey (1992)\n- Cleanup: Grandpa's Code (2015)\n- License: public domain\n",
+   "version": "1.3-av.1",
+   "updated_at": "2026-11-02T21:53:39Z",
+   "thumbnail_at": 19.0,
+   "cast_url": "/casts/bugs-i.cast?v=1793656419",
+   "duration": 41.0,
+   "platforms": {
+    "x86_64-unknown-linux-musl": {
+     "url": "/dev-releases/bugs-i/bugs-i-x86_64-unknown-linux-musl.tar.gz",
+     "sha256": "6324ff6bcd122f085e782d2f2885182c2953957b264d38c4c9f2c8c73a045fa9",
+     "size": 148676
+    }
+   },
+   "news": []
+  },
   "calvary": {
    "schema_version": 1,
    "id": "calvary",
