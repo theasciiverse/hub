@@ -37,7 +37,7 @@ through slice after slice in one view may run straight in another.
   (**Shift** with the arrows works too)
 - **V** or **Tab**: turn the maze to its next view
 - **H**: hint (+10 s); **P**: pause; **R**: start the maze over;
-  **Esc**: back
+  **M**: sound off and on; **Esc**: back
 - **Gamepad**: left stick or d-pad walk, right stick or the face buttons
   step between slices, the triggers turn the maze, LB hints, Start pauses
 
@@ -50,6 +50,7 @@ room when a maze does not fit.
 - `--level N`: campaign maze N
 - `--endless small`, `medium`, `large` or `huge`, with `--fog` for fog
 - `--watch`: watch the way through being walked, the maze turning as it goes
+- `--mute`: no sound
 
 ## Credits
 
