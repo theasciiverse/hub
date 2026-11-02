@@ -1,0 +1,48 @@
+schema_version = 1
+id = "minesweeper-4d"
+kind = "game"
+title = "4D Minesweeper"
+description = "Minesweeper on a 4x4x4x4 field: every cell touches up to 80 others across four dimensions, and the cursor lights up every one of them."
+year = 2025
+new = true
+license = "MIT"
+repo = "theasciiverse/minesweeper-4d"
+provenance = "4D Minesweeper is itabesamesa's minesweeper_4d in Rust and Ratatui (2025), their eighth Minesweeper variant and second in four dimensions, after an earlier one in C."
+changes = "PATCHES.md"
+topics = ["minesweeper", "4d", "logic", "puzzle", "rust"]
+genre = "puzzle"
+
+[developer]
+name = "itabesamesa"
+url = "https://github.com/itabesamesa/minesweeper_4d_rs"
+
+# packaged by Asciiverse with one fix (starts without a config file);
+# PATCHES.md in theasciiverse/minesweeper-4d
+[upstream]
+name = "itabesamesa"
+url = "https://github.com/itabesamesa/minesweeper_4d_rs"
+
+# keys and colours in $XDG_CONFIG_HOME/minesweeper_4d/config.toml (the
+# default ships in the archive); Ctrl+O saves a game to ~/Downloads
+[exec]
+game = "minesweeper_4d"
+args = []
+
+# the default field beside its info box (I hides the box)
+[min_terminal]
+cols = 94
+rows = 21
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = false
+
+# 100x30, seed 42: the cursor walks all four axes, then free cells are
+# uncovered one by one; the still is the field a third uncovered
+[media]
+cast = "asciiverse/minesweeper-4d.cast"
+thumbnail_at = 25.0
+
+[release]
+source = "github"

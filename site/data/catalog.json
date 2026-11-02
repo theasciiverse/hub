@@ -7416,6 +7416,69 @@
    },
    "news": []
   },
+  "minesweeper-4d": {
+   "schema_version": 1,
+   "id": "minesweeper-4d",
+   "kind": "game",
+   "title": "4D Minesweeper",
+   "description": "Minesweeper on a 4x4x4x4 field: every cell touches up to 80 others across four dimensions, and the cursor lights up every one of them.",
+   "year": 2025,
+   "new": true,
+   "license": "MIT",
+   "repo": "theasciiverse/minesweeper-4d",
+   "provenance": "4D Minesweeper is itabesamesa's minesweeper_4d in Rust and Ratatui (2025), their eighth Minesweeper variant and second in four dimensions, after an earlier one in C.",
+   "changes": "PATCHES.md",
+   "topics": [
+    "minesweeper",
+    "4d",
+    "logic",
+    "puzzle",
+    "rust"
+   ],
+   "genre": "puzzle",
+   "developer": {
+    "name": "itabesamesa",
+    "url": "https://github.com/itabesamesa/minesweeper_4d_rs"
+   },
+   "upstream": {
+    "name": "itabesamesa",
+    "url": "https://github.com/itabesamesa/minesweeper_4d_rs"
+   },
+   "exec": {
+    "game": "minesweeper_4d",
+    "args": []
+   },
+   "min_terminal": {
+    "cols": 94,
+    "rows": 21
+   },
+   "requires": {
+    "utf8": true,
+    "color": "truecolor",
+    "mouse": false
+   },
+   "media": {
+    "cast": "asciiverse/minesweeper-4d.cast",
+    "thumbnail_at": 25.0
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**FOUR DIMENSIONS. TWENTY MINES. EIGHTY NEIGHBOURS PER CELL.**\n\nYou know Minesweeper: a number says how many mines touch a cell. Here the\nfield runs along x, y, z and w, drawn as a grid of grids, and a cell\ntouches everything one step away in any of the four directions at once:\nup to 80 neighbours. Move the cursor and every cell it reaches lights up,\nso you can see the shape of a 4D neighbourhood before you trust a number.\n\n- **Delta mode** (on by default): each number counts only the mines not\n  yet flagged around it, so solved areas fall to zero.\n- **Sweep mode**: a flagged mine is swept away. Flag wrong and the game is\n  over.\n- **Marks**: tag a group of cells and see how the mines in their reach\n  overlap; a way to learn 4D tactics, not a way around them.\n- **Any size you like**: `-d 6 6 3 3 -m 40`, or `-d 16 16 1 1 -m 40` for\n  the classic flat game.\n\n**SWEEP SIDEWAYS.**\n\n## Controls\n\n- **Arrows** or **H J K L**: move in x and y; **A D**: move in z;\n  **W S**: move in w. Hold **Shift** to jump to the edge\n- **Space**: uncover; **M** or **E**: flag; **Shift+M**: flag every\n  covered cell around the cursor; **F**: find a zero and open it\n- **X**: mark; **Shift+X**: uncover the obvious marked cells;\n  **Alt+X**: flag them; **Ctrl+X**: clear the marks\n- **U**: delta mode; **Shift+U**: sweep mode; **I**: info box\n- **N**: new game; **R**: retry; **G**: give up; **P**: pause\n- **C**: controls; **O**: settings; **Q** or **Esc**: quit\n\n## Options\n\n- `-d X Y Z W`: field size; `-m N`: mines; `-s N -r f`: a fixed seed\n- `-cm t`: play with the mouse (left uncovers, right flags)\n- Ctrl+O saves the game; start with the file's name to load it\n\n## Credits\n\n- minesweeper_4d: [itabesamesa](https://github.com/itabesamesa/minesweeper_4d_rs)\n- Asciiverse edition: starts without a config file of your own\n- License: MIT\n",
+   "version": "0.1.17-av.1",
+   "updated_at": "2026-11-02T19:00:00Z",
+   "thumbnail_at": 25.0,
+   "cast_url": "/casts/minesweeper-4d.cast?v=1793643660",
+   "duration": 36.2,
+   "platforms": {
+    "x86_64-unknown-linux-musl": {
+     "url": "/dev-releases/minesweeper-4d/minesweeper-4d-x86_64-unknown-linux-musl.tar.gz",
+     "sha256": "f6ca7dd6de79bf5bbab2d58a13265d6b681236c2bc245ceb6a21a73fad805843",
+     "size": 978005
+    }
+   },
+   "news": []
+  },
   "miscom": {
    "schema_version": 1,
    "id": "miscom",
