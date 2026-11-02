@@ -32,7 +32,9 @@ def local_binary(t):
 def local_version(t):
     """The version in the game's own Cargo.toml, when its folder is here."""
     for d in (GAMES / t["id"], GAMES / t["id"].replace("-", " ")):
-        for c in (d / "Cargo.toml", d / "game" / "Cargo.toml"):
+        # a workspace keeps the game's crate under crates/<its binary>/
+        binary = (t.get("exec") or {}).get("game") or t["id"]
+        for c in (d / "Cargo.toml", d / "game" / "Cargo.toml", d / "crates" / binary / "Cargo.toml"):
             if c.is_file():
                 v = tomllib.loads(c.read_text()).get("package", {}).get("version")
                 if isinstance(v, str):
