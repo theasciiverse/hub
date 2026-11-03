@@ -17517,16 +17517,16 @@
    "system_deps": [
     "libasound2"
    ],
-   "version": "1.0.0",
-   "updated_at": "2026-11-03T21:40:05Z",
+   "version": "1.0.1",
+   "updated_at": "2026-11-03T22:00:03Z",
    "thumbnail_at": 4.5,
    "cast_url": "/casts/zzt.cast?v=1793741700",
    "duration": 25.8,
    "platforms": {
     "x86_64-unknown-linux-gnu": {
      "url": "/dev-releases/zzt/zzt-x86_64-unknown-linux-gnu.tar.gz",
-     "sha256": "c945eb4b7f9f3ffc53a2a713e088d40eb0199c22877722c08a2273bbcc9b7565",
-     "size": 1630272
+     "sha256": "8b3adb7567bcb968e3782a5c0ab252bf83d353d43909feae113ebe2699a7d601",
+     "size": 1630386
     }
    },
    "news": []
