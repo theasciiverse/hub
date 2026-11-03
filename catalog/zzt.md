@@ -2,11 +2,13 @@
 
 Everything here is drawn in the PC's own text characters. You are the ☻. The lions are Ω, the tigers π, the centipedes a wriggling chain of O's, and the ruffians, bears and sharks are out there too. You push boulders, open coloured doors with coloured keys, light torches in rooms gone pitch black, and shoot your way through anything that won't move.
 
-Then there are the objects. Every one can run its own little program in ZZT-OOP: they talk, trade, guard doors, play tunes on the PC speaker and change the board around you. In Town of ZZT, the original adventure, a whole town of them stands between you and the five purple keys that open the palace.
+Then there are the objects. Every one can run its own little program in ZZT-OOP: they talk, trade, guard doors, play tunes on the PC speaker and change the board around you. In Town of ZZT, the original adventure, a whole town of them stands between you and the five purple keys that open the palace. Then go deeper: the Caves, the Dungeons and the Underground City of ZZT, the three worlds that once came only by mail to players who paid, are all here too.
 
 And when you have seen the town, press E. Tim Sweeney gave every player the same editor he built the game with, and they took it from there: thousands of worlds over thirty years, from mazes and shooters to sprawling stories. Drop any of them into your ZZT folder, press W, and play.
 
-- **Town of ZZT**, the original adventure, and the demo world, a guided tour of every creature, item and terrain
+- **Town of ZZT**, the original adventure
+- **The Caves, the Dungeons and the Underground City of ZZT**, plus the Guided Tour of them
+- **The demo world**, a tour of every creature, item and terrain
 - **The world editor**, boards, creatures, terrain and ZZT-OOP, the language every object speaks
 - **The PC speaker**, every bleep, drum and tune, at ZZT's own 18.2 ticks a second
 - **The original pace**, 9.1 cycles a second at the default speed, just as on a 1991 PC
@@ -29,6 +31,7 @@ And when you have seen the town, press E. Tim Sweeney gave every player the same
 ## Credits
 
 - ZZT: Tim Sweeney, Epic MegaGames
+- Town, Caves, Dungeons, City, the Tour and the demo: Epic MegaGames
 - The Reconstruction of ZZT: Adrian Siekierka
 - zztgo, the Go translation: Ben Hoyt
 - License: MIT

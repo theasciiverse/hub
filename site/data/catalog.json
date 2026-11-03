@@ -17468,7 +17468,7 @@
    "id": "zzt",
    "kind": "game",
    "title": "ZZT",
-   "description": "Tim Sweeney's 1991 adventure built from text characters: find the five purple keys of Town of ZZT among lions, tigers and talking objects, then build worlds of your own in the editor that started Epic",
+   "description": "Tim Sweeney's 1991 adventure built from text characters: find the five purple keys of Town of ZZT among lions, tigers and talking objects, go on into the Caves, Dungeons and City, then build worlds of your own in the editor that started Epic",
    "year": 1991,
    "old": true,
    "license": "MIT",
@@ -17513,20 +17513,20 @@
    "release": {
     "source": "github"
    },
-   "page": "**A SMILEY FACE. A TOWN FULL OF LIONS. FIVE PURPLE KEYS. AND THE EDITOR THAT STARTED EPIC.**\n\nEverything here is drawn in the PC's own text characters. You are the ☻. The lions are Ω, the tigers π, the centipedes a wriggling chain of O's, and the ruffians, bears and sharks are out there too. You push boulders, open coloured doors with coloured keys, light torches in rooms gone pitch black, and shoot your way through anything that won't move.\n\nThen there are the objects. Every one can run its own little program in ZZT-OOP: they talk, trade, guard doors, play tunes on the PC speaker and change the board around you. In Town of ZZT, the original adventure, a whole town of them stands between you and the five purple keys that open the palace.\n\nAnd when you have seen the town, press E. Tim Sweeney gave every player the same editor he built the game with, and they took it from there: thousands of worlds over thirty years, from mazes and shooters to sprawling stories. Drop any of them into your ZZT folder, press W, and play.\n\n- **Town of ZZT**, the original adventure, and the demo world, a guided tour of every creature, item and terrain\n- **The world editor**, boards, creatures, terrain and ZZT-OOP, the language every object speaks\n- **The PC speaker**, every bleep, drum and tune, at ZZT's own 18.2 ticks a second\n- **The original pace**, 9.1 cycles a second at the default speed, just as on a 1991 PC\n- **The EGA palette**, exactly, whatever your terminal's theme\n- **Thousands more worlds**, from the Museum of ZZT or anywhere else\n\n## Controls\n\n- **Arrows**: move; **Shift+arrows**: shoot (**Space** shoots the way you last moved)\n- **T**: light a torch; **B**: sound off or on; **H**: help\n- **S**: save; **P**: pause; **Esc** or **Q**: end the game\n- Title screen: **P** play, **W** pick a world, **R** restore a saved game, **E** the editor, **S** game speed, **A** about, **H** high scores\n- Editor: **H** its help, **T** export or import a board\n\n## Options\n\n- `zzt WORLD`: start with another world (`zzt DEMO`), or a world file by its path\n- `--mute`: start with the sound off\n\n## Credits\n\n- ZZT: Tim Sweeney, Epic MegaGames\n- The Reconstruction of ZZT: Adrian Siekierka\n- zztgo, the Go translation: Ben Hoyt\n- License: MIT\n",
+   "page": "**A SMILEY FACE. A TOWN FULL OF LIONS. FIVE PURPLE KEYS. AND THE EDITOR THAT STARTED EPIC.**\n\nEverything here is drawn in the PC's own text characters. You are the ☻. The lions are Ω, the tigers π, the centipedes a wriggling chain of O's, and the ruffians, bears and sharks are out there too. You push boulders, open coloured doors with coloured keys, light torches in rooms gone pitch black, and shoot your way through anything that won't move.\n\nThen there are the objects. Every one can run its own little program in ZZT-OOP: they talk, trade, guard doors, play tunes on the PC speaker and change the board around you. In Town of ZZT, the original adventure, a whole town of them stands between you and the five purple keys that open the palace. Then go deeper: the Caves, the Dungeons and the Underground City of ZZT, the three worlds that once came only by mail to players who paid, are all here too.\n\nAnd when you have seen the town, press E. Tim Sweeney gave every player the same editor he built the game with, and they took it from there: thousands of worlds over thirty years, from mazes and shooters to sprawling stories. Drop any of them into your ZZT folder, press W, and play.\n\n- **Town of ZZT**, the original adventure\n- **The Caves, the Dungeons and the Underground City of ZZT**, plus the Guided Tour of them\n- **The demo world**, a tour of every creature, item and terrain\n- **The world editor**, boards, creatures, terrain and ZZT-OOP, the language every object speaks\n- **The PC speaker**, every bleep, drum and tune, at ZZT's own 18.2 ticks a second\n- **The original pace**, 9.1 cycles a second at the default speed, just as on a 1991 PC\n- **The EGA palette**, exactly, whatever your terminal's theme\n- **Thousands more worlds**, from the Museum of ZZT or anywhere else\n\n## Controls\n\n- **Arrows**: move; **Shift+arrows**: shoot (**Space** shoots the way you last moved)\n- **T**: light a torch; **B**: sound off or on; **H**: help\n- **S**: save; **P**: pause; **Esc** or **Q**: end the game\n- Title screen: **P** play, **W** pick a world, **R** restore a saved game, **E** the editor, **S** game speed, **A** about, **H** high scores\n- Editor: **H** its help, **T** export or import a board\n\n## Options\n\n- `zzt WORLD`: start with another world (`zzt DEMO`), or a world file by its path\n- `--mute`: start with the sound off\n\n## Credits\n\n- ZZT: Tim Sweeney, Epic MegaGames\n- Town, Caves, Dungeons, City, the Tour and the demo: Epic MegaGames\n- The Reconstruction of ZZT: Adrian Siekierka\n- zztgo, the Go translation: Ben Hoyt\n- License: MIT\n",
    "system_deps": [
     "libasound2"
    ],
-   "version": "0.9.0",
-   "updated_at": "2026-11-03T21:35:11Z",
+   "version": "1.0.0",
+   "updated_at": "2026-11-03T21:40:05Z",
    "thumbnail_at": 4.5,
    "cast_url": "/casts/zzt.cast?v=1793741700",
    "duration": 25.8,
    "platforms": {
     "x86_64-unknown-linux-gnu": {
      "url": "/dev-releases/zzt/zzt-x86_64-unknown-linux-gnu.tar.gz",
-     "sha256": "d7492997f1c4cd20fa793a12ae9d16c4a5810de0d960c19ca29978d22d2bde9c",
-     "size": 1382015
+     "sha256": "c945eb4b7f9f3ffc53a2a713e088d40eb0199c22877722c08a2273bbcc9b7565",
+     "size": 1630272
     }
    },
    "news": []

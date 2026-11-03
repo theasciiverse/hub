@@ -2,7 +2,7 @@ schema_version = 1
 id = "zzt"
 kind = "game"
 title = "ZZT"
-description = "Tim Sweeney's 1991 adventure built from text characters: find the five purple keys of Town of ZZT among lions, tigers and talking objects, then build worlds of your own in the editor that started Epic"
+description = "Tim Sweeney's 1991 adventure built from text characters: find the five purple keys of Town of ZZT among lions, tigers and talking objects, go on into the Caves, Dungeons and City, then build worlds of your own in the editor that started Epic"
 year = 1991
 old = true
 # the Reconstruction of ZZT (Adrian Siekierka, MIT, with Tim Sweeney's
@@ -23,10 +23,10 @@ url = "https://asciiverse.sh"
 name = "Tim Sweeney, 1991"
 url = "https://github.com/asiekierka/reconstruction-of-zzt"
 
-# the archive holds zzt; Town of ZZT, the demo world and the help are built
-# in. Worlds, saved games and high scores go to $XDG_DATA_HOME/zzt
-# (~/.local/share/zzt, %APPDATA%\zzt), where Town and the demo are put on
-# first run
+# the archive holds zzt and Epic's zzt.zip, unaltered, from which it reads
+# Town, Caves, Dungeons, City and the Tour; the demo world and the help are
+# built in. Saved games, high scores and the player's own worlds go to
+# $XDG_DATA_HOME/zzt (~/.local/share/zzt, %APPDATA%\zzt)
 [exec]
 game = "zzt"
 args = []
