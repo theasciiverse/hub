@@ -58,6 +58,9 @@ url = "http://murilopereira.com"
 [exec]
 game = "solitty"               # binary inside the install dir; av adds .exe on Windows
 args = []                      # optional: arguments av passes at launch, e.g. ["-f"]
+stderr = "terminal"            # optional: keep stderr on the screen, for a title that
+                               # draws there or needs it to be a terminal; otherwise
+                               # av sends stderr to the title's log
 
 [min_terminal]                 # the smallest size the title is playable at
 cols = 57
