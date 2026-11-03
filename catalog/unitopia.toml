@@ -1,0 +1,17 @@
+# Answered with its greeting on 2026-10-12; facts from the game's own site.
+# site/casts/<id>.cast is the greeting, recorded by site/dev/record_mud.py.
+schema_version = 1
+id = "unitopia"
+kind = "mud"
+title = "UNItopia"
+description = "German LPMud with a fantasy realm, Magyra, and a replica of the Stuttgart campus"
+since = 1991
+theme = "fantasy"
+language = "German"
+topics = ["fantasy", "german", "lpmud", "social"]
+website = "https://www.unitopia.de/"
+
+[connect]
+host = "unitopia.de"
+port = 3333
+tls_port = 992

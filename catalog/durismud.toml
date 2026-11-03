@@ -1,0 +1,15 @@
+# Answered with its greeting on 2026-10-12; facts from the game's own site.
+# site/casts/<id>.cast is the greeting, recorded by site/dev/record_mud.py.
+schema_version = 1
+id = "durismud"
+kind = "mud"
+title = "DurisMUD"
+description = "Full-loot PvP fantasy MUD where good and evil races fight an endless racewar"
+since = 1996
+theme = "fantasy"
+topics = ["fantasy", "pvp", "racewar", "diku"]
+website = "https://www.durismud.com/"
+
+[connect]
+host = "mud.durismud.com"
+port = 7777

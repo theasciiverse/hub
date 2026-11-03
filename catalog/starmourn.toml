@@ -1,0 +1,15 @@
+# Answered with its greeting on 2026-10-12; facts from the game's own site.
+# site/casts/<id>.cast is the greeting, recorded by site/dev/record_mud.py.
+schema_version = 1
+id = "starmourn"
+kind = "mud"
+title = "Starmourn"
+description = "Space science fiction MUD by Iron Realms with over 50 alien races and hacking"
+since = 2018
+theme = "sci-fi"
+topics = ["sci-fi", "space", "pvp", "roleplay"]
+website = "https://www.starmourn.com/"
+
+[connect]
+host = "starmourn.com"
+port = 3000

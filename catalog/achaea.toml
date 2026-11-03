@@ -1,0 +1,14 @@
+# Server checked reachable 2026-10-10 with a plain TCP connect.
+schema_version = 1
+id = "achaea"
+kind = "mud"
+title = "Achaea"
+description = "Six city-states, player-run governments and decades of continuous development"
+since = 1997
+theme = "fantasy"
+topics = ["fantasy", "pk", "politics", "gmcp"]
+website = "https://www.achaea.com"
+
+[connect]
+host = "achaea.com"
+port = 23

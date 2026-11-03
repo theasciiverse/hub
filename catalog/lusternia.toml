@@ -1,0 +1,15 @@
+# Answered with its greeting on 2026-10-12; facts from the game's own site.
+# site/casts/<id>.cast is the greeting, recorded by site/dev/record_mud.py.
+schema_version = 1
+id = "lusternia"
+kind = "mud"
+title = "Lusternia"
+description = "Iron Realms fantasy MUD of rival city-states and nature communes"
+since = 2004
+theme = "fantasy"
+topics = ["fantasy", "roleplay", "pvp"]
+website = "https://www.lusternia.com/"
+
+[connect]
+host = "lusternia.com"
+port = 5000

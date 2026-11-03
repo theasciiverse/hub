@@ -1,0 +1,15 @@
+# Answered with its greeting on 2026-10-12; facts from the game's own site.
+# site/casts/<id>.cast is the greeting, recorded by site/dev/record_mud.py.
+schema_version = 1
+id = "ancientanguish"
+kind = "mud"
+title = "Ancient Anguish"
+description = "Medieval fantasy LPMud with 11 classes, 5 races, 8 guilds and optional PvP"
+since = 1992
+theme = "fantasy"
+topics = ["fantasy", "medieval", "lpmud", "pvp"]
+website = "https://anguish.org/"
+
+[connect]
+host = "ancient.anguish.org"
+port = 2222

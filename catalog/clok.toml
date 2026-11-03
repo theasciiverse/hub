@@ -1,0 +1,15 @@
+# Answered with its greeting on 2026-10-12; facts from the game's own site.
+# site/casts/<id>.cast is the greeting, recorded by site/dev/record_mud.py.
+schema_version = 1
+id = "clok"
+kind = "mud"
+title = "CLOK"
+description = "Fantasy frontier-west and gaslamp MUD set in the Northern Lost Lands"
+since = 2009
+theme = "fantasy western"
+topics = ["fantasy", "western", "gaslamp"]
+website = "https://clok.contrarium.net/"
+
+[connect]
+host = "clok.contrarium.net"
+port = 4000

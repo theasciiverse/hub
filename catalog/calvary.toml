@@ -4,6 +4,7 @@ kind = "game"
 title = "Calvary"
 description = "An action-RTS built from Crack dot Com's unfinished Golgotha: drive the supertank yourself while your army rolls down the roads, through a forty-mission campaign from Basrah to the Arctic and back to Jerusalem in 2048."
 year = 1998
+featured = 5             # place in the website's carousel, 1 first
 license = "MIT"
 repo = "theasciiverse/calvary"
 provenance = "Crack dot Com was making Golgotha when the studio closed in 1998, and gave away its source, graphics, music and levels; Patrick Grawehr's Golgotha Forever kept the code alive. Asciiverse built Calvary from them in 2026, with a campaign of its own."

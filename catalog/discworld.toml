@@ -1,0 +1,14 @@
+# Server checked reachable 2026-10-10 with a plain TCP connect.
+schema_version = 1
+id = "discworld"
+kind = "mud"
+title = "Discworld MUD"
+description = "Terry Pratchett's Discworld, over a million rooms, run by volunteers"
+since = 1991
+theme = "comic fantasy"
+topics = ["fantasy", "pratchett", "exploration", "lpmud"]
+website = "https://discworld.starturtle.net"
+
+[connect]
+host = "discworld.starturtle.net"
+port = 4242

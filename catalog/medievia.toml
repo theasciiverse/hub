@@ -1,0 +1,15 @@
+# Answered with its greeting on 2026-10-12; facts from the game's own site.
+# site/casts/<id>.cast is the greeting, recorded by site/dev/record_mud.py.
+schema_version = 1
+id = "medievia"
+kind = "mud"
+title = "Medievia"
+description = "Long-running medieval fantasy MUD with dragons, ships, wagon trading, clans and castles"
+since = 1992
+theme = "fantasy"
+topics = ["fantasy", "diku", "pvp", "clans"]
+website = "https://www.medievia.com/"
+
+[connect]
+host = "medievia.com"
+port = 4000

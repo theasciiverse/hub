@@ -1,0 +1,15 @@
+# Answered with its greeting on 2026-10-12; facts from the game's own site.
+# site/casts/<id>.cast is the greeting, recorded by site/dev/record_mud.py.
+schema_version = 1
+id = "threshold"
+kind = "mud"
+title = "Threshold RPG"
+description = "Roleplay-enforced high fantasy MUD with player-run politics, economy and guilds"
+since = 1996
+theme = "fantasy"
+topics = ["fantasy", "roleplay", "pvp", "politics"]
+website = "https://www.thresholdrpg.com/"
+
+[connect]
+host = "thresholdrpg.com"
+port = 3333

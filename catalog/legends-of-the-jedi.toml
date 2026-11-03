@@ -1,0 +1,17 @@
+# Server checked reachable 2026-10-10 with a plain TCP connect.
+# since: its own site says "A text-based Star Wars roleplaying experience
+# since 1998" (checked 2026-10-12). IGDB gives November 2000 as the opening,
+# with development from 1998; the game's own year is used here.
+schema_version = 1
+id = "legends-of-the-jedi"
+kind = "mud"
+title = "Legends of the Jedi"
+since = 1998
+description = "Star Wars roleplay across iconic locations, approachable for new players"
+theme = "science fantasy"
+topics = ["star-wars", "roleplay", "space", "smaug"]
+website = "https://www.legendsofthejedi.com"
+
+[connect]
+host = "legendsofthejedi.com"
+port = 5656

@@ -1,0 +1,16 @@
+# Answered with its greeting on 2026-10-12; facts from the game's own site.
+# site/casts/<id>.cast is the greeting, recorded by site/dev/record_mud.py.
+schema_version = 1
+id = "stickmud"
+kind = "mud"
+title = "StickMUD"
+description = "Medieval fantasy hack-and-slash LPMud founded in Finland in 1991"
+since = 1991
+theme = "fantasy"
+topics = ["fantasy", "hack-and-slash", "lpmud", "guilds"]
+website = "https://www.stickmud.com/"
+
+[connect]
+host = "stickmud.com"
+port = 7680
+tls_port = 7670

@@ -1,0 +1,16 @@
+# Answered with its greeting on 2026-10-12; facts from the game's own site.
+# site/casts/<id>.cast is the greeting, recorded by site/dev/record_mud.py.
+schema_version = 1
+id = "merentha"
+kind = "mud"
+title = "Merentha"
+description = "Free fantasy LPMud set in the lands of Cardania, with guilds, spells and quests"
+since = 1997
+theme = "fantasy"
+topics = ["fantasy", "lpmud", "guilds", "quests"]
+website = "https://merentha.com/"
+
+[connect]
+host = "merentha.com"
+port = 10000
+tls_port = 10001

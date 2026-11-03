@@ -1,0 +1,15 @@
+# Answered with its greeting on 2026-10-12; facts from the game's own site.
+# site/casts/<id>.cast is the greeting, recorded by site/dev/record_mud.py.
+schema_version = 1
+id = "arctic"
+kind = "mud"
+title = "ArcticMud"
+description = "PvP fantasy MUD loosely based on the Dragonlance novels, set on Krynn"
+since = 1992
+theme = "fantasy"
+topics = ["fantasy", "dragonlance", "pvp"]
+website = "http://mud.arctic.org/"
+
+[connect]
+host = "mud.arctic.org"
+port = 2700

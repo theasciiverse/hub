@@ -1,0 +1,19 @@
+# Answered with its greeting on 2026-10-12; facts from the game's own site.
+# site/casts/<id>.cast is the greeting, recorded by site/dev/record_mud.py.
+# Added 2026-10-12. Facts from its own wiki (startrekkin.net): CobraMUSH,
+# its own Frontier Space engine, set after the Star Trek Destiny and Typhon
+# Pact novels. Online since 23 April 2004 (Mudverse listing,
+# mudverse.com/game/546). No age limit in its greeting or on its site.
+schema_version = 1
+id = "typhon-accords"
+kind = "mud"
+title = "Star Trek: Typhon Accords"
+since = 2004
+description = "Star Trek role-play after the Destiny and Typhon Pact novels, as the Federation rebuilds"
+theme = "sci-fi"
+topics = ["sci-fi", "star trek", "roleplay", "mush"]
+website = "https://startrekkin.net/"
+
+[connect]
+host = "startrekkin.net"
+port = 1701

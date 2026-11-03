@@ -1,0 +1,17 @@
+# Answered with its greeting on 2026-10-12; facts from the game's own site.
+# site/casts/<id>.cast is the greeting, recorded by site/dev/record_mud.py.
+schema_version = 1
+id = "morgengrauen"
+kind = "mud"
+title = "MorgenGrauen"
+description = "German-language LPMud, founded by students at the University of Münster"
+since = 1992
+theme = "fantasy"
+language = "German"
+topics = ["fantasy", "german", "lpmud", "no-pk"]
+website = "https://mg.mud.de/"
+
+[connect]
+host = "mg.mud.de"
+port = 4711
+tls_port = 4712

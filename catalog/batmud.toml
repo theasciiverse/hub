@@ -1,0 +1,17 @@
+# Server checked reachable 2026-10-10 with a plain TCP connect.
+schema_version = 1
+id = "batmud"
+kind = "mud"
+title = "BatMUD"
+description = "More than thirty years old, with a community that meets in real life"
+since = 1990
+theme = "fantasy"
+topics = ["fantasy", "pk", "guilds", "finnish"]
+website = "https://www.bat.org"
+
+[connect]
+# tls_port checked 2026-10-12: TLS 1.3 handshake, certificate *.bat.org verified,
+# the game's login screen answers. None found for the other MUDs here.
+host = "batmud.bat.org"
+port = 23
+tls_port = 2022

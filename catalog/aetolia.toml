@@ -1,0 +1,15 @@
+# Answered with its greeting on 2026-10-12; facts from the game's own site.
+# site/casts/<id>.cast is the greeting, recorded by site/dev/record_mud.py.
+schema_version = 1
+id = "aetolia"
+kind = "mud"
+title = "Aetolia"
+description = "Gothic dark fantasy roleplay world with vampires and horror, run by Iron Realms"
+since = 2001
+theme = "dark fantasy"
+topics = ["fantasy", "horror", "vampires", "roleplay"]
+website = "https://www.aetolia.com/"
+
+[connect]
+host = "aetolia.com"
+port = 23

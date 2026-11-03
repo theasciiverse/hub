@@ -5,6 +5,7 @@ title = "Sleighride"
 description = "Second day of Christmas, Santa's asleep and the elves have found the keys! Grab a sleigh, a reindeer or a broomstick and race like mad, before Santa fires up the snowplough and comes for the ringleader!"
 year = 2026
 new = true
+featured = 4             # place in the website's carousel, 1 first
 license = "GPL-3.0-or-later"
 repo = "theasciiverse/sleighride"
 provenance = "Asciiverse made Sleighride in Rust in 2026, out of the Christmas folklore of Julbocken, La Befana, the Yule Cat, the Yule Lads, Ded Moroz and Snegurochka."

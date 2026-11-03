@@ -1,0 +1,15 @@
+# Answered with its greeting on 2026-10-12; facts from the game's own site.
+# site/casts/<id>.cast is the greeting, recorded by site/dev/record_mud.py.
+schema_version = 1
+id = "lambdamoo"
+kind = "mud"
+title = "LambdaMOO"
+description = "Social MOO founded by Pavel Curtis at Xerox PARC, where users build the world"
+since = 1990
+theme = "social"
+topics = ["social", "moo", "building", "history"]
+website = "https://lambda.moo.mud.org/"
+
+[connect]
+host = "lambda.moo.mud.org"
+port = 8888

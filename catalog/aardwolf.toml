@@ -1,0 +1,14 @@
+# Server checked reachable 2026-10-10 with a plain TCP connect.
+schema_version = 1
+id = "aardwolf"
+kind = "mud"
+title = "Aardwolf"
+description = "Huge questing MUD, friendly to newcomers and known for screen-reader support"
+since = 1996
+theme = "fantasy"
+topics = ["fantasy", "questing", "accessible", "gmcp"]
+website = "https://www.aardwolf.com"
+
+[connect]
+host = "aardmud.org"
+port = 4000

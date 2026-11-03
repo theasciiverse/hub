@@ -1,0 +1,15 @@
+# Answered with its greeting on 2026-10-12; facts from the game's own site.
+# site/casts/<id>.cast is the greeting, recorded by site/dev/record_mud.py.
+schema_version = 1
+id = "materiamagica"
+kind = "mud"
+title = "Materia Magica"
+description = "Fantasy MUD set in the world of Alyria, first opened in 1996 as Moongate"
+since = 1996
+theme = "fantasy"
+topics = ["fantasy", "accessible", "rom"]
+website = "https://www.materiamagica.com/"
+
+[connect]
+host = "materiamagica.com"
+port = 4000

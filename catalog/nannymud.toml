@@ -1,0 +1,15 @@
+# Answered with its greeting on 2026-10-12; facts from the game's own site.
+# site/casts/<id>.cast is the greeting, recorded by site/dev/record_mud.py.
+schema_version = 1
+id = "nannymud"
+kind = "mud"
+title = "NannyMUD"
+description = "LPMud hosted by Lysator at Linköping University since 1990, with guests welcome"
+since = 1990
+theme = "fantasy"
+topics = ["fantasy", "lpmud", "classic", "sweden"]
+website = "https://www.lysator.liu.se/nanny/"
+
+[connect]
+host = "mud.lysator.liu.se"
+port = 2000

@@ -1,0 +1,15 @@
+# Answered with its greeting on 2026-10-12; facts from the game's own site.
+# site/casts/<id>.cast is the greeting, recorded by site/dev/record_mud.py.
+schema_version = 1
+id = "3kingdoms"
+kind = "mud"
+title = "3Kingdoms"
+description = "Three realms, fantasy, science and chaos, joined through the central town of Pinnacle"
+since = 1992
+theme = "fantasy"
+topics = ["fantasy", "sci-fi", "lpmud", "guilds"]
+website = "https://www.3k.org/"
+
+[connect]
+host = "3k.org"
+port = 3000

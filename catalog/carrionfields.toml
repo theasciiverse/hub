@@ -1,0 +1,15 @@
+# Answered with its greeting on 2026-10-12; facts from the game's own site.
+# site/casts/<id>.cast is the greeting, recorded by site/dev/record_mud.py.
+schema_version = 1
+id = "carrionfields"
+kind = "mud"
+title = "Carrion Fields"
+description = "Roleplay-required dark fantasy MUD with cabal factions and player-versus-player conflict"
+since = 1994
+theme = "dark fantasy"
+topics = ["fantasy", "roleplay", "pvp", "rom"]
+website = "https://carrionfields.net/"
+
+[connect]
+host = "carrionfields.net"
+port = 4449

@@ -1,0 +1,15 @@
+# Answered with its greeting on 2026-10-12; facts from the game's own site.
+# site/casts/<id>.cast is the greeting, recorded by site/dev/record_mud.py.
+schema_version = 1
+id = "alteraeon"
+kind = "mud"
+title = "Alter Aeon"
+description = "Fantasy MUD with mage, cleric, thief, warrior, necromancer and druid classes"
+since = 1995
+theme = "fantasy"
+topics = ["fantasy", "multiclass", "accessible", "pve"]
+website = "https://www.alteraeon.com/"
+
+[connect]
+host = "alteraeon.com"
+port = 3000

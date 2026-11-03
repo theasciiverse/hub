@@ -234,6 +234,94 @@
    },
    "news": []
   },
+  "3kingdoms": {
+   "schema_version": 1,
+   "id": "3kingdoms",
+   "kind": "mud",
+   "title": "3Kingdoms",
+   "description": "Three realms, fantasy, science and chaos, joined through the central town of Pinnacle",
+   "since": 1992,
+   "theme": "fantasy",
+   "topics": [
+    "fantasy",
+    "sci-fi",
+    "lpmud",
+    "guilds"
+   ],
+   "website": "https://www.3k.org/",
+   "connect": {
+    "host": "3k.org",
+    "port": 3000
+   },
+   "page": "",
+   "cast_url": "/casts/3kingdoms.cast?v=1791906527"
+  },
+  "aardwolf": {
+   "schema_version": 1,
+   "id": "aardwolf",
+   "kind": "mud",
+   "title": "Aardwolf",
+   "description": "Huge questing MUD, friendly to newcomers and known for screen-reader support",
+   "since": 1996,
+   "theme": "fantasy",
+   "topics": [
+    "fantasy",
+    "questing",
+    "accessible",
+    "gmcp"
+   ],
+   "website": "https://www.aardwolf.com",
+   "connect": {
+    "host": "aardmud.org",
+    "port": 4000
+   },
+   "page": "",
+   "cast_url": "/casts/aardwolf.cast?v=1791906527"
+  },
+  "achaea": {
+   "schema_version": 1,
+   "id": "achaea",
+   "kind": "mud",
+   "title": "Achaea",
+   "description": "Six city-states, player-run governments and decades of continuous development",
+   "since": 1997,
+   "theme": "fantasy",
+   "topics": [
+    "fantasy",
+    "pk",
+    "politics",
+    "gmcp"
+   ],
+   "website": "https://www.achaea.com",
+   "connect": {
+    "host": "achaea.com",
+    "port": 23
+   },
+   "page": "",
+   "cast_url": "/casts/achaea.cast?v=1791906527"
+  },
+  "aetolia": {
+   "schema_version": 1,
+   "id": "aetolia",
+   "kind": "mud",
+   "title": "Aetolia",
+   "description": "Gothic dark fantasy roleplay world with vampires and horror, run by Iron Realms",
+   "since": 2001,
+   "theme": "dark fantasy",
+   "topics": [
+    "fantasy",
+    "horror",
+    "vampires",
+    "roleplay"
+   ],
+   "website": "https://www.aetolia.com/",
+   "connect": {
+    "host": "aetolia.com",
+    "port": 23
+   },
+   "page": "",
+   "cast_url": "/casts/aetolia.cast?v=1791906527"
+  },
   "alienwave": {
    "schema_version": 1,
    "id": "alienwave",
@@ -429,6 +517,50 @@
     }
    },
    "news": []
+  },
+  "alteraeon": {
+   "schema_version": 1,
+   "id": "alteraeon",
+   "kind": "mud",
+   "title": "Alter Aeon",
+   "description": "Fantasy MUD with mage, cleric, thief, warrior, necromancer and druid classes",
+   "since": 1995,
+   "theme": "fantasy",
+   "topics": [
+    "fantasy",
+    "multiclass",
+    "accessible",
+    "pve"
+   ],
+   "website": "https://www.alteraeon.com/",
+   "connect": {
+    "host": "alteraeon.com",
+    "port": 3000
+   },
+   "page": "",
+   "cast_url": "/casts/alteraeon.cast?v=1791906527"
+  },
+  "ancientanguish": {
+   "schema_version": 1,
+   "id": "ancientanguish",
+   "kind": "mud",
+   "title": "Ancient Anguish",
+   "description": "Medieval fantasy LPMud with 11 classes, 5 races, 8 guilds and optional PvP",
+   "since": 1992,
+   "theme": "fantasy",
+   "topics": [
+    "fantasy",
+    "medieval",
+    "lpmud",
+    "pvp"
+   ],
+   "website": "https://anguish.org/",
+   "connect": {
+    "host": "ancient.anguish.org",
+    "port": 2222
+   },
+   "page": "",
+   "cast_url": "/casts/ancientanguish.cast?v=1791906527"
   },
   "andromeda-apocalypse": {
    "schema_version": 1,
@@ -628,6 +760,27 @@
     }
    },
    "news": []
+  },
+  "arctic": {
+   "schema_version": 1,
+   "id": "arctic",
+   "kind": "mud",
+   "title": "ArcticMud",
+   "description": "PvP fantasy MUD loosely based on the Dragonlance novels, set on Krynn",
+   "since": 1992,
+   "theme": "fantasy",
+   "topics": [
+    "fantasy",
+    "dragonlance",
+    "pvp"
+   ],
+   "website": "http://mud.arctic.org/",
+   "connect": {
+    "host": "mud.arctic.org",
+    "port": 2700
+   },
+   "page": "",
+   "cast_url": "/casts/arctic.cast?v=1791906527"
   },
   "armoured-commander-ii": {
    "schema_version": 1,
@@ -1357,6 +1510,28 @@
    },
    "news": []
   },
+  "avatar": {
+   "schema_version": 1,
+   "id": "avatar",
+   "kind": "mud",
+   "title": "AVATAR",
+   "description": "Large fantasy MUD with remort classes and tiers, on heavily modified Merc code",
+   "since": 1991,
+   "theme": "fantasy",
+   "topics": [
+    "fantasy",
+    "remort",
+    "accessible",
+    "merc"
+   ],
+   "website": "https://www.outland.org/",
+   "connect": {
+    "host": "avatar.outland.org",
+    "port": 3000
+   },
+   "page": "",
+   "cast_url": "/casts/avatar.cast?v=1791906527"
+  },
   "bastet": {
    "schema_version": 1,
    "id": "bastet",
@@ -1416,6 +1591,29 @@
     }
    },
    "news": []
+  },
+  "batmud": {
+   "schema_version": 1,
+   "id": "batmud",
+   "kind": "mud",
+   "title": "BatMUD",
+   "description": "More than thirty years old, with a community that meets in real life",
+   "since": 1990,
+   "theme": "fantasy",
+   "topics": [
+    "fantasy",
+    "pk",
+    "guilds",
+    "finnish"
+   ],
+   "website": "https://www.bat.org",
+   "connect": {
+    "host": "batmud.bat.org",
+    "port": 23,
+    "tls_port": 2022
+   },
+   "page": "",
+   "cast_url": "/casts/batmud.cast?v=1791906527"
   },
   "battlestar": {
    "schema_version": 1,
@@ -2285,6 +2483,7 @@
    "title": "Calvary",
    "description": "An action-RTS built from Crack dot Com's unfinished Golgotha: drive the supertank yourself while your army rolls down the roads, through a forty-mission campaign from Basrah to the Arctic and back to Jerusalem in 2048.",
    "year": 1998,
+   "featured": 5,
    "license": "MIT",
    "repo": "theasciiverse/calvary",
    "provenance": "Crack dot Com was making Golgotha when the studio closed in 1998, and gave away its source, graphics, music and levels; Patrick Grawehr's Golgotha Forever kept the code alive. Asciiverse built Calvary from them in 2026, with a campaign of its own.",
@@ -2476,6 +2675,28 @@
     }
    },
    "news": []
+  },
+  "carrionfields": {
+   "schema_version": 1,
+   "id": "carrionfields",
+   "kind": "mud",
+   "title": "Carrion Fields",
+   "description": "Roleplay-required dark fantasy MUD with cabal factions and player-versus-player conflict",
+   "since": 1994,
+   "theme": "dark fantasy",
+   "topics": [
+    "fantasy",
+    "roleplay",
+    "pvp",
+    "rom"
+   ],
+   "website": "https://carrionfields.net/",
+   "connect": {
+    "host": "carrionfields.net",
+    "port": 4449
+   },
+   "page": "",
+   "cast_url": "/casts/carrionfields.cast?v=1791906527"
   },
   "cataclysm-dda": {
    "schema_version": 1,
@@ -3481,6 +3702,27 @@
    },
    "news": []
   },
+  "clok": {
+   "schema_version": 1,
+   "id": "clok",
+   "kind": "mud",
+   "title": "CLOK",
+   "description": "Fantasy frontier-west and gaslamp MUD set in the Northern Lost Lands",
+   "since": 2009,
+   "theme": "fantasy western",
+   "topics": [
+    "fantasy",
+    "western",
+    "gaslamp"
+   ],
+   "website": "https://clok.contrarium.net/",
+   "connect": {
+    "host": "clok.contrarium.net",
+    "port": 4000
+   },
+   "page": "",
+   "cast_url": "/casts/clok.cast?v=1791906527"
+  },
   "cmines": {
    "schema_version": 1,
    "id": "cmines",
@@ -4305,6 +4547,28 @@
    },
    "news": []
   },
+  "discworld": {
+   "schema_version": 1,
+   "id": "discworld",
+   "kind": "mud",
+   "title": "Discworld MUD",
+   "description": "Terry Pratchett's Discworld, over a million rooms, run by volunteers",
+   "since": 1991,
+   "theme": "comic fantasy",
+   "topics": [
+    "fantasy",
+    "pratchett",
+    "exploration",
+    "lpmud"
+   ],
+   "website": "https://discworld.starturtle.net",
+   "connect": {
+    "host": "discworld.starturtle.net",
+    "port": 4242
+   },
+   "page": "",
+   "cast_url": "/casts/discworld.cast?v=1791906527"
+  },
   "doctor-m": {
    "schema_version": 1,
    "id": "doctor-m",
@@ -4643,6 +4907,51 @@
     }
    },
    "news": []
+  },
+  "dunemud": {
+   "schema_version": 1,
+   "id": "dunemud",
+   "kind": "mud",
+   "title": "Dune MUD",
+   "description": "LPMud set in Frank Herbert's Dune universe, with ten guilds and over 30,000 rooms",
+   "since": 1992,
+   "theme": "dune",
+   "topics": [
+    "dune",
+    "sci-fi",
+    "lpmud",
+    "guilds"
+   ],
+   "website": "https://dunemud.net/",
+   "connect": {
+    "host": "dunemud.net",
+    "port": 6789,
+    "tls_port": 6788
+   },
+   "page": "",
+   "cast_url": "/casts/dunemud.cast?v=1791906527"
+  },
+  "durismud": {
+   "schema_version": 1,
+   "id": "durismud",
+   "kind": "mud",
+   "title": "DurisMUD",
+   "description": "Full-loot PvP fantasy MUD where good and evil races fight an endless racewar",
+   "since": 1996,
+   "theme": "fantasy",
+   "topics": [
+    "fantasy",
+    "pvp",
+    "racewar",
+    "diku"
+   ],
+   "website": "https://www.durismud.com/",
+   "connect": {
+    "host": "mud.durismud.com",
+    "port": 7777
+   },
+   "page": "",
+   "cast_url": "/casts/durismud.cast?v=1791906527"
   },
   "durthang": {
    "schema_version": 1,
@@ -5697,6 +6006,28 @@
     }
    },
    "news": []
+  },
+  "genesis": {
+   "schema_version": 1,
+   "id": "genesis",
+   "kind": "mud",
+   "title": "Genesis",
+   "description": "The original LPMud, founded in 1989 by students at Chalmers in Gothenburg",
+   "since": 1989,
+   "theme": "fantasy",
+   "topics": [
+    "fantasy",
+    "lpmud",
+    "history",
+    "sweden"
+   ],
+   "website": "https://www.genesismud.org/",
+   "connect": {
+    "host": "mud.genesismud.org",
+    "port": 3011
+   },
+   "page": "",
+   "cast_url": "/casts/genesis.cast?v=1791906527"
   },
   "glider": {
    "schema_version": 1,
@@ -7154,6 +7485,28 @@
    },
    "news": []
   },
+  "lambdamoo": {
+   "schema_version": 1,
+   "id": "lambdamoo",
+   "kind": "mud",
+   "title": "LambdaMOO",
+   "description": "Social MOO founded by Pavel Curtis at Xerox PARC, where users build the world",
+   "since": 1990,
+   "theme": "social",
+   "topics": [
+    "social",
+    "moo",
+    "building",
+    "history"
+   ],
+   "website": "https://lambda.moo.mud.org/",
+   "connect": {
+    "host": "lambda.moo.mud.org",
+    "port": 8888
+   },
+   "page": "",
+   "cast_url": "/casts/lambdamoo.cast?v=1791906527"
+  },
   "larn": {
    "schema_version": 1,
    "id": "larn",
@@ -7216,6 +7569,28 @@
     }
    },
    "news": []
+  },
+  "legends-of-the-jedi": {
+   "schema_version": 1,
+   "id": "legends-of-the-jedi",
+   "kind": "mud",
+   "title": "Legends of the Jedi",
+   "since": 1998,
+   "description": "Star Wars roleplay across iconic locations, approachable for new players",
+   "theme": "science fantasy",
+   "topics": [
+    "star-wars",
+    "roleplay",
+    "space",
+    "smaug"
+   ],
+   "website": "https://www.legendsofthejedi.com",
+   "connect": {
+    "host": "legendsofthejedi.com",
+    "port": 5656
+   },
+   "page": "",
+   "cast_url": "/casts/legends-of-the-jedi.cast?v=1791906527"
   },
   "lexter": {
    "schema_version": 1,
@@ -7340,6 +7715,27 @@
     }
    },
    "news": []
+  },
+  "lusternia": {
+   "schema_version": 1,
+   "id": "lusternia",
+   "kind": "mud",
+   "title": "Lusternia",
+   "description": "Iron Realms fantasy MUD of rival city-states and nature communes",
+   "since": 2004,
+   "theme": "fantasy",
+   "topics": [
+    "fantasy",
+    "roleplay",
+    "pvp"
+   ],
+   "website": "https://www.lusternia.com/",
+   "connect": {
+    "host": "lusternia.com",
+    "port": 5000
+   },
+   "page": "",
+   "cast_url": "/casts/lusternia.cast?v=1791906527"
   },
   "mahjongg": {
    "schema_version": 1,
@@ -7613,6 +8009,27 @@
    },
    "news": []
   },
+  "materiamagica": {
+   "schema_version": 1,
+   "id": "materiamagica",
+   "kind": "mud",
+   "title": "Materia Magica",
+   "description": "Fantasy MUD set in the world of Alyria, first opened in 1996 as Moongate",
+   "since": 1996,
+   "theme": "fantasy",
+   "topics": [
+    "fantasy",
+    "accessible",
+    "rom"
+   ],
+   "website": "https://www.materiamagica.com/",
+   "connect": {
+    "host": "materiamagica.com",
+    "port": 4000
+   },
+   "page": "",
+   "cast_url": "/casts/materiamagica.cast?v=1791906527"
+  },
   "maze-tui": {
    "schema_version": 1,
    "id": "maze-tui",
@@ -7676,6 +8093,28 @@
     }
    },
    "news": []
+  },
+  "medievia": {
+   "schema_version": 1,
+   "id": "medievia",
+   "kind": "mud",
+   "title": "Medievia",
+   "description": "Long-running medieval fantasy MUD with dragons, ships, wagon trading, clans and castles",
+   "since": 1992,
+   "theme": "fantasy",
+   "topics": [
+    "fantasy",
+    "diku",
+    "pvp",
+    "clans"
+   ],
+   "website": "https://www.medievia.com/",
+   "connect": {
+    "host": "medievia.com",
+    "port": 4000
+   },
+   "page": "",
+   "cast_url": "/casts/medievia.cast?v=1791906527"
   },
   "mehen": {
    "schema_version": 1,
@@ -7802,6 +8241,29 @@
     }
    },
    "news": []
+  },
+  "merentha": {
+   "schema_version": 1,
+   "id": "merentha",
+   "kind": "mud",
+   "title": "Merentha",
+   "description": "Free fantasy LPMud set in the lands of Cardania, with guilds, spells and quests",
+   "since": 1997,
+   "theme": "fantasy",
+   "topics": [
+    "fantasy",
+    "lpmud",
+    "guilds",
+    "quests"
+   ],
+   "website": "https://merentha.com/",
+   "connect": {
+    "host": "merentha.com",
+    "port": 10000,
+    "tls_port": 10001
+   },
+   "page": "",
+   "cast_url": "/casts/merentha.cast?v=1791906527"
   },
   "miketron": {
    "schema_version": 1,
@@ -8036,7 +8498,7 @@
    "release": {
     "source": "github"
    },
-   "page": "**THE MOON IS FULL OF HOLES. YOU ARE DRIVING ACROSS IT.**\n\n\"Drive some kind of car across the moon's surface,\" Jochen Voss wrote. \"Unfortunately there are dangerous craters there. Fortunately your car can jump over them!\"\n\nThe ground rolls towards your buggy and you time every jump. Too early or too late and a wheel drops into the crater. The game eases you in with \"good luck (or use <SPC> to jump)\", warns you that \"some craters are wider than others\", hands you a mining laser for the meteors rolling along the ground, and then lets a whole shower of them loose with a cheerful \"... but what is that?\" Survive all of that and it tells you: \"You may start your journey, now.\"\n\n- **Jump the craters**, narrow and wide, coming faster with each level.\n- **Laser the meteors**: three hits break one up, and every shot costs you a point, so make them count.\n- **Three buggies** to get as far as you can.\n- **A hundred places on the high score table.** The top three stay for good; the rest fade after two weeks to six months, depending on the rank, and Thorin's company of dwarves moves into the empty places.\n\n**GOOD LUCK, DRIVER.**\n\n## Controls\n\n- **Space** or **j**: jump\n- **a** or **l**: fire the laser\n- **q** or **n**: abort the game\n- **r** or **Ctrl+L**: redraw the screen\n\nOn the title screen, **Space**, **Return** or **y** starts a game,\n**s** shows the scores and **q** quits.\n\n## Options\n\n- `-r`: drive to the right instead of the left (the whole surface is\n  drawn mirrored)\n- `-n`: skip the title screen\n- `-s`: print the high score table and exit\n\n## Credits\n\n- Moon-Buggy: Jochen Voss ([github.com/seehuhn/moon-buggy](https://github.com/seehuhn/moon-buggy)),\n  1998 to 2025, written in C with curses; animations for version 1.0 by\n  Piotr Grzybowski\n- License: GNU GPL (no version named, so any version applies)\n",
+   "page": "**THE MOON IS FULL OF HOLES. YOU ARE DRIVING ACROSS IT.**\n\n\"Drive some kind of car across the moon's surface,\" Jochen Voss wrote. \"Unfortunately there are dangerous craters there. Fortunately your car can jump over them!\"\n\nThe ground rolls towards your buggy and you time every jump. Too early or too late and a wheel drops into the crater. The game eases you in with \"good luck (or use `<SPC>` to jump)\", warns you that \"some craters are wider than others\", hands you a mining laser for the meteors rolling along the ground, and then lets a whole shower of them loose with a cheerful \"... but what is that?\" Survive all of that and it tells you: \"You may start your journey, now.\"\n\n- **Jump the craters**, narrow and wide, coming faster with each level.\n- **Laser the meteors**: three hits break one up, and every shot costs you a point, so make them count.\n- **Three buggies** to get as far as you can.\n- **A hundred places on the high score table.** The top three stay for good; the rest fade after two weeks to six months, depending on the rank, and Thorin's company of dwarves moves into the empty places.\n\n**GOOD LUCK, DRIVER.**\n\n## Controls\n\n- **Space** or **j**: jump\n- **a** or **l**: fire the laser\n- **q** or **n**: abort the game\n- **r** or **Ctrl+L**: redraw the screen\n\nOn the title screen, **Space**, **Return** or **y** starts a game,\n**s** shows the scores and **q** quits.\n\n## Options\n\n- `-r`: drive to the right instead of the left (the whole surface is\n  drawn mirrored)\n- `-n`: skip the title screen\n- `-s`: print the high score table and exit\n\n## Credits\n\n- Moon-Buggy: Jochen Voss ([github.com/seehuhn/moon-buggy](https://github.com/seehuhn/moon-buggy)),\n  1998 to 2025, written in C with curses; animations for version 1.0 by\n  Piotr Grzybowski\n- License: GNU GPL (no version named, so any version applies)\n",
    "version": "1.1.0+20261013-av.2",
    "updated_at": "2026-10-20T15:38:01Z",
    "thumbnail_at": 2.0,
@@ -8113,6 +8575,30 @@
      "notes": "- The BD1 engine: every BD1 element and its rules, under test\n- Glyph and half-block graphics, switchable in the game\n- Keyboard and gamepad; session logging\n- The first world: 20 caves and 5 intermissions, the stone trolls in the\n  last four, five difficulty levels, a start menu and cave cards"
     }
    ]
+  },
+  "morgengrauen": {
+   "schema_version": 1,
+   "id": "morgengrauen",
+   "kind": "mud",
+   "title": "MorgenGrauen",
+   "description": "German-language LPMud, founded by students at the University of Münster",
+   "since": 1992,
+   "theme": "fantasy",
+   "language": "German",
+   "topics": [
+    "fantasy",
+    "german",
+    "lpmud",
+    "no-pk"
+   ],
+   "website": "https://mg.mud.de/",
+   "connect": {
+    "host": "mg.mud.de",
+    "port": 4711,
+    "tls_port": 4712
+   },
+   "page": "",
+   "cast_url": "/casts/morgengrauen.cast?v=1791906527"
   },
   "morris": {
    "schema_version": 1,
@@ -8361,6 +8847,28 @@
     }
    },
    "news": []
+  },
+  "nannymud": {
+   "schema_version": 1,
+   "id": "nannymud",
+   "kind": "mud",
+   "title": "NannyMUD",
+   "description": "LPMud hosted by Lysator at Linköping University since 1990, with guests welcome",
+   "since": 1990,
+   "theme": "fantasy",
+   "topics": [
+    "fantasy",
+    "lpmud",
+    "classic",
+    "sweden"
+   ],
+   "website": "https://www.lysator.liu.se/nanny/",
+   "connect": {
+    "host": "mud.lysator.liu.se",
+    "port": 2000
+   },
+   "page": "",
+   "cast_url": "/casts/nannymud.cast?v=1791906527"
   },
   "nard": {
    "schema_version": 1,
@@ -9897,6 +10405,7 @@
    "description": "Jordan Mechner's Prince of Persia, ported from his own Apple II source: sixty minutes, fourteen levels, traps and swordfights, the prince drawn in Braille dots.",
    "year": 1989,
    "old": true,
+   "featured": 1,
    "license": "MIT",
    "repo": "theasciiverse/prince-of-braille",
    "provenance": "Jordan Mechner made Prince of Persia on the Apple II between 1985 and 1989, its running and leaping rotoscoped from video of his brother. He released its source code in 2012, and Asciiverse ported it to the terminal routine by routine.",
@@ -9945,7 +10454,6 @@
    "system_deps": [
     "libasound2"
    ],
-   "featured": 1,
    "version": "0.9.0",
    "updated_at": "2026-10-29T06:00:00Z",
    "thumbnail_at": 25.0,
@@ -10205,6 +10713,27 @@
     }
    },
    "news": []
+  },
+  "realmsofdespair": {
+   "schema_version": 1,
+   "id": "realmsofdespair",
+   "kind": "mud",
+   "title": "Realms of Despair",
+   "description": "Medieval fantasy MUD, the original SMAUG game, with over 250 areas and prestige classes",
+   "since": 1994,
+   "theme": "fantasy",
+   "topics": [
+    "fantasy",
+    "medieval",
+    "smaug"
+   ],
+   "website": "https://realmsofdespair.com/",
+   "connect": {
+    "host": "realmsofdespair.com",
+    "port": 4000
+   },
+   "page": "",
+   "cast_url": "/casts/realmsofdespair.cast?v=1791906527"
   },
   "rebels-in-the-sky": {
    "schema_version": 1,
@@ -11996,6 +12525,7 @@
    "description": "Second day of Christmas, Santa's asleep and the elves have found the keys! Grab a sleigh, a reindeer or a broomstick and race like mad, before Santa fires up the snowplough and comes for the ringleader!",
    "year": 2026,
    "new": true,
+   "featured": 4,
    "license": "GPL-3.0-or-later",
    "repo": "theasciiverse/sleighride",
    "provenance": "Asciiverse made Sleighride in Rust in 2026, out of the Christmas folklore of Julbocken, La Befana, the Yule Cat, the Yule Lads, Ded Moroz and Snegurochka.",
@@ -12035,7 +12565,6 @@
     "libasound2",
     "libudev1"
    ],
-   "featured": 4,
    "version": "0.9.0",
    "updated_at": "2026-10-10T00:00:00Z",
    "thumbnail_at": 16.0,
@@ -12243,6 +12772,7 @@
    "title": "Solitty",
    "description": "Klondike solitaire in your terminal, with proper card frames, coloured suits and the mouse: build the columns, clear the stock and send every card home.",
    "year": 2010,
+   "featured": 3,
    "license": "MIT",
    "repo": "theasciiverse/solitty",
    "provenance": "Murilo Pereira wrote solitty, an ncurses Klondike, between 2010 and 2018.",
@@ -12281,7 +12811,6 @@
     "source": "github"
    },
    "page": "**FIFTY-TWO CARDS. SEVEN COLUMNS. ONE WAY HOME.**\n\nThe patience game everybody knows, laid out properly in your terminal:\nreal card frames drawn in Unicode, red and black suits (or four colours,\none for each suit, if you prefer), and a cursor you can drive with the\nkeyboard or the mouse.\n\nTurn cards from the stock. Build down the seven columns in alternating\ncolours, uncovering the face-down cards as you go. Send every card up to\nthe four foundations, ace to king. Double-tap a card and, if there is a\nplace for it, it goes home by itself. Get them all up and solitty knows\nyou have won.\n\n- **Keyboard or mouse**, click to pick up, click to put down\n- **Pick up whole runs** or just the cards you want\n- **Three passes through the stock** by default, or as many as you set\n- **Your terminal's own background**, if you would rather keep it\n\n**Deal. Build. Win.**\n\n## Controls\n\n- **Arrow keys** or **h j k l**: move the cursor\n- **Space**: turn a card from the stock, flip a face-down card, or pick\n  up a card and put it down where the cursor is\n- **Space** twice on the same card: send it to a foundation if it fits\n- **m** / **n**: while holding a column, take one more or one fewer card\n- **M** / **N**: take every face-up card in the column, or only the top one\n- **Esc**: put the held cards back\n- **Left click**: pick up or put down; **right click**: cancel\n- **q**: quit\n\n## Options\n\n- `--passes N`: how many times you may go through the stock (default 3)\n- `--four-color-deck`: give each suit its own color\n- `--no-background-color`: keep your terminal's own background\n\n## History\n\nsolitty was written by Murilo Pereira, first released in 2017, and\ndeveloped through 2025. The Asciiverse edition adds a fairer\nFisher-Yates shuffle, a terminal that is restored properly when the\ngame is interrupted, and further fixes and tests.\n\n## Credits\n\n- Original game: [Murilo Pereira](http://murilopereira.com)\n- Asciiverse edition: Asciiverse\n- License: MIT\n",
-   "featured": 3,
    "version": "0.1.0",
    "updated_at": "2026-10-10T00:00:00Z",
    "thumbnail_at": 5.0,
@@ -12738,6 +13267,51 @@
     }
    },
    "news": []
+  },
+  "starmourn": {
+   "schema_version": 1,
+   "id": "starmourn",
+   "kind": "mud",
+   "title": "Starmourn",
+   "description": "Space science fiction MUD by Iron Realms with over 50 alien races and hacking",
+   "since": 2018,
+   "theme": "sci-fi",
+   "topics": [
+    "sci-fi",
+    "space",
+    "pvp",
+    "roleplay"
+   ],
+   "website": "https://www.starmourn.com/",
+   "connect": {
+    "host": "starmourn.com",
+    "port": 3000
+   },
+   "page": "",
+   "cast_url": "/casts/starmourn.cast?v=1791906527"
+  },
+  "stickmud": {
+   "schema_version": 1,
+   "id": "stickmud",
+   "kind": "mud",
+   "title": "StickMUD",
+   "description": "Medieval fantasy hack-and-slash LPMud founded in Finland in 1991",
+   "since": 1991,
+   "theme": "fantasy",
+   "topics": [
+    "fantasy",
+    "hack-and-slash",
+    "lpmud",
+    "guilds"
+   ],
+   "website": "https://www.stickmud.com/",
+   "connect": {
+    "host": "stickmud.com",
+    "port": 7680,
+    "tls_port": 7670
+   },
+   "page": "",
+   "cast_url": "/casts/stickmud.cast?v=1791906527"
   },
   "sudoku": {
    "schema_version": 1,
@@ -13712,6 +14286,7 @@
    "description": "Six fields. Nine dirty tricks. One survivor! The late-90s LAN-party block buster legend is back: clear lines, grab specials, and Quake, Bomb and Switch your friends into oblivion!",
    "year": 2026,
    "new": true,
+   "featured": 2,
    "license": "GPL-2.0-or-later",
    "repo": "theasciiverse/tetrix",
    "provenance": "Asciiverse made Tetrix in Rust in 2026, after St0rmCat's TetriNET, the late-90s multiplayer falling-block game with attack blocks. Its rules follow TetriNET 1.13, and the rotation table and core rules are ported from Andrew Church's tetrinet 0.11.",
@@ -13751,7 +14326,6 @@
     "source": "github"
    },
    "page": "**SIX FIELDS. NINE DIRTY TRICKS. ONE SURVIVOR.**\n\nRemember the late 90s? Six friends, six fields, blocks falling faster and faster, and somebody across the room laughing a little too hard. That was TetriNET, and it's back in your terminal!\n\nClear lines and your field coughs up specials: lettered blocks that drop straight into your arsenal. Then pick a victim. Hit them with a Blockquake and watch every row in their field lurch sideways! Set off a Block Bomb and blow their O pieces to bits! Shove junk lines up from below until they're gasping at the ceiling! And when your own field is about to bury you? Switch Fields, and hand them the mess with a smile.\n\nClear two, three or four lines at once and everyone else eats one, two or four junk lines. Classic rules, classic cruelty.\n\n- **Up to six players in one brawl!** Host a game and it simply appears on everyone's menu across the network. No addresses to type, no internet needed.\n- **Nine specials**, from the sneaky Add Line to the life-saving Nuke Field.\n- **Nobody else awake?** Ada, Blitz, Cobol, Dvorak and Emacs are always up for a game, from easy all the way up to brutal.\n- **Bigger terminal, bigger boards.**\n\nIt's the one you play with five friends at a LAN party until somebody spills a drink. **WHO'S STILL STANDING?**\n\n## Controls\n\n- **Left** and **Right**: move\n- **Up** or **x**: rotate clockwise; **z**: counter-clockwise\n- **Down**: soft drop; **Space**: hard drop\n- **1** to **6**: fire your front special at that player (your own number for the ones meant for yourself)\n- **d**: discard the front special\n- **s**: the landing shadow on or off\n- **?**: the keys, and what every special does\n\nTetrix needs a terminal of at least 92 columns by 28 rows.\n\n## The specials\n\n- **A** Add Line: a junk line pushed up from the bottom\n- **C** Clear Line: removes your bottom row (use on yourself)\n- **N** Nuke Field: empties your field (use on yourself)\n- **R** Random Clear: knocks out ten random cells\n- **S** Switch Fields: swap fields with the target\n- **B** Clear Specials: the target's specials turn into plain blocks\n- **G** Gravity: every column collapses, filling the holes (use on yourself)\n- **Q** Blockquake: every row shifts sideways\n- **O** Block Bomb: every O block in the target's field explodes\n\n## Options\n\n- `--solo`, `--host`, `--join`: straight to a way of playing\n- `--bots N`, `--skill N`: how many bots, and how good\n- `--name`, `--level N`, `--seed N`\n- `--classic-delay`, `--slide`, `--no-classic`, `--noshadow`: rule and display tweaks; `tetrix --help` explains each\n\n## Credits\n\n- Game: Asciiverse\n- Rules after St0rmCat's TetriNET 1.13\n- Piece rotation and core rules ported from Andrew Church's tetrinet 0.11\n- Networking: iroh\n",
-   "featured": 2,
    "version": "0.6.0",
    "updated_at": "2026-10-10T00:00:00Z",
    "thumbnail_at": 15.0,
@@ -13833,6 +14407,28 @@
     }
    },
    "news": []
+  },
+  "threshold": {
+   "schema_version": 1,
+   "id": "threshold",
+   "kind": "mud",
+   "title": "Threshold RPG",
+   "description": "Roleplay-enforced high fantasy MUD with player-run politics, economy and guilds",
+   "since": 1996,
+   "theme": "fantasy",
+   "topics": [
+    "fantasy",
+    "roleplay",
+    "pvp",
+    "politics"
+   ],
+   "website": "https://www.thresholdrpg.com/",
+   "connect": {
+    "host": "thresholdrpg.com",
+    "port": 3333
+   },
+   "page": "",
+   "cast_url": "/casts/threshold.cast?v=1791906527"
   },
   "tintin": {
    "schema_version": 1,
@@ -14385,6 +14981,28 @@
    },
    "news": []
   },
+  "typhon-accords": {
+   "schema_version": 1,
+   "id": "typhon-accords",
+   "kind": "mud",
+   "title": "Star Trek: Typhon Accords",
+   "since": 2004,
+   "description": "Star Trek role-play after the Destiny and Typhon Pact novels, as the Federation rebuilds",
+   "theme": "sci-fi",
+   "topics": [
+    "sci-fi",
+    "star trek",
+    "roleplay",
+    "mush"
+   ],
+   "website": "https://startrekkin.net/",
+   "connect": {
+    "host": "startrekkin.net",
+    "port": 1701
+   },
+   "page": "",
+   "cast_url": "/casts/typhon-accords.cast?v=1791906527"
+  },
   "typioca": {
    "schema_version": 1,
    "id": "typioca",
@@ -14517,6 +15135,30 @@
     }
    },
    "news": []
+  },
+  "unitopia": {
+   "schema_version": 1,
+   "id": "unitopia",
+   "kind": "mud",
+   "title": "UNItopia",
+   "description": "German LPMud with a fantasy realm, Magyra, and a replica of the Stuttgart campus",
+   "since": 1991,
+   "theme": "fantasy",
+   "language": "German",
+   "topics": [
+    "fantasy",
+    "german",
+    "lpmud",
+    "social"
+   ],
+   "website": "https://www.unitopia.de/",
+   "connect": {
+    "host": "unitopia.de",
+    "port": 3333,
+    "tls_port": 992
+   },
+   "page": "",
+   "cast_url": "/casts/unitopia.cast?v=1791906527"
   },
   "unnethack": {
    "schema_version": 1,
@@ -15811,589 +16453,6 @@
     }
    },
    "news": []
-  },
-  "achaea": {
-   "id": "achaea",
-   "kind": "mud",
-   "title": "Achaea",
-   "description": "Six city-states, player-run governments and decades of continuous development",
-   "since": 1997,
-   "theme": "fantasy",
-   "topics": [
-    "fantasy",
-    "pk",
-    "politics",
-    "gmcp"
-   ],
-   "connect": {
-    "host": "achaea.com",
-    "port": 23
-   },
-   "website": "https://www.achaea.com",
-   "cast_url": "/casts/achaea.cast?v=1791906527"
-  },
-  "aardwolf": {
-   "id": "aardwolf",
-   "kind": "mud",
-   "title": "Aardwolf",
-   "description": "Huge questing MUD, friendly to newcomers and known for screen-reader support",
-   "since": 1996,
-   "theme": "fantasy",
-   "topics": [
-    "fantasy",
-    "questing",
-    "accessible",
-    "gmcp"
-   ],
-   "connect": {
-    "host": "aardmud.org",
-    "port": 4000
-   },
-   "website": "https://www.aardwolf.com",
-   "cast_url": "/casts/aardwolf.cast?v=1791906527"
-  },
-  "discworld": {
-   "id": "discworld",
-   "kind": "mud",
-   "title": "Discworld MUD",
-   "description": "Terry Pratchett's Discworld, over a million rooms, run by volunteers",
-   "since": 1991,
-   "theme": "comic fantasy",
-   "topics": [
-    "fantasy",
-    "pratchett",
-    "exploration",
-    "lpmud"
-   ],
-   "connect": {
-    "host": "discworld.starturtle.net",
-    "port": 4242
-   },
-   "website": "https://discworld.starturtle.net",
-   "cast_url": "/casts/discworld.cast?v=1791906527"
-  },
-  "batmud": {
-   "id": "batmud",
-   "kind": "mud",
-   "title": "BatMUD",
-   "description": "More than thirty years old, with a community that meets in real life",
-   "since": 1990,
-   "theme": "fantasy",
-   "topics": [
-    "fantasy",
-    "pk",
-    "guilds",
-    "finnish"
-   ],
-   "connect": {
-    "host": "batmud.bat.org",
-    "port": 23,
-    "tls_port": 2022
-   },
-   "website": "https://www.bat.org",
-   "cast_url": "/casts/batmud.cast?v=1791906527"
-  },
-  "legends-of-the-jedi": {
-   "id": "legends-of-the-jedi",
-   "kind": "mud",
-   "title": "Legends of the Jedi",
-   "since": 1998,
-   "description": "Star Wars roleplay across iconic locations, approachable for new players",
-   "theme": "science fantasy",
-   "topics": [
-    "star-wars",
-    "roleplay",
-    "space",
-    "smaug"
-   ],
-   "connect": {
-    "host": "legendsofthejedi.com",
-    "port": 5656
-   },
-   "website": "https://www.legendsofthejedi.com",
-   "cast_url": "/casts/legends-of-the-jedi.cast?v=1791906527"
-  },
-  "nannymud": {
-   "id": "nannymud",
-   "kind": "mud",
-   "title": "NannyMUD",
-   "description": "LPMud hosted by Lysator at Linköping University since 1990, with guests welcome",
-   "since": 1990,
-   "theme": "fantasy",
-   "topics": [
-    "fantasy",
-    "lpmud",
-    "classic",
-    "sweden"
-   ],
-   "connect": {
-    "host": "mud.lysator.liu.se",
-    "port": 2000
-   },
-   "website": "https://www.lysator.liu.se/nanny/",
-   "cast_url": "/casts/nannymud.cast?v=1791906527"
-  },
-  "genesis": {
-   "id": "genesis",
-   "kind": "mud",
-   "title": "Genesis",
-   "description": "The original LPMud, founded in 1989 by students at Chalmers in Gothenburg",
-   "since": 1989,
-   "theme": "fantasy",
-   "topics": [
-    "fantasy",
-    "lpmud",
-    "history",
-    "sweden"
-   ],
-   "connect": {
-    "host": "mud.genesismud.org",
-    "port": 3011
-   },
-   "website": "https://www.genesismud.org/",
-   "cast_url": "/casts/genesis.cast?v=1791906527"
-  },
-  "lambdamoo": {
-   "id": "lambdamoo",
-   "kind": "mud",
-   "title": "LambdaMOO",
-   "description": "Social MOO founded by Pavel Curtis at Xerox PARC, where users build the world",
-   "since": 1990,
-   "theme": "social",
-   "topics": [
-    "social",
-    "moo",
-    "building",
-    "history"
-   ],
-   "connect": {
-    "host": "lambda.moo.mud.org",
-    "port": 8888
-   },
-   "website": "https://lambda.moo.mud.org/",
-   "cast_url": "/casts/lambdamoo.cast?v=1791906527"
-  },
-  "morgengrauen": {
-   "id": "morgengrauen",
-   "kind": "mud",
-   "title": "MorgenGrauen",
-   "description": "German-language LPMud, founded by students at the University of Münster",
-   "since": 1992,
-   "theme": "fantasy",
-   "language": "German",
-   "topics": [
-    "fantasy",
-    "german",
-    "lpmud",
-    "no-pk"
-   ],
-   "connect": {
-    "host": "mg.mud.de",
-    "port": 4711,
-    "tls_port": 4712
-   },
-   "website": "https://mg.mud.de/",
-   "cast_url": "/casts/morgengrauen.cast?v=1791906527"
-  },
-  "stickmud": {
-   "id": "stickmud",
-   "kind": "mud",
-   "title": "StickMUD",
-   "description": "Medieval fantasy hack-and-slash LPMud founded in Finland in 1991",
-   "since": 1991,
-   "theme": "fantasy",
-   "topics": [
-    "fantasy",
-    "hack-and-slash",
-    "lpmud",
-    "guilds"
-   ],
-   "connect": {
-    "host": "stickmud.com",
-    "port": 7680,
-    "tls_port": 7670
-   },
-   "website": "https://www.stickmud.com/",
-   "cast_url": "/casts/stickmud.cast?v=1791906527"
-  },
-  "carrionfields": {
-   "id": "carrionfields",
-   "kind": "mud",
-   "title": "Carrion Fields",
-   "description": "Roleplay-required dark fantasy MUD with cabal factions and player-versus-player conflict",
-   "since": 1994,
-   "theme": "dark fantasy",
-   "topics": [
-    "fantasy",
-    "roleplay",
-    "pvp",
-    "rom"
-   ],
-   "connect": {
-    "host": "carrionfields.net",
-    "port": 4449
-   },
-   "website": "https://carrionfields.net/",
-   "cast_url": "/casts/carrionfields.cast?v=1791906527"
-  },
-  "unitopia": {
-   "id": "unitopia",
-   "kind": "mud",
-   "title": "UNItopia",
-   "description": "German LPMud with a fantasy realm, Magyra, and a replica of the Stuttgart campus",
-   "since": 1991,
-   "theme": "fantasy",
-   "language": "German",
-   "topics": [
-    "fantasy",
-    "german",
-    "lpmud",
-    "social"
-   ],
-   "connect": {
-    "host": "unitopia.de",
-    "port": 3333,
-    "tls_port": 992
-   },
-   "website": "https://www.unitopia.de/",
-   "cast_url": "/casts/unitopia.cast?v=1791906527"
-  },
-  "materiamagica": {
-   "id": "materiamagica",
-   "kind": "mud",
-   "title": "Materia Magica",
-   "description": "Fantasy MUD set in the world of Alyria, first opened in 1996 as Moongate",
-   "since": 1996,
-   "theme": "fantasy",
-   "topics": [
-    "fantasy",
-    "accessible",
-    "rom"
-   ],
-   "connect": {
-    "host": "materiamagica.com",
-    "port": 4000
-   },
-   "website": "https://www.materiamagica.com/",
-   "cast_url": "/casts/materiamagica.cast?v=1791906527"
-  },
-  "dunemud": {
-   "id": "dunemud",
-   "kind": "mud",
-   "title": "Dune MUD",
-   "description": "LPMud set in Frank Herbert's Dune universe, with ten guilds and over 30,000 rooms",
-   "since": 1992,
-   "theme": "dune",
-   "topics": [
-    "dune",
-    "sci-fi",
-    "lpmud",
-    "guilds"
-   ],
-   "connect": {
-    "host": "dunemud.net",
-    "port": 6789,
-    "tls_port": 6788
-   },
-   "website": "https://dunemud.net/",
-   "cast_url": "/casts/dunemud.cast?v=1791906527"
-  },
-  "alteraeon": {
-   "id": "alteraeon",
-   "kind": "mud",
-   "title": "Alter Aeon",
-   "description": "Fantasy MUD with mage, cleric, thief, warrior, necromancer and druid classes",
-   "since": 1995,
-   "theme": "fantasy",
-   "topics": [
-    "fantasy",
-    "multiclass",
-    "accessible",
-    "pve"
-   ],
-   "connect": {
-    "host": "alteraeon.com",
-    "port": 3000
-   },
-   "website": "https://www.alteraeon.com/",
-   "cast_url": "/casts/alteraeon.cast?v=1791906527"
-  },
-  "ancientanguish": {
-   "id": "ancientanguish",
-   "kind": "mud",
-   "title": "Ancient Anguish",
-   "description": "Medieval fantasy LPMud with 11 classes, 5 races, 8 guilds and optional PvP",
-   "since": 1992,
-   "theme": "fantasy",
-   "topics": [
-    "fantasy",
-    "medieval",
-    "lpmud",
-    "pvp"
-   ],
-   "connect": {
-    "host": "ancient.anguish.org",
-    "port": 2222
-   },
-   "website": "https://anguish.org/",
-   "cast_url": "/casts/ancientanguish.cast?v=1791906527"
-  },
-  "realmsofdespair": {
-   "id": "realmsofdespair",
-   "kind": "mud",
-   "title": "Realms of Despair",
-   "description": "Medieval fantasy MUD, the original SMAUG game, with over 250 areas and prestige classes",
-   "since": 1994,
-   "theme": "fantasy",
-   "topics": [
-    "fantasy",
-    "medieval",
-    "smaug"
-   ],
-   "connect": {
-    "host": "realmsofdespair.com",
-    "port": 4000
-   },
-   "website": "https://realmsofdespair.com/",
-   "cast_url": "/casts/realmsofdespair.cast?v=1791906527"
-  },
-  "starmourn": {
-   "id": "starmourn",
-   "kind": "mud",
-   "title": "Starmourn",
-   "description": "Space science fiction MUD by Iron Realms with over 50 alien races and hacking",
-   "since": 2018,
-   "theme": "sci-fi",
-   "topics": [
-    "sci-fi",
-    "space",
-    "pvp",
-    "roleplay"
-   ],
-   "connect": {
-    "host": "starmourn.com",
-    "port": 3000
-   },
-   "website": "https://www.starmourn.com/",
-   "cast_url": "/casts/starmourn.cast?v=1791906527"
-  },
-  "merentha": {
-   "id": "merentha",
-   "kind": "mud",
-   "title": "Merentha",
-   "description": "Free fantasy LPMud set in the lands of Cardania, with guilds, spells and quests",
-   "since": 1997,
-   "theme": "fantasy",
-   "topics": [
-    "fantasy",
-    "lpmud",
-    "guilds",
-    "quests"
-   ],
-   "connect": {
-    "host": "merentha.com",
-    "port": 10000,
-    "tls_port": 10001
-   },
-   "website": "https://merentha.com/",
-   "cast_url": "/casts/merentha.cast?v=1791906527"
-  },
-  "aetolia": {
-   "id": "aetolia",
-   "kind": "mud",
-   "title": "Aetolia",
-   "description": "Gothic dark fantasy roleplay world with vampires and horror, run by Iron Realms",
-   "since": 2001,
-   "theme": "dark fantasy",
-   "topics": [
-    "fantasy",
-    "horror",
-    "vampires",
-    "roleplay"
-   ],
-   "connect": {
-    "host": "aetolia.com",
-    "port": 23
-   },
-   "website": "https://www.aetolia.com/",
-   "cast_url": "/casts/aetolia.cast?v=1791906527"
-  },
-  "3kingdoms": {
-   "id": "3kingdoms",
-   "kind": "mud",
-   "title": "3Kingdoms",
-   "description": "Three realms, fantasy, science and chaos, joined through the central town of Pinnacle",
-   "since": 1992,
-   "theme": "fantasy",
-   "topics": [
-    "fantasy",
-    "sci-fi",
-    "lpmud",
-    "guilds"
-   ],
-   "connect": {
-    "host": "3k.org",
-    "port": 3000
-   },
-   "website": "https://www.3k.org/",
-   "cast_url": "/casts/3kingdoms.cast?v=1791906527"
-  },
-  "medievia": {
-   "id": "medievia",
-   "kind": "mud",
-   "title": "Medievia",
-   "description": "Long-running medieval fantasy MUD with dragons, ships, wagon trading, clans and castles",
-   "since": 1992,
-   "theme": "fantasy",
-   "topics": [
-    "fantasy",
-    "diku",
-    "pvp",
-    "clans"
-   ],
-   "connect": {
-    "host": "medievia.com",
-    "port": 4000
-   },
-   "website": "https://www.medievia.com/",
-   "cast_url": "/casts/medievia.cast?v=1791906527"
-  },
-  "durismud": {
-   "id": "durismud",
-   "kind": "mud",
-   "title": "DurisMUD",
-   "description": "Full-loot PvP fantasy MUD where good and evil races fight an endless racewar",
-   "since": 1996,
-   "theme": "fantasy",
-   "topics": [
-    "fantasy",
-    "pvp",
-    "racewar",
-    "diku"
-   ],
-   "connect": {
-    "host": "mud.durismud.com",
-    "port": 7777
-   },
-   "website": "https://www.durismud.com/",
-   "cast_url": "/casts/durismud.cast?v=1791906527"
-  },
-  "clok": {
-   "id": "clok",
-   "kind": "mud",
-   "title": "CLOK",
-   "description": "Fantasy frontier-west and gaslamp MUD set in the Northern Lost Lands",
-   "since": 2009,
-   "theme": "fantasy western",
-   "topics": [
-    "fantasy",
-    "western",
-    "gaslamp"
-   ],
-   "connect": {
-    "host": "clok.contrarium.net",
-    "port": 4000
-   },
-   "website": "https://clok.contrarium.net/",
-   "cast_url": "/casts/clok.cast?v=1791906527"
-  },
-  "threshold": {
-   "id": "threshold",
-   "kind": "mud",
-   "title": "Threshold RPG",
-   "description": "Roleplay-enforced high fantasy MUD with player-run politics, economy and guilds",
-   "since": 1996,
-   "theme": "fantasy",
-   "topics": [
-    "fantasy",
-    "roleplay",
-    "pvp",
-    "politics"
-   ],
-   "connect": {
-    "host": "thresholdrpg.com",
-    "port": 3333
-   },
-   "website": "https://www.thresholdrpg.com/",
-   "cast_url": "/casts/threshold.cast?v=1791906527"
-  },
-  "arctic": {
-   "id": "arctic",
-   "kind": "mud",
-   "title": "ArcticMud",
-   "description": "PvP fantasy MUD loosely based on the Dragonlance novels, set on Krynn",
-   "since": 1992,
-   "theme": "fantasy",
-   "topics": [
-    "fantasy",
-    "dragonlance",
-    "pvp"
-   ],
-   "connect": {
-    "host": "mud.arctic.org",
-    "port": 2700
-   },
-   "website": "http://mud.arctic.org/",
-   "cast_url": "/casts/arctic.cast?v=1791906527"
-  },
-  "avatar": {
-   "id": "avatar",
-   "kind": "mud",
-   "title": "AVATAR",
-   "description": "Large fantasy MUD with remort classes and tiers, on heavily modified Merc code",
-   "since": 1991,
-   "theme": "fantasy",
-   "topics": [
-    "fantasy",
-    "remort",
-    "accessible",
-    "merc"
-   ],
-   "connect": {
-    "host": "avatar.outland.org",
-    "port": 3000
-   },
-   "website": "https://www.outland.org/",
-   "cast_url": "/casts/avatar.cast?v=1791906527"
-  },
-  "lusternia": {
-   "id": "lusternia",
-   "kind": "mud",
-   "title": "Lusternia",
-   "description": "Iron Realms fantasy MUD of rival city-states and nature communes",
-   "since": 2004,
-   "theme": "fantasy",
-   "topics": [
-    "fantasy",
-    "roleplay",
-    "pvp"
-   ],
-   "connect": {
-    "host": "lusternia.com",
-    "port": 5000
-   },
-   "website": "https://www.lusternia.com/",
-   "cast_url": "/casts/lusternia.cast?v=1791906527"
-  },
-  "typhon-accords": {
-   "id": "typhon-accords",
-   "kind": "mud",
-   "title": "Star Trek: Typhon Accords",
-   "since": 2004,
-   "description": "Star Trek role-play after the Destiny and Typhon Pact novels, as the Federation rebuilds",
-   "theme": "sci-fi",
-   "topics": [
-    "sci-fi",
-    "star trek",
-    "roleplay",
-    "mush"
-   ],
-   "connect": {
-    "host": "startrekkin.net",
-    "port": 1701
-   },
-   "website": "https://startrekkin.net/",
-   "cast_url": "/casts/typhon-accords.cast?v=1791906527"
   }
  },
  "av": {

@@ -5,6 +5,7 @@ title = "Prince of Braille"
 description = "Jordan Mechner's Prince of Persia, ported from his own Apple II source: sixty minutes, fourteen levels, traps and swordfights, the prince drawn in Braille dots."
 year = 1989
 old = true
+featured = 1             # place in the website's carousel, 1 first
 license = "MIT"
 repo = "theasciiverse/prince-of-braille"
 provenance = "Jordan Mechner made Prince of Persia on the Apple II between 1985 and 1989, its running and leaping rotoscoped from video of his brother. He released its source code in 2012, and Asciiverse ported it to the terminal routine by routine."
