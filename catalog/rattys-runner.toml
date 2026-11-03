@@ -31,10 +31,11 @@ mouse = false
 system_deps = ["libasound2"]
 
 # 100x30, asciiverse/record-preview.sh: the computer runs from the meadow
-# into the kitchen (--demo, 15 frames a second); the still is the meadow
+# into the kitchen (--demo, 15 frames a second), in lines, then painted,
+# then lines again; the still is the line look
 [media]
 cast = "asciiverse/rattys-runner.cast"
-thumbnail_at = 8.0
+thumbnail_at = 6.0
 
 [release]
 source = "github"

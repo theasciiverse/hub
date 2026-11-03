@@ -2,6 +2,8 @@
 
 The Xfce mouse has somewhere to be, and the road there twists and climbs through four very different places. Out over the meadow path between trees and toadstools, across the kitchen counter past jars and mugs, down the night lane under the stars and the lamplight, and into the moonlit drain.
 
+Draw it your way: in **clean lines on black**, the road traced in fine strokes and the mouse in line art, or **painted** in full colour with sky, grass and trees. Press V to switch.
+
 Three lanes, and things in all of them. Some are low, some are high, some are holes in the road, and the mouse can do something about every one of them, if you are quick:
 
 - **Jump** the logs, mousetraps, crates and pipes, and leap the puddles, the sink, the potholes and the channels
@@ -16,12 +18,13 @@ Three lanes, and things in all of them. Some are low, some are high, some are ho
 - **Left / Right** or **A / D**: change lane
 - **Up**, **Space** or **W**: jump
 - **Down** or **S**: slide
-- **P** pause, **M** sound on or off, **R** run again, **Q** or **Esc** quit
+- **P** pause, **M** sound on or off, **V** lines or painted, **R** run again, **Q** or **Esc** quit
 
 ## Options
 
 - `--mute`: start with the sound off
 - `--demo`: let the computer run
+- `--painted`: start in the painted look
 
 ## Credits
 
