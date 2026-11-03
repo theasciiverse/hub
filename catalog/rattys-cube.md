@@ -32,3 +32,4 @@ Then press Space. You get a scramble the way competitions make them, from a trul
 - Ratty's Cube: Asciiverse
 - Started from the cube example in Ratty by Orhun Parmaksız (MIT), and named after it
 - Solver: Herbert Kociemba's two-phase algorithm, written for this game from his description
+- License: MIT
