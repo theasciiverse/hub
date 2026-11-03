@@ -24,6 +24,7 @@ url = "https://github.com/ajeetdsouza/clidle"
 # starts the next one. The score is kept in the player's data folder
 [exec]
 game = "clidle"
+stderr = "terminal"           # it draws its whole game on stderr
 args = []
 
 # status line and board need 25x19; the on-screen keyboard appears from

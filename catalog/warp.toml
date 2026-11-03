@@ -23,6 +23,7 @@ url = "https://cvsweb.netbsd.org/bsdweb.cgi/src/games/warp/"
 
 [exec]
 game = "warp"
+stderr = "terminal"           # it crashes when stderr is not a terminal
 
 # the universe and status line fill 80x24; measured in tmux: at 79
 # columns or 23 rows warp refuses to start

@@ -3607,6 +3607,7 @@
    },
    "exec": {
     "game": "clidle",
+    "stderr": "terminal",
     "args": []
    },
    "min_terminal": {
@@ -7591,6 +7592,72 @@
    },
    "page": "",
    "cast_url": "/casts/legends-of-the-jedi.cast?v=1791906527"
+  },
+  "lera": {
+   "schema_version": 1,
+   "id": "lera",
+   "kind": "program",
+   "title": "Lera",
+   "description": "The Asciiverse MUD client: pick a world from the list and you are in the game in seconds, with colour, scrollback that keeps the live text in view, and your health and mana in the status line.",
+   "year": 2026,
+   "new": true,
+   "license": "MIT",
+   "repo": "theasciiverse/lera",
+   "provenance": "Asciiverse made Lera to give every MUD in the catalog a home in your terminal; the name is Swedish for clay, which is to say mud.",
+   "topics": [
+    "mud-client",
+    "mud",
+    "rust"
+   ],
+   "genre": "mud client",
+   "developer": {
+    "name": "Asciiverse",
+    "url": "https://asciiverse.sh"
+   },
+   "exec": {
+    "game": "lera",
+    "args": []
+   },
+   "min_terminal": {
+    "cols": 80,
+    "rows": 24
+   },
+   "requires": {
+    "utf8": true,
+    "color": "basic",
+    "mouse": false
+   },
+   "media": {
+    "cast": "asciiverse/lera.cast",
+    "thumbnail_at": 16.0
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**MULTI-USER CLAY.**\n\nLera is Swedish for clay, and for mud. Pick a world from the list, press Enter, and you are standing in it: no config language to learn, no host and port to look up. Every MUD in the Asciiverse catalog is already there, with what kind of world it is and how long it has been running, and you can add any other world in a few keystrokes.\n\nOnce you are in, the screen takes care of itself. Colour comes through as the MUD intended it, in 16, 256 or millions of colours. Scroll back through the fight you just had and the screen splits, so the live text keeps running underneath. Your health and mana sit in the status line when the MUD sends them, and your password never shows on screen.\n\n- **Every catalog MUD in one list**, filtered as you type, plus worlds of your own\n- **Scrollback that splits**, with PageUp or the mouse wheel, so you never miss what is happening now\n- **Command history** on Up and Down, and the usual line keys\n- **Vitals in the status line** from GMCP, on the MUDs that send them\n- **TLS** where the world offers it, and compression to keep things quick\n- **A log of every session**, kept per world as plain text\n- **Reconnect** with one key when the line drops\n\n## Keys\n\n- **Enter**: connect to the world, then send each line\n- **Up**, **Down**: earlier commands\n- **PageUp**, **PageDown** or the **mouse wheel**: scroll back; **Esc** returns to the live end\n- **Shift+drag**: select text to copy\n- **Ctrl+R**: reconnect; **Ctrl+D**: disconnect\n- **Ctrl+N** in the list: add a world of your own\n- **F1**: all the keys; **Ctrl+Q**: quit\n\nFrom the command line: `lera <world-id>`, or `lera <host> <port> --tls` for anywhere at all.\n\n## Credits\n\n- Lera: Asciiverse\n- License: MIT\n",
+   "version": "0.1.0",
+   "updated_at": "2026-10-10T00:00:00Z",
+   "thumbnail_at": 16.0,
+   "cast_url": "/casts/lera.cast?v=1793697232",
+   "duration": 30.6,
+   "platforms": {
+    "x86_64-unknown-linux-musl": {
+     "url": "https://example.invalid/lera-x86_64-unknown-linux-musl.tar.gz",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1048000
+    },
+    "aarch64-apple-darwin": {
+     "url": "https://example.invalid/lera-aarch64-apple-darwin.tar.gz",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1048000
+    },
+    "x86_64-pc-windows-msvc": {
+     "url": "https://example.invalid/lera-x86_64-pc-windows-msvc.zip",
+     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "size": 1048000
+    }
+   },
+   "news": []
   },
   "lexter": {
    "schema_version": 1,
@@ -14933,6 +15000,7 @@
    },
    "exec": {
     "game": "typespeed",
+    "stderr": "terminal",
     "args": []
    },
    "min_terminal": {
@@ -15522,7 +15590,8 @@
     "url": "https://cvsweb.netbsd.org/bsdweb.cgi/src/games/warp/"
    },
    "exec": {
-    "game": "warp"
+    "game": "warp",
+    "stderr": "terminal"
    },
    "min_terminal": {
     "cols": 80,

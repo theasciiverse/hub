@@ -23,6 +23,7 @@ url = "https://typespeed.sourceforge.net/"
 # the start script points typespeed at its bundled words and rules
 [exec]
 game = "typespeed"
+stderr = "terminal"           # it refuses to start unless stderr is a terminal
 args = []
 
 # "You need at least 80 x 24 terminal!" (src/typespeed.c)
