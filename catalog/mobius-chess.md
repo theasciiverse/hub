@@ -8,7 +8,7 @@ Möbius Chess is ordinary chess on that board, drawn as a real twisted strip tha
 - **Bishops turn at the join** and come out on the other colour
 - **Pawns that take across the join** turn round and march home, to promote on their own first rank
 - **No corners** to hide a king in, and **no castling**
-- **A starting position found by search**: the usual one hands each side a rook on move one, so every arrangement was tried for one where neither side can take or check on the first move and every pawn is guarded
+- **A starting position found by search**: the usual one hands each side a rook on move one, so every arrangement was tried for one where neither side can take, check or threaten anything on the first move and every pawn is guarded. The rooks wait in the pawn line, and the corners, right on the twist, start empty
 
 Play the computer at three strengths, play a friend at one keyboard, or sit back and watch the computer play itself.
 

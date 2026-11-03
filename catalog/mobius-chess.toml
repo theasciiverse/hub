@@ -32,10 +32,10 @@ mouse = true
 system_deps = ["libasound2"]
 
 # 100x30, asciiverse/record-preview.sh: the computer plays itself while the
-# strip turns, mate on move 7; the still is the mate
+# strip turns, the black king hunted up the board, 16. Rf5#; the still is the mate
 [media]
 cast = "asciiverse/mobius-chess.cast"
-thumbnail_at = 20.0
+thumbnail_at = 38.0
 
 [release]
 source = "github"
