@@ -1,0 +1,50 @@
+schema_version = 1
+id = "omega"
+kind = "game"
+old = true
+title = "Omega"
+description = "The roguelike with a whole world: start in the city of Rampart, join its guilds and orders, then take on the countryside, its villages and its dungeons. Many ways to win."
+year = 1987
+license = "GPL-3.0-or-later"
+repo = "theasciiverse/omega"
+provenance = "Laurence R. Brothers wrote Omega between 1987 and 1989; Erik Max Francis and others carried it on into the 1990s, and Lyle Tafoya has continued it in C++ as Omega Rebirth since 2019."
+changes = "PATCHES.md"
+topics = ["roguelike", "fantasy", "guilds", "open world", "classic", "c++"]
+genre = "roguelike"
+
+[developer]
+name = "Lyle Tafoya"
+url = "https://github.com/Lyle-Tafoya/Omega"
+
+# Lyle Tafoya's Omega Rebirth (its development branch), with the data found
+# beside the binary and the player's files in their own folder; PATCHES.md
+# in theasciiverse/omega
+[upstream]
+name = "Laurence R. Brothers, Lyle Tafoya"
+url = "https://github.com/Lyle-Tafoya/Omega"
+
+# saves, the hall of fame and omega.toml in ~/.local/share/omega
+# (%APPDATA%\omega on Windows); lib/ beside the binary holds the game's data
+[exec]
+game = "omega"
+args = []
+
+# below 80x24 it says the terminal is too small; bigger shows more map
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, asciiverse/record-preview.sh: the welcome, the title menu, the
+# point pool, then a run in through the gates of Rampart and round its
+# streets; the still is the north street of the city
+[media]
+cast = "asciiverse/omega.cast"
+thumbnail_at = 17.0
+
+[release]
+source = "github"
