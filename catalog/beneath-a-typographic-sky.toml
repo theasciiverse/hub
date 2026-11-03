@@ -43,9 +43,9 @@ color = "truecolor"
 mouse = true
 glyphs = ["braille"]
 
-# Speech, effects and AdLib music play through the system's audio. The
-# Linux build's audio dependency (ALSA) is to be settled with the first
-# release build; set system_deps then.
+# Speech, effects and AdLib music play through the system's audio: on
+# Linux rodio's ALSA output, linked dynamically (the glibc build)
+system_deps = ["libasound2"]
 
 [media]
 cast = "asciiverse/beneath-a-typographic-sky.cast"
