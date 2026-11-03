@@ -1,0 +1,46 @@
+schema_version = 1
+id = "racing-game"
+kind = "game"
+title = "Racing Game"
+description = "A road racer in the style of the 8-bit classics: curves, mountains on the horizon, and traffic to pass. How many cars can you overtake before you crash?"
+year = 2023
+license = "MIT"
+repo = "theasciiverse/curses-collection"
+provenance = "Kjetil Erga wrote Racing Game in C with curses in 2023, after the old racing games on 8-bit computers."
+changes = "PATCHES.md"
+topics = ["racing", "driving", "pseudo-3d", "8-bit style", "arcade"]
+genre = "racing"
+
+[developer]
+name = "Kjetil Erga"
+url = "https://kobolt.github.io/article-221.html"
+
+# upstream's racer, as racing-game (racer is also a Rust tool's command),
+# centred on the screen with the crash shown in the game; PATCHES.md in
+# theasciiverse/curses-collection
+[upstream]
+name = "Kjetil Erga"
+url = "https://github.com/kobolt/curses-collection"
+
+[exec]
+game = "racing-game"
+args = []
+
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, asciiverse/record-preview.py: a driver reading the screen holds
+# its speed and steers round the cars ahead until it crashes; the still
+# is two cars side by side
+[media]
+cast = "asciiverse/racing-game.cast"
+thumbnail_at = 12.0
+
+[release]
+source = "github"

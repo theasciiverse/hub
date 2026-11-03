@@ -1,0 +1,45 @@
+schema_version = 1
+id = "cgame"
+kind = "game"
+title = "Old Curses Game"
+description = "Collect all twenty piles of money on one screen while the M hunts you down. Push crates in its way, and never step on a mine."
+year = 2011
+license = "MIT"
+repo = "theasciiverse/curses-collection"
+provenance = "Old Curses Game is one of Kjetil Erga's first real projects in C and curses, with its hunter taken from the Commodore 64 game Escape MCP; he rewrote it for readability and released it again in 2011."
+changes = "PATCHES.md"
+topics = ["chase", "collect", "mines", "crates", "single screen", "arcade"]
+genre = "arcade"
+
+[developer]
+name = "Kjetil Erga"
+url = "https://kobolt.github.io/article-59.html"
+
+# upstream's cgame, centred on the screen with the result shown in the
+# game; PATCHES.md in theasciiverse/curses-collection
+[upstream]
+name = "Kjetil Erga"
+url = "https://github.com/kobolt/curses-collection"
+
+[exec]
+game = "cgame"
+args = []
+
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, asciiverse/record-preview.py: a player reading the screen walks
+# the shortest way to each $ until the M catches it; the still is the M
+# one step behind
+[media]
+cast = "asciiverse/cgame.cast"
+thumbnail_at = 12.0
+
+[release]
+source = "github"

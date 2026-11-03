@@ -2877,6 +2877,69 @@
    },
    "news": []
   },
+  "cavescroll": {
+   "schema_version": 1,
+   "id": "cavescroll",
+   "kind": "game",
+   "title": "Cave Scroller",
+   "description": "Fly through a cave that never ends: steer up and down through the gap, pick up money and ammunition, and shoot or dodge what comes at you.",
+   "year": 2013,
+   "license": "MIT",
+   "repo": "theasciiverse/curses-collection",
+   "provenance": "Kjetil Erga made Cave Scroller in C with curses in 2013, one of the many small curses games and tools on his blog; it later went into his curses collection.",
+   "changes": "PATCHES.md",
+   "topics": [
+    "side scroller",
+    "cave",
+    "flying",
+    "shooter",
+    "endless",
+    "arcade"
+   ],
+   "genre": "arcade",
+   "developer": {
+    "name": "Kjetil Erga",
+    "url": "https://kobolt.github.io/article-85.html"
+   },
+   "upstream": {
+    "name": "Kjetil Erga",
+    "url": "https://github.com/kobolt/curses-collection"
+   },
+   "exec": {
+    "game": "cavescroll",
+    "args": []
+   },
+   "min_terminal": {
+    "cols": 80,
+    "rows": 24
+   },
+   "requires": {
+    "utf8": false,
+    "color": "basic",
+    "mouse": false
+   },
+   "media": {
+    "cast": "asciiverse/cavescroll.cast",
+    "thumbnail_at": 15.0
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**THE CAVE NEVER ENDS. NEITHER DOES THE GAP.**\n\nYou fly `>` through a cave that keeps coming at you from the right. Its\nroof and floor wander up and down, sometimes leaving room to spare and\nsometimes barely a slot to squeeze through. Steer up and down and stay in\nthe gap.\n\nPick up money `$` for points and ammunition `+` for your gun, and watch\nfor the enemies `@`, which drift towards you as they come. Shoot them for\nextra points, or get out of their way. You start with five shots.\n\n## Controls\n\n- **↑** / **↓**: steer up and down\n- **Space**: shoot\n- **q** or **Esc**: quit\n\n## Credits\n\n- Cave Scroller: [Kjetil Erga](https://kobolt.github.io/article-85.html), from his\n  [curses collection](https://github.com/kobolt/curses-collection)\n- License: MIT\n",
+   "version": "20230827-av.1",
+   "updated_at": "2026-11-03T19:20:33Z",
+   "thumbnail_at": 15.0,
+   "cast_url": "/casts/cavescroll.cast?v=1793733578",
+   "duration": 34.1,
+   "platforms": {
+    "x86_64-unknown-linux-musl": {
+     "url": "/dev-releases/curses-collection/cavescroll-x86_64-unknown-linux-musl.tar.gz",
+     "sha256": "67b8d1a011b86f430fc4fe89515da6161cc7f6540c7002a8b15d7bfc4987476e",
+     "size": 141915
+    }
+   },
+   "news": []
+  },
   "cavezofphear": {
    "schema_version": 1,
    "id": "cavezofphear",
@@ -3191,6 +3254,69 @@
      "url": "/dev-releases/ceres-x86_64-unknown-linux-gnu.tar.gz",
      "sha256": "1f497f58fab4a286434e7a234e9bf08bb438afe05097aa09430f3f7d21a9ac97",
      "size": 8052856
+    }
+   },
+   "news": []
+  },
+  "cgame": {
+   "schema_version": 1,
+   "id": "cgame",
+   "kind": "game",
+   "title": "Old Curses Game",
+   "description": "Collect all twenty piles of money on one screen while the M hunts you down. Push crates in its way, and never step on a mine.",
+   "year": 2011,
+   "license": "MIT",
+   "repo": "theasciiverse/curses-collection",
+   "provenance": "Old Curses Game is one of Kjetil Erga's first real projects in C and curses, with its hunter taken from the Commodore 64 game Escape MCP; he rewrote it for readability and released it again in 2011.",
+   "changes": "PATCHES.md",
+   "topics": [
+    "chase",
+    "collect",
+    "mines",
+    "crates",
+    "single screen",
+    "arcade"
+   ],
+   "genre": "arcade",
+   "developer": {
+    "name": "Kjetil Erga",
+    "url": "https://kobolt.github.io/article-59.html"
+   },
+   "upstream": {
+    "name": "Kjetil Erga",
+    "url": "https://github.com/kobolt/curses-collection"
+   },
+   "exec": {
+    "game": "cgame",
+    "args": []
+   },
+   "min_terminal": {
+    "cols": 80,
+    "rows": 24
+   },
+   "requires": {
+    "utf8": false,
+    "color": "basic",
+    "mouse": false
+   },
+   "media": {
+    "cast": "asciiverse/cgame.cast",
+    "thumbnail_at": 12.0
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**TWENTY PILES OF MONEY. ONE M.**\n\nOne screen, scattered with money `$`, mines `*` and crates `#`, and you\n`@` somewhere in the middle of it. Collect every pile. The trouble is the\n`M`: every step you take, it takes one towards you.\n\nMines finish you, and so does walking into the `M`. The crates are your\nfriends: push one into its path and it has to find a way round. Every\ngame deals a new screen, and at the end it tells you how much you\ncollected and how many steps it took.\n\n## Controls\n\n- **Arrow keys**: walk, and push a crate\n- **q** or **Esc**: quit\n\n## Credits\n\n- Old Curses Game: [Kjetil Erga](https://kobolt.github.io/article-59.html), from his\n  [curses collection](https://github.com/kobolt/curses-collection); its\n  hunter after Escape MCP on the Commodore 64\n- License: MIT\n",
+   "version": "20230827-av.1",
+   "updated_at": "2026-11-03T19:20:33Z",
+   "thumbnail_at": 12.0,
+   "cast_url": "/casts/cgame.cast?v=1793733578",
+   "duration": 20.8,
+   "platforms": {
+    "x86_64-unknown-linux-musl": {
+     "url": "/dev-releases/curses-collection/cgame-x86_64-unknown-linux-musl.tar.gz",
+     "sha256": "2beee43103dbc4e1e15229df4ac63dada3b00d71b773e8f9d0e7c3ab6dce4d55",
+     "size": 141761
     }
    },
    "news": []
@@ -8614,25 +8740,25 @@
    },
    "media": {
     "cast": "asciiverse/mobius-chess.cast",
-    "thumbnail_at": 20.0
+    "thumbnail_at": 38.0
    },
    "release": {
     "source": "github"
    },
-   "page": "**THE BOARD HAS ONE EDGE. YOUR KING IS ON IT.**\n\nTake a chessboard, give it a half twist, and join its ends. Now the h-file runs straight on into the a-file, upside down: a1 sits right beside h8, and nothing is ever quite where it should be.\n\nMöbius Chess is ordinary chess on that board, drawn as a real twisted strip that turns in 3D beside a flat board showing exactly where everything stands. Every rule you know still holds. It is the board that has changed:\n\n- **Rooks run round the loop**: along a rank, through the join and back along the enemy's rank, 21 squares from anywhere\n- **Bishops turn at the join** and come out on the other colour\n- **Pawns that take across the join** turn round and march home, to promote on their own first rank\n- **No corners** to hide a king in, and **no castling**\n- **A starting position found by search**: the usual one hands each side a rook on move one, so every arrangement was tried for one where neither side can take or check on the first move and every pawn is guarded\n\nPlay the computer at three strengths, play a friend at one keyboard, or sit back and watch the computer play itself.\n\n## Controls\n\n- **Mouse**: click a piece, then where it goes, on the strip or on the flat board; drag the strip to turn it\n- **Arrows** and **Enter**: the same with the cursor\n- **u**: take back a move; **Esc**: menu (play White or Black, two players, watch, strength)\n- **s**: spin on or off; **+ -**: zoom; **m**: sound; **?**: help; **q**: quit\n\n## Options\n\n- `--black`, `--two`, `--watch`: start as Black, two players, or watching\n- `--easy`, `--hard`: the computer's strength\n- `--mute`: start with the sound off\n\n## Credits\n\n- Möbius Chess: Asciiverse\n- After the Möbius chessboard sculpture in Orhun Parmaksız's Ratty, and Tony Zeng's description of chess on a Möbius strip\n- License: MIT\n",
+   "page": "**THE BOARD HAS ONE EDGE. YOUR KING IS ON IT.**\n\nTake a chessboard, give it a half twist, and join its ends. Now the h-file runs straight on into the a-file, upside down: a1 sits right beside h8, and nothing is ever quite where it should be.\n\nMöbius Chess is ordinary chess on that board, drawn as a real twisted strip that turns in 3D beside a flat board showing exactly where everything stands. Every rule you know still holds. It is the board that has changed:\n\n- **Rooks run round the loop**: along a rank, through the join and back along the enemy's rank, 21 squares from anywhere\n- **Bishops turn at the join** and come out on the other colour\n- **Pawns that take across the join** turn round and march home, to promote on their own first rank\n- **No corners** to hide a king in, and **no castling**\n- **A starting position found by search**: the usual one hands each side a rook on move one, so every arrangement was tried for one where neither side can take, check or threaten anything on the first move and every pawn is guarded. The rooks wait in the pawn line, and the corners, right on the twist, start empty\n\nPlay the computer at three strengths, play a friend at one keyboard, or sit back and watch the computer play itself.\n\n## Controls\n\n- **Mouse**: click a piece, then where it goes, on the strip or on the flat board; drag the strip to turn it\n- **Arrows** and **Enter**: the same with the cursor\n- **u**: take back a move; **Esc**: menu (play White or Black, two players, watch, strength)\n- **s**: spin on or off; **+ -**: zoom; **m**: sound; **?**: help; **q**: quit\n\n## Options\n\n- `--black`, `--two`, `--watch`: start as Black, two players, or watching\n- `--easy`, `--hard`: the computer's strength\n- `--mute`: start with the sound off\n\n## Credits\n\n- Möbius Chess: Asciiverse\n- After the Möbius chessboard sculpture in Orhun Parmaksız's Ratty, and Tony Zeng's description of chess on a Möbius strip\n- License: MIT\n",
    "system_deps": [
     "libasound2"
    ],
-   "version": "0.2.0",
-   "updated_at": "2026-11-03T18:51:37Z",
-   "thumbnail_at": 20.0,
-   "cast_url": "/casts/mobius-chess.cast?v=1793731897",
+   "version": "0.3.0",
+   "updated_at": "2026-11-03T19:00:53Z",
+   "thumbnail_at": 38.0,
+   "cast_url": "/casts/mobius-chess.cast?v=1793732452",
    "duration": 40.1,
    "platforms": {
     "x86_64-unknown-linux-gnu": {
      "url": "/dev-releases/mobius-chess/mobius-chess-x86_64-unknown-linux-gnu.tar.gz",
-     "sha256": "66f5d61eb9cce9094df29700dd921e76cb5247501b81d9da112039a9d2253c4b",
-     "size": 958031
+     "sha256": "129e43591e5d22f1bfe798bf141c0b1310eb5b1a55b949f88fa32824b7dfe2f7",
+     "size": 958091
     }
    },
    "news": []
@@ -10971,6 +11097,68 @@
      "url": "/dev-releases/nbsdgames/rabbithole-x86_64-unknown-linux-musl.tar.gz",
      "sha256": "2aaa91cbfb3025a775f28dae05372c11aa6fa546746a1906b5bce312db8e82a0",
      "size": 150457
+    }
+   },
+   "news": []
+  },
+  "racing-game": {
+   "schema_version": 1,
+   "id": "racing-game",
+   "kind": "game",
+   "title": "Racing Game",
+   "description": "A road racer in the style of the 8-bit classics: curves, mountains on the horizon, and traffic to pass. How many cars can you overtake before you crash?",
+   "year": 2023,
+   "license": "MIT",
+   "repo": "theasciiverse/curses-collection",
+   "provenance": "Kjetil Erga wrote Racing Game in C with curses in 2023, after the old racing games on 8-bit computers.",
+   "changes": "PATCHES.md",
+   "topics": [
+    "racing",
+    "driving",
+    "pseudo-3d",
+    "8-bit style",
+    "arcade"
+   ],
+   "genre": "racing",
+   "developer": {
+    "name": "Kjetil Erga",
+    "url": "https://kobolt.github.io/article-221.html"
+   },
+   "upstream": {
+    "name": "Kjetil Erga",
+    "url": "https://github.com/kobolt/curses-collection"
+   },
+   "exec": {
+    "game": "racing-game",
+    "args": []
+   },
+   "min_terminal": {
+    "cols": 80,
+    "rows": 24
+   },
+   "requires": {
+    "utf8": false,
+    "color": "basic",
+    "mouse": false
+   },
+   "media": {
+    "cast": "asciiverse/racing-game.cast",
+    "thumbnail_at": 12.0
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**PASS THEM ALL.**\n\nThe road runs to the horizon, bending left and right, with the mountains\nsliding past behind it as you turn. Somewhere ahead is traffic, small\ndots at first, then cars, then cars right next to you. Pass as many as\nyou can. Touch one, and it is over.\n\nSpeed up and the road comes at you faster; slow down and the cars ahead\npull away. The score counts the cars you have left behind.\n\n## Controls\n\n- **← / →** or **a / d**: steer\n- **↑ / ↓** or **w / s**: faster and slower (shown in km/h)\n- **q**: quit\n\n## Options\n\nFrom a terminal: `racing-game -c` without colours, `racing-game -a`\nwith colour blocks only, no characters.\n\n## Credits\n\n- Racing Game: [Kjetil Erga](https://kobolt.github.io/article-221.html), from his\n  [curses collection](https://github.com/kobolt/curses-collection)\n- License: MIT\n",
+   "version": "20230827-av.1",
+   "updated_at": "2026-11-03T19:20:33Z",
+   "thumbnail_at": 12.0,
+   "cast_url": "/casts/racing-game.cast?v=1793733578",
+   "duration": 25.6,
+   "platforms": {
+    "x86_64-unknown-linux-musl": {
+     "url": "/dev-releases/curses-collection/racing-game-x86_64-unknown-linux-musl.tar.gz",
+     "sha256": "b2cdf0177658cb5f3acd5f722e0d5af0da220c611fcdda815a31db5b4d3f8a0d",
+     "size": 144388
     }
    },
    "news": []

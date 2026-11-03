@@ -1,0 +1,45 @@
+schema_version = 1
+id = "cavescroll"
+kind = "game"
+title = "Cave Scroller"
+description = "Fly through a cave that never ends: steer up and down through the gap, pick up money and ammunition, and shoot or dodge what comes at you."
+year = 2013
+license = "MIT"
+repo = "theasciiverse/curses-collection"
+provenance = "Kjetil Erga made Cave Scroller in C with curses in 2013, one of the many small curses games and tools on his blog; it later went into his curses collection."
+changes = "PATCHES.md"
+topics = ["side scroller", "cave", "flying", "shooter", "endless", "arcade"]
+genre = "arcade"
+
+[developer]
+name = "Kjetil Erga"
+url = "https://kobolt.github.io/article-85.html"
+
+# upstream's cavescroll, centred on the screen with the crash shown in
+# the game; PATCHES.md in theasciiverse/curses-collection
+[upstream]
+name = "Kjetil Erga"
+url = "https://github.com/kobolt/curses-collection"
+
+[exec]
+game = "cavescroll"
+args = []
+
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, asciiverse/record-preview.py: a pilot reading the screen steers
+# through the gap, dodges and shoots the enemies, until it crashes; the
+# still is the cave opening up ahead
+[media]
+cast = "asciiverse/cavescroll.cast"
+thumbnail_at = 15.0
+
+[release]
+source = "github"
