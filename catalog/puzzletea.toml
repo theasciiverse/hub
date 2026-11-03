@@ -1,0 +1,49 @@
+schema_version = 1
+id = "puzzletea"
+kind = "game"
+new = true
+title = "PuzzleTea"
+description = "Fifteen logic puzzles in one: Nonogram, Sudoku, Netwalk, Hashiwokakero, Nurikabe, Takuzu and more, made to the difficulty you choose, with a daily puzzle, a weekly ladder and levels to earn."
+year = 2025
+license = "MIT"
+repo = "theasciiverse/puzzletea"
+provenance = "D∆MI (FelineStateMachine) began PuzzleTea in Go in 2025, as a collection of puzzles for the Bubble Tea terminal toolkit."
+changes = "PATCHES.md"
+topics = ["puzzle", "logic", "nonogram", "sudoku", "netwalk", "hashiwokakero", "nurikabe", "takuzu", "hitori", "shikaku", "fillomino", "lights out", "word search", "daily", "go"]
+genre = "puzzle"
+
+[developer]
+name = "D∆MI (FelineStateMachine)"
+url = "https://github.com/FelineStateMachine/puzzletea"
+
+# upstream's program with the Create screen fitted to the window;
+# PATCHES.md in theasciiverse/puzzletea
+[upstream]
+name = "D∆MI (FelineStateMachine)"
+url = "https://github.com/FelineStateMachine/puzzletea"
+
+# saves, stats and settings in ~/.puzzletea (an SQLite file and config.json)
+[exec]
+game = "puzzletea"
+args = []
+
+# every screen fits from 80x28; the biggest boards (Nonogram 20x20) want
+# a larger window
+[min_terminal]
+cols = 80
+rows = 28
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = true
+
+# 100x30, asciiverse/record-preview.sh (asciinema in tmux): the menu, the
+# Create screen's puzzle pool, Netwalk generated and tiles turned; the
+# still is the pool with Netwalk picked
+[media]
+cast = "asciiverse/puzzletea.cast"
+thumbnail_at = 7.5
+
+[release]
+source = "github"

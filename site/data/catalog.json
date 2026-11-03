@@ -31,6 +31,11 @@
    "name": "Ancient Games",
    "url": "https://github.com/theasciiverse/ancient-games",
    "description": "The oldest board games of the world, made for the terminal by Asciiverse: the Royal Game of Ur, Senet, Mehen, Hnefatafl, Fox and Geese, the mancala games, the morris games, Mū tōrere and Kōnane, each with every honest reconstruction of its rules"
+  },
+  "atlas-games": {
+   "name": "Atlas Games",
+   "url": "https://github.com/fezcode/atlas.games",
+   "description": "fezcode's terminal games and generators, in Go since 2026: the runner Wilson's Revenge, and the Wave Function Collapse land and city generators, shown here as WFC Worlds"
   }
  },
  "titles": {
@@ -160,7 +165,7 @@
     "libasound2",
     "libudev1"
    ],
-   "version": "0.5.0",
+   "version": "0.5.1",
    "updated_at": "2026-10-10T00:00:00Z",
    "thumbnail_at": 3.0,
    "cast_url": "/casts/1d-pong.cast?v=1793645367",
@@ -2070,7 +2075,7 @@
     "libudev1"
    ],
    "updated_at": "2026-10-20T14:00:00Z",
-   "version": "1.0.0",
+   "version": "1.0.1",
    "thumbnail_at": 12.2,
    "cast_url": "/casts/braillestorm.cast?v=1792502188",
    "duration": 27.1,
@@ -2083,9 +2088,9 @@
    },
    "news": [
     {
-     "version": "1.0.0",
-     "date": "2026-10-29",
-     "notes": "- Everything above played through and tuned (David, 2026-10-29)"
+     "version": "1.0.1",
+     "date": "2026-11-03",
+     "notes": "- Gamepads work on Windows: gilrs reads them through XInput, since its\n  default (Windows Gaming Input) only reports to a program with a focused\n  window of its own, which a terminal game never has"
     }
    ]
   },
@@ -2198,7 +2203,7 @@
     "libasound2",
     "libudev1"
    ],
-   "version": "0.8.0",
+   "version": "0.8.1",
    "updated_at": "2026-10-10T00:00:00Z",
    "thumbnail_at": 8.0,
    "cast_url": "/casts/brickspire.cast?v=1791625300",
@@ -2212,9 +2217,9 @@
    },
    "news": [
     {
-     "version": "0.8.0",
-     "date": "2026-10-28",
-     "notes": "- Five themed towers, 50 floors, one new brick type per tower\n- The paddle on a line, an arc (mini-bosses) and a circle (roofs)\n- Five mini-bosses and five roof bosses, the Mason last\n- The story: the stars go out tower by tower; the ending lights them\n  again, then a second lap\n- Power-ups: Plank, Mortar, Chisel, Hourglass, Flock, Spare, Stair\n- Synthesised sound effects, the title, the best score kept\n- Keyboard, mouse and gamepad; session logging"
+     "version": "0.8.1",
+     "date": "2026-11-03",
+     "notes": "- Gamepads work on Windows: gilrs reads them through XInput, since its\n  default (Windows Gaming Input) only reports to a program with a focused\n  window of its own, which a terminal game never has"
     }
    ]
   },
@@ -3121,7 +3126,7 @@
     "libasound2",
     "libudev1"
    ],
-   "version": "1.0.0",
+   "version": "1.0.1",
    "updated_at": "2026-10-10T00:00:00Z",
    "thumbnail_at": 12.0,
    "cast_url": "/casts/ceres.cast?v=1791617278",
@@ -6087,7 +6092,7 @@
     "libasound2",
     "libudev1"
    ],
-   "version": "0.8.0",
+   "version": "0.8.1",
    "updated_at": "2026-10-10T00:00:00Z",
    "thumbnail_at": 12.0,
    "cast_url": "/casts/glider.cast?v=1793099775",
@@ -6101,9 +6106,9 @@
    },
    "news": [
     {
-     "version": "0.8.0",
-     "date": "2026-10-28",
-     "notes": "- The play loop translated from Calhoun's Pascal, reading his files\n  directly: every built-in house, and any Glider 4 house file from disk\n- Sounds and music\n- Keyboard (hold or tap), the original's mouse control, gamepad\n- Two views: Calhoun's art, and the silhouette view (V switches)\n- High scores per house; \"Ozma\""
+     "version": "0.8.1",
+     "date": "2026-11-03",
+     "notes": "- Gamepads work on Windows: gilrs reads them through XInput, since its\n  default (Windows Gaming Input) only reports to a program with a focused\n  window of its own, which a terminal game never has"
     }
    ]
   },
@@ -7284,7 +7289,7 @@
     "libudev1"
    ],
    "updated_at": "2026-10-19T12:00:00Z",
-   "version": "1.0.0",
+   "version": "1.0.1",
    "thumbnail_at": 38.0,
    "cast_url": "/casts/kaiku.cast?v=1792411284",
    "duration": 58.1,
@@ -8059,7 +8064,7 @@
    "system_deps": [
     "libudev1"
    ],
-   "version": "0.8.0",
+   "version": "0.8.1",
    "updated_at": "2026-10-10T00:00:00Z",
    "thumbnail_at": 24.0,
    "cast_url": "/casts/marble-recovery.cast?v=1791618015",
@@ -8620,7 +8625,7 @@
    "system_deps": [
     "libudev1"
    ],
-   "version": "0.4.0",
+   "version": "0.4.1",
    "updated_at": "2026-10-10T00:00:00Z",
    "thumbnail_at": 8.0,
    "cast_url": "/casts/moraen.cast?v=1791627415",
@@ -8634,9 +8639,9 @@
    },
    "news": [
     {
-     "version": "0.4.0",
-     "date": "2026-10-28",
-     "notes": "- The BD1 engine: every BD1 element and its rules, under test\n- Glyph and half-block graphics, switchable in the game\n- Keyboard and gamepad; session logging\n- The first world: 20 caves and 5 intermissions, the stone trolls in the\n  last four, five difficulty levels, a start menu and cave cards"
+     "version": "0.4.1",
+     "date": "2026-11-03",
+     "notes": "- Gamepads work on Windows: gilrs reads them through XInput, since its\n  default (Windows Gaming Input) only reports to a program with a focused\n  window of its own, which a terminal game never has"
     }
    ]
   },
@@ -8987,24 +8992,18 @@
     "libstdc++6"
    ],
    "updated_at": "2026-10-26T13:00:00Z",
-   "version": "0.7.0",
+   "version": "0.7.1",
    "thumbnail_at": 24.0,
    "cast_url": "/casts/nard.cast?v=1793030254",
    "duration": 45.1,
    "platforms": {
     "x86_64-unknown-linux-gnu": {
      "url": "/dev-releases/nard-x86_64-unknown-linux-gnu.tar.gz",
-     "sha256": "d1ead041c6658e2d48c3e0f307b7a2ffffb35139e6fec02f7ae580cdefcbd739",
-     "size": 9850419
+     "sha256": "c0750937ef0772651693bc75831259ebad5918dc507216f364b444ff06d25188",
+     "size": 9850734
     }
    },
-   "news": [
-    {
-     "version": "0.7.0",
-     "date": "2026-10-28",
-     "notes": "- Money play: single games with the cube, gammons and backgammons\n- bgsage as the opponent at three strengths; two people at one keyboard\n- The tavla board in four sizes, centred, with the braille ornament\n- Keys and mouse, F1 help, `--demo`, `--seed`"
-    }
-   ]
+   "news": []
   },
   "nbsd-sos": {
    "schema_version": 1,
@@ -9370,8 +9369,8 @@
    "version": "1.5.1-av.1",
    "updated_at": "2026-10-18T09:20:23Z",
    "thumbnail_at": 42.0,
-   "cast_url": "/casts/nettoe.cast?v=1792315232",
-   "duration": 52.2,
+   "cast_url": "/casts/nettoe.cast?v=1793711558",
+   "duration": 50.8,
    "platforms": {
     "x86_64-unknown-linux-musl": {
      "url": "/dev-releases/nettoe/nettoe-x86_64-unknown-linux-musl.tar.gz",
@@ -9864,7 +9863,7 @@
     "libasound2",
     "libudev1"
    ],
-   "version": "0.5.0",
+   "version": "0.5.1",
    "updated_at": "2026-10-10T00:00:00Z",
    "thumbnail_at": 21.5,
    "cast_url": "/casts/ohm.cast?v=1791618483",
@@ -9874,6 +9873,70 @@
      "url": "/dev-releases/ohm-x86_64-unknown-linux-gnu.tar.gz",
      "sha256": "eb7e53b88ac8bbebcc0ef6b29ac6bf41bcdf2fc605b69d554c2bb431a3e92127",
      "size": 8632137
+    }
+   },
+   "news": []
+  },
+  "omega": {
+   "schema_version": 1,
+   "id": "omega",
+   "kind": "game",
+   "old": true,
+   "title": "Omega",
+   "description": "The roguelike with a whole world: start in the city of Rampart, join its guilds and orders, then take on the countryside, its villages and its dungeons. Many ways to win.",
+   "year": 1987,
+   "license": "GPL-3.0-or-later",
+   "repo": "theasciiverse/omega",
+   "provenance": "Laurence R. Brothers wrote Omega between 1987 and 1989; Erik Max Francis and others carried it on into the 1990s, and Lyle Tafoya has continued it in C++ as Omega Rebirth since 2019.",
+   "changes": "PATCHES.md",
+   "topics": [
+    "roguelike",
+    "fantasy",
+    "guilds",
+    "open world",
+    "classic",
+    "c++"
+   ],
+   "genre": "roguelike",
+   "developer": {
+    "name": "Lyle Tafoya",
+    "url": "https://github.com/Lyle-Tafoya/Omega"
+   },
+   "upstream": {
+    "name": "Laurence R. Brothers, Lyle Tafoya",
+    "url": "https://github.com/Lyle-Tafoya/Omega"
+   },
+   "exec": {
+    "game": "omega",
+    "args": []
+   },
+   "min_terminal": {
+    "cols": 80,
+    "rows": 24
+   },
+   "requires": {
+    "utf8": false,
+    "color": "basic",
+    "mouse": false
+   },
+   "media": {
+    "cast": "asciiverse/omega.cast",
+    "thumbnail_at": 17.0
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**A WHOLE WORLD, NOT JUST A DUNGEON.**\n\nMost roguelikes give you a staircase and a long way down. Omega gives\nyou a world. You begin at the gates of Rampart, a city with a Duke,\nguilds, temples, a college of magic, banks, shops and a few places you\nwould do well to stay out of. Beyond its walls lies a countryside of\nvillages, wilderness, special sites and dungeons, each with a master at\nthe bottom.\n\nThere are many ways to win. Rise to the head of the Legion, the\nThieves' Guild, the Collegium Magii, the Order of Paladins, the Circle of\nSorcerors or a priesthood of one of the gods; grow rich; or go after the\ntotal winner's crown, with the Oracle to point the way. The hall of fame\nremembers who holds every title.\n\n## Controls\n\n- **h j k l y u b n**: walk (or fight), the keypad too\n- **H J K L Y U B N**: run until something is worth a stop\n- **i**: inventory; **g**: pick up; **t**: talk; **x**: examine\n- **m**: cast a spell; **M**: go straight to a place you know in the city\n- **<** and **>**: up and down; **.**: rest a turn\n- **?**: help, with every command; **S**: save and quit; **Q**: quit\n\n## Credits\n\n- Omega: Laurence R. Brothers (1987 to 1989), carried on by Erik Max\n  Francis, Nathan Glasser, Robert Rendell, William Tanksley and others\n- Omega Rebirth, the C++ continuation: [Lyle Tafoya](https://github.com/Lyle-Tafoya/Omega)\n- License: GPL-3.0-or-later\n",
+   "version": "0.7.0+20260923-av.1",
+   "updated_at": "2026-11-03T17:30:15Z",
+   "thumbnail_at": 17.0,
+   "cast_url": "/casts/omega.cast?v=1793726935",
+   "duration": 20.9,
+   "platforms": {
+    "x86_64-unknown-linux-musl": {
+     "url": "/dev-releases/omega/omega-x86_64-unknown-linux-musl.tar.gz",
+     "sha256": "67ab7e119c85dc7a85be22aab7abbe3ae44ba3a5426704822e58fb3075c983c1",
+     "size": 2179962
     }
    },
    "news": []
@@ -10061,7 +10124,7 @@
     "libasound2",
     "libudev1"
    ],
-   "version": "1.0.0",
+   "version": "1.0.1",
    "updated_at": "2026-10-10T00:00:00Z",
    "thumbnail_at": 12.0,
    "cast_url": "/casts/panzer.cast?v=1791616185",
@@ -10533,6 +10596,79 @@
    },
    "news": []
   },
+  "puzzletea": {
+   "schema_version": 1,
+   "id": "puzzletea",
+   "kind": "game",
+   "new": true,
+   "title": "PuzzleTea",
+   "description": "Fifteen logic puzzles in one: Nonogram, Sudoku, Netwalk, Hashiwokakero, Nurikabe, Takuzu and more, made to the difficulty you choose, with a daily puzzle, a weekly ladder and levels to earn.",
+   "year": 2025,
+   "license": "MIT",
+   "repo": "theasciiverse/puzzletea",
+   "provenance": "D∆MI (FelineStateMachine) began PuzzleTea in Go in 2025, as a collection of puzzles for the Bubble Tea terminal toolkit.",
+   "changes": "PATCHES.md",
+   "topics": [
+    "puzzle",
+    "logic",
+    "nonogram",
+    "sudoku",
+    "netwalk",
+    "hashiwokakero",
+    "nurikabe",
+    "takuzu",
+    "hitori",
+    "shikaku",
+    "fillomino",
+    "lights out",
+    "word search",
+    "daily",
+    "go"
+   ],
+   "genre": "puzzle",
+   "developer": {
+    "name": "D∆MI (FelineStateMachine)",
+    "url": "https://github.com/FelineStateMachine/puzzletea"
+   },
+   "upstream": {
+    "name": "D∆MI (FelineStateMachine)",
+    "url": "https://github.com/FelineStateMachine/puzzletea"
+   },
+   "exec": {
+    "game": "puzzletea",
+    "args": []
+   },
+   "min_terminal": {
+    "cols": 80,
+    "rows": 28
+   },
+   "requires": {
+    "utf8": true,
+    "color": "truecolor",
+    "mouse": true
+   },
+   "media": {
+    "cast": "asciiverse/puzzletea.cast",
+    "thumbnail_at": 7.5
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**FIFTEEN PUZZLES. ONE DAILY. NO TWO ALIKE.**\n\nA whole shelf of logic puzzles in one place, every one of them generated\nfresh: pick the puzzles you feel like, set how hard you want them, and\nPuzzleTea makes one. Or share a seed, and a friend gets the very same\ngrid.\n\n- **Nonogram**: fill cells to match the row and column clues\n- **Sudoku** and **Sudoku RGB**, the second with three symbols instead of nine\n- **Netwalk**: turn the tiles until every computer reaches the server\n- **Hashiwokakero**: join the islands with bridges\n- **Nurikabe**, **Hitori**, **Shikaku**, **Fillomino** and **Ripple Effect**\n- **Takuzu** and **Takuzu+**, the second with `=` and `x` clues between cells\n- **Lights Out**, **Word Search** and **Spell Puzzle**\n\nEvery day brings one puzzle that is the same for everyone, with a streak\nto keep. Every week brings a ladder of 99, unlocked one rung at a time.\nSolving earns XP and levels in each kind of puzzle, the stats screen\nkeeps score, and 365 colour themes let it look the way you like.\n\n## Controls\n\n- **Arrow keys** and **Enter**: through the menus; **Esc**: back\n- **Each puzzle shows its own keys** under the board: **z** and **x**\n  fill and mark in Nonogram, **1** to **9** fill a Sudoku, **Space** turns\n  a Netwalk tile and **Enter** locks it\n- **Mouse**: drag in Nonogram, Nurikabe, Shikaku, Spell Puzzle and Word\n  Search; click to pick a cell, turn a tile or toggle a light\n- **Ctrl+C**: quit\n\n## Options\n\nFrom a terminal: `puzzletea new sudoku hard` or `puzzletea new nonogram\nclassic` starts a puzzle at once, `--difficulty 1200` asks for a\ndifficulty from 0 to 3000, `--with-seed myseed` makes the same puzzle every\ntime, and `puzzletea continue <name>` takes up a saved one.\n`puzzletea --help` lists them all.\n\n## Credits\n\n- PuzzleTea: [D∆MI (FelineStateMachine)](https://github.com/FelineStateMachine/puzzletea)\n- License: MIT\n",
+   "version": "2.0.1-av.1",
+   "updated_at": "2026-11-03T18:09:42Z",
+   "thumbnail_at": 7.5,
+   "cast_url": "/casts/puzzletea.cast?v=1793729309",
+   "duration": 21.6,
+   "platforms": {
+    "x86_64-unknown-linux-musl": {
+     "url": "/dev-releases/puzzletea/puzzletea-x86_64-unknown-linux-musl.tar.gz",
+     "sha256": "39756f1c703168867d89d0ad856eb225a9572d34deebdeb0394dd32dc8d1a7f3",
+     "size": 8576320
+    }
+   },
+   "news": []
+  },
   "pwmangband": {
    "schema_version": 1,
    "id": "pwmangband",
@@ -10775,6 +10911,69 @@
      "url": "/dev-releases/rantaiwarna/rantaiwarna-x86_64-unknown-linux-musl.tar.gz",
      "sha256": "8ce4073a6cfd289771c14c2d484e8b748ae3b13e10be35061dc45d6426dfe5af",
      "size": 160865
+    }
+   },
+   "news": []
+  },
+  "rattys-cube": {
+   "schema_version": 1,
+   "id": "rattys-cube",
+   "kind": "game",
+   "title": "Ratty's Cube",
+   "description": "A 3x3 twisty cube in real 3D in your terminal: grab a sticker and drag to turn its layer, race the clock from a competition scramble, and when you are stuck, ask for a hint or watch it solve itself.",
+   "year": 2026,
+   "new": true,
+   "license": "MIT",
+   "repo": "theasciiverse/rattys-cube",
+   "provenance": "Asciiverse made Ratty's Cube in Rust in 2026, starting from the cube example in Orhun Parmaksız's Ratty, a GPU terminal that draws 3D, and named it after that terminal.",
+   "topics": [
+    "3d",
+    "cube",
+    "twisty puzzle",
+    "speedcubing",
+    "timer",
+    "solver",
+    "mouse"
+   ],
+   "genre": "puzzle",
+   "developer": {
+    "name": "Asciiverse",
+    "url": "https://asciiverse.sh"
+   },
+   "exec": {
+    "game": "rattys-cube",
+    "args": []
+   },
+   "min_terminal": {
+    "cols": 40,
+    "rows": 14
+   },
+   "requires": {
+    "utf8": true,
+    "color": "truecolor",
+    "mouse": true
+   },
+   "media": {
+    "cast": "asciiverse/rattys-cube.cast",
+    "thumbnail_at": 11.0
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**TWENTY-SIX CUBIES. FORTY-THREE QUINTILLION WAYS TO MIX THEM UP. ONE WAY HOME.**\n\nA real 3D cube hangs in your terminal, shaded and turning in smooth animation. Grab any sticker with the mouse and drag it: the whole layer swings round with it. Drag the empty space around the cube to look at it from any side.\n\nThen press Space. You get a scramble the way competitions make them, from a truly random position, and fifteen seconds of inspection while the judge calls eight and twelve. Your first turn starts the clock, the last one stops it, and every solve goes into your best time and your averages of five and twelve.\n\n- **Turn it your way**: drag stickers with the mouse, or type the notation on the keyboard, faces, slices and whole-cube turns\n- **A speedcubing timer** with inspection, +2 and DNF just like the real thing, best, ao5 and ao12\n- **Stuck? Press h** for the moves that solve it from wherever you are\n- **Or press Enter** and watch it solve itself, slowly enough to follow along\n- **Its own solver**, Herbert Kociemba's two-phase algorithm, usually finds a way home in about twenty-one moves\n- **A flat net** beside the cube shows every face at once\n- **Clicks and calls**: every layer clicks into place, the judge calls the inspection, and a fanfare greets a new best\n\n## Controls\n\n- **Mouse**: drag a sticker to turn its layer; drag the background to look around; the wheel zooms\n- **R L U D F B**: turn a face clockwise; with **Shift**, the other way\n- **M E S**: a middle slice; **x y z**: the whole cube\n- **Space**: scramble and start a timed solve; **Esc**: stop the solve\n- **Backspace**: undo; **n**: a solved cube to practise on\n- **h**: a hint; **Enter**: show me\n- **Arrows**: look around; **0**: look home; **+ -**: zoom\n- **Tab**: the net; **F8**: sound on or off; **?**: help; **q**: quit\n\n## Options\n\n- `--mute`: start with the sound off\n\n## Credits\n\n- Ratty's Cube: Asciiverse\n- Started from the cube example in Ratty by Orhun Parmaksız (MIT), and named after it\n- Solver: Herbert Kociemba's two-phase algorithm, written for this game from his description\n- License: MIT\n",
+   "system_deps": [
+    "libasound2"
+   ],
+   "version": "0.3.1",
+   "updated_at": "2026-11-03T17:34:15Z",
+   "thumbnail_at": 11.0,
+   "cast_url": "/casts/rattys-cube.cast?v=1793727255",
+   "duration": 24.5,
+   "platforms": {
+    "x86_64-unknown-linux-gnu": {
+     "url": "/dev-releases/rattys-cube/rattys-cube-x86_64-unknown-linux-gnu.tar.gz",
+     "sha256": "26d2c7f8045065675200ee7ed4ab2f08fe8f8cf3cb2ff5b05b21ebefd7239a02",
+     "size": 962784
     }
    },
    "news": []
@@ -11603,7 +11802,7 @@
    "system_deps": [
     "libasound2"
    ],
-   "version": "0.9.0",
+   "version": "0.9.1",
    "updated_at": "2026-10-10T00:00:00Z",
    "thumbnail_at": 5.0,
    "cast_url": "/casts/rusty-pinball.cast?v=1791626460",
@@ -11615,13 +11814,7 @@
      "size": 3949297
     }
    },
-   "news": [
-    {
-     "version": "0.9.0",
-     "date": "2026-10-29",
-     "notes": "- The top 5 high scores and the last score per table, a High scores\n  screen, and the original's after-game cycle on the DMD\n- Settings as the original has them: music and effects apart, game\n  speed, zoom (on follows the ball, off shows the whole table)\n- A help screen with the controls and each table's rules, also in game (H)\n- Inactive layers fade over a quarter second of game time, as in the original\n- The plunger: hold Space to pull it back, where the terminal reports key releases\n- The ball's spin dot, and its size from `ballradius`"
-    }
-   ]
+   "news": []
   },
   "sail": {
    "schema_version": 1,
@@ -12233,7 +12426,7 @@
     "libasound2",
     "libudev1"
    ],
-   "version": "0.3.0",
+   "version": "0.3.1",
    "updated_at": "2026-10-10T00:00:00Z",
    "thumbnail_at": 14.0,
    "cast_url": "/casts/sigpipe.cast?v=1791616848",
@@ -12247,9 +12440,9 @@
    },
    "news": [
     {
-     "version": "0.3.0",
-     "date": "2026-10-28",
-     "notes": "- Classic rules on a 10 by 7 board: the countdown, replacing pieces, fast flow\n- The Unix data-stream theme: process boxes, `[exit 0]`, `Broken pipe`\n- Crossover and `tee`, buffers, one-way valves, the `nul` sink, locked cells\n- Endless levels that tighten; a saved hi score\n- Synthesised sound\n- Versus over iroh on the LAN, first to three rounds\n- Keyboard, mouse and gamepad; session logging"
+     "version": "0.3.1",
+     "date": "2026-11-03",
+     "notes": "- Gamepads work on Windows: gilrs reads them through XInput, since its\n  default (Windows Gaming Input) only reports to a program with a focused\n  window of its own, which a terminal game never has"
     }
    ]
   },
@@ -12629,7 +12822,7 @@
     "libasound2",
     "libudev1"
    ],
-   "version": "0.9.0",
+   "version": "0.9.1",
    "updated_at": "2026-10-10T00:00:00Z",
    "thumbnail_at": 16.0,
    "cast_url": "/casts/sleighride.cast?v=1791617207",
@@ -13709,7 +13902,7 @@
     "missions",
     "models"
    ],
-   "version": "0.6.0",
+   "version": "0.6.1",
    "updated_at": "2026-10-10T00:00:00Z",
    "thumbnail_at": 14.0,
    "cast_url": "/casts/terminal-orbit.cast?v=1791643898",
@@ -13717,8 +13910,8 @@
    "platforms": {
     "x86_64-unknown-linux-gnu": {
      "url": "/dev-releases/terminal-orbit-x86_64-unknown-linux-gnu.tar.gz",
-     "sha256": "00363f3b7415548cd3e94ad95907d622733aa14d67c9800d866d9c7dd9f63a91",
-     "size": 3850562
+     "sha256": "987109d1fb7d7330f2ee957747cf208733a3fc03ccd5776b9f0a8e7846890d31",
+     "size": 3850367
     }
    },
    "news": []
@@ -14260,7 +14453,7 @@
     "libasound2",
     "libudev1"
    ],
-   "version": "0.6.0",
+   "version": "0.6.1",
    "updated_at": "2026-10-10T00:00:00Z",
    "thumbnail_at": 12.0,
    "cast_url": "/casts/tessera.cast?v=1793658124",
@@ -14274,9 +14467,9 @@
    },
    "news": [
     {
-     "version": "0.6.0",
-     "date": "2026-11-02",
-     "notes": "- A maze that does not fit the terminal in the usual view starts in one\n  that does, and says so; when none fits, the message offers V if\n  another view would. At 80×24 the first six campaign mazes play\n- A test drives every screen with 20,000 random commands at random\n  terminal sizes: no panics, no step off the grid or through a wall"
+     "version": "0.6.1",
+     "date": "2026-11-03",
+     "notes": "- Gamepads work on Windows: gilrs reads them through XInput, since its\n  default (Windows Gaming Input) only reports to a program with a focused\n  window of its own, which a terminal game never has"
     }
    ]
   },
@@ -14752,7 +14945,7 @@
     "libasound2",
     "libudev1"
    ],
-   "version": "1.0.0",
+   "version": "1.0.1",
    "updated_at": "2026-10-10T00:00:00Z",
    "thumbnail_at": 5.0,
    "cast_url": "/casts/tty-rex.cast?v=1791625388",
@@ -14766,9 +14959,9 @@
    },
    "news": [
     {
-     "version": "1.0.0",
-     "date": "2026-10-28",
-     "notes": "- Chromium's rules, timings, speed curve, sprites and its three sounds\n- Day and night, moon phases and stars\n- Braille graphics at several scales, and the blocks look\n- Keyboard and gamepad (Chrome's mapping)\n- Auto mode: he runs on his own, for a strip in a tmux split"
+     "version": "1.0.1",
+     "date": "2026-11-03",
+     "notes": "- Gamepads work on Windows: gilrs reads them through XInput, since its\n  default (Windows Gaming Input) only reports to a program with a focused\n  window of its own, which a terminal game never has"
     }
    ]
   },
@@ -14904,6 +15097,68 @@
      "url": "/dev-releases/nbsdgames/tugow-x86_64-unknown-linux-musl.tar.gz",
      "sha256": "110940f8f0f10a43ae1a97a4d33cb0fefce323f2d87e16fc9d499d9ef7f9778c",
      "size": 150268
+    }
+   },
+   "news": []
+  },
+  "twistty": {
+   "schema_version": 1,
+   "id": "twistty",
+   "kind": "game",
+   "title": "Twistty",
+   "description": "A 3D twisty cube in your terminal: turn the faces, spin the whole cube, scramble it with a seed and solve it, in true colour, drawn in half blocks, sextants, real pixels or its creator's own coloured ASCII.",
+   "year": 2019,
+   "license": "MIT",
+   "repo": "theasciiverse/twistty",
+   "provenance": "Benjamin Jones wrote this cube in C in December 2019, drawing it in 3D with his own small renderer and turning its pixels into coloured ASCII with CAM, a curses library he had written that summer.",
+   "changes": "PATCHES.md",
+   "topics": [
+    "3d",
+    "cube",
+    "twisty puzzle",
+    "notcurses",
+    "true colour"
+   ],
+   "genre": "puzzle",
+   "developer": {
+    "name": "Benjamin Jones",
+    "url": "https://github.com/been-jamming"
+   },
+   "upstream": {
+    "name": "Benjamin Jones",
+    "url": "https://github.com/been-jamming/rubiks_cube"
+   },
+   "exec": {
+    "game": "twistty",
+    "args": []
+   },
+   "min_terminal": {
+    "cols": 40,
+    "rows": 12
+   },
+   "requires": {
+    "utf8": true,
+    "color": "truecolor",
+    "mouse": false
+   },
+   "media": {
+    "cast": "asciiverse/twistty.cast",
+    "thumbnail_at": 10.0
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**TWENTY-SIX LITTLE CUBES. SIX COLOURS. ONE TERMINAL.**\n\nA real 3D cube floats in your terminal, and every face of it turns. Spin the whole thing around with the arrow keys, twist any face a quarter turn with a single letter, and watch the layer swing round in smooth animation. Then scramble it thirty turns deep and try to bring it home.\n\nTwistty draws its cube the way a 3D game would, triangle by triangle, with depth and perspective, and then decides how your terminal should show it:\n\n- **Half blocks, sextants and octants** in full 24-bit colour, picked to suit your terminal\n- **Real pixels** in terminals that do graphics, such as kitty and Ghostty\n- **Classic**: Benjamin Jones' original look, every cell matched to the ASCII character that best fits its shape, so the cube is built from letters and punctuation\n- **Scramble with a seed**: type any word and get the same scramble every time, or leave it empty for a random one\n- **Save and load** a cube in the middle of a solve\n- **Space squares it up**: the cube swings to the nearest straight-on view\n\n## Controls\n\n- **f b l r u d**: turn the front, back, left, right, up or down face counterclockwise; **F B L R U D** (with Shift) turn it clockwise\n- **Arrows**: turn the whole cube; **z** / **Z**: roll it\n- **Space**: square the cube up to the view\n- **v**: the next look (classic, half blocks, quadrants, sextants, octants, pixels; only those your terminal can show)\n- **m** or **Esc**: the menu: Resume, Scramble, Save, Load, Exit\n\nFaces are named as the cube faces you now, so **f** is always the side looking at you.\n\n## Options\n\n- `--view NAME`: start in a look: `classic`, `half`, `quadrant`, `sextant`, `octant` or `pixel`\n\n## History\n\nBenjamin Jones built this cube in 2019 on CAM, his own library for drawing pixels as coloured ASCII in curses' eight colours. This edition moves it onto notcurses, which gives it true colour (the orange and white faces were magenta and cyan before), finer block and pixel graphics, and a cube that is square whatever your font.\n\n## Credits\n\n- Twistty: Benjamin Jones (the cube and CAM)\n- Drawn with notcurses by Nick Black and its contributors\n- License: MIT\n",
+   "version": "1.2-av.1",
+   "updated_at": "2026-11-03T17:05:13Z",
+   "thumbnail_at": 10.0,
+   "cast_url": "/casts/twistty.cast?v=1793725520",
+   "duration": 31.0,
+   "platforms": {
+    "x86_64-unknown-linux-gnu": {
+     "url": "/dev-releases/twistty/twistty-x86_64-unknown-linux-gnu.tar.gz",
+     "sha256": "40cf511ece5bfa08f77874f41cbe4041a3831865845e756c3cd7e39f4e594e28",
+     "size": 324125
     }
    },
    "news": []
@@ -15330,7 +15585,7 @@
    "system_deps": [
     "libudev1"
    ],
-   "version": "0.6.0",
+   "version": "0.6.1",
    "updated_at": "2026-10-10T00:00:00Z",
    "thumbnail_at": 17.1,
    "cast_url": "/casts/uxo.cast?v=1791617899",
@@ -15342,7 +15597,13 @@
      "size": 7946646
     }
    },
-   "news": []
+   "news": [
+    {
+     "version": "0.6.1",
+     "date": "2026-11-03",
+     "notes": "- Gamepads work on Windows: gilrs reads them through XInput, since its\n  default (Windows Gaming Input) only reports to a program with a focused\n  window of its own, which a terminal game never has"
+    }
+   ]
   },
   "vitetris": {
    "schema_version": 1,
@@ -15625,6 +15886,134 @@
      "notes": "- The party and outfitting in Independence, spring 1848; the departure month\n- The trail: pace, rations, health, weather by month and region\n- The real route, landmark by landmark, with a note in our own words at\n  each; forts with stores at rising prices\n- Events and illness, river crossings, hunting as text\n- The end: score and an epitaph for each who died; play again\n- Balanced over 200 bot journeys\n- Landmark scenes and a map of the road"
     }
    ]
+  },
+  "wfc-worlds": {
+   "schema_version": 1,
+   "id": "wfc-worlds",
+   "kind": "art",
+   "title": "WFC Worlds",
+   "description": "Landscapes and cities grow out of a fog of question marks by Wave Function Collapse, one after the other, filling the whole window.",
+   "year": 2026,
+   "new": true,
+   "license": "MIT",
+   "repo": "theasciiverse/atlas-games",
+   "provenance": "fezcode wrote the land and city generators in Go in March 2026 for Atlas Games, fezcode's collection of terminal games and generators.",
+   "changes": "PATCHES.md",
+   "collection": "atlas-games",
+   "topics": [
+    "screensaver",
+    "procedural",
+    "wave function collapse",
+    "maps",
+    "cities",
+    "go"
+   ],
+   "developer": {
+    "name": "fezcode",
+    "url": "https://github.com/fezcode/atlas.games"
+   },
+   "upstream": {
+    "name": "fezcode",
+    "url": "https://github.com/fezcode/atlas.games"
+   },
+   "exec": {
+    "game": "wfc-worlds",
+    "args": []
+   },
+   "min_terminal": {
+    "cols": 40,
+    "rows": 12
+   },
+   "requires": {
+    "utf8": true,
+    "color": "256",
+    "mouse": false
+   },
+   "media": {
+    "cast": "asciiverse/wfc-worlds.cast",
+    "thumbnail_at": 5.0
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**EVERY CELL A QUESTION. EVERY WORLD AN ANSWER.**\n\nThe window fills with question marks, and a world settles out of them.\nWave Function Collapse picks the most certain cell, decides it, and lets\nthe decision ripple to its neighbours, until oceans, forests, mountain\nridges and lava flows have found their places. Then a city does the same:\nroads that join up, blocks of houses, shops, parks and ponds. Then\nanother landscape, and so on, each one new.\n\n## Controls\n\n- **Space**: the next world now\n- **Any other key**: quit\n\n## Credits\n\n- WFC Worlds: the land and city generators of [fezcode](https://github.com/fezcode/atlas.games)'s Atlas Games\n- License: MIT\n",
+   "version": "0.6.1-av.1",
+   "updated_at": "2026-11-03T17:04:35Z",
+   "thumbnail_at": 5.0,
+   "cast_url": "/casts/wfc-worlds.cast?v=1793725531",
+   "duration": 26.1,
+   "platforms": {
+    "x86_64-unknown-linux-musl": {
+     "url": "/dev-releases/atlas-games/wfc-worlds-x86_64-unknown-linux-musl.tar.gz",
+     "sha256": "0ebbd332894f5f04edf79f04cad15b69826b21b184a8d36ba8b4511ee97f03e6",
+     "size": 1296075
+    }
+   },
+   "news": []
+  },
+  "wilsons-revenge": {
+   "schema_version": 1,
+   "id": "wilsons-revenge",
+   "kind": "game",
+   "title": "Wilson's Revenge",
+   "description": "Wilson the chicken is back and it's personal: a three-lane runner where you dodge cars, jump barricades and blast through with a pick-up shotgun.",
+   "year": 2026,
+   "new": true,
+   "license": "MIT",
+   "repo": "theasciiverse/atlas-games",
+   "provenance": "fezcode wrote Wilson's Revenge in Go in February 2026; it grew into Atlas Games, fezcode's collection of terminal games and generators.",
+   "changes": "PATCHES.md",
+   "collection": "atlas-games",
+   "topics": [
+    "runner",
+    "chicken",
+    "arcade",
+    "endless",
+    "go"
+   ],
+   "genre": "runner",
+   "developer": {
+    "name": "fezcode",
+    "url": "https://github.com/fezcode/atlas.games"
+   },
+   "upstream": {
+    "name": "fezcode",
+    "url": "https://github.com/fezcode/atlas.games"
+   },
+   "exec": {
+    "game": "wilsons-revenge",
+    "args": []
+   },
+   "min_terminal": {
+    "cols": 80,
+    "rows": 27
+   },
+   "requires": {
+    "utf8": true,
+    "color": "256",
+    "mouse": false
+   },
+   "media": {
+    "cast": "asciiverse/wilsons-revenge.cast",
+    "thumbnail_at": 14.0
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**THIS TIME IT'S PERSONAL.**\n\nWilson the chicken is back on the road. Three lanes, traffic coming the\nother way, and it only gets faster: switch lanes, jump the barricades\nand the people in your path, and grab a shotgun to blast through\nwhatever you can't get round.\n\nThe road is full of pick-ups, and not all of them are friends:\n\n- **~-=**: a shotgun and five shells; **[A]**: three more shells\n- **[P+]**: five seconds invincible, double points\n- **[P-]**: lose a hundred points\n- **[XJ]**: no more jumping, until you find **[OJ]**\n\nEverything you get past is points; everything you shoot is more.\n\n## Controls\n\n- **↑** / **↓**: change lane\n- **→**: jump\n- **Space**: start, then shoot\n- **P**: pause; **R**: run again after a crash; **Q**: quit\n\n## Options\n\n- `--demo`: watch Wilson play himself; any key quits\n\n## Credits\n\n- Wilson's Revenge: [fezcode](https://github.com/fezcode/atlas.games), part of Atlas Games\n- License: MIT\n",
+   "version": "0.6.1-av.1",
+   "updated_at": "2026-11-03T17:04:35Z",
+   "thumbnail_at": 14.0,
+   "cast_url": "/casts/wilsons-revenge.cast?v=1793725350",
+   "duration": 34.1,
+   "platforms": {
+    "x86_64-unknown-linux-musl": {
+     "url": "/dev-releases/atlas-games/wilsons-revenge-x86_64-unknown-linux-musl.tar.gz",
+     "sha256": "d49e99f5427e48862d529a8fe4f47efec6a03b1bb2fe07b97e9aa913e7b59615",
+     "size": 1400975
+    }
+   },
+   "news": []
   },
   "wolfpack-empire": {
    "schema_version": 1,
@@ -16001,20 +16390,10 @@
    "cast_url": "/casts/xnethack.cast?v=1793547234",
    "duration": 49.9,
    "platforms": {
-    "x86_64-unknown-linux-musl": {
-     "url": "https://example.invalid/xnethack-x86_64-unknown-linux-musl.tar.gz",
-     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
-     "size": 1196000
-    },
-    "aarch64-apple-darwin": {
-     "url": "https://example.invalid/xnethack-aarch64-apple-darwin.tar.gz",
-     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
-     "size": 1196000
-    },
-    "x86_64-pc-windows-msvc": {
-     "url": "https://example.invalid/xnethack-x86_64-pc-windows-msvc.zip",
-     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
-     "size": 1196000
+    "x86_64-unknown-linux-gnu": {
+     "url": "/dev-releases/xnethack-x86_64-unknown-linux-gnu.tar.gz",
+     "sha256": "68336d8241da1380570d58cb3f07ce0184e8dfce273a95852abf6bbb9ed595d6",
+     "size": 2219323
     }
    },
    "news": []
@@ -16461,8 +16840,8 @@
   }
  },
  "av": {
-  "version": "0.9.12",
+  "version": "0.9.14",
   "date": "2026-11-03",
-  "notes": "- The Debian package passes newer lintian (Ubuntu 24.04's names the\n  static musl binary an error; it is static on purpose), so the release\n  run completes\n- Clean under Rust 1.99's new clippy checks"
+  "notes": "- \"F5 refresh\" in the menu row, clickable, where the row has room:\n  fetching the catalog again was only in F1 help and the list's key line"
  }
 }
