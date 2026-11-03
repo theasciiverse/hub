@@ -19,11 +19,14 @@ run=no
 skipped=""
 for repo in $(gh repo list "$org" --limit 200 --json name --jq '.[].name'); do
   # the latest release's tag, or, for a repo whose tags never got a
-  # release, its newest tag by version
+  # release, its newest Asciiverse tag by version: one with -av.N (a
+  # packaged title) or vX.Y.Z (our own). Imported history keeps other tags
+  # (debian/..., upstream versions, netbsd-<commit>), never built from.
   tag=$(gh release list -R "$org/$repo" --limit 1 --json tagName --jq '.[0].tagName // empty')
-  [ -z "$tag" ] && tag=$(gh api "repos/$org/$repo/tags?per_page=100" --jq '.[].name' 2>/dev/null | sort -V | tail -1)
+  [ -z "$tag" ] && tag=$(gh api "repos/$org/$repo/tags?per_page=100" --jq '.[].name' 2>/dev/null \
+    | grep -E -- '-av\.[0-9]+$|^v[0-9]' | sort -V | tail -1)
   if [ -z "$tag" ]; then
-    skipped="$skipped\n  $repo: no release and no tag"
+    skipped="$skipped\n  $repo: no release and no Asciiverse tag (-av.N or vX.Y.Z)"
     continue
   fi
   wf=$(gh api "repos/$org/$repo/actions/workflows" \

@@ -10,7 +10,8 @@ is needed), then starts that workflow for the repo's newest tag.
 
   python3 tools/touch-workflows.py csol zoridor ...
 """
-import base64, json, subprocess, sys, time
+
+import base64, json, re, subprocess, sys, time
 
 ORG = "theasciiverse"
 HEAD = "# Asciiverse release workflow (tag v* or run by hand with a tag)\n"
@@ -25,7 +26,9 @@ def gh(*args, data=None):
 
 def newest_tag(repo):
     _, out, _ = gh("api", f"repos/{ORG}/{repo}/tags?per_page=100", "--jq", ".[].name")
-    tags = out.split()
+    # only Asciiverse tags: -av.N (packaged titles) or vX.Y.Z (our own);
+    # imported history keeps others (debian/..., netbsd-<commit>, upstream's)
+    tags = [t for t in out.split() if re.search(r"-av\.\d+$", t) or re.match(r"v\d", t)]
     if not tags:
         return None
     r = subprocess.run(["sort", "-V"], input="\n".join(tags), capture_output=True, text=True)
