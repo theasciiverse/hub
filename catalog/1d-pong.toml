@@ -5,6 +5,7 @@ title = "1D-Pong"
 description = "Pong with one dimension! The whole court is a single line: wait for the ball, hit it late for a blistering return, but not too late. Starts with nothing but the line and unfolds as you play."
 year = 2026
 new = true
+featured = 7             # place in the website's carousel, 1 first
 license = "MIT"
 repo = "theasciiverse/1d-pong"
 provenance = "Asciiverse made 1D-Pong in Rust in 2026, after the one-dimensional Pong that hobbyists build from a strip of LEDs with a button at each end."
