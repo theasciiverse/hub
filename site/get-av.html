@@ -198,11 +198,15 @@ fetching solitty 1.4.1 <span class="d">(x86_64-unknown-linux-gnu)</span>
   main.append(el(`<section class="sect">
     <div class="sect-head"><h2>Update and uninstall</h2></div>
     <div class="facts-grid">
-      <div class="card"><h3>Manually update av</h3>
-        <p>Run the install line again. It replaces the av binary and leaves your titles, saves and settings alone.</p></div>
+      <div class="card"><h3>Update av</h3>
+        <p>av tells you when a new version is out, with the line to run. Or run the line you installed it with again, whichever tab it was: it replaces av and leaves your titles, saves and settings alone. With the .deb, apt upgrades the package in place:</p>
+        <pre>curl -fsSLO https://asciiverse.sh/releases/av/latest/av_amd64.deb
+sudo apt install ./av_amd64.deb</pre></div>
       <div class="card"><h3>Uninstall on Linux or macOS</h3>
-        <p>To remove your titles too, uninstall them in av first (that also removes their links in <code>~/.local/bin</code>), then remove av:</p>
-        <pre>rm ~/.local/bin/av</pre></div>
+        <p>To remove your titles too, uninstall them in av first (that also removes their links in <code>~/.local/bin</code>), then remove av. Installed with curl or wget:</p>
+        <pre>rm ~/.local/bin/av</pre>
+        <p>Installed with the .deb:</p>
+        <pre>sudo apt remove av</pre></div>
       <div class="card"><h3>Uninstall on Windows</h3>
         <p>Uninstall titles in av first if you want them gone too. Then delete av's folder and remove it from your user PATH under "Edit environment variables for your account".</p>
         <pre>Remove-Item -Recurse "$env:LOCALAPPDATA\\Asciiverse\\bin"</pre></div>
