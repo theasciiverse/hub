@@ -5,6 +5,7 @@ title = "Zork I: The Great Underground Empire"
 description = "West of a white house there is a small mailbox. Below lies the Great Underground Empire: nineteen treasures, one thief, and a grue in every dark corner."
 year = 1980
 old = true
+featured = 2             # place in the website's carousel, 1 first
 license = "MIT"
 repo = "theasciiverse/zork"
 provenance = "Infocom released Zork I in 1980; Marc Blank, Dave Lebling, Bruce Daniels and Tim Anderson wrote it."

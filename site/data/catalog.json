@@ -167,8 +167,8 @@
    "platforms": {
     "x86_64-unknown-linux-gnu": {
      "url": "/dev-releases/1d-pong-x86_64-unknown-linux-gnu.tar.gz",
-     "sha256": "fb0cf86ce8f0e187b4f59dfd9df9fe63b9e94f7a6cca1f48d19c33de753a9972",
-     "size": 7575025
+     "sha256": "4a83e59438e29b34ad310d3a9888d1315cd45b12e68fd20ea0756fa9713f5d48",
+     "size": 7575478
     }
    },
    "news": []
@@ -1734,6 +1734,9 @@
     "source": "github"
    },
    "page": "**UNION CITY. REBUILT IN TYPE.**\n\nRobert Foster grew up in the Gap, the wasteland outside Union City, until security men came for him and his helicopter came down in the city. Now he is on the run in a vast city of soaring tower blocks, with only Joey, a talking robot circuit board, for company, and he wants to know why they took him. The answers are somewhere in the towers, and somewhere inside LINC, the computer that runs the city.\n\nThis is Revolution Software's Beneath a Steel Sky, the whole game, in your terminal. Every pixel of Dave Gibbons' art becomes a dot of a Braille character, so Union City is rebuilt out of type, and everything the game says is set in your terminal's own font. The speech, effects and AdLib music play as they did in 1994.\n\n- **The whole game**, from the factory where Foster lands to the very end\n- **Dave Gibbons' art in Braille dots**, or in half blocks or quadrants: F2\n  switches\n- **Full speech and the AdLib soundtrack**, as in 1994\n- **Subtitles in seven languages**, picked up from your system\n\n## Controls\n\n- **Left click**: look at something\n- **Right click**: use it, take it, talk, or walk through an exit\n- **Pointer to the top edge**: the inventory; click an item to hold it, then right click it onto something\n- **F5** or **q**: options, save, restore, subtitles and speech, language, restart, quit\n- **Esc**: skip the intro or a cut scene; **.** skips a line of speech\n- **p**: pause; **F2**: Braille, half blocks or quadrants; **Ctrl+F**: fast mode\n\nThe intro plays the first time; after that a start menu offers Continue, which picks up where you quit. Saves go to `~/.local/share/typographic-sky`.\n\n## Options\n\n- `--skip-intro`: start a new game at once\n- `--mute`: no sound\n- `--game-font`: the game's own pixel fonts instead of type, for very large terminals\n\nThe game starts in your system's language when it has it (English, German, French, Swedish, Italian, Portuguese or Spanish subtitles; the speech is English) and remembers the one you choose in F5.\n\n## History\n\nRevolution Software released Beneath a Steel Sky in 1994 for MS-DOS and the Amiga, and gave it away as freeware in 2003. ScummVM brought it to modern systems from Revolution's own source. This edition runs the unmodified CD version's data in a Rust port of ScummVM's engine and draws it in a terminal.\n\n## Credits\n\n- Beneath a Steel Sky: Revolution Software, 1994; directed by Charles Cecil; art and characters by Dave Gibbons; written and scored by Dave Cummins; programmed by David Sykes, Tony Warriner and James Long\n- Game content (C) Revolution Software Ltd, freeware: free to share, never to be sold\n- The sky engine: Robert Goeffringmann, Oliver Kiehl, Joost Peters and the ScummVM team (GPL-3.0-or-later)\n- AdLib music: Nuked-OPL3 by Nuke.YKT, in Tony Gies' Rust port (LGPL-2.1-or-later)\n- Asciiverse edition: Asciiverse, GPL-3.0-or-later\n",
+   "system_deps": [
+    "libasound2"
+   ],
    "version": "0.9.0",
    "updated_at": "2026-10-18T00:00:00Z",
    "thumbnail_at": 40.0,
@@ -2221,6 +2224,7 @@
    "title": "Brogue CE",
    "description": "A beautiful, tightly designed roguelike: 26 levels down to the Amulet of Yendor, no classes and no grinding, just what you find, what you learn and the allies you free along the way.",
    "year": 2009,
+   "featured": 5,
    "license": "AGPL-3.0-or-later",
    "repo": "theasciiverse/brogue",
    "provenance": "Brian Walker made Brogue from 2009 to 2018; since 2019 a community team has kept it going as Brogue: Community Edition.",
@@ -2270,20 +2274,10 @@
    "cast_url": "/casts/brogue.cast?v=1793547234",
    "duration": 50.6,
    "platforms": {
-    "x86_64-unknown-linux-musl": {
-     "url": "https://example.invalid/brogue-x86_64-unknown-linux-musl.tar.gz",
-     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
-     "size": 1122000
-    },
-    "aarch64-apple-darwin": {
-     "url": "https://example.invalid/brogue-aarch64-apple-darwin.tar.gz",
-     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
-     "size": 1122000
-    },
-    "x86_64-pc-windows-msvc": {
-     "url": "https://example.invalid/brogue-x86_64-pc-windows-msvc.zip",
-     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
-     "size": 1122000
+    "x86_64-unknown-linux-gnu": {
+     "url": "/dev-releases/brogue-x86_64-unknown-linux-gnu.tar.gz",
+     "sha256": "b594045b3975d9d97b9265a2a7bda7cc8c339241b83b7b59ab86c55d89fc5de0",
+     "size": 251
     }
    },
    "news": []
@@ -2484,7 +2478,6 @@
    "title": "Calvary",
    "description": "An action-RTS built from Crack dot Com's unfinished Golgotha: drive the supertank yourself while your army rolls down the roads, through a forty-mission campaign from Basrah to the Arctic and back to Jerusalem in 2048.",
    "year": 1998,
-   "featured": 5,
    "license": "MIT",
    "repo": "theasciiverse/calvary",
    "provenance": "Crack dot Com was making Golgotha when the studio closed in 1998, and gave away its source, graphics, music and levels; Patrick Grawehr's Golgotha Forever kept the code alive. Asciiverse built Calvary from them in 2026, with a campaign of its own.",
@@ -10859,7 +10852,7 @@
    "system_deps": [
     "libasound2"
    ],
-   "version": "0.1.0",
+   "version": "1.8.1",
    "updated_at": "2026-10-10T00:00:00Z",
    "thumbnail_at": 40.0,
    "cast_url": "/casts/rebels-in-the-sky.cast?v=1793547234",
@@ -12596,7 +12589,6 @@
    "description": "Second day of Christmas, Santa's asleep and the elves have found the keys! Grab a sleigh, a reindeer or a broomstick and race like mad, before Santa fires up the snowplough and comes for the ringleader!",
    "year": 2026,
    "new": true,
-   "featured": 4,
    "license": "GPL-3.0-or-later",
    "repo": "theasciiverse/sleighride",
    "provenance": "Asciiverse made Sleighride in Rust in 2026, out of the Christmas folklore of Julbocken, La Befana, the Yule Cat, the Yule Lads, Ded Moroz and Snegurochka.",
@@ -12843,7 +12835,6 @@
    "title": "Solitty",
    "description": "Klondike solitaire in your terminal, with proper card frames, coloured suits and the mouse: build the columns, clear the stock and send every card home.",
    "year": 2010,
-   "featured": 3,
    "license": "MIT",
    "repo": "theasciiverse/solitty",
    "provenance": "Murilo Pereira wrote solitty, an ncurses Klondike, between 2010 and 2018.",
@@ -13673,6 +13664,7 @@
    "description": "Punch a tree, survive the night, then dig your way to the Nether and the dragon beyond: a whole block world drawn in terminal pixels, for up to eight players.",
    "year": 2026,
    "new": true,
+   "featured": 3,
    "license": "AGPL-3.0-only",
    "repo": "theasciiverse/termcraft",
    "provenance": "Termcraft is Sebastian Pagel's 2D survival sandbox in Rust from 2026, after Minecraft.",
@@ -14091,6 +14083,7 @@
    "description": "A real orbital-mechanics rocket simulator in braille: fly a Saturn V to orbit by hand, plan the transfer to the Moon, rendezvous, dock and come home under parachute.",
    "year": 2026,
    "new": true,
+   "featured": 6,
    "license": "MIT",
    "funding": "https://buymeacoffee.com/jasonfen",
    "repo": "theasciiverse/terminal-space-program",
@@ -14290,6 +14283,7 @@
    "description": "Mazes in four dimensions: every box on screen is one slice, and the way through runs between them. Twelve campaign mazes, a daily maze for everyone, and endless ones, in fog if you dare.",
    "year": 2026,
    "new": true,
+   "featured": 4,
    "license": "MIT",
    "repo": "theasciiverse/tessera",
    "provenance": "Asciiverse made Tessera in Rust in 2026, after bleuje's browser 4D maze, which draws a four-dimensional maze as a grid of flat ones.",
@@ -14359,7 +14353,6 @@
    "description": "Six fields. Nine dirty tricks. One survivor! The late-90s LAN-party block buster legend is back: clear lines, grab specials, and Quake, Bomb and Switch your friends into oblivion!",
    "year": 2026,
    "new": true,
-   "featured": 2,
    "license": "GPL-2.0-or-later",
    "repo": "theasciiverse/tetrix",
    "provenance": "Asciiverse made Tetrix in Rust in 2026, after St0rmCat's TetriNET, the late-90s multiplayer falling-block game with attack blocks. Its rules follow TetriNET 1.13, and the rotation table and core rules are ported from Andrew Church's tetrinet 0.11.",
@@ -16226,6 +16219,7 @@
    "description": "West of a white house there is a small mailbox. Below lies the Great Underground Empire: nineteen treasures, one thief, and a grue in every dark corner.",
    "year": 1980,
    "old": true,
+   "featured": 2,
    "license": "MIT",
    "repo": "theasciiverse/zork",
    "provenance": "Infocom released Zork I in 1980; Marc Blank, Dave Lebling, Bruce Daniels and Tim Anderson wrote it.",
@@ -16532,8 +16526,8 @@
   }
  },
  "av": {
-  "version": "0.9.11",
+  "version": "0.9.12",
   "date": "2026-11-03",
-  "notes": "- A title can keep stderr on the terminal (`stderr = \"terminal\"` in\n  its `[exec]`), for titles that draw there or need it to be a terminal;\n  found by hub's smoke test (typespeed, clidle, warp)"
+  "notes": "- The Debian package passes newer lintian (Ubuntu 24.04's names the\n  static musl binary an error; it is static on purpose), so the release\n  run completes\n- Clean under Rust 1.99's new clippy checks"
  }
 }

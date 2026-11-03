@@ -7,7 +7,6 @@ kind = "game"
 title = "Solitty"
 description = "Klondike solitaire in your terminal, with proper card frames, coloured suits and the mouse: build the columns, clear the stock and send every card home."
 year = 2010
-featured = 3             # place in the website's carousel, 1 first
 license = "MIT"
 repo = "theasciiverse/solitty"
 provenance = "Murilo Pereira wrote solitty, an ncurses Klondike, between 2010 and 2018."

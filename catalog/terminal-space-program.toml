@@ -5,6 +5,7 @@ title = "Terminal Space Program"
 description = "A real orbital-mechanics rocket simulator in braille: fly a Saturn V to orbit by hand, plan the transfer to the Moon, rendezvous, dock and come home under parachute."
 year = 2026
 new = true
+featured = 6             # place in the website's carousel, 1 first
 license = "MIT"
 funding = "https://buymeacoffee.com/jasonfen"   # from the makers' own FUNDING.yml or Sponsors profile (2026-11-03)
 repo = "theasciiverse/terminal-space-program"

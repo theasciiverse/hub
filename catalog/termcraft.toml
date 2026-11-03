@@ -5,6 +5,7 @@ title = "Termcraft"
 description = "Punch a tree, survive the night, then dig your way to the Nether and the dragon beyond: a whole block world drawn in terminal pixels, for up to eight players."
 year = 2026
 new = true
+featured = 3             # place in the website's carousel, 1 first
 license = "AGPL-3.0-only"
 repo = "theasciiverse/termcraft"
 provenance = "Termcraft is Sebastian Pagel's 2D survival sandbox in Rust from 2026, after Minecraft."
