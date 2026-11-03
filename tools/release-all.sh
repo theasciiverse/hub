@@ -9,8 +9,8 @@
 #
 # Each release workflow uploads with --clobber, so the locally built Linux
 # x86_64 assets already attached are replaced and SHA256SUMS is regenerated.
-# Repos with no release yet, or no release workflow GitHub knows about, are
-# listed at the end for a manual look.
+# Repos with neither a release nor a tag, or no release workflow GitHub
+# knows about, are listed at the end for a manual look.
 set -eu
 org=theasciiverse
 run=no
@@ -18,9 +18,12 @@ run=no
 
 skipped=""
 for repo in $(gh repo list "$org" --limit 200 --json name --jq '.[].name'); do
+  # the latest release's tag, or, for a repo whose tags never got a
+  # release, its newest tag by version
   tag=$(gh release list -R "$org/$repo" --limit 1 --json tagName --jq '.[0].tagName // empty')
+  [ -z "$tag" ] && tag=$(gh api "repos/$org/$repo/tags?per_page=100" --jq '.[].name' 2>/dev/null | sort -V | tail -1)
   if [ -z "$tag" ]; then
-    skipped="$skipped\n  $repo: no release"
+    skipped="$skipped\n  $repo: no release and no tag"
     continue
   fi
   wf=$(gh api "repos/$org/$repo/actions/workflows" \
