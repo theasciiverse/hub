@@ -591,29 +591,3 @@ const IF_INTERPRETERS = [
     install: [["Debian/Ubuntu", "sudo apt install scottfree", "Then: scottfree <game file>"]] },
 ];
 
-// Lera, the Asciiverse MUD client, for the MUDs and Programs pages. Unused while
-// it is held back from launch (2026-10-27).
-const LERA_BLOCK = `
-    <div class="lera">
-      <div class="lera-art"><span class="tag">IN DESIGN</span><span class="w">█   █▀▀ █▀█ ▄▀█
-█▄▄ ██▄ █▀▄ █▀█</span>
-
-<span class="d">lera: Swedish for clay. Multi-User Dungeon, Multi-User Clay.</span>
-
-<span class="g">One client, every MUD.</span> Telnet for every world;
-GMCP and MSDP for the ones that send structured data,
-and those get the rich treatment:
-
-  <span class="a">▸</span> a map built as you walk, drawn in Braille
-  <span class="a">▸</span> rooms with a sense of place, not only a scroll
-  <span class="a">▸</span> combat shown alongside the text
-  <span class="a">▸</span> Lua triggers and aliases, Mudlet-friendly
-  <span class="a">▸</span> the Asciiverse palette and font for every world</div>
-      <aside class="lera-side">
-        <h3>Lera<small>the Asciiverse MUD client</small></h3>
-        <p>Lera brings the Asciiverse look to every MUD on this list, and to the hundreds that are not on it yet. Pick a world, and av opens it in Lera.</p>
-        <ul><li>Every MUD works over plain telnet</li><li>Better MUDs look better</li><li>Your map stays with you between sessions</li></ul>
-        <div class="install"><code>av install lera</code><button disabled style="opacity:.45;cursor:default">soon</button></div>
-        <p class="soon">Lera is being designed; no release yet. Until then, every world below is a telnet address.</p>
-      </aside>
-`;

@@ -549,7 +549,6 @@ code, kbd, .mono { font-family: var(--font-mono); }
 .mud-hero { min-height: 300px; padding: 40px 44px; border: 1px solid var(--line); }
 .mud-hero .yr { font-size: 14px; letter-spacing: .14em; text-transform: uppercase; }
 .mud-hero .nm { color: var(--green-hi); font-size: 52px; font-weight: 700; line-height: 1.05; }
-.lib-main > .lera { margin-top: 22px; }
 .lib-empty { margin-top: 22px; padding: 40px 34px; border: 1px dashed var(--line-2); background: var(--panel-2); }
 .lib-empty h2 { margin: 0 0 10px; font: 600 24px var(--font-mono); }
 .lib-empty p { margin: 0 0 10px; color: var(--text-dim); max-width: 60ch; font-size: 15px; }
@@ -603,28 +602,6 @@ code, kbd, .mono { font-family: var(--font-mono); }
 .what-demo .p { color: var(--text-faint); }
 .what-demo .c { color: var(--amber); }
 @media (max-width: 1100px) { .what { grid-template-columns: 1fr; } .what-points { grid-template-columns: 1fr; } }
-
-/* the Lera block (MUDs and Programs pages) */
-.lera { display: grid; grid-template-columns: 1fr 360px; border: 1px solid var(--line); background: var(--panel);
-  box-shadow: 0 10px 40px rgba(0,0,0,.45); }
-.lera-art { background: var(--term-bg); padding: 28px 30px; font: 13px/1.25 "Iosevka Term AV", var(--font-mono);
-  color: #8b8f86; white-space: pre; overflow: hidden; position: relative; min-height: 340px; }
-.lera-art .w { color: #c9a26b; font-size: 22px; line-height: 1.0; }
-.lera-art .g { color: var(--green-hi); }
-.lera-art .a { color: var(--amber); }
-.lera-art .d { color: #4a525a; }
-.lera-art .tag { position: absolute; right: 14px; top: 12px; font: 11px var(--font-mono); letter-spacing: .14em;
-  color: var(--amber); border: 1px solid #6b4a00; padding: 3px 7px; background: transparent; }
-.lera-side { padding: 20px; display: flex; flex-direction: column; gap: 12px; border-left: 1px solid var(--line);
-  background: linear-gradient(180deg, var(--panel-2), var(--panel)); }
-.lera-side h3 { margin: 0; font: 600 24px var(--font-mono); }
-.lera-side h3 small { display: block; margin-top: 4px; font: 12px var(--font-ui); color: var(--text-faint); }
-.lera-side p { margin: 0; color: var(--text-dim); }
-.lera-side ul { margin: 0; padding-left: 18px; color: var(--text); font-size: 13px; }
-.lera-side li { margin: 3px 0; }
-.lera-side li::marker { color: var(--green); }
-.lera .soon, .lera-side .soon { font: 11px var(--font-mono); color: var(--text-faint); }
-@media (max-width: 900px) { .lera { grid-template-columns: 1fr; } }
 
 /* Library pages (Games, Text adventures, MUDs, Programs, Movies) work like
    an app: the header and the sidebar stay put, the sidebar list and the
