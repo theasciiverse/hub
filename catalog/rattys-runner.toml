@@ -1,0 +1,40 @@
+schema_version = 1
+id = "rattys-runner"
+kind = "game"
+title = "Ratty's Runner"
+description = "The Xfce mouse runs a curving, hilly road from the meadow over the kitchen counter and down the night lane into the drain: jump the logs and the puddles, slide under the branches, take the cheese, and the road only gets faster."
+year = 2026
+new = true
+license = "MIT"          # like ozzyocak's Ratty Runner it started from (LICENSE-ratty-runner)
+repo = "theasciiverse/rattys-runner"
+provenance = "Asciiverse made Ratty's Runner in Rust in 2026 from ozzyocak's Ratty Runner, a lane runner made for Orhun Parmaksız's Ratty terminal, with the Xfce project's mouse as its runner."
+topics = ["runner", "endless", "arcade", "pseudo 3d", "xfce", "mouse"]
+genre = "arcade"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[exec]
+game = "rattys-runner"
+args = []
+
+[min_terminal]
+cols = 60
+rows = 20
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = false
+
+system_deps = ["libasound2"]
+
+# 100x30, asciiverse/record-preview.sh: the computer runs from the meadow
+# into the kitchen (--demo, 15 frames a second); the still is the meadow
+[media]
+cast = "asciiverse/rattys-runner.cast"
+thumbnail_at = 8.0
+
+[release]
+source = "github"
