@@ -1,0 +1,42 @@
+schema_version = 1
+id = "rattys-cube"
+kind = "game"
+title = "Ratty's Cube"
+description = "A 3x3 twisty cube in real 3D in your terminal: grab a sticker and drag to turn its layer, race the clock from a competition scramble, and when you are stuck, ask for a hint or watch it solve itself."
+year = 2026
+new = true
+license = "undecided"    # not chosen yet; orhun's MIT notice (LICENSE-ratty) covers the parts after his example
+repo = "theasciiverse/rattys-cube"
+provenance = "Asciiverse made Ratty's Cube in Rust in 2026, starting from the cube example in Orhun Parmaksız's Ratty, a GPU terminal that draws 3D, and named it after that terminal."
+topics = ["3d", "cube", "twisty puzzle", "speedcubing", "timer", "solver", "mouse"]
+genre = "puzzle"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[exec]
+game = "rattys-cube"
+args = []
+
+# the cube alone below 80x20, with the panel beside it from there
+[min_terminal]
+cols = 40
+rows = 14
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = true
+
+system_deps = ["libasound2"]
+
+# 100x30, asciiverse/record-preview.sh: sticker drags, a look around,
+# keyboard turns, a scramble and its inspection, turns on the clock, a
+# hint, then show me solving it; the still is the clock running
+[media]
+cast = "asciiverse/rattys-cube.cast"
+thumbnail_at = 11.0
+
+[release]
+source = "github"
