@@ -11589,16 +11589,16 @@
    "system_deps": [
     "libasound2"
    ],
-   "version": "0.2.1",
-   "updated_at": "2026-11-03T19:29:21Z",
+   "version": "0.2.2",
+   "updated_at": "2026-11-03T21:53:48Z",
    "thumbnail_at": 6.0,
-   "cast_url": "/casts/rattys-runner.cast?v=1793734161",
+   "cast_url": "/casts/rattys-runner.cast?v=1793742828",
    "duration": 40.1,
    "platforms": {
     "x86_64-unknown-linux-gnu": {
      "url": "/dev-releases/rattys-runner/rattys-runner-x86_64-unknown-linux-gnu.tar.gz",
-     "sha256": "47225c48c964b7bd58d2e04937064d7a2178bbaf9ced39d4b3005dca6fd3783e",
-     "size": 961015
+     "sha256": "4d7588e921436bb743b86579d241874cf60af6ad8f75d0db76c0baf84ad427de",
+     "size": 963899
     }
    },
    "news": []
