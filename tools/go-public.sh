@@ -26,7 +26,9 @@ n=0
 for repo in $flip; do
   n=$((n + 1))
   if [ "$run" = yes ]; then
-    gh repo edit "$org/$repo" --visibility public --accept-visibility-change-consequences >/dev/null && echo "public: $repo"
+    # the REST call works with every gh version (newer ones also want a
+    # confirmation flag on gh repo edit)
+    gh api -X PATCH "repos/$org/$repo" -f visibility=public --silent && echo "public: $repo"
   else
     echo "would make public: $repo"
   fi
