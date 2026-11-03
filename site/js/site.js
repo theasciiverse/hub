@@ -277,7 +277,7 @@ function shelf(title, sub, list, more, card = capsule) {
 // Steam's library: a sidebar listing every title of one kind, and a main pane
 // that shows the shelves ("Home") or the selected title. The selection lives
 // in location.hash, so a title can be linked to and Back works.
-function library({ label, items, groups, home, detail, badge, mark = () => "", empty }) {
+function library({ label, items, groups, home, detail, badge, mark = () => "", empty = "Nothing here right now." }) {
   const root = el(`<div class="lib">
     <aside class="lib-side">
       <button class="lib-home">Home</button>
@@ -309,6 +309,8 @@ function library({ label, items, groups, home, detail, badge, mark = () => "", e
     root.querySelector(".lib-home").classList.toggle("on", !t);
     main.replaceChildren();
     if (t) main.append(detail(t)); else home(main);
+    // a home with nothing on its shelves still says something
+    if (!t && !main.children.length) main.append(el(`<section class="sect"><p class="lib-none">${empty}</p></section>`));
     main.append(footer());               // the footer scrolls with the pane
     main.scrollTop = 0; window.scrollTo({ top: 0 });
   }
