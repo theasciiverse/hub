@@ -474,22 +474,17 @@ function mudDetail(m) {
   return d;
 }
 
-// Lera's own page in the MUD library: what it is, and how to get it. Unused while
-// Lera is held back from launch (2026-10-27); kept for when it returns.
-function leraDetail(block) {
-  const d = el(`<section class="lib-detail"></section>`);
-  d.append(el(block));
-  d.append(el(`<div class="lib-bar" style="border-top:1px solid var(--line);margin-top:14px"><div class="slot"></div></div>`));
-  d.querySelector(".slot").replaceWith(tabbedInstall([
-    ["av", "av install lera", "Lera has no release yet. Once it does, av installs it like any title, and av's Connect opens every MUD in it."],
-    ["any world", "lera <host> <port>", "Lera also connects to MUDs that are not on this list."],
-  ]));
-  return d;
-}
-
 // Terminal MUD clients, from each project's own README (checked 2026-10-12).
 // Platform values: "yes", or a short note for how it runs there today; null means not yet.
 const MUD_CLIENTS = [
+  { id: "lera", kind: "client", title: "Lera", theme: "client", lang: "Rust", license: "MIT", ours: true,
+    version: "0.1.0", released: "November 2026", website: "https://github.com/theasciiverse/lera",
+    description: "The Asciiverse MUD client: pick a world from the list and you are in, with scrollback that keeps the live text in view and your health and mana in the status line",
+    platforms: { Linux: "yes (x86-64, ARM64)", macOS: "yes (Intel, Apple silicon)", Windows: "yes (x86-64, ARM64)" },
+    tls: "yes: whenever the world offers it, or <code>lera host port --tls</code>; certificates checked against the Mozilla root set built in",
+    packaged: "programs.html#lera",
+    install: [["av", "av install lera", "Linux, macOS and Windows, x86-64 and ARM64. av's Connect on any MUD in the catalog opens it in Lera."],
+              ["download", "https://github.com/theasciiverse/lera/releases/latest", "The release archives for every system, from the project's GitHub."]] },
   { id: "blightmud", kind: "client", title: "Blightmud", theme: "client", lang: "Rust", license: "GPL-3.0",
     version: "5.7.1", released: "May 2026", website: "https://github.com/Blightmud/Blightmud",
     description: "Terminal MUD client in Rust with Lua scripting and screen-reader support",
@@ -547,8 +542,8 @@ function clientDetail(c) {
       <dl>${c.version ? `<dt>Version</dt><dd>${esc(c.version)}</dd>` : ""}<dt>Released</dt><dd>${esc(c.released)}</dd></dl>
       <a class="store" href="${esc(c.website)}">Project ›</a></div>
     <h1>${esc(c.title)}</h1>
-    ${c.packaged ? `<p class="one"><b>In the Asciiverse catalog:</b> built and packaged by Asciiverse, installable with av. <a href="${c.packaged}">Its catalog page ›</a></p>` : ""}
-    <p class="by">${c.packaged ? "Not made by Asciiverse. Listed so you can pick the one you like; av will launch any of them." : "Not made by Asciiverse, and not in the Asciiverse catalog yet: install it as shown above."}</p>
+    ${c.packaged ? `<p class="one"><b>In the Asciiverse catalog:</b> ${c.ours ? "made" : "built and packaged"} by Asciiverse, installable with av. <a href="${c.packaged}">Its catalog page ›</a></p>` : ""}
+    <p class="by">${c.ours ? "Made by Asciiverse, for every world on this page; av will launch the others too." : c.packaged ? "Not made by Asciiverse. Listed so you can pick the one you like; av will launch any of them." : "Not made by Asciiverse, and not in the Asciiverse catalog yet: install it as shown above."}</p>
   </section>`);
   d.querySelector(".slot").replaceWith(tabbedInstall(c.install));
   return d;
