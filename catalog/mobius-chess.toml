@@ -1,0 +1,41 @@
+schema_version = 1
+id = "mobius-chess"
+kind = "game"
+title = "Möbius Chess"
+description = "Chess on a Möbius strip, in 3D: the board's ends join with a half twist, so rooks run round through the enemy's rank, bishops turn and change colour at the join, and pawns that take across it march home to promote. Against the computer or a friend."
+year = 2026
+new = true
+license = "MIT"
+repo = "theasciiverse/mobius-chess"
+provenance = "Asciiverse made Möbius Chess in Rust in 2026, after the turning Möbius chessboard sculpture in Orhun Parmaksız's Ratty terminal and Tony Zeng's description of chess on a Möbius strip, with a starting position found by searching every arrangement."
+topics = ["chess", "variant", "möbius strip", "3d", "topology", "computer opponent"]
+genre = "board"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[exec]
+game = "mobius-chess"
+args = []
+
+# the flat board alone below 90x24, the strip beside it from there
+[min_terminal]
+cols = 40
+rows = 24
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = true
+
+system_deps = ["libasound2"]
+
+# 100x30, asciiverse/record-preview.sh: the computer plays itself while the
+# strip turns, mate on move 7; the still is the mate
+[media]
+cast = "asciiverse/mobius-chess.cast"
+thumbnail_at = 20.0
+
+[release]
+source = "github"
