@@ -1,0 +1,53 @@
+schema_version = 1
+id = "zzt"
+kind = "game"
+title = "ZZT"
+description = "Tim Sweeney's 1991 adventure built from text characters: find the five purple keys of Town of ZZT among lions, tigers and talking objects, then build worlds of your own in the editor that started Epic"
+year = 1991
+old = true
+# the Reconstruction of ZZT (Adrian Siekierka, MIT, with Tim Sweeney's
+# permission) and zztgo (Ben Hoyt, MIT)
+license = "MIT"
+repo = "theasciiverse/zzt"
+provenance = "Tim Sweeney wrote ZZT in Turbo Pascal while studying engineering and released it in January 1991 as Potomac Computer Systems, renamed Epic MegaGames that October. Adrian Siekierka reconstructed its source in 2020, and Ben Hoyt carried it into Go."
+changes = "CLAUDE.md"
+topics = ["adventure", "classic", "dos", "world editor", "zzt-oop", "epic megagames", "go"]
+genre = "adventure"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# ZZT 3.2's source, reconstructed byte for byte by Adrian Siekierka
+[upstream]
+name = "Tim Sweeney, 1991"
+url = "https://github.com/asiekierka/reconstruction-of-zzt"
+
+# the archive holds zzt; Town of ZZT, the demo world and the help are built
+# in. Worlds, saved games and high scores go to $XDG_DATA_HOME/zzt
+# (~/.local/share/zzt, %APPDATA%\zzt), where Town and the demo are put on
+# first run
+[exec]
+game = "zzt"
+args = []
+
+# ZZT's own 80x25 text screen, centred in anything bigger
+[min_terminal]
+cols = 80
+rows = 25
+
+# the EGA palette as RGB; the PC speaker through ALSA on Linux
+[requires]
+utf8 = true
+color = "256"
+mouse = false
+system_deps = ["libasound2"]
+
+# 100x30, asciiverse/record-preview.sh: the About and title screens, then
+# Town of ZZT, three torches, three gems, and the dark Bank lit by a torch
+[media]
+cast = "asciiverse/zzt.cast"
+thumbnail_at = 4.5
+
+[release]
+source = "github"
