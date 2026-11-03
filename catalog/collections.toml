@@ -31,3 +31,8 @@ description = "Brian Raiter's three games for the terminal (2000 to 2020): cmine
 name = "Ancient Games"
 url = "https://github.com/theasciiverse/ancient-games"
 description = "The oldest board games of the world, made for the terminal by Asciiverse: the Royal Game of Ur, Senet, Mehen, Hnefatafl, Fox and Geese, the mancala games, the morris games, Mū tōrere and Kōnane, each with every honest reconstruction of its rules"
+
+[atlas-games]
+name = "Atlas Games"
+url = "https://github.com/fezcode/atlas.games"
+description = "fezcode's terminal games and generators, in Go since 2026: the runner Wilson's Revenge, and the Wave Function Collapse land and city generators, shown here as WFC Worlds"

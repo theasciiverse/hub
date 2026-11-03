@@ -1,0 +1,49 @@
+schema_version = 1
+id = "wilsons-revenge"
+kind = "game"
+title = "Wilson's Revenge"
+description = "Wilson the chicken is back and it's personal: a three-lane runner where you dodge cars, jump barricades and blast through with a pick-up shotgun."
+year = 2026
+new = true
+license = "MIT"
+repo = "theasciiverse/atlas-games"
+provenance = "fezcode wrote Wilson's Revenge in Go in February 2026; it grew into Atlas Games, fezcode's collection of terminal games and generators."
+changes = "PATCHES.md"
+collection = "atlas-games"
+topics = ["runner", "chicken", "arcade", "endless", "go"]
+genre = "runner"
+
+[developer]
+name = "fezcode"
+url = "https://github.com/fezcode/atlas.games"
+
+# Atlas Games' runner as a binary of its own (cmd/wilsons-revenge in
+# theasciiverse/atlas-games), the game code unchanged; PATCHES.md there
+[upstream]
+name = "fezcode"
+url = "https://github.com/fezcode/atlas.games"
+
+# LOG_LEVEL=debug writes a session log to stderr, which av keeps
+[exec]
+game = "wilsons-revenge"
+args = []
+
+# draws an 80x27 screen from the top left; smaller clips the lanes
+[min_terminal]
+cols = 80
+rows = 27
+
+[requires]
+utf8 = true
+color = "256"
+mouse = false
+
+# 100x30, `wilsons-revenge --demo` for 34 s (asciiverse/record-preview.sh):
+# the title screen, then Wilson on autopilot through a run without a crash;
+# the still is a barricade passing in the next lane
+[media]
+cast = "asciiverse/wilsons-revenge.cast"
+thumbnail_at = 14.0
+
+[release]
+source = "github"

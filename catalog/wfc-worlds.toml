@@ -1,0 +1,47 @@
+schema_version = 1
+id = "wfc-worlds"
+kind = "art"
+title = "WFC Worlds"
+description = "Landscapes and cities grow out of a fog of question marks by Wave Function Collapse, one after the other, filling the whole window."
+year = 2026
+new = true
+license = "MIT"
+repo = "theasciiverse/atlas-games"
+provenance = "fezcode wrote the land and city generators in Go in March 2026 for Atlas Games, fezcode's collection of terminal games and generators."
+changes = "PATCHES.md"
+collection = "atlas-games"
+topics = ["screensaver", "procedural", "wave function collapse", "maps", "cities", "go"]
+
+[developer]
+name = "fezcode"
+url = "https://github.com/fezcode/atlas.games"
+
+# Atlas Games' two generators played as one demo (cmd/wfc-worlds in
+# theasciiverse/atlas-games), the generators unchanged; PATCHES.md there
+[upstream]
+name = "fezcode"
+url = "https://github.com/fezcode/atlas.games"
+
+# no arguments; Space skips to the next world, any other key quits
+[exec]
+game = "wfc-worlds"
+args = []
+
+# fills any window and starts a fresh world on a resize
+[min_terminal]
+cols = 40
+rows = 12
+
+[requires]
+utf8 = true
+color = "256"
+mouse = false
+
+# 100x30, `wfc-worlds` for 34 s (asciiverse/record-preview.sh): landscapes
+# and cities in turn; the still is the first landscape complete
+[media]
+cast = "asciiverse/wfc-worlds.cast"
+thumbnail_at = 5.0
+
+[release]
+source = "github"
