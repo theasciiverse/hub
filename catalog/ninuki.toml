@@ -1,0 +1,51 @@
+schema_version = 1
+id = "ninuki"
+kind = "game"
+old = true
+title = "Ninuki"
+description = "Five in a row, with captures: flank two of your opponent's stones to take them, and win with five in a line or five pairs taken. Against the computer at six strengths, or a friend."
+year = 1994
+license = "GPL-2.0-or-later"
+repo = "theasciiverse/ninuki"
+provenance = "William Shubert wrote this program between 1994 and 2001 as pente, and Debian has shipped it under that name since 1996. It plays five in a row with captures, known in Japan as Ninuki-renju."
+changes = "PATCHES.md"
+topics = ["board game", "five in a row", "gomoku", "captures", "ninuki-renju", "pente", "computer opponent", "two players", "classic"]
+genre = "board"
+
+[developer]
+name = "William Shubert"
+url = "https://salsa.debian.org/games-team/pente"
+
+# William Shubert's pente 2.2.5, the program Debian and Ubuntu ship as the
+# package pente (/usr/games/pente), with Debian's patches; listed as Ninuki
+# because PENTE is a registered trademark (US 1118316). Curses and text
+# only, no X11; PATCHES.md in theasciiverse/ninuki
+[upstream]
+name = "William Shubert"
+url = "https://salsa.debian.org/games-team/pente"
+
+# the first question asks who plays each side: 0 for a person, 1 to 6 for
+# the computer; settings in ~/.pente.ad, shared with Debian's pente
+[exec]
+game = "ninuki"
+args = []
+
+# a fixed 80x24 screen
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, asciiverse/record-preview.py (asciinema in tmux): a person
+# against the computer at level 3, which wins at turn 10; the still is
+# the computer blocking four in a row
+[media]
+cast = "asciiverse/ninuki.cast"
+thumbnail_at = 22.0
+
+[release]
+source = "github"

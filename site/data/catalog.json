@@ -1292,20 +1292,10 @@
    "cast_url": "/casts/asciijump.cast?v=1793548131",
    "duration": 58.1,
    "platforms": {
-    "x86_64-unknown-linux-musl": {
-     "url": "https://example.invalid/asciijump-x86_64-unknown-linux-musl.tar.gz",
-     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
-     "size": 1233000
-    },
-    "aarch64-apple-darwin": {
-     "url": "https://example.invalid/asciijump-aarch64-apple-darwin.tar.gz",
-     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
-     "size": 1233000
-    },
-    "x86_64-pc-windows-msvc": {
-     "url": "https://example.invalid/asciijump-x86_64-pc-windows-msvc.zip",
-     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
-     "size": 1233000
+    "x86_64-unknown-linux-gnu": {
+     "url": "/dev-releases/asciijump-x86_64-unknown-linux-gnu.tar.gz",
+     "sha256": "828a782a6f44d959bfa05e5c2a1c13f9e68012d58b59e79770586c924b672dfe",
+     "size": 120081
     }
    },
    "news": []
@@ -9505,6 +9495,73 @@
    },
    "news": []
   },
+  "ninuki": {
+   "schema_version": 1,
+   "id": "ninuki",
+   "kind": "game",
+   "old": true,
+   "title": "Ninuki",
+   "description": "Five in a row, with captures: flank two of your opponent's stones to take them, and win with five in a line or five pairs taken. Against the computer at six strengths, or a friend.",
+   "year": 1994,
+   "license": "GPL-2.0-or-later",
+   "repo": "theasciiverse/ninuki",
+   "provenance": "William Shubert wrote this program between 1994 and 2001 as pente, and Debian has shipped it under that name since 1996. It plays five in a row with captures, known in Japan as Ninuki-renju.",
+   "changes": "PATCHES.md",
+   "topics": [
+    "board game",
+    "five in a row",
+    "gomoku",
+    "captures",
+    "ninuki-renju",
+    "pente",
+    "computer opponent",
+    "two players",
+    "classic"
+   ],
+   "genre": "board",
+   "developer": {
+    "name": "William Shubert",
+    "url": "https://salsa.debian.org/games-team/pente"
+   },
+   "upstream": {
+    "name": "William Shubert",
+    "url": "https://salsa.debian.org/games-team/pente"
+   },
+   "exec": {
+    "game": "ninuki",
+    "args": []
+   },
+   "min_terminal": {
+    "cols": 80,
+    "rows": 24
+   },
+   "requires": {
+    "utf8": false,
+    "color": "basic",
+    "mouse": false
+   },
+   "media": {
+    "cast": "asciiverse/ninuki.cast",
+    "thumbnail_at": 22.0
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**FIVE IN A ROW. TWO AT A TIME.**\n\nFive in a row, with one twist that changes everything: captures. Put a\nstone at each end of two of your opponent's, and both come off the\nboard. Five in a line wins, and so does taking five pairs, so every\nattack leaves a weakness and every pair you build can be taken.\n\nPlay the computer at any of six strengths, or a friend at the same\nkeyboard. The opening rule: the first stone goes in the centre, and the\nfirst player's second stone at least three points away from it.\n\n## Controls\n\n- **I J K M**, or **P B F N**: move the cursor up, left, right and down\n- **Space** or **Enter**: place a stone\n- **U**: undo; **R**: restart; **L**: redraw; **Q**: quit\n- At the start, for each side: **0** for a person, **1** to **6** for\n  the computer\n\n## Credits\n\n- William Shubert's pente 2.2.5 (2001), the program Debian ships as\n  `pente`, with Debian's patches\n- Ninuki-renju: the name in Japan for five in a row with captures\n- License: GPL-2.0-or-later\n",
+   "version": "2.2.5-av.1",
+   "updated_at": "2026-11-03T18:45:07Z",
+   "thumbnail_at": 22.0,
+   "cast_url": "/casts/ninuki.cast?v=1793731507",
+   "duration": 24.3,
+   "platforms": {
+    "x86_64-unknown-linux-musl": {
+     "url": "/dev-releases/ninuki/ninuki-x86_64-unknown-linux-musl.tar.gz",
+     "sha256": "23e87f39714636c0d324d23db784d4b0805c8b0b74d84a51c1f5dd8d835974e9",
+     "size": 182307
+    }
+   },
+   "news": []
+  },
   "ninvaders": {
    "schema_version": 1,
    "id": "ninvaders",
@@ -16004,7 +16061,7 @@
    "version": "0.6.1-av.1",
    "updated_at": "2026-11-03T17:04:35Z",
    "thumbnail_at": 14.0,
-   "cast_url": "/casts/wilsons-revenge.cast?v=1793725350",
+   "cast_url": "/casts/wilsons-revenge.cast?v=1793729458",
    "duration": 34.1,
    "platforms": {
     "x86_64-unknown-linux-musl": {
