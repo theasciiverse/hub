@@ -71,6 +71,13 @@ def main():
                 # answer cursor position queries so TUIs don't stall
                 if b"\x1b[6n" in data:
                     os.write(fd, b"\x1b[1;1R")
+                # notcurses waits for the reply to its closing device
+                # attributes query; answer as a VT220 with colour, and give
+                # the text area in pixels as a nominal 10x20 cell
+                if b"\x1b[14t" in data:
+                    os.write(fd, f"\x1b[4;{rows * 20};{cols * 10}t".encode())
+                if b"\x1b[c" in data:
+                    os.write(fd, b"\x1b[?62;22c")
 
     alive = True
     for step in [s.strip() for s in script.split(";") if s.strip()]:

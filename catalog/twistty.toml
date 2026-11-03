@@ -1,0 +1,52 @@
+schema_version = 1
+id = "twistty"
+kind = "game"
+title = "Twistty"
+description = "A 3D twisty cube in your terminal: turn the faces, spin the whole cube, scramble it with a seed and solve it, in true colour, drawn in half blocks, sextants, real pixels or its creator's own coloured ASCII."
+year = 2019
+# MIT (Benjamin Jones, his CAM too); notcurses Apache-2.0, GNU libunistring
+# LGPL-3.0+ or GPL-2.0+, libdeflate MIT and ncurses are linked in, their
+# licences in the archive's licenses/
+license = "MIT"
+repo = "theasciiverse/twistty"
+provenance = "Benjamin Jones wrote this cube in C in December 2019, drawing it in 3D with his own small renderer and turning its pixels into coloured ASCII with CAM, a curses library he had written that summer."
+changes = "PATCHES.md"
+topics = ["3d", "cube", "twisty puzzle", "notcurses", "true colour"]
+genre = "puzzle"
+
+[developer]
+name = "Benjamin Jones"
+url = "https://github.com/been-jamming"
+
+# his v1.2 (c0b25fd, 2020-07-05) on notcurses; PATCHES.md in
+# theasciiverse/twistty
+[upstream]
+name = "Benjamin Jones"
+url = "https://github.com/been-jamming/rubiks_cube"
+
+[exec]
+game = "twistty"
+args = []
+
+# the cube scales to any size; the menu needs five rows
+[min_terminal]
+cols = 40
+rows = 12
+
+# half blocks by default (sextants, octants or pixels where notcurses
+# finds them, V to change), 24-bit colour; saves in
+# ~/.local/share/twistty
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = false
+
+# 100x30, asciiverse/record-preview.sh: turned to an angle, R U R' U', a
+# scramble with the seed "asciiverse" in half blocks and then his classic
+# ASCII, squared up, a few more turns; the still is mid-scramble
+[media]
+cast = "asciiverse/twistty.cast"
+thumbnail_at = 10.0
+
+[release]
+source = "github"
