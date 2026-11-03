@@ -48,7 +48,8 @@
   const hero = carousel.querySelector(".hero");
   const dots = el(`<div class="dots"></div>`);
   sect.append(carousel, dots);
-  main.append(sect);
+  // no featured title in the catalog: no empty carousel either
+  if (featured.length) main.append(sect);
   let idx = 0, current;
   function show(i) {
     idx = (i + featured.length) % featured.length;
