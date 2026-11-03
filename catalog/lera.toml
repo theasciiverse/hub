@@ -1,0 +1,37 @@
+schema_version = 1
+id = "lera"
+kind = "program"
+title = "Lera"
+description = "The Asciiverse MUD client: pick a world from the list and you are in the game in seconds, with colour, scrollback that keeps the live text in view, and your health and mana in the status line."
+year = 2026
+new = true
+license = "MIT"
+repo = "theasciiverse/lera"
+provenance = "Asciiverse made Lera to give every MUD in the catalog a home in your terminal; the name is Swedish for clay, which is to say mud."
+topics = ["mud-client", "mud", "rust"]
+genre = "mud client"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# av's Connect on a MUD runs `lera <world-id>`; on its own, `lera` opens the world picker
+[exec]
+game = "lera"
+args = []
+
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = true
+color = "basic"
+mouse = false
+
+[media]
+cast = "asciiverse/lera.cast"
+thumbnail_at = 16.0
+
+[release]
+source = "github"
