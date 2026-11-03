@@ -4,6 +4,9 @@
 /data/catalog.json
   Cache-Control: public, max-age=300
 
+/catalog.json
+  Cache-Control: public, max-age=300
+
 /casts/*
   Cache-Control: public, max-age=86400
 

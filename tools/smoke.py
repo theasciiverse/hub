@@ -25,7 +25,7 @@ needs pywinpty (pip install pywinpty) for the pseudo-terminal.
 import json, os, platform, re, shutil, subprocess, sys, threading, time, urllib.request
 
 RUN_FOR = float(os.environ.get("SMOKE_SECONDS", "4"))
-CATALOG = os.environ.get("AV_CATALOG_URL", "https://asciiverse.sh/data/catalog.json")
+CATALOG = os.environ.get("AV_CATALOG_URL", "https://asciiverse.sh/catalog.json")
 WINDOWS = sys.platform == "win32"
 LOADER = re.compile(
     r"error while loading shared libraries|cannot open shared object|GLIBC_[0-9.]+' not found"

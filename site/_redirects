@@ -2,3 +2,8 @@
 # get-av page fetch av from asciiverse.sh/releases/av/latest/<file>; this
 # sends them on to the newest av release on GitHub.
 /releases/av/latest/* https://github.com/theasciiverse/av/releases/latest/download/:splat 302
+
+# av and Lera fetch the catalog from asciiverse.sh/catalog.json (their built-in
+# address, and the name of their cache file); the website reads
+# data/catalog.json. Both are the same file.
+/catalog.json /data/catalog.json 200
