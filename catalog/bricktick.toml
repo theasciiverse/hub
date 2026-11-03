@@ -1,0 +1,46 @@
+schema_version = 1
+id = "bricktick"
+kind = "game"
+title = "Bricktick"
+description = "The brick breaker: seven levels of coloured bricks to clear with ball and paddle, and charms that fall from the broken ones, from an extra life to a nuclear ball that goes straight through."
+year = 2014
+license = "Unlicense"
+repo = "theasciiverse/bricktick"
+provenance = "Subsentient wrote Bricktick in C with curses in 2014, with its charms that summer, coloured bricks and saved games at the turn of 2015, and a Windows edition in 2020."
+changes = "PATCHES.md"
+topics = ["breakout", "brick breaker", "arkanoid-like", "paddle", "arcade", "power-ups"]
+genre = "arcade"
+
+[developer]
+name = "Subsentient"
+url = "https://github.com/Subsentient/bricktick"
+
+# upstream's 0.9, centred on the screen; PATCHES.md in
+# theasciiverse/bricktick
+[upstream]
+name = "Subsentient"
+url = "https://github.com/Subsentient/bricktick"
+
+# saved games in ~/.bricktick
+[exec]
+game = "bricktick"
+args = []
+
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, asciiverse/record-preview.py: a player reading the screen keeps
+# the paddle under the ball through level 1; the still is a gap cut in
+# the bricks with a charm falling
+[media]
+cast = "asciiverse/bricktick.cast"
+thumbnail_at = 28.0
+
+[release]
+source = "github"

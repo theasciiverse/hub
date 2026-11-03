@@ -2278,6 +2278,69 @@
     }
    ]
   },
+  "bricktick": {
+   "schema_version": 1,
+   "id": "bricktick",
+   "kind": "game",
+   "title": "Bricktick",
+   "description": "The brick breaker: seven levels of coloured bricks to clear with ball and paddle, and charms that fall from the broken ones, from an extra life to a nuclear ball that goes straight through.",
+   "year": 2014,
+   "license": "Unlicense",
+   "repo": "theasciiverse/bricktick",
+   "provenance": "Subsentient wrote Bricktick in C with curses in 2014, with its charms that summer, coloured bricks and saved games at the turn of 2015, and a Windows edition in 2020.",
+   "changes": "PATCHES.md",
+   "topics": [
+    "breakout",
+    "brick breaker",
+    "arkanoid-like",
+    "paddle",
+    "arcade",
+    "power-ups"
+   ],
+   "genre": "arcade",
+   "developer": {
+    "name": "Subsentient",
+    "url": "https://github.com/Subsentient/bricktick"
+   },
+   "upstream": {
+    "name": "Subsentient",
+    "url": "https://github.com/Subsentient/bricktick"
+   },
+   "exec": {
+    "game": "bricktick",
+    "args": []
+   },
+   "min_terminal": {
+    "cols": 80,
+    "rows": 24
+   },
+   "requires": {
+    "utf8": false,
+    "color": "basic",
+    "mouse": false
+   },
+   "media": {
+    "cast": "asciiverse/bricktick.cast",
+    "thumbnail_at": 28.0
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**BREAK THEM ALL.**\n\nA wall of coloured bricks, a ball, and your paddle at the bottom. Keep\nthe ball in play and knock out every brick to move on. Seven levels, each\nwith more bricks hanging lower, and three lives for each one.\n\nWhere you catch the ball matters: the ends of the paddle send it off to\nthe side, the middle maybe straight up, and a paddle on the move whacks it\nthe way it is going. Some bricks drop a charm as they break; catch it:\n\n- **%**: a thousand points\n- **@**: an extra life\n- **#**: ten seconds of slow ball\n- **^**: three seconds of nuclear ball, straight through everything\n\nPoints for every brick, a bonus for every level, and a few more just for\nstaying alive.\n\n## Controls\n\n- **← / →**: move the paddle\n- **L**: launch the ball\n- **Space**: pause\n- **s**: save the game; **o**: load it\n- **Esc**, then **y**: quit\n\n## Options\n\nFrom a terminal: `bricktick --level=4` starts at that level,\n`bricktick --nocolor` plays without colour.\n\n## Credits\n\n- Bricktick: [Subsentient](https://github.com/Subsentient/bricktick)\n- License: public domain (Unlicense)\n",
+   "version": "0.9-av.1",
+   "updated_at": "2026-11-03T20:23:50Z",
+   "thumbnail_at": 28.0,
+   "cast_url": "/casts/bricktick.cast?v=1793737384",
+   "duration": 35.3,
+   "platforms": {
+    "x86_64-unknown-linux-musl": {
+     "url": "/dev-releases/bricktick/bricktick-x86_64-unknown-linux-musl.tar.gz",
+     "sha256": "9812b820d70d0afe40133e625503d7bc16407fd0730ca75dbd3ffbf51e335fc0",
+     "size": 146193
+    }
+   },
+   "news": []
+  },
   "brogue": {
    "schema_version": 1,
    "id": "brogue",
