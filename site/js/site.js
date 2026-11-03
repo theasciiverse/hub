@@ -134,6 +134,7 @@ function header(active, sub = "home") {
       <label class="search"><span>/</span><input placeholder="search titles, tags, developers"></label>
     </div></div>
   </div>`);
+  headerSearch(head.querySelector(".search"));
   // the Support menu closes on a click anywhere else
   const sup = head.querySelector(".support");
   document.addEventListener("click", e => { if (!sup.contains(e.target)) sup.open = false; });
@@ -143,6 +144,51 @@ function header(active, sub = "home") {
     set(); window.addEventListener("resize", set);
   });
   return head;
+}
+
+// The header's search: every title in the catalog, matched on its title,
+// tags, genre and developer; a click (or Enter on the first) opens it on its
+// kind's page. "/" anywhere on the page puts the cursor in the box.
+const KIND_PAGE = { game: "games.html", adventure: "adventures.html", program: "programs.html",
+  art: "art.html", mud: "muds.html", movie: "movies.html" };
+function headerSearch(box) {
+  const input = box.querySelector("input");
+  const menu = el(`<div class="search-menu" hidden></div>`);
+  box.append(menu);
+  let all = null;
+  const load = () => all ??= loadCatalog().then(ts => ts.filter(t => KIND_PAGE[t.kind])).catch(() => []);
+  const score = (t, q) => {
+    const title = t.title.toLowerCase();
+    if (title.startsWith(q)) return 0;
+    if (title.includes(q) || t.id.includes(q)) return 1;
+    const rest = [...(t.topics || []), t.genre, t.theme, t.developer?.name, t.upstream?.name]
+      .filter(Boolean).join(" ").toLowerCase();
+    return rest.includes(q) ? 2 : -1;
+  };
+  const href = t => `${KIND_PAGE[t.kind]}#${t.id}`;
+  async function show() {
+    const q = input.value.trim().toLowerCase();
+    if (!q) { menu.hidden = true; return; }
+    const hits = (await load()).map(t => [score(t, q), t]).filter(([s]) => s >= 0)
+      .sort((a, b) => a[0] - b[0] || a[1].title.localeCompare(b[1].title)).map(([, t]) => t);
+    if (q !== input.value.trim().toLowerCase()) return;     // typed on meanwhile
+    menu.innerHTML = hits.length
+      ? hits.slice(0, 8).map(t => `<a href="${href(t)}"><b>${esc(t.title)}</b><span>${esc(t.kind === "mud" ? "MUD" : t.kind)}${t.genre ? " · " + esc(t.genre) : ""}${t.developer?.name ? " · " + esc(t.developer.name) : ""}</span></a>`).join("")
+        + (hits.length > 8 ? `<p>${hits.length - 8} more: type a little more</p>` : "")
+      : `<p>Nothing matches "${esc(input.value.trim())}"</p>`;
+    menu.hidden = false;
+  }
+  input.addEventListener("focus", load);
+  input.addEventListener("input", show);
+  input.addEventListener("keydown", e => {
+    if (e.key === "Escape") { input.value = ""; menu.hidden = true; input.blur(); }
+    if (e.key === "Enter") { const a = menu.querySelector("a"); if (a) { location.href = a.href; menu.hidden = true; input.blur(); } }
+  });
+  menu.addEventListener("click", e => { if (e.target.closest("a")) menu.hidden = true; });
+  document.addEventListener("click", e => { if (!box.contains(e.target)) menu.hidden = true; });
+  document.addEventListener("keydown", e => {
+    if (e.key === "/" && !/^(INPUT|TEXTAREA)$/.test(document.activeElement?.tagName)) { e.preventDefault(); input.focus(); }
+  });
 }
 
 function footer() {
