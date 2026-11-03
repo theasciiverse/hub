@@ -1,0 +1,16 @@
+# Cloudflare Pages headers. The catalog changes every few hours, so it is
+# kept fresh; casts carry a stamp of their contents in their URL (?v=...),
+# so a new recording is a new URL and old ones can be cached for long.
+/data/catalog.json
+  Cache-Control: public, max-age=300
+
+/casts/*
+  Cache-Control: public, max-age=86400
+
+/install.sh
+  Content-Type: text/plain; charset=utf-8
+  Cache-Control: public, max-age=300
+
+/install.ps1
+  Content-Type: text/plain; charset=utf-8
+  Cache-Control: public, max-age=300

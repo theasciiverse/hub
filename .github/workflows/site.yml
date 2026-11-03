@@ -1,0 +1,58 @@
+# Builds catalog.json from catalog/ and the titles' GitHub Releases
+# (tools/build_catalog.py, catalog/SCHEMA.md) and deploys the website with
+# it to Cloudflare Pages, project "asciiverse", served at asciiverse.sh.
+#
+# Runs every 6 hours, so new title releases reach av without a change here,
+# on every push that touches the catalog or the site, and by hand.
+#
+# Needs two repository secrets: CLOUDFLARE_API_TOKEN (a token with
+# "Cloudflare Pages: Edit") and CLOUDFLARE_ACCOUNT_ID.
+
+name: site
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  push:
+    branches: [master]
+    paths:
+      - "catalog/**"
+      - "site/**"
+      - "tools/build_catalog.py"
+      - ".github/workflows/site.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# one deploy at a time; a newer run waits rather than racing an older one
+concurrency:
+  group: site
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Assemble the site
+        run: |
+          mkdir public
+          cp -r site/. public/
+          rm -rf public/dev public/DESIGN.md public/.gitignore public/data/catalog.json
+
+      - name: Build catalog.json
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 --version
+          python3 tools/build_catalog.py --out public/data/catalog.json \
+            --previous https://asciiverse.sh/data/catalog.json
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy public --project-name=asciiverse --branch=main --commit-dirty=true

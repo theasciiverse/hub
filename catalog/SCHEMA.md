@@ -39,6 +39,11 @@ changes = "PATCHES.md"         # optional: path in `repo` listing what Asciivers
                                # (for a story, its README with the provenance)
 collection = "nbsdgames"       # optional: the collection the game comes from, a key
                                # in collections.toml (see "Collections" below)
+old = true                     # optional: the OLD! banner, for titles that first
+                               # appeared before 1996 (a port by its original's year)
+new = true                     # optional: the NEW! banner, for titles first released
+                               # in the last two years
+featured = 3                   # optional: a place in the website's carousel, 1 first
 
 [developer]                    # who ships this build
 name = "Asciiverse"
@@ -134,6 +139,8 @@ description = "Huge questing MUD, friendly to newcomers and known for screen-rea
 since = 1996                   # the year the world opened
 topics = ["fantasy", "questing", "gmcp"]
 website = "https://www.aardwolf.com"
+theme = "fantasy"              # a word or two for the world's setting, shown on its card
+# language = "German"          # optional: when the world is not played in English
 
 [connect]
 host = "aardmud.org"
@@ -223,7 +230,6 @@ and `CHANGELOG` (see `../../av/CLAUDE.md`, "Detail pane content").
 ### Not yet specified
 
 - How movies launch (depends on movie playback design).
-- The "OLD!" and "NEW!" banners: manual storefront curation, no field yet.
 
 ## Generated `catalog.json`
 
@@ -271,6 +277,22 @@ no notes has `"news": []`.
 
 One file for the whole catalog to start with. Split it (by kind, or an index
 plus per-title files) only once size actually becomes a problem.
+
+## The build (`tools/build_catalog.py`)
+
+`python3 tools/build_catalog.py --out <path> --previous <last catalog.json>`,
+Python 3.11 or newer and nothing else, with `GITHUB_TOKEN` set for the
+GitHub API. For `source = "github"` it takes the newest published release
+that holds an archive for the title, so a collection's repo may release its
+games together. The preview is hub's own `site/casts/<id>.cast` (the copy of
+the cast named in `[media]`), published with a stamp of its contents in
+`cast_url`, plus its length as `duration`.
+
+A title whose release cannot be read keeps its entry from the previous
+catalog, and the run lists it as a warning, so a failed request never drops
+a title. A manifest that does not parse, an id that does not match its file
+name, a page outside the Markdown subset or a missing `release.source`
+fails the whole build.
 
 ## Build schedule
 

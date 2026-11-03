@@ -1,0 +1,4 @@
+# Cloudflare Pages redirects. The installers (install.sh, install.ps1) and the
+# get-av page fetch av from asciiverse.sh/releases/av/latest/<file>; this
+# sends them on to the newest av release on GitHub.
+/releases/av/latest/* https://github.com/theasciiverse/av/releases/latest/download/:splat 302
