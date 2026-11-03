@@ -155,11 +155,44 @@ function footer() {
   </div></footer>`);
 }
 
+// Copies text to the clipboard: the Clipboard API where the browser allows
+// it, else the older execCommand route through a hidden text area. Resolves
+// to whether it worked, so a button only says "copied" when it did.
+async function copyText(text) {
+  try {
+    if (navigator.clipboard && window.isSecureContext) {
+      await navigator.clipboard.writeText(text);
+      return true;
+    }
+  } catch (e) { /* refused: try the older way */ }
+  const ta = document.createElement("textarea");
+  ta.value = text;
+  ta.setAttribute("readonly", "");
+  ta.style.cssText = "position:fixed;top:0;left:0;opacity:0;pointer-events:none";
+  document.body.append(ta);
+  ta.select();
+  let ok = false;
+  try { ok = document.execCommand("copy"); } catch (e) { ok = false; }
+  ta.remove();
+  return ok;
+}
+// What a copy button does: copy, say so, and when nothing could copy,
+// select the command on the page so Ctrl+C (Cmd+C) takes it.
+async function copyFeedback(btn, text, codeEl) {
+  const label = btn.dataset.label || (btn.dataset.label = btn.textContent);
+  if (await copyText(text)) {
+    btn.textContent = "copied";
+  } else {
+    if (codeEl) {
+      const r = document.createRange(); r.selectNodeContents(codeEl);
+      const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r);
+    }
+    btn.textContent = /Mac/.test(navigator.platform) ? "press ⌘C" : "press Ctrl+C";
+  }
+  setTimeout(() => (btn.textContent = label), 1600);
+}
 function copyButton(btn, text) {
-  btn.addEventListener("click", () => {
-    navigator.clipboard?.writeText(text);
-    const old = btn.textContent; btn.textContent = "copied"; setTimeout(() => (btn.textContent = old), 1200);
-  });
+  btn.addEventListener("click", () => copyFeedback(btn, text, btn.parentElement?.querySelector("code")));
 }
 
 function installLine(t) {
@@ -199,10 +232,7 @@ function tabbedInstall(options, first = 0) {
     const b = el(`<button role="tab">${name}</button>`); b.onclick = () => pick(i); tabs.append(b);
   });
   const btn = n.querySelector(".install button");
-  btn.addEventListener("click", () => {
-    navigator.clipboard?.writeText(cmd);
-    btn.textContent = "copied"; setTimeout(() => (btn.textContent = "copy"), 1200);
-  });
+  btn.addEventListener("click", () => copyFeedback(btn, cmd, code));
   pick(first);
   return n;
 }
