@@ -232,7 +232,18 @@ function tabbedInstall(options, first = 0) {
     const b = el(`<button role="tab">${name}</button>`); b.onclick = () => pick(i); tabs.append(b);
   });
   const btn = n.querySelector(".install button");
-  btn.addEventListener("click", () => copyFeedback(btn, cmd, code));
+  // A line that downloads and runs a script (curl ... | sh, irm ... | iex)
+  // is never put on the clipboard by the page: content blockers such as
+  // uBlock Origin stop that (their ClickFix guard) and warn the reader. The
+  // button selects it instead, and the reader's own Ctrl+C copies it.
+  const fetchAndRun = c => /\|\s*(sudo\s+)?(sh|bash|zsh|iex)\b/.test(c) || /\b(irm|iwr|Invoke-(RestMethod|WebRequest))\b/i.test(c);
+  btn.addEventListener("click", () => {
+    if (!fetchAndRun(cmd)) return copyFeedback(btn, cmd, code);
+    const r = document.createRange(); r.selectNodeContents(code);
+    const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r);
+    btn.textContent = /Mac/.test(navigator.platform) ? "now \u2318C" : "now Ctrl+C";
+    setTimeout(() => (btn.textContent = "copy"), 2500);
+  });
   pick(first);
   return n;
 }
