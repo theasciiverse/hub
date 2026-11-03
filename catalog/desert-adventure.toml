@@ -1,0 +1,48 @@
+schema_version = 1
+id = "desert-adventure"
+kind = "adventure"
+title = "Desert Adventure"
+description = "Lost in a hot, dry desert with an oasis to the north and caves somewhere out there: a small treasure hunt in the classic Scott Adams two-word style."
+year = 2007
+license = "BSD-2-Clause"
+repo = "theasciiverse/stories"
+provenance = "Sam Trenholme made Desert Adventure in a single day in September 2007, an original game for Scott Adams' adventure format and, as far as he knew, the first new one in over twenty years."
+changes = "desert-adventure/README.md"
+topics = ["text-adventure", "scott-adams", "desert", "treasure-hunt", "two-word-parser", "retro"]
+genre = "text adventure"
+
+[developer]
+name = "Sam Trenholme"
+url = "http://www.samiam.org/"
+
+# desert.dat unchanged (provenance and sha256 in the stories repo,
+# desert-adventure/README.md), BSD-style terms word for word in its
+# LICENSE; played with ScottFree 1.14 (GPL-2.0-or-later), inside the archive
+[upstream]
+name = "Sam Trenholme, 2007"
+url = "https://ifarchive.org/if-archive/scott-adams/games/scottfree/desert-scott.zip"
+
+# the start script lists saved games to restore (ScottFree restores only
+# at start), then plays the story in the bundled ScottFree; saves go to
+# ~/.local/share/desert-adventure
+[exec]
+game = "desert-adventure"
+args = []
+
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, asciiverse/record-preview.py: the first moves at the oasis, then
+# QUIT GAME; the still is the oasis with the flower picked
+[media]
+cast = "asciiverse/desert-adventure.cast"
+thumbnail_at = 12.0
+
+[release]
+source = "github"

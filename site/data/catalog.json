@@ -446,8 +446,8 @@
     "source": "github"
    },
    "page": "**4:17 AM. SIX MINUTES. ONE BOMB.**\n\n\"You're in. The plan now is simple: go to your lab, plant the bomb, and\nrun. The prototype will be destroyed. The military will have no way to\ncontinue the experiment. No-one will die.\"\n\nThe guard is out securing the grounds. The building is empty, a darkened\nfoyer with a security desk, four CCTV screens and four buttons: 'basement',\n'first', 'second' and 'alarm'. You have six minutes. Then time itself starts\nto fold back on you, and every move you make has to fit with the moves you\nhave already made.\n\nBe warned, in the author's own words: \"it is more cruel than one might hope\nfor a modern piece of interactive fiction. In particular, any move you make\nmay put things into an unwinnable state.\" Save often. You will probably\nstart over more than once to find the best ending, and that is the fun of\nit.\n\n- **A tight clockwork puzzle**: one building, one night, six minutes\n- **A familiar science-fiction idea**, explored \"in what I hope is a\n  rather refreshing and satisfying manner\"\n- **An IFComp 2004 game**, given to the public domain by its author\n\n## How to play\n\nType what you want to do, in plain words, and press Enter:\n\n- **look**, **inventory** (or **i**), **examine** something (or **x**)\n- **north**, **south**, **east**, **west**, **up**, **down** (or **n**, **s**, **e**, **w**, **u**, **d**)\n- **take**, **drop**, **open**, **push** things; **help** or **about** in most games\n- **save** and **restore**; **quit** to stop\n\nYour saved games are kept in `~/.local/share/all-things-devours`.\n\n## Credits\n\n- All Things Devours: Toby Ord, writing as half sick of shadows; IFComp 2004\n- License: Public domain, by the author's statement in the game and its source\n- Played with Frotz by David Griffith and contributors (GPL-2.0-or-later)\n- Asciiverse edition: Asciiverse\n",
-   "version": "1-av.1",
-   "updated_at": "2026-10-12T22:00:00Z",
+   "version": "1-av.3",
+   "updated_at": "2026-11-03T21:23:54Z",
    "thumbnail_at": 13.7,
    "cast_url": "/casts/all-things-devours.cast?v=1791906527",
    "duration": 19.9,
@@ -615,8 +615,8 @@
     "source": "github"
    },
    "page": "**IT'S JUST A PERFECT DAY. THEN THE STORM COMES IN.**\n\n\"Down on the horizon, thunderstorms cloud the sky. But the sea is fresh, and\nthe air has taken on that orange hue. It's just a perfect day.\"\n\nKorhos is setting over the shore of Monarch. Loud waves splash on the sand,\nand Uncle Oren, once your mentor at the University Radiation Technology\nDivision, is staring at the horizon \"like a bird in search of a migratory\nroute\". \"It looks like Paradise,\" he says. A white electric arc paints the\nsouthern sky.\n\nWhat follows takes you, Ektor Mastiff, a very long way from that beach:\n\"Floating in space on a strange vessel, sole survivor of a world... and\nmaybe of the entire human race, Ektor Mastiff must find a way through the\ncosmos, on a voyage that can change the history of mankind forever.\"\n\n- **Big, cinematic science fiction** from Marco Innocenti: the second part\n  of his Andromeda series. You can start here, though the author recommends\n  Andromeda Awakening first for the full story\n- **The Extended Edition**, with achievements and a walkthrough in its own\n  menus for when you are stuck\n- **Plain English**: type what you want to do, and ABOUT or HELP for the\n  game's own guide\n\n## How to play\n\nType what you want to do, in plain words, and press Enter:\n\n- **look**, **inventory** (or **i**), **examine** something (or **x**)\n- **north**, **south**, **east**, **west**, **up**, **down** (or **n**, **s**, **e**, **w**, **u**, **d**)\n- **take**, **drop**, **open**, **push** things; **help** or **about** in most games\n- **save** and **restore**; **quit** to stop\n\nYour saved games are kept in `~/.local/share/andromeda-apocalypse`.\n\n## Credits\n\n- Andromeda Apocalypse: Marco Innocenti, 2012; title song by Wade Clarke\n- License: Creative Commons Attribution-NonCommercial-ShareAlike 3.0\n- Played with Glulxe and GlkTerm by Andrew Plotkin (MIT)\n- Asciiverse edition: Asciiverse\n",
-   "version": "1-av.1",
-   "updated_at": "2026-10-12T22:00:00Z",
+   "version": "1-av.3",
+   "updated_at": "2026-11-03T21:23:54Z",
    "thumbnail_at": 16.5,
    "cast_url": "/casts/andromeda-apocalypse.cast?v=1791906527",
    "duration": 24.1,
@@ -2001,8 +2001,8 @@
     "source": "github"
    },
    "page": "**TWENTY-THREE DOLLARS FOR THE BEST DREAM OF YOUR LIFE.**\n\nIt's ten o'clock, there's a party downstairs at the house of people you've\nnever met, and you're up in the attic with the guy. You know the guy: \"he's\njust the guy you always meet at parties thrown by people you've never met.\"\nHe's holding up a repurposed cough syrup bottle with something green\ninside. \"Green like candy almost never is.\"\n\nAll around you is junk: old sewing machines, an Easy-Bake oven, a set of\nfolding chairs painted carnival blue. (\"The blue chairs are bad news. Best\njust to leave them alone.\") Downstairs, that awful trance-bop keeps playing.\n\nYou could go back down. The game will even tell you how the rest of that\nnight goes, and the weekend after, and the weekend after that. Or you could\nsay yes.\n\n- **A strange, sad and funny night** that goes a long way from that attic\n- **A voice all its own**, from Chris Klimas, written for IFComp 2004\n- **Help for the jaded**: the game's menu has hints, the author's notes and\n  \"The Official Bootleg Blue Chairs Soundtrack\"\n\n## How to play\n\nType what you want to do, in plain words, and press Enter:\n\n- **look**, **inventory** (or **i**), **examine** something (or **x**)\n- **north**, **south**, **east**, **west**, **up**, **down** (or **n**, **s**, **e**, **w**, **u**, **d**)\n- **take**, **drop**, **open**, **push** things; **help** or **about** in most games\n- **save** and **restore**; **quit** to stop\n\nYour saved games are kept in `~/.local/share/blue-chairs`.\n\n## Credits\n\n- Blue Chairs: Chris Klimas, 2004\n- License: Creative Commons Attribution-NonCommercial-ShareAlike 3.0\n- Played with Frotz by David Griffith and contributors (GPL-2.0-or-later)\n- Asciiverse edition: Asciiverse\n",
-   "version": "1-av.1",
-   "updated_at": "2026-10-12T22:00:00Z",
+   "version": "1-av.3",
+   "updated_at": "2026-11-03T21:23:54Z",
    "thumbnail_at": 14.2,
    "cast_url": "/casts/blue-chairs.cast?v=1791906527",
    "duration": 20.7,
@@ -2062,8 +2062,8 @@
     "source": "github"
    },
    "page": "**SUNDAY, 9:05 PM. THE PAGER WILL NOT STOP.**\n\n\"Net extremely hoseled. Engine team being hideously masticated by this\noutage. Demo rapidly approaching. Get to the cages. Reboot the servers.\nHasten. Do not rest. Please. All five of them.\"\n\nThat's Wilbur, your boss. You're the new system administrator for nWare.\nYou moved to nTopia a few days ago, and your apartment holds little more\nthan your nLap 500, a heap of clothes and the glowing stars on the ceiling.\nIt's the weekend. It doesn't matter. Out you go into the city, with the\nclock in the corner running and the pager buzzing like a dental drill.\n\nNick Montfort's Book and Volume is a night-time wander through a gleaming\ntech-boom city where everything has an n in front of it and everyone wants\nsomething from you, right now.\n\n- **A whole city to roam** by night, with the clock always running\n- **Sharp, funny writing** about work, technology and a place that never\n  quite lets you rest\n- **An [auto mata] release**, with an introduction to interactive fiction\n  built into its opening menu\n\n## How to play\n\nType what you want to do, in plain words, and press Enter:\n\n- **look**, **inventory** (or **i**), **examine** something (or **x**)\n- **north**, **south**, **east**, **west**, **up**, **down** (or **n**, **s**, **e**, **w**, **u**, **d**)\n- **take**, **drop**, **open**, **push** things; **help** or **about** in most games\n- **save** and **restore**; **quit** to stop\n\nYour saved games are kept in `~/.local/share/book-and-volume`.\n\n## Credits\n\n- Book and Volume: Nick Montfort, 2005\n- License: Creative Commons Attribution-NonCommercial-ShareAlike 2.5\n- Played with Frotz by David Griffith and contributors (GPL-2.0-or-later)\n- Asciiverse edition: Asciiverse\n",
-   "version": "1-av.1",
-   "updated_at": "2026-10-12T22:00:00Z",
+   "version": "1-av.3",
+   "updated_at": "2026-11-03T21:23:54Z",
    "thumbnail_at": 17.5,
    "cast_url": "/casts/book-and-volume.cast?v=1791906527",
    "duration": 25.2,
@@ -3493,8 +3493,8 @@
     "source": "github"
    },
    "page": "**YOU WAKE AND SEE BLOOD.**\n\n\"There's blood everywhere.\" Behind it, a face twisted with pain, and a hand that spasms as it paws at the thing projecting from where a chest should be. You reach out to help, and that is when you realise you are looking into the inside of the reflective cockpit canopy, and the face you can see is yours.\n\nThen you wake again. Somewhere warm and soft.\n\n*Something's different.*\n\nYou fight your way out of a cocoon into the Forest Cathedral: huge columnar trees holding up the leaf canopy, golden rays angling down, a river running along the east side, and more green cocoons at the bases of the trees. The air is full of peace. But you're not going anywhere just yet, because something's wrong.\n\nWhat are you now? How does the life of this forest fit together? And how do you survive in it?\n\nDavid Given wrote Changes for the 2012 Interactive Fiction Competition: a text adventure on a strange forest world, where the first puzzle is yourself.\n\n**WAKE UP. FIND OUT WHAT YOU'VE BECOME.**\n\n## How to play\n\nType what you want to do, in plain words, and press Enter:\n\n- **look**, **inventory** (or **i**), **examine** something (or **x**)\n- **north**, **south**, **east**, **west**, **up**, **down** (or **n**, **s**, **e**, **w**, **u**, **d**)\n- **take**, **drop**, **open**, **push** things; **help** or **about** in most games\n- **save** and **restore**; **quit** to stop\n\nYour saved games are kept in `~/.local/share/changes`.\n\n## Credits\n\n- Changes: David Given, 2012\n- License: Creative Commons BY-ND (the author's terms); shipped unchanged\n- Played with Frotz by David Griffith and contributors (GPL-2.0-or-later)\n- Asciiverse edition: Asciiverse\n",
-   "version": "1-av.1",
-   "updated_at": "2026-10-12T22:00:00Z",
+   "version": "1-av.3",
+   "updated_at": "2026-11-03T21:23:54Z",
    "thumbnail_at": 15.1,
    "cast_url": "/casts/changes.cast?v=1791906527",
    "duration": 21.7,
@@ -4140,8 +4140,8 @@
     "source": "github"
    },
    "page": "**YOUR COVER IS BLOWN. GOOD LUCK GETTING OFF THE ISLAND.**\n\n\"Can you hear me?\"\n\nYou wake in a back alley at noon, and you are two people. Alex and Andra have just been synthesised into one body, Alexandra, the most inconvenient disguise either of you has ever worn. You smuggle and spy for a living, the Bureau of Orthography has your faces on record, and a national holiday has the police spread thin for about eight more hours.\n\nWelcome to Anglophone Atlantis, an independent nation since the April day in 1822 when \"a well-aimed shot from their depluralizing cannon reduced the British colonizing fleet to one ship.\" Here, words are tools. Change a thing's name and you change the thing, and in your pocket is the tool to do it: a full-alphabet letter remover. Point it at something, pick a letter, take it out, and see what you're left holding.\n\n- **A world built on wordplay**: every puzzle turns on letters and the words they make, across a whole town of streets, shops and museums, from Sigil Street to Ampersand Bend.\n- **Two minds, one body**: your other half talks you through it, and your memories of how you got here come back as you go.\n- **Gentle on newcomers**: a tutorial walks you through the first steps; type TUTORIAL OFF if you know your way.\n- **Big and generous**: a full-length game by Emily Short, one of the great names in interactive fiction.\n\n**Find a way off the island. Spell it out.**\n\n## How to play\n\nType what you want to do, in plain words, and press Enter:\n\n- **look**, **inventory** (or **i**), **examine** something (or **x**)\n- **north**, **south**, **east**, **west**, **up**, **down** (or **n**, **s**, **e**, **w**, **u**, **d**)\n- **take**, **drop**, **open**, **push** things; **help** or **about** in most games\n- **save** and **restore**; **quit** to stop\n\nYour saved games are kept in `~/.local/share/counterfeit-monkey`.\n\n## Credits\n\n- Counterfeit Monkey: Emily Short, 2012; maintained by the Counterfeit Monkey contributors\n- License: Creative Commons Attribution-ShareAlike 4.0 (the feelies are not included)\n- Played with Glulxe and GlkTerm by Andrew Plotkin (MIT)\n- Asciiverse edition: Asciiverse\n",
-   "version": "1-av.1",
-   "updated_at": "2026-10-12T22:00:00Z",
+   "version": "1-av.3",
+   "updated_at": "2026-11-03T21:23:54Z",
    "thumbnail_at": 15.0,
    "cast_url": "/casts/counterfeit-monkey.cast?v=1791906527",
    "duration": 21.9,
@@ -4592,8 +4592,8 @@
     "source": "github"
    },
    "page": "**THAT MAP OF PARIS MUST BE UP HERE SOMEWHERE.**\n\n\"It's become a matter of pride now not to give up.\" It has been five years since your last trip, and the tourist map is lost somewhere in the attics of Meldrew Hall, your family's old house, in among the tea chests and the junk of generations. By the look of it, your great-grandfather was the last person to tidy up. You have a chocolate biscuit, an electric torch with no switch, and a crumpled list of things to do. Number one: find map. Let's face it, it's more enticing than the rest put together.\n\nThen the attic key slips off a glass demijohn and rattles away down a crack in the floorboards, and the search starts turning into something much larger. This family has a history, and a curse to go with it. Aunt Jemima is potting daisies. The house hides ways into other times and places. And you start to wonder whether you are cursed too.\n\n- **Long, witty and famously hard**: a big puzzle game in the grand old style, with a sense of humour all the way through.\n- **Literary from the first screen**: lines from Shakespeare and Dorothy Parker turn up as you play.\n- **A classic of the form**: Graham Nelson's 1993 game, released as \"An Interactive Diversion\".\n\n**Find the map. Mind the family curse.**\n\n## How to play\n\nType what you want to do, in plain words, and press Enter:\n\n- **look**, **inventory** (or **i**), **examine** something (or **x**)\n- **north**, **south**, **east**, **west**, **up**, **down** (or **n**, **s**, **e**, **w**, **u**, **d**)\n- **take**, **drop**, **open**, **push** things; **help** or **about** in most games\n- **save** and **restore**; **quit** to stop\n\nYour saved games are kept in `~/.local/share/curses`.\n\n## Credits\n\n- Curses: Graham Nelson, 1993 to 1995\n- License: The author's terms: free to distribute and use, provided no profit is involved and the file is unmodified\n- Played with Frotz by David Griffith and contributors (GPL-2.0-or-later)\n- Asciiverse edition: Asciiverse\n",
-   "version": "1-av.1",
-   "updated_at": "2026-10-12T22:00:00Z",
+   "version": "1-av.3",
+   "updated_at": "2026-11-03T21:23:54Z",
    "thumbnail_at": 15.7,
    "cast_url": "/casts/curses.cast?v=1791906527",
    "duration": 22.7,
@@ -4793,6 +4793,69 @@
    },
    "news": []
   },
+  "desert-adventure": {
+   "schema_version": 1,
+   "id": "desert-adventure",
+   "kind": "adventure",
+   "title": "Desert Adventure",
+   "description": "Lost in a hot, dry desert with an oasis to the north and caves somewhere out there: a small treasure hunt in the classic Scott Adams two-word style.",
+   "year": 2007,
+   "license": "BSD-2-Clause",
+   "repo": "theasciiverse/stories",
+   "provenance": "Sam Trenholme made Desert Adventure in a single day in September 2007, an original game for Scott Adams' adventure format and, as far as he knew, the first new one in over twenty years.",
+   "changes": "desert-adventure/README.md",
+   "topics": [
+    "text-adventure",
+    "scott-adams",
+    "desert",
+    "treasure-hunt",
+    "two-word-parser",
+    "retro"
+   ],
+   "genre": "text adventure",
+   "developer": {
+    "name": "Sam Trenholme",
+    "url": "http://www.samiam.org/"
+   },
+   "upstream": {
+    "name": "Sam Trenholme, 2007",
+    "url": "https://ifarchive.org/if-archive/scott-adams/games/scottfree/desert-scott.zip"
+   },
+   "exec": {
+    "game": "desert-adventure",
+    "args": []
+   },
+   "min_terminal": {
+    "cols": 80,
+    "rows": 24
+   },
+   "requires": {
+    "utf8": false,
+    "color": "basic",
+    "mouse": false
+   },
+   "media": {
+    "cast": "asciiverse/desert-adventure.cast",
+    "thumbnail_at": 12.0
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**HOT. DRY. AND SOMEWHERE OUT HERE, TREASURE.**\n\n\"I'm in a hot and dry desert.\" There is an oasis to the north, with palm\ntrees, a pool of cool water, a flowering plant, and a sign that says\n*leave treasures here and SCORE*. Further out are caves, and things that\nwant finding.\n\nDesert Adventure is a small game in the style of the first home-computer\nadventures, the ones Scott Adams wrote for computers with a few kilobytes\nof memory: the room is drawn at the top of the screen, and you tell the\ngame what to do in two words. Find the treasures, bring them back to the\noasis, and see your score.\n\n## How to play\n\nType two words and press Enter:\n\n- **GO NORTH** (or **N**, **S**, **E**, **W**, **U**, **D**), **LOOK**, **INVENTORY**\n- **GET** and **DROP** things, and try other verbs on what you find;\n  **VERBS** lists the ones the game knows\n- **SCORE** to see how you are doing; **COPY** for the copyright\n- **SAVE GAME** to save; **QUIT GAME** to stop\n\nWhen you start the game, it lists your saved games and asks which one to\npick up again; press Enter for a new game. They are kept in\n`~/.local/share/desert-adventure`.\n\n## Credits\n\n- Desert Adventure: Sam Trenholme, 2007\n- Played with ScottFree 1.14, by the Swansea University Computer Society, as updated by Sam Trenholme (GPL-2.0-or-later)\n- License: BSD-style, by the author\n",
+   "version": "1-av.3",
+   "updated_at": "2026-11-03T21:23:54Z",
+   "thumbnail_at": 12.0,
+   "cast_url": "/casts/desert-adventure.cast?v=1793740943",
+   "duration": 23.7,
+   "platforms": {
+    "x86_64-unknown-linux-musl": {
+     "url": "/dev-releases/stories/desert-adventure-x86_64-unknown-linux-musl.tar.gz",
+     "sha256": "8130561ec9a0720ef927696a251cbe3eb0734dd7d9fae08b5f5f3233f005d2e4",
+     "size": 160030
+    }
+   },
+   "news": []
+  },
   "discworld": {
    "schema_version": 1,
    "id": "discworld",
@@ -4862,8 +4925,8 @@
     "source": "github"
    },
    "page": "**\"WE'RE LOSING THE PATIENT!\"**\n\n\"Is that such a bad thing?\"\n\n\"You have an oath!\"\n\n\"An oath this one never bothered to follow.\"\n\nThose are the last voices you hear before the clouds take you. Somebody\nshouts **\"CLEAR!\"**, lightning rakes across the sky, and you fall (or\nrise?) into the eye of the storm.\n\nYou land in an endless meadow of loose shale and gray scrub, under a\nfunnel of storm clouds that churn in a slow circle overhead. The wind\nmoans. A wooden signpost leans at an absurd angle, two arrows nailed to\nit: **TO HERE** and **TO THERE**. Then the wind howls, and the signpost\nspins. Above you, the clouds part on a silent vision: a circle of\nparamedics, working frantically over someone you can't quite see.\n\nYou are Doctor M. You don't know which way to go. Or, maybe, which way\nyou went.\n\n- **A surreal afterlife** that bends direction, time and memory, from\n  Michael D. Hilborn's entry to the 2011 Interactive Fiction Competition\n- **Real conversations**: the people you meet are talked to through a\n  conversation system of topics and replies, so type ABOUT and\n  CONVERSATION when you start\n- **Built-in hints** in the ABOUT menu, if the storm gets the better of\n  you\n\n**An Interactive Deliverance. Which way will you go?**\n\n## How to play\n\nType what you want to do, in plain words, and press Enter:\n\n- **look**, **inventory** (or **i**), **examine** something (or **x**)\n- **north**, **south**, **east**, **west**, **up**, **down** (or **n**, **s**, **e**, **w**, **u**, **d**)\n- **take**, **drop**, **open**, **push** things; **help** or **about** in most games\n- **save** and **restore**; **quit** to stop\n\nYour saved games are kept in `~/.local/share/doctor-m`.\n\n## Credits\n\n- The Life (and Deaths) of Doctor M: Michael D. Hilborn, 2011\n- License: Creative Commons Attribution-NonCommercial-NoDerivs 3.0\n- Played with Glulxe and GlkTerm by Andrew Plotkin (MIT)\n- Asciiverse edition: Asciiverse\n",
-   "version": "1-av.1",
-   "updated_at": "2026-10-12T22:00:00Z",
+   "version": "1-av.3",
+   "updated_at": "2026-11-03T21:23:54Z",
    "thumbnail_at": 14.3,
    "cast_url": "/casts/doctor-m.cast?v=1791906527",
    "duration": 20.8,
@@ -5455,8 +5518,8 @@
     "source": "github"
    },
    "page": "**YOUR SON IS NOT YET BORN. YOU HAVE ALREADY SEEN HOW HE DIES.**\n\nYou are nine months pregnant, and the contractions have already begun.\nYou are Queen in name but not in influence, trapped in a castle with more\nenemies than friends, and at last your spells have worked: the crystal\nball in your den shows what waits for your child. Writhing lines of black\nand purple, and then an image. It is not good.\n\nThe crown prince, Harold, wants no rival. His knight Sir Charles has\nmoved onto the couch in your parlour. Old Mebeira keeps her tower room\nfull of skulls and powders, and real power. And in a golden cage hangs\nAmalia, your pixie, whose wings are worth a great deal to a sorcerer. You\ncan WAIT in your den for fate to arrive. Or you can act, with speed and\ndetermination, and do what is necessary before the waters break.\n\n- **Every move changes the vision**: look into the ball again and the\n  future has shifted, toward banishment, ruin, glory or a quiet life\n  far from the power games of kings\n- **How far will you go?** The game asks it of you, and keeps the score\n  in what you are willing to do, not in points\n- **Victor Gijsbers' dark little fable**, first released in 2007, short\n  enough for one evening and built to be replayed\n\n*\"The fault, dear Brutus, is not in our stars, but in ourselves.\"*\n\n**The waters will break soon. What will you do?**\n\n## How to play\n\nType what you want to do, in plain words, and press Enter:\n\n- **look**, **inventory** (or **i**), **examine** something (or **x**)\n- **north**, **south**, **east**, **west**, **up**, **down** (or **n**, **s**, **e**, **w**, **u**, **d**)\n- **take**, **drop**, **open**, **push** things; **help** or **about** in most games\n- **save** and **restore**; **quit** to stop\n\nYour saved games are kept in `~/.local/share/fate`.\n\n## Credits\n\n- Fate: Victor Gijsbers, 2007\n- License: GNU GPL version 2 or later; the source (Fate-source.zip) is in the archive\n- Played with Frotz by David Griffith and contributors (GPL-2.0-or-later)\n- Asciiverse edition: Asciiverse\n",
-   "version": "1-av.1",
-   "updated_at": "2026-10-12T22:00:00Z",
+   "version": "1-av.3",
+   "updated_at": "2026-11-03T21:23:54Z",
    "thumbnail_at": 17.3,
    "cast_url": "/casts/fate.cast?v=1791906527",
    "duration": 25.7,
@@ -7156,8 +7219,8 @@
     "source": "github"
    },
    "page": "**THERE'S GOING TO BE A HANGING. YOURS.**\n\nYou blew up that railroad tunnel just the way Muddy Charlie planned it.\nHe just didn't plan on the sheriff getting word ahead of time. Now the\nsilver dollars of the Missouri, Kansas & Texas Line are evidence, you\nand Muddy are locked in Sheriff Cheney's sturdy brick jail, and a\nfederal marshal is coming for you at eight o'clock tomorrow morning. The\nsheriff's news for his deputy: \"There's going to be a hanging!\" And on\nhis way out the door: \"Jimbo, don't screw up.\"\n\n\"Why are you not surprised to have landed right back in the hoosegow\nafter another one of Muddy's dubious plans? Will you ever learn?\" Look\naround. A broken stool. A small window above your head. A stranger in a\nblack suit, snoring on the bench. Muddy, tapping his harmonica on his\narm. And Deputy Jimbo, on the other side of the bars. Somewhere in all\nthat is a way out before eight.\n\nBen Collins-Sussman and Jack Welch's comic Western, \"A Wild West Wreck\",\nwon the Casual Gameplay Design Competition #7. Type \"hints\" when you're\nstuck, \"or just roll into town guns a-blazin'.\"\n\n**Bust out by eight. Or hang.**\n\n## How to play\n\nType what you want to do, in plain words, and press Enter:\n\n- **look**, **inventory** (or **i**), **examine** something (or **x**)\n- **north**, **south**, **east**, **west**, **up**, **down** (or **n**, **s**, **e**, **w**, **u**, **d**)\n- **take**, **drop**, **open**, **push** things; **help** or **about** in most games\n- **save** and **restore**; **quit** to stop\n\nYour saved games are kept in `~/.local/share/hoosegow`.\n\n## Credits\n\n- Hoosegow: Ben Collins-Sussman and Jack Welch, 2010\n- License: Creative Commons Attribution-Noncommercial-Share Alike 3.0\n- Played with Frotz by David Griffith and contributors (GPL-2.0-or-later)\n- Asciiverse edition: Asciiverse\n",
-   "version": "1-av.1",
-   "updated_at": "2026-10-12T22:00:00Z",
+   "version": "1-av.3",
+   "updated_at": "2026-11-03T21:23:54Z",
    "thumbnail_at": 18.6,
    "cast_url": "/casts/hoosegow.cast?v=1791906527",
    "duration": 27.0,
@@ -7342,8 +7405,8 @@
     "source": "github"
    },
    "page": "**YOUR NAME IS PREY. HE IS STARVING.**\n\nYou wake in the delivery room of a sealed facility, half drowned, and a\nvoice is already talking. It belongs to Skashek, the Predator: pale as\ndeath, two rows of sharp teeth, long arms ending in clawed hands. He is\nkind enough to explain the rules. \"I'm starving, Prey. So run. Avoid\nbecoming my next meal. I've scattered pieces of an environment suit\naround the place. If you collect all seven pieces, you will be able to\nsurvive the poison gas, and escape.\"\n\nSo run. Climb, leap and crawl through the facility, sneak, hide, and set\ntricks for him to fall for, while you gather the helmet, the torso and\nthe rest before he gathers you. Then out through the emergency airlock.\n\"I may not be the first, but I will be the most elusive.\"\n\n- **A hunter who learns**: each kind of trick only fools him so many\n  times.\n- **Six difficulties**: from Cat Mode, where you play the Predator's pet\n  cat and he won't chase you, to Nightmare Mode: \"What the heck?!\n  Something has really gotten into the Predator today! His cruelty is\n  insatiable!\"\n- **Parkour**: climb, jump and slide your way around, and learn the\n  routes.\n- **Different every time**: built for replaying, and UNDO won't change\n  what the dice decided.\n\nThe game warns of violence, frequent crude language and rare mentions of\nsuicide.\n\n**Run, Prey. Run.**\n\n## How to play\n\nType what you want to do, in plain words, and press Enter:\n\n- **look**, **inventory** (or **i**), **examine** something (or **x**)\n- **north**, **south**, **east**, **west**, **up**, **down** (or **n**, **s**, **e**, **w**, **u**, **d**)\n- **take**, **drop**, **open**, **push** things; **help** or **about** in most games\n- **save** and **restore**; **quit** to stop\n\nYour saved games are kept in `~/.local/share/i-am-prey`.\n\n## Credits\n\n- I Am Prey: Joey Cramsey, 2023\n- License: Creative Commons Attribution-ShareAlike 4.0\n- Played with FrobTADS by Nikos Chantziaras, on Michael J. Roberts' TADS (TADS Freeware License)\n- Asciiverse edition: Asciiverse\n",
-   "version": "1-av.1",
-   "updated_at": "2026-10-12T22:00:00Z",
+   "version": "1-av.3",
+   "updated_at": "2026-11-03T21:23:54Z",
    "thumbnail_at": 32.7,
    "cast_url": "/casts/i-am-prey.cast?v=1791906527",
    "duration": 36.8,
@@ -7593,8 +7656,8 @@
     "source": "github"
    },
    "page": "**YOU SAID YOU COULD TAKE HIM. NOW PROVE IT.**\n\nWhen you claimed you were tough enough to take on Malygris\nsingle-handedly, everyone knew you had been drinking much more than was\ngood for you. And the prince is not one to let an opportunity pass.\nBefore you could so much as protest, his court mage opened a portal and\nyou were shoved through. Predictably, the portal immediately\ndisappeared.\n\nSo here you are in the dungeon of Kerkerkruip, with a weapon or two,\nthree packages of ment (a powerful and highly addictive drug) and a\nboast to make good on: kill Malygris, the Wizard of Kerkerkruip!\n\nThe dungeon is built new every game (\"Placing epic treasures (well, you\nhope)...\"). Kill a monster with a level and you absorb its soul: it\nheals you, makes you stronger and grants you its power. But a new soul\ndrives out every soul of the same level or lower, so the order you kill\nin matters. Fights are tactical, with attacks, parries, dodges, blocks\nand rolls, and a tension that rises the longer a fight drags on.\n\n- **Permanent death**: no undo (\"it would take all tension out of the\n  game\"); the game saves itself every turn.\n- **A coffee-break roguelike**: short games, in Victor Gijsbers' own\n  words.\n- **Temples and gods**: sacrifice your powers for a god's favour.\n\n**Absorb their souls. Find the wizard. Keep your boast.**\n\n## How to play\n\nType what you want to do, in plain words, and press Enter:\n\n- **look**, **inventory** (or **i**), **examine** something (or **x**)\n- **north**, **south**, **east**, **west**, **up**, **down** (or **n**, **s**, **e**, **w**, **u**, **d**)\n- **take**, **drop**, **open**, **push** things; **help** or **about** in most games\n- the game saves itself every turn and picks up where you left off; **quit** to stop\n\nYour game in progress is kept in `~/.local/share/kerkerkruip`.\n\n## Credits\n\n- Kerkerkruip: Victor Gijsbers and contributors, 2011 to 2014\n- License: GNU GPL version 3 or later; the source is kept in theasciiverse/stories\n- Played with Glulxe and GlkTerm by Andrew Plotkin (MIT)\n- Asciiverse edition: Asciiverse\n",
-   "version": "1-av.1",
-   "updated_at": "2026-10-12T22:00:00Z",
+   "version": "1-av.3",
+   "updated_at": "2026-11-03T21:23:54Z",
    "thumbnail_at": 18.9,
    "cast_url": "/casts/kerkerkruip.cast?v=1791906527",
    "duration": 28.0,
@@ -8015,8 +8078,8 @@
     "source": "github"
    },
    "page": "**PIG LOST! BOSS SAY IT GRUNK FAULT.**\n\n\"Boss say Grunk go find pig, bring it back. Him say, if Grunk not bring\nback pig, not bring back Grunk either.\" So Grunk, an orc with a torch\nand a pair of pants, sets off after the pig into the dark woods, and\nbefore long under the ground, where a gnome and a lot of old things are\nwaiting.\n\nEvery word of it is Grunk's own, and Grunk has thoughts. On the pig: \"Pig\npink and chubby. Look tasty. Pig maybe smart, but Grunk catch pig. So\nthat mean Grunk more smart.\" On temptation: \"Pig maybe tasty, but Grunk\nhave job. That job: not eat pig.\"\n\nAdmiral Jota's Lost Pig (And Place Under Ground) won the 2007\nInteractive Fiction Competition and Best Game at the 2007 XYZZY Awards.\n\n**Find pig. Bring pig back. Not eat pig.**\n\n## How to play\n\nType what you want to do, in plain words, and press Enter:\n\n- **look**, **inventory** (or **i**), **examine** something (or **x**)\n- **north**, **south**, **east**, **west**, **up**, **down** (or **n**, **s**, **e**, **w**, **u**, **d**)\n- **take**, **drop**, **open**, **push** things; **help** or **about** in most games\n- **save** and **restore**; **quit** to stop\n\nYour saved games are kept in `~/.local/share/lost-pig`.\n\n## Credits\n\n- Lost Pig: Admiral Jota, 2007\n- License: Creative Commons Attribution-NonCommercial-NoDerivs 3.0\n- Played with Frotz by David Griffith and contributors (GPL-2.0-or-later)\n- Asciiverse edition: Asciiverse\n",
-   "version": "1-av.1",
-   "updated_at": "2026-10-12T22:00:00Z",
+   "version": "1-av.3",
+   "updated_at": "2026-11-03T21:23:54Z",
    "thumbnail_at": 13.8,
    "cast_url": "/casts/lost-pig.cast?v=1791906527",
    "duration": 20.1,
@@ -11865,8 +11928,8 @@
     "source": "github"
    },
    "page": "**THIS CLASS TAKES THE BISCUIT.**\n\n\"You've heard about them from others. You've even had them yourself: classes that seem to last forever. But this one takes the biscuit.\"\n\nCeltic Elements in Early Teutonic Settlements: \"a field of study so narrow and boring, you'd wonder they would award doctorates in it.\" The professor drones on about the settling instincts of early German nomad tribes, your elevenses are finished, and the large and heavy double doors at the top of the hall are calling you. Surely there is something better to do with your time?\n\nThere is. Slip out, and you find a world of magic that has gone badly wrong. The title means \"Renaissance Repressed\": Michael J. Coyne wanted to capture a Wizards Guild suppressing a magical society on the verge of breaking through into the age of reason.\n\n- **A long, good-humoured puzzle adventure**, written for the 2003 Interactive Fiction Competition and updated in 2006 and 2017.\n- **British to the bone**: \"carcase\" is spelled correctly, the author assures you, and the ground floor is not the first floor.\n- **Help built in**: type **HELP** if you are new to text adventures, or **ABOUT** for the author's notes.\n\n**CLASS DISMISSED.**\n\n## How to play\n\nType what you want to do, in plain words, and press Enter:\n\n- **look**, **inventory** (or **i**), **examine** something (or **x**)\n- **north**, **south**, **east**, **west**, **up**, **down** (or **n**, **s**, **e**, **w**, **u**, **d**)\n- **take**, **drop**, **open**, **push** things; **help** or **about** in most games\n- **save** and **restore**; **quit** to stop\n\nYour saved games are kept in `~/.local/share/risorgimento-represso`.\n\n## Credits\n\n- Risorgimento Represso: Michael J. Coyne, 2003, 2006 and 2017\n- License: Creative Commons Attribution-NoDerivs-NonCommercial 1.0\n- Played with Frotz by David Griffith and contributors (GPL-2.0-or-later)\n- Asciiverse edition: Asciiverse\n",
-   "version": "1-av.1",
-   "updated_at": "2026-10-12T22:00:00Z",
+   "version": "1-av.3",
+   "updated_at": "2026-11-03T21:23:54Z",
    "thumbnail_at": 15.4,
    "cast_url": "/casts/risorgimento-represso.cast?v=1791906527",
    "duration": 22.8,
@@ -12239,8 +12302,8 @@
     "source": "github"
    },
    "page": "**BEEP. BEEP. BEEP.**\n\n\"Alarm clock. Next to bed. Make it stop.\" That is how your day begins,\non a futon, after a dream in which a dog called Rover puffed a stubby\ncigar under a dealer's hat and played poker with Isaac Asimov and the\ncleaning lady. Just an ordinary morning: get up, get dressed, get on\nwith things.\n\nExcept that before any of it starts, two voices are talking. Janet and\nDavid are hooked in, testing a program called the ACU, and somewhere out\nthere a mission called MARSpace is waiting to launch. \"A program is\nnever finished,\" says Janet, \"but I think we're ready to go.\" Every\ncommand you type comes back logged like a line of machine code.\n\n- **A puzzle in the telling:** what you do in the morning and what is\n  really happening are two different stories, and the game wants you\n  to find the seam\n- **Funny all the way through**, from the dream to the help menu, which\n  explains adventure games to readers centuries from now\n- **The winner of the 2009 Interactive Fiction Competition**, by Jack\n  Welch and Ben Collins-Sussman\n\n**Rise and shine. You have work to do.**\n\n## How to play\n\nType what you want to do, in plain words, and press Enter:\n\n- **look**, **inventory** (or **i**), **examine** something (or **x**)\n- **north**, **south**, **east**, **west**, **up**, **down** (or **n**, **s**, **e**, **w**, **u**, **d**)\n- **take**, **drop**, **open**, **push** things; **help** or **about** in most games\n- **save** and **restore**; **quit** to stop\n\nYour saved games are kept in `~/.local/share/rovers-day-out`.\n\n## Credits\n\n- Rover's Day Out: Jack Welch and Ben Collins-Sussman, 2009\n- License: Creative Commons Attribution-Noncommercial-Share Alike 3.0\n- Played with Glulxe and GlkTerm by Andrew Plotkin (MIT)\n- Asciiverse edition: Asciiverse\n",
-   "version": "1-av.1",
-   "updated_at": "2026-10-12T22:00:00Z",
+   "version": "1-av.3",
+   "updated_at": "2026-11-03T21:23:54Z",
    "thumbnail_at": 17.1,
    "cast_url": "/casts/rovers-day-out.cast?v=1791906527",
    "duration": 24.5,
@@ -12552,8 +12615,8 @@
     "source": "github"
    },
    "page": "**YOU ARE CHARMING, WELL DRESSED AND COMPLETELY BROKE.**\n\n\"The beautiful life is always damned, they say.\" Fifteen years of\nchampagne, carriage rides in the Tuileries and getting elegant ladies\nout of elegant fixes, and now your creditors want paying. You came to\nthe Count's chateau to ask for an advance. But the Count has not been\nhome in months, Marie has vanished, and they have even turned off the\ncook. So you slipped in through a gap in the kitchen garden wall, with\na dashing hat, a swordstick and a snuffbox. You will just have to find\nwhat you can.\n\nEmily Short calls it \"an interactive search for loot\", and you have a\nrare talent for it. **LINK** two similar things, the\nsnuffbox to a small yellow box, say, and whatever you do to one happens\nto the other. **REMEMBER** brings back your memories of what you find.\nPut the two together, and the empty house starts to give up its\nsecrets.\n\n- **Four XYZZY Awards** in 2002: Best Game, Best Story, Best Puzzles\n  and Best Player Character\n- **An old-fashioned puzzle game**, in the author's own words, set in\n  an alternate France of the early 1780s\n- **Cruel, and proud of it:** you can lock yourself out of winning, so\n  save often\n\n**Mind your manners. Help yourself to everything.**\n\n## How to play\n\nType what you want to do, in plain words, and press Enter:\n\n- **look**, **inventory** (or **i**), **examine** something (or **x**)\n- **north**, **south**, **east**, **west**, **up**, **down** (or **n**, **s**, **e**, **w**, **u**, **d**)\n- **take**, **drop**, **open**, **push** things; **help** or **about** in most games\n- **save** and **restore**; **quit** to stop\n\nYour saved games are kept in `~/.local/share/savoir-faire`.\n\n## Credits\n\n- Savoir-Faire: Emily Short, 2002 to 2004\n- License: Creative Commons Attribution-NoDerivs-NonCommercial 1.0\n- Played with Frotz by David Griffith and contributors (GPL-2.0-or-later)\n- Asciiverse edition: Asciiverse\n",
-   "version": "1-av.1",
-   "updated_at": "2026-10-12T22:00:00Z",
+   "version": "1-av.3",
+   "updated_at": "2026-11-03T21:23:54Z",
    "thumbnail_at": 18.1,
    "cast_url": "/casts/savoir-faire.cast?v=1791906527",
    "duration": 26.1,
@@ -12862,8 +12925,8 @@
     "source": "github"
    },
    "page": "**TOO LATE TO SLEEP. TOO EARLY TO LEAVE.**\n\n\"Odd, how the light just makes your apartment gloomier.\" It is the dark\nbefore dawn and you are sprawled on the futon with gritty eyes. Your\nluggage is packed for a week in the deep desert at the Death Valley Om,\nyour ride arrives in a few hours, and there is nothing left to do but\nwait. Water the hyacinth. Check the to-do list. Get a drink; your mouth\nis dry wool.\n\nOne desk, one futon, one mirror trying to make the place look twice its\nsize. You know every inch of this room. So why does it keep looking\nless familiar?\n\n- **One room**, and everything in it matters\n- **Short and best played cold:** the less you know going in, the better\n  it works\n- **By Andrew Plotkin** (credited on screen as \"Ampe R. Sand\"), coded in\n  a race for the 2000 Interactive Fiction Competition, where it placed\n  tenth\n\n**Turn on the light. See what it shows you.**\n\n## How to play\n\nType what you want to do, in plain words, and press Enter:\n\n- **look**, **inventory** (or **i**), **examine** something (or **x**)\n- **north**, **south**, **east**, **west**, **up**, **down** (or **n**, **s**, **e**, **w**, **u**, **d**)\n- **take**, **drop**, **open**, **push** things; **help** or **about** in most games\n- **save** and **restore**; **quit** to stop\n\nYour saved games are kept in `~/.local/share/shade`.\n\n## Credits\n\n- Shade: Andrew Plotkin, 2000\n- License: The author's terms: may be distributed for free, but not sold\n- Played with Frotz by David Griffith and contributors (GPL-2.0-or-later)\n- Asciiverse edition: Asciiverse\n",
-   "version": "1-av.1",
-   "updated_at": "2026-10-12T22:00:00Z",
+   "version": "1-av.3",
+   "updated_at": "2026-11-03T21:23:54Z",
    "thumbnail_at": 15.4,
    "cast_url": "/casts/shade.cast?v=1791906527",
    "duration": 22.7,
@@ -13570,8 +13633,8 @@
     "source": "github"
    },
    "page": "**HOT, FOUL, AND DARK.**\n\nHigh summer, an indoor theatre, and you crammed in neck by neck with\nyour sweaty fellow citizens. On stage Rito has just found out about\nImita's affair, one of your favourite plays, and you cannot follow a\nline of it. Aessa was supposed to meet you here. She has made excuses\nbefore, and you are trying not to think about what that might mean. Was\nthat a flash of her copper hair by the aisle?\n\nGet up. Push past the knees (\"Sit down, horse-head\"). Leave the play\nbehind, and the way out leads further than any theatre door should:\ninto world after world, each with its own logic and its own price.\n\n- **\"An Interactive Catharsis\"**, as the title screen calls it, and a\n  story about distance and what it takes to close it\n- **Rated \"cruel\" by its own author:** you can make mistakes that stop\n  you winning, so save often and keep your old saves\n- **Andrew Plotkin's 1996 game**, nominated in that year's XYZZY Awards\n\n**The play is in its final act. Yours is just starting.**\n\n## How to play\n\nType what you want to do, in plain words, and press Enter:\n\n- **look**, **inventory** (or **i**), **examine** something (or **x**)\n- **north**, **south**, **east**, **west**, **up**, **down** (or **n**, **s**, **e**, **w**, **u**, **d**)\n- **take**, **drop**, **open**, **push** things; **help** or **about** in most games\n- **save** and **restore**; **quit** to stop\n\nYour saved games are kept in `~/.local/share/so-far`.\n\n## Credits\n\n- So Far: Andrew Plotkin, 1996\n- License: The author's terms: it may be copied, distributed and played freely\n- Played with Frotz by David Griffith and contributors (GPL-2.0-or-later)\n- Asciiverse edition: Asciiverse\n",
-   "version": "1-av.1",
-   "updated_at": "2026-10-12T22:00:00Z",
+   "version": "1-av.3",
+   "updated_at": "2026-11-03T21:23:54Z",
    "thumbnail_at": 13.9,
    "cast_url": "/casts/so-far.cast?v=1791906527",
    "duration": 20.1,
@@ -13690,8 +13753,8 @@
     "source": "github"
    },
    "page": "**\"DON'T BE ABSURD.\"**\n\nYou are a tourist. You have seen the grain-gold plains, the mountains,\nthe spires of the capital. And at the end of a bare brick alley you have\nfound a plain metal door with no handle, no keyhole and no sign, only a\ndull black plate in the wall beside it.\n\nThen the glaring light. You are strapped into a steel chair in a dim\nmetal room, and the man behind the desk of monitors is losing patience:\n\"You're no more a sightseer than the Old Tree in Capitol Square; and if\nyou'd had enough sense to walk away from that door, you wouldn't be\nhere.\" Now you are going to tell him how you got through it. You can\nanswer yes, no, or nothing at all. What you play is the story you tell\nhim, and he is listening very carefully.\n\n- **A spy story told under interrogation**, where what you did and what\n  you say you did are not always the same thing\n- **\"The strangest game I know\"**, says its author, Andrew Plotkin, \"and\n  understanding what's happening is entirely your problem\"\n- **Play it straight through:** mistakes are part of the story, until\n  the point where heartbeats count\n\n**Start from the beginning. And this time, tell the truth.**\n\n## How to play\n\nType what you want to do, in plain words, and press Enter:\n\n- **look**, **inventory** (or **i**), **examine** something (or **x**)\n- **north**, **south**, **east**, **west**, **up**, **down** (or **n**, **s**, **e**, **w**, **u**, **d**)\n- **take**, **drop**, **open**, **push** things; **help** or **about** in most games\n- **save** and **restore**; **quit** to stop\n\nYour saved games are kept in `~/.local/share/spider-and-web`.\n\n## Credits\n\n- Spider and Web: Andrew Plotkin, 1997 to 1998\n- License: The author's terms: it may be copied, distributed and played freely\n- Played with Frotz by David Griffith and contributors (GPL-2.0-or-later)\n- Asciiverse edition: Asciiverse\n",
-   "version": "1-av.1",
-   "updated_at": "2026-10-12T22:00:00Z",
+   "version": "1-av.3",
+   "updated_at": "2026-11-03T21:23:54Z",
    "thumbnail_at": 14.4,
    "cast_url": "/casts/spider-and-web.cast?v=1791906527",
    "duration": 21.0,
@@ -15375,8 +15438,8 @@
     "source": "github"
    },
    "page": "**A WHOLE VILLAGE. NOT A SOUL IN IT.**\n\nAfter the accident, you find yourself on the south beach of a small island in the Atlantic. \"The immensity of the Atlantic Ocean makes you feel minuscule, a needle in a haystack, with no chance of being rescued.\" So rescue yourself. Catch a fish. Light a fire with the last of your wet matches. Rig yourself a bed for the night.\n\nThen climb the hill, and find what nobody should find on a deserted island: a dozen buildings, a pub, a storehouse, a radio tower, and a tall white house behind a fence, its metal door locked with a keypad. On the notice board, the community garden rota is filled in every day until February 18th. After that, nobody signs up at all. Strange.\n\nYou are not entirely alone, though. There is an albatross, and it seems to know exactly what it is doing.\n\n- **An old-school adventure**: explore, map, puzzle and survive, written in 2020 in the style of the 1980s Infocom games and for the very same Z-machine they ran on\n- **A mystery to unpick**: get the radio working, get past the keypad, and find out why everyone left\n- **A friend with wings**: share your catch, and the albatross may return the favour\n\n## How to play\n\nType what you want to do, in plain words, and press Enter:\n\n- **look**, **inventory** (or **i**), **examine** something (or **x**)\n- **north**, **south**, **east**, **west**, **up**, **down** (or **n**, **s**, **e**, **w**, **u**, **d**)\n- **take**, **drop**, **open**, **push** things; **help** or **about** in most games\n- **save** and **restore**; **quit** to stop\n\nYour saved games are kept in `~/.local/share/tristam-island`.\n\n## Credits\n\n- Tristam Island: Hugo Labrande, 2020\n- License: Released as open source under CC0 1.0 by the author in 2023\n- Played with Frotz by David Griffith and contributors (GPL-2.0-or-later)\n- Asciiverse edition: Asciiverse\n",
-   "version": "1-av.1",
-   "updated_at": "2026-10-12T22:00:00Z",
+   "version": "1-av.3",
+   "updated_at": "2026-11-03T21:23:54Z",
    "thumbnail_at": 14.3,
    "cast_url": "/casts/tristam-island.cast?v=1791906527",
    "duration": 20.8,
