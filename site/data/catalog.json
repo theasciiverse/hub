@@ -9876,6 +9876,71 @@
    },
    "news": []
   },
+  "nlarn": {
+   "schema_version": 1,
+   "id": "nlarn",
+   "kind": "game",
+   "title": "NLarn",
+   "description": "Larn, rewritten: your daughter is dying, the cure lies in the volcano below the caverns of Larn, and time is short. The story of the 1986 classic, with play brought up to date.",
+   "year": 2009,
+   "license": "GPL-3.0-or-later",
+   "repo": "theasciiverse/nlarn",
+   "provenance": "Joachim de Groot began NLarn in 2009 as a rewrite of Noah Morgan's Larn (1986), keeping the story and atmosphere of Larn 12.3 and taking a little from Phil Cordier's ULarn, and he has worked on it ever since.",
+   "changes": "PATCHES.md",
+   "topics": [
+    "roguelike",
+    "larn",
+    "fantasy",
+    "time limit",
+    "town",
+    "dungeon",
+    "mouse",
+    "translated"
+   ],
+   "genre": "roguelike",
+   "developer": {
+    "name": "Joachim de Groot",
+    "url": "https://nlarn.github.io/"
+   },
+   "upstream": {
+    "name": "Joachim de Groot",
+    "url": "https://github.com/nlarn/nlarn"
+   },
+   "exec": {
+    "game": "nlarn",
+    "args": []
+   },
+   "min_terminal": {
+    "cols": 80,
+    "rows": 24
+   },
+   "requires": {
+    "utf8": true,
+    "color": "256",
+    "mouse": true
+   },
+   "media": {
+    "cast": "asciiverse/nlarn.cast",
+    "thumbnail_at": 9.0
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**SAVE YOUR DAUGHTER. THE CLOCK IS RUNNING.**\n\nYour daughter has caught dianthroritis, and no doctor can help. The only\nhope is a potion hidden deep in the volcano below the caverns of Larn,\nwhere dragons and demons wait. You will not survive the volcano as you\nare: first go down into the caverns, fight, gather gems and gold, and\nspend them in town on the equipment that might keep you alive.\n\nAnd all the while time passes. Every turn counts towards the day the\ndoctor can no longer help her.\n\nNLarn is Larn, the 1986 roguelike, rewritten. The story and atmosphere\nare the original's; the play is new: monsters that keep their distance\nand shoot, allies that fight beside you, townsfolk who come to your aid,\nweapons to enchant or poison, new spells, auto-travel, and full mouse\nplay. In English, German, French, Spanish and Portuguese.\n\n## Controls\n\n- **h j k l y u b n** or the keypad: move and attack; **H J K L Y U B N**: run\n- **v**: travel to a place you name by its symbol (**O** for the caverns);\n  **V**: carry on travelling\n- **>** and **<**: go down, go up, or enter a building\n- **i**: inventory; **,**: pick up; **W**: wear or wield; **c**: cast a spell\n- **q**: drink; **r**: read; **f**: fire; **t**: throw\n- **?** or **F1**: help with every key; **Ctrl+Q**: quit\n- **Mouse**: click to travel or attack\n\n## Credits\n\n- NLarn: [Joachim de Groot](https://nlarn.github.io/)\n- Larn: Noah Morgan, 1986; ULarn: Phil Cordier\n- License: GPL-3.0-or-later\n",
+   "version": "0.8.0+20261003-av.1",
+   "updated_at": "2026-11-03T19:40:59Z",
+   "thumbnail_at": 9.0,
+   "cast_url": "/casts/nlarn.cast?v=1793735160",
+   "duration": 27.4,
+   "platforms": {
+    "x86_64-unknown-linux-musl": {
+     "url": "/dev-releases/nlarn/nlarn-x86_64-unknown-linux-musl.tar.gz",
+     "sha256": "5594a1b90f44461fab74f9448f0a9f56fd48173221edd1d0913a52d2b3842aa8",
+     "size": 1205761
+    }
+   },
+   "news": []
+  },
   "nsnake": {
    "schema_version": 1,
    "id": "nsnake",
@@ -11389,25 +11454,25 @@
    },
    "media": {
     "cast": "asciiverse/rattys-runner.cast",
-    "thumbnail_at": 8.0
+    "thumbnail_at": 6.0
    },
    "release": {
     "source": "github"
    },
-   "page": "**ONE SMALL MOUSE. ONE LONG ROAD. AND IT ONLY GETS FASTER.**\n\nThe Xfce mouse has somewhere to be, and the road there twists and climbs through four very different places. Out over the meadow path between trees and toadstools, across the kitchen counter past jars and mugs, down the night lane under the stars and the lamplight, and into the moonlit drain.\n\nThree lanes, and things in all of them. Some are low, some are high, some are holes in the road, and the mouse can do something about every one of them, if you are quick:\n\n- **Jump** the logs, mousetraps, crates and pipes, and leap the puddles, the sink, the potholes and the channels\n- **Slide** under the branches, the rolling pins, the barriers and the overhead pipes\n- **Change lanes** to slip past, or to grab the cheese, worth five metres apiece\n- **Three lives**: the mouse can take a knock or two, but not three\n- **Faster and busier** the further you get, with roads blocked two lanes wide later on\n- **Your best run is kept**\n\n## Controls\n\n- **Left / Right** or **A / D**: change lane\n- **Up**, **Space** or **W**: jump\n- **Down** or **S**: slide\n- **P** pause, **M** sound on or off, **R** run again, **Q** or **Esc** quit\n\n## Options\n\n- `--mute`: start with the sound off\n- `--demo`: let the computer run\n\n## Credits\n\n- Ratty's Runner: Asciiverse\n- Started from ozzyocak's Ratty Runner, made for Orhun Parmaksız's Ratty terminal (MIT)\n- The mouse is the Xfce project's mascot\n- License: MIT\n",
+   "page": "**ONE SMALL MOUSE. ONE LONG ROAD. AND IT ONLY GETS FASTER.**\n\nThe Xfce mouse has somewhere to be, and the road there twists and climbs through four very different places. Out over the meadow path between trees and toadstools, across the kitchen counter past jars and mugs, down the night lane under the stars and the lamplight, and into the moonlit drain.\n\nDraw it your way: in **clean lines on black**, the road traced in fine strokes and the mouse in line art, or **painted** in full colour with sky, grass and trees. Press V to switch.\n\nThree lanes, and things in all of them. Some are low, some are high, some are holes in the road, and the mouse can do something about every one of them, if you are quick:\n\n- **Jump** the logs, mousetraps, crates and pipes, and leap the puddles, the sink, the potholes and the channels\n- **Slide** under the branches, the rolling pins, the barriers and the overhead pipes\n- **Change lanes** to slip past, or to grab the cheese, worth five metres apiece\n- **Three lives**: the mouse can take a knock or two, but not three\n- **Faster and busier** the further you get, with roads blocked two lanes wide later on\n- **Your best run is kept**\n\n## Controls\n\n- **Left / Right** or **A / D**: change lane\n- **Up**, **Space** or **W**: jump\n- **Down** or **S**: slide\n- **P** pause, **M** sound on or off, **V** lines or painted, **R** run again, **Q** or **Esc** quit\n\n## Options\n\n- `--mute`: start with the sound off\n- `--demo`: let the computer run\n- `--painted`: start in the painted look\n\n## Credits\n\n- Ratty's Runner: Asciiverse\n- Started from ozzyocak's Ratty Runner, made for Orhun Parmaksız's Ratty terminal (MIT)\n- The mouse is the Xfce project's mascot\n- License: MIT\n",
    "system_deps": [
     "libasound2"
    ],
-   "version": "0.1.0",
-   "updated_at": "2026-11-03T18:48:02Z",
-   "thumbnail_at": 8.0,
-   "cast_url": "/casts/rattys-runner.cast?v=1793731682",
+   "version": "0.2.1",
+   "updated_at": "2026-11-03T19:29:21Z",
+   "thumbnail_at": 6.0,
+   "cast_url": "/casts/rattys-runner.cast?v=1793734161",
    "duration": 40.1,
    "platforms": {
     "x86_64-unknown-linux-gnu": {
      "url": "/dev-releases/rattys-runner/rattys-runner-x86_64-unknown-linux-gnu.tar.gz",
-     "sha256": "b0e2c3cb73952ce7ac24eaf75505bf573d80bd38cc3c075e1dda564712c6d4ff",
-     "size": 940989
+     "sha256": "47225c48c964b7bd58d2e04937064d7a2178bbaf9ced39d4b3005dca6fd3783e",
+     "size": 961015
     }
    },
    "news": []

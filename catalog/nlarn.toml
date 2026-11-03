@@ -1,0 +1,48 @@
+schema_version = 1
+id = "nlarn"
+kind = "game"
+title = "NLarn"
+description = "Larn, rewritten: your daughter is dying, the cure lies in the volcano below the caverns of Larn, and time is short. The story of the 1986 classic, with play brought up to date."
+year = 2009
+license = "GPL-3.0-or-later"
+repo = "theasciiverse/nlarn"
+provenance = "Joachim de Groot began NLarn in 2009 as a rewrite of Noah Morgan's Larn (1986), keeping the story and atmosphere of Larn 12.3 and taking a little from Phil Cordier's ULarn, and he has worked on it ever since."
+changes = "PATCHES.md"
+topics = ["roguelike", "larn", "fantasy", "time limit", "town", "dungeon", "mouse", "translated"]
+genre = "roguelike"
+
+[developer]
+name = "Joachim de Groot"
+url = "https://nlarn.github.io/"
+
+# NLarn's terminal edition from its master branch (0.8.0 and the fixes
+# after it); PATCHES.md in theasciiverse/nlarn
+[upstream]
+name = "Joachim de Groot"
+url = "https://github.com/nlarn/nlarn"
+
+# settings and saves in ~/.nlarn; follows the system language (English,
+# German, French, Spanish, Portuguese)
+[exec]
+game = "nlarn"
+args = []
+
+# its screen is 80 columns, the messages in the last rows
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = true
+color = "256"
+mouse = true
+
+# 100x30, asciiverse/record-preview.sh: the story, a new game, auto-travel
+# across town to the caverns, and a first look round level 1; the still is
+# the town with the cavern entrance reached
+[media]
+cast = "asciiverse/nlarn.cast"
+thumbnail_at = 9.0
+
+[release]
+source = "github"
