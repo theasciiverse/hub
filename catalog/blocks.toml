@@ -1,0 +1,48 @@
+schema_version = 1
+id = "blocks"
+kind = "game"
+title = "Blocks"
+description = "Push the blocks, mind the gravity, eat the sweets and reach the exit: a side-on maze where you can jump, doors only open one way, and the walls wrap around. With a level editor."
+year = 1999
+license = "GPL-1.0-or-later"
+repo = "theasciiverse/blocks"
+provenance = "Marc Welz wrote Blocks at the University of Cape Town in the 1990s; Ovis added levels and carried it to the AT&T UNIX PC, Joey Hess gave it a pyramid level and its man pages, and it went up on sunsite in March 1999."
+changes = "PATCHES.md"
+topics = ["puzzle", "block pushing", "gravity", "maze", "level editor", "sokoban-like", "classic", "sunsite"]
+genre = "puzzle"
+
+[developer]
+name = "Marc Welz"
+url = "https://www.ibiblio.org/pub/Linux/games/strategy/"
+
+# block 0.6 from sunsite (now ibiblio games/strategy), never packaged by a
+# distribution; levels beside the binary, scores, progress and own levels
+# in ~/.local/share/blocks; PATCHES.md in theasciiverse/blocks
+[upstream]
+name = "Marc Welz, Ovis"
+url = "https://www.ibiblio.org/pub/Linux/games/strategy/block-0.6.lsm"
+
+# the level editor ships beside it as bed (bed <name>)
+[exec]
+game = "block"
+args = []
+
+# the levels are 78x23 and the game wants a cell of room around them
+[min_terminal]
+cols = 80
+rows = 25
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, asciiverse/record-preview.sh: level 1 at a person's pace, down
+# the shaft, a jump onto the blocks for a sweet, the upper blocks knocked
+# down and the fallen row of six pushed along; the still is that push
+[media]
+cast = "asciiverse/blocks.cast"
+thumbnail_at = 24.0
+
+[release]
+source = "github"
