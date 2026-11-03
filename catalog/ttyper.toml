@@ -5,6 +5,7 @@ title = "ttyper"
 description = "A typing test for the terminal: type the words, then see your speed, your accuracy and the keys that tripped you up. English and a dozen other languages, or code in a dozen programming languages."
 year = 2021
 license = "MIT"
+funding = "https://github.com/sponsors/max-niederman"   # from the makers' own FUNDING.yml or Sponsors profile (2026-11-03)
 repo = "theasciiverse/ttyper"
 provenance = "Max Niederman started ttyper in Rust in 2021, and contributors have added languages and modes since."
 changes = "PATCHES.md"

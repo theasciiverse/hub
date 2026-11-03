@@ -4,6 +4,7 @@ kind = "program"
 title = "Blightmud"
 description = "A modern terminal MUD client in Rust: Lua scripting for triggers, aliases and plugins, GMCP and MSDP, TLS, sound, and a screen reader mode."
 license = "GPL-3.0-only"
+funding = "https://ko-fi.com/LiquidityC"   # from the makers' own FUNDING.yml or Sponsors profile (2026-11-03)
 repo = "theasciiverse/blightmud"
 provenance = "Blightmud is Linus Probert's MUD client in Rust, developed with its contributors on GitHub."
 changes = "PATCHES.md"            # what Asciiverse changed, a path in repo

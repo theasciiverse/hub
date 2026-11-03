@@ -5,6 +5,7 @@ title = "FroxComposband"
 description = "The great kitchen-sink Angband variant: dozens of races and classes, monster races you can play as, a wilderness above the dungeons and a deep descent to Serpent, carried on with fixes and loads of polish."
 year = 2018
 license = "LicenseRef-Free-Noncommercial"
+funding = "https://github.com/sponsors/Gliktch"   # from the makers' own FUNDING.yml or Sponsors profile (2026-11-03)
 repo = "theasciiverse/froxcomposband"
 provenance = "sulkasormi made FrogComposband in 2018 from PosChengband, itself grown from Hengband, Zangband and Angband; in 2026 Gliktch forked it as FroxComposband to keep it going."
 changes = "PATCHES.md"

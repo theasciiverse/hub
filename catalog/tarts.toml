@@ -5,6 +5,7 @@ title = "tarts"
 description = "Twelve classic terminal effects on an endless tour: digital rain, the spinning donut, plasma, fire, flocking boids, the Game of Life and more, twenty seconds each."
 year = 2022
 license = "MIT"
+funding = "https://github.com/sponsors/oiwn"   # from the makers' own FUNDING.yml or Sponsors profile (2026-11-03)
 repo = "theasciiverse/tarts"
 provenance = "tarts (Terminal Arts) is by oiwn and contributors, in Rust, since 2022."
 changes = "PATCHES.md"

@@ -1826,6 +1826,7 @@
    "title": "Blightmud",
    "description": "A modern terminal MUD client in Rust: Lua scripting for triggers, aliases and plugins, GMCP and MSDP, TLS, sound, and a screen reader mode.",
    "license": "GPL-3.0-only",
+   "funding": "https://ko-fi.com/LiquidityC",
    "repo": "theasciiverse/blightmud",
    "provenance": "Blightmud is Linus Probert's MUD client in Rust, developed with its contributors on GitHub.",
    "changes": "PATCHES.md",
@@ -3586,6 +3587,7 @@
    "description": "Five letters, six tries, one hidden word: the colours flip one by one, the on-screen keyboard keeps track, and every game adds to your running score.",
    "year": 2022,
    "license": "MIT",
+   "funding": "https://github.com/sponsors/ajeetdsouza",
    "repo": "theasciiverse/clidle",
    "provenance": "Ajeet D'Souza wrote clidle, a terminal word-guessing game, in Go in 2022 and still maintains it.",
    "changes": "PATCHES.md",
@@ -5738,6 +5740,7 @@
    "description": "The great kitchen-sink Angband variant: dozens of races and classes, monster races you can play as, a wilderness above the dungeons and a deep descent to Serpent, carried on with fixes and loads of polish.",
    "year": 2018,
    "license": "LicenseRef-Free-Noncommercial",
+   "funding": "https://github.com/sponsors/Gliktch",
    "repo": "theasciiverse/froxcomposband",
    "provenance": "sulkasormi made FrogComposband in 2018 from PosChengband, itself grown from Hengband, Zangband and Angband; in 2026 Gliktch forked it as FroxComposband to keep it going.",
    "changes": "PATCHES.md",
@@ -9704,6 +9707,7 @@
    "description": "Fresh sudoku every time, easy, normal or hard, with marks that show where a number can still go, hints, undo and a saved game.",
    "year": 2014,
    "license": "GPL-3.0-or-later",
+   "funding": "https://github.com/sponsors/jubalh",
    "repo": "theasciiverse/nudoku",
    "provenance": "Michael Vetter (jubalh) has written nudoku in C and ncurses since 2014, with contributors adding translations.",
    "changes": "PATCHES.md",
@@ -13600,6 +13604,7 @@
    "description": "Twelve classic terminal effects on an endless tour: digital rain, the spinning donut, plasma, fire, flocking boids, the Game of Life and more, twenty seconds each.",
    "year": 2022,
    "license": "MIT",
+   "funding": "https://github.com/sponsors/oiwn",
    "repo": "theasciiverse/tarts",
    "provenance": "tarts (Terminal Arts) is by oiwn and contributors, in Rust, since 2022.",
    "changes": "PATCHES.md",
@@ -14087,6 +14092,7 @@
    "year": 2026,
    "new": true,
    "license": "MIT",
+   "funding": "https://buymeacoffee.com/jasonfen",
    "repo": "theasciiverse/terminal-space-program",
    "provenance": "jasonfen began Terminal Space Program in April 2026, in Go, to bring Kerbal Space Program to the terminal; its solar-system foundation comes from Francis' go-solar-system.",
    "changes": "PATCHES.md",
@@ -14846,6 +14852,7 @@
    "description": "A typing test for the terminal: type the words, then see your speed, your accuracy and the keys that tripped you up. English and a dozen other languages, or code in a dozen programming languages.",
    "year": 2021,
    "license": "MIT",
+   "funding": "https://github.com/sponsors/max-niederman",
    "repo": "theasciiverse/ttyper",
    "provenance": "Max Niederman started ttyper in Rust in 2021, and contributors have added languages and modes since.",
    "changes": "PATCHES.md",
@@ -16525,8 +16532,8 @@
   }
  },
  "av": {
-  "version": "0.9.10",
-  "date": "2026-10-30",
-  "notes": "- Titles that left the catalog stay in the list, under \"No longer in\n  the catalog\", to play or uninstall\n- Searching and drawing the list does far less work each frame"
+  "version": "0.9.11",
+  "date": "2026-11-03",
+  "notes": "- A title can keep stderr on the terminal (`stderr = \"terminal\"` in\n  its `[exec]`), for titles that draw there or need it to be a terminal;\n  found by hub's smoke test (typespeed, clidle, warp)"
  }
 }

@@ -109,14 +109,15 @@ function tile(t, { hover = true, at } = {}) {
   return box;
 }
 
-// where donations go; neither page exists yet (checked 2026-10-13: no
-// Sponsors listing on theasciiverse, Patreon name not chosen)
+// where donations to Asciiverse go: the header's Support menu, the footer
+// and support.html read this list
 const SUPPORT = [
   ["GitHub Sponsors", "https://github.com/sponsors/theasciiverse", "monthly or one-time"],
   ["Patreon", "https://www.patreon.com/asciiverse", "monthly membership"],
 ];
 const supportLinks = () => SUPPORT.map(([n, u, d]) =>
-  `<a href="${u}" target="_blank" rel="noopener"><b>${n}</b><span>${d}</span></a>`).join("");
+  `<a href="${u}" target="_blank" rel="noopener"><b>${n}</b><span>${d}</span></a>`).join("")
+  + `<a href="support.html"><b>More ways to help</b><span>and the makers' own pages</span></a>`;
 
 function header(active, sub = "home") {
   const nav = [["index.html", "Catalog"], ["get-av.html", "Get av"], ["history.html", "History"], ["submit.html", "Submit a title"]];
@@ -149,8 +150,8 @@ function footer() {
   <footer class="foot"><div class="wrap">
     <div class="ascii">${LOGO}</div>
     <div>A home for terminal games and programs.<br>Funded by donations, built in the open.</div>
-    <div><a href="get-av.html">Get av</a><br><a href="submit.html">Submit your game</a><br><a href="#">Recording guide</a><br><a href="#">Catalog format</a></div>
-    <div><a href="#">av on GitHub</a><br><a href="#">hub on GitHub</a><br>Support: ${SUPPORT.map(([n, u]) => `<a href="${u}" target="_blank" rel="noopener">${n}</a>`).join(" · ")}</div>
+    <div><a href="get-av.html">Get av</a><br><a href="submit.html">Submit your game</a><br><a href="https://github.com/theasciiverse/hub/blob/master/RECORDING.md">Recording guide</a><br><a href="https://github.com/theasciiverse/hub/blob/master/catalog/SCHEMA.md">Catalog format</a></div>
+    <div><a href="https://github.com/theasciiverse/av">av on GitHub</a><br><a href="https://github.com/theasciiverse/hub">hub on GitHub</a><br><a href="support.html">Support</a>: ${SUPPORT.map(([n, u]) => `<a href="${u}" target="_blank" rel="noopener">${n}</a>`).join(" · ")}</div>
   </div></footer>`);
 }
 

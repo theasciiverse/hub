@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support Asciiverse</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+<style>
+  .sup-hero { margin-top: 22px; border: 1px solid var(--line); background: var(--panel); padding: 26px 28px; }
+  .sup-hero h1 { margin: 0 0 12px; font: 600 30px/1.15 var(--font-mono); }
+  .sup-hero h1 span { color: var(--amber); }
+  .sup-hero p { margin: 0 0 10px; color: var(--text-dim); max-width: 70ch; font-size: 15px; line-height: 1.6; }
+
+  .ways { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .way { background: var(--panel); border: 1px solid var(--line); padding: 18px 20px; display: flex; flex-direction: column; }
+  .way h3 { margin: 0 0 4px; font: 600 16px var(--font-mono); color: var(--green-hi); }
+  .way .how { font: 12px var(--font-mono); color: var(--text-faint); margin-bottom: 10px; }
+  .way p { color: var(--text-dim); font-size: 13.5px; line-height: 1.55; margin: 0 0 10px; }
+  .way .btn-av { align-self: flex-start; margin-top: auto; font: 600 12px/1 var(--font-mono); padding: 8px 12px; border-radius: var(--radius); }
+
+  .card { background: var(--panel); border: 1px solid var(--line); padding: 16px 18px; }
+  .card p, .card li { color: var(--text-dim); font-size: 13.5px; line-height: 1.55; }
+  .card p { margin: 0 0 8px; }
+  .card ul { margin: 0; padding-left: 18px; }
+  .card li { margin-bottom: 4px; }
+
+  .makers { columns: 3 220px; column-gap: 18px; margin: 0; padding: 0; list-style: none; }
+  .makers li { break-inside: avoid; padding: 5px 0; border-bottom: 1px solid var(--line); font-size: 13.5px; }
+  .makers a.t { color: var(--text); }
+  .makers a.f { color: var(--amber-soft); font: 12px var(--font-mono); margin-left: 6px; }
+  .makers .by { display: block; color: var(--text-faint); font-size: 12px; }
+
+  @media (max-width: 900px) { .ways { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<main id="app"></main>
+<script src="js/site.js"></script>
+<script>
+(async () => {
+  const app = document.getElementById("app");
+  app.append(header("Support", "none"));
+  const main = el(`<div class="wrap"></div>`);
+  app.append(main);
+
+  main.append(el(`<section class="sup-hero">
+    <h1>Keep the terminal <span>playing.</span></h1>
+    <p>Asciiverse is free: no accounts, no ads, no tracking, and every title in the catalog costs nothing to play. What keeps it going is time: finding games, getting them to build on every system again, fixing what broke over the years, recording their previews and writing new ones.</p>
+    <p>If Asciiverse gave you a good evening, you can help it carry on, in whichever way suits you.</p>
+  </section>`));
+
+  const [gh, pat] = SUPPORT;
+  main.append(el(`<section class="sect">
+    <div class="sect-head"><h2>Support Asciiverse</h2><span class="sub">two ways in, the same thanks</span></div>
+    <div class="ways">
+      <div class="way"><h3>${gh[0]}</h3><div class="how">${gh[2]}</div>
+        <p>For anyone with a GitHub account. GitHub takes no fee from personal sponsorships, so all of it goes to the work.</p>
+        <a class="btn-av" href="${gh[1]}" target="_blank" rel="noopener">♥ Sponsor on GitHub</a></div>
+      <div class="way"><h3>${pat[0]}</h3><div class="how">${pat[2]}</div>
+        <p>For players without GitHub. Members follow along as new titles arrive and get the news of what's coming next.</p>
+        <a class="btn-av" href="${pat[1]}" target="_blank" rel="noopener">♥ Join on Patreon</a></div>
+    </div>
+  </section>`));
+
+  main.append(el(`<section class="sect">
+    <div class="sect-head"><h2>Support the people who made the games</h2></div>
+    <div class="card"><p>Asciiverse stands on the shoulders of the people who wrote these games, and some of them take donations themselves. Each title's page links to its makers' own page when they have one. These are all of them:</p>
+      <ul class="makers" id="makers"></ul></div>
+  </section>`));
+
+  main.append(el(`<section class="sect">
+    <div class="sect-head"><h2>Other ways to help</h2></div>
+    <div class="card"><ul>
+      <li>Tell someone about a game you enjoyed here.</li>
+      <li><a href="https://github.com/theasciiverse/hub/issues/new?template=suggest-title.yml">Suggest a title</a> we should add, or <a href="submit.html">submit your own</a>.</li>
+      <li>Report what doesn't work on your machine, on the title's page on GitHub.</li>
+    </ul></div>
+  </section>`));
+
+  app.append(footer());
+
+  // every title whose makers take donations, from the catalog's funding links
+  const titles = await loadCatalog();
+  const list = document.getElementById("makers");
+  const funded = titles.filter(t => t.funding).sort((a, b) => a.title.localeCompare(b.title));
+  for (const t of funded) {
+    const by = (t.upstream && t.upstream.name) || (t.developer && t.developer.name) || "";
+    list.append(el(`<li><a class="t" href="title.html?id=${encodeURIComponent(t.id)}">${esc(t.title)}</a><a class="f" href="${esc(t.funding)}" target="_blank" rel="noopener">♥ support</a>${by ? `<span class="by">${esc(by)}</span>` : ""}</li>`));
+  }
+})();
+</script>
+</body>
+</html>

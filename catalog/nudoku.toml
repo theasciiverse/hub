@@ -5,6 +5,7 @@ title = "nudoku"
 description = "Fresh sudoku every time, easy, normal or hard, with marks that show where a number can still go, hints, undo and a saved game."
 year = 2014
 license = "GPL-3.0-or-later"
+funding = "https://github.com/sponsors/jubalh"   # from the makers' own FUNDING.yml or Sponsors profile (2026-11-03)
 repo = "theasciiverse/nudoku"
 provenance = "Michael Vetter (jubalh) has written nudoku in C and ncurses since 2014, with contributors adding translations."
 changes = "PATCHES.md"

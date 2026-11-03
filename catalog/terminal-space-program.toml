@@ -6,6 +6,7 @@ description = "A real orbital-mechanics rocket simulator in braille: fly a Satur
 year = 2026
 new = true
 license = "MIT"
+funding = "https://buymeacoffee.com/jasonfen"   # from the makers' own FUNDING.yml or Sponsors profile (2026-11-03)
 repo = "theasciiverse/terminal-space-program"
 provenance = "jasonfen began Terminal Space Program in April 2026, in Go, to bring Kerbal Space Program to the terminal; its solar-system foundation comes from Francis' go-solar-system."
 changes = "PATCHES.md"
