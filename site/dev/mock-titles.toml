@@ -88,7 +88,3 @@ id = "ncmatrix"
 # --demo, recorded by the repo's asciiverse/record-preview.sh at seed 3
 # (Mehen seed 4). All laid out for 100x30 and up; no size check below it.
 
-# a hub title (hub/catalog/termcraft.toml); only the banner is set here.
-# Added 2026-10-27: Sebastian Pagel's Termcraft 0.2.0, released 2026-10-26
-[[title]]
-id = "termcraft"
