@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Cloudflare Pages serves this for any missing address, at any depth,
+     so every link resolves from the site root -->
+<base href="/">
+<title>You can't go that way</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+<style>
+  .lost { margin-top: 22px; border: 1px solid var(--line); background: var(--panel); padding: 26px 28px; }
+  .lost h1 { margin: 0 0 8px; font: 600 30px/1.15 var(--font-mono); }
+  .lost h1 span { color: var(--amber); }
+  .lost p { margin: 0 0 10px; color: var(--text-dim); max-width: 70ch; font-size: 15px; line-height: 1.6; }
+  .scene { margin: 18px 0 6px; overflow-x: auto; }
+  .scene pre { margin: 0; font: 13px/1.25 var(--font-mono); color: var(--green); }
+  .scene b { font-weight: inherit; }
+  .scene .a { color: var(--amber); }
+  .scene .r { color: #e05a4f; }
+  .scene i { font-style: normal; color: var(--text-faint); }
+  .say { font: 14px/1.5 var(--font-mono); color: var(--text); min-height: 1.5em; margin: 14px 0 0; white-space: pre-wrap; }
+  .prompt { display: flex; align-items: center; gap: 8px; margin-top: 8px; font: 14px var(--font-mono); color: var(--green-hi); }
+  .prompt input { flex: 1; max-width: 420px; background: transparent; border: 0; border-bottom: 1px solid var(--line-2); color: var(--text); font: inherit; padding: 4px 2px; outline: none; }
+  .prompt input:focus { border-color: var(--green); }
+  .hint { font: 12px var(--font-mono); color: var(--text-faint); margin-top: 6px; }
+  .ways { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+  .ways a { font: 600 12px/1 var(--font-mono); padding: 8px 12px; border-radius: var(--radius); }
+  .ways .ghost { color: var(--text); border: 1px solid var(--line-2); }
+  .ways .ghost:hover { border-color: var(--green); color: var(--green-hi); }
+  @media (max-width: 700px) { .scene pre { font-size: 10px; } }
+</style>
+</head>
+<body>
+<main id="app"></main>
+<script src="js/site.js"></script>
+<script>
+(() => {
+  const app = document.getElementById("app");
+  app.append(header("", "none"));
+  const main = el(`<div class="wrap"></div>`);
+  app.append(main);
+
+  // the old games' ways of saying "not here", one picked at each visit
+  const LINES = [
+    "It is pitch black. You are likely to be eaten by a grue.",
+    "You can't go that way.",
+    "The wumpus got here first.",
+    "You feel a draft. The page fell into a bottomless pit.",
+    "Your ship drifted off the edge of the map.",
+    "You die... killed by a broken link. --More--",
+  ];
+  const home = (ms, text) => { setTimeout(() => (location.href = "/"), ms); return text; };
+  const ANSWERS = [
+    [/^(n|s|e|w|ne|nw|se|sw|u|d|north|south|east|west|up|down|go( .*)?|walk( .*)?)$/, () => "You can't go that way."],
+    [/^(l|look)$/, () => "A field of fallen things: a rocket buried nose first, a slime that will slime no more, an upturned tank, and you, flat on your back beside a tombstone. A path leads home."],
+    [/^(i|inv|inventory)$/, () => "You are carrying: one broken link."],
+    [/^(take|get|drink) (potion|!)$/, () => "You drink the potion. You feel much better. The page is still missing."],
+    [/^(take|get) (gold|\$)$/, () => "You pick up 404 gold pieces."],
+    [/^(take|get) .+$/, () => "You can't reach it from down here."],
+    [/^xyzzy$/, () => home(1200, "A hollow voice says: home. You are whisked away...")],
+    [/^(home|catalog|back)$/, () => home(500, "You head home.")],
+    [/^(help|\?|hint)$/, () => "Try: look, inventory, take potion, a direction, or a word some caves still answer to."],
+    [/^(quit|q|exit)$/, () => "There is no quitting, only the catalog. Type home."],
+  ];
+
+  main.append(el(`<section class="lost">
+    <h1><span>404:</span> you can't go that way</h1>
+    <p>Nothing lives at this address. It may have moved, or it was never on the map.</p>
+    <div class="scene"><pre aria-label="A graveyard of fallen games: a crashed rocket, a beaten slime, a fallen player, an upturned tank and a tombstone for this page">                                                           ___________
+                                                          /           \\
+                                                         /     REST    \\
+                                                        /       IN      \\
+   <i>~ ~</i>                                                 /      PEACE      \\
+  <i>~   ~</i>                                               |                   |
+ \\_/\\_/                                               |     this page     |
+ |    |        .-""-.                                 |    killed by a    |
+ | () |       / <b class="r">x  x</b> \\                                |    broken link    |
+ |    |      |   __   |      <b class="r">x_x</b>          (o_o_o_o)   |                   |
+  \\  /        \\ '--' /      (you)          [____]     |        <b class="a">404</b>        |
+   \\/          '----'        ) <b class="a">@</b>    !  $    ====\\     |___________________|
+_"_.,_"__.._,_"_.__"_.,_"__.._,_"_.__"_.,_"__.._,_"_.__"_.,_"__.._,_"_.__"_</pre></div>
+    <p class="say" id="say"></p>
+    <label class="prompt">&gt; <input id="cmd" autocomplete="off" spellcheck="false" aria-label="Type a command"></label>
+    <div class="hint">type a command, or help</div>
+    <div class="ways"><a class="btn-av" href="index.html">Back to the catalog</a><a class="ghost" href="history.html">Fifty years of text games</a></div>
+  </section>`));
+  app.append(footer());
+
+  const say = document.getElementById("say");
+  say.textContent = LINES[Math.floor(Math.random() * LINES.length)];
+  const cmd = document.getElementById("cmd");
+  cmd.focus({ preventScroll: true });
+  cmd.addEventListener("keydown", e => {
+    if (e.key !== "Enter") return;
+    const w = cmd.value.trim().toLowerCase().replace(/\s+/g, " ");
+    cmd.value = "";
+    if (!w) return;
+    const hit = ANSWERS.find(([re]) => re.test(w));
+    say.textContent = "> " + w + "\n" + (hit ? hit[1]() : `I don't know the word "${w.split(" ")[0]}".`);
+  });
+})();
+</script>
+</body>
+</html>
