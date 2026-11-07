@@ -15577,6 +15577,79 @@
    },
    "news": []
   },
+  "torched": {
+   "schema_version": 1,
+   "id": "torched",
+   "kind": "game",
+   "title": "Torched",
+   "description": "Tanks on the hills, the ground blown away beneath them: nukes, napalm, MIRVs, rollers, diggers and dirt, a shop between rounds, seven computer players and play over the network. Artillery the deep way, after Xscorch.",
+   "year": 2000,
+   "license": "GPL-2.0-only",
+   "repo": "theasciiverse/torched",
+   "provenance": "Justin David Smith and Jacob Luna Lundberg wrote Xscorch from 2000 to 2009, a free remake of Wendell Hicken's 1991 DOS game Scorched Earth.",
+   "changes": "CLAUDE.md",
+   "topics": [
+    "artillery",
+    "tanks",
+    "scorched-earth",
+    "hot-seat",
+    "network",
+    "braille",
+    "gamepad",
+    "rust"
+   ],
+   "genre": "artillery",
+   "developer": {
+    "name": "Asciiverse",
+    "url": "https://asciiverse.sh"
+   },
+   "upstream": {
+    "name": "Justin David Smith and Jacob Luna Lundberg",
+    "url": "https://github.com/lschierer/xscorch"
+   },
+   "exec": {
+    "game": "torched",
+    "args": []
+   },
+   "min_terminal": {
+    "cols": 80,
+    "rows": 24
+   },
+   "requires": {
+    "utf8": true,
+    "color": "truecolor",
+    "mouse": true,
+    "gamepad": true,
+    "glyphs": [
+     "braille"
+    ]
+   },
+   "media": {
+    "cast": "asciiverse/torched.cast",
+    "thumbnail_at": 20.0
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**THE HILLS ARE MADE OF DIRT. SO IS YOUR COVER.**\n\nA row of tanks on a range of hills, each waiting for its turn to fire. Set the angle, set the power, check the wind, and let it fly. A good shot takes a bite out of a rival; a great one takes the hill out from under them and lets gravity finish the job. The ground is all there is, and every shot reshapes it: craters open, loose dirt slides, tanks tumble into the holes their enemies dug.\n\nThen the shop opens, and it gets out of hand. Thirty-six weapons, straight from Xscorch: Baby Missiles and Nukes, the Leap Frog, the Funky Bomb, MIRVs and the Black Market MIRV, Death's Head, the Annihilator and The Chaos. Napalm that runs downhill into whoever sits at the bottom. Rollers that find the low ground for you. Riot charges, diggers and sandhogs that burrow under a tank before they go off, and dirt by the ton to bury someone alive. Then shields, magnetic and force fields, parachutes, fuel to drive away, batteries, a teleporter and a Triple Turret.\n\n- **Seven computer players** from Xscorch, Moron to Insanity, each buying and aiming in its own way\n- **Up to eight tanks**, people and computers mixed, taking turns or all firing at once\n- **Eight kinds of ground** and six kinds of wall: concrete, padded, rubber, spring, wrap around, or none at all\n- **Wind and air**, money and interest, and three ways to keep score\n- **Over the network**: host a game and send the ticket; friends join from anywhere, or on your own network\n- **Smooth ground in Braille**, every crater and spill drawn at sub-cell detail\n\n**Mind the wind. Buy the parachute.**\n\n## Controls\n\n- **Left** and **Right**: aim (**Shift** for big steps); **Up** and **Down**: power, **PgUp** and **PgDn** by 20\n- **Tab** and **Shift+Tab**: pick a weapon; **Space** or **Enter**: fire\n- **s**: raise a shield; **b**: use a battery; **c**: contact triggers; **a** and **d**: drive on fuel; **x**: teleport\n- **m**: sound; **q**: quit\n- Shop: **Up** and **Down** to choose, **Enter** or **Right** buys, **Left** sells, **Tab** switches between weapons and accessories, **Space** is done\n- Mouse and gamepads work too\n\n## Options\n\n- `torched --ai shooter,chooser`: you against computer players (`moron`, `shooter`, `spreader`, `chooser`, `calculater`, `annihilater`, `insanity`, `random`)\n- `--players N`: people at this keyboard, taking turns\n- `--demo`: the game plays itself\n- `--host`, `--join TICKET`, `--lan`: network play\n- `--terrain`, `--walls`, `--wind`, `--sky`, `--rounds`, `--cash`, `--arms`, `--together`: the game your way; `--help` lists them all\n- `--free`: every weapon free and endless, no shop\n\n## History\n\nWendell Hicken's Scorched Earth (1991), \"the Mother of All Games\", turned the old artillery duel into a party on DOS, with a shop, an arsenal and a lot of wind. Justin David Smith and Jacob Luna Lundberg remade it for X11 as Xscorch from 2000 to 2009, with its weapons, accessories and scoring kept in plain text files. Torched plays by those files, with Xscorch's computer players, and finishes the weapons Xscorch left unfinished: its diggers and sandhogs burrow and blow at last.\n\n## Credits\n\n- **Scorched Earth**: Wendell Hicken, 1991\n- **Xscorch**: Justin David Smith and Jacob Luna Lundberg\n- **Terminal edition**: Asciiverse\n- License: GPL-2.0-only\n",
+   "system_deps": [
+    "libasound2",
+    "libudev1"
+   ],
+   "version": "0.6.0",
+   "updated_at": "2026-10-10T00:00:00Z",
+   "thumbnail_at": 20.0,
+   "cast_url": "/casts/torched.cast?v=1794053115",
+   "duration": 48.0,
+   "platforms": {
+    "x86_64-unknown-linux-gnu": {
+     "url": "/dev-releases/torched-x86_64-unknown-linux-gnu.tar.gz",
+     "sha256": "a49f83e302c9048269dbe0d789ef5b76f3f992afed5b30cf0d2fdcb620761c2a",
+     "size": 7440984
+    }
+   },
+   "news": []
+  },
   "tristam-island": {
    "schema_version": 1,
    "id": "tristam-island",

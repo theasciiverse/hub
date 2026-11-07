@@ -1,0 +1,50 @@
+schema_version = 1
+id = "torched"
+kind = "game"
+title = "Torched"
+description = "Tanks on the hills, the ground blown away beneath them: nukes, napalm, MIRVs, rollers, diggers and dirt, a shop between rounds, seven computer players and play over the network. Artillery the deep way, after Xscorch."
+year = 2000
+license = "GPL-2.0-only"
+repo = "theasciiverse/torched"
+provenance = "Justin David Smith and Jacob Luna Lundberg wrote Xscorch from 2000 to 2009, a free remake of Wendell Hicken's 1991 DOS game Scorched Earth."
+changes = "CLAUDE.md"
+topics = ["artillery", "tanks", "scorched-earth", "hot-seat", "network", "braille", "gamepad", "rust"]
+genre = "artillery"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# a total conversion of Xscorch written from scratch in Rust + Ratatui; its
+# weapons.def, accessories.def and scorings.def are compiled in
+[upstream]
+name = "Justin David Smith and Jacob Luna Lundberg"
+url = "https://github.com/lschierer/xscorch"
+
+# the world is scaled to the canvas, so any size plays the same game
+[exec]
+game = "torched"
+args = []
+
+[min_terminal]
+cols = 80
+rows = 24
+
+# the playfield in Braille, RGB colours; mouse and gamepads work. Sound
+# through ALSA and gamepads through udev on Linux
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = true
+gamepad = true
+glyphs = ["braille"]
+system_deps = ["libasound2", "libudev1"]
+
+# 100x30, torched --demo --seed 50 --cash 300000 --mute --for 48: four
+# computer players
+[media]
+cast = "asciiverse/torched.cast"
+thumbnail_at = 20.0
+
+[release]
+source = "github"
