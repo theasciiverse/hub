@@ -6339,6 +6339,79 @@
    "page": "",
    "cast_url": "/casts/genesis.cast?v=1791906527"
   },
+  "glider-pro": {
+   "schema_version": 1,
+   "id": "glider-pro",
+   "kind": "game",
+   "title": "Glider PRO",
+   "description": "John Calhoun's Glider PRO in the terminal: a paper glider through houses of hundreds of rooms, riding the air past candles, toasters, darts, balloons and 'copters",
+   "year": 1994,
+   "old": true,
+   "license": "GPL-2.0-or-later",
+   "repo": "theasciiverse/glider-pro",
+   "provenance": "John Calhoun wrote Glider PRO for the Macintosh in C, published by Casady & Greene in 1994, and released its source, art, sounds and houses under the GPL in 2016.",
+   "changes": "CLAUDE.md",
+   "topics": [
+    "arcade",
+    "classic",
+    "macintosh",
+    "paper airplane",
+    "gamepad",
+    "braille",
+    "rust",
+    "two players"
+   ],
+   "genre": "arcade",
+   "developer": {
+    "name": "Asciiverse",
+    "url": "https://asciiverse.sh"
+   },
+   "upstream": {
+    "name": "John Calhoun, 1994",
+    "url": "https://github.com/softdorothy/GliderPRO"
+   },
+   "exec": {
+    "game": "glider-pro",
+    "args": []
+   },
+   "min_terminal": {
+    "cols": 60,
+    "rows": 20
+   },
+   "requires": {
+    "utf8": true,
+    "color": "truecolor",
+    "gamepad": true,
+    "glyphs": [
+     "braille"
+    ]
+   },
+   "media": {
+    "cast": "asciiverse/glider-pro.cast",
+    "thumbnail_at": 12.0
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**THE PAPER GLIDER IS BACK. THE HOUSE GOT BIGGER.**\n\nThree years after Glider, John Calhoun sent his paper glider back indoors,\nand this time the house had no end: hundreds of rooms on floor after\nfloor, joined by stairs, ducts, mailboxes and doors, from the basement to\nthe roof and out into the sky. You still only ever fall. The air from the\nfloor vents is what keeps you up, so you drift from vent to vent while the\nhouse does its best to bring you down.\n\nAnd now the house fights back. Balloons rise, paper 'copters drift down,\ndarts fly, toast leaps from the toaster, fish from their bowls, drips fall\nfrom the ceiling. Candles and tiki torches burn, outlets spark, shredders\nwait, grease spills. Switches bring back the lights or turn on a fan,\ntriggers set things off a room away, and the telephone rings. Clocks,\nstars and folded paper are your rewards; rubber bands, batteries, helium\nand a sheet of foil your tools.\n\nSlumberland alone has over 400 rooms. Twenty more houses come with it,\nCalhoun's and his players' of the day: the Titanic you have to find the\nfront of, the Castle o' the Air, SpacePods, Leviathan, Teddy World, the\nLand of Illusion and the rest. Two can play, each with a glider of their\nown. Leave the title alone and the game plays its own demo, from the keys\nCalhoun recorded in 1994.\n\nIt is Calhoun's game, translated from his C, with his art, sounds and\nhouses read from his own files. The silhouette view is made for the\nterminal, as in Glider: the room softened behind everything that moves or\nhurts, drawn sharp in solid colour. Or press **V** for his art itself, in\nhalf blocks.\n\n**Find the vents. Mind the toaster.**\n\n## Controls\n\n- **Left** and **Right** (or **A** and **D**): fly; let go and the glider\n  just falls\n- **Down** (or **S**): burn the battery, or rise on helium; **Up**, **W**\n  or **Space**: fire a rubber band\n- Gamepad: d-pad or stick to fly, **A** fires, **B** or the right trigger\n  boosts, **Start** pauses\n- **Tab**: pause; **V**: the other view; **Q**: end the game\n- On the title: **Enter** play, **2** two players (the second flies with\n  **A**, **D**, **S**, **W**), **D** the demo, **L** houses, **T** scores,\n  **M** sound, **B** music\n\nBest in a terminal that reports key releases (kitty, foot, WezTerm,\nGhostty and others); two players need one.\n\n## Options\n\n- `glider-pro \"Titanic\"`: start in a built-in house; `--houses` lists them\n- `glider-pro path/to/house`: play a Glider PRO house file (BinHex,\n  MacBinary, or the data fork with its resource fork beside it)\n- `--demo`: start with the demo\n- `--silhouette`, `--original`: which view to start in\n- `--mute`: no sound\n\n## History\n\nCalhoun wrote Glider PRO for the Macintosh in C, and Casady & Greene\npublished it in 1994, three years after Glider 4.0. Where Glider's houses\nwere rows of rooms, Glider PRO's grew in every direction, and it came with\na house editor of its own. In 2016 Calhoun released its source, art,\nsounds and houses under the GPL.\n\n## Credits\n\n- **Glider PRO**: John Calhoun, 1994, published by Casady & Greene\n- **Houses**: John Calhoun and Kim Money (Demo House, CD Demo House);\n  Jonathan Chin, alias Paul Finn, with John Calhoun (Davis Station,\n  Metropolis, Titanic); Jonathan Chin (Grand Prix, Leviathan,\n  ImagineHouse PRO II, In The Mirror); Ward Hartenstein (Land of\n  Illusion, Nemo's Market, Rainbow's End, SpacePods); Shawn Brenneman\n  (Teddy World); Steve Sullivan (The Asylum Pro); Slumberland by John\n  Calhoun, Jonathan Chin, Steve Sullivan and Ward Hartenstein\n- **Terminal edition**: Asciiverse\n- License: GPL-2.0-or-later\n",
+   "system_deps": [
+    "libasound2",
+    "libudev1"
+   ],
+   "version": "0.2.0",
+   "updated_at": "2026-10-10T00:00:00Z",
+   "thumbnail_at": 12.0,
+   "cast_url": "/casts/glider-pro.cast?v=1794052716",
+   "duration": 51.8,
+   "platforms": {
+    "x86_64-unknown-linux-gnu": {
+     "url": "/dev-releases/glider-pro-x86_64-unknown-linux-gnu.tar.gz",
+     "sha256": "f42a59717a4ad5b7b4e12d76f7715710da4b47101e40359f20973f8226ab5022",
+     "size": 26542612
+    }
+   },
+   "news": []
+  },
   "glider": {
    "schema_version": 1,
    "id": "glider",
@@ -13304,26 +13377,16 @@
     "source": "github"
    },
    "page": "**THE YETI IS GAINING. YOUR SKIS ARE ON BACKWARDS.**\n\nYou are skiing down an infinite slope of trees, ice and bare ground, chased by the man-eating Yeti. Unfortunately, you have put your jet-powered skis on backwards, so you can't see where you are going, only where you have been. Each turn adds one line to the slope and asks for your next move.\n\nHazards grow in patches, so you can steer round them: trees are the worst, bare ground can throw you, ice can make you slip, and you cannot turn while you are on it. When the Yeti comes, jump over him, teleport away, fire an ICBM after him or call up the Fire Demon. Every one of them can go wrong.\n\n- **Many ways to come to grief**: trees, ice, bare ground, the Yeti, a bad landing, your own nuclear backpack and a spell gone wrong\n- **A score for every run**: meters skied, jumps made, Yetis melted, minus your injuries\n- **Very silly**: in its maintainer's words, \"a fun and very silly game that proves you don't need fancy graphical user interfaces to have a good time\"\n\n## Controls\n\nType a command and press **Enter**. Upper or lower case both work.\n\n- **Enter**: keep skiing\n- **l** / **r**: turn left or right (each press steers harder, up to five)\n- **j**: jump, over trees and Yetis\n- **h**: hop, a short jump\n- **t**: teleport to somewhere random on the slope\n- **i**: launch an ICBM at the Yeti\n- **d**: summon the Fire Demon to melt the Yeti\n- **?**: help and the map key\n- a number in front repeats a command: **5** skis five turns, **3l** turns left three times\n\nOn the map, **I** is you, **A** the Yeti, **\\*** an ICBM and **D** the Fire Demon; **Y** is a tree, **#** ice and **:** bare ground.\n\n## History\n\nMark Stevans wrote Ski! for Roy's Games, first in FORTRAN on DEC-10s, then in C for VT100 terminals; version 6.0 is from 1990. Eric S. Raymond took it up in 1993 and rewrote it in Python in 2003, adding the online help and, soon after, repeat counts. This edition is that Python version ported to Rust, so it needs no Python, and asks whether to play again when a run ends.\n\n## Credits\n\n- Original game: Mark Stevans\n- Python version and maintainer: [Eric S. Raymond](http://www.catb.org/~esr/ski/)\n- Asciiverse edition: Asciiverse\n- License: BSD-2-Clause\n",
-   "version": "0.1.0",
+   "version": "6.16.0",
    "updated_at": "2026-10-10T00:00:00Z",
    "thumbnail_at": 23.0,
    "cast_url": "/casts/ski.cast?v=1793547234",
    "duration": 47.1,
    "platforms": {
-    "x86_64-unknown-linux-musl": {
-     "url": "https://example.invalid/ski-x86_64-unknown-linux-musl.tar.gz",
-     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
-     "size": 1011000
-    },
-    "aarch64-apple-darwin": {
-     "url": "https://example.invalid/ski-aarch64-apple-darwin.tar.gz",
-     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
-     "size": 1011000
-    },
-    "x86_64-pc-windows-msvc": {
-     "url": "https://example.invalid/ski-x86_64-pc-windows-msvc.zip",
-     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
-     "size": 1011000
+    "x86_64-unknown-linux-gnu": {
+     "url": "/dev-releases/ski-x86_64-unknown-linux-gnu.tar.gz",
+     "sha256": "f35b116471d7efeadb4bc0e1270320dce002a8fb19031c4cf49158a402d5f510",
+     "size": 6511
     }
    },
    "news": []
@@ -14082,6 +14145,67 @@
      "url": "/dev-releases/sssnake/sssnake-x86_64-unknown-linux-musl.tar.gz",
      "sha256": "ced1d0ff588fb5a5b0e0feade79cfa0586890df8113008cfbc8cce2a35912b2c",
      "size": 64422
+    }
+   },
+   "news": []
+  },
+  "stardork": {
+   "schema_version": 1,
+   "id": "stardork",
+   "kind": "game",
+   "title": "StarDork",
+   "description": "Steer your ship through a field of stars and probe the wormholes, by flying into them or shooting probes, while every wormhole you take fills the sky with more stars. Thirty levels to the end.",
+   "year": 2003,
+   "license": "GPL-2.0-only",
+   "repo": "theasciiverse/stardork",
+   "provenance": "Ryan Kulla wrote StarDork in C with ncurses and put it on SourceForge, version 0.6 in 2003 and 0.7 in 2011.",
+   "changes": "PATCHES.md",
+   "topics": [
+    "space",
+    "maze",
+    "turn-based",
+    "classic",
+    "rust"
+   ],
+   "genre": "puzzle",
+   "developer": {
+    "name": "Asciiverse",
+    "url": "https://asciiverse.sh"
+   },
+   "upstream": {
+    "name": "Ryan Kulla",
+    "url": "https://sourceforge.net/projects/stardork/"
+   },
+   "exec": {
+    "game": "stardork"
+   },
+   "min_terminal": {
+    "cols": 64,
+    "rows": 20
+   },
+   "requires": {
+    "utf8": false,
+    "color": "basic",
+    "mouse": false
+   },
+   "media": {
+    "cast": "asciiverse/stardork.cast",
+    "thumbnail_at": 30.0
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**THE STARS MULTIPLY. THE WORMHOLES WAIT.**\n\nYour ship is the **X** in a sky of stars, and somewhere out there is a wormhole, the **@**. Probe it and you move on: fly straight into it, or fire a probe across the sky and hit it from afar. Every wormhole you take brings a fresh batch of stars, so the open space you had a moment ago fills up fast.\n\nNothing moves until you do. Every key is a move, so you can stop and plan the way through, but the stars do not forgive: run into one and your ship takes damage, the screen goes red, and nine units of power and three lives are all you get. Probes pass clean through the stars, which is often the only way to reach a wormhole boxed in on all sides.\n\n- **Thirty levels**, each sky more crowded than the last\n- **Eight directions** to fly and eight to shoot\n- **A true stardork**: the title waiting for whoever reaches the end\n\n## Controls\n\n- **1** to **9** (or the arrows, **Home**, **PgUp**, **End**, **PgDn**): fly, diagonals included; **5** stays put\n- **a** left, **s** up, **d** down, **f** right: fire a probe\n- **z** up-left, **x** up-right, **c** down-left, **v** down-right: fire a probe diagonally\n- **q**, **Esc** or **Ctrl+C**: quit\n\n## Options\n\n- `--seed N`: the same sky every time\n\n## Credits\n\n- Original game: Ryan Kulla\n- Asciiverse edition: Asciiverse\n- License: GPL-2.0-only\n",
+   "version": "0.7.0",
+   "updated_at": "2026-10-10T00:00:00Z",
+   "thumbnail_at": 30.0,
+   "cast_url": "/casts/stardork.cast?v=1794052697",
+   "duration": 57.7,
+   "platforms": {
+    "x86_64-unknown-linux-gnu": {
+     "url": "/dev-releases/stardork-x86_64-unknown-linux-gnu.tar.gz",
+     "sha256": "b22eba4fc1e88cb02299478aa55ac07bcf99b355b9f69a3449965916ad73f269",
+     "size": 229709
     }
    },
    "news": []
@@ -15641,7 +15765,7 @@
     "source": "github"
    },
    "page": "**HOW FAST DO YOU REALLY TYPE?**\n\nFifty common words, one box to type them in. Each word lights up green or red as you go, and the moment you finish ttyper shows your words per minute, your accuracy, a chart of your speed through the test, and the keys you miss most.\n\nThen press **r** for a fresh test, or **p** to practise the words you got wrong.\n\n- **Many languages**: English (100, 200 or 1000 most common words, or advanced, or pirate), French, Galician, German, Korean, Norwegian, Portuguese, Russian, Spanish, Thai, Ukrainian\n- **Or code**: C, C++, C#, Go, HTML, Java, JavaScript, PHP, Python, Ruby, Rust, SQL and Qt\n- **Your own words**: any text file, line by line\n- **Hard modes**: sudden death restarts on your first mistake; turn off backspace or going back\n\n## Controls\n\n- Type the words; **Space** moves to the next one, **Backspace** fixes the current one\n- **Esc**: end the test\n- On the results screen: **r** for a new test, **p** to practise your mistakes, **q** or **Esc** to quit\n\n## Options\n\n- `-w N`: number of words (default 50)\n- `-l LANGUAGE`: word list, for example `-l english1000` or `-l rust`\n- `--list-languages`: every list built in\n- `--sudden-death`, `--no-backspace`, `--no-backtrack`: harder tests\n- `ttyper FILE`: type the lines of a text file\n\n## Credits\n\n- ttyper: [Max Niederman](https://github.com/max-niederman/ttyper) and contributors\n- License: MIT\n",
-   "version": "0.1.0",
+   "version": "1.6.0",
    "updated_at": "2026-10-10T00:00:00Z",
    "thumbnail_at": 36.0,
    "cast_url": "/casts/ttyper.cast?v=1793547234",
@@ -17533,8 +17657,8 @@
   }
  },
  "av": {
-  "version": "0.9.14",
-  "date": "2026-11-03",
-  "notes": "- \"F5 refresh\" in the menu row, clickable, where the row has room:\n  fetching the catalog again was only in F1 help and the list's key line"
+  "version": "0.9.15",
+  "date": "2026-11-04",
+  "notes": "- Detail pane buttons one width with room around the label, two cells\n  tall where the pane has the rows (always beside the preview, under it\n  from about 42 rows); the title amber and bold with a rule under it\n- Help and welcome are as tall as their text wraps to: a long log or\n  bin path (macOS) made them scroll on a tall terminal\n- CI green on macOS and Windows again"
  }
 }
