@@ -1,0 +1,46 @@
+schema_version = 1
+id = "stardork"
+kind = "game"
+title = "StarDork"
+description = "Steer your ship through a field of stars and probe the wormholes, by flying into them or shooting probes, while every wormhole you take fills the sky with more stars. Thirty levels to the end."
+year = 2003
+license = "GPL-2.0-only"
+repo = "theasciiverse/stardork"
+provenance = "Ryan Kulla wrote StarDork in C with ncurses and put it on SourceForge, version 0.6 in 2003 and 0.7 in 2011."
+changes = "PATCHES.md"
+topics = ["space", "maze", "turn-based", "classic", "rust"]
+genre = "puzzle"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# Ryan Kulla's StarDork 0.7 (2011) ported to one Rust file (crossterm);
+# built by .github/workflows/release.yml
+[upstream]
+name = "Ryan Kulla"
+url = "https://sourceforge.net/projects/stardork/"
+
+[exec]
+game = "stardork"
+
+# the playfield is the terminal's size at start; smaller than 64x20 gets a
+# message
+[min_terminal]
+cols = 64
+rows = 20
+
+# plain ASCII, white and red, keyboard only
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, asciiverse/record-preview.sh: asciiverse/bot.py plays seed 1 to
+# the win in 151 moves, about 58 s, ending on the winner's screen
+[media]
+cast = "asciiverse/stardork.cast"
+thumbnail_at = 30.0
+
+[release]
+source = "github"
