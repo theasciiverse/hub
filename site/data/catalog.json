@@ -10451,6 +10451,68 @@
    },
    "news": []
   },
+  "oldrunner": {
+   "schema_version": 1,
+   "id": "oldrunner",
+   "kind": "game",
+   "title": "Oldrunner",
+   "description": "Run, climb, swing along ropes and dig holes to trap the guards while you grab every bag of gold, then make for the escape ladder. 150 levels, made for the Asciiverse.",
+   "year": 2010,
+   "license": "BSD-2-Clause",
+   "repo": "theasciiverse/oldrunner",
+   "provenance": "Frederic Culot wrote Oldrunner in C with curses between 2010 and 2012.",
+   "changes": "PATCHES.md",
+   "topics": [
+    "platformer",
+    "gold",
+    "digging",
+    "puzzle",
+    "classic",
+    "curses"
+   ],
+   "genre": "platformer",
+   "developer": {
+    "name": "Asciiverse",
+    "url": "https://asciiverse.sh"
+   },
+   "upstream": {
+    "name": "Frederic Culot",
+    "url": "https://github.com/culot/oldrunner"
+   },
+   "exec": {
+    "game": "oldrunner"
+   },
+   "min_terminal": {
+    "cols": 80,
+    "rows": 24
+   },
+   "requires": {
+    "utf8": true,
+    "color": "basic",
+    "mouse": false
+   },
+   "media": {
+    "cast": "asciiverse/oldrunner.cast",
+    "thumbnail_at": 12.0
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**THE GOLD IS EVERYWHERE. SO ARE THE GUARDS.**\n\nEvery level is a cross-section of floors, ladders and ropes, with bags of gold scattered through it and guards between you and every one of them. You can run, climb and swing hand over hand along the ropes and let go to drop, but you cannot fight. What you can do is dig.\n\nBlast a hole in the floor beside you and a guard running after you falls straight in. While he's stuck you can walk right over his head. Then the brick grows back, and if he hasn't climbed out by then, he's gone, only to turn up again at the top of the level. Dig a row of holes to hold back a crowd, and mind you don't wall yourself in. Grab the last bag and an escape ladder appears: climb it to the top of the screen and you're through.\n\n- **150 levels**, made for the Asciiverse: twenty drawn by hand, the rest built around them, from easy to fiendish\n- **Every one checked**: each bag of gold can be reached, and there's always a way out after it\n- **Digging is everything**: traps, shortcuts and escapes all start with a hole\n\n**Dig fast. Run faster.**\n\n## Controls\n\n- **Arrow keys** (or **h**, **j**, **k**, **l**): run, climb, swing and drop\n- **z** (or **s**): dig to the left; **x** (or **d**): dig to the right\n- **Ctrl+G**: give up a life when you're stuck\n- **Ctrl+N** and **Ctrl+P**: skip to the next or the previous level\n- **q** (or **Ctrl+D**): quit\n\n## Options\n\n- `oldrunner -l 20`: start at level 20\n\n## Credits\n\n- Original game: Frederic Culot\n- Fix: Flavio Poletti\n- Levels: Asciiverse\n- Asciiverse edition: Asciiverse\n- License: BSD-2-Clause\n",
+   "version": "20120131+20190621-av.1",
+   "updated_at": "2026-11-07T12:18:38Z",
+   "thumbnail_at": 12.0,
+   "cast_url": "/casts/oldrunner.cast?v=1794053928",
+   "duration": 32.5,
+   "platforms": {
+    "x86_64-unknown-linux-musl": {
+     "url": "/dev-releases/oldrunner/oldrunner-x86_64-unknown-linux-musl.tar.gz",
+     "sha256": "bde96bd0409e1b75500aada0575db706a3002548a79ba17be72fafaf474c47b3",
+     "size": 164698
+    }
+   },
+   "news": []
+  },
   "omega": {
    "schema_version": 1,
    "id": "omega",

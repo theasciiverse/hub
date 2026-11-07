@@ -1,0 +1,48 @@
+schema_version = 1
+id = "oldrunner"
+kind = "game"
+title = "Oldrunner"
+description = "Run, climb, swing along ropes and dig holes to trap the guards while you grab every bag of gold, then make for the escape ladder. 150 levels, made for the Asciiverse."
+year = 2010
+license = "BSD-2-Clause"
+repo = "theasciiverse/oldrunner"
+provenance = "Frederic Culot wrote Oldrunner in C with curses between 2010 and 2012."
+changes = "PATCHES.md"
+topics = ["platformer", "gold", "digging", "puzzle", "classic", "curses"]
+genre = "platformer"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# Frederic Culot's oldrunner (BSD) with polettix's 2019 fix, our own 150
+# levels and the changes in PATCHES.md; built by .github/workflows/release.yml
+[upstream]
+name = "Frederic Culot"
+url = "https://github.com/culot/oldrunner"
+
+# the levels are built into the binary
+[exec]
+game = "oldrunner"
+
+# the game draws an 80x24 window in the middle of the terminal
+[min_terminal]
+cols = 80
+rows = 24
+
+# curses line drawing; guards in reverse video; keyboard only
+[requires]
+utf8 = true
+color = "basic"
+mouse = false
+
+# 100x30, asciiverse/record-preview.py: a bot clears level 1 (digging a
+# guard into a hole on the way) and goes on into level 2, 32 s; the still
+# has the runner going for the last gold up top, a guard caught in a hole
+# below
+[media]
+cast = "asciiverse/oldrunner.cast"
+thumbnail_at = 12.0
+
+[release]
+source = "github"
