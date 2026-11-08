@@ -6398,19 +6398,30 @@
     "libasound2",
     "libudev1"
    ],
-   "version": "0.2.0",
-   "updated_at": "2026-10-10T00:00:00Z",
+   "version": "0.3.0",
+   "updated_at": "2026-11-08T16:11:23Z",
    "thumbnail_at": 12.0,
-   "cast_url": "/casts/glider-pro.cast?v=1794052716",
-   "duration": 51.8,
+   "cast_url": "/casts/glider-pro.cast?v=46e6363be47f",
+   "duration": 51.9,
    "platforms": {
     "x86_64-unknown-linux-gnu": {
      "url": "/dev-releases/glider-pro-x86_64-unknown-linux-gnu.tar.gz",
-     "sha256": "f42a59717a4ad5b7b4e12d76f7715710da4b47101e40359f20973f8226ab5022",
-     "size": 26542612
+     "sha256": "d655fae5e0211ad91a9a0006ac160b67d807874f8f00b6b00e50a355c16a39c3",
+     "size": 19503320
     }
    },
-   "news": []
+   "news": [
+    {
+     "version": "0.3.0",
+     "date": "2026-11-08",
+     "notes": "Glider PRO v0.3.0 for the Asciiverse catalog. Its README lists the controls."
+    },
+    {
+     "version": "0.2.0",
+     "date": "2026-11-07",
+     "notes": "Glider PRO v0.2.0 for the Asciiverse catalog. Its README lists the controls."
+    }
+   ]
   },
   "glider": {
    "schema_version": 1,
