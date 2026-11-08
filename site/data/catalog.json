@@ -15785,6 +15785,81 @@
    },
    "news": []
   },
+  "tspace": {
+   "schema_version": 1,
+   "id": "tspace",
+   "kind": "game",
+   "title": "tspace",
+   "description": "Zero-friction arena dogfights drawn in Braille: four ships, bombs, mines and pickups, against bots or friends over the LAN or the internet",
+   "year": 2026,
+   "new": true,
+   "license": "MIT",
+   "repo": "theasciiverse/tspace",
+   "provenance": "Asciiverse made tspace in Rust in 2026, inspired by SubSpace (Burst / Virgin Interactive, 1997), with movement code adapted from Peter Kieltyka's Zubspace (MIT).",
+   "topics": [
+    "action",
+    "space",
+    "shooter",
+    "multiplayer",
+    "lan",
+    "bots",
+    "gamepad",
+    "braille",
+    "rust"
+   ],
+   "genre": "action",
+   "developer": {
+    "name": "Asciiverse",
+    "url": "https://asciiverse.sh"
+   },
+   "exec": {
+    "game": "tspace",
+    "args": []
+   },
+   "min_terminal": {
+    "cols": 60,
+    "rows": 20
+   },
+   "requires": {
+    "utf8": true,
+    "color": "truecolor",
+    "gamepad": true,
+    "glyphs": [
+     "braille"
+    ]
+   },
+   "media": {
+    "cast": "asciiverse/tspace.cast",
+    "thumbnail_at": 12.0
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**NO FRICTION. NO BRAKES. NO MERCY.**\n\nOut here nothing slows you down: every push of the engine stays with you\nuntil you push back. Overshoot a corner and you bounce off the wall. Line\nup a shot while you drift sideways past a pillar. Your energy is your\nshield and your ammunition at once, so every shot you fire is armour you\ndon't have.\n\nFly one of four ships. The **Dart** is fast and fragile, the **Lance**\ndoes a bit of everything, the **Anvil** is slow, tough and carries\nbouncing bombs, and the **Weaver** sows mines and fires shots that bounce\noff walls. Grab **Overcharge**, **Scatter**, **Shroud**, **Overdrive** and\nthe **Repulsor** from the arena floor. First pilot to 15 kills takes the match.\n\nUp to eight pilots fight in the Foundry, four to six among the pillars\nof the Lattice, or two to four in the tighter Hollow, every pilot for themselves or Red against Blue. Bots fill the empty seats at\nthree skill levels, or friends join you on the same network or across\nthe internet with an invite ticket. One of you hosts, and no server is\nneeded.\n\nEvery ship, spark and star is drawn in Braille dots.\n\n**Mind your momentum.**\n\n## Controls\n\n- **W** or **Up**: thrust, **S** or **Down**: reverse; **A** **D** or\n  **Left** **Right**: turn\n- **Space**: guns, **F**: bomb, **X**: mine, **E**: afterburner\n- **1** to **4**: change ship; **Tab**: scores; **Esc**: menu; **H**: help\n- Gamepad: stick or d-pad flies (up thrusts, down brakes), right trigger\n  fires, left trigger burns, **A** bomb, **X** mine, **Y** scores,\n  **Start** menu\n\nOn the keyboard, best in a terminal that reports key releases (kitty,\nfoot, WezTerm, Ghostty and others), so you can thrust, turn and fire at\nonce. A gamepad works anywhere.\n\n## Options\n\n- `--play`: straight into a game against bots; `--demo`: watch them\n- `--host`, `--join`, `--join TICKET`: play together\n- `--teams`: Red against Blue; `--arena foundry|lattice|hollow`, `--bots N`, `--skill easy|medium|hard`,\n  `--ship NAME`, `--mute`\n",
+   "system_deps": [
+    "libasound2",
+    "libudev1"
+   ],
+   "version": "0.3.0",
+   "updated_at": "2026-10-10T00:00:00Z",
+   "thumbnail_at": 12.0,
+   "cast_url": "/casts/tspace.cast?v=1794164359",
+   "duration": 47.0,
+   "platforms": {
+    "x86_64-unknown-linux-gnu": {
+     "url": "/dev-releases/tspace-x86_64-unknown-linux-gnu.tar.gz",
+     "sha256": "ea24759e6d136dee5a0b1c94834399b25caf9d0c58bb782f80d389698d780905",
+     "size": 34719683
+    }
+   },
+   "news": [
+    {
+     "version": "0.3.0",
+     "date": "2026-11-08",
+     "notes": "- Team mode: Red against Blue, no friendly fire, first team to 25\n- A third arena, the Lattice: a field of pillars for four to six\n- A fifth pickup, the Repulsor: a shockwave that shoves enemies away and\n  wipes out their shots and mines\n- Bots flee when low, use the afterburner and dodge shots\n- Hit flash, low-energy warning, kill streaks, and the camera follows\n  your killer while you wait to fly again\n- The title remembers your settings and pilot name"
+    }
+   ]
+  },
   "tty-rex": {
    "schema_version": 1,
    "id": "tty-rex",
