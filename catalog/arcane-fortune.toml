@@ -1,0 +1,51 @@
+schema_version = 1
+id = "arcane-fortune"
+kind = "game"
+title = "Arcane Fortune"
+description = "Barbarians at the gates, nobles at your throat and empires on every border: found a civilization, raise its cities, and talk, trade or fight your way to the world stage, on a random world or a map of the Earth."
+year = 2020
+license = "AGPL-3.0-or-later AND CC-BY-SA-4.0"
+repo = "theasciiverse/arcane-fortune"
+provenance = "Darin Straus released Arcane Fortune in 2020, an empire builder in Rust drawn in the terminal, and brought it to its World Stage edition, v0.4.0, in June 2021; its rival civilizations talk to you in their embassies through a neural network."
+changes = "PATCHES.md"
+topics = ["strategy", "4x", "empire building", "city building", "diplomacy", "historical", "accessibility", "rust"]
+genre = "strategy"
+
+[developer]
+name = "Darin Straus"
+url = "https://github.com/cody2007/arcane_fortune"
+
+# packaged by Asciiverse with the changes in PATCHES.md
+# (theasciiverse/arcane-fortune): the terminal edition, data beside the
+# binary, saves in ~/.local/state/arcane-fortune
+[upstream]
+name = "Darin Straus"
+url = "https://github.com/cody2007/arcane_fortune"
+
+# the title screen: a new game (historical scenario or random world) or,
+# once there is a save, the last game
+[exec]
+game = "arcane_fortune"
+args = []
+
+# drawn for 100x30 and up; at 80x24 it plays but the side panels overlap
+[min_terminal]
+cols = 100
+rows = 30
+
+# ncurses line drawing; 256 colours (Preferences can limit it to 8); the
+# mouse works beside the keys
+[requires]
+utf8 = false
+color = "256"
+mouse = false
+
+# 100x30 (asciiverse/record-preview.sh): the title, England in the
+# historical scenario, a worker setting out a City Hall, then the full map
+# over Britain and Europe as the months pass; at 53 s London is founded
+[media]
+cast = "asciiverse/arcane-fortune.cast"
+thumbnail_at = 53.0
+
+[release]
+source = "github"
