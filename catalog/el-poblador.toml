@@ -1,0 +1,52 @@
+schema_version = 1
+id = "el-poblador"
+kind = "game"
+title = "El Poblador"
+description = "An untamed island, five precious resources and one robber with an eye on your wheat: settle, trade and build your way to ten points before your friends do, three or four of you around one keyboard."
+year = 2025
+new = true
+license = "EUPL-1.2"
+repo = "theasciiverse/el-poblador"
+provenance = "Vicente Reyes began El Poblador in June 2025, in Go, to play Klaus Teuber's 1995 board game The Settlers of Catan in the terminal; its name is Spanish for the settler."
+changes = "PATCHES.md"
+topics = ["board game", "strategy", "trading", "hot seat", "multiplayer", "lan", "ssh", "go"]
+genre = "board"
+
+[developer]
+name = "Vicente Reyes"
+url = "https://sr.ht/~vicho/el_poblador/"
+
+# packaged by Asciiverse with the changes in PATCHES.md
+# (theasciiverse/el-poblador): a start screen, saves in the state folder
+[upstream]
+name = "Vicente Reyes"
+url = "https://sr.ht/~vicho/el_poblador/"
+
+# with no arguments our start screen: name three or four players, or
+# continue a game saved in ~/.local/state/el-poblador
+[exec]
+game = "el_poblador"
+args = []
+
+# board and hands side by side from 90 columns (narrower, Tab switches
+# between them); the island is about 30 rows tall
+[min_terminal]
+cols = 90
+rows = 30
+
+# the tiles are emoji (e switches to letters in the game); 24-bit player
+# colours; keyboard only
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = false
+
+# 100x30 (asciiverse/record-preview.py): four players named on the start
+# screen, the opening round of settlements and roads, then a round of
+# rolls; at 41 s every settlement is down and the first resources are in
+[media]
+cast = "asciiverse/el-poblador.cast"
+thumbnail_at = 41.0
+
+[release]
+source = "github"

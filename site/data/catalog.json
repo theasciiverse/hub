@@ -5332,6 +5332,72 @@
    },
    "news": []
   },
+  "el-poblador": {
+   "schema_version": 1,
+   "id": "el-poblador",
+   "kind": "game",
+   "title": "El Poblador",
+   "description": "An untamed island, five precious resources and one robber with an eye on your wheat: settle, trade and build your way to ten points before your friends do, three or four of you around one keyboard.",
+   "year": 2025,
+   "new": true,
+   "license": "EUPL-1.2",
+   "repo": "theasciiverse/el-poblador",
+   "provenance": "Vicente Reyes began El Poblador in June 2025, in Go, to play Klaus Teuber's 1995 board game The Settlers of Catan in the terminal; its name is Spanish for the settler.",
+   "changes": "PATCHES.md",
+   "topics": [
+    "board game",
+    "strategy",
+    "trading",
+    "hot seat",
+    "multiplayer",
+    "lan",
+    "ssh",
+    "go"
+   ],
+   "genre": "board",
+   "developer": {
+    "name": "Vicente Reyes",
+    "url": "https://sr.ht/~vicho/el_poblador/"
+   },
+   "upstream": {
+    "name": "Vicente Reyes",
+    "url": "https://sr.ht/~vicho/el_poblador/"
+   },
+   "exec": {
+    "game": "el_poblador",
+    "args": []
+   },
+   "min_terminal": {
+    "cols": 90,
+    "rows": 30
+   },
+   "requires": {
+    "utf8": true,
+    "color": "truecolor",
+    "mouse": false
+   },
+   "media": {
+    "cast": "asciiverse/el-poblador.cast",
+    "thumbnail_at": 41.0
+   },
+   "release": {
+    "source": "github"
+   },
+   "page": "**THE ISLAND IS WAITING. WHO WILL RULE IT?**\n\nNineteen hexes of forest, hill, pasture, field and mountain rise out of\nthe sea, each one stamped with a number. Roll the dice, and every\nsettlement that touches that number gets paid. Wood! Brick! Wool!\nGrain! Ore! Who will claim the best spots first?\n\nPlant your first two settlements, lay your roads, and the race is on.\nSwap sheep for brick with a rival who badly needs them, or trade four of\na kind with the bank when nobody will deal. Turn villages into cities\nthat bring in twice as much. And when a seven comes up, the robber\nstrikes: he squats on a tile, starves everyone around it and lifts a\ncard from a neighbour of your choice.\n\n- **The whole race to ten**: roads, settlements, cities and\n  development cards, every point counted.\n- **Five development cards**: Knights to chase the robber off, Road\n  Building, Monopoly, Year of Plenty, and hidden Victory Points.\n- **Wheel and deal**: post an offer for everyone, or trade with the bank.\n- **A new island every game**: the tiles are shuffled, and the numbers\n  spiral round them the way the board game sets them out.\n- **Three or four players at one keyboard**, each with a hand only they\n  should look at.\n- **Save and come back**: the start screen picks up where you left off.\n- **Play across the room**: host a game and friends on your local network\n  join by ssh, each at their own terminal.\n\n**FIRST TO TEN POINTS TAKES THE ISLAND. WILL IT BE YOU?**\n\n## Controls\n\n- **Arrow keys**: move on the board and through the menus\n- **Enter**: confirm; **Esc**: back out of a choice\n- **1** to **4**: show that player's hand; **0**: follow whoever's turn\n  it is\n- **Tab**: on a narrow terminal, switch between the board and the hands\n- **e**: emoji tiles or two-letter tiles (WD, BR, SH, WH, OR)\n- **Save & Quit**: in the menu before you roll\n- **Ctrl+C**: quit without saving\n\n## Options\n\n- `el_poblador new Ana Bruno Carmen`: start straight away with these\n  players (three or four)\n- `el_poblador serve -addr 0.0.0.0:2222`: host a game for your local\n  network; friends join with `ssh -p 2222 <your address>`, pick or name a\n  lobby and press Enter when ready\n\n## Credits\n\n- El Poblador: [Vicente Reyes](https://sr.ht/~vicho/el_poblador/)\n- License: EUPL-1.2\n",
+   "version": "0.1.0",
+   "updated_at": "2026-10-10T00:00:00Z",
+   "thumbnail_at": 41.0,
+   "cast_url": "/casts/el-poblador.cast?v=1794341521",
+   "duration": 55.5,
+   "platforms": {
+    "x86_64-unknown-linux-gnu": {
+     "url": "/dev-releases/el-poblador-x86_64-unknown-linux-gnu.tar.gz",
+     "sha256": "1b5a722381f21664d81681bda9848281f5db61ea24274595cdaae555c7f9bc4a",
+     "size": 2870443
+    }
+   },
+   "news": []
+  },
   "entity": {
    "schema_version": 1,
    "id": "entity",
@@ -6399,9 +6465,9 @@
     "libudev1"
    ],
    "version": "0.3.0",
-   "updated_at": "2026-11-08T16:11:23Z",
+   "updated_at": "2026-10-10T00:00:00Z",
    "thumbnail_at": 12.0,
-   "cast_url": "/casts/glider-pro.cast?v=46e6363be47f",
+   "cast_url": "/casts/glider-pro.cast?v=1794154139",
    "duration": 51.9,
    "platforms": {
     "x86_64-unknown-linux-gnu": {
@@ -6410,18 +6476,7 @@
      "size": 19503320
     }
    },
-   "news": [
-    {
-     "version": "0.3.0",
-     "date": "2026-11-08",
-     "notes": "Glider PRO v0.3.0 for the Asciiverse catalog. Its README lists the controls."
-    },
-    {
-     "version": "0.2.0",
-     "date": "2026-11-07",
-     "notes": "Glider PRO v0.2.0 for the Asciiverse catalog. Its README lists the controls."
-    }
-   ]
+   "news": []
   },
   "glider": {
    "schema_version": 1,
@@ -6491,8 +6546,8 @@
    "platforms": {
     "x86_64-unknown-linux-gnu": {
      "url": "/dev-releases/glider-x86_64-unknown-linux-gnu.tar.gz",
-     "sha256": "5246d27efb9e02c3c3c977c02ba5fa64ec9fedad49918cd1dc10348ed232d54e",
-     "size": 9418830
+     "sha256": "daa571f17369a6b4381ba342827c1a38e7915a3fcd4c6ddadff795bf15c995c5",
+     "size": 9419217
     }
    },
    "news": [
