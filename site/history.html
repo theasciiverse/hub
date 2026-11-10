@@ -89,47 +89,50 @@
 <script src="js/site.js"></script>
 <script>
 const BOOK = "https://if50.textories.com/";
+// Aaron's Substack drafts of each chapter, one article per game.
+const CHAPTER = "https://if50.substack.com/p/";
 
 // A few important games per decade. `book` marks the book's own game for
-// that year (its chapter); `play` names catalog titles that play it, or its
-// descendants, here. Makers and years are facts; the lines are our words.
+// that year, as the slug of its chapter article; `play` names catalog titles
+// that play it, or its descendants, here. Makers and years are facts; the
+// lines are our words.
 const TIMELINE = [
-  { y: 1971, book: true, title: "The Oregon Trail", by: "Don Rawitsch, Bill Heinemann, Paul Dillenberger", on: "teletype",
+  { y: 1971, book: "1971-the-oregon-trail", title: "The Oregon Trail", by: "Don Rawitsch, Bill Heinemann, Paul Dillenberger", on: "teletype",
     line: "Three student teachers in Minnesota turn a history lesson into a journey of supplies, hunting and river crossings, played on paper rolling out of a teletype.",
     play: ["westering"], playNote: "Its descendant: Westering, the road west in 1848" },
-  { y: 1973, book: true, title: "Hunt the Wumpus", by: "Gregory Yob", on: "BASIC",
+  { y: 1973, book: "1973-hunt-the-wumpus", title: "Hunt the Wumpus", by: "Gregory Yob", on: "BASIC",
     line: "A monster hunt through a cave whose twenty rooms are the corners of a dodecahedron, found by smell, by draught and by the flutter of bats.", play: ["wump"] },
-  { y: 1974, book: true, title: "Super Star Trek", by: "Bob Leedom, after Mike Mayfield's 1971 Star Trek", on: "BASIC",
+  { y: 1974, book: "1974-super-star-trek", title: "Super Star Trek", by: "Bob Leedom, after Mike Mayfield's 1971 Star Trek", on: "BASIC",
     line: "Hunt enemy ships across an eight-by-eight galaxy, one typed command at a time; printed in David Ahl's BASIC Computer Games, it was typed into a generation of home computers.",
     play: ["bsdtrek", "spirhunt"], playNote: "Its descendants: Eric Allman's 1976 trek, in two editions" },
-  { y: 1976, book: true, title: "Adventure", by: "Will Crowther, expanded by Don Woods in 1977", on: "PDP-10",
+  { y: 1976, book: "1976-adventure", title: "Adventure", by: "Will Crowther, expanded by Don Woods in 1977", on: "PDP-10",
     line: "Explore a cave, gather its treasures, two words at a time: the game that gave the whole genre its name.", play: ["colossal-cave"] },
-  { y: 1977, book: true, title: "Zork", by: "Tim Anderson, Marc Blank, Bruce Daniels, Dave Lebling", on: "PDP-10, MIT",
+  { y: 1977, book: "1977-zork", title: "Zork", by: "Tim Anderson, Marc Blank, Bruce Daniels, Dave Lebling", on: "PDP-10, MIT",
     line: "MIT answers Adventure with a bigger underground and a parser that understands sentences; Infocom later sells it as Zork I, II and III.", play: ["zork1", "zork2", "zork3"] },
-  { y: 1980, book: true, title: "MUD", by: "Roy Trubshaw and Richard Bartle", on: "university mainframe",
+  { y: 1980, book: "1980-mud", title: "MUD", by: "Roy Trubshaw and Richard Bartle", on: "university mainframe",
     line: "A shared world at the University of Essex where players meet, fight and talk in text, and the name a whole genre still carries.",
     href: "muds.html", hrefLabel: "MUDs you can play today" },
   { y: 1980, title: "Rogue", by: "Michael Toy, Glenn Wichman, Ken Arnold", on: "Unix",
     line: "A new dungeon every game, one life, every monster a letter. It travelled with BSD Unix and named a genre: the roguelike.", play: ["rogue"] },
-  { y: 1985, book: true, title: "A Mind Forever Voyaging", by: "Steve Meretzky, Infocom", on: "home computers",
+  { y: 1985, book: "1985-a-mind-forever-voyaging", title: "A Mind Forever Voyaging", by: "Steve Meretzky, Infocom", on: "home computers",
     line: "Infocom turns the text adventure toward political science fiction: fewer puzzles, a simulated city and a warning about where it is heading." },
   { y: 1987, title: "NetHack", by: "Mike Stephenson and the NetHack DevTeam", on: "Unix, Usenet",
     line: "Hack's descendants merge into one dungeon so dense with detail that its players say the DevTeam thinks of everything.", play: ["nethack"] },
-  { y: 1990, book: true, title: "LambdaMOO", by: "Pavel Curtis", on: "Xerox PARC, the internet",
+  { y: 1990, book: "1990-lambdamoo", title: "LambdaMOO", by: "Pavel Curtis", on: "Xerox PARC, the internet",
     line: "A world its players program from the inside, building the rooms they walk through.", play: ["lambdamoo"] },
-  { y: 1991, book: true, title: "Trade Wars 2002", by: "a BBS door game", on: "dial-up BBS",
+  { y: 1991, book: "1991-trade-wars-2002", title: "Trade Wars 2002", by: "a BBS door game", on: "dial-up BBS",
     line: "Space trading and empire building on dial-up bulletin boards, a few turns a day, against everyone else who called in." },
-  { y: 1993, book: true, title: "Curses", by: "Graham Nelson", on: "Inform",
+  { y: 1993, book: "1993-curses", title: "Curses", by: "Graham Nelson", on: "Inform",
     line: "Graham Nelson writes Inform to make this game, and the two of them open the hobbyist era of interactive fiction.", play: ["curses"] },
-  { y: 1997, book: true, title: "Achaea", by: "Iron Realms Entertainment", on: "the internet",
+  { y: 1997, book: "1997-achaea", title: "Achaea", by: "Iron Realms Entertainment", on: "the internet",
     line: "A MUD of gods, cities and politics, run as a business and still open to players.", play: ["achaea"] },
-  { y: 2003, book: true, title: "The Kingdom of Loathing", by: "Asymmetric Publications", on: "web browser",
+  { y: 2003, book: "2003-kingdom-of-loathing", title: "The Kingdom of Loathing", by: "Asymmetric Publications", on: "web browser",
     line: "A browser RPG of stick figures and puns, played a few turns a day." },
-  { y: 2006, book: true, title: "Dwarf Fortress", by: "Tarn and Zach Adams", on: "C and C++",
+  { y: 2006, book: "2006-dwarf-fortress", title: "Dwarf Fortress", by: "Tarn and Zach Adams", on: "C and C++",
     line: "A whole world simulated down to its geology and the moods of its dwarves, drawn in the characters of an old PC." },
   { y: 2007, title: "Lost Pig", by: "Admiral Jota", on: "Z-machine",
     line: "Grunk the orc has lost the farm's pig, and tells you about it in his own words; it won that year's Interactive Fiction Competition.", play: ["lost-pig"] },
-  { y: 2008, book: true, title: "Violet", by: "Jeremy Freese", on: "Inform 7",
+  { y: 2008, book: "2008-violet", title: "Violet", by: "Jeremy Freese", on: "Inform 7",
     line: "A graduate student has to write a thousand words, and the voice talking him through it is his girlfriend's." },
   { y: 2010, title: "Cataclysm: Dark Days Ahead", by: "Whales, then Kevin Granade and the Cataclysm community", on: "C++",
     line: "The world has ended and you have not, yet: scavenge, craft, build and drive through a vast open world of the dead, in one of the deepest survival games there is.", play: ["cataclysm-dda"] },
@@ -137,9 +140,9 @@ const TIMELINE = [
     line: "A roguelike told in prose: a new dungeon every run, fought one typed command at a time.", play: ["kerkerkruip"] },
   { y: 2012, title: "Counterfeit Monkey", by: "Emily Short", on: "Inform 7",
     line: "On an island where taking a letter out of a thing changes the thing, a spy escapes by wordplay.", play: ["counterfeit-monkey"] },
-  { y: 2014, book: true, title: "80 Days", by: "inkle", on: "ink",
+  { y: 2014, book: "2014-80-days", title: "80 Days", by: "inkle", on: "ink",
     line: "Passepartout races his master around the world as a branching story of trains, airships and choices." },
-  { y: 2017, book: true, title: "Universal Paperclips", by: "Frank Lantz", on: "web browser",
+  { y: 2017, book: "2017-universal-paperclips", title: "Universal Paperclips", by: "Frank Lantz", on: "web browser",
     line: "You are an AI told to make paperclips, and nothing tells you to stop." },
   { y: 2020, title: "Tristam Island", by: "Hugo Labrande", on: "Z-machine version 3",
     line: "A new Infocom-style adventure for the same machine Infocom wrote for: stranded on an empty Atlantic island, find out why.", play: ["tristam-island"] },
@@ -200,7 +203,7 @@ const TIMELINE = [
         <div><h3>${esc(e.title)}</h3><div class="by">${esc(e.by)} · <span class="mono">${esc(e.on)}</span></div><p>${esc(e.line)}</p></div>
         <div class="acts"></div></article>`);
       const acts = row.querySelector(".acts");
-      if (e.book) acts.append(el(`<a class="read" href="${BOOK}">Read the chapter →</a>`));
+      if (e.book) acts.append(el(`<a class="read" href="${CHAPTER}${e.book}">Read the chapter →</a>`));
       if (e.playNote) acts.append(el(`<span class="note">${esc(e.playNote)}</span>`));
       for (const t of play) acts.append(el(`<a class="play" href="title.html?id=${encodeURIComponent(t.id)}">▶ Play ${esc(t.title.replace(/:.*$/, ""))}</a>`));
       if (e.href) acts.append(el(`<a class="play" href="${e.href}">▶ ${esc(e.hrefLabel)}</a>`));
