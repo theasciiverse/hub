@@ -1,0 +1,47 @@
+schema_version = 1
+id = "rogue-zombies"
+kind = "game"
+title = "Rogue Zombies"
+description = "Hordes of zombies are coming. Buy rakes, traps, mines, fences and a bazooka, lay them out around you, and survive as long as you can"
+year = 2024
+license = "MIT"
+repo = "theasciiverse/rogue-zombies"
+provenance = "Ondřej Žára, the author of rot.js, made Rogue Zombies in seven days for the 2024 Seven Day Roguelike Challenge, as a browser game drawn in characters."
+changes = "PATCHES.md"
+topics = ["roguelike", "7drl", "zombies", "survival", "traps", "javascript"]
+genre = "roguelike"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# built from github.com/ondras/roguezombies at a6639f3 (2026-07-29) by
+# .github/workflows/release.yml: the browser game's script, unchanged, run
+# by rotty (asciiverse/rotty) and QuickJS-ng as one native program
+[upstream]
+name = "Ondřej Žára (7DRL 2024)"
+url = "https://github.com/ondras/roguezombies"
+
+# the session log goes to $XDG_STATE_HOME/rogue-zombies;
+# ROGUE_ZOMBIES_LOG=debug records every key; --seed N for the same game
+[exec]
+game = "rogue-zombies"
+
+# the map is 96x32 and shows whole at 100x40; smaller, it follows you
+[min_terminal]
+cols = 96
+rows = 26
+
+[requires]
+utf8 = true
+color = "truecolor"
+
+# 100x30, recorded by asciiverse/record-preview.sh with --seed 7: the
+# welcome, a Regular game, the item shop, rakes laid out and the first
+# zombies; the still is the shop, at 9 s
+[media]
+cast = "asciiverse/rogue-zombies.cast"
+thumbnail_at = 9.0
+
+[release]
+source = "github"
