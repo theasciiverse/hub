@@ -1,0 +1,50 @@
+schema_version = 1
+id = "sleeping-beauty"
+kind = "game"
+title = "Sleeping Beauty"
+description = "Climb a tower overgrown with thorns to the princess on the last floor, and fight on the way by playing the Game of Thorns"
+year = 2017
+# no licence file upstream; Ondrej Zara gave his permission for Asciiverse
+# by email on 2026-11-13, kept with the game (PERMISSION.md and the .eml in
+# asciiverse/permission/); rotty, the terminal runtime, is MIT
+license = "LicenseRef-Author-Permission"
+repo = "theasciiverse/sleeping-beauty"
+provenance = "Ondřej Žára, the author of rot.js, made Sleeping Beauty in seven days for the 2017 Seven Day Roguelike Challenge, as a browser game drawn in characters."
+changes = "PATCHES.md"
+topics = ["roguelike", "7drl", "fairy-tale", "match-3", "tower", "rot.js", "javascript"]
+genre = "roguelike"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# built from github.com/ondras/sleeping-beauty at a2c1452 (2021-04-07) by
+# .github/workflows/release.yml: the browser game's scripts, unchanged, run
+# by rotty (asciiverse/rotty) and QuickJS-ng as one native program
+[upstream]
+name = "Ondřej Žára (7DRL 2017)"
+url = "https://github.com/ondras/sleeping-beauty"
+
+# the session log goes to $XDG_STATE_HOME/sleeping-beauty;
+# SLEEPING_BEAUTY_LOG=debug records every key; --seed N for the same tower
+[exec]
+game = "sleeping-beauty"
+
+# map, board, story and status share the screen 60:40 each way
+[min_terminal]
+cols = 90
+rows = 26
+
+[requires]
+utf8 = true
+color = "truecolor"
+
+# 100x30, recorded by asciiverse/record-preview.sh with --seed 4: the title
+# page, the first floor's rooms and doors, the stairs, a sword, and a bat
+# fought in the Game of Thorns; the still is the board, at 29 s
+[media]
+cast = "asciiverse/sleeping-beauty.cast"
+thumbnail_at = 29.0
+
+[release]
+source = "github"
