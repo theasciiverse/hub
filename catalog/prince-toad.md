@@ -12,7 +12,8 @@ under you and the princess keeps hopping away. Every crossing ends in a
 short, silly scene.
 
 When the story is done, the endless road keeps going, harder with every
-crossing, and two players can race each other at one keyboard.
+crossing, with trains, flies to snack on and a new road every day. Two
+players can race each other at one keyboard, or cross together.
 
 ## Controls
 
@@ -27,6 +28,7 @@ crossing, and two players can race each other at one keyboard.
 
 - `--endless`: straight onto the endless road
 - `--two`: a two-player race
+- `--together`: two players crossing together
 - `--crossing N`: start the story at crossing N (19 is the pond)
 - `--mute`: no sound
 
