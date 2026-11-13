@@ -43,6 +43,8 @@ old = true                     # optional: the OLD! banner, for titles that firs
                                # appeared before 1996 (a port by its original's year)
 new = true                     # optional: the NEW! banner, for titles first released
                                # in the last two years
+                               # (FRESH!, new to Asciiverse, is not set here: it
+                               # comes from `added`, see "Generated catalog.json")
 featured = 3                   # optional: a place in the website's carousel, 1 first
 
 [developer]                    # who ships this build
@@ -253,6 +255,7 @@ from `<id>.md`, unrendered, so each consumer renders it its own way:
       "page": "Klondike solitaire in your terminal: ...",
       "version": "1.4.1",
       "updated_at": "2026-10-06T10:00:00Z",
+      "added": "2026-10-27",
       "cast_url": "https://...",
       "platforms": {
         "x86_64-unknown-linux-gnu": { "url": "...", "sha256": "...", "size": 123456 }
@@ -271,6 +274,16 @@ of theasciiverse/av: its version without the `v`, its date and its body as
 one is out and how to update, also when it can't read a newer
 `schema_version`, which is why `av` reads it before that check. Optional,
 so a catalog without it still loads.
+
+`added` is the day the title came to Asciiverse: the commit date of the
+commit that first added its manifest to hub's git history (a manifest not
+committed yet counts as added today; the site workflow checks out the full
+history for it). It is never written by hand. Readers show the **FRESH!**
+badge (purple, David 2026-11-13) for 30 days after `added`, only for
+titles added after the launch on 2026-11-03: it means new to Asciiverse,
+whatever the game's age, so a 1993 game can carry OLD! and FRESH! at once.
+The 30 days are counted where it is shown, so the badge drops off without
+a rebuild. Optional: a catalog without it still loads, and shows no FRESH!.
 
 `news` is the latest releases' notes, newest first (a few are enough; `av`
 shows three): for `source = "github"` each GitHub Release's body and its date,

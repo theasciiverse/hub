@@ -27,11 +27,12 @@
   wrap.append(library({
     label: "Games", items: titles,
     badge: t => t.title[0].toUpperCase(),
-    mark: t => t.old ? `<span class="m old-m">OLD!</span>` : t.new ? `<span class="m new-m">NEW!</span>` : "",
+    mark: marks,
     detail: gameDetail,
     home: main => {
       const shelves = [
-        ["New", "fresh in the catalog", titles.filter(t => t.new)],
+        ["FRESH! Just arrived", "new to Asciiverse, newest first", freshest(titles)],
+        ["New", "released in the last two years", titles.filter(t => t.new)],
         ["OLD! Classics, rebuilt", "restorations and ports", titles.filter(t => t.old)],
         ["Play together", "one keyboard or the LAN", titles.filter(t => has(t, "multiplayer", "lan", "hot-seat"))],
         ["Puzzle", "", titles.filter(t => has(t, "puzzle"))],

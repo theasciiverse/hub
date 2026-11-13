@@ -93,6 +93,38 @@ function mountPlayer(box, url, opts) {
 }
 
 // A terminal tile showing the cast's still frame; plays while hovered.
+// FRESH!: new to Asciiverse, whatever the game's age (David, 2026-11-13). Shown for
+// 30 days from the day the title arrived (catalog.json's `added`), counted here so
+// it drops off without a rebuild; titles from the launch day itself never count.
+const LAUNCH_DAY = "2026-11-03", FRESH_DAYS = 30;
+function isFresh(t) {
+  if (!t.added || t.added <= LAUNCH_DAY) return false;
+  const age = (Date.now() - Date.parse(t.added + "T00:00:00Z")) / 864e5;
+  return age < FRESH_DAYS;
+}
+// The diagonal corner banners on a still or player: OLD! top left, NEW! top right,
+// FRESH! in whichever top corner is free (OLD! and NEW! never come together).
+function corners(box, t, big = false) {
+  const b = big ? " big" : "";
+  if (t.old) box.append(el(`<div class="old${b}">OLD!</div>`));
+  if (t.new) box.append(el(`<div class="new${b}">NEW!</div>`));
+  if (isFresh(t)) box.append(el(`<div class="fresh${t.new ? " left" : ""}${b}">FRESH!</div>`));
+  return box;
+}
+// The same as pills beside a title, and as small marks in the library lists.
+function pills(t) {
+  return (t.old ? ` <span class="old-pill">OLD!</span>` : "") + (t.new ? ` <span class="new-pill">NEW!</span>` : "")
+    + (isFresh(t) ? ` <span class="fresh-pill">FRESH!</span>` : "");
+}
+function marks(t) {
+  return (t.old ? `<span class="m old-m">OLD!</span>` : t.new ? `<span class="m new-m">NEW!</span>` : "")
+    + (isFresh(t) ? `<span class="m fresh-m">FRESH!</span>` : "");
+}
+// The newest arrivals first, for the Fresh shelves.
+function freshest(list) {
+  return list.filter(isFresh).sort((a, b) => b.added.localeCompare(a.added) || a.title.localeCompare(b.title));
+}
+
 function tile(t, { hover = true, at } = {}) {
   const box = el(`<div class="term fixed"></div>`);
   const still = at ?? t.thumbnail_at ?? 5;
@@ -173,7 +205,7 @@ function headerSearch(box) {
       .sort((a, b) => a[0] - b[0] || a[1].title.localeCompare(b[1].title)).map(([, t]) => t);
     if (q !== input.value.trim().toLowerCase()) return;     // typed on meanwhile
     menu.innerHTML = hits.length
-      ? hits.slice(0, 8).map(t => `<a href="${href(t)}"><b>${esc(t.title)}</b><span>${esc(t.kind === "mud" ? "MUD" : t.kind)}${t.genre ? " · " + esc(t.genre) : ""}${t.developer?.name ? " · " + esc(t.developer.name) : ""}</span></a>`).join("")
+      ? hits.slice(0, 8).map(t => `<a href="${href(t)}"><b>${esc(t.title)}${isFresh(t) ? ` <i class="fresh-m">FRESH!</i>` : ""}</b><span>${esc(t.kind === "mud" ? "MUD" : t.kind)}${t.genre ? " · " + esc(t.genre) : ""}${t.developer?.name ? " · " + esc(t.developer.name) : ""}</span></a>`).join("")
         + (hits.length > 8 ? `<p>${hits.length - 8} more: type a little more</p>` : "")
       : `<p>Nothing matches "${esc(input.value.trim())}"</p>`;
     menu.hidden = false;
@@ -299,8 +331,7 @@ function capsule(t) {
   const c = el(`<a class="cap" href="title.html?id=${t.id}"></a>`);
   const tl = tile(t);
   tl.append(el(`<span class="playing">▶ preview</span>`));
-  if (t.old) tl.append(el(`<div class="old">OLD!</div>`));
-  if (t.new) tl.append(el(`<div class="new">NEW!</div>`));
+  corners(tl, t);
   c.append(tl);
   c.append(el(`<div class="cap-body"><h4>${esc(t.title)}</h4><p>${esc(t.description)}</p>
     <div class="cap-foot"><span class="genre">${esc(t.genre || t.kind)}</span><span>${esc(t.developer?.name)}</span><span class="plat">${platformsLabel(t)}</span></div></div>`));
@@ -423,7 +454,7 @@ function gameDetail(t) {
         <dt>Version</dt><dd>${esc(t.version || "")}</dd></dl>
       <a class="store" href="title.html?id=${t.id}">Store page ›</a>
     </div>
-    <h1>${esc(t.title)}${t.old ? ` <span class="old-pill">OLD!</span>` : ""}${t.new ? ` <span class="new-pill">NEW!</span>` : ""}</h1>
+    <h1>${esc(t.title)}${pills(t)}</h1>
     <p class="one">${esc(t.description)}</p>
     <div class="tags">${(t.topics || []).map(x => `<span class="tag">${esc(x)}</span>`).join("")}</div>
     <p class="by">by ${esc(t.developer?.name || "")}${byline(t)}</p>

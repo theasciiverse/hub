@@ -57,7 +57,7 @@ Far below, something glints.
       { label: "Stories", items: stories, empty: "The first stories are on their way: Zork I, II and III, Colossal Cave and Pirate Adventure." },
     ],
     badge: t => t.title[0].toUpperCase(),
-    mark: t => t.old ? `<span class="m old-m">OLD!</span>` : t.new ? `<span class="m new-m">NEW!</span>` : "",
+    mark: marks,
     detail: t => t.kind === "client" ? clientDetail(t) : gameDetail(t),
     home: main => {
       main.append(el(WHAT));

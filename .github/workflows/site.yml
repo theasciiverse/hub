@@ -35,6 +35,8 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # full history: build_catalog.py dates each title from it
 
       - name: Assemble the site
         run: |

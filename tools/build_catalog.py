@@ -12,6 +12,9 @@ data and written as one catalog.json, which av and the website read:
 - MUDs: no release, only the world's address;
 - every title's preview from site/casts/<id>.cast, with its length and a
   version stamp taken from its contents.
+- every title's `added` date: the day its manifest first came into the
+  hub's git history (a manifest not committed yet counts as added today),
+  which the FRESH! badge reads.
 
 A title whose release cannot be read this time keeps its entry from the
 previous catalog (--previous), so a GitHub hiccup never drops it. Manifests
@@ -25,7 +28,7 @@ there; locally `GITHUB_TOKEN=$(gh auth token)`) for the GitHub API.
   python3 tools/build_catalog.py --out public/data/catalog.json \\
       --previous https://asciiverse.sh/data/catalog.json
 """
-import argparse, getpass, hashlib, json, os, pathlib, re, sys, tomllib
+import argparse, getpass, hashlib, json, os, pathlib, re, subprocess, sys, tomllib
 import urllib.error, urllib.parse, urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
@@ -263,6 +266,34 @@ def load_manifests():
     return titles, errors
 
 
+
+def added_dates():
+    """Maps each id to the ISO date its manifest was first committed.
+
+    One git log over catalog/*.toml, newest first, so the last date seen for
+    a file is the earliest. Empty when git or the history is not there (a
+    shallow checkout would give every title the day of the newest commit).
+    """
+    try:
+        if subprocess.run(["git", "rev-parse", "--is-shallow-repository"], cwd=HUB,
+                          capture_output=True, text=True, check=True).stdout.strip() == "true":
+            warn("shallow git checkout: no added dates (fetch-depth: 0 in the workflow)")
+            return {}
+        log = subprocess.run(["git", "log", "--diff-filter=A", "--format=%x00%cs",
+                              "--name-only", "--", "catalog/*.toml"], cwd=HUB,
+                             capture_output=True, text=True, check=True).stdout
+    except (OSError, subprocess.CalledProcessError) as e:
+        warn(f"no added dates ({e})")
+        return {}
+    dates, day = {}, None
+    for line in log.splitlines():
+        if line.startswith("\0"):
+            day = line[1:]
+        elif line.strip() and day:
+            dates[pathlib.PurePosixPath(line.strip()).stem] = day
+    return dates
+
+
 def build_one(t, previous):
     id_ = t["id"]
     try:
@@ -321,6 +352,10 @@ def main():
         # titles of one repo run in the same worker order, so the cache helps
         built = list(pool.map(lambda t: build_one(t, previous), titles.values()))
     out = {t["id"]: t for t in built if t}
+    if dates := added_dates():
+        today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+        for id_, t in out.items():
+            t["added"] = dates.get(id_, today)
 
     cols = CATALOG / "collections.toml"
     catalog = {

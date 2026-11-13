@@ -25,6 +25,9 @@
   --amber: #ffb000;
   --amber-soft: #e9c27a;
   --red: #d9534f;
+  /* FRESH!, new to Asciiverse: a soft violet, clear of the green and amber */
+  --violet: #b99cff;
+  --violet-ink: #160b2e;
 
   --term-bg: #0a0c0e;
   --radius: 3px;
@@ -238,6 +241,17 @@ code, kbd, .mono { font-family: var(--font-mono); }
   box-shadow: 0 2px 0 rgba(0,0,0,.4);
 }
 .new.big { top: 22px; right: -42px; width: 170px; font-size: 15px; line-height: 28px; }
+/* FRESH! for titles new to Asciiverse: same badge, violet, in the free top corner */
+.fresh {
+  position: absolute; top: 14px; right: -34px; z-index: 3; transform: rotate(45deg);
+  width: 130px; text-align: center;
+  font: 700 12px/22px var(--font-mono); letter-spacing: .18em;
+  color: var(--violet-ink); background: var(--violet);
+  box-shadow: 0 2px 0 rgba(0,0,0,.4);
+}
+.fresh.left { right: auto; left: -34px; transform: rotate(-45deg); }
+.fresh.big { top: 22px; right: -42px; width: 170px; font-size: 15px; line-height: 28px; }
+.fresh.left.big { right: auto; left: -42px; }
 
 /* ---------- hero (Steam's Featured & Recommended) ---------- */
 .carousel { position: relative; outline: none; }
@@ -503,6 +517,8 @@ code, kbd, .mono { font-family: var(--font-mono); }
 .lib-list .name { flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .lib-list .m { font: 700 10px var(--font-mono); letter-spacing: .08em; }
 .lib-list .old-m { color: var(--amber); } .lib-list .new-m { color: var(--green-hi); }
+.lib-list .fresh-m { color: var(--violet); } .lib-list .m + .m { margin-left: 6px; }
+.search-menu .fresh-m { font: 700 10px var(--font-mono); font-style: normal; letter-spacing: .08em; color: var(--violet); margin-left: 4px; }
 .lib-none { margin: 10px 14px; color: var(--text-faint); font-size: 13px; }
 .lib-main { min-width: 0; padding: 4px 24px 30px; }
 /* shelves inside the library: arrows top right, as in Steam's library */
@@ -529,6 +545,7 @@ code, kbd, .mono { font-family: var(--font-mono); }
 .lib-detail h1 { margin: 0 0 8px; font: 600 28px/1.15 var(--font-mono); }
 .lib-detail .one { margin: 0 0 12px; color: var(--text-dim); font-size: 15px; max-width: 70ch; }
 .lib-detail .by { color: var(--text-faint); font-size: 13px; margin: 12px 0 0; }
+.fresh-pill { font: 700 11px var(--font-mono); letter-spacing: .14em; background: var(--violet); color: var(--violet-ink); padding: 4px 7px; vertical-align: middle; }
 .new-pill { font: 700 11px var(--font-mono); letter-spacing: .14em; background: var(--green); color: #07120a; padding: 4px 7px; vertical-align: middle; }
 .lib-detail .old-pill { font: 700 11px var(--font-mono); letter-spacing: .14em; background: var(--amber); color: #1a1000; padding: 4px 7px; vertical-align: middle; }
 @media (max-width: 900px) {

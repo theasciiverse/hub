@@ -31,7 +31,7 @@
   app.append(main);
 
   main.append(el(`<div class="crumbs"><a href="${page}">All ${t.kind}s</a> › ${t.genre ? `<a href="${page}">${esc(t.genre)}</a> › ` : ""}${esc(t.title)}</div>`));
-  main.append(el(`<div class="title-head"><h1>${esc(t.title)}</h1><span class="kind">${esc(t.kind)}</span>${t.old ? `<span class="old-pill">OLD!</span>` : ""}${t.new ? `<span class="old-pill" style="background:var(--green-hi);color:#07120a">NEW!</span>` : ""}</div>`));
+  main.append(el(`<div class="title-head"><h1>${esc(t.title)}</h1><span class="kind">${esc(t.kind)}</span>${pills(t)}</div>`));
 
   // ---- top: big player + summary ----
   const top = el(`<section class="app-top"><div class="left"></div><aside class="app-side"></aside></section>`);
@@ -53,8 +53,7 @@
   const coll = t.collection ? (COLLECTIONS[t.collection] || { name: t.collection }) : null;
   const side = top.querySelector(".app-side");
   const still = tile(t, { hover: false });
-  if (t.old) still.append(el(`<div class="old">OLD!</div>`));
-  if (t.new) still.append(el(`<div class="new">NEW!</div>`));
+  corners(still, t);
   side.append(still);
   side.append(el(`<p class="one">${esc(t.description)}</p>`));
   side.append(el(`<dl class="facts">
@@ -114,7 +113,7 @@
   const more = el(`<section class="sect"><div class="sect-head"><h2>More like this</h2></div><div class="grid"></div></section>`);
   titles.filter(x => x.id !== t.id).slice(0, 3).forEach(x => {
     const c = el(`<a class="cap" href="title.html?id=${x.id}"></a>`);
-    const tl = tile(x); if (x.old) tl.append(el(`<div class="old">OLD!</div>`));
+    const tl = corners(tile(x), x);
     c.append(tl);
     c.append(el(`<div class="cap-body"><h4>${esc(x.title)}</h4><p>${esc(x.description)}</p><div class="cap-foot"><span class="genre">${esc(x.genre || x.kind)}</span><span class="plat">${platformsLabel(x)}</span></div></div>`));
     more.querySelector(".grid").append(c);

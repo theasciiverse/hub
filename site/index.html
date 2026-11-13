@@ -62,8 +62,7 @@
     current = box;
     const ht = hero.querySelector(".hero-term"); ht.replaceChildren(box);
     box.player = AsciinemaPlayer.create(t.cast_url, box, { ...PLAYER_OPTS, autoPlay: true, loop: true, startAt: Math.max(0, (t.thumbnail_at || 5) - 4) });
-    if (t.old) box.append(el(`<div class="old big">OLD!</div>`));
-    if (t.new) box.append(el(`<div class="new big">NEW!</div>`));
+    corners(box, t, true);
     const side = hero.querySelector(".hero-side");
     side.replaceChildren(el(`<div>
       <h3><a href="title.html?id=${t.id}" style="color:inherit">${esc(t.title)}</a></h3></div>`));
@@ -114,6 +113,7 @@
   // ---- topic shelves ----
   const has = (t, ...words) => words.some(w => t.genre === w || (t.topics || []).includes(w));
   const shelves = [
+    ["FRESH! Just arrived", "new to Asciiverse in the last 30 days, newest first", freshest(catalog)],
     ["OLD! Classics, rebuilt", "restorations and ports of games that earned their place", titles.filter(t => t.old)],
     ["Originals and homages", "made for the terminal", titles.filter(t => !t.old)],
     ["Puzzle", "think first, then move", titles.filter(t => has(t, "puzzle"))],

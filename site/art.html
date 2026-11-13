@@ -27,7 +27,7 @@
     label: "Art & Demos", items,
     groups: [{ label: "Art & Demos", items }].filter(g => g.items.length),
     badge: t => t.title[0].toUpperCase(),
-    mark: t => t.old ? `<span class="m old-m">OLD!</span>` : t.new ? `<span class="m new-m">NEW!</span>` : "",
+    mark: marks,
     detail: t => gameDetail(t),
     empty: "Nothing here yet.",
     home: main => {
