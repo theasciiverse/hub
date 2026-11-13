@@ -17,3 +17,12 @@
 /install.ps1
   Content-Type: text/plain; charset=utf-8
   Cache-Control: public, max-age=300
+
+# Scripts and styles change together with the pages that use them, so a
+# browser must check them on every visit (a cheap 304 when unchanged); a
+# cached old site.js beside a new page left pages blank (2026-11-13).
+/js/*
+  Cache-Control: no-cache
+
+/css/*
+  Cache-Control: no-cache
