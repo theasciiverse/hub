@@ -1,0 +1,47 @@
+schema_version = 1
+id = "wardens-duty"
+kind = "game"
+title = "Warden's Duty"
+description = "You are the warden of a prison where every cell is full. Deal with each prisoner, one cell at a time, and see how deep you get"
+year = 2015
+license = "ISC"
+repo = "theasciiverse/wardens-duty"
+provenance = "Ondřej Žára, the author of rot.js, made Warden's Duty in seven days for the 2015 Seven Day Roguelike Challenge, a browser roguelike without a map and with oversized glyphs."
+changes = "PATCHES.md"
+topics = ["roguelike", "7drl", "prison", "humour", "no-map", "rot.js", "javascript"]
+genre = "roguelike"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# built from github.com/ondras/wardens-duty at 1c42888 (2015-03-17) by
+# .github/workflows/release.yml: the browser game's scripts, unchanged, run
+# by rotty (asciiverse/rotty) and QuickJS-ng as one native program
+[upstream]
+name = "Ondřej Žára (7DRL 2015)"
+url = "https://github.com/ondras/wardens-duty"
+
+# the session log goes to $XDG_STATE_HOME/wardens-duty;
+# WARDENS_DUTY_LOG=debug records every key; --seed N for the same prison
+[exec]
+game = "wardens-duty"
+
+# the options and the two columns of gauges take 80 columns
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = true
+color = "truecolor"
+
+# 100x30, recorded by asciiverse/record-preview.sh with --seed 3: the title
+# page, O.'s letter, the goblin, the second level's rat and outlaw; the
+# still is the outlaw and the gauges, at 22 s
+[media]
+cast = "asciiverse/wardens-duty.cast"
+thumbnail_at = 22.0
+
+[release]
+source = "github"
