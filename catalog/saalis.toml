@@ -1,0 +1,42 @@
+schema_version = 1
+id = "saalis"
+kind = "game"
+title = "Saalis"
+description = "Fly, fight and trade in the Northern Reach, the cold high fringe of the asteroid belt: haul ore and smuggle stims, take guild jobs and fixers' contracts, and hold the lanes against the claim-jumpers"
+year = 2026
+new = true
+license = "MIT"
+repo = "theasciiverse/saalis"
+provenance = "Asciiverse made Saalis in Rust in 2026, after Ascii Sector and the space trading games before it."
+topics = ["space", "trading", "combat", "sandbox", "gamepad", "braille"]
+genre = "simulation"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# saves and the session log go to $XDG_STATE_HOME/saalis
+[exec]
+game = "saalis"
+args = []
+
+# the game's own check
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = false
+gamepad = true
+glyphs = ["braille"]
+system_deps = ["libasound2", "libudev1"]
+
+# 100x30, `saalis --demo --seed 7` (asciiverse/record-preview.sh)
+[media]
+cast = "asciiverse/saalis.cast"
+thumbnail_at = 14.0
+
+[release]
+source = "github"
