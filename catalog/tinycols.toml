@@ -1,0 +1,45 @@
+schema_version = 1
+id = "tinycols"
+kind = "game"
+title = "TinyCols"
+description = "Columns of three jewels fall into a narrow well: shuffle their order, slide them into place, and line up three of a colour across, down or diagonally before the well fills."
+year = 2022
+license = "BSD-3-Clause"
+repo = "theasciiverse/tinycols"
+provenance = "Rigel Di Scala began TinyCols in 2022, a jewel matching game for the Unix terminal in C and ncurses, and still works on it."
+changes = "PATCHES.md"
+topics = ["puzzle", "falling-blocks", "match-three", "curses"]
+genre = "puzzle"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "Rigel Di Scala"
+url = "https://github.com/zedr/tinycols"
+
+# keeps the best score for each class in the state folder
+[exec]
+game = "tinycols"
+
+# the 6 by 13 well with the next piece, the score panel and the keys
+# beside it, centred on bigger terminals
+[min_terminal]
+cols = 38
+rows = 19
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, played by asciiverse/drive.py, which tries every column and turn
+# of each piece with the game's own matching, chains included; 30 s is a
+# mid-game well on level 1
+[media]
+cast = "asciiverse/tinycols.cast"
+thumbnail_at = 30.0
+
+[release]
+source = "github"
