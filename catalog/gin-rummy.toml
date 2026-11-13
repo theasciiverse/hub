@@ -1,0 +1,50 @@
+schema_version = 1
+id = "gin-rummy"
+kind = "game"
+title = "Gin Rummy"
+description = "Draw, meld, discard: knock with ten or less, go gin with none, or undercut a knock, one on one against the computer, the match to 100."
+year = 2026
+new = true
+license = "MIT"
+repo = "theasciiverse/tty-cards"
+collection = "tty-cards"
+provenance = "Pieczasz built tty.cards in Go with Charm's Bubble Tea and Wish in 2026, an SSH server dealing five card games to whoever connects."
+changes = "PATCHES.md"
+topics = ["gin rummy", "rummy", "melds", "card game", "go"]
+genre = "card"
+
+[developer]
+name = "Pieczasz"
+url = "https://github.com/Pieczasz/tty-cards"
+
+# packaged by Asciiverse with the changes in PATCHES.md
+# (theasciiverse/tty-cards): played on one machine against computer
+# players, with no server or account
+[upstream]
+name = "Pieczasz"
+url = "https://github.com/Pieczasz/tty-cards"
+
+# opens on a setup screen: players at the table (exactly 2), enter to
+# deal. --players N, --demo; session log in ~/.local/state/gin-rummy
+[exec]
+game = "gin-rummy"
+args = []
+
+# below this the tables ask for a bigger terminal
+[min_terminal]
+cols = 64
+rows = 20
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = false
+
+# 100x30, asciiverse/record-preview.sh: --demo, the computer playing every
+# seat; the still is the computer taking the upcard
+[media]
+cast = "asciiverse/gin-rummy.cast"
+thumbnail_at = 20.0
+
+[release]
+source = "github"

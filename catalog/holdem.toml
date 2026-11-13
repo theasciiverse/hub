@@ -1,0 +1,50 @@
+schema_version = 1
+id = "holdem"
+kind = "game"
+title = "Hold'em"
+description = "No-limit Texas Hold'em against up to eight computer players: a ten-hand match, a thousand chips each, real side pots, most chips at the end wins."
+year = 2026
+new = true
+license = "MIT"
+repo = "theasciiverse/tty-cards"
+collection = "tty-cards"
+provenance = "Pieczasz built tty.cards in Go with Charm's Bubble Tea and Wish in 2026, an SSH server dealing five card games to whoever connects."
+changes = "PATCHES.md"
+topics = ["poker", "texas hold'em", "card game", "go"]
+genre = "card"
+
+[developer]
+name = "Pieczasz"
+url = "https://github.com/Pieczasz/tty-cards"
+
+# packaged by Asciiverse with the changes in PATCHES.md
+# (theasciiverse/tty-cards): played on one machine against computer
+# players, with no server or account
+[upstream]
+name = "Pieczasz"
+url = "https://github.com/Pieczasz/tty-cards"
+
+# opens on a setup screen: players at the table (2 to 9, 6 to start), enter to
+# deal. --players N, --demo; session log in ~/.local/state/holdem
+[exec]
+game = "holdem"
+args = []
+
+# below this the tables ask for a bigger terminal
+[min_terminal]
+cols = 64
+rows = 20
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = false
+
+# 100x30, asciiverse/record-preview.sh: --demo, the computer playing every
+# seat; the still is a pot built on the flop
+[media]
+cast = "asciiverse/holdem.cast"
+thumbnail_at = 14.0
+
+[release]
+source = "github"

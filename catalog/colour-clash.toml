@@ -1,0 +1,50 @@
+schema_version = 1
+id = "colour-clash"
+kind = "game"
+title = "Colour Clash"
+description = "Match the colour, the number or the symbol: skips, reverses, draw twos and wilds, against up to nine computer players, until somebody's hand runs out."
+year = 2026
+new = true
+license = "MIT"
+repo = "theasciiverse/tty-cards"
+collection = "tty-cards"
+provenance = "Pieczasz built tty.cards in Go with Charm's Bubble Tea and Wish in 2026, an SSH server dealing five card games to whoever connects."
+changes = "PATCHES.md"
+topics = ["shedding", "colours", "wild cards", "card game", "go"]
+genre = "card"
+
+[developer]
+name = "Pieczasz"
+url = "https://github.com/Pieczasz/tty-cards"
+
+# packaged by Asciiverse with the changes in PATCHES.md
+# (theasciiverse/tty-cards): played on one machine against computer
+# players, with no server or account
+[upstream]
+name = "Pieczasz"
+url = "https://github.com/Pieczasz/tty-cards"
+
+# opens on a setup screen: players at the table (2 to 10, 4 to start), enter to
+# deal. --players N, --demo; session log in ~/.local/state/colour-clash
+[exec]
+game = "colour-clash"
+args = []
+
+# below this the tables ask for a bigger terminal
+[min_terminal]
+cols = 64
+rows = 20
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = false
+
+# 100x30, asciiverse/record-preview.sh: --demo, the computer playing every
+# seat; the still is a wild card on the pile
+[media]
+cast = "asciiverse/colour-clash.cast"
+thumbnail_at = 20.0
+
+[release]
+source = "github"

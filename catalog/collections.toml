@@ -36,3 +36,8 @@ description = "The oldest board games of the world, made for the terminal by Asc
 name = "Atlas Games"
 url = "https://github.com/fezcode/atlas.games"
 description = "fezcode's terminal games and generators, in Go since 2026: the runner Wilson's Revenge, and the Wave Function Collapse land and city generators, shown here as WFC Worlds"
+
+[tty-cards]
+name = "tty.cards"
+url = "https://github.com/Pieczasz/tty-cards"
+description = "Pieczasz's card tables served over SSH, in Go since 2026: Crazy Eights, Hold'em, Colour Clash, Hearts and Gin Rummy, each played here on its own against computer players"
