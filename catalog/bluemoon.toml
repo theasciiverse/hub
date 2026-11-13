@@ -1,0 +1,47 @@
+schema_version = 1
+id = "bluemoon"
+kind = "game"
+title = "Blue Moon"
+description = "A patience with no hidden cards: all 52 face up in four rows, every gap filled with the next card of its suit. Put every row in order in as few deals as you can."
+year = 1994
+old = true
+license = "BSD-2-Clause"
+repo = "theasciiverse/bluemoon"
+provenance = "Tim Lister wrote Blue Moon in GFA BASIC for the Atari ST; Eric S. Raymond gave it its curses screen in 1994 and still maintains it."
+changes = "PATCHES.md"
+topics = ["solitaire", "patience", "cards", "single-player", "classic", "curses"]
+genre = "card"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# built from gitlab.com/esr/bluemoon (2.15) with the changes in PATCHES.md
+[upstream]
+name = "Eric S. Raymond"
+url = "https://gitlab.com/esr/bluemoon"
+
+# keeps no files
+[exec]
+game = "bluemoon"
+
+# an 80x24 screen, centred on bigger terminals
+[min_terminal]
+cols = 80
+rows = 24
+
+# suit symbols in UTF-8 terminals on Linux, the letters h s d c elsewhere;
+# red and black cards on white in the basic colours
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, game 2 played by asciiverse/drive.py, which takes the first move
+# offered: three deals, "good"; the still is the first deal mid-way
+[media]
+cast = "asciiverse/bluemoon.cast"
+thumbnail_at = 20.0
+
+[release]
+source = "github"
