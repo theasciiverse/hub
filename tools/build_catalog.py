@@ -279,7 +279,9 @@ def added_dates():
                           capture_output=True, text=True, check=True).stdout.strip() == "true":
             warn("shallow git checkout: no added dates (fetch-depth: 0 in the workflow)")
             return {}
-        log = subprocess.run(["git", "log", "--diff-filter=A", "--format=%x00%cs",
+        # --no-renames: a manifest renamed in (battleship.toml to salvo.toml)
+        # counts as added that day, not lost to a rename pair
+        log = subprocess.run(["git", "log", "--no-renames", "--diff-filter=A", "--format=%x00%cs",
                               "--name-only", "--", "catalog/*.toml"], cwd=HUB,
                              capture_output=True, text=True, check=True).stdout
     except (OSError, subprocess.CalledProcessError) as e:
