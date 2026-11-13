@@ -7,12 +7,12 @@ Haul ice from the mines to the farms and ore to the refinery. Buy where it's che
 And keep your guns warm. Claim-jumpers work the lanes, and their fleets are taking regions one by one. Every raider you burn down weakens their grip.
 
 - **Real-time dogfights** with four-way shields, armour that only a dock can patch, seeking missiles and ECM.
-- **Nine belt regions** joined by drive lanes, an autopilot that drops out when trouble appears, and a war that keeps moving while you fly.
+- **Twelve belt regions** joined by drive lanes, an autopilot that drops out when trouble appears, and a war that keeps moving while you fly.
 - **Trade, smuggle, take contracts**: ten goods and two kinds of contraband, guild boards, fixers, deadlines.
 - **Four hulls to own** and a shipyard full of plating, plasma guns, turrets and hidden compartments.
 - **Five factions** that remember what you did: patrols that escort friends and shoot enemies, pirates who can be paid off.
 - **On foot**: walk every base in classic ASCII, from the hangar to the bar. Knock a ship out, clamp on, and fight its crew room by room for what's in the hold.
-- **Quests** written in Lua, starting with a prospector whose claim was jumped. Write your own: the game loads them from its save folder.
+- **A story** that starts with a prospector whose claim was jumped and digs down to what was under it, with side stories across the Reach. Quests are written in Lua; write your own and the game loads them from its save folder.
 
 The catch is out there. **WILL YOU TAKE IT, OR BE IT?**
 
