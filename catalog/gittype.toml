@@ -1,0 +1,49 @@
+schema_version = 1
+id = "gittype"
+kind = "game"
+title = "gittype"
+description = "A typing game made of real source code: functions, structs and loops from the catalog's own games, or from your own projects, in Rust, Go, C, Haskell, Zig and a dozen more languages, with speed, accuracy and a developer rank at the end of every session."
+year = 2025
+new = true
+license = "MIT"
+repo = "theasciiverse/gittype"
+provenance = "Yuji Ueki (unhappychoice) started gittype in Rust in 2025 and has kept it growing since, with contributors."
+changes = "PATCHES.md"
+topics = ["typing", "typing test", "wpm", "practice", "code", "rust"]
+genre = "typing"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# release v0.10.4 with the changes in PATCHES.md
+[upstream]
+name = "Yuji Ueki (unhappychoice)"
+url = "https://github.com/unhappychoice/gittype"
+
+# av starts it in its install folder, where samples/ holds code from
+# catalog games to type; history, settings and themes in the state folder
+[exec]
+game = "gittype"
+
+# the challenge, code, metrics and progress boxes stack down the screen;
+# the code box wraps long lines
+[min_terminal]
+cols = 80
+rows = 24
+
+# box-drawing characters and true colour themes
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = false
+
+# 100x30, asciiverse/record.sh: av's layout (the program with samples/),
+# and asciiverse/drive.py typing three Easy stages at a human pace;
+# 35 s is mid-challenge
+[media]
+cast = "asciiverse/gittype.cast"
+thumbnail_at = 35.0
+
+[release]
+source = "github"
