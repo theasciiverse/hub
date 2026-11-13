@@ -1,0 +1,54 @@
+schema_version = 1
+id = "zorbash"
+kind = "game"
+title = "Zorbash"
+description = "Down through dungeons, sewers, swamps, ice and lava to collect the crystals and confront Zorbash: a deep roguelike with over a hundred monsters, skills and spells, and a robot that will play it for you."
+year = 2018
+# GPL-3.0 code; art, music and sounds credited in the page and README
+license = "GPL-3.0-only"
+repo = "theasciiverse/zorbash"
+provenance = "Neil McGill (goblinhack) has written Zorbash in C++ since 2018, a roguelike with a pixel-art mode and an ascii mode."
+changes = "PATCHES.md"
+topics = ["roguelike", "dungeon", "fantasy", "turn-based", "robot", "seeds", "music", "mouse"]
+genre = "roguelike"
+
+[developer]
+name = "Neil McGill (goblinhack)"
+url = "https://github.com/goblinhack/zorbash"
+
+# terminal edition: the game's ascii mode drawn in the terminal, with no
+# window and no OpenGL; PATCHES.md and UPSTREAM.md in theasciiverse/zorbash
+[upstream]
+name = "Neil McGill (goblinhack)"
+url = "https://github.com/goblinhack/zorbash"
+
+# one binary with every picture, sound and tune built in; saves, config
+# and logs in ~/.local/state/zorbash (macOS: ~/Library/Application
+# Support/zorbash). --terminal is the only mode of this build; av passes it
+# all the same
+[exec]
+game = "zorbash"
+args = ["--terminal"]
+
+# the screen lays itself out for the terminal's size and again on a
+# resize; at 100x30 everything fits, below that the map gets narrow
+[min_terminal]
+cols = 100
+rows = 30
+
+# box drawing and symbols, RGB colours; the mouse moves, picks and shows
+# what is under it, all of which also works from the keyboard
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = false
+
+# 100x30, asciiverse/record-preview.py: the title screen, the dungeon's
+# map, then the game's own robot clearing level 1 and dropping into the
+# swamp; the still is a fight in the first rooms
+[media]
+cast = "asciiverse/zorbash.cast"
+thumbnail_at = 16.0
+
+[release]
+source = "github"
