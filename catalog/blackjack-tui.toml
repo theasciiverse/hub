@@ -1,0 +1,51 @@
+schema_version = 1
+id = "blackjack-tui"
+kind = "game"
+title = "Blackjack"
+description = "Just you, the dealer and a shoe of cards: bet, hit, stand, double down or surrender, under the house rules you set, and walk away with your bankroll saved for next time."
+year = 2025
+new = true
+license = "BSD-3-Clause"
+repo = "theasciiverse/blackjack-tui"
+provenance = "MarcusBilo wrote blackjack-tui in Go in 2025, a one-on-one casino blackjack with the house rules left up to the player."
+changes = "PATCHES.md"
+topics = ["blackjack", "21", "casino", "card game", "go"]
+genre = "card"
+
+[developer]
+name = "MarcusBilo"
+url = "https://github.com/MarcusBilo/blackjack-tui"
+
+# packaged by Asciiverse with the changes in PATCHES.md
+# (theasciiverse/blackjack-tui): text built in, saves and log in the state folder
+[upstream]
+name = "MarcusBilo"
+url = "https://github.com/MarcusBilo/blackjack-tui"
+
+# opens on the start screen: a new game (payout, soft-17 rule, decks,
+# shuffle point) or a game saved in ~/.local/state/blackjack-tui
+[exec]
+game = "blackjack-tui"
+args = []
+
+# the longest line is the 62-column help prompt; a hand and its menu take
+# 12 rows
+[min_terminal]
+cols = 64
+rows = 14
+
+# card suits are Unicode; plain text otherwise; keyboard only
+[requires]
+utf8 = true
+color = "none"
+mouse = false
+
+# 100x30 (asciiverse/record-preview.py): a new game at 3:2, dealer stands
+# on soft 17, six decks, then hands played by basic strategy, best of
+# eight takes (up from 100 to 190 chips in 50 s); at 28 s a hand won
+[media]
+cast = "asciiverse/blackjack-tui.cast"
+thumbnail_at = 28.0
+
+[release]
+source = "github"
