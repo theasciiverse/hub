@@ -1,0 +1,40 @@
+schema_version = 1
+id = "four-in-a-row"
+kind = "game"
+title = "Four in a Row"
+description = "Drop a disc, hear the clack, line up four! The classic vertical board game against a computer with four levels, from friendly to Master, or a friend at the same keyboard, on four boards up to five in a row."
+year = 2026
+new = true
+license = "MIT"
+repo = "theasciiverse/four-in-a-row"
+provenance = "Asciiverse made Four in a Row in Rust in 2026, after the vertical four-in-a-row board game sold since the 1970s."
+topics = ["board", "four-in-a-row", "vs-computer", "two-players", "family", "classic", "gamepad"]
+genre = "board"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[exec]
+game = "four-in-a-row"
+args = []
+
+# src/render.rs min_size for the largest board, and the title menu
+[min_terminal]
+cols = 50
+rows = 17
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = true
+gamepad = true
+
+system_deps = ["libasound2", "libudev1"]
+
+[media]
+cast = "asciiverse/four-in-a-row.cast"
+thumbnail_at = 20.0
+
+[release]
+source = "github"
