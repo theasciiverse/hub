@@ -1,0 +1,51 @@
+schema_version = 1
+id = "goblinhack"
+kind = "game"
+title = "Goblin Hack"
+description = "A real-time dungeon romp where every goblin, orc and dragon is a little picture made of characters: pick one of twenty-one heroes and hack your way down through dungeons, caves and fractal forests."
+year = 1999
+# file headers: GNU Library GPL v2 or later; the LICENSE file is the GPL v2
+license = "LGPL-2.0-or-later"
+repo = "theasciiverse/goblinhack"
+provenance = "Neil McGill (goblinhack) wrote Goblin Hack in C++ from 1999, a smooth-scrolling dungeon game whose monsters, items and walls are all drawn in ASCII characters."
+changes = "PATCHES.md"
+topics = ["dungeon", "action", "fantasy", "real-time", "shops", "spells", "ascii-art"]
+genre = "action"
+
+[developer]
+name = "Neil McGill (goblinhack)"
+url = "https://github.com/goblinhack/goblinhack-game"
+
+# terminal edition: the game's console in the terminal and the dungeon one
+# character a square (Tab: every thing as its own picture), no window and
+# no OpenGL; PATCHES.md and UPSTREAM.md in theasciiverse/goblinhack
+[upstream]
+name = "Neil McGill (goblinhack)"
+url = "https://github.com/goblinhack/goblinhack-game"
+
+# the binary with the game's files in resources/ beside it; saves, high
+# scores, bones and logs in ~/.local/state/goblinhack (macOS:
+# ~/Library/Application Support/goblinhack)
+[exec]
+game = "goblinhack"
+
+# laid out for the terminal's size and again on a resize; menus were made
+# for 46 rows and fit 30 by scrolling their lists
+[min_terminal]
+cols = 100
+rows = 30
+
+[requires]
+utf8 = false
+color = "truecolor"
+mouse = false
+
+# 100x30, asciiverse/record-preview.sh: the title, the hero and dungeon
+# choosers, a walk through level 1 into a crowd of orcs and worms, and the
+# Tab view's pictures; the still is the hero in the crowd
+[media]
+cast = "asciiverse/goblinhack.cast"
+thumbnail_at = 25.0
+
+[release]
+source = "github"
