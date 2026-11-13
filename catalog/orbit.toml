@@ -1,0 +1,43 @@
+schema_version = 1
+id = "orbit"
+kind = "game"
+title = "Orbit"
+description = "A cloaked raider circles your planet. One bomb an hour, set by angle and distance, and you only learn how close it burst. Seven hours to find it before it slips away."
+year = 1978
+old = true
+new = false
+license = "MIT"
+repo = "theasciiverse/bcg-games"
+collection = "bcg-games"
+provenance = "Jeff Lederer of Project SOLO in Pittsburgh wrote it as Space War; David H. Ahl published it as Orbit in BASIC Computer Games (1978). Asciiverse rebuilt it from its rules in 2026."
+topics = ["space", "geometry", "deduction", "polar-coordinates", "basic-computer-games", "classic"]
+genre = "puzzle"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[exec]
+game = "orbit"
+args = []
+
+# the game asks for a bigger window below this
+[min_terminal]
+cols = 72
+rows = 22
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = true
+gamepad = true
+
+system_deps = ["libasound2", "libudev1"]
+
+# 100x30, asciiverse/record-previews.sh: --demo, the game playing itself
+[media]
+cast = "asciiverse/orbit.cast"
+thumbnail_at = 16.0
+
+[release]
+source = "github"

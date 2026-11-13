@@ -1,0 +1,43 @@
+schema_version = 1
+id = "lunar-descent"
+kind = "game"
+title = "Lunar Descent"
+description = "120 miles up and falling at 3,600 miles an hour: set the burn of your descent engine and bring the craft down softly before the fuel runs out. Fly it live or in ten-second turns."
+year = 1969
+old = true
+new = false
+license = "MIT"
+repo = "theasciiverse/bcg-games"
+collection = "bcg-games"
+provenance = "Jim Storer wrote Lunar in FOCAL at Lexington High School in 1969, and David H. Ahl's BASIC versions in BASIC Computer Games made it the most popular computer game of its day. Asciiverse rebuilt it from its rules in 2026."
+topics = ["lander", "space", "moon", "physics", "simulation", "basic-computer-games", "classic"]
+genre = "simulation"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[exec]
+game = "lunar-descent"
+args = []
+
+# the game asks for a bigger window below this
+[min_terminal]
+cols = 76
+rows = 22
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = true
+gamepad = true
+
+system_deps = ["libasound2", "libudev1"]
+
+# 100x30, asciiverse/record-previews.sh: --demo, the game playing itself
+[media]
+cast = "asciiverse/lunar-descent.cast"
+thumbnail_at = 18.0
+
+[release]
+source = "github"

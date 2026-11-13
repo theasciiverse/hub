@@ -1,0 +1,43 @@
+schema_version = 1
+id = "hexapawn"
+kind = "game"
+title = "Hexapawn"
+description = "Three pawns a side on a three-by-three board, against a computer that knows only the rules. Every game it loses, it strikes out the move that lost. Watch it learn until you can't win."
+year = 1978
+old = true
+new = false
+license = "MIT"
+repo = "theasciiverse/bcg-games"
+collection = "bcg-games"
+provenance = "Martin Gardner described Hexapawn and a matchbox machine that learns to play it in Scientific American in March 1962; R. A. Kaapke wrote the program, reworked by Jeff Dalton and Steve North for David H. Ahl's BASIC Computer Games (1978). Asciiverse rebuilt it from its rules in 2026."
+topics = ["pawns", "learning", "machine-learning", "abstract", "basic-computer-games", "classic"]
+genre = "board"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[exec]
+game = "hexapawn"
+args = []
+
+# the game asks for a bigger window below this
+[min_terminal]
+cols = 70
+rows = 22
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = true
+gamepad = true
+
+system_deps = ["libasound2", "libudev1"]
+
+# 100x30, asciiverse/record-previews.sh: --demo, the game playing itself
+[media]
+cast = "asciiverse/hexapawn.cast"
+thumbnail_at = 30.0
+
+[release]
+source = "github"

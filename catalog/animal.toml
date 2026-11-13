@@ -1,0 +1,43 @@
+schema_version = 1
+id = "animal"
+kind = "game"
+title = "Animal"
+description = "Think of an animal: the computer asks yes-or-no questions and guesses. When it's wrong, teach it a question, and it remembers. Start it with two animals and grow it a whole zoo."
+year = 1978
+old = true
+new = false
+license = "MIT"
+repo = "theasciiverse/bcg-games"
+collection = "bcg-games"
+provenance = "Arthur Luehrmann wrote Animal at Dartmouth College; Nathan Teichholtz at DEC and Steve North at Creative Computing shortened and reworked it for David H. Ahl's BASIC Computer Games (1978). Asciiverse rebuilt it from its rules in 2026."
+topics = ["guessing", "learning", "animals", "family", "basic-computer-games", "classic"]
+genre = "puzzle"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[exec]
+game = "animal"
+args = []
+
+# the game asks for a bigger window below this
+[min_terminal]
+cols = 64
+rows = 20
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = true
+gamepad = true
+
+system_deps = ["libasound2", "libudev1"]
+
+# 100x30, asciiverse/record-previews.sh: --demo, the game playing itself
+[media]
+cast = "asciiverse/animal.cast"
+thumbnail_at = 30.0
+
+[release]
+source = "github"

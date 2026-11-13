@@ -41,3 +41,8 @@ description = "fezcode's terminal games and generators, in Go since 2026: the ru
 name = "tty.cards"
 url = "https://github.com/Pieczasz/tty-cards"
 description = "Pieczasz's card tables served over SSH, in Go since 2026: Crazy Eights, Hold'em, Colour Clash, Hearts and Gin Rummy, each played here on its own against computer players"
+
+[bcg-games]
+name = "bcg-games"
+url = "https://github.com/theasciiverse/bcg-games"
+description = "Eight games from David H. Ahl's BASIC Computer Games (Creative Computing, 1978), the book that brought computer games to a generation, rebuilt by Asciiverse in 2026 from their rules, each crediting its original authors"

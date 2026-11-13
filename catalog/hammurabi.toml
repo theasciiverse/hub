@@ -1,0 +1,43 @@
+schema_version = 1
+id = "hammurabi"
+kind = "game"
+title = "Hammurabi"
+description = "Rule a city of ancient Sumer for ten years: trade land, share out the grain, sow the fields, and pray the rats, the harvest and the plague are kind. Then the people judge your reign."
+year = 1968
+old = true
+new = false
+license = "MIT"
+repo = "theasciiverse/bcg-games"
+collection = "bcg-games"
+provenance = "The Sumer Game, written in FOCAL at DEC in 1968 and credited to Doug Dyment in DEC's DECUS catalogs, followed in the line of Mabel Addis's The Sumerian Game (1964); David H. Ahl's BASIC version, Hamurabi, spread it through his BASIC Computer Games. Asciiverse rebuilt it from its rules in 2026."
+topics = ["city-builder", "economy", "sumer", "turn-based", "basic-computer-games", "classic"]
+genre = "strategy"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[exec]
+game = "hammurabi"
+args = []
+
+# the game asks for a bigger window below this
+[min_terminal]
+cols = 76
+rows = 22
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = true
+gamepad = true
+
+system_deps = ["libasound2", "libudev1"]
+
+# 100x30, asciiverse/record-previews.sh: --demo, the game playing itself
+[media]
+cast = "asciiverse/hammurabi.cast"
+thumbnail_at = 24.0
+
+[release]
+source = "github"

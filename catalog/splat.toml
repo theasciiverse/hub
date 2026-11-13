@@ -1,0 +1,43 @@
+schema_version = 1
+id = "splat"
+kind = "game"
+title = "Splat"
+description = "A parachute jump on a world picked at random, from the Moon to the Sun. Set the timer and open the chute as late as you dare. Every good jump is ranked against your nerve on the last."
+year = 1978
+old = true
+new = false
+license = "MIT"
+repo = "theasciiverse/bcg-games"
+collection = "bcg-games"
+provenance = "John Yegge wrote Splat at Oak Ridge Associated Universities; it came to wide use through David H. Ahl's BASIC Computer Games (1978). Asciiverse rebuilt it from its rules in 2026."
+topics = ["parachute", "physics", "planets", "nerve", "basic-computer-games", "classic"]
+genre = "simulation"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[exec]
+game = "splat"
+args = []
+
+# the game asks for a bigger window below this
+[min_terminal]
+cols = 70
+rows = 22
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = true
+gamepad = true
+
+system_deps = ["libasound2", "libudev1"]
+
+# 100x30, asciiverse/record-previews.sh: --demo, the game playing itself
+[media]
+cast = "asciiverse/splat.cast"
+thumbnail_at = 14.0
+
+[release]
+source = "github"

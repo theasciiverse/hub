@@ -1,0 +1,43 @@
+schema_version = 1
+id = "bagels"
+kind = "game"
+title = "Bagels"
+description = "Three different digits, hidden. Guess, and hear Fermi for a right digit in the right place, Pico for a right digit in the wrong place, Bagels for nothing at all. Twenty guesses."
+year = 1978
+old = true
+new = false
+license = "MIT"
+repo = "theasciiverse/bcg-games"
+collection = "bcg-games"
+provenance = "D. Resek and P. Rowe wrote Bagels at the Lawrence Hall of Science in Berkeley; it came to wide use through David H. Ahl's BASIC Computer Games (1978). Asciiverse rebuilt it from its rules in 2026."
+topics = ["deduction", "numbers", "logic", "basic-computer-games", "classic"]
+genre = "puzzle"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[exec]
+game = "bagels"
+args = []
+
+# the game asks for a bigger window below this
+[min_terminal]
+cols = 60
+rows = 20
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = true
+gamepad = true
+
+system_deps = ["libasound2", "libudev1"]
+
+# 100x30, asciiverse/record-previews.sh: --demo, the game playing itself
+[media]
+cast = "asciiverse/bagels.cast"
+thumbnail_at = 11.0
+
+[release]
+source = "github"
