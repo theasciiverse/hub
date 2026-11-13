@@ -1,0 +1,51 @@
+schema_version = 1
+id = "goldfish"
+kind = "game"
+title = "Goldfish"
+description = "You are a goldfish in a lake full of fishermen. Get caught, promise a wish, then swim the caves to find what each one wished for"
+year = 2014
+# no licence file upstream; Ondrej Zara gave his permission for Asciiverse
+# by email on 2026-11-13, kept with the game (PERMISSION.md and the .eml in
+# asciiverse/permission/); rotty, the terminal runtime, is MIT
+license = "LicenseRef-Author-Permission"
+repo = "theasciiverse/goldfish"
+provenance = "Ondřej Žára, the author of rot.js, made Goldfish in seven days for the 2014 Seven Day Roguelike Challenge, as a browser game drawn in characters."
+changes = "PATCHES.md"
+topics = ["roguelike", "7drl", "underwater", "quests", "humour", "rot.js", "javascript"]
+genre = "roguelike"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# built from github.com/ondras/goldfish at e7b397c (2020-07-16) by
+# .github/workflows/release.yml: the browser game's scripts, unchanged, run
+# by rotty (asciiverse/rotty) and QuickJS-ng as one native program
+[upstream]
+name = "Ondřej Žára (7DRL 2014)"
+url = "https://github.com/ondras/goldfish"
+
+# the session log goes to $XDG_STATE_HOME/goldfish (~/.local/state/goldfish);
+# GOLDFISH_LOG=debug records every key
+[exec]
+game = "goldfish"
+
+# the game's display is 100x36; at 100x30 the messages and status stay put
+# and the lake scrolls with the fish, narrower it scrolls sideways too
+[min_terminal]
+cols = 100
+rows = 30
+
+[requires]
+utf8 = true
+color = "truecolor"
+
+# 100x30, recorded by asciiverse/record-preview.sh: the title page, the
+# help page, a swim around the lake, the inventory, the quests; the still
+# is the lake, at 14 s
+[media]
+cast = "asciiverse/goldfish.cast"
+thumbnail_at = 14.0
+
+[release]
+source = "github"

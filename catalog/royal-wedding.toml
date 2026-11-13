@@ -1,0 +1,51 @@
+schema_version = 1
+id = "royal-wedding"
+kind = "game"
+title = "The Royal Wedding"
+description = "You have been invited to a royal wedding. Find your way from a dark pier through a forest maze to the castle, and the story writes itself as you go"
+year = 2013
+# no licence file upstream; Ondrej Zara gave his permission for Asciiverse
+# by email on 2026-11-13, kept with the game (PERMISSION.md and the .eml in
+# asciiverse/permission/); rotty, the terminal runtime, is MIT
+license = "LicenseRef-Author-Permission"
+repo = "theasciiverse/royal-wedding"
+provenance = "Ondřej Žára, the author of rot.js, made The Royal Wedding as a short introductory roguelike with a story, lighting and a narrator, drawn in characters in the browser."
+changes = "PATCHES.md"
+topics = ["roguelike", "story", "lighting", "introductory", "humour", "rot.js", "javascript"]
+genre = "roguelike"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# built from github.com/ondras/trw at 65d8a48 (2021-05-11) by
+# .github/workflows/release.yml: the browser game's scripts, unchanged, run
+# by rotty (asciiverse/rotty) and QuickJS-ng as one native program
+[upstream]
+name = "Ondřej Žára"
+url = "https://github.com/ondras/trw"
+
+# the session log goes to $XDG_STATE_HOME/royal-wedding;
+# ROYAL_WEDDING_LOG=debug records every key; --seed N for the same forest
+[exec]
+game = "royal-wedding"
+
+# the story on the left takes about 38% of the width; the level scrolls
+# with you, so smaller windows play, with less story on screen
+[min_terminal]
+cols = 90
+rows = 26
+
+[requires]
+utf8 = true
+color = "truecolor"
+
+# 100x30, recorded by asciiverse/record-preview.sh with --seed 3: the
+# invitation, the pier at night, the torch, the forest maze, the story
+# leafed back and forth; the still is the forest, at 38 s
+[media]
+cast = "asciiverse/royal-wedding.cast"
+thumbnail_at = 38.0
+
+[release]
+source = "github"
