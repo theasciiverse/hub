@@ -1,0 +1,41 @@
+schema_version = 1
+id = "bellbeat"
+kind = "game"
+title = "Bellbeat"
+description = "Notes rain down four lanes and every one you hit plays the melody! Five songs made for the terminal, from a lullaby to a kernel panic: nail the beat, build the combo, and make the whole tune ring out."
+year = 2026
+new = true
+license = "MIT"
+repo = "theasciiverse/bellbeat"
+provenance = "Asciiverse made Bellbeat in Rust in 2026, named after BEL, the bell character and the one sound a terminal was built to make; its songs were written for it."
+topics = ["rhythm", "music", "arcade", "gamepad", "synth"]
+genre = "rhythm"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[exec]
+game = "bellbeat"
+args = []
+
+# drawn for 100x30; at 80x24 the lanes narrow, and below about 60x20 the
+# side panels fold into one line
+[min_terminal]
+cols = 60
+rows = 20
+
+[requires]
+utf8 = true
+color = "truecolor"
+gamepad = true
+glyphs = ["braille"]
+
+system_deps = ["libasound2", "libudev1"]
+
+[media]
+cast = "asciiverse/bellbeat.cast"
+thumbnail_at = 18.0
+
+[release]
+source = "github"
