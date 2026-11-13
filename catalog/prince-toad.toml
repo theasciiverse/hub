@@ -1,0 +1,40 @@
+schema_version = 1
+id = "prince-toad"
+kind = "game"
+title = "Prince Toad"
+description = "A prince turned toad crosses road after road, river, ice and moat, kissing whatever waits on the other side"
+year = 2026
+new = true
+license = "MIT"
+repo = "theasciiverse/prince-toad"
+provenance = "Asciiverse made Prince Toad in Rust in 2026, from a story by David Sandquist."
+topics = ["arcade", "lane-crossing", "story", "toad", "endless", "local-multiplayer", "gamepad", "rust"]
+genre = "arcade"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# save and session log go to $XDG_STATE_HOME/prince-toad
+[exec]
+game = "prince-toad"
+args = []
+
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = true
+color = "truecolor"
+gamepad = true
+system_deps = ["libasound2", "libudev1"]
+
+# 100x30, `prince-toad --demo --crossing 8`: the river, a rubber duck,
+# the rapids, a heron, the winter road (asciiverse/record-preview.sh)
+[media]
+cast = "asciiverse/prince-toad.cast"
+thumbnail_at = 9.0
+
+[release]
+source = "github"
