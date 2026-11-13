@@ -2,15 +2,15 @@ schema_version = 1
 id = "cataclysm2"
 kind = "game"
 title = "Cataclysm II"
-description = "Shipwrecked fifty years after the end of the world: Whales' unfinished alpha rewrite of Cataclysm, with zombies in the towns and a world map to cross."
+description = "Shipwrecked on an island fifty years after the end of the world: survive its zombies and monsters, then sail the wreck home or power up the Lab at the island's heart and close the seam they came through."
 year = 2013
 # LICENSE is the GPL version 3 text and data/motd.txt says "licensed
 # under the GPLv3"; nothing in the sources says "or any later version"
 license = "GPL-3.0-only"
 repo = "theasciiverse/cataclysm2"
-provenance = "Whales wrote Cataclysm II from 2013 to 2016 as a ground-up rewrite of Cataclysm, the roguelike Whales wrote from 2010 to 2013, and left it an early alpha. It is a separate project from Cataclysm: Dark Days Ahead, the community fork of the first Cataclysm."
+provenance = "Whales wrote Cataclysm II from 2013 to 2016 as the sequel to Cataclysm, the roguelike Whales wrote from 2010 to 2013, with a plan for a game you could win, and left it an early alpha. The Asciiverse carries it on from that plan, in Whales' notes and development blog. It is a separate project from Cataclysm: Dark Days Ahead, the community fork of the first Cataclysm."
 changes = "PATCHES.md"
-topics = ["roguelike", "survival", "zombies", "post-apocalyptic", "alpha", "curses"]
+topics = ["roguelike", "survival", "zombies", "post-apocalyptic", "island", "curses"]
 genre = "roguelike"
 
 [developer]
@@ -37,10 +37,10 @@ color = "basic"
 mouse = false
 
 # 100x30, played by asciiverse/record/cataclysm2.py (best of several
-# takes): the first screen with its early alpha notice, a Survivalist with
-# a hatchet, the world map, then a walk to the nearest town and a fight
-# with its zombies; 52 s, ending on Q. The still is the town's edge with
-# two zombies coming and the kills in the message log
+# takes): the first screen, a Survivalist with a hatchet, the wreck of the
+# boat examined (what it needs to sail again), the world map, then a walk
+# to the nearest town and a fight with its zombies; 55 s, ending on Q. The
+# still is the fight, with the kills in the message log
 [media]
 cast = "asciiverse/casts/cataclysm2.cast"
 thumbnail_at = 30.0
