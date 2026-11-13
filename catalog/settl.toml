@@ -1,0 +1,56 @@
+schema_version = 1
+id = "settl"
+kind = "game"
+title = "settl"
+description = "Settle a hex island, trade and build to ten points against three rivals who think out loud: small language models running on your own machine, or an instant rule-based computer."
+year = 2026
+new = true
+license = "Apache-2.0"
+repo = "theasciiverse/settl"
+provenance = "Nathan Brake wrote settl at Mozilla.ai in April 2026, in Rust and Ratatui: a hex settlement game whose opponents are small language models run locally through Mozilla's llamafile."
+changes = "PATCHES.md"
+topics = ["board game", "strategy", "trading", "language models", "llamafile", "computer opponents", "rust"]
+genre = "board"
+
+[developer]
+name = "Mozilla.ai"
+url = "https://github.com/mozilla-ai/settl"
+
+# packaged by Asciiverse with the changes in PATCHES.md
+# (theasciiverse/settl): a rule-based Computer opponent, --demo, a missed
+# win fixed, files in the state and cache folders
+[upstream]
+name = "Mozilla.ai"
+url = "https://github.com/mozilla-ai/settl"
+
+# no arguments: the title menu. The language model opponents download a
+# llamafile on first use (Bonsai 1.7B, 292 MB, into ~/.cache/settl) and
+# want about 4 GB of memory; Computer seats need neither. Saves and
+# settings in ~/.local/state/settl
+[exec]
+game = "settl"
+args = []
+
+# the game's own minimum: its board of large hexes is about 92x52 beside a
+# 38-column side panel (it warns below this, then cuts the board off)
+[min_terminal]
+cols = 130
+rows = 60
+
+# box drawing and half blocks, 24-bit terrain colours; keyboard play (the
+# mouse wheel scrolls the log)
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = false
+
+# 130x60 (asciiverse/record-preview.sh): settl --demo, four Computer
+# players from the opening placements to the middle game; cropped to
+# 100x30 from the centre (RECORDING.md); the still is the board at 50 s
+[media]
+cast = "asciiverse/settl.cast"
+thumbnail_at = 50.0
+crop = { follow = "centre" }
+
+[release]
+source = "github"
