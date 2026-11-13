@@ -43,6 +43,12 @@ jobs:
           mkdir public
           cp -r site/. public/
           rm -rf public/dev public/DESIGN.md public/.gitignore public/data/catalog.json
+          # stamp our own scripts and styles with this commit, so a deploy is
+          # always new URLs and no browser pairs a new page with an old site.js
+          # (Cloudflare's 4-hour browser cache overrides Cache-Control headers)
+          v=$(git rev-parse --short HEAD)
+          sed -i -E "s#(src|href)=\"(js|css)/([^\"?]+)\"#\\1=\"\\2/\\3?v=$v\"#g" public/*.html
+          grep -c "site.js?v=$v" public/index.html
 
       - name: Build catalog.json
         env:

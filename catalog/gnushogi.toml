@@ -1,0 +1,52 @@
+schema_version = 1
+id = "gnushogi"
+kind = "game"
+title = "GNU Shogi"
+description = "Shogi, Japanese chess, against the computer: capture a piece and it joins your side, ready to drop back onto the board. An opening book, ten time controls, hints and take-backs."
+year = 1993
+old = true
+license = "GPL-3.0-or-later"
+repo = "theasciiverse/gnushogi"
+provenance = "Matthias Mutz turned GNU Chess 4.0 into GNU Shogi in 1993; Mike Vanier, Luis Felipe Strano Moraes and Yann Dirson carried it on, the last work landing at Savannah in 2014."
+changes = "PATCHES.md"
+topics = ["shogi", "japanese chess", "board game", "strategy", "computer opponent", "classic", "curses"]
+genre = "board"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# built from git.savannah.gnu.org/git/gnushogi.git (master after 1.4.2)
+# with the changes in PATCHES.md
+[upstream]
+name = "Yann Dirson and the GNU Shogi authors"
+url = "https://savannah.gnu.org/projects/gnushogi/"
+
+# -C picks the curses display (upstream's default is the text interface
+# for XBoard). The opening book sits beside the program; the binary book
+# it builds at first start, and games kept with "save", go to the state
+# folder (~/.local/state/gnushogi), where the program works from
+[exec]
+game = "gnushogi"
+args = ["-C"]
+
+# the board, its labels and the side panel fill an 80x24 screen
+[min_terminal]
+cols = 80
+rows = 24
+
+# plain ASCII, no colour, keyboard only (moves are typed)
+[requires]
+utf8 = false
+color = "none"
+mouse = false
+
+# 100x30, level 1 with the search depth lowered to 3; Black played by a
+# second GNU Shogi choosing moves, typed in by asciiverse/drive.py: 32
+# moves, pieces in hand beside the board; the still is mid-game
+[media]
+cast = "asciiverse/gnushogi.cast"
+thumbnail_at = 60.0
+
+[release]
+source = "github"
