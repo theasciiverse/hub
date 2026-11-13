@@ -2,7 +2,7 @@ schema_version = 1
 id = "cataclysm2"
 kind = "game"
 title = "Cataclysm II"
-description = "Shipwrecked on an island fifty years after the end of the world: survive its zombies and monsters, then sail the wreck home or power up the Lab at the island's heart and close the seam they came through."
+description = "Shipwrecked on an island fifty years after the end of the world: survive its zombies, raiders and worse, trade with its farming camps, then sail the wreck home or power up the Lab at the island's heart and close the seam they came through."
 year = 2013
 # LICENSE is the GPL version 3 text and data/motd.txt says "licensed
 # under the GPLv3"; nothing in the sources says "or any later version"

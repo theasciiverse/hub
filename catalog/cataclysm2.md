@@ -12,6 +12,11 @@ forests, swamps and salt marsh, and towns: the towns hold what you need,
 and the zombies. Out in the wild there are mutant rabbits, demented dogs
 and giant crabs, and worse in the places the island keeps to itself.
 
+You are not the only survivor. Farming camps behind their stockades trade
+food, medicine and tools for whatever you can bring them, and have work
+for anyone who will fetch what they need. Raiders keep camps of their own,
+full of what they took from others, and shoot first.
+
 The radio from the wreck still works. On it, a relay on the mainland calls
 boats home, and a recorded voice from a lab at the island's heart asks for
 the power to come back on. There are two ways to end this:
@@ -27,6 +32,7 @@ the power to come back on. There are two ways to end this:
   monsters that live where their kind lives
 - **Hunger, thirst and sleep** that press on you, slow healing, and death
   that is permanent
+- **Camps to trade with and raiders to avoid**, or not
 - **Make a survivor** from stats, traits and a profession (Survivalist,
   Medic, Farmer, Mechanic, Hunter...)
 - **Saved as you go**, and carried on with **L** from the first screen
@@ -40,7 +46,7 @@ the power to come back on. There are two ways to end this:
   **a**: apply (the radio, the GPS unit, a flashlight)
 - **t**: throw, **f**: fire, **r**: reload
 - **o** and **C**: open and close, **s**: smash, **x**: examine (the wreck,
-  panels, doors), **;**: look
+  a camp's trade counter, panels, doors), **;**: look
 - `<` and `>`: stairs up and down
 - **$**: sleep
 - **:** or **M**: the island map (**q** leaves it)
