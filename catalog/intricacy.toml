@@ -1,0 +1,53 @@
+schema_version = 1
+id = "intricacy"
+kind = "game"
+title = "Intricacy"
+description = "Pick mechanical locks of hooks, wrenches, springs and pivots on a hex grid, then build locks of your own to guard the secrets you find, against other players online."
+year = 2013
+license = "GPL-3.0-or-later"
+repo = "theasciiverse/intricacy"
+provenance = "Intricacy is by Martin Bays, in Haskell with curses and SDL interfaces, since 2013; players still set and pick each other's locks on his server."
+changes = "PATCHES.md"
+topics = ["puzzle", "lockpicking", "hex", "level editor", "online", "competitive", "haskell"]
+genre = "puzzle"
+
+[developer]
+name = "Martin Bays"
+url = "https://mbays.sdf.org/intricacy/"
+
+# packaged by Asciiverse from upstream 0.9.1.1, curses edition; PATCHES.md
+# in theasciiverse/intricacy
+[upstream]
+name = "Martin Bays"
+url = "https://mbays.sdf.org/intricacy/"
+
+# the archive holds intricacy with tutorial/ and initiation/ beside it,
+# which it finds there; a new player's files go to ~/.local/state/intricacy
+# (an existing ~/.intricacy is kept). Online play connects to
+# i.thegonz.net:27001
+[exec]
+game = "intricacy"
+args = []
+
+[min_terminal]
+cols = 80
+rows = 24
+
+# plain ASCII on eight colours; keys, and the mouse for dragging tools
+[requires]
+utf8 = false
+color = "basic"
+mouse = true
+
+# Linux builds link glibc (2.35 or newer), gmp and ncursesw dynamically
+system_deps = ["libgmp10", "libncursesw6"]
+
+# 100x30, the first six tutorial locks picked one after another with
+# solutions found by a search over the game's own physics; the still is
+# tutorial 4 mid-solve at 30 s
+[media]
+cast = "asciiverse/intricacy.cast"
+thumbnail_at = 30.0
+
+[release]
+source = "github"
