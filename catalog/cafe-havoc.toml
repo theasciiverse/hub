@@ -1,0 +1,50 @@
+schema_version = 1
+id = "cafe-havoc"
+kind = "game"
+title = "Café Havoc"
+description = "Your first day as a waiter in a big café: take orders, carry cakes and drinks, keep the guests happy. Then night falls"
+year = 2016
+# no licence file upstream; Ondrej Zara gave his permission for Asciiverse
+# by email on 2026-11-13, kept with the game (PERMISSION.md and the .eml in
+# asciiverse/permission/); rotty, the terminal runtime, is MIT
+license = "LicenseRef-Author-Permission"
+repo = "theasciiverse/cafe-havoc"
+provenance = "Ondřej Žára, the author of rot.js, made Café Havoc in seven days for the 2016 Seven Day Roguelike Challenge, as a browser game drawn in characters."
+changes = "PATCHES.md"
+topics = ["roguelike", "7drl", "cafe", "humour", "night", "rot.js", "javascript"]
+genre = "roguelike"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# built from github.com/ondras/cafe-havoc at 689df78 (2016-03-11) by
+# .github/workflows/release.yml: the browser game's scripts, unchanged, run
+# by rotty (asciiverse/rotty) and QuickJS-ng as one native program
+[upstream]
+name = "Ondřej Žára (7DRL 2016)"
+url = "https://github.com/ondras/cafe-havoc"
+
+# the session log goes to $XDG_STATE_HOME/cafe-havoc;
+# CAFE_HAVOC_LOG=debug records every key; --seed N for the same cafe
+[exec]
+game = "cafe-havoc"
+
+# the map takes 60% of the width, the story the rest
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = true
+color = "truecolor"
+
+# 100x30, recorded by asciiverse/record-preview.sh with --seed 5: the cup
+# on the title page, the flat, Jenkins' welcome, the corridor and the
+# dining room; the still is the dining room, at 19 s
+[media]
+cast = "asciiverse/cafe-havoc.cast"
+thumbnail_at = 19.0
+
+[release]
+source = "github"
