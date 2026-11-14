@@ -5,6 +5,7 @@ The notes come falling down four glowing lanes, and the moment one crosses the l
 - **Nine songs, made for the terminal** and played live by Bellbeat's own synthesiser: from the slow, soft *Lullaby for a Daemon* and the music-box *Waltz for a Spinning Disk* in 3/4, through the midnight *Cron at Midnight*, the swung *Tab Complete Shuffle* and the *Null Pointer Samba*, to the racing *Escape Sequence* and the breakneck *Kernel Panic*.
 - **Three ways to play each one.** On Easy you take the melody's big notes and the rest plays itself. On Normal you take more of it. On Hard it's all yours: the chords where the harmony comes in, two lanes at once, plus the snare's backbeat with your other hand.
 - **Practice any part.** Pick a verse or a chorus, slow it down as far as half speed, and play it round and round with a count-in and no groove meter until it's in your fingers.
+- **Write your own songs.** Every song is a little text file, and Bellbeat has an editor built in: type a melody note by note and hear each one as you type it, add chords, bass and drums, listen to it, then play it. Start from scratch or from your own copy of any song, and share a song by sharing its file.
 - **Hold the long notes** and they keep on singing until you let go.
 - **Combos and a multiplier** up to x4, PERFECT and GOOD on every hit, and a groove meter that drains with every miss. Let it run dry and the signal is lost!
 - **Grades from S down,** full combos, and your best score on every song at every difficulty.
@@ -22,6 +23,7 @@ Named after BEL, the bell character: for fifty years the only sound a terminal w
 - **Gamepad**: the d-pad, the face buttons (X A Y B) or the shoulders and triggers (LB LT RT RB), each laid out like the lanes; Start pauses
 - On the song list: **↑ ↓** song, **← →** difficulty, **Enter** play, **[ ]** note speed, **- +** sound offset, **C** calibrate, **P** practise, **Esc** quit
 - In practice: **↑ ↓** section, **← →** tempo, **Tab** difficulty, **Enter** play
+- On the song list, **E** edits a song and **N** starts a new one; in the editor **Ctrl-S** saves, **Ctrl-L** listens, **Ctrl-P** plays it, **Esc** leaves
 
 Long notes are held for real in a terminal that reports key releases (kitty, foot, WezTerm, Ghostty, Alacritty, iTerm2 and others) and with a gamepad. Elsewhere a long note holds itself once you hit it.
 
