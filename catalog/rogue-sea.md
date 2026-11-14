@@ -9,7 +9,7 @@ The sea is drawn in square tiles, and so are the ships: several tiles
 long, they turn in steps of forty-five degrees, and their sides are where
 the cannons are. Other ships sail these waters too. Some islands give
 coconuts, some cannonballs, some repairs; ships sunk by yer broadsides
-leave gold behind. Mind yer hull, an' mind the shallows.
+leave gold behind. Mind yer hull.
 
 A short game made in seven days, with a tutorial at the start (Escape
 skips it for experienced pirates) and a nontrivial amount of piratey talk.
