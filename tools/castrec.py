@@ -6,7 +6,7 @@ usage: castrec.py OUT.cast CWD SCRIPT -- CMD [ARGS...]
 Size: CAST_COLS / CAST_ROWS environment variables (default 100x30).
 SCRIPT is a ;-separated list of steps:
   w1.5              wait 1.5 s
-  k<name>           send a key (up down left right enter space esc tab,
+  k<name>           send a key (up down left right enter space esc tab bs,
                     sup sdown sleft sright for Shift+arrows, or a literal char)
   r<n>:<key>:<gap>  repeat key n times with gap seconds between
   s<text>           send text literally (no ';' inside)
@@ -25,7 +25,7 @@ terminal, with audio pointed nowhere, stderr discarded and USER/LOGNAME set to
 import codecs, fcntl, json, os, pty, select, signal, struct, sys, termios, time
 
 KEYS = {"up": "\x1b[A", "down": "\x1b[B", "right": "\x1b[C", "left": "\x1b[D",
-        "enter": "\r", "space": " ", "esc": "\x1b", "tab": "\t",
+        "enter": "\r", "space": " ", "esc": "\x1b", "tab": "\t", "bs": "\x7f",
         "sup": "\x1b[1;2A", "sdown": "\x1b[1;2B", "sright": "\x1b[1;2C", "sleft": "\x1b[1;2D"}
 
 def main():

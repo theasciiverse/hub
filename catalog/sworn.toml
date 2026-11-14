@@ -1,0 +1,45 @@
+schema_version = 1
+id = "sworn"
+kind = "game"
+title = "Sworn"
+description = "Rise from lesser noble to king in an early-medieval realm. Secret orders every season, letters that can lie, offers that bind, oaths you can break. Against computer nobles, or up to eight players across the network."
+year = 2026
+new = true
+license = "MIT"
+repo = "theasciiverse/sworn"
+provenance = "Asciiverse wrote Sworn in Rust in 2026, from the premise of Warwick, the multiplayer terminal strategy game Lurebound announced in 2017 and never released."
+topics = ["strategy", "diplomacy", "medieval", "multiplayer", "turn-based", "iroh"]
+genre = "strategy"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# the archive holds sworn, README.md and LICENSE; games are saved in
+# $XDG_STATE_HOME/sworn (autosave.sworn, and hosted.sworn for a game
+# hosted for others)
+[exec]
+game = "sworn"
+args = []
+
+# the map and its names want room; 80x24 still plays
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = true
+color = "256"
+mouse = true
+gamepad = false
+
+# 100x30, recorded with hub/tools/castrec.py and --seed 7: a new game as
+# Edmund of the Saxons, troops raised and two holds taken, the season's
+# report, a neighbour's first letter, the crown's checklist, a second
+# season; the still is the neighbour's letter
+[media]
+cast = "asciiverse/sworn.cast"
+thumbnail_at = 27.0
+
+[release]
+source = "github"
