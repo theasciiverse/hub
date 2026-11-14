@@ -44,4 +44,6 @@ rebuilt from the original program, with his permission.
 Music: Crush (Asciiverse remix) after Drozerix's Crush (public domain);
 Digital Rendezvous (Asciiverse remix) after Drozerix's Digital Rendezvous
 (public domain); Mecanum Overdrive (Asciiverse remix) after Drozerix's
-Mecanum Overdrive (public domain); Level 1 to 3 and Title Screen by Juhani Junkala (CC0).
+Mecanum Overdrive (public domain); Tunnel Vision by fuzion_mixer, CC BY
+4.0 (https://creativecommons.org/licenses/by/4.0/), remixed and extended
+by Asciiverse; Level 1 to 3 and Title Screen by Juhani Junkala (CC0).
