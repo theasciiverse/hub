@@ -168,8 +168,8 @@ const TIMELINE = [
     <div class="lead">
       <h1>Fifty years of <span>text games</span></h1>
       <p>Before graphics there was text. Games printed every move onto paper rolling out of a teletype, ran on university mainframes after hours, filled the first home computers and waited at the end of a dial-up line on bulletin boards.</p>
-      <p>In 1976 Will Crowther wrote <a href="title.html?id=colossal-cave">Colossal Cave Adventure</a>, and Don Woods expanded it into the game that spread across ARPANET. At MIT, Tim Anderson, Marc Blank, Bruce Daniels and Dave Lebling answered it with Zork, which Infocom split into <a href="title.html?id=zork1">Zork I</a>, <a href="title.html?id=zork2">II</a> and <a href="title.html?id=zork3">III</a> for home computers. In 1978 Roy Trubshaw and Richard Bartle let many players share one world at the University of Essex, and named it MUD.</p>
-      <p>In 1980 Michael Toy and Glenn Wichman wrote <a href="title.html?id=rogue">Rogue</a>: a fresh dungeon every game, one life, every monster a letter. It shipped with BSD Unix, and its children, <a href="title.html?id=hack">Hack</a>, <a href="title.html?id=nethack">NetHack</a> and <a href="title.html?id=angband">Angband</a>, turned its name into a genre.</p>
+      <p>In 1976 Will Crowther wrote <a href="/t/colossal-cave/">Colossal Cave Adventure</a>, and Don Woods expanded it into the game that spread across ARPANET. At MIT, Tim Anderson, Marc Blank, Bruce Daniels and Dave Lebling answered it with Zork, which Infocom split into <a href="/t/zork1/">Zork I</a>, <a href="/t/zork2/">II</a> and <a href="/t/zork3/">III</a> for home computers. In 1978 Roy Trubshaw and Richard Bartle let many players share one world at the University of Essex, and named it MUD.</p>
+      <p>In 1980 Michael Toy and Glenn Wichman wrote <a href="/t/rogue/">Rogue</a>: a fresh dungeon every game, one life, every monster a letter. It shipped with BSD Unix, and its children, <a href="/t/hack/">Hack</a>, <a href="/t/nethack/">NetHack</a> and <a href="/t/angband/">Angband</a>, turned its name into a genre.</p>
       <p>Asciiverse stands on the shoulders of giants. And of dwarves, trolls, wumpuses, grues, robots, pirates and weird floating eyes (if they have shoulders). And on the shoulders of everyone who ever lost a game to them. Most of all, it stands on the shoulders of the people who wrote these games, and everyone who has kept them running and passed them on since. Thanks to them, anyone can play this history in their own terminal, from the first cave to games written this year, and see how far it goes from here. Every game linked here installs and runs with one command, alongside <a href="muds.html">29 MUDs</a> still open to players and restorations of titles that had nearly vanished.</p>
       <p>The whole story, one game for every year since 1971, is Aaron A. Reed's <em>50 Years of Text Games</em>: <a href="${BOOK}">if50.textories.com</a>.</p>
     </div>
@@ -205,7 +205,7 @@ const TIMELINE = [
       const acts = row.querySelector(".acts");
       if (e.book) acts.append(el(`<a class="read" href="${CHAPTER}${e.book}">Read the chapter →</a>`));
       if (e.playNote) acts.append(el(`<span class="note">${esc(e.playNote)}</span>`));
-      for (const t of play) acts.append(el(`<a class="play" href="title.html?id=${encodeURIComponent(t.id)}">▶ Play ${esc(t.title.replace(/:.*$/, ""))}</a>`));
+      for (const t of play) acts.append(el(`<a class="play" href="${titleUrl(t.id)}">▶ Play ${esc(t.title.replace(/:.*$/, ""))}</a>`));
       if (e.href) acts.append(el(`<a class="play" href="${e.href}">▶ ${esc(e.hrefLabel)}</a>`));
       tl.append(row);
     }

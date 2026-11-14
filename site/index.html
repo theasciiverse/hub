@@ -65,7 +65,7 @@
     corners(box, t, true);
     const side = hero.querySelector(".hero-side");
     side.replaceChildren(el(`<div>
-      <h3><a href="title.html?id=${t.id}" style="color:inherit">${esc(t.title)}</a></h3></div>`));
+      <h3><a href="${titleUrl(t.id)}" style="color:inherit">${esc(t.title)}</a></h3></div>`));
     side.append(el(`<p class="one">${esc(t.description)}</p>`));
     const strip = el(`<div class="strip"></div>`);
     const d = t.duration || 30;

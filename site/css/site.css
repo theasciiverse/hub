@@ -653,3 +653,13 @@ body.lib-page .lib-main > .foot { margin: 40px -24px -30px; }
 /* a collection's other games on a title page (SCHEMA.md, "Collections") */
 .coll-desc { color: var(--text-dim); font-size: 14px; margin: 0 0 10px; }
 .coll-list { display: flex; flex-wrap: wrap; gap: 6px; }
+
+/* The text the site build writes into each page for search engines and
+   link previews (tools/build_pages.py); header() replaces it with the live
+   page, so it only shows before the script runs or without it. */
+.static { padding: 28px 0 60px; line-height: 1.6; }
+.static h1 { font-family: var(--font-mono); margin: 8px 0 12px; }
+.static h2 { font-family: var(--font-mono); margin: 28px 0 10px; font-size: 17px; }
+.static ul { padding-left: 20px; }
+.static li { margin: 4px 0; }
+.static .crumbs { font-size: 13px; }

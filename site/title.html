@@ -19,10 +19,13 @@
 <script>
 (async () => {
   const app = document.getElementById("app");
+  // /t/<id>/ pages carry their id (tools/build_pages.py); title.html?id= is the
+  // old address, sent on to the title's own page on the live site
+  const id = document.body.dataset.id || new URLSearchParams(location.search).get("id") || "solitty";
+  if (!document.body.dataset.id && location.hostname === "asciiverse.sh") { location.replace(titleUrl(id)); return; }
   const titles = await loadCatalog();
-  const id = new URLSearchParams(location.search).get("id") || "solitty";
   const t = titles.find(x => x.id === id) || titles[0];
-  document.title = t.title + " on Asciiverse";
+  if (!document.body.dataset.id) document.title = t.title + " on Asciiverse";
   // the subnav tab and the breadcrumb follow the title's kind
   const PAGES = { game: ["games", "games.html"], adventure: ["adventures", "adventures.html"], program: ["programs", "programs.html"], art: ["art", "art.html"], mud: ["muds", "muds.html"], movie: ["movies", "movies.html"] };
   const [sub, page] = PAGES[t.kind] || ["games", "games.html"];
@@ -61,9 +64,9 @@
       <dt>Updated</dt><dd>${esc((t.updated_at || "").slice(0, 10))}</dd>
       <dt>Developer</dt><dd><a href="${esc(t.developer?.url)}">${esc(t.developer?.name)}</a></dd>
       ${t.upstream ? `<dt>Original</dt><dd><a href="${esc(t.upstream.url)}">${esc(t.upstream.name)}</a></dd>` : ""}
-      ${coll ? `<dt>Part of</dt><dd><a href="#collection">${esc(coll.name)}</a></dd>` : ""}
+      ${coll ? `<dt>Part of</dt><dd><a href="${location.pathname}#collection">${esc(coll.name)}</a></dd>` : ""}
       <dt>License</dt><dd class="mono">${esc(t.license)}</dd></dl>`));
-  side.append(el(`<div class="tags">${(t.topics || []).map(x => `<a class="tag" href="#">${esc(x)}</a>`).join("")}</div>`));
+  side.append(el(`<div class="tags">${(t.topics || []).map(x => `<a class="tag" href="${page}">${esc(x)}</a>`).join("")}</div>`));
 
   // ---- main column + sidebar ----
   const body = el(`<div class="app-main"><div class="col"></div><aside></aside></div>`);
@@ -95,9 +98,9 @@
   </ul></div>`));
   aside.append(el(`<div class="box links"><h3>Links</h3>
     ${t.repo ? `<a href="https://github.com/${esc(t.repo)}">Source code</a>` : ""}
-    <a href="#">Release notes</a>
+    ${t.repo ? `<a href="https://github.com/${esc(t.repo)}/releases">Release notes</a>` : ""}
     ${t.funding ? `<a href="${esc(t.funding)}">Support the developer</a>` : ""}
-    <a href="#">Report a problem</a></div>`));
+    ${t.repo ? `<a href="https://github.com/${esc(t.repo)}/issues">Report a problem</a>` : ""}</div>`));
   main.append(body);
 
   // ---- the rest of its collection ----
@@ -106,13 +109,13 @@
     main.append(el(`<section class="sect" id="collection"><div class="sect-head"><h2>Also in ${esc(coll.name)}</h2>
       <span class="sub">${others.length + 1} games${coll.url ? ` · <a href="${esc(coll.url)}">${esc(coll.url.replace(/^https?:\/\/(www\.)?/, ""))}</a>` : ""}</span></div>
       ${coll.description ? `<p class="coll-desc">${esc(coll.description)}</p>` : ""}
-      <div class="coll-list">${others.map(x => `<a class="tag" href="title.html?id=${esc(x.id)}">${esc(x.title)}</a>`).join("")}</div></section>`));
+      <div class="coll-list">${others.map(x => `<a class="tag" href="${titleUrl(x.id)}">${esc(x.title)}</a>`).join("")}</div></section>`));
   }
 
   // ---- more like this ----
   const more = el(`<section class="sect"><div class="sect-head"><h2>More like this</h2></div><div class="grid"></div></section>`);
   titles.filter(x => x.id !== t.id).slice(0, 3).forEach(x => {
-    const c = el(`<a class="cap" href="title.html?id=${x.id}"></a>`);
+    const c = el(`<a class="cap" href="${titleUrl(x.id)}"></a>`);
     const tl = corners(tile(x), x);
     c.append(tl);
     c.append(el(`<div class="cap-body"><h4>${esc(x.title)}</h4><p>${esc(x.description)}</p><div class="cap-foot"><span class="genre">${esc(x.genre || x.kind)}</span><span class="plat">${platformsLabel(x)}</span></div></div>`));

@@ -18,6 +18,13 @@ function esc(s) {
   return String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 }
 
+// A title's own store page. The site build writes one static page per title
+// at /t/<id>/ (tools/build_pages.py), with its text in the HTML for search
+// engines and link previews; this script then fills in the player and the rest.
+function titleUrl(id) {
+  return "/t/" + encodeURIComponent(id) + "/";
+}
+
 async function loadCatalog() {
   if (location.protocol === "file:") {
     document.body.innerHTML = `<p style="font:15px/1.6 monospace;color:#d5dbe1;padding:40px">
@@ -152,6 +159,9 @@ const supportLinks = () => SUPPORT.map(([n, u, d]) =>
   + `<a href="support.html"><b>More ways to help</b><span>and the makers' own pages</span></a>`;
 
 function header(active, sub = "home") {
+  // the static text the site build puts in the page for search engines
+  // makes way for the live page
+  document.querySelector("#app > .static")?.remove();
   const nav = [["index.html", "Catalog"], ["get-av.html", "Get av"], ["history.html", "History"], ["submit.html", "Submit a title"]];
   const head = el(`
   <div class="site-head">
@@ -197,7 +207,7 @@ function headerSearch(box) {
       .filter(Boolean).join(" ").toLowerCase();
     return rest.includes(q) ? 2 : -1;
   };
-  const href = t => `${KIND_PAGE[t.kind]}#${t.id}`;
+  const href = t => titleUrl(t.id);
   async function show() {
     const q = input.value.trim().toLowerCase();
     if (!q) { menu.hidden = true; return; }
@@ -328,7 +338,7 @@ function tabbedInstall(options, first = 0) {
 
 // A capsule card: front picture (the cast's still frame), title, one-liner, genre, platforms.
 function capsule(t) {
-  const c = el(`<a class="cap" href="title.html?id=${t.id}"></a>`);
+  const c = el(`<a class="cap" href="${titleUrl(t.id)}"></a>`);
   const tl = tile(t);
   tl.append(el(`<span class="playing">▶ preview</span>`));
   corners(tl, t);
@@ -452,7 +462,7 @@ function gameDetail(t) {
       <div class="install"><code>av install ${esc(t.id)}</code><button>copy</button></div>
       <dl><dt>Genre</dt><dd>${esc(t.genre || t.kind)}</dd><dt>Runs on</dt><dd>${platformsLabel(t) || "LNX"}</dd>
         <dt>Version</dt><dd>${esc(t.version || "")}</dd></dl>
-      <a class="store" href="title.html?id=${t.id}">Store page ›</a>
+      <a class="store" href="${titleUrl(t.id)}">Store page ›</a>
     </div>
     <h1>${esc(t.title)}${pills(t)}</h1>
     <p class="one">${esc(t.description)}</p>

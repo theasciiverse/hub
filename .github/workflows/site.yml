@@ -58,6 +58,25 @@ jobs:
           python3 tools/build_catalog.py --out public/data/catalog.json \
             --previous https://asciiverse.sh/data/catalog.json
 
+      # link-preview pictures, one per title from its preview's still frame;
+      # kept between runs by each cast's content stamp, so only new or
+      # changed casts are rendered (all of them took 33 s on 6 cores)
+      - name: Restore posters
+        uses: actions/cache@v4
+        with:
+          path: .posters
+          key: posters-${{ hashFiles('site/casts/*.cast') }}
+          restore-keys: posters-
+
+      - name: Render posters
+        run: python3 tools/posters.py public .posters
+
+      # each title's own page at /t/<id>/ with its text in the HTML, the
+      # home and category pages' title lists, sitemap.xml and robots.txt,
+      # so search engines and link previews see the games
+      - name: Build static pages
+        run: python3 tools/build_pages.py public
+
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:

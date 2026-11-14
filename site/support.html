@@ -90,7 +90,7 @@
   const funded = titles.filter(t => t.funding).sort((a, b) => a.title.localeCompare(b.title));
   for (const t of funded) {
     const by = (t.upstream && t.upstream.name) || (t.developer && t.developer.name) || "";
-    list.append(el(`<li><a class="t" href="title.html?id=${encodeURIComponent(t.id)}">${esc(t.title)}</a><a class="f" href="${esc(t.funding)}" target="_blank" rel="noopener">♥ support</a>${by ? `<span class="by">${esc(by)}</span>` : ""}</li>`));
+    list.append(el(`<li><a class="t" href="${titleUrl(t.id)}">${esc(t.title)}</a><a class="f" href="${esc(t.funding)}" target="_blank" rel="noopener">♥ support</a>${by ? `<span class="by">${esc(by)}</span>` : ""}</li>`));
   }
 })();
 </script>
