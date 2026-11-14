@@ -34,12 +34,12 @@ mouse = true
 gamepad = false
 
 # 100x30, recorded with hub/tools/castrec.py and --seed 7: a new game as
-# Edmund of the Saxons, troops raised and two holds taken, the season's
+# Edmund of the Saxons, its first-season note, troops raised and two holds taken, the season's
 # report, a neighbour's first letter, the crown's checklist, a second
 # season; the still is the neighbour's letter
 [media]
 cast = "asciiverse/sworn.cast"
-thumbnail_at = 27.0
+thumbnail_at = 30.0
 
 [release]
 source = "github"

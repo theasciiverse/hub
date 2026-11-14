@@ -24,7 +24,8 @@ own liege and the whole realm hears of it.
   Bretons hold their walls, Moravian towns pay more
 - **Computer nobles** see only what you would see, take good deals,
   write to you when your lands meet, ask tribute when they are strong,
-  plead when they are not, and gang up on whoever comes near the crown
+  plead when they are not, gang up on whoever comes near the crown, and
+  as your vassals, march where your letters send them
 - **Up to eight players** over the network, found on the local network
   or joined by an id from anywhere. A player who drops is held by the
   computer until they come back; the host can set a timer on the seasons
