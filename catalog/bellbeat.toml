@@ -2,7 +2,7 @@ schema_version = 1
 id = "bellbeat"
 kind = "game"
 title = "Bellbeat"
-description = "Notes rain down four lanes and every one you hit plays the melody! Five songs made for the terminal, from a lullaby to a kernel panic: nail the beat, build the combo, and make the whole tune ring out."
+description = "Notes rain down four lanes and every one you hit plays the melody! Nine songs made for the terminal, from a lullaby and a waltz to a kernel panic: nail the beat, play the chords, build the combo, and make the whole tune ring out."
 year = 2026
 new = true
 license = "MIT"
@@ -35,7 +35,7 @@ system_deps = ["libasound2", "libudev1"]
 
 [media]
 cast = "asciiverse/bellbeat.cast"
-thumbnail_at = 18.0
+thumbnail_at = 28.0
 
 [release]
 source = "github"

@@ -2,8 +2,9 @@
 
 The notes come falling down four glowing lanes, and the moment one crosses the line you hit it. And then you hear it: that note, of that melody, rung out right as you struck it. Nail the beat and you're playing the tune. Miss one and there's a hole in the song where it should have been. Play a song through without a miss and it's you up there carrying the whole melody, end to end.
 
-- **Five songs, made for the terminal** and played live by Bellbeat's own synthesiser: the slow, soft *Lullaby for a Daemon*, the bell-bright *Hello, World*, the swinging *Carriage Return*, the shuffling *Null Pointer Samba* and the breakneck *Kernel Panic*.
-- **Three ways to play each one.** On Easy you take the melody's big notes and the rest plays itself. On Normal you take more of it. On Hard it's all yours, plus the snare's backbeat with your other hand.
+- **Nine songs, made for the terminal** and played live by Bellbeat's own synthesiser: from the slow, soft *Lullaby for a Daemon* and the music-box *Waltz for a Spinning Disk* in 3/4, through the midnight *Cron at Midnight*, the swung *Tab Complete Shuffle* and the *Null Pointer Samba*, to the racing *Escape Sequence* and the breakneck *Kernel Panic*.
+- **Three ways to play each one.** On Easy you take the melody's big notes and the rest plays itself. On Normal you take more of it. On Hard it's all yours: the chords where the harmony comes in, two lanes at once, plus the snare's backbeat with your other hand.
+- **Practice any part.** Pick a verse or a chorus, slow it down as far as half speed, and play it round and round with a count-in and no groove meter until it's in your fingers.
 - **Hold the long notes** and they keep on singing until you let go.
 - **Combos and a multiplier** up to x4, PERFECT and GOOD on every hit, and a groove meter that drains with every miss. Let it run dry and the signal is lost!
 - **Grades from S down,** full combos, and your best score on every song at every difficulty.
@@ -19,7 +20,8 @@ Named after BEL, the bell character: for fifty years the only sound a terminal w
 - **Esc** or **P**: pause
 - **M**: sound on or off
 - **Gamepad**: the d-pad, the face buttons (X A Y B) or the shoulders and triggers (LB LT RT RB), each laid out like the lanes; Start pauses
-- On the song list: **↑ ↓** song, **← →** difficulty, **Enter** play, **[ ]** note speed, **- +** sound offset, **C** calibrate, **Esc** quit
+- On the song list: **↑ ↓** song, **← →** difficulty, **Enter** play, **[ ]** note speed, **- +** sound offset, **C** calibrate, **P** practise, **Esc** quit
+- In practice: **↑ ↓** section, **← →** tempo, **Tab** difficulty, **Enter** play
 
 Long notes are held for real in a terminal that reports key releases (kitty, foot, WezTerm, Ghostty, Alacritty, iTerm2 and others) and with a gamepad. Elsewhere a long note holds itself once you hit it.
 
