@@ -22,7 +22,7 @@ Zorbash is a deep, turn-based roguelike. Light your way with a torch, fight with
 - **F12**: save; **F11**: load; **Ctrl-C**: quit
 - The help screen in the game lists every key, and each one can be changed under Options
 
-Holding a key to keep walking works best in a terminal with the kitty keyboard protocol, such as Ghostty, kitty, WezTerm or foot.
+Holding a key to keep walking works best in a terminal with the kitty keyboard protocol, such as Ghostty, kitty, WezTerm or foot, and on Windows in Windows Terminal or the console.
 
 ## Credits
 

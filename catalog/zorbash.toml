@@ -24,8 +24,9 @@ url = "https://github.com/goblinhack/zorbash"
 
 # one binary with every picture, sound and tune built in; saves, config
 # and logs in ~/.local/state/zorbash (macOS: ~/Library/Application
-# Support/zorbash). --terminal is the only mode of this build; av passes it
-# all the same
+# Support/zorbash, Windows: %APPDATA%\zorbash). On Windows it plays in
+# the console, Windows 10 and later. --terminal is the only mode of this
+# build; av passes it all the same
 [exec]
 game = "zorbash"
 args = ["--terminal"]
