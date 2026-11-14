@@ -18,8 +18,9 @@ genre = "shooter"
 name = "Asciiverse"
 url = "https://asciiverse.sh"
 
-# rebuilt in Rust from the original program (REVERSE.md), its sounds and
-# music unchanged; the 2005 release is kept in the repo's original/
+# rebuilt in Rust from the original program (REVERSE.md), its sounds
+# unchanged and its two third-party modules replaced (PATCHES.md); the 2005
+# release is kept in the repo's original/
 [upstream]
 name = "Jan Ringoš"
 url = "https://tringi.trimcore.cz/Shoot_em_ASCII"

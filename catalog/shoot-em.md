@@ -32,8 +32,16 @@ antialiasing, `n` none, `f` frames per second, `m` male narrator, `c` no
 debris, `p` twice the debris. `--truecolor` colours each character with
 its real colour instead of the sixteen.
 
+The game's own sound, music and blasts together, runs along the bottom as
+a Braille oscilloscope; S hides it, and `--classic` gives the 2005 screen
+exactly.
+
 ## Credits
 
-Shoot 'em is by Jan Ringoš, 2005, with music by The Kid ("boombass") and
-Matt Furniss ("BadLands"). Its source was lost, so this edition was
+Shoot 'em is by Jan Ringoš, 2005. Its source was lost, so this edition was
 rebuilt from the original program, with his permission.
+
+Music: Crush (Asciiverse remix) after Drozerix's Crush (public domain);
+Digital Rendezvous (Asciiverse remix) after Drozerix's Digital Rendezvous
+(public domain); Mecanum Overdrive (Asciiverse remix) after Drozerix's
+Mecanum Overdrive (public domain); Level 1 to 3 and Title Screen by Juhani Junkala (CC0).
