@@ -1,0 +1,38 @@
+schema_version = 1
+id = "edigotia"
+kind = "game"
+title = "Edigotia"
+description = "Found a city in a fantasy world of rival kingdoms and grow it: farms, hunting camps and mines, peasants, merchants and burghers, taxes, morale and ministers. Whales' unfinished city-builder."
+year = 2014
+license = "GPL-3.0-only"
+repo = "theasciiverse/edigotia"
+provenance = "Whales, the creator of Cataclysm, wrote Edigotia in 2014 and 2015 as a game of building, trade, diplomacy and war, and left it a pre-release: the city and its economy were built, the diplomacy and war were not."
+changes = "PATCHES.md"
+topics = ["city-builder", "economy", "fantasy", "kingdoms", "unfinished", "curses"]
+genre = "simulation"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "Whales"
+url = "https://github.com/Whales/edigotia"
+
+[exec]
+game = "edigotia"
+
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+color = "basic"
+mouse = false
+
+[media]
+cast = "asciiverse/edigotia.cast"
+thumbnail_at = 25.0
+
+[release]
+source = "github"

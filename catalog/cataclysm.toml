@@ -1,0 +1,38 @@
+schema_version = 1
+id = "cataclysm"
+kind = "game"
+title = "Cataclysm"
+description = "The original post-apocalyptic roguelike: survive New England after a plague of monsters, scavenge the towns, craft, build, drive and meet the other survivors in a world that outlives you."
+year = 2010
+license = "CC-BY-SA-3.0"
+repo = "theasciiverse/cataclysm"
+provenance = "Whales wrote Cataclysm from 2010 to 2013, releasing new versions almost daily. In 2013 its players carried it on as Cataclysm: Dark Days Ahead; this is Whales' own game, as last left in January 2013."
+changes = "PATCHES.md"
+topics = ["roguelike", "survival", "zombies", "post-apocalyptic", "crafting", "open-world", "curses"]
+genre = "roguelike"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "Whales"
+url = "https://github.com/Whales/Cataclysm"
+
+[exec]
+game = "cataclysm"
+
+[min_terminal]
+cols = 80
+rows = 25
+
+[requires]
+color = "basic"
+mouse = false
+
+[media]
+cast = "asciiverse/cataclysm.cast"
+thumbnail_at = 30.5
+
+[release]
+source = "github"
