@@ -1,0 +1,48 @@
+schema_version = 1
+id = "great-train-robbery"
+kind = "game"
+title = "The Great Train Robbery"
+description = "A train full of gold rolls through a little western town. Hire a gang, arm them, give them their orders, then watch the heist unfold"
+year = 2026
+license = "MIT"
+repo = "theasciiverse/great-train-robbery"
+provenance = "Ondřej Žára, the author of rot.js, made The Great Train Robbery in seven days for the 2026 Seven Day Roguelike Challenge, a browser game in a text user interface."
+changes = "PATCHES.md"
+topics = ["roguelike", "7drl", "western", "heist", "planning", "javascript"]
+genre = "roguelike"
+new = true
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# built from github.com/ondras/great-train-robbery at e10b356 (2026-03-06)
+# by .github/workflows/release.yml: the browser game's script, unchanged,
+# run by rotty (asciiverse/rotty) and QuickJS-ng as one native program
+[upstream]
+name = "Ondřej Žára (7DRL 2026)"
+url = "https://github.com/ondras/great-train-robbery"
+
+# the session log goes to $XDG_STATE_HOME/great-train-robbery;
+# GREAT_TRAIN_ROBBERY_LOG=debug records every key; --seed HEX for a town
+[exec]
+game = "great-train-robbery"
+
+# the whole town shows at 130x45; smaller, the map scrolls
+[min_terminal]
+cols = 100
+rows = 30
+
+[requires]
+utf8 = true
+color = "truecolor"
+
+# 100x30, recorded by asciiverse/record-preview.sh with --seed 1a2b3c: the
+# boss's speech, the town, hiring and arming two men, their plans, and
+# the heist; the still is the train in town, at 50 s
+[media]
+cast = "asciiverse/great-train-robbery.cast"
+thumbnail_at = 50.0
+
+[release]
+source = "github"
