@@ -1,0 +1,50 @@
+schema_version = 1
+id = "shoot-em"
+kind = "game"
+title = "Shoot 'em"
+description = "Two machine guns, a mine emitter and a sky full of falling things: shoot it all down before it hits the grid, in a 3D world drawn entirely in coloured text"
+year = 2005
+# freeware whose licence allowed only unchanged copies, source lost; Jan
+# Ringos gave his permission by email on 2026-11-13 to rebuild and publish
+# it in any form (PERMISSION.md); the rebuild's own code is MIT
+license = "LicenseRef-Author-Permission"
+repo = "theasciiverse/shoot-em"
+provenance = "Jan Ringoš made Shoot 'em in 2005 as freeware for the Windows XP console: an OpenGL scene drawn off-screen and turned into characters and the console's sixteen colours, sixty times a second."
+changes = "PATCHES.md"
+topics = ["shooter", "3d", "arcade", "ascii-art", "high-scores", "classic"]
+genre = "shooter"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# rebuilt in Rust from the original program (REVERSE.md), its sounds and
+# music unchanged; the 2005 release is kept in the repo's original/
+[upstream]
+name = "Jan Ringoš"
+url = "https://tringi.trimcore.cz/Shoot_em_ASCII"
+
+# high scores go to $XDG_STATE_HOME/shoot-em (~/.local/state/shoot-em);
+# SHOOT_EM_LOG=debug writes a session log there
+[exec]
+game = "shoot-em"
+
+# the HUD and the screens are 80 columns wide; the view fills any size
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = false
+color = "truecolor"
+mouse = true
+system_deps = ["libasound2"]
+
+# 100x30, recorded by asciiverse/record-preview.sh: the computer plays
+# (--demo) for 50 seconds; the still is at 30 s
+[media]
+cast = "asciiverse/shoot-em.cast"
+thumbnail_at = 30.0
+
+[release]
+source = "github"
