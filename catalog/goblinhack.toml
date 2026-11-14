@@ -2,12 +2,12 @@ schema_version = 1
 id = "goblinhack"
 kind = "game"
 title = "Goblin Hack"
-description = "A real-time dungeon romp where every goblin, orc and dragon is a little picture made of characters: pick one of twenty-one heroes and hack your way down through dungeons, caves and fractal forests."
+description = "A real-time dungeon romp where Neil McGill drew every goblin, glork and dragon by hand in characters: pick one of twenty-one heroes, dive in, and press Tab to see the monsters glare back."
 year = 1999
 # file headers: GNU Library GPL v2 or later; the LICENSE file is the GPL v2
 license = "LGPL-2.0-or-later"
 repo = "theasciiverse/goblinhack"
-provenance = "Neil McGill (goblinhack) wrote Goblin Hack in C++ from 1999, a smooth-scrolling dungeon game whose monsters, items and walls are all drawn in ASCII characters."
+provenance = "Neil McGill (goblinhack) began Goblin Hack in 1999, a smooth-scrolling dungeon where every wall, treasure and monster is drawn in characters, and kept it alive for more than twenty years."
 changes = "PATCHES.md"
 topics = ["dungeon", "action", "fantasy", "real-time", "shops", "spells", "ascii-art"]
 genre = "action"
