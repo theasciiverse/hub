@@ -15,11 +15,17 @@ When the story is done, the endless road keeps going, harder with every
 crossing, with trains, flies to snack on and a new road every day. Two
 players can race each other at one keyboard, or cross together.
 
+High-score tables keep your best story, endless road and today's road.
+In the options you can slow the whole world down to a gentle or slow
+pace, give the toad nine lives or lives that never run out, make the
+sound quieter, and choose your own keys.
+
 ## Controls
 
 - **W A S D** or the **arrows**: hop
 - **Q E Z C** or **numpad 7 9 1 3**: hop diagonally, in the pond only
 - **Esc** or **P**: pause, **H**: help, **M**: sound on or off
+- Your own keys for the hops: Options on the title, then Keys
 - Two players: player one on **W A S D**, player two on the **arrows**
 - Gamepad: the d-pad or left stick hops, two d-pad directions at once hop
   diagonally, **A** goes on, **Start** pauses
