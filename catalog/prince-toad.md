@@ -6,14 +6,14 @@ princess, and she turns out to be a toad too. That is the happy ending.
 
 Hop through seven worlds: village lanes full of carts and geese, the
 highway, a river of logs and diving turtles, a winter road where the ice
-slides you along, a night road lit only by headlights, a castle with a moat
-and a snoring dragon, and at last a quiet pond, where the lily pads sink
-under you and the princess keeps hopping away. Every crossing ends in a
-short, silly scene.
+slides you along, a night road lit only by headlights, a castle with a
+drawbridge, a moat and a snoring dragon, and at last a quiet pond, where
+the lily pads sink under you and the princess keeps hopping away. Every
+crossing ends in a short, silly scene.
 
 When the story is done, the endless road keeps going, harder with every
-crossing, with trains, flies to snack on and a new road every day. Two
-players can race each other at one keyboard, or cross together.
+crossing, with trains, rain, fog, flies to snack on and a new road every
+day. Two players can race each other at one keyboard, or cross together.
 
 High-score tables keep your best story, endless road and today's road.
 In the options you can slow the whole world down to a gentle or slow

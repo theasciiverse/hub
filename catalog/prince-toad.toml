@@ -30,11 +30,12 @@ color = "truecolor"
 gamepad = true
 system_deps = ["libasound2", "libudev1"]
 
-# 100x30, `prince-toad --demo --crossing 8`: the river, a rubber duck,
+# 100x30, `prince-toad --demo --crossing 8`: Reed Bend with the rubber duck
+# waiting on the far bank, then the duck,
 # the rapids, a heron, the winter road (asciiverse/record-preview.sh)
 [media]
 cast = "asciiverse/prince-toad.cast"
-thumbnail_at = 9.0
+thumbnail_at = 4.0
 
 [release]
 source = "github"
