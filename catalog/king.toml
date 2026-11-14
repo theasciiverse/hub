@@ -1,0 +1,43 @@
+schema_version = 1
+id = "king"
+kind = "game"
+title = "King"
+description = "Lead the island of Pellora for eight years. Sell land to foreign industry or keep the forests, feed your people, plant the fields, pay to clean the air, and face the voters at the end."
+year = 1970
+old = true
+new = false
+license = "MIT"
+repo = "theasciiverse/bcg-games"
+collection = "bcg-games"
+provenance = "James A. Storer wrote it as the Pollution Game around 1970, as a student at Lexington High School, Massachusetts; David H. Ahl printed it as King in 101 BASIC Computer Games. Asciiverse rebuilt it from its rules in 2026."
+topics = ["strategy", "government", "economy", "environment", "turn-based", "basic-computer-games", "classic"]
+genre = "strategy"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[exec]
+game = "king"
+args = []
+
+# the game asks for a bigger window below this
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = true
+gamepad = true
+
+system_deps = ["libasound2", "libudev1"]
+
+# 100x30, asciiverse/record-previews.sh: --demo, the game playing itself
+[media]
+cast = "asciiverse/king.cast"
+thumbnail_at = 10.0
+
+[release]
+source = "github"

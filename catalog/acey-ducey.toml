@@ -1,0 +1,43 @@
+schema_version = 1
+id = "acey-ducey"
+kind = "game"
+title = "Acey Ducey"
+description = "Two cards face up. Bet that the next one falls between them, or pass. Start with $100 and walk away when you are ahead, if you can."
+year = 1973
+old = true
+new = false
+license = "MIT"
+repo = "theasciiverse/bcg-games"
+collection = "bcg-games"
+provenance = "Bill Palmby, a student at Adlai E. Stevenson High School in Prairie View, Illinois, wrote Acey Ducey, after the card game In-Between; David H. Ahl printed it in 101 BASIC Computer Games (1973) and BASIC Computer Games (1978). Asciiverse rebuilt it from its rules in 2026."
+topics = ["cards", "betting", "luck", "basic-computer-games", "classic"]
+genre = "card"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[exec]
+game = "acey-ducey"
+args = []
+
+# the game asks for a bigger window below this
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = true
+gamepad = true
+
+system_deps = ["libasound2", "libudev1"]
+
+# 100x30, asciiverse/record-previews.sh: --demo, the game playing itself
+[media]
+cast = "asciiverse/acey-ducey.cast"
+thumbnail_at = 18.0
+
+[release]
+source = "github"

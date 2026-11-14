@@ -1,0 +1,43 @@
+schema_version = 1
+id = "football"
+kind = "game"
+title = "Football"
+description = "Four quarters of American football against Granite Falls. Call every down, runs, passes, punts and field goals, while the computer calls its defence, and watch the ball move down a hundred-yard field."
+year = 1965
+old = true
+new = false
+license = "MIT"
+repo = "theasciiverse/bcg-games"
+collection = "bcg-games"
+provenance = "John G. Kemeny wrote FTBALL at Dartmouth in 1965, the Sunday after Dartmouth beat Princeton, and David H. Ahl printed it in BASIC Computer Games (1978) beside other football games. Asciiverse rebuilt the game from its rules in 2026."
+topics = ["sports", "football", "turn-based", "basic-computer-games", "classic"]
+genre = "sports"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[exec]
+game = "football"
+args = []
+
+# the game asks for a bigger window below this
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = true
+gamepad = true
+
+system_deps = ["libasound2", "libudev1"]
+
+# 100x30, asciiverse/record-previews.sh: --demo, the game playing itself
+[media]
+cast = "asciiverse/football.cast"
+thumbnail_at = 12.0
+
+[release]
+source = "github"

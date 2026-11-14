@@ -1,0 +1,43 @@
+schema_version = 1
+id = "hide-and-seek"
+kind = "game"
+title = "Hide and Seek"
+description = "Three hunts on a ten by ten field: a hurkle that tells you which way to look, four mugwumps that tell you how far, and a submarine somewhere in a sea ten levels deep. Clues, a little logic, and only a few guesses."
+year = 1973
+old = true
+new = false
+license = "MIT"
+repo = "theasciiverse/bcg-games"
+collection = "bcg-games"
+provenance = "Hurkle and Mugwump come from the People's Computer Company in Menlo Park, California, in 1973, Mugwump after a hide-and-seek program by Bud Valenti's students at Project SOLO in Pittsburgh; Dana Noftle wrote Depth Charge for the first issue of Creative Computing in 1974. David H. Ahl collected all three in BASIC Computer Games (1978). Asciiverse rebuilt them from their rules in 2026."
+topics = ["deduction", "logic", "grid", "basic-computer-games", "classic"]
+genre = "puzzle"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[exec]
+game = "hide-and-seek"
+args = []
+
+# the game asks for a bigger window below this
+[min_terminal]
+cols = 78
+rows = 24
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = true
+gamepad = true
+
+system_deps = ["libasound2", "libudev1"]
+
+# 100x30, asciiverse/record-previews.sh: --demo, the game playing itself
+[media]
+cast = "asciiverse/hide-and-seek.cast"
+thumbnail_at = 18.0
+
+[release]
+source = "github"

@@ -1,0 +1,43 @@
+schema_version = 1
+id = "bullfight"
+kind = "game"
+title = "Bullfight"
+description = "A bloodless bullfight in the Portuguese style. Choose each pass with the cape and the muleta, close and daring or safe, win the crowd, and see the bull led out of the ring alive."
+year = 1973
+old = true
+new = false
+license = "MIT"
+repo = "theasciiverse/bcg-games"
+collection = "bcg-games"
+provenance = "David Sweet wrote the bullfight game at Dartmouth; Walter J. Koetke's students at Lexington High School, Massachusetts, put it into BASIC, and David H. Ahl printed it as Bull in 101 BASIC Computer Games (1973) and, modified by Steve North, as Bullfight in BASIC Computer Games (1978). Asciiverse rebuilt it from its rules in 2026, bloodless as in Portugal."
+topics = ["sports", "bullfight", "turn-based", "basic-computer-games", "classic"]
+genre = "sports"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[exec]
+game = "bullfight"
+args = []
+
+# the game asks for a bigger window below this
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = true
+gamepad = true
+
+system_deps = ["libasound2", "libudev1"]
+
+# 100x30, asciiverse/record-previews.sh: --demo, the game playing itself
+[media]
+cast = "asciiverse/bullfight.cast"
+thumbnail_at = 10.5
+
+[release]
+source = "github"

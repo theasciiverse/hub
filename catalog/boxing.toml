@@ -1,0 +1,43 @@
+schema_version = 1
+id = "boxing"
+kind = "game"
+title = "Boxing"
+description = "A three-round amateur bout. Pick your best punch and your weak spot, find out your opponent's as the punches land, and win the judges' cards round by round."
+year = 1973
+old = true
+new = false
+license = "MIT"
+repo = "theasciiverse/bcg-games"
+collection = "bcg-games"
+provenance = "A three-round Olympic boxing match, where each boxer has a best punch and a weak spot, was printed in David H. Ahl's 101 BASIC Computer Games (1973) and BASIC Computer Games (1978). Asciiverse rebuilt it from its rules in 2026."
+topics = ["sports", "boxing", "turn-based", "basic-computer-games", "classic"]
+genre = "sports"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[exec]
+game = "boxing"
+args = []
+
+# the game asks for a bigger window below this
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = true
+gamepad = true
+
+system_deps = ["libasound2", "libudev1"]
+
+# 100x30, asciiverse/record-previews.sh: --demo, the game playing itself
+[media]
+cast = "asciiverse/boxing.cast"
+thumbnail_at = 9.0
+
+[release]
+source = "github"
