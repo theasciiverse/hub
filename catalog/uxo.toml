@@ -31,7 +31,7 @@ system_deps = ["libudev1"]
 
 [media]
 cast = "asciiverse/uxo.cast"
-thumbnail_at = 16.0
+thumbnail_at = 15.0
 
 [release]
 source = "github"
