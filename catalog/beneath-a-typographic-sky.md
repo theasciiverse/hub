@@ -1,13 +1,15 @@
 **UNION CITY. REBUILT IN TYPE.**
 
-Robert Foster grew up in the Gap, the wasteland outside Union City, until security men came for him and his helicopter came down in the city. Now he is on the run in a vast city of soaring tower blocks, with only Joey, a talking robot circuit board, for company, and he wants to know why they took him. The answers are somewhere in the towers, and somewhere inside LINC, the computer that runs the city.
+Robert Foster grew up in the Gap, the wasteland outside Union City, until Security came for him. Now their helicopter lies wrecked on a walkway high above the city, Officer Reich wants to hunt him down personally, and everyone in uniform keeps calling him by a name that isn't his: Overmann. Foster has one friend in the world, Joey, a wisecracking robot whose whole personality lives on a circuit board in Foster's pocket. Find Joey a body, get off the walkway, and find out why LINC, the computer that runs Union City, wants him so badly.
 
-This is Revolution Software's Beneath a Steel Sky, the whole game, in your terminal. Every pixel of Dave Gibbons' art becomes a dot of a Braille character, so Union City is rebuilt out of type, and everything the game says is set in your terminal's own font. The speech, effects and AdLib music play as they did in 1994.
+The way down is a long one. Talk your way past Hobbins in the recycling plant, who would like his knackwurst back. Get Joey a rusty robot shell he swears he likes, really. Get the better of Gilbert Lamb, the factory supervisor and a wolf in sheep's clothing, and find Anita, a D-LINC worker with LINC status zero who knows a way into LINC. Lower down wait the St. James Club, Mrs Piermont and her dog, a cathedral with something very wrong inside it, and, behind a Schriebmann port, LINC-space itself, where the city's computer keeps its secrets.
 
-- **The whole game**, from the factory where Foster lands to the very end
-- **Dave Gibbons' art in Braille dots**, or in half blocks or quadrants: F2
-  switches
-- **Full speech and the AdLib soundtrack**, as in 1994
+This is Revolution Software's Beneath a Steel Sky, the whole game from the first walkway to the very end. Every pixel of Dave Gibbons' art becomes a dot of a Braille character, so the tower blocks, the factories and the sky above them are rebuilt out of type, and everything anyone says is set in your terminal's own font. The speech, the effects and the AdLib music play just as they did in 1994.
+
+- **Dave Gibbons' Union City in Braille dots**, or in half blocks or quadrants: F2 switches
+- **Joey**, the robot sidekick who changes bodies through the story, from welder to medical robot, and has opinions about every one
+- **Full speech and the AdLib soundtrack**, every voice and every tune
+- **The dark, funny, hard-boiled story** of a city where your LINC status is everything, and zero means you have nothing
 - **Subtitles in seven languages**, picked up from your system
 
 ## Controls
@@ -31,7 +33,9 @@ The game starts in your system's language when it has it (English, German, Frenc
 
 ## History
 
-Revolution Software released Beneath a Steel Sky in 1994 for MS-DOS and the Amiga, and gave it away as freeware in 2003. ScummVM brought it to modern systems from Revolution's own source. This edition runs the unmodified CD version's data in a Rust port of ScummVM's engine and draws it in a terminal.
+In 1994 Revolution Software, Charles Cecil's studio, released Beneath a Steel Sky for MS-DOS and the Amiga: a cyberpunk adventure with a sense of humour, its city drawn by Dave Gibbons, the comic artist of Watchmen. In 2003 Revolution gave it away as freeware, original source and all, and ScummVM kept Union City open on every computer that came after.
+
+Thirty-two years on, ScummVM's engine for the game was carried over to the terminal piece by piece, every script function and every one of the original's quirks with it, until Foster could walk from the factory walkway to the heart of LINC without a single pixel on screen. The game itself is untouched: the same rooms, the same voices, the same puzzles, the same ending, now in characters.
 
 ## Credits
 

@@ -2,14 +2,14 @@ schema_version = 1
 id = "beneath-a-typographic-sky"
 kind = "game"
 title = "Beneath a Typographic Sky"
-description = "Revolution's Beneath a Steel Sky, the whole game, in your terminal: Union City rebuilt out of Braille dots, every word set in type, the speech and music as in 1994."
+description = "Kidnapped from the Gap, crashed into Union City, hunted by Security: guide Robert Foster and his wisecracking robot Joey through Revolution's Beneath a Steel Sky, every tower block rebuilt in Braille dots and type."
 year = 1994
 old = true
 # the engine is GPL (a port of ScummVM's); Revolution's game data is
 # freeware: free to share and to modify, never to be sold
 license = "GPL-3.0-or-later AND LicenseRef-Free-Noncommercial"
 repo = "theasciiverse/beneath-a-typographic-sky"
-provenance = "Revolution Software made Beneath a Steel Sky in 1994 and released it as freeware in 2003. This edition brings it to the terminal through a Rust port of ScummVM's engine."
+provenance = "Revolution Software made Beneath a Steel Sky in 1994, with Dave Gibbons drawing Union City, and gave it away as freeware in 2003. ScummVM kept it playing, and its engine, ported piece by piece, now brings the whole city to the terminal."
 changes = "NOTICE"                # what this modified version changes, a path in repo
 topics = ["point-and-click", "adventure", "classic", "science-fiction", "cyberpunk", "mouse", "braille", "rust", "scummvm"]
 genre = "adventure"

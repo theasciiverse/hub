@@ -1,14 +1,16 @@
 **NO INVASION FLEET. NO HIDEOUS MUCOIDS. JUST GEMS, MINES AND FIFTY LEVELS OF TROUBLE.**
 
-"You're a jolly little ship dingus which shoots around a rather abstract
-landscape collecting little gem thingies, while avoiding mines. Boring, you
-say? Well, we kept the Super Kill-o-Zapper, and added LOTS of things to blow
-up. Happy?" So promised Mark Mackey's XQuest manual in 1994, and he meant
-every word.
+"You're a jolly little ship dingus which shoots all around a rather
+abstract landscape collecting little blue gem thingies, while avoiding a
+few mines scattered around. Hmm. Boring, you say? ... OK, so we'll keep the
+Super Kill-o-Zapper, then, and add a couple of things to blow up. In fact,
+we'll add LOTS of things to blow up. Happy?" So promised Mark Mackey's
+XQuest manual in 1994, right after abandoning a story about the hideous
+Mucoids ("Hang on, sorry. Wrong game"). He meant every word.
 
-Pick up every crystal on the level and the gate at the top opens; fly out through
-it to the next one. Fifty levels, each with more crystals, more mines, a
-narrower gate, and from level 33 a gate that won't keep still.
+Pick up every crystal on the level and the gate at the top opens; fly out
+through it to the next one. Fifty levels, each with more crystals, more
+mines, a narrower gate, and from level 33 a gate that won't keep still.
 
 Every level has a par time, counting down in the corner. Beat it and
 each second left is worth 500 points; overstay it and the whole game
@@ -17,20 +19,30 @@ levels, every 100,000 later.
 
 Your ship steers by thrust and drifts on when you let go, so brake before
 the wall: on every difficulty but Wimp, the wall is as deadly as a mine.
-Your shots fly the way you do, as fast as you do. Enemies come in through
-the side gates, eighteen kinds of them: Grungers wander, Zippos curve,
-Zingers and Snipes shoot, Miners lay mines, Meebies follow you,
-Retaliators fire back when they die, Tribblers burst into five, Clusters
-into fifteen shots, and the Repulsor shoves you away. Catch a Supercrystal
-for a power-up (Shield, AimedFire, RapidFire, MultiFire, AssFire,
-HeavyFire or Bounce; a banner says what you got and what it does, and the
-status bar shows all seven, lit while they last), and keep a smart bomb
-for the moment it all goes wrong.
+Your shots fly the way you do, as fast as you do. And the enemies pour in
+through the side gates, eighteen kinds of them. Grungers are "the hired
+muscle". Zippos are the same, minus the slow bit. Snipes are "just
+*waiting* for a clear shot". Retaliators shoot right back when you shoot
+them ("That's fair, isn't it?"). Miners lay mines right where you don't
+want them, Meebies are "big, annoying, tough", Tribblers burst into five, Clusters are
+"quite cute really. Until you shoot them", and as for the Repulsor, the
+manual's advice is simply "Run awwaaaaaayyyyyyyy!"
 
-The game is the original, rule for rule: the same physics, levels, enemies
-and sounds, and Mark Mackey's sprites drawn in Braille dots and half
-blocks, cell by cell, so even a small terminal shows them in fine detail
-and full colour; at full size, his own status bar.
+Catch a Supercrystal for a power-up: Shield, AimedFire, RapidFire,
+MultiFire, AssFire, HeavyFire or Bounce. A banner says what you got and
+what it does, and the status bar shows all seven, lit while they last.
+Keep a smart bomb for the moment it all goes wrong.
+
+- **The original, rule for rule**: the same physics, levels, enemies and
+  sounds, and Mark Mackey's own sprites in full colour, drawn in Braille
+  dots and half blocks
+- **Five difficulties**, from Wimp, where the walls bounce you back, to
+  Inhuman, twice as fast and half again as crowded
+- **Par times, bonus seconds and extra ships** to chase for the Hall of
+  Fame
+- **Record your best run** as a demo and watch it back
+- **Mouse, keyboard or gamepad**, as the 1994 game played with mouse and
+  joystick
 
 ## Controls
 
@@ -59,16 +71,21 @@ elsewhere a held key stutters until the terminal's repeats start.
 
 ## History
 
-Mark Mackey wrote XQuest in Turbo Pascal for DOS, a Mode X game at
-320x240, and released it as shareware from 1994 to 1996. Make it to
-Inhuman, the manual promised, and he'd send you a UUencoded GIF of a
-tenner.
+Mark Mackey wrote XQuest in Turbo Pascal for DOS, a smooth VGA arcade
+game that needed only a 286 and a mouse or joystick, and released it as
+shareware from 1994 to 1996. "A horribly addictive arcade game for the
+PC", his manual called it, and players agreed loudly enough that by
+version 1.3 they had complained their way past the old level 40 limit.
+Mark gave them fifty levels and a grumble to go with them: "I could only
+get to level 35. I invented the game, so I should be allowed to be the
+best at it. Hmmmph!" The first player to reach the exalted rank of
+Inhuman XQuest God, he promised, would get a UUencoded GIF of a tenner.
 
 Thirty years on, David, who played it as shareware in the mid-90s, ported
-version 1.3 to C and SDL2 as xquest-sdl. AQuest
-carries that port's game logic over to the terminal line by line: a demo
-recorded in either one plays back in the other, frame for frame. The Hall
-of Fame and the demos keep the original file formats.
+version 1.3 to C and SDL2 as xquest-sdl, with Mark's blessing. AQuest
+carries that port's game over to the terminal line by line, so faithfully
+that a run recorded in either one plays back in the other, frame for
+frame.
 
 ## Credits
 

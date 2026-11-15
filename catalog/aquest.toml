@@ -2,14 +2,14 @@ schema_version = 1
 id = "aquest"
 kind = "game"
 title = "AQuest"
-description = "Mark Mackey's XQuest in the terminal: steer a drifting ship round the arena, grab every crystal, dodge the mines and leave through the gate, fifty levels deep"
+description = "Grab every crystal, dodge the mines, outrun Snipes, Tribblers and the dreaded Repulsor, then fly out through the gate: Mark Mackey's horribly addictive XQuest, fifty levels deep, Super Kill-o-Zapper in hand."
 year = 1994
 old = true
 # Mark Mackey's shareware terms, carried by xquest-sdl's LICENSE to the port
 # and to this edition: free to share, credited, unofficial, never sold
 license = "LicenseRef-Free-Noncommercial"
 repo = "theasciiverse/aquest"
-provenance = "Mark Mackey wrote XQuest for DOS in Turbo Pascal and released it as shareware from 1994 to 1996. David ported version 1.3 to C and SDL2 as xquest-sdl, and AQuest carries that port's game logic line by line into Rust and Ratatui for the terminal."
+provenance = "Mark Mackey wrote XQuest in Turbo Pascal and released it as DOS shareware from 1994 to 1996, promising a tenner to the first Inhuman XQuest God. David, who played it in the 90s, ported version 1.3 to C and SDL2 as xquest-sdl with Mark's blessing, and AQuest carries that game line by line into the terminal."
 changes = "README.md"
 topics = ["shooter", "arcade", "classic", "dos", "inertia", "mouse", "gamepad", "braille", "rust"]
 genre = "arcade"

@@ -17,16 +17,21 @@ screen, and in her room the princess waits as the sand falls.
 ## The original, in the terminal
 
 Every routine is ported from Mechner's own 6502 source: the same moves,
-traps, guards and levels, the same 12 frames a second. It is drawn with
-the DOS version's art and fills the window at any size. The prince's
-rotoscoped animation is drawn in Braille dots, so every frame of his run,
-his leap and his careful step survives; the stone around him is drawn in
-block glyphs. One key switches to the Apple II's own picture.
+traps, guards and levels, the same 12 frames a second. It wears the DOS
+version's art, and the prince's rotoscoped animation is drawn in Braille
+dots, so every frame of his run, his leap and his careful step survives;
+the stone around him is drawn in block glyphs. One key switches to the
+Apple II's own picture.
 
-- All fourteen levels, the shadow, the skeleton, the vizier and the mouse
-- The DOS title, story and credits, the princess's room between levels,
-  and both endings
-- The DOS sound effects and music
+- **All fourteen levels**: the shadow, the skeleton, the vizier, and the
+  mouse who comes to open a gate when you need it most
+- **Swordfights** with guards who strike, block and advance each in their
+  own way
+- **Potions** that heal, that hurt, and one that turns the world upside
+  down
+- **The DOS title, story and credits**, the princess's room between
+  levels, and both endings
+- **The DOS music and sound effects**, from the prologue to Jaffar's theme
 - `--demo` plays the original's attract demo
 
 ## Controls
@@ -45,3 +50,33 @@ block glyphs. One key switches to the Apple II's own picture.
 
 Held keys are read exactly in terminals with the kitty keyboard protocol;
 elsewhere from the keyboard's repeat.
+
+## History
+
+Jordan Mechner wrote Prince of Persia on the Apple II, in 6502
+assembly, between 1985 and 1989. To make the prince move like a person he
+filmed his brother running and jumping and traced him frame by frame, and
+that rotoscoped kid, with his careful steps and desperate ledge grabs,
+is the heart of the game to this day. Broderbund released it in 1989,
+and the prince went on to run and leap on the PC, the Amiga, Sega's
+consoles and many more.
+
+The source itself nearly vanished. It sat on 3.5 inch floppy disks for
+twenty-two years, until Jason Scott of the Internet Archive and the late
+Tony Diaz spent most of a long day and night coaxing it off them in 2012,
+and Mechner posted it for anyone to study, "because if we hadn't, it might
+have been lost for all time."
+
+Prince of Braille is built from those disks. Routine by routine, Mechner's
+code was carried over with his own names for things, the guards' fighting
+programs, the gates and plates, the shadow's scripted moves, so that the
+game you play here makes the same decisions his did on an Apple II, now
+in a terminal.
+
+## Credits
+
+- Prince of Persia: Jordan Mechner, 1989 (Broderbund)
+- Source recovery: Jason Scott and Tony Diaz
+- DOS art, music and sound effects: from PrinceJS (oklemenz)
+- Asciiverse edition: Asciiverse
+- License: MIT
