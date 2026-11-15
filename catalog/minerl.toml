@@ -1,0 +1,38 @@
+schema_version = 1
+id = "minerl"
+kind = "game"
+title = "MineRL"
+description = "Dig down through dirt and stone for coal, gold and diamonds, sell them at the shop, dodge boulders, termites and goblins, and bring the Heartstone up from the bottom of your claim."
+year = 2014
+license = "GPL-2.0-only"
+repo = "theasciiverse/minerl"
+provenance = "Whales, the creator of Cataclysm, dug MineRL out in ten days in March 2014 as a side project after Boulder Dash and Motherlode. The Asciiverse finished it in 2026 from Whales' own plan: the deep, the goblins, the dynamite and the Heartstone."
+changes = "PATCHES.md"
+topics = ["mining", "roguelike", "digging", "side-view", "curses"]
+genre = "roguelike"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "Whales"
+url = "https://github.com/Whales/minerl"
+
+[exec]
+game = "minerl"
+
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+color = "basic"
+mouse = false
+
+[media]
+cast = "asciiverse/minerl.cast"
+thumbnail_at = 20.0
+
+[release]
+source = "github"

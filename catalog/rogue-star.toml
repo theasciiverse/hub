@@ -1,0 +1,38 @@
+schema_version = 1
+id = "rogue-star"
+kind = "game"
+title = "Rogue Star"
+description = "Fly a freighter you still owe 8,000 credits on: trade fourteen goods across a dozen worlds, fight or pay off pirates, survey uncharted worlds, and clear the debt before 3004 runs out."
+year = 2013
+license = "GPL-2.0-only"
+repo = "theasciiverse/rogue-star"
+provenance = "Whales, the creator of Cataclysm, built Rogue Star from 2013 to 2014 as Star Control 2 made more roguelike, with a living market and a battle system that was never wired in. The Asciiverse finished the voyage in 2026: pirates, surveys, the Vault and the deadline."
+changes = "PATCHES.md"
+topics = ["space", "trading", "exploration", "pirates", "roguelike", "curses"]
+genre = "simulation"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "Whales"
+url = "https://github.com/Whales/rogue-star"
+
+[exec]
+game = "roguestar"
+
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+color = "basic"
+mouse = false
+
+[media]
+cast = "asciiverse/rogue-star.cast"
+thumbnail_at = 17.0
+
+[release]
+source = "github"
