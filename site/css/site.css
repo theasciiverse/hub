@@ -545,6 +545,8 @@ code, kbd, .mono { font-family: var(--font-mono); }
 .lib-detail h1 { margin: 0 0 8px; font: 600 28px/1.15 var(--font-mono); }
 .lib-detail .one { margin: 0 0 12px; color: var(--text-dim); font-size: 15px; max-width: 70ch; }
 .lib-detail .by { color: var(--text-faint); font-size: 13px; margin: 12px 0 0; }
+/* our build of someone else's game: said quietly beside its maker */
+.by .edition { opacity: .75; white-space: nowrap; }
 .fresh-pill { font: 700 11px var(--font-mono); letter-spacing: .14em; background: var(--violet); color: var(--violet-ink); padding: 4px 7px; vertical-align: middle; }
 .new-pill { font: 700 11px var(--font-mono); letter-spacing: .14em; background: var(--green); color: #07120a; padding: 4px 7px; vertical-align: middle; }
 .lib-detail .old-pill { font: 700 11px var(--font-mono); letter-spacing: .14em; background: var(--amber); color: #1a1000; padding: 4px 7px; vertical-align: middle; }

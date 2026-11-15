@@ -81,7 +81,8 @@
     side.append(installLine(t));
     side.append(el(`<dl class="meta">
       <dt>Developer</dt><dd>${esc(t.developer?.name)}</dd>
-      ${t.upstream ? `<dt>Original</dt><dd>${esc(t.upstream.name)}</dd>` : ""}
+      ${t.upstream && t.upstream.name !== t.developer?.name ? `<dt>Original</dt><dd>${esc(t.upstream.name)}</dd>` : ""}
+      ${t.edition ? `<dt>Edition</dt><dd>Asciiverse edition</dd>` : ""}
       <dt>Runs on</dt><dd class="mono">${platformsLabel(t) || "LNX"}</dd></dl>`));
     dots.querySelectorAll("button").forEach((b, j) => b.classList.toggle("on", j === idx));
     for (const [cls, d] of [["prev", -1], ["next", 1]]) {

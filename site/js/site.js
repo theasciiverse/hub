@@ -203,7 +203,7 @@ function headerSearch(box) {
     const title = t.title.toLowerCase();
     if (title.startsWith(q)) return 0;
     if (title.includes(q) || t.id.includes(q)) return 1;
-    const rest = [...(t.topics || []), t.genre, t.theme, t.developer?.name, t.upstream?.name]
+    const rest = [...(t.topics || []), t.genre, t.theme, t.developer?.name, t.upstream?.name, t.edition ? "asciiverse edition" : ""]
       .filter(Boolean).join(" ").toLowerCase();
     return rest.includes(q) ? 2 : -1;
   };
@@ -350,13 +350,24 @@ function capsule(t) {
 
 // Steam's scrolling shelf: one row of capsules, a page at a time, arrows either side, page marks below.
 // after the developer: the original a port or package came from; for a story
-// (its author is the developer) only the year it first came out
+// (its author is the developer) only the year it first came out; for our
+// edition of someone else's game (catalog.json `edition`), a quiet note
 function byline(t) {
+  if (t.edition) return ` <span class="edition">· Asciiverse edition</span>`;
   if (!t.upstream) return "";
   if (t.kind === "adventure") { const y = /(\d{4})$/.exec(t.upstream.name || ""); return y ? `, ${y[1]}` : ""; }
   // nothing to add when the developer is the original's author
   if (t.upstream.name === t.developer?.name) return "";
   return `, after ${esc(t.upstream.name)}`;
+}
+
+// The quiet "Asciiverse edition" fact: our build of someone else's game, linking
+// to our changes where the title lists them, else to our source.
+function editionLink(t) {
+  if (!t.edition) return "";
+  const gh = t.repo ? `https://github.com/${t.repo}` : "";
+  const url = gh && t.changes ? `${gh}/blob/HEAD/${t.changes}` : gh;
+  return url ? `<a href="${esc(url)}">Asciiverse edition</a>` : "Asciiverse edition";
 }
 
 // Where a title comes from: who made it, what Asciiverse changed, and links to the

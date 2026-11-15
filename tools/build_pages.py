@@ -189,8 +189,11 @@ def title_page(t, template, image, collections):
     if dev.get("name"):
         facts.append(f'<li>Developer: {e(dev["name"])}</li>')
     up = t.get("upstream") or {}
-    if up.get("name"):
+    if up.get("name") and up["name"] != dev.get("name"):
         facts.append(f'<li>Original: {e(up["name"])}</li>')
+    if t.get("edition") == "asciiverse":
+        # our build of someone else's game, said quietly beside its maker
+        facts.append('<li>Edition: Asciiverse edition</li>')
     if t.get("year"):
         facts.append(f'<li>First released: {e(str(t["year"]))}</li>')
     if t.get("genre"):

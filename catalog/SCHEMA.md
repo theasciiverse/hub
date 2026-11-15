@@ -47,9 +47,11 @@ new = true                     # optional: the NEW! banner, for titles first rel
                                # comes from `added`, see "Generated catalog.json")
 featured = 3                   # optional: a place in the website's carousel, 1 first
 
-[developer]                    # who ships this build
-name = "Asciiverse"
-url = "https://asciiverse.sh"
+[developer]                    # who made the game; for our own build of someone
+name = "Asciiverse"            # else's game (a package or a port) write Asciiverse
+url = "https://asciiverse.sh"  # here and the maker in [upstream]: the build then
+                               # shows the maker as developer (see `edition` under
+                               # "Generated catalog.json")
 
 [upstream]                     # the original, when it is a port or a package;
                                # url is the original project's own home or source,
@@ -284,6 +286,16 @@ titles added after the launch on 2026-11-03: it means new to Asciiverse,
 whatever the game's age, so a 1993 game can carry OLD! and FRESH! at once.
 The 30 days are counted where it is shown, so the badge drops off without
 a rebuild. Optional: a catalog without it still loads, and shows no FRESH!.
+
+`developer` is whoever made the game (David, 2026-11-15). Where a manifest's
+`[developer]` is Asciiverse and it has an `[upstream]`, the title is our
+edition of someone else's game, so the build writes the upstream's `name` and
+`url` as `developer` and adds `"edition": "asciiverse"`. The site, the static
+pages and `av` then show the maker as developer, and "Asciiverse edition" as a
+quieter note beside it, linking to `changes` where the title lists them. Our
+own games (no `[upstream]`) keep Asciiverse as developer and have no
+`edition`. Never an ownership tag such as "An Asciiverse game": this is a
+place of equals.
 
 `news` is the latest releases' notes, newest first (a few are enough; `av`
 shows three): for `source = "github"` each GitHub Release's body and its date,

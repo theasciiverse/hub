@@ -320,6 +320,22 @@ def build_one(t, previous):
         return None
 
 
+def resolve_developer(t):
+    """The developer shown is whoever made the game (David, 2026-11-15).
+
+    A manifest whose [developer] is Asciiverse and which has an [upstream] is
+    our edition of someone else's game: a package or a port. Its developer
+    becomes the original's maker, as given in [upstream], and `edition` says
+    the build is Asciiverse's, for the quieter note the site and av show
+    beside it. Our own games (no upstream) keep Asciiverse as developer.
+    Idempotent, so titles kept from the previous catalog resolve the same way.
+    """
+    dev, up = t.get("developer") or {}, t.get("upstream") or {}
+    if dev.get("name") == "Asciiverse" and up.get("name"):
+        t["developer"] = {k: v for k, v in up.items() if k in ("name", "url")}
+        t["edition"] = "asciiverse"
+
+
 def load_previous(where):
     if not where:
         return {}
@@ -354,6 +370,8 @@ def main():
         # titles of one repo run in the same worker order, so the cache helps
         built = list(pool.map(lambda t: build_one(t, previous), titles.values()))
     out = {t["id"]: t for t in built if t}
+    for t in out.values():
+        resolve_developer(t)
     if dates := added_dates():
         today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
         for id_, t in out.items():
