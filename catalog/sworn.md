@@ -26,6 +26,8 @@ own liege and the whole realm hears of it.
   write to you when your lands meet, ask tribute when they are strong,
   plead when they are not, gang up on whoever comes near the crown, and
   as your vassals, march where your letters send them
+- **Three difficulties** against the computer: on Gentle their lands pay
+  them a third less than yours, on Hard half again as much
 - **Up to eight players** over the network, found on the local network
   or joined by an id from anywhere. A player who drops is held by the
   computer until they come back; the host can set a timer on the seasons

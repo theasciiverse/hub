@@ -22,7 +22,7 @@ url = "https://asciiverse.sh"
 game = "sworn"
 args = []
 
-# the map and its names want room; 80x24 still plays
+# drawn for 100x30; at 80x24 every province name still reads
 [min_terminal]
 cols = 80
 rows = 24
@@ -34,12 +34,12 @@ mouse = true
 gamepad = false
 
 # 100x30, recorded with hub/tools/castrec.py and --seed 7: a new game as
-# Edmund of the Saxons, its first-season note, troops raised and two holds taken, the season's
-# report, a neighbour's first letter, the crown's checklist, a second
-# season; the still is the neighbour's letter
+# Edmund of the Saxons, its first-season note, troops raised and three
+# holds taken, the season's report, a neighbour's first letter, the
+# crown's checklist, a second season; the still is the neighbour's letter
 [media]
 cast = "asciiverse/sworn.cast"
-thumbnail_at = 30.0
+thumbnail_at = 37.5
 
 [release]
 source = "github"
