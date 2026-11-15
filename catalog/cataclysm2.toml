@@ -2,13 +2,13 @@ schema_version = 1
 id = "cataclysm2"
 kind = "game"
 title = "Cataclysm II"
-description = "Shipwrecked on an island fifty years after the end of the world: survive its zombies, raiders and worse, trade with its farming camps, then sail the wreck home or power up the Lab at the island's heart and close the seam they came through."
+description = "Shipwrecked on an island where four factions race for a sealed alien Lab: survive the zombies and raiders, join a side, run their errands, then win the island for them, close the seam, or sail home."
 year = 2013
 # LICENSE is the GPL version 3 text and data/motd.txt says "licensed
 # under the GPLv3"; nothing in the sources says "or any later version"
 license = "GPL-3.0-only"
 repo = "theasciiverse/cataclysm2"
-provenance = "Whales wrote Cataclysm II from 2013 to 2016 as the sequel to Cataclysm, the roguelike Whales wrote from 2010 to 2013, with a plan for a game you could win, and left it an early alpha. The Asciiverse carries it on from that plan, in Whales' notes and development blog. It is a separate project from Cataclysm: Dark Days Ahead, the community fork of the first Cataclysm."
+provenance = "Whales started Cataclysm II in 2013 as a fresh start on Cataclysm, planned from day one as a game you could win, and stopped in 2016 with the ending still on paper. The Asciiverse carried it on in 2026 from Whales' notes and development blog, people, factions, the Lab and all."
 changes = "PATCHES.md"
 topics = ["roguelike", "survival", "zombies", "post-apocalyptic", "island", "curses"]
 genre = "roguelike"
