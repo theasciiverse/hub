@@ -15,7 +15,7 @@ name = "Asciiverse"
 url = "https://asciiverse.sh"
 
 [upstream]
-name = "Steve Belczyk (ORBIT, 1999)"
+name = "Steve Belczyk"
 url = "http://genesis.nred.ma.us/orbit/"
 
 # the archive holds terminal-orbit with its maps/, missions/ and models/

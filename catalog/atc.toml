@@ -18,7 +18,7 @@ name = "Asciiverse"
 url = "https://asciiverse.sh"
 
 [upstream]
-name = "Ed James (1987), Mike Sharov"
+name = "Ed James"
 url = "https://sourceforge.net/projects/bsd-games"
 
 # the scenario name is an optional argument (atc -l lists them); av starts

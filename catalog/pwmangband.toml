@@ -17,7 +17,7 @@ name = "Asciiverse"
 url = "https://asciiverse.sh"
 
 [upstream]
-name = "MAngband and PWMAngband developers (draconisPW and others)"
+name = "the MAngband and PWMAngband developers"
 url = "https://github.com/draconisPW/PWMAngband"
 
 # pwmangband-play: with no arguments a private game on this machine (a

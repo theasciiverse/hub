@@ -24,7 +24,7 @@ name = "Asciiverse"
 url = "https://asciiverse.sh"
 
 [upstream]
-name = "Robert D. Kindelberger (1984); Nicholas J. Kisseberth"
+name = "Robert D. Kindelberger"
 url = "https://github.com/RoguelikeRestorationProject/srogue"
 
 [exec]

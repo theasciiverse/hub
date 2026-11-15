@@ -11,7 +11,7 @@ changes = "PATCHES.md"
 topics = ["matrix", "rain", "network", "traffic", "screensaver", "classic", "curses"]
 
 [developer]
-name = "Chris Allegretta, Abishek V Ashok, Thomas Bloedorn and contributors"
+name = "Thomas Bloedorn"
 url = "https://github.com/abishekvashok/cmatrix"
 
 [upstream]

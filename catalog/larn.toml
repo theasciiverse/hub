@@ -18,7 +18,7 @@ name = "Asciiverse"
 url = "https://asciiverse.sh"
 
 [upstream]
-name = "Noah Morgan (1986)"
+name = "Noah Morgan"
 url = "https://cvsweb.netbsd.org/bsdweb.cgi/src/games/larn/"
 
 [exec]

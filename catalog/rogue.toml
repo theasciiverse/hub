@@ -20,7 +20,7 @@ name = "Asciiverse"
 url = "https://asciiverse.sh"
 
 [upstream]
-name = "Timothy Stoehr, after Michael C. Toy, Kenneth C. R. C. Arnold and Glenn Wichman"
+name = "Michael Toy, Glenn Wichman and Ken Arnold"
 url = "https://github.com/NetBSD/src/tree/trunk/games/rogue"
 
 [exec]

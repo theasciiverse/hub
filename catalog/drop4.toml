@@ -18,7 +18,7 @@ name = "Asciiverse"
 url = "https://asciiverse.sh"
 
 [upstream]
-name = "Chris Torek and Darren F. Provine (1992), Mike Sharov"
+name = "Chris Torek and Darren F. Provine"
 url = "https://sourceforge.net/projects/bsd-games"
 
 # an optional level argument, 1 to 9, sets the starting speed

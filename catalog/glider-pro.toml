@@ -19,7 +19,7 @@ name = "Asciiverse"
 url = "https://asciiverse.sh"
 
 [upstream]
-name = "John Calhoun, 1994"
+name = "John Calhoun"
 url = "https://github.com/softdorothy/GliderPRO"
 
 # the archive holds glider-pro; the art, sounds and the 21 houses are

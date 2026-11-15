@@ -21,7 +21,7 @@ url = "https://asciiverse.sh"
 # Glider 4.0, John Calhoun, 1991; source, art, sounds and houses released by
 # him as softdorothy in 2016
 [upstream]
-name = "John Calhoun, 1991"
+name = "John Calhoun"
 url = "https://github.com/softdorothy/Glider4"
 
 # the archive holds glider; the art, sounds and the 22 houses are compiled

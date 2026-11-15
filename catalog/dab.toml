@@ -17,7 +17,7 @@ name = "Asciiverse"
 url = "https://asciiverse.sh"
 
 [upstream]
-name = "Christos Zoulas (2003), Mike Sharov"
+name = "Mike Sharov"
 url = "https://sourceforge.net/projects/bsd-games"
 
 # an optional level argument, 1 to 9, sets the starting board size

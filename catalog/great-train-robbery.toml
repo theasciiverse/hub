@@ -20,7 +20,7 @@ url = "https://asciiverse.sh"
 # by .github/workflows/release.yml: the browser game's script, unchanged,
 # run by rotty (asciiverse/rotty) and QuickJS-ng as one native program
 [upstream]
-name = "Ondřej Žára (7DRL 2026)"
+name = "Ondřej Žára"
 url = "https://github.com/ondras/great-train-robbery"
 
 # the session log goes to $XDG_STATE_HOME/great-train-robbery;

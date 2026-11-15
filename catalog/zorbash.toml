@@ -13,13 +13,13 @@ topics = ["roguelike", "dungeon", "fantasy", "turn-based", "robot", "seeds", "mu
 genre = "roguelike"
 
 [developer]
-name = "Neil McGill (goblinhack)"
+name = "Neil McGill"
 url = "https://github.com/goblinhack/zorbash"
 
 # terminal edition: the game's ascii mode drawn in the terminal, with no
 # window and no OpenGL; PATCHES.md and UPSTREAM.md in theasciiverse/zorbash
 [upstream]
-name = "Neil McGill (goblinhack)"
+name = "Neil McGill"
 url = "https://github.com/goblinhack/zorbash"
 
 # one binary with every picture, sound and tune built in; saves, config

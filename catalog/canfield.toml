@@ -18,7 +18,7 @@ name = "Asciiverse"
 url = "https://asciiverse.sh"
 
 [upstream]
-name = "Steve Levine, UC Berkeley (1980)"
+name = "Steve Levine"
 url = "https://github.com/NetBSD/src/tree/trunk/games/canfield"
 
 [exec]

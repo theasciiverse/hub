@@ -12,7 +12,7 @@ topics = ["roguelike", "shooter", "sci-fi", "horror", "tactical", "classic"]
 genre = "roguelike"
 
 [developer]
-name = "Kornel Kisielewicz (ChaosForge)"
+name = "Kornel Kisielewicz"
 url = "https://drl.chaosforge.org/"
 
 # 0.10.12c with fpcvalkyrie 0_10_12 and two small engine patches (no

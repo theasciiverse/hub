@@ -17,7 +17,7 @@ name = "Asciiverse"
 url = "https://asciiverse.sh"
 
 [upstream]
-name = "Eric P. Scott, Caltech (1980)"
+name = "Eric P. Scott"
 url = "https://github.com/NetBSD/src/tree/trunk/games/rain"
 
 # any key quits; the default 120 ms between drops

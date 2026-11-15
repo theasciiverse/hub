@@ -17,7 +17,7 @@ name = "Asciiverse"
 url = "https://asciiverse.sh"
 
 [upstream]
-name = "David A. Holland, NetBSD (2013)"
+name = "David A. Holland"
 url = "https://github.com/NetBSD/src/tree/trunk/games/cgram"
 
 [exec]

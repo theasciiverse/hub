@@ -18,7 +18,7 @@ name = "Asciiverse"
 url = "https://asciiverse.sh"
 
 [upstream]
-name = "Jay Fenlason (1982), Andries Brouwer, CWI (1985)"
+name = "Jay Fenlason and Andries Brouwer"
 url = "https://cvsweb.netbsd.org/bsdweb.cgi/src/games/hack/"
 
 [exec]

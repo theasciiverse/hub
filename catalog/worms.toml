@@ -17,7 +17,7 @@ name = "Asciiverse"
 url = "https://asciiverse.sh"
 
 [upstream]
-name = "Eric P. Scott, Caltech (1980)"
+name = "Eric P. Scott"
 url = "https://github.com/NetBSD/src/tree/trunk/games/worms"
 
 # eight worms (-n 8) in colour (-C) with their heads shown (-H); any key

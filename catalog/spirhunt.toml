@@ -18,7 +18,7 @@ name = "Asciiverse"
 url = "https://asciiverse.sh"
 
 [upstream]
-name = "Eric Allman, UC Berkeley (1976); Mike Sharov (2020)"
+name = "Eric Allman and Mike Sharov"
 url = "https://sourceforge.net/projects/bsd-games"
 
 [exec]

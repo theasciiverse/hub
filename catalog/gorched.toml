@@ -17,7 +17,7 @@ url = "https://asciiverse.sh"
 # Ján Čabala (zladovan) wrote Gorched in Go on termloop (2020, v1.7 2025);
 # this edition is upstream unchanged, built by .github/workflows/release.yml.
 [upstream]
-name = "Ján Čabala (zladovan)"
+name = "Ján Čabala"
 url = "https://github.com/zladovan/gorched"
 
 # sizes the world to the terminal at start; a resize applies from the next round

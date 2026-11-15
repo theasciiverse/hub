@@ -24,7 +24,7 @@ name = "Asciiverse"
 url = "https://asciiverse.sh"
 
 [upstream]
-name = "Herb Chong (1985 to 1995); Nicholas J. Kisseberth"
+name = "Herb Chong"
 url = "https://github.com/RoguelikeRestorationProject/urogue"
 
 [exec]

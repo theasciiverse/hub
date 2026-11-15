@@ -16,7 +16,7 @@ name = "Asciiverse"
 url = "https://asciiverse.sh"
 
 [upstream]
-name = "Thijs van Ommen (2005, 2006)"
+name = "Thijs van Ommen"
 url = "https://github.com/thijsvanommen/scrap"
 
 [exec]

@@ -16,7 +16,7 @@ name = "Asciiverse"
 url = "https://asciiverse.sh"
 
 [upstream]
-name = "Alan De Smet, IOCCC 1998"
+name = "Alan De Smet"
 url = "https://www.ioccc.org/1998/chaos/index.html"
 
 # the five objects in turn, tumbling; any key quits

@@ -13,13 +13,13 @@ topics = ["puzzle", "logic", "nonogram", "sudoku", "netwalk", "hashiwokakero", "
 genre = "puzzle"
 
 [developer]
-name = "D∆MI (FelineStateMachine)"
+name = "D∆MI"
 url = "https://github.com/FelineStateMachine/puzzletea"
 
 # upstream's program with the Create screen fitted to the window;
 # PATCHES.md in theasciiverse/puzzletea
 [upstream]
-name = "D∆MI (FelineStateMachine)"
+name = "D∆MI"
 url = "https://github.com/FelineStateMachine/puzzletea"
 
 # saves, stats and settings in ~/.puzzletea (an SQLite file and config.json)

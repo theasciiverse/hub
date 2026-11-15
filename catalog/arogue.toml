@@ -24,7 +24,7 @@ name = "Asciiverse"
 url = "https://asciiverse.sh"
 
 [upstream]
-name = "Michael Morgan, Ken Dalka and AT&T (1985); Nicholas J. Kisseberth"
+name = "Michael Morgan and Ken Dalka"
 url = "https://github.com/RoguelikeRestorationProject/arogue5.8"
 
 [exec]

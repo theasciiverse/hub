@@ -18,7 +18,7 @@ name = "Asciiverse"
 url = "https://asciiverse.sh"
 
 [upstream]
-name = "Michael Toy, Glenn Wichman and Ken Arnold (1982); Nicholas J. Kisseberth"
+name = "Michael Toy, Glenn Wichman and Ken Arnold"
 url = "https://github.com/rogueforge/rogue5.2"
 
 [exec]

@@ -21,7 +21,7 @@ url = "https://asciiverse.sh"
 # Revolution Software, 1994; freeware since August 2003 (readme.txt ships
 # beside the data). Engine ported from ScummVM's engines/sky.
 [upstream]
-name = "Revolution Software, 1994"
+name = "Revolution Software"
 url = "https://www.revolution.co.uk"
 
 # the archive holds typosky, data/ (sky.dsk, sky.dnr, sky.cpt and

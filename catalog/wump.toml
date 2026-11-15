@@ -18,7 +18,7 @@ name = "Asciiverse"
 url = "https://asciiverse.sh"
 
 [upstream]
-name = "Dave Taylor, Intuitive Systems (1989), after Hunt the Wumpus (1973)"
+name = "Dave Taylor"
 url = "https://sourceforge.net/projects/bsd-games"
 
 [exec]

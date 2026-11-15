@@ -11,7 +11,7 @@ changes = "PATCHES.md"
 topics = ["toy", "animation", "aquarium", "screensaver", "classic"]
 
 [developer]
-name = "Kirk Baucom (art: Joan Stark)"
+name = "Kirk Baucom"
 url = "https://robobunny.com/projects/asciiquarium"
 
 # C port of 1.1; the original Perl script is kept in the repo; PATCHES.md

@@ -12,7 +12,7 @@ topics = ["puzzle", "platformer", "portals", "physics", "fan-game"]
 genre = "puzzle"
 
 [developer]
-name = "Joe Larson (Cymon's Games)"
+name = "Joe Larson"
 url = "https://github.com/cymonsgames/ASCIIpOrtal"
 
 # master after v1.3-beta8 (0d7fb09), terminal build (-D__NOSDL__

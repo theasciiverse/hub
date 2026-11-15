@@ -12,7 +12,7 @@ topics = ["text-adventure", "time-travel", "puzzle", "science-fiction"]
 genre = "text adventure"
 
 [developer]
-name = "Toby Ord (half sick of shadows)"
+name = "Toby Ord"
 url = "https://ifarchive.org/if-archive/games/zcode/devours.z5"
 
 # Written for the 2004 Interactive Fiction Competition; this is the post-competition release 3.

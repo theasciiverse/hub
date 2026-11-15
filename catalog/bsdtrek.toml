@@ -17,7 +17,7 @@ name = "Asciiverse"
 url = "https://asciiverse.sh"
 
 [upstream]
-name = "Eric Allman, UC Berkeley (1976)"
+name = "Eric Allman"
 url = "https://github.com/jj1bdx/bsdtrek"
 
 [exec]

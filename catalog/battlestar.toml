@@ -18,7 +18,7 @@ name = "Asciiverse"
 url = "https://asciiverse.sh"
 
 [upstream]
-name = "David Riggle (1979), Mike Sharov"
+name = "David Riggle"
 url = "https://sourceforge.net/projects/bsd-games"
 
 [exec]

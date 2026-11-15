@@ -22,7 +22,7 @@ url = "https://asciiverse.sh"
 # downloads are gone, an archived copy is in xquest-sdl's releases. Game
 # logic from github.com/sandbranch/xquest-sdl (C and SDL2, David's port).
 [upstream]
-name = "Mark Mackey, 1994"
+name = "Mark Mackey"
 url = "http://www.swallowtail.org/xquest/"
 
 # the archive holds aquest, README.md and LICENSE; the game data is compiled

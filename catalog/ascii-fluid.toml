@@ -16,7 +16,7 @@ name = "Asciiverse"
 url = "https://asciiverse.sh"
 
 [upstream]
-name = "Yusuke Endoh, IOCCC 2012"
+name = "Yusuke Endoh"
 url = "https://www.ioccc.org/2012/endoh1/index.html"
 
 # the 18 scenes in turn, the author's 256-colour version; any key quits

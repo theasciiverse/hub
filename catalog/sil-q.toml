@@ -22,7 +22,7 @@ url = "https://asciiverse.sh"
 # upstream master 07fdf77 (2026-10-16); half and Scatha are the names
 # Sil-Q's own build and manual give for Sil's authors
 [upstream]
-name = "Michael G. Noll and Quirk (Sil-Q), after Sil by half and Scatha"
+name = "Quirk and Michael G. Noll"
 url = "https://github.com/sil-quirk/sil-q"
 
 [exec]

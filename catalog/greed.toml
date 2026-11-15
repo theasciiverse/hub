@@ -18,7 +18,7 @@ url = "https://asciiverse.sh"
 # Matt Day wrote the C version (to 3.0a, 1990); Eric S. Raymond has
 # maintained it since and ported it to Rust + crossterm in 5.0 (2026).
 [upstream]
-name = "Eric S. Raymond, after Matt Day"
+name = "Matt Day and Eric S. Raymond"
 url = "https://gitlab.com/esr/greed"
 
 # -f sizes the board to the terminal (greed.rs fit_to_tty)

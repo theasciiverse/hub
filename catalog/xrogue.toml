@@ -18,7 +18,7 @@ name = "Asciiverse"
 url = "https://asciiverse.sh"
 
 [upstream]
-name = "Robert Pietkivitch (1989 to 1992); Nicholas J. Kisseberth"
+name = "Robert Pietkivitch"
 url = "https://github.com/rogueforge/xrogue8.0"
 
 [exec]

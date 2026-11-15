@@ -20,7 +20,7 @@ url = "https://asciiverse.sh"
 
 # ZZT 3.2's source, reconstructed byte for byte by Adrian Siekierka
 [upstream]
-name = "Tim Sweeney, 1991"
+name = "Tim Sweeney"
 url = "https://github.com/asiekierka/reconstruction-of-zzt"
 
 # the archive holds zzt and Epic's zzt.zip, unaltered, from which it reads

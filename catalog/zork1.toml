@@ -14,7 +14,7 @@ topics = ["text-adventure", "infocom", "classic", "fantasy"]
 genre = "text adventure"
 
 [developer]
-name = "Infocom (Marc Blank, Dave Lebling, Bruce Daniels, Tim Anderson)"
+name = "Infocom"
 url = "https://github.com/historicalsource/zork1"
 
 # Infocom's 1980 release, unchanged; MIT-licensed by Microsoft on

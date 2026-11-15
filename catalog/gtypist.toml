@@ -11,7 +11,7 @@ changes = "PATCHES.md"
 topics = ["typing", "tutor", "education", "classic", "gnu"]
 
 [developer]
-name = "Simon Baldwin, Mihai Gătejescu and the GNU Typist developers"
+name = "Simon Baldwin and the GNU Typist developers"
 url = "https://www.gnu.org/software/gtypist/"
 
 # signed release tarball 2.10.1; configure --prefix=/usr --disable-nls;

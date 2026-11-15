@@ -16,7 +16,7 @@ name = "Asciiverse"
 url = "https://asciiverse.sh"
 
 [upstream]
-name = "Linley Henzell (1997) and the Dungeon Crawl Stone Soup team (since 2006)"
+name = "Linley Henzell and the Stone Soup team"
 url = "https://github.com/crawl/crawl"
 
 [exec]

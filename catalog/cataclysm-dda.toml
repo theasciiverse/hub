@@ -16,7 +16,7 @@ name = "Asciiverse"
 url = "https://asciiverse.sh"
 
 [upstream]
-name = "CleverRaven and contributors, after Whales"
+name = "CleverRaven and contributors"
 url = "https://github.com/CleverRaven/Cataclysm-DDA"
 
 # cataclysm-dda is the start script: it passes the read-only data beside

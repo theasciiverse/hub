@@ -19,7 +19,7 @@ url = "https://asciiverse.sh"
 # .github/workflows/release.yml: the browser game's script, unchanged, run
 # by rotty (asciiverse/rotty) and QuickJS-ng as one native program
 [upstream]
-name = "Ondřej Žára (7DRL 2024)"
+name = "Ondřej Žára"
 url = "https://github.com/ondras/roguezombies"
 
 # the session log goes to $XDG_STATE_HOME/rogue-zombies;

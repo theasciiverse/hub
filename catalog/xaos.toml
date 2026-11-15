@@ -13,7 +13,7 @@ changes = "PATCHES.md"
 topics = ["fractal", "mandelbrot", "julia", "math", "explorer", "ascii art", "classic"]
 
 [developer]
-name = "Jan Hubicka, Thomas Marsh and the XaoS project"
+name = "Jan Hubicka and Thomas Marsh"
 url = "https://xaos-project.github.io"
 
 # release-3.7 (1709b93, 2019-05-11), the last release with the AAlib text

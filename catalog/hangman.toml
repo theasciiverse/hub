@@ -18,7 +18,7 @@ name = "Asciiverse"
 url = "https://asciiverse.sh"
 
 [upstream]
-name = "Ken Arnold, UC Berkeley (1983)"
+name = "Ken Arnold"
 url = "https://sourceforge.net/projects/bsd-games"
 
 # av starts titles in their install folder, where the archive puts the

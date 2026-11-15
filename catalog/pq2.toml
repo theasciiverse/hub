@@ -20,7 +20,7 @@ name = "Asciiverse"
 url = "https://asciiverse.sh"
 
 [upstream]
-name = "Nick Bollom, after Eric Fredricksen's Progress Quest"
+name = "Nick Bollom"
 url = "https://github.com/nbollom/pq2"
 
 [exec]

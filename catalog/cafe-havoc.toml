@@ -22,7 +22,7 @@ url = "https://asciiverse.sh"
 # .github/workflows/release.yml: the browser game's scripts, unchanged, run
 # by rotty (asciiverse/rotty) and QuickJS-ng as one native program
 [upstream]
-name = "Ondřej Žára (7DRL 2016)"
+name = "Ondřej Žára"
 url = "https://github.com/ondras/cafe-havoc"
 
 # the session log goes to $XDG_STATE_HOME/cafe-havoc;

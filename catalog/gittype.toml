@@ -18,7 +18,7 @@ url = "https://asciiverse.sh"
 
 # release v0.10.4 with the changes in PATCHES.md
 [upstream]
-name = "Yuji Ueki (unhappychoice)"
+name = "Yuji Ueki"
 url = "https://github.com/unhappychoice/gittype"
 
 # av starts it in its install folder, where samples/ holds code from

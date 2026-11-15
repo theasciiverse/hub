@@ -13,14 +13,14 @@ topics = ["dungeon", "action", "fantasy", "real-time", "shops", "spells", "ascii
 genre = "action"
 
 [developer]
-name = "Neil McGill (goblinhack)"
+name = "Neil McGill"
 url = "https://github.com/goblinhack/goblinhack-game"
 
 # terminal edition: the game's console in the terminal and the dungeon one
 # character a square (Tab: every thing as its own picture), no window and
 # no OpenGL; PATCHES.md and UPSTREAM.md in theasciiverse/goblinhack
 [upstream]
-name = "Neil McGill (goblinhack)"
+name = "Neil McGill"
 url = "https://github.com/goblinhack/goblinhack-game"
 
 # the binary with the game's files in resources/ beside it; saves, high
