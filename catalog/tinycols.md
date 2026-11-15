@@ -1,24 +1,14 @@
-**THREE JEWELS AT A TIME. ONE NARROW WELL. KEEP IT CLEAR.**
+**THE JEWELS KEEP FALLING. THE WELL KEEPS FILLING.**
 
-A column of three jewels drops into a well six wide and thirteen deep.
-Turn the column to shuffle its colours, slide it left or right, and let
-it land. Three or more of a colour in a line, across, down or on either
-diagonal, and they burst; the jewels above fall into the gap, and if
-they make a new line, that bursts too, for more points each time round.
+A column of three jewels drops into a well six wide and thirteen deep, and another is already waiting beside it. Turn the column to shuffle its colours, slide it left or right, and let it land. Line up three or more of a colour, across, down or on either diagonal, and they burst! The jewels above tumble into the gap, and if they make a new line, that bursts too, and the next, each one worth more than the last. Set up a chain of four or five and watch the score leap.
 
-- **Chains pay**: every burst in a chain is worth more than the last, and
-  every level multiplies it again.
-- **It speeds up**: clear enough jewels and the next level drops them
-  faster.
-- **Three classes**: Novice with four colours, Amateur with five, Pro with
-  six. Amateur is the default; `tinycols -c 1` or `-c 3` from a shell
-  starts the others.
-- **A best score for each class**, kept between games.
-- **Watch the next column** in the box beside the well, and plan two
-  moves ahead.
+But clear enough jewels and the level climbs, and the columns fall faster. Leave a stray colour in the wrong place and the well creeps up toward the top. Let it overflow and the game is over. How long can you keep it clear?
 
-Rigel Di Scala wrote TinyCols in C and ncurses, and keeps it small on
-purpose.
+- **Chains pay:** every burst in a chain is worth more than the last, and every level multiplies it again
+- **It speeds up:** the more you clear, the faster they fall
+- **Three classes:** Novice with four colours, Amateur with five, Pro with six. Amateur is the default; `tinycols -c 1` or `-c 3` from a shell starts the others
+- **A best score for each class,** waiting to be beaten
+- **Watch the next column** in the box beside the well, and plan two moves ahead
 
 **Turn. Slide. Drop. Chain.**
 
@@ -29,6 +19,10 @@ purpose.
 - **Up** or **a**: turn the jewels upwards; **z**: turn them downwards
 - **p**: pause; **q**: quit
 - After a game: **r** to play again, **q** to quit
+
+## History
+
+Rigel Di Scala began TinyCols in 2022: a jewel matching game for the Unix terminal, in C and ncurses, small on purpose. He has kept polishing it ever since, release after release, and every line of it is his own work: "The code is and will remain 100% a human creation," he writes.
 
 ## Credits
 

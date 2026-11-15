@@ -1,27 +1,15 @@
-**TYPE REAL CODE. YOUR OWN, OR THE CATALOG'S.**
+**SHOW YOUR AI WHO'S BOSS.**
 
-Typing tests hand you word lists. gittype hands you code: it reads the
-source, picks out functions, structs, match arms and loops, and turns
-each one into a challenge with its file and line numbers on top. The
-indentation is skipped for you; the brackets, operators and odd
-spacing are not.
+Typing tests hand you word lists. gittype hands you code. It reads real source, picks out the functions, structs, match arms and loops, and turns each one into a challenge, with its file and line numbers on top. The indentation is skipped for you; the brackets, operators, semicolons and odd spacing are not. Just you, your keyboard and somebody else's coding sins.
 
-Started from av, it types code from games in this catalog: Four in a
-Row, av itself, TinyCols, Galaxis, blackjack, Zoridor, Intricacy and
-robotfindskitten, each with its licence beside it. Start it inside a
-project of your own and it types your code instead.
+Started from av, you type code from games in this very catalog: Four in a Row, av itself, TinyCols, Galaxis, Blackjack, Zoridor, Intricacy and robotfindskitten, in Rust, C, Go, Zig and Haskell. Start it in a project of your own and you type your own code instead. Every session ends with a rank, and there are sixty-three of them to climb: from Hello World and Rubber Duck through Git Ninja, Kernel Hacker and Quantum Computer, all the way to the legends, Heisenbug, Blue Screen and, at the very top, Kernel Panic. How far can your fingers take you?
 
-- **Live numbers**: words and characters per minute, accuracy, mistakes
-  and your streak while you type.
-- **Stages and a rank**: three challenges a session, a score for each,
-  and a developer rank at the end, from "Hello World Newbie" up.
-- **Five difficulties**: Easy short snippets to Wild, and Zen with no
-  clock.
-- **Records and analytics** of every session you have played.
-- **Many languages**: Rust, TypeScript, JavaScript, Python, Go, Ruby,
-  Swift, Kotlin, Java, PHP, C#, C, C++, Haskell, Dart, Scala, Zig, Elixir,
-  Erlang.
-- **Fifteen themes**, light and dark.
+- **Live numbers:** words and characters per minute, accuracy, mistakes and your streak as you type
+- **Sixty-three ranks,** each one with its own ASCII-art title
+- **Five difficulties:** Easy short snippets, Normal, Hard, Wild chunks of any length, and Zen, a whole file
+- **Records and analytics** of every session you have played
+- **Twenty languages:** Rust, TypeScript, JavaScript, Python, Go, Ruby, Swift, Kotlin, Java, PHP, C#, C, C++, Haskell, Dart, Scala, Clojure, Zig, Elixir and Erlang
+- **Fifteen themes,** light and dark
 
 **Read it. Type it. Rank up.**
 
@@ -38,6 +26,10 @@ project of your own and it types your code instead.
 
 From a shell: `gittype` in a project folder, or `gittype path/to/project`.
 `gittype --repo owner/name` clones a GitHub repository and plays that.
+
+## History
+
+Yuji Ueki (unhappychoice) started gittype at the end of August 2025 with a simple, cheeky question: why type word lists when you could type your own code? In little more than a year it has grown more than thirteen hundred of his commits, help from contributors, twenty languages, themes and a ladder of ranks, and it is still growing.
 
 ## Credits
 

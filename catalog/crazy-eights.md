@@ -1,14 +1,12 @@
-**EIGHTS ARE WILD.**
+**EIGHTS ARE WILD. SO IS THIS TABLE.**
 
-Seven cards each and one face up on the pile. Match its suit or its rank, and the pile moves on. Can't? Draw one and pass the turn. The eight goes on anything, and whoever plays it names the suit that comes next: hold one back and you hold the table.
+Seven cards each and one face up on the pile. Match its suit or its rank, and the pile rolls on. Can't? Draw one, and watch the others pull ahead. But the eight goes on anything, and whoever plays it names the suit that comes next. Slap one down at the right moment and you hold the whole table in your hand.
 
-Ada, Bo and Cyd are already shuffling. Set the table for two to six, deal, and race them to an empty hand.
+Ada, Bo and Cyd are already shuffling. They follow the suit they hold most of and keep their eights hidden until nothing else will do, so when one of them names a suit, you know they meant it. Set the table for two to six, deal, and race them to an empty hand.
 
-- **Up to five computer players,** who play the suit they hold most and save their eights for when nothing else fits.
-- **The classic rules:** match suit or rank, eights wild, one card drawn when you can't go.
-- **Deal again** the moment a game ends, or change how many sit down.
-
-Crazy Eights is one of the five tables of Pieczasz's tty.cards, here on its own.
+- **Up to five computer players,** sharp about suits and stingy with their eights
+- **The classic rules:** match suit or rank, eights wild, one card drawn when you can't go
+- **Deal again** the moment a game ends, or change how many sit down
 
 **WHO'S HOLDING THE EIGHT?**
 
@@ -20,6 +18,9 @@ Crazy Eights is one of the five tables of Pieczasz's tty.cards, here on its own.
 - **Esc**: leave (asks first in a game)
 - **Left** / **Right** on the setup screen: how many players; **Enter**: deal; **Q**: quit
 
+## History
+
+Pieczasz began tty.cards in April 2026 with one bold idea: type `ssh tty.cards` and you are sitting at a card table, with no download, no browser and no sign-up form, your SSH key your only ticket in. Over seven months and more than eight hundred commits it grew five games, lobbies, a turn clock and rated tables. Asciiverse dealt each of the five out as a title of its own and filled every table with computer players, so a game is on whenever you are.
 ## Credits
 
 - tty.cards: Pieczasz

@@ -2,12 +2,12 @@ schema_version = 1
 id = "four-in-a-row"
 kind = "game"
 title = "Four in a Row"
-description = "Drop a disc, hear the clack, line up four! The classic vertical board game against a computer with four levels, from friendly to Master, or a friend at the same keyboard, on four boards up to five in a row."
+description = "Drop a disc, hear the clack, line up four! Beat a computer with four levels, friendly Easy to merciless Master, or a friend at your keyboard, on four boards up to five in a row."
 year = 2026
 new = true
 license = "MIT"
 repo = "theasciiverse/four-in-a-row"
-provenance = "Asciiverse made Four in a Row in Rust in 2026, after the vertical four-in-a-row board game sold since the 1970s."
+provenance = "Asciiverse made Four in a Row in Rust in 2026, after the vertical disc-dropping game families have played since the 1970s, with every sound built from square and triangle waves."
 topics = ["board", "four-in-a-row", "vs-computer", "two-players", "family", "classic", "gamepad"]
 genre = "board"
 

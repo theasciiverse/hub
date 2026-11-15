@@ -1,14 +1,12 @@
-**KNOCK, KNOCK.**
+**KNOCK, KNOCK. WHO'S UNDERCUT?**
 
-Ten cards each, one on the pile. Take it or draw blind, then throw one away. Build runs in a suit and sets of a kind, and count what's left over. Ten or less and you can knock to end the hand; nothing at all is gin. Knock too early and you may get undercut.
+Ten cards each, one face up on the pile. Take it, or draw blind from the stock, then throw one away. Build runs in a suit and sets of a kind, and keep a nervous eye on what's left over. Ten points of deadwood or less and you may knock to end the hand. Nothing at all? That's gin!
 
-One on one, the match to 100.
+But knock too soon and your opponent lays off their cards on your melds, matches or beats your count, and undercuts you, and the bonus goes the other way. Ada sits across the table, taking your discard only when it helps, shedding loose ends without mercy, and knocking the very moment the cards allow. Can you hold your nerve for gin?
 
-- **A computer opponent** who takes the upcard only when it helps, throws away its loose ends, and knocks the moment it can.
-- **Knock, gin and undercut,** with the bonuses scored.
-- **A running score** across the hands, to 100.
-
-Gin Rummy is one of the five tables of Pieczasz's tty.cards, here on its own.
+- **One on one, the match to 100,** hand after hand with a running score
+- **Knock, gin and undercut,** each bonus counted
+- **A computer opponent** who never takes a card it doesn't need
 
 **GIN!**
 
@@ -21,6 +19,10 @@ Gin Rummy is one of the five tables of Pieczasz's tty.cards, here on its own.
 - **Enter**: deal the next hand, when it's yours to deal
 - **Esc**: leave (asks first in a game)
 - **Enter** on the setup screen: deal; **Q**: quit
+
+## History
+
+Pieczasz began tty.cards in April 2026 with one bold idea: type `ssh tty.cards` and you are sitting at a card table, with no download, no browser and no sign-up form, your SSH key your only ticket in. Over seven months and more than eight hundred commits it grew five games, lobbies, a turn clock and rated tables. Asciiverse dealt each of the five out as a title of its own and filled every table with computer players, so a game is on whenever you are. Gin Rummy is the quiet duel of the five.
 
 ## Credits
 

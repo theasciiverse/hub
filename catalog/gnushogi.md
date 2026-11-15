@@ -1,29 +1,14 @@
-**NINE BY NINE. EVERY CAPTURE CHANGES SIDES.**
+**TAKE HIS PIECE. NOW IT FIGHTS FOR YOU.**
 
-Shogi is chess as Japan plays it, and it never runs dry. The board is
-nine squares by nine, the pieces are generals, silvers, lances and
-knights, and anything you take is yours: it waits in your hand, and on
-any later move you can drop it back onto the board as one of your own.
-Reach the far ranks and most pieces promote. Checkmate the king and the
-game is yours.
+Shogi is chess as Japan plays it, with one rule that changes everything: nothing you capture is ever gone. Take a silver general and it waits in your hand, and on any later move you can drop it back onto the board as one of your own, right beside the enemy king if you like. The armies never thin out. The fight only gets fiercer. Push into the far ranks and your pieces promote, and a lowly pawn turns over to move like a gold general.
 
-GNU Shogi sits across the board. It opens from a book of thousands of
-known positions and searches on the clock you choose.
+Across the nine-by-nine board sits GNU Shogi. It opens from a book of hundreds of known lines, some taken straight from professional title matches where Tanigawa Koji faced Habu Yoshiharu, and then it thinks on whatever clock you set. Can you break through its castle and close the net on its king?
 
-- **Ten time controls**: from 40 moves in 5 minutes to half an hour a
-  move, or the whole game on one clock with a Fischer bonus.
-- **A real opponent with a soft side**: ask for a `hint`, take moves back
-  with `undo`, switch sides mid-game, or set a shallower `depth` for a
-  gentler game.
-- **Watch it think**: the depth of its search as it plays, and with `post`
-  the line it expects.
-- **Tsume mode**: set up a position with `edit` and let it hunt for a
-  forced mate.
-- **Keep your games**: `save` and `get` pick a game up where you left it.
-
-Matthias Mutz built GNU Shogi in 1993 by teaching GNU Chess 4.0 the rules
-of shogi, piece by piece; maintainers kept it going for twenty years
-after.
+- **Ten time controls,** from 40 moves in 5 minutes to half an hour a move, or the whole game on one clock with a Fischer bonus
+- **A tough opponent with a soft side:** ask for a `hint`, take moves back with `undo`, switch sides mid-game, or set a shallower `depth` for a gentler game
+- **Watch it think:** the depth of its search as it plays, and with `post` the line it expects
+- **Tsume mode:** set up a position with `edit` and let it hunt down a forced mate
+- **Keep your games:** `save` and `get` pick a game up where you left it
 
 **Take a piece. Drop it back. Close the net.**
 
@@ -37,6 +22,10 @@ to 1, ranks a to i):
 - **P\*5e**: drop a pawn from your hand onto 5e
 - **hint**, **undo**, **remove** (take back a whole move), **switch**
 - **save**, **get**, **new**, **help** (every command), **quit**
+
+## History
+
+In 1993 Matthias Mutz took GNU Chess 4.0 and taught it shogi, swapping out the chess parts piece by piece until a new player stood at the board. A year later GNU Shogi went to war for real: it played in the 5th Computer Shogi Championship in 1994 and finished 17th of 22. Mike Vanier carried it through the 1.3 years, Luis Felipe Strano Moraes to 1.4, and Yann Dirson after him, the last work landing in 2014. More than thirty years after its first move, it still plays a sharp game.
 
 ## Credits
 
