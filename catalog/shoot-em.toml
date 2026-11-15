@@ -2,7 +2,7 @@ schema_version = 1
 id = "shoot-em"
 kind = "game"
 title = "Shoot 'em"
-description = "Two machine guns, a mine emitter and a sky full of falling things: shoot it all down before it hits the grid, in a 3D world drawn entirely in coloured text"
+description = "Two machine guns, a mine emitter and a sky of falling things over a little grid: shoot them down in 3D drawn in coloured text, or switch on groove mode and fire on the beat"
 year = 2005
 # freeware whose licence allowed only unchanged copies, source lost; Jan
 # Ringos gave his permission by email on 2026-11-13 to rebuild and publish
