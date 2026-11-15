@@ -1,35 +1,42 @@
 **FROM ONE TRIBE TO THE WORLD STAGE. HOW FAR WILL YOURS GO?**
 
 Your people have scratched a living from the land for as long as anyone
-remembers. Now barbarian raids come thicker every season, and the tribe
-has turned to you. Clear the forest. Raise a City Hall. Zone the fields,
-the streets, the markets and the workshops, set the taxes, and watch a
-village become a city, then an empire.
+remembers. Now the barbarian raids come thicker every season, and the
+tribe has turned to you. Clear the forest. Raise a City Hall. Zone the
+fields, the streets, the markets and the workshops, set the taxes, and
+watch a village of family farms and small houses become a city of
+markets, universities and colosseums, then an empire.
 
-But you are not alone out there. Rival civilizations are expanding
-across the same world, and you will meet them in their embassies:
-propose a trade, suggest a peace treaty, threaten them, or invite them
-to join your empire as a kingdom, because their survival may depend on
-it. At home, ambitious noble houses wait for titles of their own. Pick
-them well: their skills and tempers may carry your rule through war and
-famine, or break it, when a house declares its independence. And when a
-rival ruler stands in your way, there is always the assassin.
+But you are not alone out there. Rival civilizations are spreading
+across the same world, and you will meet them face to face in their
+embassies. Propose a trade. Suggest a peace treaty. Threaten them, and
+hear "You threatened us." Or invite them to join your empire as a
+kingdom, because their survival may depend on it.
 
-- **Twenty-five historical civilizations on a map of the Earth**, from
-  England and Mali to the Inca, the Khmer and the Vikings, or a random
-  world and random countries, a dozen players by default and room for
-  twenty.
-- **Build a real city**: agricultural, residential, business and
-  industrial zones, roads, pipes, walls and gates, wells, schools,
-  academies and monuments.
-- **Noble houses** with ages, personalities and beliefs of their own.
+At home, the noble houses are watching you. Grant them titles and their
+skills may carry your rule through war and famine. Choose badly and one
+day your finance minister brings word that a noble "has been stealing
+gold from your treasury. Maybe an assassination is in order." Or a
+house grows restless: "You seem weak on the world stage and this is
+something our House finds disgraceful." And when a rival ruler stands in
+your way, there is always the assassin.
+
+- **Twenty-five civilizations on a map of the Earth**, from England and
+  Mali to the Inca, the Khmer and the Vikings, or a random world of
+  random countries, a dozen players by default and room for twenty
+- **Build a real city**: farms, houses and estates, bakeries, forges and
+  warehouses, wells, schools, temples, a Great Ballcourt and a Colosseum
+- **From Wood Clubbers to tanks**: bone spearmen, elephant archers,
+  knights, frigates and riflemen, and in the end the ICBM
+- **Noble houses** with ages, personalities and beliefs of their own,
+  and minds to change
 - **Diplomacy with teeth**: trade deals, treaties, threats, wars,
-  defensive pacts, and an intelligence service to watch it all.
+  defensive pacts, and an intelligence service to watch it all
 - **Brigades and sectors**: group your battalions, give them build
-  lists, and send them out to explore, build, repair and attack.
-- **Seven levels**, from Nomad to Khan of Heaven.
+  lists, and send them out to explore, build, repair and attack
+- **Seven levels**, from Nomad to Khan of Heaven
 - **Playable with a screen reader**: a mode that tabs the text cursor
-  through every window, alert and report.
+  through every window, alert and report
 
 **THE WORLD STAGE AWAITS. TAKE IT.**
 
@@ -50,6 +57,17 @@ rival ruler stands in your way, there is always the assassin.
 ## Options
 
 - `arcane_fortune screen_reader_mode`: start in screen reader mode
+
+## History
+
+Darin Straus released Arcane Fortune in 2020, an empire builder
+written in Rust and drawn in characters, free for
+anyone, and called it "in many ways, the beginning". Its rival rulers
+speak through a neural network when you meet them in the
+embassies, and Straus promised that one day this "silicon-enemy" would
+creep out of the embassy and into your cities. By June 2021 the game had
+grown into its World Stage edition, v0.4.0, and that is the edition
+here.
 
 ## Credits
 

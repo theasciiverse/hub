@@ -1,25 +1,17 @@
 **THE WORLD ENDED. NEW ENGLAND IS STILL HERE.**
 
-A plague of monsters and zombies swept the country, and you made it to an
-evacuation shelter. Outside: fields and forests, roads and towns, and
-everything in them, from houses, gun stores and hospitals to science labs,
-military bunkers and stranger places underground. The towns are full of the
-dead, the woods of things that were never alive before, and the survivors
-you meet may help you, hire you or rob you.
+A plague of monsters and zombies swept the country, and you made it to an evacuation shelter. You are alive. For now. Outside the door lie the fields, forests and back roads of New England, and towns full of the dead: houses and gun stores, hospitals and pharmacies, and below them science labs, military bunkers and stranger places still.
 
-Make a character from stats, traits and skills, or let the dice do it, and
-go. Eat, drink and sleep; bandage wounds and set broken bones; read books
-to learn; craft tools, weapons, armour and medicine from what you find;
-build barricades and fix up vehicles to drive. The world is huge, it is
-kept between games, and when you die your next survivor wakes in the same
-world, where your last one's body, and everything they did, is waiting.
+Out there, the zombies are only the beginning. Boomers burst. Zombie hulks shrug off bullets. A zombie necromancer raises the fallen again. Triffids creep out of the woods, fungaloids puff their spores, manhacks whir out of the dark, and somewhere underground the Mi-go are waiting. The survivors you meet may help you, hire you, or rob you blind.
 
-- **Whales' original**, the game that became Cataclysm: Dark Days Ahead
-- **A whole world**: towns, labs, bunkers, caves and the overmap to plan by
+So scavenge. Eat, drink and sleep; bandage wounds and set broken bones; read books to learn; craft tools, weapons, armour and medicine out of whatever you find. Board up a house. Fix up a car and drive. And when you die (you will), your next survivor wakes in the same world, where your last one's body, their gear and everything they changed are waiting to be found.
+
+- **The original**: Whales' own game, the one that grew into Cataclysm: Dark Days Ahead
+- **A whole world to explore**, kept between lives: towns, labs, bunkers, caves and the overmap to plan by
 - **Survival in full**: hunger, thirst, sleep, morale, disease and drugs
-- **Crafting, construction and vehicles**, with skills that grow by use
-- **NPCs and factions**, with missions and trading
-- **A tutorial** and a defense mode under **Special...** on the first screen
+- **Crafting, construction and vehicles**, with skills that grow as you use them
+- **Survivors and factions**, with missions to take and goods to trade
+- **A tutorial** to learn the ropes, and a defense mode for a last stand, under **Special...** on the first screen
 
 ## Controls
 
@@ -35,24 +27,21 @@ world, where your last one's body, and everything they did, is waiting.
 - **C**: talk, **M**: missions
 - **m**: the world map, **@**: your character
 - **?**: help, with every key; keys can be changed there
-- **S**: save and quit
-
-## Saving
-
-**S** saves your character and the world, and **Load Game** on the first
-screen goes on from there. Your saves, options and keys live in your own
-folder, not beside the game.
+- **S**: save and quit; **Load Game** on the first screen goes on from there
 
 ## History
 
-Whales began Cataclysm in 2010 and developed it in the open, often with
-several new versions a day, and players could share one world on a public
-SSH server. Whales' last change came in January 2013, "before I wipe my
-hard drive", and that year the game's players carried it on as Cataclysm:
-Dark Days Ahead, which is still developed today. Whales went on to start a
-ground-up sequel, Cataclysm II. This is the first game as Whales last left
-it, brought back to build and run on today's machines.
+Whales began Cataclysm in 2010 and built it in the open at a furious pace,
+often several new versions in a single day, taking players' requests and
+folding them in within days. Players could even share one world on a
+public SSH server. Whales' last change came in January 2013, titled
+"Last commit before I wipe my hard drive". That same year the game's players picked
+it up and carried it on as Cataclysm: Dark Days Ahead, which is still
+growing today, and Whales went on to start a ground-up sequel,
+Cataclysm II. This is where it all began: the first Cataclysm, as Whales
+last left it, playable again.
 
 ## Credits
 
-Whales. Creative Commons Attribution-ShareAlike 3.0 Unported.
+- Cataclysm: Whales
+- License: CC-BY-SA-3.0

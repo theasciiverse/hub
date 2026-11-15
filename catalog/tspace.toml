@@ -2,7 +2,7 @@ schema_version = 1
 id = "tspace"
 kind = "game"
 title = "tspace"
-description = "Zero-friction arena dogfights drawn in Braille: four ships, bombs, mines and pickups, against bots or friends over the LAN or the internet"
+description = "No friction, no brakes, no mercy: fly one of four ships through Braille-drawn arenas of bombs, mines and bouncing shots, against bots or friends across your network or the internet."
 year = 2026
 new = true
 # MIT (David, 2026-11-07); the adapted Zubspace code is MIT too

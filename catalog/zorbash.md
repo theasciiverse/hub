@@ -1,16 +1,18 @@
-**WELCOME TO THE LAIR OF THE DREAD TENTACLEYE, ZORBASH.**
+**WELCOME TO THE LAIR OF THE DREAD MONSTER, ZORBASH.**
 
-Collect the crystals, reach the final level and confront Zorbash. Between you and him lie dozens of levels on a dungeon map you choose your own way across: dungeons and sewers, flooded halls, swamps, chasms, ice caves and lava, each made fresh from a seed you can name and share.
+Seven crystals lie scattered through the deep, from Crystal I to Crystal VII. Collect them all, reach the final level, and confront Zorbash, the dread tentacleye waiting at the bottom of it all. Nobody said it would be easy. Nobody said it would be quiet, either.
 
-Zorbash is a deep, turn-based roguelike. Light your way with a torch, fight with sword, dart and staff, eat the fungus you find if you dare, and mind the traps, the locked doors and the treasure that turns out to be a mimic.
+Between you and him lie dozens of levels on a dungeon map you pick your own path across: dungeons and sewers, flooded halls, swamps, chasms, ice caves and lava, each made fresh from a seed you can name and share. Light your way with a torch. Fight with sword, dart and staff. Eat the fungus you find, if you dare. And think twice about that treasure chest, because some of them are mimics, and they are awake.
 
-- **Over a hundred kinds of monster**, from sewer crabs and slime jumpers to ghosts and tentacleyes
-- **Weapons, armour, staffs, potions, rings and food**, a bag to carry them in and shortcuts for the ones you reach for
-- **Skills and spells**, learned from skillstones and spellbooks found along the way
-- **Robo mode**: press **R** and the game plays itself, to watch, to learn from, or to see how far it gets
-- **Save slots**, a high score table, and a seed for every dungeon
+Then there are the locals. Meat fairies, "the cannibalistic variant of their surface dwelling and peace loving kin", sing sweet songs to lure the unwary. Murder bunnies look cute if you ignore the red eyes; the game's advice is to turn around and run. Assassin ducks, gaseous gloats with explosive friendships, teletoads that blink away when the fight turns, and dungeon cleaners that scrub up all messy organic matter. That means you.
+
+- **More than a hundred kinds of monster**: zorblin priests, pirates and wizards, bearowls, onyx widows, flameskulls, a baby kraken, a vampire rose, the ettin with its two heads, and the tentacleyes watching from the dark with their lightning gaze
+- **Seven crystals** to win, and a different route down every time
+- **Weapons, armour, staffs, potions, rings and food**, and a bag to carry them in
+- **Skills and spells**, learned from skillstones and spellbooks you find on the way
+- **Robo mode**: press **R** and the game plays itself. Watch it, learn from it, or see how far it gets
 - **Music** by Markus Heichelbech
-- **Mouse**: point at anything to see what it is, click to walk there
+- **Point at anything** with the mouse to see what it is, and click to walk there
 
 ## Controls
 
@@ -20,9 +22,13 @@ Zorbash is a deep, turn-based roguelike. Light your way with a torch, fight with
 - **>** and **<**: down and up stairs
 - **R**: Robo mode on and off
 - **F12**: save; **F11**: load; **Ctrl-C**: quit
-- The help screen in the game lists every key, and each one can be changed under Options
+- The help screen lists every key, and each one can be changed under Options
 
-Holding a key to keep walking works best in a terminal with the kitty keyboard protocol, such as Ghostty, kitty, WezTerm or foot, and on Windows in Windows Terminal or the console.
+Holding a key to keep walking works best in Ghostty, kitty, WezTerm or foot, and on Windows in Windows Terminal or the console.
+
+## History
+
+Neil McGill started Zorbash in 2018, nearly twenty years after he began Goblin Hack. He built it in C++ with two faces: a pixel-art dungeon, and an ascii one you could flip to with Tab at any moment. He filled it with creatures that each come with a note about their habits, most of them a warning. In 2026 the ascii face came home to the terminal on its own, with no window around it: the whole dungeon, every zorblin and every crystal, in characters.
 
 ## Credits
 

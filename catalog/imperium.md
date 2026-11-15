@@ -1,15 +1,18 @@
-**A STARSHIP, A FORTUNE, AND A GALAXY FULL OF OTHER PEOPLE.**
+**A STARSHIP, A FORTUNE, AND A GALAXY FULL OF RIVALS.**
 
-You have come into a large sum of money and chosen to spend it in space. Imperium starts you on your race's home planet with one small ship: scan the sectors around you, land on new worlds and put them to work, mine ore and gold, build bigger ships, trade with other players, lend them money, or take their planets.
+You have come into a large sum of money, and you have chosen to spend it in space. Choose your race, the Voltar, the Krellians, the Nakasumi, the Zyxylck or one of the others, and you start on its home planet with money in hand and one small ship. The rest is up to you.
 
-Play it with others, or on your own: a universe you host comes with computer empires that play by the same rules you do. They log in like any player, see only what their own scans show, spend the same bureaucracy time, and get on with it: they explore, settle planets, build ships and torpedo tubes, defend what they hold and, once they are strong enough, come for their neighbours.
+Scan the sectors around you. Steer clear of the stars, and of the supernovas that swallow anything that flies in; a black hole might too, but you will have to find out for yourself. Land on new worlds and put them to work. Mine ore and gold, raise your tech, build bigger ships and fit them with engines, sensors, blasers and photon torpedoes. Lend money at interest, trade with your neighbours, or take their planets. Keep your people healthy, too: let the research slip and the plague comes.
 
-The galaxy runs in real time. Every action costs bureaucracy time that refills at the same rate for everyone, so nobody gets ahead just by playing all day. If another player is on at the same moment, you hear about anything that touches you as it happens, and there is chat, telegrams and a newspaper for the rest. There is no set goal: be the richest, the strongest, the best trader, or play with your race as a team.
+And you are not alone. Host a universe of your own and computer empires move in beside you, playing by exactly your rules: they see only what their own scans show, spend the same bureaucracy time, explore, settle, build their fleets and torpedo tubes, and once they are strong enough, come for their neighbours. Or go online to the public game and take on real players.
+
+The galaxy runs in real time. Every action costs Bureaucracy Time Units that refill at the same rate for everyone, so nobody wins just by playing all day. If another player is on when you are, you hear about anything that touches you as it happens, and there are chat, telegrams and a newspaper for everything else. There is no set goal: be the richest, the strongest, the shrewdest trader, or band together with your race and play as a team.
 
 - **Three ways in**: the public game at EmpireDirectory.net, a universe of your own, or a friend's game on your network
 - **Computer empires**: up to seven rivals in a universe you host, easy, normal or hard
 - **A deep economy**: eight races, planets with ore, gold, gas and water, production you assign by hand, loans and markets
-- **Ships you design**: engines, hulls, sensors, weapons and computers, fleets, programmed ships and mining robots
+- **Ships you design**: engines, hulls, sensors, weapons and computers, fleets, programmed ships and mining robots you drop on worlds where nobody can breathe
+- **Armed planets** that fire back when attacked, and allies who join in
 
 ## Getting started
 
@@ -48,11 +51,14 @@ Type commands at the `Command:` prompt. A few to start with:
 
 ## History
 
-David Wright wrote Imperium from 1990 to fill as many of the requests
-Amiga Empire players had made as he could, and in 1994 put version 3.4.21
-on the Linux archives "as-is", asking for someone to carry it on. Marisa
-Giancarla has looked after it since, with the code on GitHub from 2014,
-and still runs a public game.
+In 1990 David Wright set out to build the game Amiga Empire players had
+been asking for. Chris Gray's Empire had shown how good a shared galaxy
+could be; Imperium was Wright's answer to as many of its players' wishes
+as he could fit in. In 1994 he put version 3.4.21 on the Linux archives
+"as-is" and asked for someone to carry it on. Marisa Giancarla did, and
+has looked after it ever since: the code went on GitHub in 2014, and she
+still runs the public game at EmpireDirectory.net, where the galaxy is
+still turning.
 
 ## Credits
 

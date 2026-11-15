@@ -22,11 +22,11 @@ Land of Illusion and the rest. Two can play, each with a glider of their
 own. Leave the title alone and the game plays its own demo, from the keys
 Calhoun recorded in 1994.
 
-It is Calhoun's game, translated from his C, with his art, sounds and
-houses read from his own files. The silhouette view is made for the
-terminal, as in Glider: the room softened behind everything that moves or
-hurts, drawn sharp in solid colour. Or press **V** for his art itself, in
-half blocks.
+Every room is the real thing: Calhoun's art and sounds, and every house
+as it was built, straight from the files he set free. The silhouette view picks out
+everything that moves or hurts in sharp, solid colour against a softened
+room, so you always see the danger coming. Press **V** and you are
+looking at his original art instead.
 
 **Find the vents. Mind the toaster.**
 
@@ -57,11 +57,15 @@ Ghostty and others); two players need one.
 
 ## History
 
-Calhoun wrote Glider PRO for the Macintosh in C, and Casady & Greene
-published it in 1994, three years after Glider 4.0. Where Glider's houses
-were rows of rooms, Glider PRO's grew in every direction, and it came with
-a house editor of its own. In 2016 Calhoun released its source, art,
-sounds and houses under the GPL.
+John Calhoun's Glider 4.0 came out in 1991, and its players were soon building houses
+of their own and passing them around. Three years later Casady & Greene
+published the big sequel. Where Glider's houses were rows of rooms, Glider
+PRO's grew in every direction, and it came with a house editor of its
+own. Players again built for it, and some of the best of their houses
+shipped with the game: Jonathan Chin's Leviathan, Ward Hartenstein's
+SpacePods, Shawn Brenneman's Teddy World, Steve Sullivan's The Asylum Pro. In 2016
+Calhoun gave the whole thing to the world, source, art, sounds and houses,
+and that gift is why the glider flies again here.
 
 ## Credits
 

@@ -1,4 +1,4 @@
-**THE HILLS ARE MADE OF DIRT. SO IS YOUR COVER.**
+**THE HILLS ARE MADE OF DIRT. SO IS YOUR COVER. LOAD THE NUKE!**
 
 A row of tanks on a range of hills, each waiting for its turn to fire. Set the angle, set the power, check the wind, and let it fly. A good shot takes a bite out of a rival; a great one takes the hill out from under them and lets gravity finish the job. The ground is all there is, and every shot reshapes it: craters open, loose dirt slides, tanks tumble into the holes their enemies dug.
 
@@ -33,7 +33,7 @@ Then the shop opens, and it gets out of hand. Thirty-six weapons, straight from 
 
 ## History
 
-Wendell Hicken's Scorched Earth (1991), "the Mother of All Games", turned the old artillery duel into a party on DOS, with a shop, an arsenal and a lot of wind. Justin David Smith and Jacob Luna Lundberg remade it for X11 as Xscorch from 2000 to 2009, with its weapons, accessories and scoring kept in plain text files. Torched plays by those files, with Xscorch's computer players, and finishes the weapons Xscorch left unfinished: its diggers and sandhogs burrow and blow at last.
+Wendell Hicken's Scorched Earth (1991), "the Mother of All Games", turned the old artillery duel into a party on DOS, with a shop, an arsenal and a lot of wind. Justin David Smith and Jacob Luna Lundberg remade it for X11 as Xscorch from 2000 to 2009, with its weapons, accessories and scoring kept in plain text files. In 2026 Torched was written fresh for the terminal, playing by those very files with Xscorch's computer players, and it finished the weapons Xscorch had left undone: the diggers and sandhogs burrow and blow at last. Thirty-five years on, the hills are still made of dirt, and the wind still has opinions.
 
 ## Credits
 

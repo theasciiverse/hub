@@ -2,14 +2,14 @@ schema_version = 1
 id = "glider-pro"
 kind = "game"
 title = "Glider PRO"
-description = "John Calhoun's Glider PRO in the terminal: a paper glider through houses of hundreds of rooms, riding the air past candles, toasters, darts, balloons and 'copters"
+description = "A paper glider adrift in houses of hundreds of rooms: ride the air from the vents past candles, toasters, darts, balloons and 'copters in John Calhoun's 1994 Macintosh classic, with twenty-one houses to explore."
 year = 1994
 old = true
 # Calhoun's repository (code, art, sounds and houses): GPL 2 ("GPL 2 or
 # later" in his commit of 2016-01-31)
 license = "GPL-2.0-or-later"
 repo = "theasciiverse/glider-pro"
-provenance = "John Calhoun wrote Glider PRO for the Macintosh in C, published by Casady & Greene in 1994, and released its source, art, sounds and houses under the GPL in 2016."
+provenance = "John Calhoun wrote Glider PRO for the Macintosh, published by Casady & Greene in 1994 with houses by him and his players, and in 2016 set its source, art, sounds and houses free."
 changes = "CLAUDE.md"
 topics = ["arcade", "classic", "macintosh", "paper airplane", "gamepad", "braille", "rust", "two players"]
 genre = "arcade"

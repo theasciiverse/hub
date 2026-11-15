@@ -1,22 +1,19 @@
-**YOUR RIVALS THINK OUT LOUD.**
+**YOUR RIVALS THINK OUT LOUD. AND THEY HOLD GRUDGES.**
 
-An island of hexes, five resources and a robber in the desert. Place your
-first settlements and roads, then roll: every hex that comes up pays the
-settlements around it in wood, brick, sheep, wheat or ore. Build roads to
-new ground, settlements on the corners, cities on the best of them, and buy
-development cards for knights, monopolies and hidden points. First to ten
-points wins.
+"I haven't forgotten turn 7."
 
-Your three rivals are small language models running on your own machine,
-each with a personality you choose for it: balanced, aggressive, the
-grudge holder, the builder or the chaos agent. Switch to the AI tab and
-read them reason through every move as they make it, and watch them weigh
-your trade offers.
+That is the Grudge Holder talking, and it means it. Across the table sit three rivals, and every one of them is a small language model running right there on your own machine, with a personality you pick for it. The Aggressive one drives a hard bargain: "Everything has a price." The Builder builds and builds. The Chaos Agent does whatever seems funniest at the time: "Why not?" And the Grudge Holder remembers every stolen card, every blocked road, and exactly who put the robber on its wheat.
 
-The models come down the first time you play (292 MB for the fast one,
-1.2 GB for the smart one) and need no account or key. If you want a quicker
-game, or your machine is short of memory, any seat can be the Computer
-instead: a rule-based player that moves at once.
+The island is a sweep of hexes, five resources and a robber lurking in the desert. Plant your first settlements and roads, then roll: every hex that comes up pays the settlements around it in wood, brick, sheep, wheat or ore. Push your roads to new ground, raise settlements on the corners and cities on the best of them, and buy development cards for knights, monopolies and hidden points. Wheel and deal across the table. First to ten points wins.
+
+Want to know what they are plotting? Switch to the AI tab and read their reasoning as they make each move, and watch them weigh up the trade you just offered. For a quicker game, any seat can be the Computer instead, a sharp rule-based player that moves at once.
+
+- **Five personalities** to sit across from: Balanced, Aggressive, Grudge Holder, Builder and Chaos Agent
+- **Read their minds**: every rival's reasoning, live, in the AI tab
+- **Real trading**: propose deals, weigh theirs, or go to the bank
+- **Make your own rival**: write a personality, its style and its catchphrases, on the Personalities screen
+- **The full race to ten**: roads, settlements, cities, development cards, the longest road and the largest army
+- **The Computer**: an instant opponent for a fast game, or four of them to watch with `settl --demo`
 
 **Settle in.**
 
@@ -38,6 +35,22 @@ the last is the Computer. Below that are the friendly robber (it leaves
 players on two points or fewer alone), a fixed or random board, the model
 size and how hard the models think.
 
-## Watching
+The models come down the first time you play them, 292 MB for the fast
+one and 1.2 GB for the smart one, with no account or key needed.
 
-`settl --demo` sits four Computer players down to play a game on their own.
+## History
+
+Nathan Brake wrote settl at Mozilla.ai in the spring of 2026, in Rust and
+Ratatui, to put small language models at a game table: no cloud, no keys,
+just Mozilla's llamafile running PrismML's tiny Bonsai models right on
+the player's machine, each one given a personality, a strategy and a few
+catchphrases. The result is a board game where you can read your
+opponents' minds, and still lose to them. In the Asciiverse it gained a
+rule-based Computer player too, for the quick game.
+
+## Credits
+
+- settl: Nathan Brake, Mozilla.ai
+- Language models: PrismML's Bonsai, run by Mozilla.ai's llamafile
+- Computer player: Asciiverse
+- License: Apache-2.0

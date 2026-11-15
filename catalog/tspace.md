@@ -10,7 +10,7 @@ Fly one of four ships. The **Dart** is fast and fragile, the **Lance**
 does a bit of everything, the **Anvil** is slow, tough and carries
 bouncing bombs, and the **Weaver** sows mines and fires shots that bounce
 off walls. Grab **Overcharge**, **Scatter**, **Shroud**, **Overdrive** and
-the **Repulsor** from the arena floor. First pilot to 15 kills takes the match.
+the **Repulsor** from the arena floor. First pilot to 15 kills takes the match; in teams, Red and Blue race to 25.
 
 Up to eight pilots fight in the Foundry, four to six among the pillars
 of the Lattice, or two to four in the tighter Hollow, every pilot for themselves or Red against Blue. Bots fill the empty seats at
@@ -18,7 +18,8 @@ three skill levels, or friends join you on the same network or across
 the internet with an invite ticket. One of you hosts, and no server is
 needed.
 
-Every ship, spark and star is drawn in Braille dots.
+Every ship, spark and star is drawn in fine Braille dots, so the arena
+moves smoothly and the shots streak past.
 
 **Mind your momentum.**
 
@@ -42,3 +43,18 @@ once. A gamepad works anywhere.
 - `--host`, `--join`, `--join TICKET`: play together
 - `--teams`: Red against Blue; `--arena foundry|lattice|hollow`, `--bots N`, `--skill easy|medium|hard`,
   `--ship NAME`, `--mute`
+
+## History
+
+SubSpace, from 1997, filled arenas on the internet with zero-friction
+dogfights between ships that drift and never brake. tspace was made in 2026 in that
+spirit, its own game with its own ships, arenas and rules, and the same
+slippery, drifting dogfight, now in the terminal. Its ships fly by
+movement code adapted from Peter Kieltyka's Zubspace.
+
+## Credits
+
+- tspace: Asciiverse
+- Movement code adapted from Zubspace by Peter Kieltyka and contributors
+- Inspired by SubSpace (Burst / Virgin Interactive, 1997)
+- License: MIT

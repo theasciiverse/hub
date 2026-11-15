@@ -3,10 +3,10 @@ id = "imperium"
 kind = "game"
 old = true
 title = "Imperium"
-description = "Venture into space with a starship and a fortune to make: mine, trade, colonise and fight across a galaxy shared with other players, in real time and over weeks. Play the public game online, or host a universe of your own against computer empires and friends."
+description = "One small ship, a fortune to spend and a galaxy full of rivals: mine, trade, colonise and fight in real time, against computer empires in a universe of your own or real players online."
 license = "GPL-1.0-or-later"
 repo = "theasciiverse/imperium"
-provenance = "David Wright began Imperium in 1990 to answer the wishes of Amiga Empire players, and released it for Linux in 1994; Marisa Giancarla keeps it going and runs the public game at EmpireDirectory.net."
+provenance = "David Wright began Imperium in 1990 to answer the wishes of Amiga Empire players and released it for Linux in 1994; Marisa Giancarla carries it on and runs the public game at EmpireDirectory.net."
 topics = ["space", "strategy", "trading", "multiplayer", "online", "classic"]
 genre = "strategy"
 

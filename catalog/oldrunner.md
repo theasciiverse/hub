@@ -1,11 +1,14 @@
-**THE GOLD IS EVERYWHERE. SO ARE THE GUARDS.**
+**THE GOLD IS EVERYWHERE. SO ARE THE GUARDS. GRAB IT ALL AND RUN!**
 
-Every level is a cross-section of floors, ladders and ropes, with bags of gold scattered through it and guards between you and every one of them. You can run, climb and swing hand over hand along the ropes and let go to drop, but you cannot fight. What you can do is dig.
+Every level is a cross-section of brick floors, ladders and ropes, with bags of gold glinting all through it and guards between you and every single one. You can run. You can climb. You can swing hand over hand along a rope and let go to drop to the floor below. What you cannot do is fight.
 
-Blast a hole in the floor beside you and a guard running after you falls straight in. While he's stuck you can walk right over his head. Then the brick grows back, and if he hasn't climbed out by then, he's gone, only to turn up again at the top of the level. Dig a row of holes to hold back a crowd, and mind you don't wall yourself in. Grab the last bag and an escape ladder appears: climb it to the top of the screen and you're through.
+So you dig.
 
-- **150 levels**, made for the Asciiverse: twenty drawn by hand, the rest built around them, from easy to fiendish
-- **Every one checked**: each bag of gold can be reached, and there's always a way out after it
+Blast a hole in the floor beside you and the guard on your heels falls straight in. While he's stuck, walk right across his head. Then the brick grows back, and if he hasn't scrambled out by then, he's gone, only to drop in again at the top of the level. Dig a row of holes to hold back a crowd. Dig through a floor to escape. Just don't dig yourself into a corner. Grab the last bag and the escape ladder appears: climb it to the top of the screen, and you're through to the next.
+
+- **150 levels** to beat, from a gentle first climb to broken floors, scattered ledges, walled rooms and rope fields
+- **Twenty drawn by hand**, spread through the climb as landmarks, the rest built around them
+- **Every level winnable**: every bag of gold can be reached, and there is always a way out after it
 - **Digging is everything**: traps, shortcuts and escapes all start with a hole
 
 **Dig fast. Run faster.**
@@ -21,6 +24,14 @@ Blast a hole in the floor beside you and a guard running after you falls straigh
 ## Options
 
 - `oldrunner -l 20`: start at level 20
+
+## History
+
+Frederic Culot started Oldrunner on 1 April 2010, a text-mode love letter
+to Broderbund's Lode Runner, the game where your only weapon is a hole in
+the floor. He put out the first release that July and polished it into
+2012. Flavio Poletti came by in 2019 with a fix, and in 2026 Oldrunner got
+something it never had: 150 levels of its own, so the run goes on.
 
 ## Credits
 

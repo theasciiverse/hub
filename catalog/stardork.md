@@ -1,12 +1,17 @@
-**THE STARS MULTIPLY. THE WORMHOLES WAIT.**
+**THE STARS MULTIPLY. THE WORMHOLES WAIT. ARE YOU A TRUE STARDORK?**
 
-Your ship is the **X** in a sky of stars, and somewhere out there is a wormhole, the **@**. Probe it and you move on: fly straight into it, or fire a probe across the sky and hit it from afar. Every wormhole you take brings a fresh batch of stars, so the open space you had a moment ago fills up fast.
+Out in deep space, a wormhole hangs among the stars: the **@**. Your ship, the **X**, has one job. Probe it. Fly straight into it, or fire a probe clean across the sky and hit it from afar, and you are through to the next level.
 
-Nothing moves until you do. Every key is a move, so you can stop and plan the way through, but the stars do not forgive: run into one and your ship takes damage, the screen goes red, and nine units of power and three lives are all you get. Probes pass clean through the stars, which is often the only way to reach a wormhole boxed in on all sides.
+But every wormhole you take pulls a fresh batch of stars into the sky, and the open space you had a moment ago fills up fast. Brush a star and your ship takes the hit, the screen flashes red, and your power drains away. Nine units of power and three lives are all you get to make it through thirty levels.
+
+Nothing moves until you do, so every move is yours to plan. Find the gap. Thread the needle. And when the wormhole is boxed in on every side, remember that your probes fly straight through the stars where your ship never could.
+
+Reach the end, and the game spells it out for you, one letter at a time: you are a true stardork.
 
 - **Thirty levels**, each sky more crowded than the last
-- **Eight directions** to fly and eight to shoot
-- **A true stardork**: the title waiting for whoever reaches the end
+- **Eight directions** to fly and eight to fire your probes
+- **Every move counted**, so you can always try to do it in fewer
+- **A tiny, fierce puzzle** that fits in a coffee break, or ten
 
 ## Controls
 
@@ -18,6 +23,14 @@ Nothing moves until you do. Every key is a move, so you can stop and plan the wa
 ## Options
 
 - `--seed N`: the same sky every time
+
+## History
+
+Ryan Kulla wrote StarDork in C with ncurses and shared it on SourceForge
+in 2003, a little maze game set among the stars. He came back to it in
+2011 with version 0.7, still the same simple idea: a ship, a wormhole, and
+too many stars. It is as easy to pick up now as it was then, and just as
+hard to finish.
 
 ## Credits
 

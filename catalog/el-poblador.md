@@ -46,6 +46,16 @@ card from a neighbour of your choice.
   network; friends join with `ssh -p 2222 <your address>`, pick or name a
   lobby and press Enter when ready
 
+## History
+
+Vicente Reyes began El Poblador in June 2025, in Go, for one simple
+reason: to play Klaus Teuber's 1995 board game The Settlers of Catan
+right in the terminal, with friends. He drew the island in characters,
+dice and robber and all, and then kept building: a new island every
+game, saved games, and lobbies you reach over ssh, so the whole table
+can play from their own terminals. Its name is Spanish for the
+settler, and the race to ten is as fierce as ever.
+
 ## Credits
 
 - El Poblador: [Vicente Reyes](https://sr.ht/~vicho/el_poblador/)
