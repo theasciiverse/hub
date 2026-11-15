@@ -2,12 +2,12 @@ schema_version = 1
 id = "lera"
 kind = "program"
 title = "Lera"
-description = "The Asciiverse MUD client: pick a world from the list and you are in the game in seconds, with colour, scrollback that keeps the live text in view, and your health and mana in the status line."
+description = "Worlds running for decades, full of living players, one key away: pick a MUD from the list and you're in, with colour, scrollback that keeps the live text in view, and your vitals showing."
 year = 2026
 new = true
 license = "MIT"
 repo = "theasciiverse/lera"
-provenance = "Asciiverse made Lera to give every MUD in the catalog a home in your terminal; the name is Swedish for clay, which is to say mud."
+provenance = "Asciiverse made Lera in 2026 to give every MUD in the catalog a home in your terminal, nearly fifty years after the first one; the name is Swedish for clay, which is to say mud."
 topics = ["mud-client", "mud", "rust"]
 genre = "mud client"
 

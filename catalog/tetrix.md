@@ -1,15 +1,15 @@
-**SIX FIELDS. NINE DIRTY TRICKS. ONE SURVIVOR.**
+**SIX FIELDS. NINE DIRTY TRICKS. ONE SURVIVOR!**
 
 Remember the late 90s? Six friends, six fields, blocks falling faster and faster, and somebody across the room laughing a little too hard. That was TetriNET, and it's back in your terminal!
 
 Clear lines and your field coughs up specials: lettered blocks that drop straight into your arsenal. Then pick a victim. Hit them with a Blockquake and watch every row in their field lurch sideways! Set off a Block Bomb and blow their O pieces to bits! Shove junk lines up from below until they're gasping at the ceiling! And when your own field is about to bury you? Switch Fields, and hand them the mess with a smile.
 
-Clear two, three or four lines at once and everyone else eats one, two or four junk lines. Classic rules, classic cruelty.
+Clear two, three or four lines at once and everyone else eats one, two or four junk lines. Classic rules, classic cruelty. Last field standing takes the round, and the win list remembers who took the most.
 
 - **Up to six players in one brawl!** Host a game and it simply appears on everyone's menu across the network. No addresses to type, no internet needed.
 - **Nine specials**, from the sneaky Add Line to the life-saving Nuke Field.
-- **Nobody else awake?** Ada, Blitz, Cobol, Dvorak and Emacs are always up for a game, from easy all the way up to brutal.
-- **Bigger terminal, bigger boards.**
+- **Nobody else awake?** Ada, Blitz, Cobol, Dvorak and Emacs are always up for a game, at easy, normal, hard or brutal. Dare you face Dvorak on brutal?
+- **Empty seats?** Bots fill them, so a party of two still plays like a party of six.
 
 It's the one you play with five friends at a LAN party until somebody spills a drink. **WHO'S STILL STANDING?**
 
@@ -22,8 +22,6 @@ It's the one you play with five friends at a LAN party until somebody spills a d
 - **d**: discard the front special
 - **s**: the landing shadow on or off
 - **?**: the keys, and what every special does
-
-Tetrix needs a terminal of at least 92 columns by 28 rows.
 
 ## The specials
 
@@ -42,7 +40,11 @@ Tetrix needs a terminal of at least 92 columns by 28 rows.
 - `--solo`, `--host`, `--join`: straight to a way of playing
 - `--bots N`, `--skill N`: how many bots, and how good
 - `--name`, `--level N`, `--seed N`
-- `--classic-delay`, `--slide`, `--no-classic`, `--noshadow`: rule and display tweaks; `tetrix --help` explains each
+- `--classic-delay`, `--slide`, `--no-classic`, `--noshadow`: rule tweaks; `tetrix --help` explains each
+
+## History
+
+In 1997 a programmer called St0rmCat released TetriNET for Windows, and falling blocks turned into a brawl. Six players, attack blocks, a field you could swap with your worst enemy: it became a legend of late-90s LAN parties, and 1.13 was its last version. Andrew Church wrote Tetrinet for Linux, a client and server of his own, and gave his code to the public domain. Tetrix grew from both in 2026: its rules are TetriNET 1.13's and its piece rotation is ported from Andrew Church's tetrinet 0.11, with the network made so simple that a game you host just turns up on your friends' screens.
 
 ## Credits
 

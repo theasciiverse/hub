@@ -1,6 +1,6 @@
-**THE DATA IS COMING. LAY PIPE. FAST.**
+**THE DATA IS COMING. LAY PIPE. FAST!**
 
-A process has started. Somewhere on the board, `cat` is about to start writing, and its data has nowhere to go. Yet.
+A process has started. Somewhere on the board, `cat` is about to start writing, and its data has nowhere to go. Yet. Survive `cat` and the next level brings `yes`, then `seq`, `tar`, `dd`, `ls`, `cut`, `awk`... twelve programs in turn, every one of them with something to say and nowhere to say it.
 
 You have seconds. Grab pieces from the queue and slam them down across the grid: straights, corners, crossovers, tees. Then the countdown hits zero, the modem chirps, and the green data starts creeping down your pipe, one segment at a time, each one a note higher than the last...
 
@@ -28,12 +28,14 @@ Pause and you're `[1]+ Stopped`. Pass and it's `[exit 0]`. Fail and... well, you
 - On the title: **V** hosts a versus match, **C** joins one
 - **Gamepad**: d-pad moves, bottom button lays, left or top button or right trigger for fast flow, Start pauses
 
-SIGPIPE fits an 80x24 terminal. At 144 columns or wider, your rival's board shows live beside yours in versus.
-
 ## Options
 
 - `--level N`: start at level N
 - `--mute`: no sound
+
+## History
+
+In 1989 a small British studio, The Assembly Line, made a pipe-laying game for the Amiga: a grid, a queue of pipe pieces, and a flood of goo that would not wait. Lucasfilm Games brought it to North America under another name and onto system after system, and a generation learned to panic in plumbing. SIGPIPE, made in 2026, takes that race against the flow and pours Unix down it. The name is the signal a Unix program gets when it writes into a pipe nobody is reading, the one that ends it with exit status 141. Here it is exactly how you lose.
 
 ## Credits
 

@@ -7,7 +7,7 @@ year = 2026
 new = true
 license = "MIT"
 repo = "theasciiverse/moraen"
-provenance = "Asciiverse made Moraen in Rust in 2026, a love letter to the 1984 cave-digging classic."
+provenance = "Asciiverse made Moraen in Rust in 2026, a love letter to the 1984 cave-digging classic, named after the moraine the ice left across Sweden."
 topics = ["puzzle", "action", "caves", "boulder-dash"]
 genre = "puzzle"
 

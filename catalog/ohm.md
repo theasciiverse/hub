@@ -1,4 +1,4 @@
-**THE OLD MASTER'S BENCH IS YOURS NOW.**
+**THE OLD MASTER'S BENCH IS YOURS NOW. THE WHOLE TOWN IS WAITING!**
 
 Welcome to Ohms Verkstad, the little electronics repair shop the whole town still calls Ohm's. It's the early eighties, you're the new apprentice, the old master's notebook is on the shelf, and the inbox is already filling up.
 
@@ -36,6 +36,10 @@ Mouse and keyboard work together: point at a part with the mouse and press a key
 ## Options
 
 - `--mute`: no sound
+
+## History
+
+Ohm's Workshop opened its doors in October 2026, with one idea at its heart: a puzzle game about electronics where the electronics are real. Games like SHENZHEN I/O, Retro Gadgets and Turing Complete had shown how much fun it is to build a working machine; this one puts a true circuit solver under the bench, the kind engineers use, so every LED, relay and capacitor behaves as it would on your own breadboard. It is set in a small Nordic town in the early 1980s, when a repair shop on the high street could fix anything with a soldering iron, and prices are in kronor. Its first chapter was playable on 9 October; within weeks the town had thirty-four jobs and the old master had filled his Notebook.
 
 ## Credits
 

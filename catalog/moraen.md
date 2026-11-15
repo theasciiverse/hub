@@ -1,4 +1,4 @@
-**THE ICE IS GONE. THE TROLLS ARE STIRRING.**
+**THE ICE IS GONE. THE TROLLS ARE STIRRING. DIG, DWARF, DIG!**
 
 When the great ice came down from the north, the dwarves sealed their treasure halls and fled. For ten thousand years the glacier lay over the mountain, and the stone trolls who guard its depths froze where they stood.
 
@@ -10,7 +10,7 @@ But watch the boulders closely. Some of them blink.
 
 A sleeping stone troll looks like any other rock, until you get close and it starts to blink. Come any closer, or let the thaw reach it, and it wakes: too heavy to climb, it stomps along the ground hurling stones at you, down from above or straight across the cave. Its touch is death. But drop a boulder on a troll and... OOF! Just another rock. And when the hall doors open, daylight floods in, and every troll turns back to stone.
 
-- **Twenty caves and five bonus intermissions** across the land the ice left behind, from First Thaw to the troll-haunted Bergschrund.
+- **Twenty caves and five bonus intermissions** across the land the ice left behind, from First Thaw through Esker, Kettle and Crevasse to the troll-haunted Talus, Arete, Tarn and Bergschrund.
 - **Five levels of difficulty,** every cave reshuffled for each.
 - **Faithful to the 1984 cave-digging classic,** down to the tick, plus trolls of our own.
 - **Chunky pixel art or crisp character graphics,** keyboard or gamepad.
@@ -30,6 +30,10 @@ The clock is the thaw, and the trolls are waking. **DIG FAST!**
 - `--cave N`: start at cave N (1 to 25)
 - `--level N`: difficulty 1 to 5
 - `--glyphs` or `--pixels`: the look to start in
+
+## History
+
+In 1984 a cave-digging game for the 8-bit home computers set the rules a whole genre still plays by: dirt you dig, boulders that fall and roll, a quota of gems, a clock, and creatures that blow up into treasure if you are clever. Moraen began in October 2026 as a love letter to it, with an engine that scans the cave tick by tick exactly as the original did, its quirks kept on purpose, and everything you see made new. Its name is the Swedish *morän*, the moraine: the unsorted rock, from clay to great boulders, that the ice dumped as it melted, and that covers most of Sweden. Every cave is named after the ice and what it leaves behind, from an erratic boulder to a bergschrund, the crevasse at the head of a glacier. Later that month the stone trolls woke up, and Moraen had its own monsters.
 
 ## Credits
 

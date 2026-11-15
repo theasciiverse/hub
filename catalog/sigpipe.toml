@@ -7,7 +7,7 @@ year = 2026
 new = true
 license = "MIT"
 repo = "theasciiverse/sigpipe"
-provenance = "Asciiverse made SIGPIPE in Rust in 2026, after the pipe-laying puzzle games of the late 1980s."
+provenance = "Asciiverse made SIGPIPE in Rust in 2026, after The Assembly Line's pipe-laying race against the flow of 1989, and poured Unix down its pipes."
 topics = ["puzzle", "pipes", "versus", "lan"]
 genre = "puzzle"
 
