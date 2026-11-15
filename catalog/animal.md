@@ -1,12 +1,14 @@
-**IS IT A MAMMAL?**
+**THINK OF AN ANIMAL. ANY ANIMAL. IT WILL FIND IT.**
 
-Think of an animal, any animal. The computer asks you questions, one by one, then makes its guess. It starts out knowing exactly two: a fish and a bird.
+The computer asks. You answer yes or no. Does it live in water? Does it have a trunk? Is it a mammal? Question by question it closes in, and then it makes its guess.
 
-When it gets it wrong, you win, and it asks you to teach it: what was your animal, and what question would tell it apart from its guess? Next time, it knows. Play long enough and it knows every animal in your house.
+But on its very first day it knows exactly two animals: a fish and a bird. So think of a giraffe, and you win. Then it asks you to teach it: what was your animal, and what question would tell a giraffe from a bird? "Thank you. I'll remember that." And it does. Next time you'll need something stranger.
 
-- **It learns for good:** everything it learns is kept between games.
-- **See what it knows:** a list of every animal, or the whole tree of questions with the path it's taking lit up.
-- **Answer by key, arrow or click.**
+Play an evening with the family and it knows every pet in the house. Play a month and it knows the zoo. Can you still stump it?
+
+- **It never forgets:** every animal and every question it learns is kept between games
+- **Look inside its head:** a list of every animal it knows, or the whole tree of questions with the path it is taking lit up as it thinks
+- **Made for passing round:** answer by key, arrow or click, and let everyone teach it their favourite creature
 
 ## Controls
 
@@ -14,6 +16,10 @@ When it gets it wrong, you win, and it asks you to teach it: what was your anima
 - **Enter**: start a round; when asked, type and press **Enter**
 - **Tab**: what it knows; **↑ ↓** scroll it
 - **M**: sound on or off; **Esc**: quit
+
+## History
+
+Arthur Luehrmann wrote *Animal* at Dartmouth College, the home of BASIC, as a small marvel: a program that learns from the people who play it. Nathan Teichholtz at DEC and Steve North at Creative Computing shortened and reworked it, and David H. Ahl printed it in *BASIC Computer Games* in 1978. In the original, everything it learned vanished when you switched it off. Here it keeps the lot, so the tree grows for as long as you keep playing.
 
 ## Credits
 

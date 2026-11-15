@@ -2,14 +2,14 @@ schema_version = 1
 id = "football"
 kind = "game"
 title = "Football"
-description = "Four quarters of American football against Granite Falls. Call every down, runs, passes, punts and field goals, while the computer calls its defence, and watch the ball move down a hundred-yard field."
+description = "Four quarters against Granite Falls with every down yours to call, runs, passes, screens, punts and field goals, while their coach reads your plays and calls his defence."
 year = 1965
 old = true
 new = false
 license = "MIT"
 repo = "theasciiverse/bcg-games"
 collection = "bcg-games"
-provenance = "John G. Kemeny wrote FTBALL at Dartmouth in 1965, the Sunday after Dartmouth beat Princeton, and David H. Ahl printed it in BASIC Computer Games (1978) beside other football games. Asciiverse rebuilt the game from its rules in 2026."
+provenance = "John G. Kemeny, co-creator of BASIC, wrote FTBALL at Dartmouth in 1965, the Sunday after Dartmouth beat Princeton, and David H. Ahl printed it in BASIC Computer Games (1978) beside other football games. Asciiverse rebuilt the game from its rules in 2026."
 topics = ["sports", "football", "turn-based", "basic-computer-games", "classic"]
 genre = "sports"
 

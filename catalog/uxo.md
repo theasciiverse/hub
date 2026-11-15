@@ -31,6 +31,10 @@ Can you stop purged before four o'clock? Can you beat Demo before five? Can you 
 - **Push a crate**: walk into it and lean on it a moment
 - **Start** or **P**: pause (in the adventure, bomb then starts the stage over, for a life), **+** and **-**: zoom (**0**: automatic), **Esc** or Select: back to the title
 
+## History
+
+uXo began in October 2026 as a battle game for friends around one screen, a love letter to the bomb-arena games of the 90s, with their cross-shaped blasts, their chain reactions and a pile of power-ups that turned every round into chaos you could still read. Later that month it found its story: Dot, pulled into the machine at 3:14 in the morning, and purged's charges set for four o'clock. The name is UXO, unexploded ordnance, which is exactly what every ticking bomb on the grid is, and the X in the middle is the blast going off between two round shapes.
+
 ## Credits
 
 - Game: Asciiverse

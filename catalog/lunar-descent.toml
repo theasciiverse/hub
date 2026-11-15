@@ -2,14 +2,14 @@ schema_version = 1
 id = "lunar-descent"
 kind = "game"
 title = "Lunar Descent"
-description = "120 miles up and falling at 3,600 miles an hour: set the burn of your descent engine and bring the craft down softly before the fuel runs out. Fly it live or in ten-second turns."
+description = "120 miles above the Moon and falling at 3,600 miles an hour: work the throttle of your one engine and set the craft down softly before 16,500 pounds of fuel run dry."
 year = 1969
 old = true
 new = false
 license = "MIT"
 repo = "theasciiverse/bcg-games"
 collection = "bcg-games"
-provenance = "Jim Storer wrote Lunar in FOCAL at Lexington High School in 1969, and David H. Ahl's BASIC versions in BASIC Computer Games made it the most popular computer game of its day. Asciiverse rebuilt it from its rules in 2026."
+provenance = "Jim Storer wrote Lunar in FOCAL at Lexington High School in the autumn of 1969, months after Apollo 11; in BASIC Computer Games David H. Ahl called the lunar landing game the most popular computer game of its day. Asciiverse rebuilt it from its rules in 2026."
 topics = ["lander", "space", "moon", "physics", "simulation", "basic-computer-games", "classic"]
 genre = "simulation"
 

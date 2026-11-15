@@ -2,14 +2,14 @@ schema_version = 1
 id = "hammurabi"
 kind = "game"
 title = "Hammurabi"
-description = "Rule a city of ancient Sumer for ten years: trade land, share out the grain, sow the fields, and pray the rats, the harvest and the plague are kind. Then the people judge your reign."
+description = "Rule a city of ancient Sumer for ten years: buy land, open the granary, sow the fields, and outlast rats, plague and famine before the people pass judgement on your reign."
 year = 1968
 old = true
 new = false
 license = "MIT"
 repo = "theasciiverse/bcg-games"
 collection = "bcg-games"
-provenance = "The Sumer Game, written in FOCAL at DEC in 1968 and credited to Doug Dyment in DEC's DECUS catalogs, followed in the line of Mabel Addis's The Sumerian Game (1964); David H. Ahl's BASIC version, Hamurabi, spread it through his BASIC Computer Games. Asciiverse rebuilt it from its rules in 2026."
+provenance = "Mabel Addis's The Sumerian Game (1964) inspired The Sumer Game, written in FOCAL at DEC in 1968 and credited to Doug Dyment; David H. Ahl's BASIC Hamurabi carried it to a generation through BASIC Computer Games. Asciiverse rebuilt it from its rules in 2026."
 topics = ["city-builder", "economy", "sumer", "turn-based", "basic-computer-games", "classic"]
 genre = "strategy"
 

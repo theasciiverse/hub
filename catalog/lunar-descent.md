@@ -1,13 +1,16 @@
-**THE COMPUTER HAS FAILED. LAND IT YOURSELF.**
+**120 MILES UP. 3,600 MILES AN HOUR. BRING IT DOWN SOFTLY.**
 
-Your landing craft is 120 miles above the Moon, falling at 3,600 miles an hour, with 16,500 pounds of fuel. The only control you have is the descent engine: how many pounds of fuel it burns each second, from nothing to 200. Below 8 it won't even light.
+Your landing craft is falling toward the Moon, and between you and the dust there is one engine, one throttle and 16,500 pounds of fuel. Burn anything from nothing to 200 pounds a second. Below 8 the engine won't even light.
 
-Brake too early and the tanks run dry high above the ground. Brake too late and you dig a fresh crater. Somewhere between is a touchdown at walking pace.
+Brake too early and the tanks run dry miles above the ground, and you fall the rest of the way. Brake too late and you dig a fresh crater. Somewhere in between is the landing every pilot is after: *A perfect landing! The crew steps out onto the dust.*
 
-- **Fly it live,** with time running and the burn changed whenever you like, or **in ten-second turns,** stopping for orders the way it was first played.
-- **A descent view** with the craft, its flame and the ground coming up to meet you.
-- **Instruments:** height, speed, fuel and burn, and what your touchdown speed would be if you held the burn as it is.
-- **A flight log** every ten seconds.
+High up, time races. As the ground comes up it slows, until the last half mile plays out second by second, with the flame under you and your finger on the burn.
+
+- **Fly it live,** changing the burn whenever you like, or **in ten-second turns,** stopping for orders the way it was played in 1969
+- **A descent view:** the craft, its flame and the grey ground coming up to meet you
+- **Instruments that tell the truth:** height, speed, fuel and burn, and where you'll end up if you hold the burn as it is: down at 40 mph, climbing, or lost in space
+- **Five ways to arrive,** from a perfect landing to a hard one with bent legs, to a crater measured in feet
+- **A flight log** every ten seconds
 
 ## Controls
 
@@ -15,6 +18,10 @@ Brake too early and the tanks run dry high above the ground. Brake too late and 
 - **Space**: pause; **+ -**: speed of time; **T**: live or ten-second turns
 - **Enter**: fire for ten seconds (in turns), or start again
 - **M**: sound on or off; **Esc**: quit
+
+## History
+
+In the summer of 1969 the world watched Apollo 11 land on the Moon. That autumn Jim Storer, a student at Lexington High School in Massachusetts, wrote a landing of his own in FOCAL on the school's DEC PDP-8: set the burn every ten seconds and try not to crash. His teacher sent it to DEC's users' newsletter, which spread it as *Apollo*; David H. Ahl put it into BASIC, and by 1978 he called the lunar landing game "by far and away the single most popular computer game" of its day. Storer went on to teach computer science at Brandeis. The descent is rebuilt here from its rules, with the rocket equation doing the flying.
 
 ## Credits
 

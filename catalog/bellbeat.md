@@ -34,6 +34,10 @@ Long notes are held for real in a terminal that reports key releases (kitty, foo
 - `--song ID` and `--difficulty easy|normal|hard`: start on a song
 - `--speed N` (1 to 10) and `--offset MS`: set and keep these
 
+## History
+
+Bellbeat was made at Asciiverse in November 2026, to give the terminal a rhythm game of its own, built around one idea: the chart is the song. Every one of its songs was written for it, note by note, as a few lines of text, and its own synthesiser plays them live; there isn't a single sound file inside. Its name is BEL, character number 7, the bell: the one sound the terminal had all along.
+
 ## Credits
 
 - Game, songs and sounds: Asciiverse

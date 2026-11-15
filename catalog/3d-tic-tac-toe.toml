@@ -2,14 +2,14 @@ schema_version = 1
 id = "3d-tic-tac-toe"
 kind = "game"
 title = "3-D Tic-Tac-Toe"
-description = "Tic-tac-toe in a cube of four levels, each four by four. Get four in a line, along a level, straight down or on any diagonal, before the computer does. 76 ways to win."
+description = "Tic-tac-toe grown into a four-level cube with 76 ways to win: get four in a line through the levels before the computer springs its double threats on you."
 year = 1968
 old = true
 new = false
 license = "MIT"
 repo = "theasciiverse/bcg-games"
 collection = "bcg-games"
-provenance = "A 4x4x4 tic-tac-toe program turned up, author unknown, on a General Electric time-sharing system in 1968; David H. Ahl printed it as Qubic in 101 BASIC Computer Games (1973) and as 3-D Tic-Tac-Toe in BASIC Computer Games (1978). Asciiverse rebuilt it from its rules in 2026."
+provenance = "Parker Brothers sold 4x4x4 tic-tac-toe as Qubic from 1964; a program to play it turned up, author unknown, on a General Electric time-sharing system in 1968, and David H. Ahl printed it as Qubic in 101 BASIC Computer Games (1973) and as 3-D Tic-Tac-Toe in BASIC Computer Games (1978). Asciiverse rebuilt it from its rules in 2026."
 topics = ["board", "tic-tac-toe", "abstract", "basic-computer-games", "classic"]
 genre = "board"
 

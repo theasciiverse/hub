@@ -1,16 +1,25 @@
-**OLÉ, AND THE BULL GOES HOME.**
+**OLÉ! AND THE BULL GOES HOME ALIVE.**
 
-A bullfight in the Portuguese style, where the bull is not killed: he leaves the ring alive behind the steers. Each afternoon brings a new bull, with his own weight, bravery and speed, and a team of capemen who may be sharp or slow. Work him with the big cape, then the small red muleta: a close, daring pass brings the loudest applause and the most risk, a flourish settles things down. At the end, the forcados meet his charge with their bare hands, or the steers trot in to lead him out.
+Into the ring he comes: Lucero, or Trovador, or Relampago, half a tonne of bull with his own bravery and his own speed. This is a bullfight in the Portuguese style, where no one harms the bull, and the whole afternoon is about courage and grace.
 
-- **The ring drawn live,** the bull charging past the cape, the crowd's mood in the stands.
-- **Caught?** You are tossed on the sand and get up to a roar; a second time, your team helps you off to rest.
-- **The ovation is your score,** from polite silence to being carried out on shoulders.
+Work him first with the big cape: the slow, close Veronica, the wide Larga, the Media veronica that wraps the cape and fixes him. Then the small red muleta: the Natural with the left hand, the purest and most exposed pass of all, the Derechazo, and the chest pass that sends him thundering by. The closer you let him come, the louder the plaza roars, and the likelier those horns are to find you. A roar from the shade side! The band strikes up a few bars!
+
+Caught once, you are tossed onto the sand and get up to a roar. At the end the forcados walk out to meet his charge with their bare hands, or the steers trot in to lead him out of the ring. And if you were brave? Flowers and hats rain onto the sand, or the crowd won't let you walk at all: you are carried out on shoulders through the great gate.
+
+- **A new bull every afternoon,** with a name, a weight, his bravery and his speed, and a team of capemen who may be sharp or slow
+- **Six passes,** each with its own daring and its own danger
+- **The ring drawn live:** the bull charging past the cape and the crowd's mood in the stands
+- **The ovation is your score,** from a quiet plaza to the great gate
 
 ## Controls
 
 - **1** to **4**, **↑ ↓** and **Enter**, or a click: choose a pass
 - **Enter**: go on; **N**: a new bull; **Tab**: the rules
 - **M**: sound on or off; **Esc**: quit
+
+## History
+
+David Sweet wrote the bullfight game at Dartmouth, and Walter J. Koetke's students at Lexington High School, Massachusetts, put it into BASIC. David H. Ahl printed it as *Bull* in *101 BASIC Computer Games* (1973) and, modified by Steve North, as *Bullfight* in *BASIC Computer Games* (1978): the bull and your helpers drawn by chance, the passes your choice, and a crowd that rewards courage. This one takes the corrida of Portugal, where a law of 1928 forbids killing the bull in the ring, and the festival bullfights of California's Portuguese communities: all the daring, and the bull leaves the ring alive.
 
 ## Credits
 
