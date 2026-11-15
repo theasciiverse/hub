@@ -1,12 +1,17 @@
-**THE OLDEST GAME IN THE BAZAAR. THE TOUGHEST OPPONENT IN TOWN.**
+**FIFTEEN MEN. TWO DICE. AND A MACHINE THAT HAS NEVER HEARD OF MERCY.**
 
-Fifteen men a side, two dice, and the oldest name the backgammon family still answers to: *nard*, as the game is called from Iran to Russia.
+The board is laid out like a tavla set in a bazaar: a double wall of brass, a walnut field, points painted ivory and crimson in turn, a rim of linked lozenges, and on a big terminal a ground of eight-pointed stars in brass and turquoise all around it. The dice rattle. Fifteen men stand ready to run the whole board home and off.
 
-The board is dressed like an inlaid tavla set from a bazaar: a brass wall, ivory and crimson points, a rim of Braille inlay, and on a big terminal, a ground of eight-pointed stars all around it.
+And across the table sits bgsage, a neural-network backgammon engine, waiting for you to leave a man alone. On **easy** it is a friendly opponent, picking among the plays close to the best and never touching the cube. On **normal** it looks a full move ahead; on **hard**, two. Leave a blot and it hits. Fall behind and it turns the cube on you: **double!** Take, and play for twice the stakes. Pass, and pay. Push your luck too far and it will gammon you, or worse, backgammon you, for triple.
 
-And across the table sits a real opponent: bgsage, a neural-network backgammon engine. On **easy** it's friendly, picks among the plays close to the best, and never doubles. On **normal** and **hard** it thinks one and two moves ahead, and it doubles, takes and passes like a player who means it. Push your luck too far and it will gammon you.
+Can you beat it? It never tires, it never tilts, and it never forgets a blot. **YOUR ROLL!**
 
-Money play with the doubling cube, gammons and backgammons, and the score kept across the session. Or hand the other side to a friend at the same keyboard. **YOUR ROLL.**
+- **A real opponent at three strengths**, from a friendly game to a cold-eyed money player
+- **The doubling cube**, offered, taken and passed the way a strong player would
+- **Gammons and backgammons**, and the score kept for the whole sitting
+- **A man may use both dice in one go**: pick it up, put it down where it lands, and the game finds the way
+- **A friend at the same keyboard**, when you would rather lose to someone you know
+- **Watch the masters**: `--demo` sets the engine playing itself, game after game
 
 ## Controls
 
@@ -22,3 +27,15 @@ Money play with the doubling cube, gammons and backgammons, and the score kept a
 - `--demo`: the computer plays itself, game after game
 - `--seed N`: the same dice again
 - `--plain`: start without the ornament
+
+## History
+
+*Nard* is the game's Persian name, and still its name from Iran to Russia, where it is *nardy*. A Persian story of the first centuries of Islam tells how a king of India sent the game of chess to Khusraw I, to test the wisdom of the Persians; the sage Wazurgmihr worked it out, and answered with a game of his own: nard. Historians take the embassy for a tale; the family the game belongs to is played the whole world over, as nard and tavla, tables and backgammon.
+
+Nard was made at Asciiverse in October 2026, to give the terminal a backgammon with a real opponent: the strong engines had no terminal board, and the terminal boards had no real opponent. Its brain is bgsage (Open Sage), Mark Higgins' open neural-network engine, built in whole; its board follows the look of Pouya Hadidi's Backgammon TUI, dressed as the inlaid tavla board of a bazaar.
+
+## Credits
+
+- Game: Asciiverse
+- The computer player: bgsage (Open Sage) by Mark Higgins
+- The board's look follows Backgammon TUI by Pouya Hadidi

@@ -2,12 +2,12 @@ schema_version = 1
 id = "nard"
 kind = "game"
 title = "Nard"
-description = "Fifteen men, two dice, and a neural-network opponent that doubles like it means it: backgammon on an inlaid bazaar board, the oldest game in the family."
+description = "Fifteen men, two dice and a neural-network opponent that pounces on your blots and turns the cube on you: backgammon by its Persian name, on an inlaid bazaar board. Double! Will you take?"
 year = 2026
 new = true
 license = "MIT"
 repo = "theasciiverse/nard"
-provenance = "Asciiverse made Nard in Rust in 2026. The computer player is Mark Higgins' bgsage (Open Sage), and the board's look follows Pouya Hadidi's Backgammon TUI."
+provenance = "Nard is the Persian name of backgammon, still its name from Iran to Russia; Asciiverse built this board in 2026, with Mark Higgins' bgsage engine as the opponent and Pouya Hadidi's Backgammon TUI as the look."
 topics = ["board", "backgammon", "dice", "doubling cube", "vs-computer", "hot-seat"]
 genre = "board"
 

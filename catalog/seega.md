@@ -1,12 +1,15 @@
-**FILL THE BOARD. THEN THE TRAPPING STARTS.**
+**FILL THE BOARD. THEN THE TRAPPING STARTS!**
 
-A square of holes, every one filled but the centre, two kelbs at a time. Then someone steps into that empty centre, and the game cracks open. Move a kelb so that an enemy lies trapped between it and another of yours, and you take it; as long as you can take, you keep moving. Box your opponent in completely, and you must hand over a kelb of your own to open a way for them: even winning has its price.
+Holes scooped in the ground, row on row, and a heap of kelbs, "dogs", in your hand: little stones for one player, bits of red brick for the other. Two by two you set them down, anywhere but the very centre, until every hole but that one is full. The board is locked solid. Nobody can breathe.
 
-In the 1830s, an Englishman living in Cairo wrote down the seega Egypt's farmers played in holes made in the ground, and noted boards cut into the stones on top of the Great Pyramid by the guides who took travellers up it.
+Then someone steps into the centre, and the whole board cracks open!
 
-- **Seega of five**: 5 by 5, twelve kelbs each
-- **Seega of seven**: 7 by 7, twenty-four kelbs each
-- **Seega of nine**: 9 by 9, forty kelbs each
+Move a kelb so that an enemy kelb is caught between it and another of yours, and it's yours: off the board. Take one and you move again, and again, and again, as long as each step traps another, a whole chain of captures in one terrible turn. And when you have your rival boxed in so tight he cannot move at all, you must give up a kelb of your own to open him a way. Even winning has its price! Can you trap him faster than he traps you?
+
+- **Seega of five**: five by five, twelve kelbs each, quick and vicious
+- **Seega of seven**: seven by seven, twenty-four kelbs each
+- **Seega of nine**: nine by nine, forty kelbs each, a long war of position
+- **Every capture shown before you make it**: the kelbs a step would take are marked ✕ as you aim
 
 Play the computer at three strengths, from either side, or a friend at the same keyboard.
 
@@ -23,3 +26,12 @@ Play the computer at three strengths, from either side, or a friend at the same 
 - `--demo`: the computer plays both sides
 - `--seed N`: the same game every time
 - `--plain`: start without the ornament, for fonts that draw braille thin
+
+## History
+
+Edward William Lane lived in Cairo in the 1820s and 1830s and wrote down the everyday life around him in *Manners and Customs of the Modern Egyptians* (1836). Among the farmers' pastimes he found seega, "which may be described in a few words", played in holes made in the ground on boards of five, seven or nine, the holes called *'oyoon*, eyes, and the pieces *kelbs*, dogs. He tells of seega boards cut into the stones on the very summit of the Great Pyramid, by the Arabs who guided travellers to the top. His few lines are the only early account of the game, and they are the rules here, with only the gaps he left filled in. The two sides are named after his pieces: Stone and Brick.
+
+## Credits
+
+- Game: Asciiverse, part of the Ancient Games collection
+- Rules after Edward William Lane, *Manners and Customs of the Modern Egyptians* (1836)
