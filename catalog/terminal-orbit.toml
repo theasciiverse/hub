@@ -6,7 +6,7 @@ description = "The aliens are already here! Fly real Newtonian orbits across the
 year = 1999
 license = "GPL-2.0-or-later"
 repo = "theasciiverse/terminal-orbit"
-provenance = "Asciiverse ported Steve Belczyk's ORBIT, a 1999 OpenGL space combat simulator, from its original C source. The original campaign is all here, and the first part of Episode Two is new."
+provenance = "Steve Belczyk released ORBIT in 1999, a free space combat simulator with Newtonian physics, a real solar system and missions players could write themselves. His whole campaign flies again here, with the first part of a new Episode Two."
 topics = ["space", "simulation", "combat", "braille", "port"]
 genre = "simulation"
 

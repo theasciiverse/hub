@@ -23,6 +23,22 @@ The solar system needs a pilot who understands orbits. **ARE YOU THAT PILOT?**
 - **T**: planet surfaces, **B**: constellation lines, **N**: names, **O**: the orrery, **Z**: dense star field
 - **M**: recall the last mission message, **P**: pause, **Q** or **Esc**: back to the title (progress is saved)
 
+## History
+
+In 1999 Steve Belczyk released ORBIT, a free space combat simulator with a
+cheerful pitch: an evil alien race threatens mankind's freedom to live, love
+and play Quake 3, so go get 'em, Sparky! Under the joke sat something
+serious: Newtonian physics, a real solar system, planets wrapped in NASA
+images, and a mission language simple enough for players to write their own
+campaigns. It ran on Windows, Linux and UNIX, thirty frames a second on a
+Pentium 133 with a Voodoo card, and it came with all of its source.
+
+That source is what brought it back. In 2026 its physics, its alien tactics
+and its mission engine were carried over from Steve's own C, and space was
+redrawn in Braille dots: the same campaign, the same planets, the same two
+thousand stars from his star table, now in a terminal. And the story didn't
+stop at Pluto: Episode Two picks up where his last mission leaves off.
+
 ## Credits
 
 - ORBIT: Steve Belczyk, 1999, GPL

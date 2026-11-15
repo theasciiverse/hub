@@ -24,8 +24,8 @@ bring new tanks.
 - **Tanks from the TKS and the T-26** to the Char B1 bis, the Panzer IV and
   the Sherman
 - **Every roll on screen**: to-hit, penetration and firepower, all shown
-- **Gregory Adam Scott's art, sounds and theme tune**, laid out for the
-  terminal, the maps growing with a bigger window
+- **Gregory Adam Scott's art, sounds and theme tune**, every portrait and
+  picture carried over
 - **One save per campaign**, so several wars can run side by side
 
 ## Controls
@@ -56,13 +56,19 @@ bring new tanks.
 
 ## History
 
-Gregory Adam Scott made Armoured Commander II in Python 3 and libtcod
-between 2016 and 2020 as free software, the sequel to his Armoured
-Commander; later versions went to Steam. This edition ports the free
-version to Rust and Ratatui: the same rules,
-campaigns, art, sounds and theme tune, with every screen laid out for a
-terminal of 100x30 and the maps growing with a bigger one. Its README
-lists the few places where it plays or looks different.
+Gregory Adam Scott started Armoured Commander II on 23 February 2016, and
+then started it again. And again, and again: its notes record fresh starts
+in July 2016, January 2018 and January 2019. The first game had followed the
+board game Patton's Best closely; this one was to go beyond it, keeping one
+tank and its crew at the heart of everything but opening up the whole war,
+from the September Campaign in Poland to the last weeks in Germany, with its
+tanks, units and campaigns written out in data files. By 2020 it had ten
+campaigns, a theme tune and a full manual, and its later versions went on to
+Steam.
+
+In 2026 that free version came to the terminal whole: some eighteen thousand
+lines of rules, every campaign, every portrait and sound, and the theme tune
+still playing on the main menu.
 
 ## Credits
 

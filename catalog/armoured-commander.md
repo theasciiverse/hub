@@ -47,13 +47,24 @@ start the game.
 
 ## History
 
-Gregory Adam Scott wrote Armoured Commander in Python 2.7 and libtcod
-between 2015 and 2017 as free software; Eric Normandeau maintained it
-from version 1.04. Scott went on to make a sequel, Armoured Commander II.
-This edition ports it to Rust and Ratatui: the same rules, art and
-sounds, every screen
-laid out for a terminal of 100x30 and growing with a bigger one. Its
-README lists the few places where it plays differently.
+Armoured Commander's credits name three tabletop games as its inspiration:
+Advanced Squad Leader (Don Greenwood, 1985), Flames of War (Phil Yates,
+2002) and, above all, Patton's Best, Bruce Shelley's 1987 board game about
+one Sherman and the men inside it. Gregory Adam Scott set out to bring that
+game to the screen as a roguelike. Between 2015 and 2017 he built it in
+Python, alpha after alpha, working the to-hit and to-kill rolls out from the
+Advanced Squad Leader rules and showing every one of them to the player. Its
+first campaign carries the board game's name: Patton's Best.
+
+With version 1.03 Eric Normandeau joined in, adding hometowns for the
+Canadian crews and more chatter in battle, and from 1.04 he carried the game
+on, teaching the gunner to shout "On the way!" as he fires. Scott went on to
+write the sequel, Armoured Commander II.
+
+In 2026 the whole game came to the terminal: some twelve thousand lines of
+rules, every table, Scott's character-drawn art and his sound effects,
+carried over piece by piece, with the headstone and the poppy still waiting
+on the title screen.
 
 ## Credits
 

@@ -100,12 +100,29 @@ the original's music and radio voices.
 
 ## History
 
-Crack dot Com, the studio of Abuse, was making Golgotha, an arcade tank
-game fused with real-time strategy, when it closed in 1998. It released
-the source, graphics, music and levels so the work would not disappear,
-and Patrick Grawehr's Golgotha Forever kept the code alive. Calvary
-builds the game in the terminal from that source, its balance table, its
-levels, music and sounds, and finishes the story its team had begun.
+Crack dot Com was Dave Taylor, who had worked on Doom and Quake, and Jonathan
+Clark, who wrote Abuse. Their next game was Golgotha: an arcade tank game
+fused with real-time strategy. Carly Taylor named it and wrote its plot, and
+in 1997 the team put the opening of the script on crack.com: Lieutenant
+Elaine Kruese at a press conference, a reporter shouting over the others to
+ask what really happened at the Golgotha site back in '48. A teaser promised
+more: the year 2048, a murdered archaeologist, an American incursion into
+Iraq, a commander called John Fisher who abandons his country for the truth,
+and an epic running through more than forty cities. Gene Rosenburg's music
+sketched the road, one track for each stop: Al Basrah, Nakhayb, Cairo,
+Greece, Naples, Rome, Turin, Zurich, Munich, Vienna, Helsinki, Finland,
+Norway, Jerusalem.
+
+The money ran out first. Crack dot Com closed in 1998 and gave away
+Golgotha's source, graphics, music and levels so the work would not
+disappear, and from 2003 Patrick Grawehr's Golgotha Forever kept the code
+alive.
+
+Calvary picks the story up where they had to set it down. It fights on
+Golgotha's own balance table, levels, music and sounds; Kruese's press
+conference opens every act, Sergeant Reid Charles is on the radio, and
+Fisher's road runs through forty missions, from the beachhead at Al Basrah
+to the dig beneath the place of the skull.
 
 ## Credits
 

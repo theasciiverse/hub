@@ -50,13 +50,19 @@ move runs on a little after the key is let go.
 
 ## History
 
-Carlos Alvarez made ASCII Wars! in Rust with the Bevy engine in January
-2025: ten bosses drawn with a CP437 font in a graphical window, each
-firing rings and aimed shots at a ship that fires back while it moves.
-This edition brings it to the terminal and builds a fuller game around
-it, with phases, moving bosses, new attacks, bombs, grazing, a score,
-colour, sound and a chiptune for every boss. The original lives on
-unchanged as Classic.
+Carlos Alvarez, of VikingosTeam, built ASCII Wars! in a burst of work in
+January 2025, in Rust with the Bevy engine: a little ship drawn as a **>**,
+ten bosses each drawn as a single character from the old PC code page, the
+Sentinel a **#**, the Hoarder a **$** that sprays dollar signs, all of it
+glowing through a CRT shader in a graphical window. A game made of letters
+that had never been near a terminal.
+
+In 2026 it came to one, and grew there. Every boss was redesigned into three
+or four named phases and learned to move, aim, rain, wall you in and sweep
+beams across the field. Bombs, focus and grazing arrived, a score worth
+chasing, colour, sparks and explosions, and a chiptune for every boss that
+climbs as the fight does. Carlos's original stays inside it untouched, rule
+for rule, as Classic.
 
 ## Credits
 
