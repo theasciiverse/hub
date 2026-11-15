@@ -3,7 +3,7 @@ id = "imperium"
 kind = "game"
 old = true
 title = "Imperium"
-description = "Venture into space with a starship and a fortune to make: mine, trade, colonise and fight across a galaxy shared with other players, in real time and over weeks. Play the public game online, or host a universe of your own for friends."
+description = "Venture into space with a starship and a fortune to make: mine, trade, colonise and fight across a galaxy shared with other players, in real time and over weeks. Play the public game online, or host a universe of your own against computer empires and friends."
 license = "GPL-1.0-or-later"
 repo = "theasciiverse/imperium"
 provenance = "David Wright began Imperium in 1990 to answer the wishes of Amiga Empire players, and released it for Linux in 1994; Marisa Giancarla keeps it going and runs the public game at EmpireDirectory.net."
@@ -18,7 +18,8 @@ url = "https://asciiverse.sh"
 # Imperium 1.5 since (github.com/fstltna/Imperium). This edition is upstream
 # eefffef with a run-time game folder, plus our launcher: online play at
 # empiredirectory.net:3458, a hosted universe in the state folder (open to
-# the LAN through TelImp), or joining one. Built by
+# the LAN through TelImp) with computer empires (ImpBot, our TelImp client,
+# three by default), or joining one. Built by
 # .github/workflows/asciiverse-release.yml.
 [upstream]
 name = "Marisa Giancarla"

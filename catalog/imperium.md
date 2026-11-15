@@ -2,9 +2,12 @@
 
 You have come into a large sum of money and chosen to spend it in space. Imperium starts you on your race's home planet with one small ship: scan the sectors around you, land on new worlds and put them to work, mine ore and gold, build bigger ships, trade with other players, lend them money, or take their planets.
 
+Play it with others, or on your own: a universe you host comes with computer empires that play by the same rules you do. They log in like any player, see only what their own scans show, spend the same bureaucracy time, and get on with it: they explore, settle planets, build ships and torpedo tubes, defend what they hold and, once they are strong enough, come for their neighbours.
+
 The galaxy runs in real time. Every action costs bureaucracy time that refills at the same rate for everyone, so nobody gets ahead just by playing all day. If another player is on at the same moment, you hear about anything that touches you as it happens, and there is chat, telegrams and a newspaper for the rest. There is no set goal: be the richest, the strongest, the best trader, or play with your race as a team.
 
 - **Three ways in**: the public game at EmpireDirectory.net, a universe of your own, or a friend's game on your network
+- **Computer empires**: up to seven rivals in a universe you host, easy, normal or hard
 - **A deep economy**: eight races, planets with ore, gold, gas and water, production you assign by hand, loans and markets
 - **Ships you design**: engines, hulls, sensors, weapons and computers, fleets, programmed ships and mining robots
 
@@ -13,9 +16,10 @@ The galaxy runs in real time. Every action costs bureaucracy time that refills a
 Run it and choose from the menu:
 
 1. **Play online** connects to the public game.
-2. **Host a game** creates a universe of your own the first time and keeps
-   it between sessions. Players on your network join with
-   `imperium join <your computer>`.
+2. **Host a game** creates a universe of your own the first time, with
+   three computer empires, and keeps it between sessions. The computer
+   empires play while your game is running. Players on your network join
+   with `imperium join <your computer>`.
 3. **Join a game** plays one someone else hosts.
 
 To make a player, type a new name, answer `y`, and give the creation
@@ -38,6 +42,8 @@ Type commands at the `Command:` prompt. A few to start with:
 
 - `imperium online`, `imperium host`, `imperium join HOST[:PORT]`
 - `imperium host --alone`: a universe of your own, not open to the network
+- `imperium host --bots N`: N computer empires, from 0 to 7
+- `imperium host --level easy|normal|hard`: how the computer empires play
 - `imperium stop`: stop the game you host
 
 ## History
