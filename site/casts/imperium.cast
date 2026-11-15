@@ -1,6 +1,6 @@
-{"version":3,"term":{"cols":100,"rows":30,"type":"xterm-256color","version":"tmux 3.6"},"timestamp":1794696852,"idle_time_limit":2.0,"command":"/home/david/code/imperium-scratch/stage/imperium host --alone","title":"Imperium","env":{"TERM":"xterm-256color","LANG":"C.UTF-8","COLORTERM":"truecolor"}}
+{"version":3,"term":{"cols":100,"rows":30,"type":"xterm-256color","version":"tmux 3.6"},"timestamp":1794696852,"idle_time_limit":2.0,"command":"imperium host --alone","title":"Imperium","env":{"TERM":"xterm-256color","LANG":"C.UTF-8","COLORTERM":"truecolor"}}
 [0.002, "o", "Creating a new universe...\r\n\r\n\t\tImpCre v1.5.pl0\r\n\r\nReading in creation parameters\r\nBuilding world\r\nGrowing terrain:\r\nPlacing home planets:\r\nsH:x:@::::\r\n:::::s:::@\r\n:s::::s:H@\r\n:Xx::Xs:::\r\n:s::::x::x\r\n::x::s::H:\r\n:@sH:sss::\r\n:::::ss:@:\r\nx:s:::X:x:\r\ns:::::::::\r\nWriting imp.player:\r\nWriting imp.sector and imp.planet:\r\nCreated 462 planets and stars\r\nWriting imp.world:\r\nCleared imp.ship.\r\nCleared imp.fleet.\r\nCleared imp.loan.\r\nCleared imp.offer.\r\nCleared imp.bigitem.\r\nDeleting imp.power:\r\nWriting telegram files:\r\n\r\nImperium universe created!\r\n\r\n"]
-[5.103, "o", "3 computer empires are in this universe: Vorlath (normal), Kessaran (normal) and Tyrene (normal).\r\nNew players join with the creation password add.me. The deity password is in\r\n/home/david/code/imperium-scratch/rec/state/imperium/deity.txt.\r\n\r\n"]
+[5.103, "o", "3 computer empires are in this universe: Vorlath (normal), Kessaran (normal) and Tyrene (normal).\r\nNew players join with the creation password add.me. The deity password is in\r\n~/.local/state/imperium/deity.txt.\r\n\r\n"]
 [0.002, "o", "Running Imperium 1.5pl0\r\n\r\n:Enter player name: "]
 [3.835, "o", "N"]
 [0.081, "o", "o"]
@@ -166,5 +166,5 @@
 [0.082, "o", "e"]
 [0.388, "o", "\r\n"]
 [0.000, "o", "Nova off at Sat Nov 14 23:55:07 2026\r\n"]
-[1.004, "o", "Your universe is saved in /home/david/code/imperium-scratch/rec/state/imperium.\r\n"]
+[1.004, "o", "Your universe is saved in ~/.local/state/imperium.\r\n"]
 [0.000, "x", "0"]
