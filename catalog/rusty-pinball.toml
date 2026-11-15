@@ -2,11 +2,11 @@ schema_version = 1
 id = "rusty-pinball"
 kind = "game"
 title = "Rusty Pinball"
-description = "Eight physics pinball tables drawn in Braille vector lines: orbiting bumpers, a spinning triangle round a pyramid, a real star map and multiball wherever the table has it. After Brian Nenninger's Vector Pinball."
+description = "Pull the plunger on eight living pinball tables drawn in Braille lines: orbiting bumpers, a spinning triangle round a pyramid, planets that tug the ball, a real night sky, and multiball!"
 year = 2010
 license = "GPL-3.0-only"
 repo = "theasciiverse/rusty-pinball"
-provenance = "Asciiverse ported Brian Nenninger's Vector Pinball for Android, written from its source code."
+provenance = "Brian Nenninger made Vector Pinball for Android in 2010, physics first and every table drawn in lines and circles, and has kept it growing ever since; its eight tables and their rules roll on here in Braille."
 topics = ["pinball", "physics", "braille", "port"]
 genre = "pinball"
 

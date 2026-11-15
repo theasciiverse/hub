@@ -2,11 +2,11 @@ schema_version = 1
 id = "ceres"
 kind = "game"
 title = "Ceres"
-description = "Ceres Mountain: three thousand metres of ice, spikes and wind. Jump, dash and wall-kick your way to the summit, and try not to read the memorial on the way up!"
+description = "Three thousand metres of ice, spikes and howling wind, and one dash to get you over them! Jump, dash and wall-kick to the summit of Ceres Mountain. How many times will you fall?"
 year = 2015
 license = "MIT"
 repo = "theasciiverse/ceres"
-provenance = "Asciiverse restored Celeste Classic (Maddy Thorson and Noel Berry, PICO-8, 2015), from Noel Berry's C# port and checked against the original."
+provenance = "Maddy Thorson and Noel Berry made Celeste Classic for the PICO-8 in four days in 2015, the seed of Celeste (2018); this climb runs their code and levels, frame for frame, with new art and music."
 topics = ["platformer", "restoration", "pico-8", "precision"]
 genre = "platformer"
 

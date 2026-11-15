@@ -64,17 +64,20 @@ Glider's own tap control did; the mouse and a gamepad don't depend on it.
 
 Calhoun wrote Glider 4.0 for the Macintosh in THINK Pascal, and Casady &
 Greene published it in 1991, "a wistful flight of fancy for those rainy
-days". It came with a Room Editor, and players built houses of their own
-and passed them around on America Online. Steve Sullivan offered $10 to
-the first player to send him a screenshot of his House of the Rising Sun
-finished, and soon after, Calhoun wrote asking to include it in a
-collection of houses to be sold. Calhoun followed Glider 4 with Glider
-PRO in 1994, and released Glider 4's source, art, sounds and houses
-under the MIT licence in 2016.
+days". It came with a Room Editor, and players were soon building houses
+of their own and passing them around on America Online. Steve Sullivan, a
+Mac engineer with a free summer, spent a month on the 120 rooms of his
+House of the Rising Sun, then offered $10 to the first player to send him
+a screenshot of it finished and $20 to anyone who beat his high score of
+1.6 million. "About 3 weeks later, I was $30.00 poorer." That same day
+Calhoun wrote asking to put the house in a collection to be sold. Calhoun
+followed Glider 4 with Glider PRO in 1994, and in 2016 he shared Glider
+4's source, art, sounds and houses with everyone.
 
-This edition keeps his rules and his house files as they were. Three
-timers in Hands-off House are moved, as it was tuned on a slower Mac, so
-it still plays itself to the end.
+That is what made this flight possible. The game opens Calhoun's own Mac
+files as it starts, his pictures, his sounds, his fonts and every house,
+and flies by his Pascal, translated rule for rule: thirty-five years
+later, the same glider rides the same air through the same rooms.
 
 ## Credits
 

@@ -13,8 +13,8 @@ a share of the whole board.
 
 - **One rule, eight directions**: learn it in a minute, then try to stop.
 - **See your options**: press p and every move you can make lights up.
-- **The whole window**: av starts Greed fitted to your terminal, so a
-  big window means a big feast.
+- **Every board is new**: a fresh field of numbers each game, and a
+  fresh chance to clear more of it than last time.
 - **High scores**: `greed -s` shows the best games.
 
 **Greedy? Good. Now don't get stuck.**
@@ -41,9 +41,14 @@ eaten.
 
 ## History
 
-Matt Day wrote the C version and released it up to 3.0a in 1990; it
-probably goes back to a DOS game of the 1980s. Eric S. Raymond took over
-maintenance and has kept it going since, porting it to Rust in 2026.
+Nobody knows quite where Greed began. Matt Day wrote it in C for Unix and
+took it up to version 3.0a in 1990, but he never claimed to have invented
+it: "I once saw it on an IBM, and wrote it for Unix in C." It was probably
+a DOS freeware game of the 1980s, yet no trace of that original has ever
+turned up in the surviving archives. Then Matt dropped out of sight, and
+by 1994 Eric S. Raymond had taken the game in. He has looked after it ever
+since, for more than thirty years, and in 2026 he rebuilt it in Rust, so
+the hungry @ munches on.
 
 ## Credits
 

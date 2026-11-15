@@ -2,12 +2,12 @@ schema_version = 1
 id = "greed"
 kind = "game"
 title = "Greed"
-description = "Munch through a screen full of numbers, where every number you land on decides how far you move next. Eat as much as you can before you box yourself in."
+description = "Eat the screen! Munch through a field of numbers where every number you land on decides how far you must go next. How much can you devour before you box yourself in?"
 year = 1990
 old = true
 license = "BSD-2-Clause"
 repo = "theasciiverse/greed"
-provenance = "Matt Day wrote Greed in C (to 3.0a, 1990); Eric S. Raymond has maintained it since and ported it to Rust in 2026."
+provenance = "Matt Day wrote Greed for Unix from a game he once saw on an IBM, up to 3.0a in 1990; Eric S. Raymond has looked after it since 1994 and rebuilt it in Rust in 2026."
 topics = ["puzzle", "numbers", "classic", "rust"]
 genre = "puzzle"
 

@@ -2,14 +2,14 @@ schema_version = 1
 id = "glider"
 kind = "game"
 title = "Glider"
-description = "John Calhoun's Glider 4.0 in the terminal: fly a paper glider through a house, riding the air from the floor vents past candles, toasters, darts and sparking outlets"
+description = "A paper glider loose in a big old house! Ride the air from vent to vent past candles, leaping toast, sparking outlets and darts, room after room, in John Calhoun's 1991 Mac classic."
 year = 1991
 old = true
 # Calhoun's repository (code, art, sounds and houses): MIT, "Copyright (c)
 # 2016 softdorothy"
 license = "MIT"
 repo = "theasciiverse/glider"
-provenance = "John Calhoun wrote Glider 4.0 for the Macintosh in THINK Pascal, published by Casady & Greene in 1991, and released its source, art, sounds and houses in 2016."
+provenance = "John Calhoun wrote Glider 4.0 for the Macintosh, published by Casady & Greene in 1991; players built houses of their own and traded them on America Online, and in 2016 he shared it all."
 changes = "CLAUDE.md"
 topics = ["arcade", "classic", "macintosh", "paper airplane", "mouse", "gamepad", "braille", "rust"]
 genre = "arcade"

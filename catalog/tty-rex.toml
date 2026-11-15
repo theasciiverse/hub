@@ -2,11 +2,11 @@ schema_version = 1
 id = "tty-rex"
 kind = "game"
 title = "tty-rex"
-description = "No internet? No problem. The browser's offline T-Rex runs again in your terminal, rebuilt from Chromium's own source: jump the cacti, duck the pterodactyls, run through the night."
+description = "No internet? No problem! The browser's lonely T-Rex is loose in your terminal: jump the cacti, duck the pterodactyls, run on through the night, and it only ever gets faster."
 year = 2014
 license = "BSD-3-Clause"
 repo = "theasciiverse/tty-rex"
-provenance = "Asciiverse recreated Chrome's offline T-Rex runner, written from Chromium's own source: the same rules, timings, sprites and sounds."
+provenance = "Sebastien Gabriel, Alan Bettes and Edward Jung of the Chrome UX team hid the T-Rex in Chrome's No Internet page in 2014; here he runs by the very same rules, timings, sprites and sounds."
 topics = ["runner", "endless", "braille", "total-conversion"]
 genre = "runner"
 
