@@ -9,7 +9,8 @@ But come lap two... SANTA'S AWAKE! He's in the one thing they left behind: the s
 Drift through the bends until your sparks burn frost blue, then gold, then aurora, and let them rip for a boost! Fly off the kickers and throw a barrel roll! Smash open present boxes for snowballs, homing tinsel and peppermint boosts, or hold out a sprig of mistletoe on a stick: any rival who gets too close gets kissed and stops dead in a cloud of hearts!
 
 - **Ten courses!** A frozen lake, a lake of eggnog flecked with nutmeg, black ice full of holes (SPLASH!), a candy cane forest, a gingerbread village with a cottage right in the road (jump it!), Santa's own workshop with its conveyor belts, a glacier split by crevasses, a birch wood where Ded Moroz lays frost on the road, the clifftops of a fjord, and a Christmas night market where the crowd throws presents.
-- **Hazards straight out of Christmas folklore:** the Icelandic Yule Cat, the prankster Yule Lads, snow tornadoes, blizzards, and a line of penguins waddling across the road with a polar bear lumbering after them, never quite fast enough. Plough into a penguin and it belly-slides away across the snow. Penguins like that.
+- **Hazards straight out of Christmas folklore:** the Icelandic Yule Cat crouches by the road and pounces, the prankster Yule Lads leap out of the snow and snatch your item, and there are snow tornadoes, blizzards, and a line of penguins waddling across the road with a polar bear lumbering after them, never quite fast enough. Plough into a penguin and it belly-slides away across the snow. Penguins like that.
+- **A friend at the back:** Snegurochka, the Snow Maiden, hands a present to any racer in the back half of the field who comes past empty-handed.
 - **Real hills and jumps,** carved in voxels, right in your terminal.
 - **Up to eight players** on the local network, on keyboard or gamepad.
 
@@ -35,6 +36,10 @@ On terminals without the kitty keyboard protocol, Up latches the gas on, Down tu
 - `--as NAME`: race as Bob, Holly, Sprocket, Pip, Juniper, Nutmeg, Tomte or Befana
 - `--host`, `--join`, `--name NAME`: races on the local network
 - `--mute`: no sound
+
+## History
+
+Sleighride started on 5 October 2026 as Bob-sleigh, a kart race with one elf in one big sleigh. It grew fast: a whole crew of runaway helpers, ten courses, hills carved in voxels, and an angry Santa in a snowplough. Its racers and hazards come from real Christmas traditions across Europe: Julbocken, the straw Yule goat of Sweden; La Befana, the old woman of Italy who brings presents on her broomstick; the Yule Cat and the thirteen Yule Lads of Iceland; and Ded Moroz, Grandfather Frost of Russia, with his granddaughter Snegurochka.
 
 ## Credits
 

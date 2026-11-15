@@ -18,7 +18,8 @@ Meet the opposition:
 
 Listen closely! Every enemy has its own engine voice, and the battle march picks up a new instrument for every kind of enemy on the field: a woodblock for the Tinpot, a tuba for the Plodder, a kazoo for the Hornet, timpani for the Onyx. Hear a theremin but see nobody? That's a Ghost. Lose a tank and you get a sad trombone.
 
-- **Twenty missions,** from First Shot to Last Stand, with a spare tank every five.
+- **Twenty missions,** from First Shot through Rocket Mail, Pink Trouble, Ghost Story and Lumber Yard to Fortress, Phantoms and the Last Stand, with a spare tank every five.
+- **Mines that chain,** crates they blow apart, and pits that stop tanks but let shells fly straight over.
 - **Two-player co-op** on the local network, one machine each. The spare tanks are shared, and friendly fire is very much on.
 - **Keyboard and mouse, or a twin-stick gamepad.**
 
@@ -34,13 +35,15 @@ Listen closely! Every enemy has its own engine voice, and the battle march picks
 - **M**: music on or off, **F8**: all sound on or off
 - **Gamepad**: left stick drives, right stick aims, right trigger fires, left trigger or A drops a mine
 
-Panzer needs a truecolour terminal. 160x50 is playable, 200x60 or more is comfortable: the arena scales to fit.
-
 ## Options
 
 - `--mission N`: straight into mission N
 - `--host`, `--join`: co-op on the local network
 - `--mute`: no sound
+
+## History
+
+In 2006 Nintendo tucked a little game of toy tanks into Wii Play, and it turned out to be a fiendish puzzle of angles and bounces wearing a toy's grin. Panzer rolled out on 4 October 2026 to carry that idea into the terminal, with tanks, missions, art and a battle march all of its own, and a sound for every personality, because you should hear the Ghost before you see it. The name is the word for armour in German, and, as pansar, in Swedish.
 
 ## Credits
 

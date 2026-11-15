@@ -1,6 +1,6 @@
 **YOU ARE THE LAST PROMPT STANDING.**
 
-Something has gone badly wrong in your terminal. The globs have broken loose and tumble everywhere. Block cursors blink awake and come hunting. Forks multiply: shoot one and it splits into two quick children. Spinners whirl in place, then dash straight into your line. Zombies get back up unless you shoot their bodies too. Escapes vanish and reappear right beside you. And the null device itself creeps after you, swallowing sparks, bending your shots and dragging you in. They just keep coming, wave after wave, faster every time.
+Something has gone badly wrong in your terminal, and it is coming for you! The globs have broken loose and tumble everywhere. Block cursors blink awake and come hunting. Forks multiply: shoot one and it splits into two quick children. Spinners whirl in place, then dash straight into your line. Zombies get back up unless you shoot their bodies too. Escapes vanish and reappear right beside you. And the null device itself creeps after you, swallowing sparks, bending your shots and dragging you in. They just keep coming, wave after wave, faster every time, and there is nobody left to stop them but you.
 
 You're a lone shell prompt, `❯`, with a twin stream of fire and three bombs. Move with one stick and shoot with the other, in any direction, all at once. Every shot dents the glowing grid beneath you, every burst sends it rippling, and every bomb rings the whole field like a bell.
 
@@ -37,6 +37,10 @@ Best in a terminal that reports key releases (kitty, foot, WezTerm, Ghostty, Ala
 - `--no-music`: the sound effects without the music
 - `--wave N`: start at wave N
 - `--fps N`: draw fewer frames a second (the game still runs at 60)
+
+## History
+
+Just before Christmas 2005 Mark Incitti, a Canadian programmer, put a free game on his website called GridWars: a twin-stick arena shooter over a glowing grid that bent and rippled under every explosion. Twenty years on, players still keep it running, building it for the Raspberry Pi and for handheld consoles. Braillestorm caught that spark in October 2026 and wrote its own storm from scratch for the terminal: a roster of enemies that all live in a shell, from the humble glob to the null device itself, synthesised sound and a soundtrack that speeds up as the waves climb, and every line drawn in Braille, eight tiny dots to a character, so the whole battle glows as thin vector light.
 
 ## Credits
 

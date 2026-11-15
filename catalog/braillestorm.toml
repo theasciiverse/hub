@@ -7,7 +7,7 @@ year = 2026
 new = true
 license = "GPL-3.0-or-later"
 repo = "theasciiverse/braillestorm"
-provenance = "Asciiverse made Braillestorm in Rust in 2026, inspired by Mark Incitti's freeware GridWars (2005); no code, art or sound is taken from it."
+provenance = "Asciiverse made Braillestorm in Rust in 2026, catching the spark of Mark Incitti's freeware GridWars (2005) with a roster, sound and storm all of its own."
 topics = ["shmup", "twin-stick", "arena", "arcade", "gamepad", "braille"]
 genre = "action"
 

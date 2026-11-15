@@ -2,12 +2,12 @@ schema_version = 1
 id = "entity"
 kind = "game"
 title = "Entity"
-description = "N-inspired precision platformer: momentum, wall jumps, gold, mines, instant death"
+description = "One ninja, a hundred deadly rooms! Run, wall-jump and fling yourself past mines, drones, turrets and thwomps, grab gold for precious seconds and reach the door before the clock runs out!"
 year = 2026
 new = true
 license = "MIT"
 repo = "theasciiverse/entity"
-provenance = "Asciiverse made Entity in Rust in 2026 inspired by N (Metanet Software). It ports N's physics and object types and has a campaign of 100 levels of its own."
+provenance = "Asciiverse made Entity in Rust in 2026, after N (Metanet Software, 2004): the same physics and objects, and a campaign of a hundred rooms all of its own."
 topics = ["platformer", "precision", "physics", "ninja", "level editor", "gamepad", "rust"]
 genre = "platformer"
 

@@ -8,9 +8,12 @@ The first worlds are almost reasonable: grey checkered terraces and blue cliffs,
 
 And then the madness sets in. Ice where nothing holds you back. Floors with opinions, rising and falling beneath you. Springs that throw you somewhere higher. A world where falling takes its time. Physics that shouldn't work, does!
 
-- **Twelve hand-built levels in three acts:** Losing It, The Madness, and Recovery.
+- **Twelve hand-built levels in three acts:** Losing It, in grey checker and blue cliffs; The Madness, in violet, where the worlds start arguing with each other; and Recovery, in warm dawn light, the long way home.
+- **A marble you can almost touch:** lit and shaded as a real sphere, rolling on real physics, its shadow spreading softer and wider beneath it as it flies.
 - **Race your own ghost:** your best run on every level rolls right beside you.
 - **Grab a gamepad** and the stick feels like an arcade trackball. Keyboard and mouse work too.
+
+And when the last one is home? It was never really madness. Just a long way round.
 
 Twelve marbles, every one of them out there somewhere. **GO AND GET THEM BACK!**
 
@@ -21,6 +24,10 @@ Twelve marbles, every one of them out there somewhere. **GO AND GET THEM BACK!**
 - **Gamepad**: the stick rolls
 - **Enter** or **Space**: go on, **R**: restart the level, **Esc**: back, **Q**: quit
 - **N** and **P**: next or previous level, **+** and **-**: zoom
+
+## History
+
+In 1984 Atari put Marble Madness in the arcades, the first big game of a young designer named Mark Cerny: a marble steered with a trackball down isometric courses of grey checkered tiles and blue cliffs, against the clock. Marble Recovery began on 4 October 2026 as its successor for the terminal, with every course a new design of its own, and a name that answers the original's: you don't go into the madness, you come back out of it.
 
 ## Credits
 

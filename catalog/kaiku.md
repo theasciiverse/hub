@@ -13,8 +13,11 @@ Interceptors flash out of nowhere! Lancers charge down their deadly lines! Jamme
 - **Fight with your guns, decode with your fingers!** Type each echo clear, letter by letter, with enemy fire all around you.
 - **Choose your gate!** Pick wrong and you're thrown off the path. Pick right and Earth gets closer.
 - **Snatch power-ups by typing their words:** spread shot, rapid fire, shields, smart bombs, an escort drone, even slow time!
-- **The real words of Apollo, Mercury, Gemini and President Kennedy**, waiting to be pulled out of the static.
+- **The real words of Apollo, Mercury, Gemini and President Kennedy**, waiting to be pulled out of the static: "we choose to go to the moon", "zero g and i feel fine", "please be informed there is a santa claus".
+- **Scouts, gunships, interceptors, mines, lancers, jammers and carriers,** from two fleets that fight each other as hard as they fight you, and a carrier guarding the gates every third sector.
 - **Two players, one ship!** Plug in a gamepad: one flies, one decodes.
+
+And if you do make it, if Earth rises blue and white right where the echoes said it would be, the receiver will crackle one last time. Not an echo. A live voice.
 
 You're alone, outgunned and light-years from home. **CAN YOU MAKE IT BACK?!**
 
@@ -38,6 +41,10 @@ Terminals with the kitty keyboard protocol (kitty, foot, WezTerm, Ghostty) give 
 - `--demo`: the game plays itself; any key quits
 - `--credits`: the credits on their own
 - `--mute`, `--no-music`: no sound, or effects only
+
+## History
+
+Kaiku is Finnish for echo. It began on 18 October 2026 out of a love for three games: ZType, where typing a word's first letter locks your guns onto it; Typespeed, the terminal classic where words race across the screen; and Gates of Zendocon (Epyx, 1989), the Atari Lynx shooter whose worlds are linked by gates. Every echo in it is real, spoken by the Mercury, Gemini and Apollo crews and by President Kennedy between 1962 and 1972. Type enough of them to get home and you will have the words of the space age at your fingertips, which is no bad thing to bring back from a war.
 
 ## Credits
 
