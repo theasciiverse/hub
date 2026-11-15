@@ -2,7 +2,7 @@ schema_version = 1
 id = "prince-toad"
 kind = "game"
 title = "Prince Toad"
-description = "A prince turned toad hops eighteen roads, rivers and moats to kiss whatever waits on the far side: a mailbox, a cactus, a sleeping dragon, and at last the right princess."
+description = "A prince turned toad hops roads, rivers and moats to kiss whatever waits on the far side, outruns a steamroller, a flood and a dragon, and at last finds the right princess."
 year = 2026
 new = true
 license = "MIT"
@@ -30,12 +30,12 @@ color = "truecolor"
 gamepad = true
 system_deps = ["libasound2", "libudev1"]
 
-# 100x30, `prince-toad --demo --crossing 8`: Reed Bend with the rubber duck
-# waiting on the far bank, then the duck,
-# the rapids, a heron, the winter road (asciiverse/record-preview.sh)
+# 100x30, `prince-toad --demo --crossing 13`: Mitten Pass and its kiss, then
+# the boss road The Thaw rolling up the screen with the flood behind and the
+# sleigh kiss (asciiverse/record-preview.sh)
 [media]
 cast = "asciiverse/prince-toad.cast"
-thumbnail_at = 4.0
+thumbnail_at = 20.0
 
 [release]
 source = "github"

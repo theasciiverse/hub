@@ -1,4 +1,4 @@
-**A PRINCE. A CURSE. EIGHTEEN ROADS BETWEEN HIM AND A KISS.**
+**A PRINCE. A CURSE. TWENTY-TWO ROADS BETWEEN HIM AND A KISS.**
 
 A prince has been turned into a toad, and only a kiss can turn him back. So
 he sets off, hopping across road after road to reach the other side and
@@ -8,7 +8,10 @@ He kisses a mailbox. It is cold and tastes of stamps. He kisses a garden
 gnome, who has smiled for thirty years and sees no reason to stop now. He
 kisses a cow, who licks him from head to toe: still a toad, but very clean.
 He finds a princess at last! She is cardboard, and she says TRY OUR
-PANCAKES. He kisses a cactus. Ow. Ow. Ow. Ow. Ow. He kisses a duchess out
+PANCAKES. He kisses a cactus. Ow. Ow. Ow. Ow. Ow. He kisses a toy tank, and it
+fires a cork at him. He kisses a sleigh's runner and his lips stick fast
+until the sun comes out. He kisses a bomb with its fuse fizzing, and the
+fuse goes out: the bravest thing he ever did. He kisses a duchess out
 for her evening walk, and she SCREAMS. He kisses a sleeping dragon on the
 nose, and it mumbles five more minutes.
 
@@ -18,13 +21,22 @@ and rush hour. Logs and diving turtles on the river, and a heron at the rapids. 
 road where the ice slides you one hop further than you meant. A night road
 lit only by headlights. A castle with a moat, a drawbridge that rises when
 you least want it to, and a dragon on the doorstep. And at the very end, a
-quiet pond, where the lily pads sink under you and a princess keeps hopping
-away. She turns out to be a toad too. He kisses her, and nothing happens.
+quiet pond, where the lily pads sink under you, a goldfish offers a wish
+that goes pop, and a princess keeps hopping away. She turns out to be a toad too. He kisses her, and nothing happens.
 He is still a toad. She is still a toad. It is perfect.
 
-- **Eighteen crossings, eighteen kisses**, from Mill Lane and Market Road to
-  Moon Puddle, Crow Field and the Dragon's Doorstep, each ending in a short,
-  silly scene
+- **Twenty-two crossings, twenty-two kisses**, from Mill Lane and Market
+  Road to Moon Puddle, Crow Field and the Dragon's Doorstep, each ending in
+  a short, silly scene
+- **Four boss roads**, several screens tall, the view rolling up as he
+  climbs and something coming up behind: a runaway steamroller on The Long
+  Haul, the meltwater on The Thaw, a cloud of crows on The Long Night, and
+  on The Dragon Wakes, the dragon. A resting bank halfway up, if he can
+  reach it
+- **Friends from all over Asciiverse** in the traffic: Westering's wagons,
+  Panzer's toy tanks, Sleighride's sleighs, uXo's bombs, Hammurabi's rats,
+  a Lunar Descent lander in the night sky and the Saalis plane over the
+  village
 - **The endless road** when the story is done, harder with every crossing,
   with trains, rain, fog and flies to snack on
 - **Today's road**, a new one every day, the same for everyone who plays it
@@ -48,7 +60,7 @@ He is still a toad. She is still a toad. It is perfect.
 - `--endless`: straight onto the endless road
 - `--two`: a two-player race
 - `--together`: two players crossing together
-- `--crossing N`: start the story at crossing N (19 is the pond)
+- `--crossing N`: start the story at crossing N (23 is the pond)
 - `--mute`: no sound
 
 ## History
@@ -61,4 +73,7 @@ croak for every hop, never quite the same twice in a row.
 
 ## Credits
 
-Story by David Sandquist. Made by Asciiverse, MIT licence.
+Story by David Sandquist. Made by Asciiverse, MIT licence. Cameos from
+Westering, Panzer, Sleighride, Saalis, Lunar Descent, Marble Recovery, uXo,
+Hammurabi (BCG Games) and 1D-Pong, and the goldfish, after Ondřej Žára's
+Goldfish.
