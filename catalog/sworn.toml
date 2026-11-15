@@ -2,12 +2,12 @@ schema_version = 1
 id = "sworn"
 kind = "game"
 title = "Sworn"
-description = "Rise from lesser noble to king in an early-medieval realm. Secret orders every season, letters that can lie, offers that bind, oaths you can break. Against computer nobles, or up to eight players across the network."
+description = "Rise from lesser noble to king in the year 800: secret orders every season, letters that can lie, offers that bind and oaths you can break, against computer nobles or friends."
 year = 2026
 new = true
 license = "MIT"
 repo = "theasciiverse/sworn"
-provenance = "Asciiverse wrote Sworn in Rust in 2026, from the premise of Warwick, the multiplayer terminal strategy game Lurebound announced in 2017 and never released."
+provenance = "Asciiverse wrote Sworn in 2026 from the premise of Warwick, the multiplayer terminal strategy game Lurebound announced in 2017 and never released."
 topics = ["strategy", "diplomacy", "medieval", "multiplayer", "turn-based", "iroh"]
 genre = "strategy"
 

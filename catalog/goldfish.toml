@@ -2,14 +2,14 @@ schema_version = 1
 id = "goldfish"
 kind = "game"
 title = "Goldfish"
-description = "You are a goldfish in a lake full of fishermen. Get caught, promise a wish, then swim the caves to find what each one wished for"
+description = "Caught by a fisherman, a little goldfish begs for its life with a wish, then dives into the caves beneath the lake to find world peace, the One Ring and a lutefisk."
 year = 2014
 # no licence file upstream; Ondrej Zara gave his permission for Asciiverse
 # by email on 2026-11-13, kept with the game (PERMISSION.md and the .eml in
 # asciiverse/permission/); rotty, the terminal runtime, is MIT
 license = "LicenseRef-Author-Permission"
 repo = "theasciiverse/goldfish"
-provenance = "Ondřej Žára, the author of rot.js, made Goldfish in seven days for the 2014 Seven Day Roguelike Challenge, as a browser game drawn in characters."
+provenance = "Ondřej Žára, the author of rot.js, made Goldfish in seven days for the 2014 Seven Day Roguelike Challenge, drawn in characters from the first day, to make the world a better place one wish/fish at a time."
 changes = "PATCHES.md"
 topics = ["roguelike", "7drl", "underwater", "quests", "humour", "rot.js", "javascript"]
 genre = "roguelike"

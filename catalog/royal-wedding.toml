@@ -2,14 +2,14 @@ schema_version = 1
 id = "royal-wedding"
 kind = "game"
 title = "The Royal Wedding"
-description = "You have been invited to a royal wedding. Find your way from a dark pier through a forest maze to the castle, and the story writes itself as you go"
+description = "You came for a royal wedding and found the groom dead at the altar: carry your torch through forest, castle and dungeon in a short roguelike that tells its story as you play."
 year = 2013
 # no licence file upstream; Ondrej Zara gave his permission for Asciiverse
 # by email on 2026-11-13, kept with the game (PERMISSION.md and the .eml in
 # asciiverse/permission/); rotty, the terminal runtime, is MIT
 license = "LicenseRef-Author-Permission"
 repo = "theasciiverse/royal-wedding"
-provenance = "Ondřej Žára, the author of rot.js, made The Royal Wedding as a short introductory roguelike with a story, lighting and a narrator, drawn in characters in the browser."
+provenance = "Ondřej Žára, the author of rot.js, wrote The Royal Wedding in 2013 as an introductory roguelike: a wedding, a murder and a chase, told in the hero's own words by torchlight."
 changes = "PATCHES.md"
 topics = ["roguelike", "story", "lighting", "introductory", "humour", "rot.js", "javascript"]
 genre = "roguelike"

@@ -2,14 +2,14 @@ schema_version = 1
 id = "sleeping-beauty"
 kind = "game"
 title = "Sleeping Beauty"
-description = "Climb a tower overgrown with thorns to the princess on the last floor, and fight on the way by playing the Game of Thorns"
+description = "A princess sleeps at the top of a tower choked with thorns: climb floor by floor past rats, ogres and minotaur warriors, and win every fight on the Game of Thorns board."
 year = 2017
 # no licence file upstream; Ondrej Zara gave his permission for Asciiverse
 # by email on 2026-11-13, kept with the game (PERMISSION.md and the .eml in
 # asciiverse/permission/); rotty, the terminal runtime, is MIT
 license = "LicenseRef-Author-Permission"
 repo = "theasciiverse/sleeping-beauty"
-provenance = "Ondřej Žára, the author of rot.js, made Sleeping Beauty in seven days for the 2017 Seven Day Roguelike Challenge, as a browser game drawn in characters."
+provenance = "Ondřej Žára, the author of rot.js, made Sleeping Beauty in seven days for the 2017 Seven Day Roguelike Challenge, Perrault's fairy tale with every fight played as a puzzle of thorns."
 changes = "PATCHES.md"
 topics = ["roguelike", "7drl", "fairy-tale", "match-3", "tower", "rot.js", "javascript"]
 genre = "roguelike"

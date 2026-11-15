@@ -2,14 +2,14 @@ schema_version = 1
 id = "rogue-sea"
 kind = "game"
 title = "Rogue Sea"
-description = "Sail a pirate ship across procedurally made seas, collect coconuts from the islands, fire cannonballs at other ships, and move on to a bigger ship"
+description = "Sail yer little ship from a small sea to the biggest one, hunt coconuts on islands like Kraken's Grave, trade broadsides with corsairs and loot their gold before Davy Jones gets ye."
 year = 2021
 # no licence file upstream; Ondrej Zara gave his permission for Asciiverse
 # by email on 2026-11-13, kept with the game (PERMISSION.md and the .eml in
 # asciiverse/permission/); rotty, the terminal runtime, is MIT
 license = "LicenseRef-Author-Permission"
 repo = "theasciiverse/rogue-sea"
-provenance = "Ondřej Žára, the author of rot.js, made Rogue Sea in seven days for the 2021 Seven Day Roguelike Challenge, during a pandemic lockdown, as a browser game of square bitmap tiles."
+provenance = "Ondřej Žára, the author of rot.js, made Rogue Sea in seven days for the 2021 Seven Day Roguelike Challenge, in a hurry during a pandemic lockdown, on late nights and gruesome amounts of coffee."
 changes = "PATCHES.md"
 topics = ["roguelike", "7drl", "pirates", "naval", "sailing", "javascript"]
 genre = "roguelike"

@@ -2,12 +2,12 @@ schema_version = 1
 id = "saalis"
 kind = "game"
 title = "Saalis"
-description = "Fly, fight and trade in the Northern Reach, the cold high fringe of the asteroid belt: haul ore and smuggle stims, take guild jobs and fixers' contracts, hold the lanes against the claim-jumpers, and decide who gets what was buried under a prospector's claim"
+description = "Fly, fight and trade in the Northern Reach: haul ore, smuggle stims past customs, board crippled raiders, and decide who gets what has waited two hundred years under a prospector's jumped claim."
 year = 2026
 new = true
 license = "MIT"
 repo = "theasciiverse/saalis"
-provenance = "Asciiverse made Saalis in Rust in 2026, after Ascii Sector and the space trading games before it."
+provenance = "Asciiverse made Saalis in 2026 out of love for Ascii Sector and the space trading games before it, with a belt of its own; its name is Finnish for the catch, the prey and the plunder."
 topics = ["space", "trading", "combat", "sandbox", "gamepad", "braille"]
 genre = "simulation"
 

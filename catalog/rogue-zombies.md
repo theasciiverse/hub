@@ -1,17 +1,30 @@
-**HORDES OF ZOMBIES ARE DRAWING NEARBY,** and you are the only one who can
-stop them. The time has come to arm yourself and prepare for the worst.
+**HORDES OF ZOMBIES ARE DRAWING NEARBY, AND YOU ARE THE ONLY ONE WHO CAN STOP THEM.**
 
-You stand in a field by a river, with a house, some trees and a little
-money. Before the invasion starts, visit the item shop: wooden barriers,
-rakes, bear traps, mines, electric shocks, a bazooka, barbed wire and
-electric fences, each with its own way of dealing with the dead. Lay them
-out on the squares around you, then press **S** and let them come.
+The time has come to arm yourself and prepare for the worst. You stand in a
+field by a river, with a house, some trees, a bridge and a little money in
+your pocket. The shop has exactly what you need: anti-zombie stuff, no
+refunds, no returns.
 
-The zombies spawn and shamble towards you, stepping on your rakes, getting
-caught in your traps, piling up at your fences. Each one you kill brings
-money for more. Bump into a zombie to hit it, or keep your distance and let
-your traps do the work. Play the tutorial, survive as long as you can in
-Regular, last 300 turns in Hope, or try everything at once in the Sandbox.
+So shop. A rake kills one zombie dumb enough to step on it. A bear trap
+kills several. Mines explode underfoot, wooden barriers hold them for a
+while, barbed wire and electric fences link up into walls, an electric
+shock jumps from zombie to zombie, and a bazooka settles the rest. Lay it
+all out on the squares around you, take a deep breath, and press **S**.
+
+Then they come. Zombies and large zombies shamble towards you,
+step on your rakes, snap your traps, pile up against your
+fences. Every one you kill pays for more. You can bump into them yourself,
+but that is slow, inefficient and risky; far better to be standing behind a
+fence with a bazooka. And keep your eyes open: once in a long while, what
+shambles your way is a zombie lutefisk. Hold out as long as you can, until the zombies have eaten your brains.
+
+- **Eight ways to deal with the dead**, from a humble rake to an electric
+  fence
+- **Four ways to play**: the tutorial (every game needs one), Regular with
+  limited money and unlimited zombies, Hope where you must last 300 turns,
+  and the Sandbox: unlimited resources, unlimited carnage
+- **Plan, then survive**: the fight is won or lost in where you put things
+- **Your score**: rounds survived and zombies killed
 
 ## Controls
 
@@ -22,6 +35,17 @@ Regular, last 300 turns in Hope, or try everything at once in the Sandbox.
 - **I**: the item shop; **S**: start the invasion; **?**: help
 - **Space**: more of the log, when it asks; **Escape**: cancel
 - **Ctrl+Q** or **Ctrl+C**: quit
+
+## History
+
+Ondřej Žára, the author of rot.js, first made a game called Rogue Zombies
+in 2011. For the Seven Day Roguelike Challenge in March 2024 he threw all of
+its code away and wrote it again from scratch, keeping the same core loop of
+buy, build and survive. His diary of the week is measured in drinks: coffee
+on Sunday, then ice tea, rooibos, earl grey, gunpowder and raspberry
+tea, and on the seventh day, the explosions, the electric shock, the release
+and a beer. It now plays in the terminal, the game's own script exactly as
+he wrote it.
 
 ## Credits
 

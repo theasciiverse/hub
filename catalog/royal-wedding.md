@@ -1,20 +1,34 @@
-**THIS DEED CONFIRMS THAT YOU HAVE BEEN INVITED TO ATTEND THE ROYAL
-WEDDING.**
+**YOU HAVE BEEN INVITED TO A ROYAL WEDDING. SOMEBODY ELSE HAS BEEN PAID TO KILL THE GROOM.**
 
-It is early in the morning when your ship comes in. The sky is still
-dark, the pier is lit by a single torch, and between you and the castle
-lies a forest that turns out to be a maze. Pick up the torch and go.
+"Cool! I have been invited to attend a royal wedding!" It is early in the
+morning, your ship has just come in, and the sky is still dark. One torch
+burns on the pier. Take it: it is the only light you will have through the
+forest beyond, and the forest turns out to be a maze. Hurry, or you will
+miss the wedding.
 
-The Royal Wedding is a short roguelike that tells a story while you play.
-On the left of the screen your own account of the journey grows, chapter
-by chapter, with the task at hand in red; on the right, the world, lit
-only as far as your light reaches. Through the forest, into the castle,
-down into the dungeons below the chapel, things happen at a wedding that
-nobody planned for, and how it all ends is up to you.
+The castle, when you reach it, is far too quiet. The throne room is empty
+but for a jester, who greets you as king the moment you sit on the throne
+and lets slip something about a secret passage in the southern wall. There
+are hungry rats in the kitchen, an armoury next door, and a chapel full of
+guests who think it very poor form to greet the bride with nothing in your
+hands. So you go back to the garden for a flower. And while you are gone,
+someone stabs the groom at the altar and jumps out through the chapel
+window.
 
-It was made as an introduction to roguelikes: a few keys, a clear goal at
-every step, real lighting and line of sight, monsters, weapons and armour,
-gold and gems to find, and secrets for those who look.
+Down into the dungeons after him, then. "Narrow corridors, rotten smell in
+the air, poor visibility. Just you wait, murderer, I'm coming!" But the man
+with the knife was only paid to hold it, and the trail leads somewhere much
+closer to the crown.
+
+- **A story that writes itself as you play**: on the left of the screen
+  your own wry account of the day grows chapter by chapter, with the task
+  at hand in red, and you can leaf back through every page
+- **Real light and darkness**: you see only as far as your torch reaches
+- **A pier, a forest maze, a castle, a chapel and a dungeon**, each a
+  chapter of its own
+- **Secret gold stashes and precious gems** for those who look in the
+  corners
+- **Made for newcomers**: a handful of keys and always a clear next step
 
 ## Controls
 
@@ -25,6 +39,15 @@ gold and gems to find, and secrets for those who look.
   through the story so far
 - **R**: start again, once the game is over
 - **Ctrl+Q** or **Ctrl+C**: quit
+
+## History
+
+Ondřej Žára, the author of rot.js, wrote The Royal Wedding in February 2013
+as "an introductory Rogue-like game": a short, welcoming way into the genre,
+with a real story, a narrator with opinions, and torchlight that only reaches
+so far. It began as experiments with light and shadow in the browser, grew a
+wedding and a murder over the following month, and now plays in the
+terminal, its scripts exactly as he wrote them.
 
 ## Credits
 

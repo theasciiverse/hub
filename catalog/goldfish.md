@@ -1,20 +1,32 @@
-**YOU ARE A GOLDFISH.** A small one, in a little lake, and the lake is
-ringed with fishermen.
+**LET ME GO, PLEASEPLEASEPLEASE! I WILL ... GRANT YOU A WISH!**
 
-Sooner or later one of them catches you. You do what goldfish do: you
-promise a wish. And they wish for the strangest things. A Trident of the
-Red Rooster. A Scroll of chaos resistance. A Solution to the Riemann
-hypothesis. Each wish is out there somewhere, at the bottom of a cave
-beneath the lake, and a promise is a promise.
+You are a goldfish. A small one, in a little lake, and the lake is ringed
+with fishermen. Sooner or later one of them reels you in and looks you over:
+"Wow, a goldfish! This is going to be a fine meal." There is exactly one way
+out of the frying pan. You promise a wish.
 
-So you swim. Through underwater tunnels into caverns full of seaweed,
-air bubbles and things that bite: crabs, starfish, jellyfish, piranhas,
-an octopus, water snakes. Watch your oxygen, pick up what makes you
-stronger, and carry each wish back to the fisherman who made it. Grant
-them all and you are officially the best goldfish ever.
+And they wish for the strangest things. World peace. The Holy Grail. The One
+Ring. A Bottle of Slivovitz. A Solution to the Riemann hypothesis. A
+Lutefisk. Then the fisherman throws you back into the water, and a promise
+is a promise.
 
-Goldfish is a short, funny roguelike made in seven days, drawn in
-characters from the start, and it plays here exactly as it was written.
+So you swim. Down through the underwater tunnels into caverns of seaweed
+and rising bubbles, where everything bites back: crabs, starfish, piranhas,
+water snakes, jellyfish that sting anything alive, and an octopus nobody
+wants to mess with. Watch your breath, because a goldfish down there runs
+out of air. Grow stronger with every fin, jaw and scale you find, carry
+each wish home to the fisherman who made it, and grant all twelve. Then you
+are, officially, the best goldfish ever.
+
+- **Twelve wishes**, every game a new handful, from World peace to a Dogecoin
+- **Fins, jaws and scales** in common, bronze, silver and gold, for more
+  vitality, breath, speed, sight, bite and defence
+- **Air bubbles** to refill your lungs and **seaweed** to nibble back your
+  health after a fight
+- **A cheerful seahorse** with advice ("Did you know? Crabs cannot swim!")
+  who wants to be a goldfish when it grows up
+- **Short, funny and over in an evening**, with a turn count to beat next
+  time
 
 ## Controls
 
@@ -26,6 +38,18 @@ characters from the start, and it plays here exactly as it was written.
 - **?** or **,**: help
 - **R**: a new game, once this one is over
 - **Ctrl+Q** or **Ctrl+C**: quit
+
+## History
+
+Ondřej Žára, the author of rot.js, the JavaScript roguelike toolkit, made
+Goldfish for the Seven Day Roguelike Challenge in
+March 2014. His diary of the week is short and sweet: the lake and its caves
+on Sunday evening, oxygen on Monday, items on Tuesday, fishermen, their rods
+and their wishes on Wednesday, the creatures' brains on Thursday, and on
+Friday the help, the intro, the balancing and the release. He called it
+"making the world a better place, one wish/fish at a time". It was drawn in
+characters from the very first day, and now it swims in the terminal, its
+scripts exactly as he wrote them.
 
 ## Credits
 
