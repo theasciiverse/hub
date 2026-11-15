@@ -1,0 +1,53 @@
+schema_version = 1
+id = "diabaig"
+kind = "game"
+title = "Diabaig"
+description = "A traditional roguelike where a dragon sleeps on floor 30. Go down through the Great Halls, take one of its teeth, and climb all the way back out again."
+year = 2025
+license = "MIT"
+repo = "theasciiverse/diabaig"
+provenance = "conornally wrote Diabaig in C with ncurses, sharing it on itch.io as it grew, and reached version 1.0 in September 2025."
+changes = "PATCHES.md"
+topics = ["roguelike", "dragon", "fantasy", "turn-based", "permadeath", "spells", "auto-explore", "ncurses", "c"]
+genre = "roguelike"
+new = true
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# upstream's main at b90d358 (2025-09-26), its diabaig-v1.0.1 tag;
+# PATCHES.md in theasciiverse/diabaig
+[upstream]
+name = "conornally"
+url = "https://github.com/conornally/diabaig"
+
+# saves, settings, high scores and the -v log in $XDG_STATE_HOME/diabaig
+[exec]
+game = "diabaig"
+args = []
+
+# the screen is a fixed 78x33 and the game waits until the terminal has
+# at least 79x34
+[min_terminal]
+cols = 79
+rows = 34
+
+# ASCII with ncurses line drawing; 8 colours; click a spot to walk there
+[requires]
+utf8 = false
+color = "basic"
+mouse = true
+
+# 100x34 (the game's own size), asciiverse/record-preview.sh with seed
+# 2026: a new Warrior, auto-explore through the first floor's rooms,
+# fights with bats and goblins, then quitting to the gravestone; cropped
+# to 100x30 following the player; the still is two goblins and a bat
+# round the hero in a doorway
+[media]
+cast = "asciiverse/diabaig.cast"
+thumbnail_at = 16.0
+crop = { follow = "player" }
+
+[release]
+source = "github"

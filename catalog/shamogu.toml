@@ -1,0 +1,53 @@
+schema_version = 1
+id = "shamogu"
+kind = "game"
+title = "Shamanic Mountain Guardian (Shamogu)"
+description = "A coffee-break roguelike: a portal has opened on your mountain and its beasts are going mad. Call on totemic spirits, eat the right herb at the right moment, and clear the dungeon at its source."
+year = 2025
+license = "ISC"
+repo = "theasciiverse/shamogu"
+provenance = "anaseto (Yon) released Shamogu in 2025, built on the same gruid library as his Harmonist, and keeps adding to it with players, among them mlochbaum, who wrote the Totem Conditions expansion."
+changes = "PATCHES.md"
+topics = ["roguelike", "coffee-break", "tactical", "spirits", "shamanism", "fantasy", "turn-based", "mods", "mouse", "go"]
+genre = "roguelike"
+new = true
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# upstream's v1.6.0 tag (2026-09-24), terminal (tcell) build;
+# PATCHES.md in theasciiverse/shamogu
+[upstream]
+name = "anaseto"
+url = "https://codeberg.org/anaseto/shamogu"
+
+# save, config, replays and logs.txt in $XDG_STATE_HOME/shamogu;
+# -t picks the selenized true colour palette, -l logs the game's messages
+[exec]
+game = "shamogu"
+args = []
+
+# a fixed 80x24 screen
+[min_terminal]
+cols = 80
+rows = 24
+
+# Unicode symbols for terrain and items; the 16 terminal colours by
+# default (256 with -x, true colour with -t); mouse to move and examine
+[requires]
+utf8 = true
+color = "basic"
+mouse = true
+
+# 100x30, asciiverse/record-preview.sh: choosing the Four-Headed Hydra,
+# then exploring the first level, eating a berserking flower and killing
+# a spider, rats and a blinking butterfly, played by asciiverse/drive.py (the best of several
+# takes); the still is the guardian berserk after killing a spider, a rat
+# beside him
+[media]
+cast = "asciiverse/shamogu.cast"
+thumbnail_at = 14.0
+
+[release]
+source = "github"

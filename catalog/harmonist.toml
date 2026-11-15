@@ -1,0 +1,51 @@
+schema_version = 1
+id = "harmonist"
+kind = "game"
+title = "Harmonist: Dayoriah Clan Infiltration"
+description = "A stealth roguelike: you are a small monkey slipping through a clan's lamp-lit tunnels, hiding in foliage and leaping off walls, to free your friend from the eighth floor."
+year = 2019
+license = "ISC"
+repo = "theasciiverse/harmonist"
+provenance = "anaseto (Yon) began Harmonist in 2019, growing it from the code of Boohu, his earlier roguelike set in the same world, with lore written by kaoseto, author of the Ciclo de Shaedra novels. Version 1.0 came in 2026."
+changes = "PATCHES.md"
+topics = ["roguelike", "stealth", "coffee-break", "fantasy", "turn-based", "light and noise", "monkey", "mouse", "go"]
+genre = "roguelike"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# upstream's v1.0.3 tag (2026-08-06), terminal (tcell) build;
+# PATCHES.md in theasciiverse/harmonist
+[upstream]
+name = "anaseto"
+url = "https://codeberg.org/anaseto/harmonist"
+
+# save, config, replays and logs.txt in $XDG_STATE_HOME/harmonist;
+# -t picks the selenized true colour palette, -l logs the game's messages
+[exec]
+game = "harmonist"
+args = []
+
+# a fixed 80x24 screen
+[min_terminal]
+cols = 80
+rows = 24
+
+# Unicode symbols for terrain and items; the 16 terminal colours by
+# default (256 with -x, true colour with -t); mouse to move and examine
+[requires]
+utf8 = true
+color = "basic"
+mouse = true
+
+# 100x30, asciiverse/record-preview.sh: the title, the story, then Syu
+# exploring the first floor, slipping round its creatures, played by
+# asciiverse/drive.py (the best of four takes); the still is the first
+# floor half mapped, with kerejats wandering near Syu
+[media]
+cast = "asciiverse/harmonist.cast"
+thumbnail_at = 30.0
+
+[release]
+source = "github"

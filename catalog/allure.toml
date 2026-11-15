@@ -1,0 +1,57 @@
+schema_version = 1
+id = "allure"
+kind = "game"
+title = "Allure of the Stars"
+description = "Lead a squad of salvagers through a vast derelict cruise liner climbing out of Neptune's orbit: robots, warped beasts, rival crews, and not a single picture, only your imagination."
+year = 2011
+license = "AGPL-3.0-or-later"
+repo = "theasciiverse/allure"
+provenance = "Mikolaj Konarski has written Allure of the Stars in Haskell since 2011, on his own LambdaHack roguelike engine, and keeps both open for anyone to build on."
+changes = "PATCHES.md"
+topics = ["roguelike", "science fiction", "squad tactics", "stealth", "turn-based", "haskell"]
+genre = "roguelike"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# packaged by Asciiverse from upstream master after 0.11.0.0, terminal
+# edition (LambdaHack's ANSI frontend, no SDL2); PATCHES.md in
+# theasciiverse/allure
+[upstream]
+name = "Mikolaj Konarski"
+url = "https://allureofthestars.com"
+
+# one static binary; saves, settings and scores go to ~/.local/state/allure
+# (XDG_STATE_HOME). The ANSI frontend draws on stderr, and the game sends
+# stderr to a file when stdout is not a terminal, so stderr stays on the
+# screen
+[exec]
+game = "Allure"
+args = []
+stderr = "terminal"
+
+# the game's screen is a fixed 80 by 45; in a smaller terminal it says so
+# and stops
+[min_terminal]
+cols = 80
+rows = 45
+
+# 16 colours, keyboard only in the terminal
+[requires]
+utf8 = true
+color = "basic"
+mouse = false
+
+# 80x45 (the game's own size, run with --maxFps 12): its attract mode, the
+# game's own AI playing the raid adventure in the Triton City sewers, with
+# a feral home robot clubbed and thornbushes in the way, then save and exit
+# from the main menu; cropped to 100x30 following the player
+# (RECORDING.md); the still is the explored sewers at 40 s
+[media]
+cast = "asciiverse/allure.cast"
+thumbnail_at = 40.0
+crop = { follow = "player" }
+
+[release]
+source = "github"

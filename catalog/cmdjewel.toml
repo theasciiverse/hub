@@ -1,0 +1,50 @@
+schema_version = 1
+id = "cmdjewel"
+kind = "game"
+title = "cmdjewel"
+description = "A match-3 game with real sparkle: swap gems, chain cascades, forge flame, star and hypercube gems, and play Classic until the moves run out or Zen forever, to a chiptune soundtrack."
+year = 2024
+license = "GPL-3.0-only"
+repo = "theasciiverse/cmdjewel"
+provenance = "pastthepixels began cmdjewel in Python at the end of 2023 and rebuilt it in Rust and cursive in 2024, with a chiptune soundtrack in a tracker module that plays inside the game."
+changes = "PATCHES.md"
+topics = ["match-3", "gems", "puzzle", "casual", "chiptune", "mouse", "rust", "cursive"]
+genre = "puzzle"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# upstream's main at d309551 (2026-10-15), 0.3.0 plus the work since;
+# our changes (state folder, --mute, session logging) in PATCHES.md
+[upstream]
+name = "pastthepixels"
+url = "https://codeberg.org/pastthepixels/cmdjewel"
+
+# saves and settings in $XDG_STATE_HOME/cmdjewel/config.toml;
+# RUST_LOG=debug writes the session log to stderr, which av keeps
+[exec]
+game = "cmdjewel"
+
+# the main menu (logo, menu and welcome panel) is the biggest screen and
+# shows whole at 44x22; the game itself needs 39x13
+[min_terminal]
+cols = 44
+rows = 22
+
+# geometric Unicode shapes for the gems, truecolor theme
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = true
+system_deps = ["libasound2"]
+
+# 100x30, asciiverse/record-preview.sh: a game of Classic played by
+# asciiverse/drive.py with the music off, flame gems and a level up;
+# 49 s, the still is the board at 1170 points
+[media]
+cast = "asciiverse/cmdjewel.cast"
+thumbnail_at = 20.0
+
+[release]
+source = "github"

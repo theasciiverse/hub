@@ -1,0 +1,50 @@
+schema_version = 1
+id = "fear-of-view"
+kind = "game"
+title = "Fear of View"
+description = "A broughlike on a five by five grid where everything you cannot see is made anew: hide from monsters by looking away, find the exit, break its seal and get out."
+year = 2025
+license = "AGPL-3.0-or-later"
+repo = "theasciiverse/fear-of-view"
+provenance = "Martin Bays, who made Intricacy, wrote Fear of View in Haskell and first released it in August 2025; players also reach it by ssh on his sshgames server."
+changes = "PATCHES.md"
+topics = ["roguelike", "broughlike", "puzzle", "vision", "short runs", "haskell"]
+genre = "roguelike"
+new = true
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# packaged by Asciiverse from upstream 0.2.0.0, curses edition; PATCHES.md
+# in theasciiverse/fear-of-view
+[upstream]
+name = "Martin Bays"
+url = "https://mbays.sdf.org/fov/"
+
+# one static binary; the game state and highscores go to
+# ~/.local/state/fear-of-view (XDG_STATE_HOME)
+[exec]
+game = "fearOfView"
+args = []
+
+# the board, inventory and status fill about 60x20
+[min_terminal]
+cols = 80
+rows = 24
+
+# box drawing characters (- switches to plain ASCII), eight colours, keys only
+[requires]
+utf8 = true
+color = "basic"
+mouse = false
+
+# 100x30: the title screen, then a run through level 1:A, the board
+# rebuilding itself as the view turns, out through the exit into 1:B;
+# the still is 1:B at 30 s
+[media]
+cast = "asciiverse/fear-of-view.cast"
+thumbnail_at = 30.0
+
+[release]
+source = "github"
