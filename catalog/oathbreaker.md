@@ -4,12 +4,9 @@ So says the notice on the prison wall, and yours is next. The hill-goblins took 
 
 Oathbreaker is a coffee-break roguelike about not being seen. You have eight hit points, and they do not come back on their own. A guard who spots you shouts, and a shout brings the floor: patrols with crude maces, javelineers with poisoned javelins, an executioner with a giant spiked flail, and the hunters, whose whole job is liquidating escaped prisoners. Like you, for example. So you keep to the dark, walk on carpet instead of gravel, hide in the tall mushrooms, and when you must fight, you strike first. A guard who never saw you coming gets perforated like a sieve; a guard who did will win the fair fight.
 
-- **Climb eight floors** to the open air, or turn off into the Laboratory, the Workshop, the Shrine, the Caverns, the old Temple, the Crypt, and the Holding cells where the captured Revgenunkim are kept
-- **Throw what you find**: smoke to vanish into, a fizzing vial that sends a guard off to look, paralysing gas, and a bottle of something that smells like tomato and makes you look terrifying
-- **Rings of power** wait in golden enclosures. Excision conjures a spectral sword, Insurrection wakes three corpses against your enemies, Deception makes the undead take you for one of their own, and all of them run on the Necromancer's power, drained from the corpses of the mages who wield it
-- **Use the place**: crawl into a drain and come out somewhere else, hopefully; stand on copper plates and share the lightning with everyone around you; set off an eldritch lantern and daze everyone in sight, yourself included
-- **A city that remembers**: an embalmed goblin steward on a pedestal, a child's coffin standing empty, a caged prisoner calling "You, human. Let me out of this cage, please?", and on the walls, "Please do not feed the prisoners."
-- **Every run is written down** in the morgue, however short, down to the epitaph on your grave
+Eight floors stand between you and the open air, and the prison is bigger than the way out. Side doors lead off into the Laboratory, the Workshop and the old Temple, the Crypt and the Caverns, and the Holding cells where the captured Revgenunkim are kept. In golden enclosures wait rings of power: Excision conjures a spectral sword, Insurrection wakes three corpses against your enemies, Deception makes the undead take you for one of their own, and every one of them runs on the Necromancer's power, drained from the corpses of the mages who wield it.
+
+Everything you find is a way out of trouble, if you use it right. Throw smoke to vanish into, or a fizzing vial that sends a guard off to look. Crawl into a drain and come out somewhere else, hopefully. Stand on the copper plates and share the lightning with everyone around you. And the city remembers what it was: an embalmed goblin steward on a pedestal, a child's coffin standing empty, a caged prisoner calling "You, human. Let me out of this cage, please?", and on the walls, "Please do not feed the prisoners." However short your run, the morgue writes it down, all the way to the epitaph on your grave.
 
 ## Controls
 
