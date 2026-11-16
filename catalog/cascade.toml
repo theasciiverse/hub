@@ -1,0 +1,55 @@
+schema_version = 1
+id = "cascade"
+kind = "game"
+title = "Cascade"
+description = "A five-lane rhythm game that listens to any song you own, finds its beat and turns it into charts for four difficulties, with nine Bellbeat songs ready to play."
+year = 2026
+new = true
+license = "MIT OR Apache-2.0"
+repo = "theasciiverse/cascade"
+provenance = "Gleb Matsko began Cascade in Rust in April 2026: a rhythm game that needs no charts made by hand, because it writes its own from whatever music it is given."
+changes = "PATCHES.md"
+topics = ["rhythm", "music", "beatmap generator", "any song", "practice", "replays", "achievements", "rust", "ratatui"]
+genre = "rhythm"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# upstream's v0.10.0 (c67c9b2, 2026-10-02) with the changes in PATCHES.md;
+# nine Bellbeat songs in songs/ beside the binary, copied into the
+# library on first start
+[upstream]
+name = "Gleb Matsko"
+url = "https://github.com/glebmatz/cascade"
+
+# settings, songs, scores and history in $XDG_STATE_HOME/cascade;
+# RUST_LOG=cascade=debug writes the session log to stderr, which av keeps
+[exec]
+game = "cascade"
+args = []
+
+# the playfield takes any size; below 80x24 the top line's score runs
+# into the combo and the song line is cut short
+[min_terminal]
+cols = 80
+rows = 24
+
+# half-block notes and stars in true colour; hold notes need a terminal
+# with the kitty keyboard protocol, elsewhere they are tapped
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = false
+system_deps = ["libasound2"]
+
+# 100x30, asciiverse/record-preview.sh: Kernel Panic on Hard played by
+# --autoplay, then pause and the song list with the bundled songs; drawn
+# at 30 fps and kept at 15 with colours rounded (asciiverse/shrink-cast.py);
+# the still is the highway full of notes at a x73 combo
+[media]
+cast = "asciiverse/cascade.cast"
+thumbnail_at = 14.0
+
+[release]
+source = "github"
