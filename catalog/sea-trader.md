@@ -19,11 +19,10 @@ Sea Trader is a trading voyage played one passage at a time. Every port has its 
 - **PgUp** and **PgDn**, or the mouse wheel: scroll a long screen
 - On the start screen: **H** how to play, **M** classic or extended voyage, **A** text animations on or off
 
-Sea Trader plays from 60x20 up; at 80x32 every screen fits whole.
 
 ## History
 
-Yishai Zehavi started Sea Trader on 11 November 2024 as a game anyone could play with one command, `npx ctrader`, and released it as he built it: a first version a week later, 1.0 by the end of November, pirates at Christmas, then in January moneylenders, interactive events, seasons and merchant tips. By February 2025 it had passed thirty releases. In October 2026 he came back to it: Sea Trader learned to fit any terminal down to 60x20, then got fairer money, cargo counted in picul, the old porter's load, and a game core rebuilt to run on its own.
+Yishai Zehavi started Sea Trader on 11 November 2024 as a game anyone could play with one command, `npx ctrader`, and released it as he built it: a first version a week later, 1.0 by the end of November, pirates at Christmas, then in January moneylenders, interactive events, seasons and merchant tips. By February 2025 it had passed thirty releases. And in October 2026 he came back for another voyage, with fairer money and the cargo counted in picul, the old porter's load, as the real traders of the South China Sea counted it.
 
 ## Credits
 

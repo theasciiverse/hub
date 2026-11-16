@@ -6,10 +6,7 @@ Eighteen roles: a Flame Mage or an Ice Mage, a Necromancer who raises the dead, 
 
 Past the Gnomish Mines and Sokoban the dungeon branches again and again: Grund's Stronghold, the Wyrm Caves, the Lost Tomb, the Spider Caves, the Sunless Sea, the Temple of Moloch, the Giant Caverns. One-eyed Sam runs a black market behind a portal, a guild of disgruntled adventurers keeps a level of its own, and down in Gehennom, beside Vlad's Tower, stands Frankenstein's Lab. Beside your role's quest, three more portals lead to the aligned key quests, where the Nightmare, the Beholder and Vecna wait.
 
-- **Eighteen roles and ten races**, each role with its techniques
-- **New branches and special levels** all the way down
-- **Lightsabers, firearms** and hundreds of new monsters and items
-- **The full NetHack game** underneath: Elbereth, prayer, polymorph, shops and all
+And underneath it all is the whole of NetHack, Elbereth, prayer, polymorph, shopkeepers and all, just with more waiting around every corner.
 
 ## Controls
 

@@ -6,14 +6,9 @@ And it plays like a proper rhythm game. Notes fall as soft half-block glow towar
 
 Nine songs are waiting the first time you start, so you can play straight away: songs from Bellbeat, the Asciiverse's own rhythm game, all written for it. From the bright bell of *Hello, World* through the *Segfault March* in 2/4, the *Waltz for a Spinning Disk* in 3/4 and *Five Nines* in 5/4, to *Escape Sequence*, *Kernel Panic* and, at 172 beats a minute, *SIGTERM*.
 
-- **Any song becomes a chart.** Press **I** on the song list and give it an MP3, FLAC, Ogg or WAV file; Cascade finds the tempo and the beat itself and builds Easy, Medium, Hard and Expert, each with a star rating.
-- **Four modifiers** to raise the stakes: Hidden, Flashlight, Sudden Death and Perfect Only, each combination with its own best score.
-- **Practice mode** loops any stretch of a song, from a quarter speed up to double, until that one run is in your fingers.
-- **Race your own ghost.** Every run is recorded, and any past one can ride along beside you as markers on the highway.
-- **Results that tell you why:** a timing histogram, accuracy across the whole song, whether you rush or drag, and the lane you keep missing.
-- **Twelve achievements,** from First Steps to Untouchable, plus a stats screen with a month of accuracy and play at a glance.
-- **Five colour themes,** Classic, Neon, Mono, Sunset and Ocean, or paint your own.
-- **Calibrate once** by tapping along to a metronome, and every note lands where you hear it.
+Then bring your own. Press **I** on the song list, hand it an MP3, FLAC, Ogg or WAV, and Cascade finds the tempo and the beat itself and builds Easy, Medium, Hard and Expert, each with a star rating.
+
+When a song starts to own you, fight back. Practice mode loops the one stretch you keep fumbling, slowed to a quarter speed if you need it, until it lives in your fingers. Every run is recorded, so your best one can ride beside you as a ghost on the highway. Turn on Hidden, Flashlight, Sudden Death or Perfect Only when you want to suffer properly. And after every song the results tell you why it went the way it did: whether you rush or drag, and which lane keeps getting away from you.
 
 ## Controls
 
