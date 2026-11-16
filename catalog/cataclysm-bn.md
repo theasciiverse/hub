@@ -4,10 +4,7 @@ You made it to an evacuation shelter, and the shelter is all there is. Outside t
 
 Cataclysm: Bright Nights is the branch of the Cataclysm family with a way to win. Its developers took Dark Days Ahead in their own direction, reworking combat, bionics, mutations, explosives and much more, and put an ending in the world. Somewhere is the Central Lab, well guarded at the front, open to a careful survivor through an access shaft or a subway station, and at its bottom lies the way to stop it all.
 
-- **A victory condition**: find the Central Lab and finish what started there
-- **New England towns and cities**: small towns, real cities with suburbs and a business district, airports with full-size aircraft, alien outposts fighting the dead in the streets
-- **Manual melee**: choose your martial arts technique, grab smaller enemies and throw them, crash through windows
-- **Mods in the box**, switched on when you make a world: Magical Nights for magic, Aftershock for science fiction, Arcana, Cataclysm++, DinoMod and dozens more, and Lua for writing new ones
+And the world is worth the trip. Small New England towns give way to real cities with suburbs and a business district; airports keep full-size aircraft on the tarmac; alien outposts fight the dead in the streets. Up close, the fighting is yours to shape: choose your martial art technique, grab a smaller enemy and throw it, crash through a window to get away. And when you start a world you can switch on whole new layers of it, magic with Magical Nights, science fiction with Aftershock, dinosaurs with DinoMod and dozens more, or write your own in Lua.
 
 ## Controls
 
