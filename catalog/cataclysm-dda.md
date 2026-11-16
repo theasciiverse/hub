@@ -46,7 +46,9 @@ grittier and more realistic survival game, and the project has grown under
 CleverRaven into one of the largest open-source games, with more than a
 thousand volunteers. Asciiverse builds it as is, with every file a
 player has, saves and
-options alike, kept in the player's data folder.
+options alike, kept in the player's data folder. In 2020 Dark Days Ahead
+grew a branch of its own, Cataclysm: Bright Nights, with a way to win;
+it is in the catalog too, as is Whales' original Cataclysm.
 
 ## Credits
 

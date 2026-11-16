@@ -37,7 +37,8 @@ folding them in within days. Players could even share one world on a
 public SSH server. Whales' last change came in January 2013, titled
 "Last commit before I wipe my hard drive". That same year the game's players picked
 it up and carried it on as Cataclysm: Dark Days Ahead, which is still
-growing today, and Whales went on to start a ground-up sequel,
+growing today (and in 2020 branched again into Cataclysm: Bright
+Nights; both are in the catalog), and Whales went on to start a ground-up sequel,
 Cataclysm II. This is where it all began: the first Cataclysm, as Whales
 last left it, playable again.
 

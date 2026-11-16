@@ -1,0 +1,54 @@
+schema_version = 1
+id = "cataclysm-bn"
+kind = "game"
+title = "Cataclysm: Bright Nights"
+description = "The world ended, but it can be won back: scavenge, craft, build and drive across a New England of the dead, and find the lab at the heart of the Cataclysm."
+year = 2020
+license = "CC-BY-SA-3.0"
+repo = "theasciiverse/cataclysm-bn"
+provenance = "Coolthulhu restarted Cataclysm: Dark Days Ahead as a fork of his own in 2020, and as Cataclysm: Bright Nights it has been carried on by its contributors with a stable release every few months since 2022."
+changes = "PATCHES.md"
+topics = ["roguelike", "survival", "post-apocalyptic", "crafting", "open-world", "turn-based", "lua"]
+genre = "roguelike"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# upstream's official curses builds of v0.13.0 (2026-09-25), unchanged; our
+# start script and what is left out in PATCHES.md
+[upstream]
+name = "Cataclysm: Bright Nights contributors"
+url = "https://github.com/cataclysmbn/Cataclysm-BN"
+
+# cataclysm-bn is the start script: it passes the data beside it with
+# --basepath and the state folder with --userdir
+[exec]
+game = "cataclysm-bn"
+
+# FULL_SCREEN_WIDTH and _HEIGHT (src/main.cpp); below that the game only
+# shows a "terminal is tiny" notice (ensure_term_size(),
+# src/ncurses_def.cpp); it uses more room when there is more
+[min_terminal]
+cols = 80
+rows = 24
+
+# upstream's Linux game links these from the system, and needs glibc 2.38
+# or newer; 256 colours when the terminal has them, the basic 8 otherwise;
+# plays fully from the keyboard
+[requires]
+utf8 = true
+color = "basic"
+mouse = false
+system_deps = ["libncursesw6", "libsqlite3-0", "zlib1g", "glibc >= 2.38"]
+
+# 100x30, asciiverse/record-preview.py: "Play Now!" in a fresh world, a
+# walk out of the evacuation shelter to the nearest unexplored edges, the
+# overmap, then save and quit; the still is in the shelter, another
+# survivor beside the benches and footsteps to the south
+[media]
+cast = "asciiverse/cataclysm-bn.cast"
+thumbnail_at = 30.0
+
+[release]
+source = "github"
