@@ -1,0 +1,53 @@
+schema_version = 1
+id = "supernova"
+kind = "adventure"
+title = "Supernova"
+description = "A broke miner on a dust-ball planet overhears two aliens talking about a crystal worth millions, flies off to find it, and lands in the last days of a dying star."
+year = 1987
+old = true
+license = "AGPL-3.0-or-later"
+repo = "theasciiverse/supernova"
+provenance = "Scott Miller wrote Supernova in 1985, with Terry Nagy on the story, and published it as shareware in 1987, the year he founded Apogee. Apogee made it freeware in 1998 and released its source in 2009, and Jason Self brought it back to life on modern systems in 2014."
+changes = "PATCHES.md"            # what Asciiverse changed, a path in repo
+topics = ["text-adventure", "classic", "science-fiction", "space", "apogee"]
+genre = "text adventure"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# Jason Self's Free Pascal revival (2014) of Apogee's 2009 source release,
+# master at dcdf2ef (2014-11-21) as the upstream remote; PATCHES.md in
+# theasciiverse/supernova
+[upstream]
+name = "Scott Miller and Terry Nagy"
+url = "https://jxself.org/supernova.shtml"
+
+# Free Pascal 3.2.2 with src/avcrt.pas for the screen: the framed screen
+# fills any terminal, text wrapped to the width and laid out again on a
+# resize, paging back with Shift+PgUp; saves and the SUPERNOVA_LOG session
+# log in $XDG_STATE_HOME/supernova (%LOCALAPPDATA% on Windows)
+[exec]
+game = "supernova"
+args = []
+
+[min_terminal]
+cols = 80
+rows = 24
+
+# box-drawn frame and colour panels (UTF-8)
+[requires]
+utf8 = true
+color = "basic"
+mouse = false
+
+# 100x30, asciiverse/record-preview.py: the flickering title, the identity
+# code, life in the Barre-An mines, the tavern's menu, a mug of glunk lite,
+# and two alien miners talking about the crystal, 51 s; the still is their
+# conversation, coordinates and all
+[media]
+cast = "asciiverse/supernova.cast"
+thumbnail_at = 46.0
+
+[release]
+source = "github"
