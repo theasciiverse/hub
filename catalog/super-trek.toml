@@ -1,0 +1,47 @@
+schema_version = 1
+id = "super-trek"
+kind = "game"
+title = "Super Trek"
+description = "The great 1970s Trek game of UT Austin, Tom Almy and ESR's SST2K, on a bridge screen: hunt a Klingon invasion across an eight by eight galaxy by warp, phaser and photon torpedo, one typed order at a time, against the clock."
+year = 1974
+old = true
+license = "BSD-3-Clause AND LicenseRef-Super-Star-Trek"
+repo = "theasciiverse/super-trek"
+provenance = "David Matuszek and Paul Reynolds wrote Super Star Trek in FORTRAN at the University of Texas at Austin in 1973 and 1974; Tom Almy carried it to C in the 1990s and Eric S. Raymond grew it into SST2K from 2004."
+changes = "PATCHES.md"
+topics = ["strategy", "space", "classic", "teletype", "turn-based"]
+genre = "strategy"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "Eric S. Raymond (SST2K)"
+url = "https://gitlab.com/esr/super-star-trek"
+
+[exec]
+game = "super-trek"
+args = []
+
+# the bridge screen needs 80x24; in less the game falls back to its
+# teletype line mode, whose widest line is the 48-column star chart
+[min_terminal]
+cols = 80
+rows = 24
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = false
+
+# 100x30, asciiverse/record-preview.sh (seed 136, 42 s): phaser volleys
+# and a torpedo spread clear the first quadrant, then a warp into a
+# Commander's ambush; the still is the ambush, Commander on the scan,
+# critical hits in the log
+[media]
+cast = "asciiverse/super-trek.cast"
+thumbnail_at = 30.0
+
+[release]
+source = "github"
