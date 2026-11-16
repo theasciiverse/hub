@@ -1,0 +1,55 @@
+schema_version = 1
+id = "tapline"
+kind = "game"
+title = "tapline"
+description = "Notes fall down 4 to 7 lanes and every hit plays its sound: keysound charts where the melody is in your fingers, eight Bellbeat songs and eight charts of its own, and any BMS or bmson chart you bring."
+year = 2026
+new = true
+license = "MIT"
+repo = "theasciiverse/tapline"
+provenance = "Yuji Ueki (unhappychoice) started tapline in Rust in July 2026 as a simple four-lane rhythm game for BMS charts, and in November 2026 grew it into a full keysound player with scratch lanes, chart pictures drawn in half blocks and bmson."
+changes = "PATCHES.md"
+topics = ["rhythm", "music", "keysounds", "bms", "bmson", "7-key", "4-key", "arcade", "rust"]
+genre = "rhythm"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# upstream's main at d100b73 (2026-11-16), version 0.1.0, with keysound
+# charts of eight Bellbeat songs; PATCHES.md in theasciiverse/tapline
+[upstream]
+name = "Yuji Ueki"
+url = "https://github.com/unhappychoice/tapline"
+
+# the charts in songs/ beside the binary; results in $XDG_STATE_HOME/tapline,
+# the player's own charts in songs/ there; RUST_LOG=debug writes the
+# session log to stderr, which av keeps
+[exec]
+game = "tapline"
+args = []
+
+# the seven-lane play screen is 50 columns wide and fits 60x20; the
+# selector cuts its rows to the width
+[min_terminal]
+cols = 60
+rows = 20
+
+# box drawing and block characters, the 256 colours, true colour for
+# chart pictures; long notes are judged on release where the terminal
+# reports key releases
+[requires]
+utf8 = true
+color = "256"
+mouse = false
+system_deps = ["libasound2"]
+
+# 100x30, asciiverse/record-preview.sh: Null Pointer Samba on 7 keys,
+# played start to finish by --autoplay, then the result (CLEAR, 129
+# PERFECT); 58 s, the still is a long note coming down at combo 80
+[media]
+cast = "asciiverse/tapline.cast"
+thumbnail_at = 33.0
+
+[release]
+source = "github"
