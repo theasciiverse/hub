@@ -1,0 +1,51 @@
+schema_version = 1
+id = "rhex"
+kind = "game"
+title = "Rhex"
+description = "A roguelike on hexagons where you have a front and a back: turn to look, listen for what you cannot see, and strike from behind through a Dark Forest and the torchlit Dungeon below."
+year = 2015
+license = "MPL-2.0"
+repo = "theasciiverse/rhex"
+provenance = "Dawid Ciężarkiewicz began Rhex in Rust in January 2015 to practise the language on a hexagonal grid, built it out with contributors through 2016, and brought it back in October 2026 on Crossterm and Ratatui, adding the Dark Forest, chests, and sound that carries through the trees."
+changes = "PATCHES.md"
+topics = ["roguelike", "hex grid", "facing", "stealth", "light and sound", "dark fantasy", "rust", "ratatui"]
+genre = "roguelike"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# upstream's master at dd1b6b6 (2026-10-21), Cargo version 0.1.1;
+# our change (session logging into the state folder) in PATCHES.md
+[upstream]
+name = "Dawid Ciężarkiewicz"
+url = "https://github.com/dpc/rhex"
+
+# no saves or settings; the session log is rhex.log in
+# $XDG_STATE_HOME/rhex (RUST_LOG=debug for every key and snapshots)
+[exec]
+game = "rhex"
+
+# its own check: below 60x24 it pauses and asks for a bigger terminal;
+# 100x30 is its comfortable layout
+[min_terminal]
+cols = 60
+rows = 24
+
+# 256-colour palette shades for light and terrain; Unicode glyphs
+# (gamma thickets, bullets, squares for chests)
+[requires]
+utf8 = true
+color = "256"
+mouse = false
+
+# 100x30, asciiverse/record-preview.sh: a dwarf in the Dark Forest
+# (rats, a chest, the path onward), then a torchlit Dungeon room and a
+# rat fight, played by asciiverse/drive.py; the still is the forest
+# with the path onward in sight
+[media]
+cast = "asciiverse/rhex.cast"
+thumbnail_at = 20.0
+
+[release]
+source = "github"
