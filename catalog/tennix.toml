@@ -1,0 +1,52 @@
+schema_version = 1
+id = "tennix"
+kind = "game"
+title = "Tennix"
+description = "Thomas Perl's tennis game: hold the hit key to fill your power bar, let go to swing, and take on the computer or a friend on clay, grass and hard courts around the world."
+year = 2003
+license = "GPL-2.0-or-later"
+repo = "theasciiverse/tennix"
+provenance = "Thomas Perl wrote Tennix! in 2003, ported it to SDL in 2007 and grew it into the Classic Championship Tour, still releasing new versions in 2026."
+changes = "PATCHES.md"
+topics = ["tennis", "sports", "power bar", "computer opponent", "two players", "world tour", "weather", "c port", "rust"]
+genre = "sports"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# his 1.3.5 (2026-08-28, tag tennix-1.3.5 at e527182), ported from C to
+# Rust; his C kept in c/, PATCHES.md in theasciiverse/tennix
+[upstream]
+name = "Thomas Perl"
+url = "https://icculus.org/tennix/"
+
+# settings, the match left to resume, in $XDG_STATE_HOME/tennix
+[exec]
+game = "tennix"
+args = []
+
+# the court is drawn to fit any size; under 60x16 it asks for more room
+[min_terminal]
+cols = 60
+rows = 16
+
+# half blocks in 24-bit colour; key releases through the kitty protocol
+# where the terminal has it; gamepads through gilrs
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = false
+gamepad = true
+
+system_deps = ["libasound2", "libudev1"]
+
+# 100x30, asciiverse/record-preview.sh: the computer plays itself on the
+# grass of Melbourne, a twelve-shot rally won at 31 s; the still is the
+# ball crossing the net mid-rally
+[media]
+cast = "asciiverse/tennix.cast"
+thumbnail_at = 25.0
+
+[release]
+source = "github"
