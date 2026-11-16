@@ -53,7 +53,8 @@ McConnell, have carried it on, and dozens of other roguelikes are its
 variants.
 
 Some of that family are here too: FAangband, Nick McConnell's own
-variant set in the First Age of Beleriand; PWMAngband, Angband for many
+variant set in the First Age of Beleriand; Unangband, Andrew Doull's
+unnamed variant that spans all of Middle-earth; PWMAngband, Angband for many
 players at once; Sil-Q, a heist for a Silmaril in Morgoth's own halls; and FroxComposband,
 grown from the long Zangband line.
 

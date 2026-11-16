@@ -1,0 +1,54 @@
+schema_version = 1
+id = "unangband"
+kind = "game"
+title = "Unangband"
+description = "The Unnamed Angband: travel all of Middle-earth from Hobbiton and Farmer Maggot's cellars to Moria, Mirkwood and Orodruin, with more than twenty races, thirteen classes and the One Ring to find."
+year = 2000
+license = "GPL-2.0-only"
+repo = "theasciiverse/unangband"
+provenance = "Andrew Doull began the Unnamed Angband in 2000 and grew it for a decade into a variant spanning all of Middle-earth; Duncan Lowther took it on in 2016 and carried it to 0.7.0."
+changes = "PATCHES.md"
+topics = ["roguelike", "angband", "dungeon", "fantasy", "tolkien", "wilderness", "turn-based"]
+genre = "roguelike"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# upstream's master at 70ca6de (2025-05-26), 0.7.0-pre1 and eleven
+# commits; our changes (a curses colour fix, data beside the binary,
+# player files in the state folder) in PATCHES.md
+[upstream]
+name = "Andrew Doull and Duncan Lowther"
+url = "https://github.com/DGoldDragon28/Unangband"
+
+# lib/ ships beside the binary; saves, scores, options and the compiled
+# data files in $XDG_STATE_HOME/unangband. Its data checks print to
+# stderr at start, so av's log is the right place for them
+[exec]
+game = "unangband"
+
+# main-gcu.c quits with "Angband needs at least an 80x24 'curses'
+# screen"; bigger terminals show more of the map
+[min_terminal]
+cols = 80
+rows = 24
+
+# plain curses, 8 colours and 256 when the terminal has them; keyboard
+# only
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, asciiverse/record-preview.py: a Dwarf Warrior called Gimrin made
+# at the birth screens, Hobbiton, the road to Farmer Maggot's farm, a rock
+# lizard and an insect swarm, Mr Maggot's note, and down into the farm
+# cellars (best of five takes); the still is the farm with Farmer Maggot
+# beside the cellar door, at 33 s
+[media]
+cast = "asciiverse/unangband.cast"
+thumbnail_at = 33.0
+
+[release]
+source = "github"
