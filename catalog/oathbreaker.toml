@@ -1,0 +1,53 @@
+schema_version = 1
+id = "oathbreaker"
+kind = "game"
+title = "Oathbreaker"
+description = "Executions will continue until prisoner morale improves: slip out of your cell in a goblin-held prison city and climb eight floors to freedom before the guards, the hunters and the Necromancer's mages find you."
+year = 2021
+license = "GPL-3.0-only"
+repo = "theasciiverse/oathbreaker"
+provenance = "Kiëd Llaentenn (kiedtl) began Oathbreaker on 1 May 2021 on a Raspberry Pi Zero, a prison escape in which you turn the place against your jailers, and has grown it through four major versions since."
+changes = "PATCHES.md"
+topics = ["stealth", "coffee-break", "prison escape", "goblins", "necromancy", "rings", "permadeath", "zig"]
+genre = "roguelike"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# upstream's v4.1.0 (2025-12-31), its termbox frontend (upstream's own
+# releases are the SDL tiles edition); PATCHES.md in theasciiverse/oathbreaker
+[upstream]
+name = "Kiëd Llaentenn (kiedtl)"
+url = "https://github.com/kiedtl/roguelike"
+
+# data/ beside the binary; morgue files and session.log in
+# $XDG_STATE_HOME/oathbreaker; no network (Sentry crash reports removed)
+[exec]
+game = "oathbreaker"
+args = []
+
+# its own check (ui.zig MIN_WIDTH, MIN_HEIGHT): "Your terminal is too
+# small. Minimum: 150x44."; the screen is a fixed 150x44
+[min_terminal]
+cols = 150
+rows = 44
+
+# 24-bit colour (termbox truecolor output); box, block and other Unicode
+# glyphs; no mouse in the termbox edition
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = false
+
+# recorded at 150x44 by asciiverse/record-preview.py (a bot on 8/Prison,
+# seed 3: a patrol stabbed, an ember mage and its emberlings by a shrine, a
+# death and the epitaph), then put together at 100x30 from the game's own
+# cells by asciiverse/compose-preview.py: the map following the player, the
+# sidebar and the log. The still is the ember mage fight by the shrine
+[media]
+cast = "asciiverse/oathbreaker.cast"
+thumbnail_at = 19.0
+
+[release]
+source = "github"
