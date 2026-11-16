@@ -1,0 +1,52 @@
+schema_version = 1
+id = "road-closed"
+kind = "game"
+title = "Road Closed"
+description = "Drive two thousand kilometres into an exclusion zone towards a room that grants wishes, stopping to scavenge fuel, food and firewood among the things that live there, and sleeping by the fire when night stalkers come out."
+year = 2026
+license = "MIT"
+repo = "theasciiverse/gridbugs-7drls"
+collection = "gridbugs-7drls"
+provenance = "Stephen Sherratt (gridbugs) made Road Closed in seven days for the 7DRL Challenge of March 2026, after Roadside Picnic and Pacific Drive, on his own Rust library for games drawn in characters."
+changes = "PATCHES.md"
+topics = ["roguelike", "7drl", "road trip", "exclusion zone", "survival", "scavenging", "car", "turn-based", "rust", "chargrid"]
+genre = "roguelike"
+new = true
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# github.com/gridbugs/road-closed, main at 74a9c9d (2026-03-07), in
+# theasciiverse/gridbugs-7drls with its history (UPSTREAM.md)
+[upstream]
+name = "Stephen Sherratt (gridbugs)"
+url = "https://gridbugs.itch.io/road-closed"
+
+# the ansi-terminal frontend (the game has no sound); saves, config,
+# controls and your wishes in $XDG_STATE_HOME/road-closed
+[exec]
+game = "road-closed"
+args = []
+
+# a fixed 80x30 layout: the map, the side panels and the status lines
+[min_terminal]
+cols = 80
+rows = 30
+
+# true colour by default (--rgb, --ansi and --greyscale for others);
+# box drawing and shade blocks for the car
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = false
+
+# 100x30, asciiverse/record-preview.sh with road-closed/drive.sh: the
+# car and the opening text, driving on, then a stop in the pines walked
+# by explore.py, a zombie fought bare-handed, the inventory
+[media]
+cast = "asciiverse/road-closed/road-closed.cast"
+thumbnail_at = 22.0
+
+[release]
+source = "github"

@@ -46,3 +46,8 @@ description = "Pieczasz's card tables served over SSH, in Go since 2026: Crazy E
 name = "BCG Games"
 url = "https://github.com/theasciiverse/bcg-games"
 description = "Games from David H. Ahl's BASIC Computer Games (Creative Computing, 1978), the book that brought computer games to a generation, rebuilt by Asciiverse in 2026 from their rules, each crediting its original authors"
+
+[gridbugs-7drls]
+name = "gridbugs' 7DRLs"
+url = "https://gridbugs.itch.io"
+description = "Stephen Sherratt's (gridbugs) seven-day roguelikes, one most years since 2018, each made for the 7DRL Challenge on his own Rust library for games drawn in characters, in their terminal editions"

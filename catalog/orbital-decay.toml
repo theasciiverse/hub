@@ -1,0 +1,57 @@
+schema_version = 1
+id = "orbital-decay"
+kind = "game"
+title = "Orbital Decay"
+description = "Deliver the fuel cell five floors down a space station overrun by its undead crew, in a tactical roguelike where every shot that misses might breach the hull and pull you into the void."
+year = 2021
+license = "MIT"
+repo = "theasciiverse/gridbugs-7drls"
+collection = "gridbugs-7drls"
+provenance = "Stephen Sherratt (gridbugs) made Orbital Decay in seven days for the 7DRL Challenge of March 2021, on his own Rust library for games drawn in characters, and kept refining it until 2023."
+changes = "PATCHES.md"
+topics = ["roguelike", "7drl", "tactical", "ranged combat", "zombies", "space station", "vacuum", "turn-based", "rust", "chargrid"]
+genre = "roguelike"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# github.com/gridbugs/orbital-decay, main at 08eb7e2 (2023-03-17), in
+# theasciiverse/gridbugs-7drls with its history (UPSTREAM.md)
+[upstream]
+name = "Stephen Sherratt (gridbugs)"
+url = "https://gridbugs.itch.io/orbital-decay"
+
+# the ansi-terminal frontend built without its sound feature (the music
+# and effects' licences are not stated upstream): silent; saves, config
+# and controls in $XDG_STATE_HOME/orbital-decay
+[exec]
+game = "orbital-decay"
+args = []
+
+# a fixed layout: the station in 3x3 character tiles with the status
+# column at the right, drawn for 80x60 and cut off below that
+[min_terminal]
+cols = 80
+rows = 60
+
+# true colour by default (--rgb, --ansi and --greyscale for others);
+# block and quadrant characters; gamepad through gilrs (libudev)
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = false
+gamepad = true
+
+system_deps = ["libudev1"]
+
+# 80x60, asciiverse/record-preview.sh with orbital-decay/drive.sh: the
+# prologue, then a fixed seed and walk through the first floor into a
+# bare-handed fight with a zombie; cropped to 100x30 following the player
+[media]
+cast = "asciiverse/orbital-decay/orbital-decay.cast"
+thumbnail_at = 30.0
+crop = { follow = "player" }
+
+[release]
+source = "github"

@@ -1,0 +1,54 @@
+schema_version = 1
+id = "boat-journey"
+kind = "game"
+title = "Boat Journey"
+description = "Steer a boat down a long river to the ocean, taking on passengers who each lend you a power, trading junk for fuel, and reaching the inn before the beasts and ghosts come out at night."
+year = 2023
+license = "MIT"
+repo = "theasciiverse/gridbugs-7drls"
+collection = "gridbugs-7drls"
+provenance = "Stephen Sherratt (gridbugs) made Boat Journey in seven days for the 7DRL Challenge of March 2023, on his own Rust library for games drawn in characters, with hand-drawn ANSI-art portraits."
+changes = "PATCHES.md"
+topics = ["roguelike", "7drl", "boat", "river", "journey", "passengers", "ansi art", "turn-based", "rust", "chargrid"]
+genre = "roguelike"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# github.com/gridbugs/boat-journey, main at ec06291 (2023-05-27), in
+# theasciiverse/gridbugs-7drls with its history (UPSTREAM.md)
+[upstream]
+name = "Stephen Sherratt (gridbugs)"
+url = "https://gridbugs.itch.io/boat-journey"
+
+# the ansi-terminal frontend (the game has no sound); saves, config and
+# controls in $XDG_STATE_HOME/boat-journey
+[exec]
+game = "boat-journey"
+args = []
+
+# the view, the passengers and effects column and the status line are
+# laid out for 80x60, whatever the terminal's size
+[min_terminal]
+cols = 80
+rows = 60
+
+# true colour by default (--rgb, --ansi and --greyscale for others);
+# ANSI-art portraits in shade blocks
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = false
+
+# 80x60, asciiverse/record-preview.sh with boat-journey/drive.sh: a fixed
+# seed and walk out of the inn, a townsperson, the thief taken aboard,
+# and the boat driven away up the river; cropped to 100x30 following the
+# player
+[media]
+cast = "asciiverse/boat-journey/boat-journey.cast"
+thumbnail_at = 33.0
+crop = { follow = "player" }
+
+[release]
+source = "github"

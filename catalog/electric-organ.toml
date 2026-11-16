@@ -1,0 +1,55 @@
+schema_version = 1
+id = "electric-organ"
+kind = "game"
+title = "Electric Organ"
+description = "Fight down through four levels of Retro-Future City to destroy the CORRUPTOR, harvesting hearts, lungs and Cronenberg guns from the dead and wiring them into yourself, to a soundtrack synthesised live."
+year = 2024
+license = "MIT"
+repo = "theasciiverse/gridbugs-7drls"
+collection = "gridbugs-7drls"
+provenance = "Stephen Sherratt (gridbugs) made Electric Organ in seven days for the 7DRL Challenge of March 2024, on his own Rust libraries for games drawn in characters and for synthesised sound, and updated it in 2025 and 2026."
+changes = "PATCHES.md"
+topics = ["roguelike", "7drl", "body horror", "organs", "cyberpunk", "ranged combat", "mutations", "synthesised music", "rust", "chargrid"]
+genre = "roguelike"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# github.com/gridbugs/electric-organ, main at 6e5af91 (2026-01-28), in
+# theasciiverse/gridbugs-7drls with its history (UPSTREAM.md)
+[upstream]
+name = "Stephen Sherratt (gridbugs)"
+url = "https://gridbugs.itch.io/electric-organ"
+
+# the ansi-terminal frontend with its sound: music and effects
+# synthesised live by caw (MIT), through ALSA on Linux; --mute opens no
+# audio device, and with no device it plays on silent; saves, config and
+# controls in $XDG_STATE_HOME/electric-organ
+[exec]
+game = "electric-organ"
+args = []
+
+# a fixed 80x30 layout: the map, the status column and the message log
+[min_terminal]
+cols = 80
+rows = 30
+
+# true colour by default (--rgb, --ansi and --greyscale for others);
+# box drawing and shade blocks
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = false
+
+system_deps = ["libasound2"]
+
+# 100x30, asciiverse/record-preview.sh with electric-organ/drive.sh: the
+# title, then the first level walked by explore.py out of the evac zone,
+# a look at your organs, then out into the streets; --mute
+[media]
+cast = "asciiverse/electric-organ/electric-organ.cast"
+thumbnail_at = 27.0
+
+[release]
+source = "github"
