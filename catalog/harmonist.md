@@ -37,4 +37,5 @@ anaseto (Yon) began Harmonist in 2019, growing it out of the code of Boohu, his 
 
 - Harmonist: anaseto (Yon), on [itch.io](https://anaseto.itch.io/harmonist) and [Codeberg](https://codeberg.org/anaseto/harmonist)
 - Lore: kaoseto
+- More from anaseto here: Boohu: Break Out Of Hareka's Underground, his first roguelike, in the same Underground, and Shamanic Mountain Guardian (Shamogu)
 - License: ISC

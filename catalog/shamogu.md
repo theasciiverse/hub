@@ -36,4 +36,5 @@ anaseto (Yon) released Shamogu in 2025, built on gruid, the same library as his 
 ## Credits
 
 - Shamogu: anaseto (Yon) and contributors, on [itch.io](https://anaseto.itch.io/shamogu) and [Codeberg](https://codeberg.org/anaseto/shamogu)
+- More from anaseto here: Boohu: Break Out Of Hareka's Underground, his first roguelike, and Harmonist: Dayoriah Clan Infiltration, which grew out of it
 - License: ISC

@@ -1,0 +1,53 @@
+schema_version = 1
+id = "boohu"
+kind = "game"
+title = "Boohu: Break Out Of Hareka's Underground"
+description = "A coffee-break roguelike: sent down for the medicinal simellas, you fight or flee through eight levels of Hareka's Underground, where every weapon, door and magical stone is a question of where you stand."
+year = 2017
+license = "ISC"
+repo = "theasciiverse/boohu"
+provenance = "anaseto (Yon) made Boohu in 2017, his first roguelike, shaped by Dungeon Crawl Stone Soup and Brogue; two years later he grew Harmonist out of its code, in the same Underground."
+changes = "PATCHES.md"
+topics = ["roguelike", "coffee-break", "tactical", "fantasy", "turn-based", "no-xp", "replays", "mouse", "go"]
+genre = "roguelike"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# upstream's v0.14.1 tag (2025-03-05), terminal (tcell) build;
+# PATCHES.md in theasciiverse/boohu
+[upstream]
+name = "anaseto"
+url = "https://codeberg.org/anaseto/boohu"
+
+# save, config, replay and statistics dump in $XDG_STATE_HOME/boohu;
+# -s picks the solarized 16 colours, -o 8 colours, -c a centred camera
+[exec]
+game = "boohu"
+args = []
+
+# the compact layout; from 93x25 up it draws its full 100x26 layout
+# with the side panel
+[min_terminal]
+cols = 80
+rows = 24
+
+# Unicode symbols for terrain and items; the xterm 256 colour palette
+# by default (8 colours on Windows); mouse to move and for the buttons
+[requires]
+utf8 = true
+color = "256"
+mouse = true
+
+# 100x30, asciiverse/record-preview.sh: the title, then the simella
+# gatherer exploring the first level, beating a goblin and gathering five
+# simellas, played by asciiverse/drive.py (the best of many takes); the
+# still is the level half mapped, a satowalga plant spitting acid at the
+# hero
+[media]
+cast = "asciiverse/boohu.cast"
+thumbnail_at = 41.0
+
+[release]
+source = "github"
