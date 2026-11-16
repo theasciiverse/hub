@@ -52,6 +52,11 @@ from 1995, Robert Ruehlmann, Anna Sidwell and the current maintainer, Nick
 McConnell, have carried it on, and dozens of other roguelikes are its
 variants.
 
+Some of that family are here too: FAangband, Nick McConnell's own
+variant set in the First Age of Beleriand; PWMAngband, Angband for many
+players at once; Sil-Q, a heist for a Silmaril in Morgoth's own halls; and FroxComposband,
+grown from the long Zangband line.
+
 ## Credits
 
 - Game: the Angband Dev Team (maintainer Nick McConnell), after Alex

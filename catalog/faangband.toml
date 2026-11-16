@@ -1,0 +1,54 @@
+schema_version = 1
+id = "faangband"
+kind = "game"
+title = "FAangband"
+description = "First Age Angband: Beleriand in the days of the War of the Jewels. Cross the wilderness from your people's town, face Mîm, Glaurung and Sauron in their dungeons, and go down into Angband for Morgoth."
+year = 2005
+# GPL-2 or the non-commercial "Angband licence", at the user's choice
+# (docs/copying.rst); taken under the GPL, which says "version 2" only
+license = "GPL-2.0-only"
+repo = "theasciiverse/faangband"
+provenance = "Nick McConnell made First Age Angband from Oangband in 2005 to bring Tolkien's Silmarillion into Angband, and in 2020 and 2021 rebuilt it on the modern Angband he maintains."
+changes = "PATCHES.md"
+topics = ["roguelike", "angband", "dungeon", "fantasy", "tolkien", "wilderness", "turn-based"]
+genre = "roguelike"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# upstream's weekly build 2.0.1-1103-gc4ee2ce24 (2026-10-14); our changes
+# (Shockbolt tiles removed, data beside the binary, player files in the
+# state folder) in PATCHES.md
+[upstream]
+name = "Nick McConnell"
+url = "https://github.com/NickMcConnell/FAangband"
+
+# lib/ ships beside the binary; saves, options, dumps and scores in
+# $XDG_STATE_HOME/faangband
+[exec]
+game = "faangband"
+
+# main-gcu.c quits with "FAangband needs at least an 80x24 'curses'
+# screen"; bigger terminals show more of the map
+[min_terminal]
+cols = 80
+rows = 24
+
+# main.c quits unless the locale is UTF-8; main-gcu.c needs 8 colours and
+# uses 256 when the terminal has them; keyboard only
+[requires]
+utf8 = true
+color = "basic"
+mouse = false
+
+# 100x30, asciiverse/record-preview.py: a Beorning Warrior called Beorn
+# made at the birth screens, Gladden Fields Town, then out along the path
+# west into the Anduin Vale, where he becomes a bear cub and fights what
+# he meets (best of five takes)
+[media]
+cast = "asciiverse/faangband.cast"
+thumbnail_at = 40.0
+
+[release]
+source = "github"
