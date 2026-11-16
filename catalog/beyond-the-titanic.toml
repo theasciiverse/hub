@@ -1,0 +1,52 @@
+schema_version = 1
+id = "beyond-the-titanic"
+kind = "adventure"
+title = "Beyond the Titanic"
+description = "April 1912, and the unsinkable ship has just hit the iceberg. Surviving the night is only the start of a journey through caverns under the sea, a buried alien saucer and a ruined future, all the way home."
+year = 1986
+old = true
+license = "AGPL-3.0-or-later"
+repo = "theasciiverse/beyond-the-titanic"
+provenance = "Scott Miller began Beyond the Titanic in May 1984 and published it as shareware in 1986, the year before he founded Apogee. Apogee made it freeware in 1998 and released its source in 2009, and Jason Self brought it back to life on modern systems in 2014."
+changes = "PATCHES.md"            # what Asciiverse changed, a path in repo
+topics = ["text-adventure", "classic", "titanic", "time-travel", "science-fiction", "apogee"]
+genre = "text adventure"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# Jason Self's Free Pascal revival (2014) of Apogee's 2009 source release,
+# master at 6cb4785 (2014-06-09) as the upstream remote; PATCHES.md in
+# theasciiverse/beyond-the-titanic
+[upstream]
+name = "Scott Miller"
+url = "https://jxself.org/beyond-the-titanic.shtml"
+
+# Free Pascal 3.2.2 with src/avcrt.pas for the screen: fills any terminal,
+# text wrapped to the width and laid out again on a resize, paging back
+# with Shift+PgUp; saves and the BEYOND_THE_TITANIC_LOG session log in
+# $XDG_STATE_HOME/beyond-the-titanic (%LOCALAPPDATA% on Windows)
+[exec]
+game = "beyond-the-titanic"
+args = []
+
+[min_terminal]
+cols = 80
+rows = 24
+
+# the status bar and prompt use colour and the PC's » (UTF-8)
+[requires]
+utf8 = true
+color = "basic"
+mouse = false
+
+# 100x30, asciiverse/record-preview.py: the title, the night on the
+# Titanic's deck, a walk to the lifeboats, the iceberg, the survival kit,
+# 42 s; the still is the iceberg striking, from the lifeboat
+[media]
+cast = "asciiverse/beyond-the-titanic.cast"
+thumbnail_at = 24.0
+
+[release]
+source = "github"
