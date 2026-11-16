@@ -41,10 +41,13 @@ utf8 = true
 color = "basic"
 mouse = false
 
-# 100x30 preview: to be recorded once the build has been played locally
+# 100x30, asciiverse/record-preview.sh: the start screen, then a first
+# trade, tea bought in Hong Kong and sold in Nagasaki, and a look at the
+# shipyard, played by asciiverse/drive.py; the still is the Hong Kong
+# market's price list at 11 s
 [media]
 cast = "asciiverse/sea-trader.cast"
-thumbnail_at = 10.0
+thumbnail_at = 11.0
 
 [release]
 source = "github"
