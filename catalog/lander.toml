@@ -1,0 +1,51 @@
+schema_version = 1
+id = "lander"
+kind = "game"
+title = "Lander"
+description = "The lunar lander in real time: three rockets, ten power levels and a tank of fuel to bring the module down onto a pad at under five metres a second, each landing starting faster than the last."
+year = 1989
+license = "GPL-2.0"
+repo = "theasciiverse/lander"
+provenance = "Stacey Campbell wrote Lander in C at HCR Corporation in Toronto in 1989 and posted it to comp.sources.games; years later he restored it from a Usenet archive."
+changes = "PATCHES.md"
+topics = ["lunar-lander", "physics", "thrust", "fuel", "real-time", "usenet", "curses", "c"]
+genre = "arcade"
+old = true
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# upstream's master at e30c175 (2022-08-20), no version named, so
+# v1.0+20220820-av.N; PATCHES.md in theasciiverse/lander
+[upstream]
+name = "Stacey Campbell"
+url = "https://github.com/staceycampbell/lander"
+
+# high scores in $XDG_STATE_HOME/lander/lander.hs; with LANDER_LOG set, a
+# session log beside them
+[exec]
+game = "lander"
+args = []
+
+# a fixed 80x24 display, centred; smaller terminals get a message
+[min_terminal]
+cols = 80
+rows = 24
+
+# ASCII with curses line drawing, no colour, keys only
+[requires]
+utf8 = false
+color = "none"
+mouse = false
+
+# 100x30, asciiverse/record-preview.sh: asciiverse/drive.py flies a
+# planned descent into the shaft on the right and lands on the 50 pad,
+# then crashes the faster second descent onto the mesa pad; 60 s; the
+# still is the landing with its bonuses
+[media]
+cast = "asciiverse/lander.cast"
+thumbnail_at = 38.5
+
+[release]
+source = "github"
