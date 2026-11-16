@@ -1,0 +1,49 @@
+schema_version = 1
+id = "zracer-c40"
+kind = "game"
+title = "ZRacer"
+description = "Real-time racing drawn in slashes and underscores: three laps, three pickups, a fuel gauge running dry and a clock to beat, across thirty tracks and a bonus level."
+year = 2007
+license = "LicenseRef-Free-Distribution"
+repo = "theasciiverse/stories"
+provenance = "David Fisher wrote ZRacer in Inform 6, without any library, for the 2007 C-40 ZCode competition, where every game had to fit in 40K."
+changes = "zracer-c40/README.md"            # the story file's provenance and sha256, a path in repo
+topics = ["racing", "real-time", "z-machine", "inform", "time-trial", "level-editor"]
+genre = "racing"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# the story file zracer.z5 unchanged (sha256 4c110820...b42b40 in the
+# stories repo, zracer-c40/README.md), played with the bundled Frotz 2.55,
+# whose timed input drives the race. Not lRem's curses ZRacer.
+[upstream]
+name = "David Fisher"
+url = "https://ifarchive.org/if-archive/games/zcode/zracer.z5"
+
+# the start script plays the story in the bundled Frotz; saves go to
+# ~/.local/share/zracer-c40
+[exec]
+game = "zracer-c40"
+args = []
+
+[min_terminal]
+cols = 80
+rows = 24
+
+# ASCII track, colours for the pickups, fuel and the moving block
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, asciiverse/record-preview-realtime.py: the title, then Level 1
+# (Arena) raced for three laps with the clock, laps and fuel running, and
+# out through the pause menu, 45 s; the still is the car on the track
+[media]
+cast = "asciiverse/zracer-c40.cast"
+thumbnail_at = 20.0
+
+[release]
+source = "github"
