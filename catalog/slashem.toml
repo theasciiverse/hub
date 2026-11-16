@@ -1,0 +1,50 @@
+schema_version = 1
+id = "slashem"
+kind = "game"
+title = "SLASH'EM"
+description = "Super Lotsa Added Stuff Hack: NetHack with eighteen roles, ten races, techniques, lightsabers and a dungeon full of new branches, from Grund's Stronghold to Frankenstein's Lab."
+year = 1997
+license = "NGPL"
+repo = "theasciiverse/slashem"
+provenance = "Warren Cheung, a high school student learning C, combined Tom Proudfoot's SLASH and the Wizard Patch into SLASH'EM in November 1997; a team led by him and J. Ali Harlow carried it to its last releases in 2006."
+changes = "PATCHES.md"
+topics = ["roguelike", "dungeon", "fantasy", "turn-based", "nethack-variant"]
+genre = "roguelike"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# the 0.0.8E0F1 release tarball (2006-12-30) on the CVS history; our
+# changes (state folder, data beside the binary, no external compressor,
+# seduction built out) in PATCHES.md
+[upstream]
+name = "Warren Cheung, J. Ali Harlow and the SLASH'EM development team"
+url = "https://sourceforge.net/projects/slashem/"
+
+# the tty interface; saves, scores and slashemrc in $XDG_STATE_HOME/slashem
+[exec]
+game = "slashem"
+
+# laid out for 80x24: message line, the 80x21 map, two status lines
+[min_terminal]
+cols = 80
+rows = 24
+
+# 16 colours (turned on in the first slashemrc), plain ASCII; keyboard only
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 80x24, the tty interface's own size (narrower and shorter than 100x30,
+# shown centred), asciiverse/record-preview.py: Freya the Valkyrie and her
+# kitten explore the first level, go down the stairs and save on the
+# second (45 s); the still is the kitten, Freya and the down stairs in
+# the fourth room mapped
+[media]
+cast = "asciiverse/slashem.cast"
+thumbnail_at = 34.2
+
+[release]
+source = "github"
