@@ -1,0 +1,50 @@
+schema_version = 1
+id = "mad-bomber"
+kind = "game"
+title = "The Mad Bomber"
+description = "Your plane is out of fuel and the city is in the way. Bomb the towers flat, one bomb at a time, before your sinking flight path meets the rooftops."
+year = 1997
+license = "LicenseRef-Public-Domain"
+repo = "theasciiverse/stories"
+provenance = "Neil James Brown wrote The Mad Bomber in Inform 6 in 1997, a real-time take on the classic Bomber game for the Z-machine, the text adventure engine."
+changes = "mad-bomber/README.md"            # the story file's provenance and sha256, a path in repo
+topics = ["arcade", "real-time", "bomber", "z-machine", "inform", "high-score"]
+genre = "arcade"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# the story file bomber.z5 (Release 3, 971123) unchanged, its Inform source
+# beside it (sha256s in the stories repo, mad-bomber/README.md), played
+# with the bundled Frotz 2.55, whose timed input and colours run the game
+[upstream]
+name = "Neil James Brown"
+url = "https://ifarchive.org/if-archive/games/zcode/bomber.z5"
+
+# the start script plays the story in the bundled Frotz; the high score
+# lasts until you quit
+[exec]
+game = "mad-bomber"
+args = []
+
+# the game asks for 60x15, but in Frotz it starts from 16 rows
+[min_terminal]
+cols = 60
+rows = 16
+
+# coloured towers and a blue sky; without colour the towers are [] blocks
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, asciiverse/record-preview-realtime.py: two flights, bombing
+# every second or so, the crash, a high score signed Ace, 60 s; the still
+# is the plane over half-levelled towers
+[media]
+cast = "asciiverse/mad-bomber.cast"
+thumbnail_at = 12.0
+
+[release]
+source = "github"
