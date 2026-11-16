@@ -1,0 +1,53 @@
+schema_version = 1
+id = "wizards-castle"
+kind = "game"
+title = "Wizard's Castle"
+description = "The 1980 dungeon classic: a castle of eight dark levels, esurient monsters, curses, fabulous treasures and the Orb of Zot, which none has ever carried out alive. Beware!!"
+year = 1980
+license = "MIT"
+repo = "theasciiverse/wizards-castle"
+provenance = "Joseph R. Power wrote Wizard's Castle in BASIC for the Exidy Sorcerer, and Recreational Computing printed it in its July-August 1980 issue; Brian \"Beej Jorgensen\" Hall rewrote it in Rust with a full-screen map in 2019."
+changes = "PATCHES.md"
+topics = ["dungeon", "fantasy", "orb-of-zot", "monsters", "curses", "treasure", "turn-based", "classic", "basic", "rust", "ratatui"]
+genre = "rpg"
+old = true
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# upstream's master at 8fbe861 (2026-04-07), version 1.0.11; our port from
+# ncurses to Ratatui and the session log in PATCHES.md (UPSTREAM.md for
+# the commits offered upstream)
+[upstream]
+name = "Beej Jorgensen"
+url = "https://github.com/beejjorgensen/Wizards-Castle-Ncurses"
+
+# saves nothing; RUST_LOG=debug writes the session log to stderr, which
+# av keeps
+[exec]
+game = "wizards-castle"
+
+# an 80x25 screen centred in the terminal; at 24 lines the log moves up
+# over the bottom borders of the map and status windows
+[min_terminal]
+cols = 80
+rows = 24
+
+# box-drawing lines, 8 colours, keys only
+[requires]
+utf8 = true
+color = "basic"
+mouse = false
+
+# 100x30, asciiverse/record-preview.sh: a Dwarf made and played by
+# asciiverse/drive.py, flares lighting the map, the Norn Stone and the
+# Blue Flame found, fights with an ogre, a bear and a kobold, a run from
+# a chimera, a manual of strength, a pool and a crystal orb showing the
+# Orb of Zot, then quit; 48 s, the still is the lit map at the orb
+[media]
+cast = "asciiverse/wizards-castle.cast"
+thumbnail_at = 28.0
+
+[release]
+source = "github"
