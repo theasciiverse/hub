@@ -11,7 +11,7 @@ Thing Shooter 3D is a first-person shooter drawn entirely in your terminal. Wall
 - **Ensemble**: frogs, goblins, bats and demons, all at once
 - **Medley**: a giant eye that backs away as it spits frogs at you. Bring it down and it comes back changed, spitting bats, then goblins, then demons, and each time it changes it showers you with health
 
-Your bullets are slow, so lead your shots, or shoot theirs out of the air. And your legs keep going on their own: the walking keys switch walking on and off, so you can set off sideways and keep both hands for aiming. The bigger your terminal, the easier the game gets.
+Your bullets are slow, so lead your shots, or shoot theirs out of the air. And your legs keep going on their own: the walking keys switch walking on and off, so you can set off sideways and keep both hands for aiming.
 
 ## Controls
 
@@ -23,7 +23,7 @@ Your bullets are slow, so lead your shots, or shoot theirs out of the air. And y
 
 ## History
 
-Jude Melton-Houghton began Thing Shooter 3D in May 2019, in C, and wrote nearly everything it stands on himself: the 3D renderer, the JSON parser that reads its levels, even the test framework. "In making this game, I set out not to make a game, but to design a system," he wrote in its About screen. So every texture is a text file in which each character is a pixel, and every creature, level and menu is plain data anyone can open and change. Version 1.0 came that November, and he kept polishing until 1.16.2 in October 2022, calling it, honestly, mostly finished.
+Jude Melton-Houghton began Thing Shooter 3D in May 2019, in C, and wrote nearly everything it stands on himself: the 3D renderer, the JSON parser that reads its levels, even the test framework. "In making this game, I set out not to make a game, but to design a system," he wrote in its About screen. So every texture is a text file in which each character is a pixel, and every creature, level and menu is plain data anyone can open and change. The first full release came that November, and he went on polishing it for three more years, until October 2022.
 
 ## Credits
 

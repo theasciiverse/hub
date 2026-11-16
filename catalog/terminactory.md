@@ -29,7 +29,7 @@ Press **b** and a browser opens. **termweb** has tabs, bookmarks and a search pa
 
 ## History
 
-snipedbywifi started Terminactory on 10 November 2026 and showed it to the world four days and some two hundred commits later: an idle factory meant to sit in a terminal pane beside your work, switching to a compact view when the pane is small and earning while you look away. It grew fast, from copper and coal to steam, floors and assemblers, then silicon and oil, but the part that grew most was the browser. What began on the third day as a recipe book became a town, its newspaper, its companies, five forums and the plants' own message boards, written page by page across forty years of an invented calendar.
+snipedbywifi started Terminactory on 10 November 2026 and showed it to the world four days and some two hundred commits later: an idle factory meant to sit in a terminal pane beside your work and earn while you look away. It grew fast, from copper and coal to steam, floors and assemblers, then silicon and oil, but the part that grew most was the browser. What began on the third day as a recipe book became a town, its newspaper, its companies, five forums and the plants' own message boards, written page by page across forty years of an invented calendar.
 
 ## Credits
 

@@ -1,4 +1,4 @@
-**Stardate 3188. Fifteen Klingon battle cruisers. Seven stardates. Good luck. You'll need it.**
+**STARDATE 3188. FIFTEEN KLINGON BATTLE CRUISERS. SEVEN STARDATES. GOOD LUCK. YOU'LL NEED IT.**
 
 A Klingon invasion force is loose in the galaxy, and the U.S.S. Enterprise is all the Federation has between it and the starbases. Eight by eight quadrants, each a ten by ten field of stars, black holes and planets: you sweep them by long-range scan, jump by warp, and fight sector by sector with phasers and photon torpedoes, and every order costs time, energy or both.
 
@@ -6,7 +6,7 @@ The galaxy does not wait for you. Commanders lock on with tractor beams and drag
 
 - **Five skill levels**, Novice to Emeritus, and games from a short sortie to a long campaign or a sandbox with no clock
 - **The Wayback setting**: pick a year and play the game as it stood then, from the 1973 original to today
-- **A bridge screen**: short-range scan, status, long-range scan and star chart always in view, the ship's log below
+- **A bridge screen**: short-range scan, status and long-range scan always in view above the ship's log
 - **Scored at the end**, and a plaque for the finest Expert and Emeritus captains
 
 ## Controls
@@ -24,7 +24,7 @@ Type commands and press **Enter**, as on a 1970s teletype: `move`, `warp`, `impu
 
 ## History
 
-At the University of Texas at Austin in 1973, David Matuszek and Paul Reynolds grew tired of a Star Trek game in BASIC that took an age to load on the campus CDC 6600, and wrote their own in FORTRAN. Ten by ten sectors, command words instead of numbers, and later black holes, the Tholian web and the Super-Commander: it became Super Star Trek, and its descendants spread to BSD Unix and beyond. Tom Almy fitted it onto a PDP-11 around 1977, and in 1995, missing an old friend, carried it into C. Eric S. Raymond took it on in 2004 as SST2K and has kept it alive since. Super Trek is SST2K made native, played out the same way down to the last random number.
+At the University of Texas at Austin in 1973, David Matuszek and Paul Reynolds grew tired of a Star Trek game in BASIC that took an age to load on the campus CDC 6600, and wrote their own in FORTRAN. Ten by ten sectors, command words instead of numbers, and later black holes, the Tholian web and the Super-Commander: it became Super Star Trek, and its descendants spread to BSD Unix and beyond. Tom Almy fitted it onto a PDP-11 around 1977, and in 1995, missing an old friend, carried it into C. Eric S. Raymond took it on in 2004 as SST2K and has kept it alive since. Super Trek is SST2K once more, faithful down to the last random number, with a bridge built around its command line.
 
 ## Credits
 
@@ -32,4 +32,4 @@ At the University of Texas at Austin in 1973, David Matuszek and Paul Reynolds g
 - C version: Tom Almy
 - SST2K: Eric S. Raymond, with Stas Sergeev; CAPTURE from BSD trek (University of California, Berkeley)
 - This edition: Asciiverse
-- License: BSD-3-Clause and the original authors' permission for recreational use with credits kept, never for sale
+- License: BSD-3-Clause and the original authors' terms

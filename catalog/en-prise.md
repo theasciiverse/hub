@@ -28,7 +28,7 @@ Underneath it all is honest chess: castling, en passant, promotion with a burst 
 
 ## History
 
-In 1988 Interplay's Battle Chess turned the chessboard into a stage, with knights who fought and rooks that became monsters, and a generation of players took pieces just to see what would happen. En Prise brings that idea to the terminal with a cast of its own: figures turned like real chessmen, drawn in 3D by a small renderer two pixels to a character cell, on a board seen from the corner like an isometric game of the same era. The name is the chess term for a piece left open to capture, and the game is about that moment.
+In 1988 a computer chess game turned the board into a stage, with knights who fought and rooks that became monsters, and a generation of players took pieces just to see what would happen. En Prise brings that idea to the terminal with a cast of its own: figures turned like real chessmen and modelled in 3D, drawn two pixels to a character cell on a board seen from the corner, like an isometric game of the same era. The name is the chess term for a piece left open to capture, and the whole game turns on that moment.
 
 ## Credits
 

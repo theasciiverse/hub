@@ -15,12 +15,12 @@ Step into the wrong empty room and a curse is yours for good: **Lethargy**, **th
 
 ## Controls
 
-- **N S W E** or the **arrow keys**: walk; **U**, **D**: stairs up and down
+- **N S W E** or the **arrow keys**: walk; **U** and **D**: take the stairs up or down
 - **L**: shine the lamp into a room next door; **F**: light a flare
-- **O** (or **R**): open a chest or book; **D**: drink from a pool; **G**: gaze into an orb
+- **O** (or **R**): open a chest or book; **D** at a pool: drink; **G**: gaze into an orb
 - **T**: trade with a vendor, or teleport with the Runestaff (**P** teleports too)
 - In a fight: **A** attack, **B** bribe, **C** cast a spell (**W**eb, **F**ireball, **D**eathspell), a direction to run
-- **I**: inventory; **H** or **?**: help; **C**: copyright; **Q**: quit
+- **I**: inventory; **H** or **?**: help; **Q**: quit
 
 ## Options
 
@@ -30,7 +30,7 @@ Step into the wrong empty room and a curse is yours for good: **Lethargy**, **th
 
 In 1975 Joseph R. Power, a freshman at Michigan State, went to Windycon in Chicago and found printing terminals running a fantasy game called HOBBIT. He got hold of its listing, rewrote it on a TRS-80 at a Radio Shack, and, a Dungeons & Dragons player wanting more than wander, kill and loot, started again from scratch. He typed the new game into the Exidy Sorcerer demo machine at New Dimensions in Computing, a store in East Lansing (the Kingdom of N'Dic is his nod to it), and squeezed it until it fit, hiding the castle in the Sorcerer's character memory. A deal with Kilobaud's software arm fell through, so he sent it to Recreational Computing, which printed Wizard's Castle in its July-August 1980 Fantasy Games issue: some 340 lines of BASIC for readers to type in by hand. It spread to the TRS-80, the Apple II, CP/M machines and far beyond, one of the very first role-playing games on home computers.
 
-Brian "Beej Jorgensen" Hall, of Beej's Guide to Network Programming, has probably played it more than any other game. He wrote down its rules in a detailed spec, rebuilt it as a Rust library in 2018, and in 2019 gave it a full-screen face with the map always in view. In 2026 that face moved to Ratatui, and the castle opens on Linux, macOS and Windows alike.
+Brian "Beej Jorgensen" Hall, of Beej's Guide to Network Programming, has probably played it more than any other game. He wrote down its rules in a detailed spec, rebuilt it as a Rust library in 2018, and in 2019 gave it a full-screen face with the map always in view.
 
 ## Credits
 

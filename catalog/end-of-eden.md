@@ -27,10 +27,10 @@ Mods go in `~/.local/state/end-of-eden/mods/<name>` (`%LOCALAPPDATA%\end-of-eden
 
 ## History
 
-BigJk (Daniel Schmidt) started End of Eden in April 2023 as a deck-builder that would run entirely in a console, with the game's rules in Go and all of its content in Lua so that anyone could add to it. To bring it to players who never open a terminal, he went as far as writing his own terminal emulator, CRT, for a windowed version with a retro shader, and a fuzzy tester that throws random moves at the game until something breaks. It has grown through twenty-six releases since, with new cards, enemies and artifacts arriving in the summer of 2024.
+BigJk (Daniel Schmidt) started End of Eden in April 2023 as a deck-builder that would run entirely in a console, with the game's rules in Go and all of its content in Lua so that anyone could add to it. To bring it to players who never open a terminal, he went as far as writing his own terminal emulator, CRT, for a windowed version with a retro shader, and a fuzzy tester that throws random moves at the game until something breaks. It has grown through two dozen releases since, with new cards, enemies and artifacts arriving in the summer of 2024.
 
 ## Credits
 
 - End of Eden: BigJk (Daniel Schmidt), on [GitHub](https://github.com/BigJk/end_of_eden) and [itch.io](https://bigjk.itch.io/end-of-eden)
-- Sound effects: CC0, among them Juhani Junkala's [512 Sound Effects](https://opengameart.org/content/512-sound-effects-8-bit-style)
+- Sound effects: among them Juhani Junkala's [512 Sound Effects](https://opengameart.org/content/512-sound-effects-8-bit-style)
 - License: MIT

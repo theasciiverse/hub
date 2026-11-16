@@ -25,7 +25,7 @@ Take the path onward and the forest gives way to the Dungeon: stone rooms lit by
 
 ## History
 
-Dawid Ciężarkiewicz, dpc, started Rhex in January 2015 to sharpen his Rust on a hexagonal map, after an earlier try called Rustyhex, using his own hex2d library for the geometry. Within a month it had half-light, grues and noise; Demur Rumed, Christopher Serr and others joined in, and through 2016 it grew into the little curses roguelike of the old screenshots. Then it slept. In October 2026 dpc woke it up: ncurses gave way to Crossterm and Ratatui, and the game turned toward what he had always wanted, an atmospheric, scary roguelike where hiding, scouting, light and sound count for more than stats. The Dark Forest, its creek and thickets, chests, lanterns, whistles and creatures that notice you all arrived then. It is unfinished, as its author says, and very much playable.
+Dawid Ciężarkiewicz, dpc, started Rhex in January 2015 to sharpen his Rust on a hexagonal map, after an earlier try called Rustyhex, using his own hex2d library for the geometry. Within a month it had half-light, grues and noise; Demur Rumed, Christopher Serr and others joined in, and through 2016 it grew into the little curses roguelike of the old screenshots. Then it slept. In October 2026 dpc woke it up: ncurses gave way to Crossterm and Ratatui, and the game turned toward what he had always wanted, an atmospheric, scary roguelike where hiding, scouting, light and sound count for more than stats. The Dark Forest, its creek and thickets, chests, lanterns, whistles and creatures that notice you all arrived then.
 
 ## Credits
 

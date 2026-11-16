@@ -19,13 +19,13 @@ Fill more than half the line and the level is yours: a fresh line, and one more 
 
 ## Options
 
-- `-l <cells>`: play on a line of your chosen length (normally the terminal's width less 30)
+- `-l <cells>`: play on a line of your chosen length
 - `-s`: boss mode, quitting leaves no trace on the screen
 - `-h`: help
 
 ## History
 
-Xonitix was born in Terminal Jam 2018 on itch.io, a jam for games that live in the computer terminal. Breno G. de Oliveira, who goes by wildgaru on itch and garu on GitHub, wrote it in a single file of plain C++ with no libraries at all, so the same few hundred lines built on Windows, Linux and macOS and ran as one small binary that worked straight out of the box. He took the classic game of fencing off enemies and claiming what is left, and asked how little screen it really needs. The answer was one line. He shared the source on GitHub that November, inviting anyone curious to see how it was made, and players on itch left their verdict in the comments: very clever, and it deserves to be in an arcade.
+Xonitix was born in Terminal Jam 2018 on itch.io, a jam for games that live in the computer terminal. Breno G. de Oliveira, who goes by wildgaru on itch and garu on GitHub, wrote it in a single file of plain C++. He took the classic game of fencing off enemies and claiming what is left, and asked how little screen it really needs; he wanted, he said, "to explore the concept of having a complete action game in a single line". He shared the source on GitHub that November, and players on itch left their verdict in the comments: very clever, and it deserves to be in an arcade.
 
 ## Credits
 

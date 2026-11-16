@@ -31,7 +31,7 @@ A match rotates through five arenas: The Pit, Pillars, Crossroads, Ruins and Rin
 
 ## History
 
-Luis Enrique Muñoz Martín, lemunozm on GitHub, started AsciiArena in June 2020: a terminal deathmatch with a real client and server, so friends could fight over the network. In its first week he wrote the networking it needed, then moved it into a library of its own, message-io, which has since passed two hundred thousand downloads. The game grew a lobby where waiting letters wander about, an arena and a points system, in alpha releases through April 2021. Its README promised "a lot of skills with custom keys", but the full game waited, one fire ball and a network demo, until Asciiverse finished it in 2026 along the lines he had drawn: five spells, five arenas, the storm, rounds, and computer players to fight.
+Luis Enrique Muñoz Martín, lemunozm on GitHub, started AsciiArena in June 2020: a terminal deathmatch with a real client and server, so friends could fight over the network. In its first week he wrote the networking it needed, then moved it into a library of its own, message-io, which has since passed two hundred thousand downloads. The game grew a lobby where waiting letters wander about, an arena and a points system, in alpha releases through April 2021. Its README promised "a lot of skills with custom keys", but the game stopped at one fire ball and a network demo. In 2026 Asciiverse finished it along the lines he had drawn: five spells, five arenas, the storm, rounds, and computer players to fight.
 
 ## Credits
 

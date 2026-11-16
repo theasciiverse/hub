@@ -8,7 +8,6 @@ Touch down on a pad at five metres a second or slower and you have landed. Any f
 
 - **Real time, one second at a time**: plan your burns ahead, because the moon will not wait
 - **Ten power levels** per rocket, from 0.01 to 20, for coarse braking and fine trimming
-- **Eight pads**, worth 10, 15, 20, 25, 30 and 50, some in the open, one at the foot of a shaft
 - **A high score table** of the ten best games
 
 ## Controls
