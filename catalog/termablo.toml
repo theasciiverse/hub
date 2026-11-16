@@ -1,0 +1,53 @@
+schema_version = 1
+id = "termablo"
+kind = "game"
+title = "Termablo"
+description = "A Diablo-like where every torch, campfire, crystal, lava pool and spell casts real, coloured, flickering light, and you see only what the light reaches."
+year = 2026
+license = "MIT"
+repo = "theasciiverse/termablo"
+provenance = "Anton Medvedev, maker of the terminal JSON viewer fx, released Termablo on 29 September 2026 and grew it in two weeks into a story of six quests, with seven languages and numbers balanced by scripted heroes playing it to the end."
+changes = "PATCHES.md"
+topics = ["diablo-like", "action rpg", "dynamic lighting", "loot", "quests", "dark fantasy", "seeds", "go"]
+genre = "roguelike"
+new = true
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# upstream's master at 07dcbcc (2026-10-10), no versions or tags of its
+# own; PATCHES.md in theasciiverse/termablo
+[upstream]
+name = "Anton Medvedev"
+url = "https://github.com/antonmedv/termablo"
+
+# writes no files (no saves, settings or logs); language from LANG or
+# -lang; never started with -ssh
+[exec]
+game = "termablo"
+args = []
+
+# its own check: "Termablo needs at least 80x24"; the map grows with the
+# terminal
+[min_terminal]
+cols = 80
+rows = 24
+
+# 24-bit colour escapes for the lighting; block and box glyphs, Arabic
+# and CJK on the title screen; mouse hover and targeting
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = true
+
+# 100x30, asciiverse/record-preview.sh: the title, then the Wanderer in
+# the Ashen Fields (seed 7) burning down a camp of the Fallen and a pack
+# of dire wolves with Firebolts, played by asciiverse/drive.py; the
+# still is the Fallen charging by their campfire
+[media]
+cast = "asciiverse/termablo.cast"
+thumbnail_at = 8.0
+
+[release]
+source = "github"
