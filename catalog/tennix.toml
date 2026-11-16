@@ -2,6 +2,7 @@ schema_version = 1
 id = "tennix"
 kind = "game"
 title = "Tennix"
+featured = 4             # place in the website's carousel, 1 first
 description = "Hold the key, feel the power bar climb, let go as the ball arrives: tennis against a computer that never tires or a friend, from Paris clay to London grass under the floodlights."
 year = 2003
 license = "GPL-2.0-or-later"

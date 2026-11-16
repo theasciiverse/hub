@@ -2,6 +2,7 @@ schema_version = 1
 id = "oathbreaker"
 kind = "game"
 title = "Oathbreaker"
+featured = 5             # place in the website's carousel, 1 first
 description = "Executions will continue until prisoner morale improves: slip out of your cell in a goblin-held prison city and climb eight floors to freedom before the guards, the hunters and the Necromancer's mages find you."
 year = 2021
 license = "GPL-3.0-only"

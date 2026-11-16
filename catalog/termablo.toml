@@ -2,6 +2,7 @@ schema_version = 1
 id = "termablo"
 kind = "game"
 title = "Termablo"
+featured = 3             # place in the website's carousel, 1 first
 description = "Keep your torch high: a Diablo-like where every torch, campfire, crystal, lava pool and spell casts real, coloured, flickering light, and you see only what the light reaches."
 year = 2026
 license = "MIT"

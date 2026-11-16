@@ -2,6 +2,7 @@ schema_version = 1
 id = "wizards-castle"
 kind = "game"
 title = "Wizard's Castle"
+featured = 6             # place in the website's carousel, 1 first
 description = "None has ever carried the Orb of Zot out alive: eight dark levels of hungry monsters, curses, strange pools and fabulous treasures in the 1980 dungeon classic, and you are next."
 year = 1980
 license = "MIT"

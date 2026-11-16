@@ -2,6 +2,7 @@ schema_version = 1
 id = "en-prise"
 kind = "game"
 title = "En Prise"
+featured = 1             # place in the website's carousel, 1 first
 description = "Chess where the pieces fight! Every capture is played out on an isometric board: the pawn's spear, the knight's charge, the bishop's light, the rook's stones, the queen's ring and the king's sword."
 year = 2026
 new = true

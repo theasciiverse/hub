@@ -2,6 +2,7 @@ schema_version = 1
 id = "super-trek"
 kind = "game"
 title = "Super Trek"
+featured = 2             # place in the website's carousel, 1 first
 description = "Fifteen Klingon battle cruisers, one Enterprise, and the clock running: the great 1970s Trek game on a bridge screen, hunting an invasion by warp, phaser and torpedo, one typed order at a time."
 year = 1974
 old = true

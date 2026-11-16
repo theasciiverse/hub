@@ -5,7 +5,6 @@ title = "Tessera"
 description = "Mazes in four dimensions! Every box on screen is one slice, and the way through steps between them. Twelve campaign mazes, a new maze every day, endless ones, and your own ghost to race."
 year = 2026
 new = true
-featured = 3             # place in the website's carousel, 1 first
 license = "MIT"
 repo = "theasciiverse/tessera"
 provenance = "Asciiverse made Tessera in Rust in 2026, after bleuje's browser 4D maze, which draws a four-dimensional maze as a grid of flat ones."
