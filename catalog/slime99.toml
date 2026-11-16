@@ -1,0 +1,58 @@
+schema_version = 1
+id = "slime99"
+kind = "game"
+title = "slime99"
+description = "A precog super-soldier clears radioactive slimes from the sewers of 1999, in a roguelike with no dice: you see every attack and defence to come, and bend fate to make them land where you need them."
+year = 2020
+license = "MIT"
+repo = "theasciiverse/gridbugs-7drls"
+collection = "gridbugs-7drls"
+provenance = "Stephen Sherratt (gridbugs) made slime99 in seven days for the 7DRL Challenge of March 2020, on his own Rust library for games drawn in characters, and released it that June."
+changes = "PATCHES.md"
+topics = ["roguelike", "7drl", "deterministic combat", "precognition", "slimes", "sewers", "1999", "turn-based", "rust", "chargrid"]
+genre = "roguelike"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# github.com/gridbugs/slime99, master at f0e5dd2 (2022-03-26), in
+# theasciiverse/gridbugs-7drls with its history (UPSTREAM.md)
+[upstream]
+name = "Stephen Sherratt (gridbugs)"
+url = "https://gridbugs.itch.io/slime99"
+
+# the ansi-terminal frontend built without its sound feature (the
+# explosion effect's source is not stated upstream): silent; saves in
+# $XDG_STATE_HOME/slime99
+[exec]
+game = "slime99"
+args = []
+
+# a fixed 60x40 layout: the sewer in 2x2 character tiles beside the
+# attack, defend and tech stacks and the abilities
+[min_terminal]
+cols = 60
+rows = 40
+
+# true colour by default (--rgb, --ansi and --greyscale for others);
+# quadrant blocks for the tiles; gamepad through gilrs (libudev)
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = false
+gamepad = true
+
+system_deps = ["libudev1"]
+
+# 60x40, asciiverse/record-preview.sh with slime99/drive.sh: the
+# briefing, then a fixed seed and walk through the first level, down the
+# stairs to the commander's reward and on; cropped to 100x30 following
+# the player
+[media]
+cast = "asciiverse/slime99/slime99.cast"
+thumbnail_at = 20.0
+crop = { follow = "player" }
+
+[release]
+source = "github"

@@ -1,0 +1,54 @@
+schema_version = 1
+id = "meters-below-the-ground"
+kind = "game"
+title = "Meters Below the Ground"
+description = "Climb sixty metres out of a facility overrun by insects, killing eggs before they hatch, in a tactical dungeon crawler where your health, your guns, the brood and the way out are all progress meters."
+year = 2018
+license = "MIT"
+repo = "theasciiverse/gridbugs-7drls"
+collection = "gridbugs-7drls"
+provenance = "Stephen Sherratt (gridbugs) made Meters Below the Ground in seven days for the 7DRL Challenge of March 2018, the first of his seven-day roguelikes, on prototty, the Rust library that became chargrid."
+changes = "PATCHES.md"
+topics = ["roguelike", "7drl", "tactical", "progress meters", "insects", "escape", "turn-based", "rust", "prototty"]
+genre = "roguelike"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# github.com/gridbugs/meters-below-the-ground, master at 6f4be80
+# (2019-02-04), in theasciiverse/gridbugs-7drls with its history
+# (UPSTREAM.md)
+[upstream]
+name = "Stephen Sherratt (gridbugs)"
+url = "https://gridbugs.itch.io/meters-below-the-ground"
+
+# the unix (prototty) terminal frontend; the game has no sound; saves in
+# $XDG_STATE_HOME/meters-below-the-ground
+[exec]
+game = "meters-below-the-ground"
+args = []
+
+# the 29x29 map, the meters beside it, the key and the depth meter below
+# need 60x44
+[min_terminal]
+cols = 60
+rows = 44
+
+# 256-colour palette indexes (prototty); a few symbols (♥ ‼ ɸ ♦ § ♣ Ē)
+[requires]
+utf8 = true
+color = "256"
+mouse = false
+
+# 60x44, asciiverse/record-preview.sh with meters-below-the-ground/
+# drive.sh: the title, a new game, and the first level walked by
+# explore.py among larvae and eggs; cropped to 100x30 following the
+# player
+[media]
+cast = "asciiverse/meters-below-the-ground/meters-below-the-ground.cast"
+thumbnail_at = 30.0
+crop = { follow = "player" }
+
+[release]
+source = "github"

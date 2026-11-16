@@ -1,0 +1,58 @@
+schema_version = 1
+id = "rain-forest"
+kind = "game"
+title = "Rain Forest"
+description = "Five days at a cabin in a forest where it never stops raining: no enemies, just your motivation against the weather, gumboots for the flood water, a cup of tea, and the sound of rain from a cozy chair."
+year = 2022
+license = "MIT"
+repo = "theasciiverse/gridbugs-7drls"
+collection = "gridbugs-7drls"
+provenance = "Stephen Sherratt (gridbugs) made Rain Forest in seven days for the 7DRL Challenge of March 2022, a roguelike with nothing to fight, on his own Rust library for games drawn in characters."
+changes = "PATCHES.md"
+topics = ["7drl", "cosy", "rain", "forest", "cabin", "weather", "no combat", "turn-based", "rust", "chargrid"]
+genre = "simulation"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# github.com/gridbugs/rainforest, main at 152afd1 (2024-10-29), in
+# theasciiverse/gridbugs-7drls with its history (UPSTREAM.md)
+[upstream]
+name = "Stephen Sherratt (gridbugs)"
+url = "https://gridbugs.itch.io/rain-forest"
+
+# the ansi-terminal frontend, which upstream left on an older library
+# version and which builds again here (the game has no sound); saves,
+# config and controls in $XDG_STATE_HOME/rain-forest
+[exec]
+game = "rain-forest"
+args = []
+
+# a fixed layout: the forest in 3x3 character tiles with the status lines
+# at the top and bottom, drawn for 80x60
+[min_terminal]
+cols = 80
+rows = 60
+
+# true colour by default (--rgb, --ansi and --greyscale for others);
+# block characters for the tiles; gamepad through gilrs (libudev)
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = false
+gamepad = true
+
+system_deps = ["libudev1"]
+
+# 80x60, asciiverse/record-preview.sh with rain-forest/drive.sh: the
+# arrival at night in the rain, a fixed seed and walk through the trees
+# to the cabin, and into bed for eight hours; cropped to 100x30 following
+# the player
+[media]
+cast = "asciiverse/rain-forest/rain-forest.cast"
+thumbnail_at = 14.0
+crop = { follow = "player" }
+
+[release]
+source = "github"
