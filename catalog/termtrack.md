@@ -24,7 +24,7 @@ Write a text file: **S** start, **E** end, **X** wall, **x** half wall, **v** sp
 
 ## History
 
-TageDan and abbfelarb started TermTrack in August 2024 with a pitch of a few lines: easy to install, light, easy to mod, your own tracks for replayability, and a 3D game in the terminal, which would make it one of a kind. They wrote the renderer from scratch in Rust, every cell of the screen traced against the level's triangles on all cores and shaded by which way each face turns, and by the end of September they had a speedrunning game with an online leaderboard. 1.0 came out on 7 October. In 2025 they began moving it from reading the desktop's keyboard to reading the terminal's own keys. This edition finishes that move, so it plays in any terminal, and keeps your times on your own computer.
+TageDan and abbfelarb started TermTrack in August 2024 with a pitch of a few lines: easy to install, light, easy to mod, your own tracks for replayability, and a 3D game in the terminal, which would make it one of a kind. They wrote the renderer from scratch in Rust, every cell of the screen traced against the level's triangles on all cores and shaded by which way each face turns, and by the end of September they had a speedrunning game with a leaderboard to climb. 1.0 came out on 7 October 2024: a 3D game in the terminal, one of a kind, just as the pitch had promised.
 
 ## Credits
 

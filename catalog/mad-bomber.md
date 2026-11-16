@@ -1,4 +1,4 @@
-**It is examination day at The Mad Bomber School of Flying.**
+**IT IS EXAMINATION DAY AT THE MAD BOMBER SCHOOL OF FLYING.**
 
 A small miscalculation: the planes have too little fuel to get back to
 the airstrip. Fortunately every Mad Bomber plane carries an infinite
@@ -37,6 +37,6 @@ fly a plane in real time. The whole game is 3,584 bytes.
 ## Credits
 
 - The Mad Bomber: Neil James Brown, 1997
-- License: Public domain, by the author's statement in the game's source
+- License: public domain
 - Played with Frotz by David Griffith and contributors (GPL-2.0-or-later)
 - Asciiverse edition: Asciiverse

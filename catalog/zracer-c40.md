@@ -38,11 +38,9 @@ modes and an editor, on a virtual machine built for text adventures.
 W. Doug Bolden, David Schweinsberg, Eric Forgeot and Michael Martin
 tested it.
 
-Saved games live in `~/.local/share/zracer-c40`.
-
 ## Credits
 
 - ZRacer: David Fisher, 2007
-- License: the author's terms: it may be copied, archived, distributed and played freely, unmodified
+- License: free to copy and play, unmodified (the author's terms)
 - Played with Frotz by David Griffith and contributors (GPL-2.0-or-later)
 - Asciiverse edition: Asciiverse
