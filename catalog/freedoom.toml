@@ -32,8 +32,8 @@ game = "freedoom"
 
 # no [min_terminal]: the picture fits the terminal at 4:3; bigger is sharper
 
-# 24-bit colour and the upper half block (U+2580); keyboard, and on Linux a
-# gamepad, read from /dev/input with no package needed. Sound
+# 24-bit colour and the upper half block (U+2580); keyboard, the mouse if
+# there is one (not needed), and on Linux a gamepad, read from /dev/input with no package needed. Sound
 # needs no package: the game loads ALSA or PulseAudio (Core Audio on macOS)
 # when it starts and plays silently without them
 [requires]

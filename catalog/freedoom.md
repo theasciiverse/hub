@@ -17,6 +17,10 @@ The bigger your terminal window, the sharper the picture. It plays best in a ter
 - **Space**: fire; **E**: use doors and switches; **]**: run
 - **1** to **7**: weapons; **Tab**: map
 - **Esc**: menu, to load, save and quit
+- Mouse: move it left and right to turn, left button fires, right button
+  held strafes, middle button walks forward, a double click uses, the wheel
+  changes weapon; in menus left chooses, right goes back and the wheel
+  moves. Hold Shift to select text; `-nomouse` leaves the mouse alone
 - Gamepad, on Linux: left stick to move and strafe, right stick to turn,
   **RT** fires, **LT** runs, **A** uses doors and switches, **LB** and
   **RB** change weapons, **Back** shows the map, **Start** opens the menu;
@@ -36,7 +40,7 @@ Settings and saved games are kept in `~/.local/share/freedoom`, where `.default.
 
 ## History
 
-id Software released its engine's source in 1997. Chocolate Doom keeps it faithful to the original, doomgeneric made it easy to port, and Wojciech Graj brought it to the terminal. This edition adds the sound effects and the music, played through an emulated OPL synthesiser as a 1990s sound card would, exact key releases, gamepads, and the half-block picture.
+id Software released its engine's source in 1997. Chocolate Doom keeps it faithful to the original, doomgeneric made it easy to port, and Wojciech Graj brought it to the terminal. This edition adds the sound effects and the music, played through an emulated OPL synthesiser as a 1990s sound card would, exact key releases, the mouse, gamepads, and the half-block picture.
 
 ## Credits
 
