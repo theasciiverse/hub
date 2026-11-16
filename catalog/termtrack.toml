@@ -1,0 +1,52 @@
+schema_version = 1
+id = "termtrack"
+kind = "game"
+title = "TermTrack"
+description = "A 3D platformer drawn in your terminal: run the corridors, climb the half walls, jump the holes between floors and race your own best time to the end."
+year = 2024
+license = "MIT"
+repo = "theasciiverse/termtrack"
+provenance = "TageDan and abbfelarb, the TermTrack team, wrote TermTrack in Rust in 2024, rendering its 3D levels from scratch in terminal cells, and released 1.0 in October 2024."
+changes = "PATCHES.md"
+topics = ["platformer", "3d", "speedrun", "level-editor", "maze", "first-person", "rust"]
+genre = "platformer"
+new = true
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# upstream's main at 90d3acb (2025-05-16), after their 1.0.0 of
+# 2024-10-07; PATCHES.md in theasciiverse/termtrack
+[upstream]
+name = "The TermTrack team"
+url = "https://github.com/TermTrack/TermTrack"
+
+# plays the five levels in levels/ beside the binary; your times in
+# $XDG_STATE_HOME/termtrack/times; TERMTRACK_LOG=<file> for a session log
+[exec]
+game = "termtrack"
+args = []
+
+# the 3D view fills any size; the menu needs 60x20 (narrower cuts its text)
+[min_terminal]
+cols = 60
+rows = 20
+
+# RGB shading; arrows in the menu; holding keys works best where the
+# terminal reports key releases (kitty protocol, Windows)
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = false
+
+# 100x30, asciiverse/record-preview.py: level_1 run by a route bot through
+# a pty with the kitty keyboard protocol (31.7 s on the clock), the end
+# screen with the new best time, then out through the menu; 10 frames a
+# second, changed cells only; the still is the first corridor
+[media]
+cast = "asciiverse/termtrack.cast"
+thumbnail_at = 9.0
+
+[release]
+source = "github"
