@@ -1,0 +1,40 @@
+schema_version = 1
+id = "en-prise"
+kind = "game"
+title = "En Prise"
+description = "Chess where the pieces fight! Every capture is played out on an isometric board: the pawn's spear, the knight's charge, the bishop's light, the rook's stones, the queen's ring and the king's sword."
+year = 2026
+new = true
+license = "MIT"
+repo = "theasciiverse/en-prise"
+provenance = "Asciiverse made En Prise in Rust in 2026, in the spirit of Interplay's Battle Chess (1988), with its own pieces and fights."
+topics = ["chess", "isometric", "3d", "animated", "battle", "computer opponent"]
+genre = "board"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[exec]
+game = "en-prise"
+args = []
+
+[min_terminal]
+cols = 60
+rows = 24
+
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = true
+
+system_deps = ["libasound2"]
+
+# 100x30, asciiverse/record-preview.sh: the computer plays itself with the
+# fights in full; the still is 8. Nxc6, the knight's fight close up
+[media]
+cast = "asciiverse/en-prise.cast"
+thumbnail_at = 20.0
+
+[release]
+source = "github"
