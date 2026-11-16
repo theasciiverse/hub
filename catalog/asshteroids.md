@@ -33,10 +33,10 @@ The computer pilots are named for asteroids, Vesta, Pallas, Juno, Hygiea, Eros, 
 
 ## History
 
-Tomas Zifcak started ASSHTEROIDS at the end of January 2026 with a single commit called "batman", and in the first week of February had the field shared: one Go server, one world, and anyone with ssh flying in it. Usernames, a respawn countdown, a minimap, a "killed by" on the death screen, scores and chat followed over the next weeks, and he put it online for anyone to join. The Asciiverse edition brings that field home: it plays right where you start it, with computer pilots so it is never empty, and your friends on the network one ssh away.
+Tomas Zifcak started ASSHTEROIDS at the end of January 2026 with a single commit called "batman", and in the first week of February had the field shared: one Go server, one world, and anyone with ssh flying in it. Names, a respawn countdown, the minimap, a "killed by" on the death screen, scores and chat followed over the weeks after, and he put his field online for anyone to fly in. Here it comes home: a field of your own, with company whenever you want it.
 
 ## Credits
 
 - ASSHTEROIDS: Tomas Zifcak ([github.com/tomz197/asshteroids](https://github.com/tomz197/asshteroids))
-- Asciiverse edition: computer pilots, playing and hosting from one program, the demo
+- Asciiverse edition: Asciiverse
 - License: MIT

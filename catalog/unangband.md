@@ -4,11 +4,9 @@ You wake in Hobbiton with a hundred gold pieces and a road in front of you. Farm
 
 Unangband is the Angband variant that tried to put everything in. Press **<** in a town or at the edge of the wild and choose where to go next; every place is its own wood, ruin or dungeon, with its own monsters and its own guardian at the bottom.
 
-- **More than twenty races**: Hobbits, Dwarves, Elves, Dúnedain and the Men of Bree, Dale, Rohan, Gondor and Harad, Ents, Beornings, giants of fire, frost and the forge, and Orcs, Goblins, Werewolves and Vampires for the bold
-- **Thirteen classes**, from Warrior, Archer and Thief to Bard, Shaman, Artisan and Istari, each with a style to specialise in: a Dwarf who only trusts a hammer, an Archer devoted to the bow, a Warrior with a weapon in each hand
-- **Terrain that matters**: water, ice, lava, mud and chasms, and rooms that describe themselves as you light them
-- **Things that interact**: set potions in traps, coat your arrows with them, throw them as grenades and watch the smoke roll
-- **Quests**, from Farmer Maggot's lost dogs all the way to the Crack of Doom
+You can walk that road as almost anyone. A Hobbit, a Dwarf, a Dúnadan, a Man of Rohan or of Harad, an Ent, a giant of the forge, or, for the bold, an Orc, a Werewolf or a Vampire: more than twenty peoples in all. And as one of thirteen callings, from Warrior and Thief to Bard, Shaman and Istari, each with a style of its own to master. A Dwarf who trusts nothing but his hammer. An Archer who lives for the bow. A Warrior with a blade in each hand.
+
+The world pushes back in ways the old dungeons never did. Rivers to cross, ice to slip on, lava to skirt, chasms to fall into, and rooms that describe themselves as your light reaches them. Everything interacts: set a potion in a trap, coat your arrows in it, or throw it like a grenade and watch the smoke roll. And there is always another quest, from Farmer Maggot's lost dogs all the way to the Crack of Doom.
 
 ## Controls
 

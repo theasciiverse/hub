@@ -30,7 +30,7 @@ In terminals that report key releases you hold and let go; in the others, tap th
 
 ## History
 
-Thomas Perl wrote Tennix! in 2003, a little tennis game at 320 by 200. On the 10th of May 2007 he ported it to SDL at twice the size, and then he kept going: an umpire in the chair, rain, fog and floodlit night matches in 2008, and in February 2009 the power bar and a world map of the four great tournaments, with night falling on it as it falls on the real cities. Tennix ran on Linux, Windows, Mac OS X and Nokia's Maemo internet tablets, learned to play against Python robots, and in 2011 became the Classic Championship Tour. It moved to SDL2 in 2023 and was still being served in August 2026. This edition is his game ported from C, the match checked against his code tick for tick, drawn in half blocks for the terminal.
+Thomas Perl wrote Tennix! in 2003, a little tennis game at 320 by 200. On the 10th of May 2007 he ported it to SDL at twice the size, and then he kept going: an umpire in the chair, rain, fog and floodlit night matches in 2008, and in February 2009 the power bar and a world map of the four great tournaments, with night falling on it as it falls on the real cities. Tennix ran on Linux, Windows, Mac OS X and Nokia's Maemo internet tablets, learned to play against Python robots, and in 2011 became the Classic Championship Tour. It moved to SDL2 in 2023, and in August 2026, twenty-three years after the first serve, he was still out on court with it.
 
 ## Credits
 

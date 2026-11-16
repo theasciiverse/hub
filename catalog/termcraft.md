@@ -38,7 +38,7 @@ bridge the chasm and relight the signal.
   game rules); **F3**: diagnostics
 - **Q** or **Esc**: close a screen, or save and quit
 
-The game autosaves. It plays at any size, best at 120x40 or larger.
+The game saves as you play.
 
 ## Options
 
@@ -49,8 +49,14 @@ The game autosaves. It plays at any size, best at 120x40 or larger.
 - `termcraft world list`: your saved worlds; `termcraft world play ID`
   opens one
 
-Everyone in a co-op game needs the same version. The full guides
-(multiplayer, hosting, saves) are in the `docs` folder of the install.
+## History
+
+Sebastian Pagel built Termcraft in Rust in 2026, and built it big: not a
+demake of one corner of the block world but the whole of it, from the
+first punched tree to the dragon at the end, turned sideways and drawn in
+half-block pixels. Then he made it social, with co-op for up to eight
+players over the network or plain SSH, and added Lantern Run for the
+evenings when time is short.
 
 ## Credits
 

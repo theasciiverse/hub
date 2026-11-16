@@ -6,10 +6,9 @@ Between the towns lies wilderness: plains, forests, mountains, deserts, swamps a
 
 Everything from later ages is gone: no Saruman, no Witch-King, no Elven Rings. In their place are the Silmarillion's own heroes, monsters and treasures, Ringil and Anguirel and Túrin's black sword Gurthang, and sets of artifacts that grow stronger worn together.
 
-- **Thirteen races and nine classes**: Edain and Easterlings, four kinds of Elves and three of Dwarves, Hobbits, Drúedain, Beornings who become a great bear, and Ents
-- **Specialties**: abilities you choose as you grow, and slaying a guardian earns more
-- **Four ways to play the world**: the standard wilderness, an extended one, a hybrid with portals between the dungeons, or a classic Angband dungeon under a single town
-- **Monster traps**, recall points you set yourself, and a house you can move to any town you have walked to
+Who you are shapes the whole journey. Thirteen peoples walk this Beleriand, from the Edain and the Easterlings to four kinds of Elves, three of Dwarves, the Drúedain and the Beornings, who can shed their shape and become a great bear. As you grow you choose specialties, powers of your own, and every guardian you bring down earns you another. Set traps for the monsters that hunt you, mark your own recall points, and when you find a town you like, move your house there.
+
+And if the open world is not your road, the game will lay it out differently: a wider wilderness, a hybrid with portals between the dungeons, or one classic Angband dungeon under a single town.
 
 ## Controls
 
@@ -25,7 +24,7 @@ Everything from later ages is gone: no Saruman, no Witch-King, no Elven Rings. I
 
 ## History
 
-Nick McConnell released First Age Angband 0.1.0 in November 2005, built on Leon Marrick and Bahman Rabii's Oangband 0.7.0, with one aim: to put the player in Tolkien's Silmarillion, late in the First Age. Si Griffin made version 0.3.6, and Nick carried it on to 1.4.4 at the end of 2013. Then it slept. In 2020 he started again from the ground up, rebuilding the best of the old FAangband on the latest Angband, which he was by then maintaining himself; FAangband 2.0 came out in August 2021, and it has followed Angband's fixes ever since.
+In November 2005 Nick McConnell set out to put players inside Tolkien's Silmarillion, late in the First Age, and built First Age Angband on Leon Marrick and Bahman Rabii's Oangband. Si Griffin took a turn at the helm, Nick carried it on for eight years, and at the end of 2013 it went quiet. Seven years later he came back and started over from the ground up, rebuilding the best of the old game on the newest Angband, which by then he was maintaining himself. The new FAangband arrived in August 2021, and it has kept pace with Angband ever since.
 
 ## Credits
 
