@@ -23,7 +23,7 @@ Underneath it all is honest chess: castling, en passant, promotion with a burst 
 
 - `--black`, `--two`, `--watch`: start as Black, two players, or watching
 - `--easy`, `--hard`: the computer's strength
-- `--quick`, `--no-fights`: fights at double speed, or none at all
+- `--quick`, `--no-fights`: fights nearly twice as fast, or none at all
 - `--mute`: start with the sound off
 
 ## History
