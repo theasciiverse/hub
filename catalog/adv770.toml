@@ -1,0 +1,51 @@
+schema_version = 1
+id = "adv770"
+kind = "adventure"
+title = "Adventure 770"
+description = "The Colossal Cave, grown to 478 places: forty-one treasures to bring home for all 770 points, dwarves in the dark, and a game that answers back a little differently every time."
+year = 2003
+license = "GPL-3.0-or-later"
+repo = "theasciiverse/adv770"
+provenance = "Mike Arnautov spent four years expanding his 1985 Adventure 4+ (Adv660), itself built on Crowther and Woods' Colossal Cave, Dave Platt's Adventure 3 and Luckett and Pike's Adventure II, into Adv770, published in March 2003."
+changes = "PATCHES.md"            # what Asciiverse changed, a path in repo
+topics = ["text-adventure", "classic", "cave", "treasure-hunt", "colossal-cave", "a-code"]
+genre = "text adventure"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# the source release adv770-2.33-src.tgz (2026-07-26) as the first commit,
+# tagged 2.33; PATCHES.md in theasciiverse/adv770
+[upstream]
+name = "Mike Arnautov"
+url = "https://mipmip.org/adv770/"
+
+# console build (-DCONSOLE: no browser display, no sockets); config,
+# saves, the resume state and the ADV770_LOG session log in
+# $XDG_STATE_HOME/adv770 (%LOCALAPPDATA%\adv770 on Windows); text laid
+# out to the terminal's size
+[exec]
+game = "adv770"
+args = []
+
+[min_terminal]
+cols = 80
+rows = 24
+
+# plain text with readline line editing (Linux, macOS)
+[requires]
+utf8 = false
+color = "none"
+mouse = false
+
+# 100x30, asciiverse/record-preview.py: the grey nowhere and the way out
+# of it, the well house and its poster, lamp and keys, down the valley,
+# through the grate and into the cobble crawl, 54 s; the still is the
+# chamber under the grate
+[media]
+cast = "asciiverse/adv770.cast"
+thumbnail_at = 42.5
+
+[release]
+source = "github"
