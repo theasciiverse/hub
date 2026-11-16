@@ -1,0 +1,50 @@
+schema_version = 1
+id = "sea-trader"
+kind = "game"
+title = "Sea Trader"
+description = "A 200-day trading voyage in the 19th-century South China Sea: buy cheap, sell dear between five ports, and outrun storms, typhoons and pirates in a small junk."
+year = 2024
+license = "MIT"
+repo = "theasciiverse/sea-trader"
+provenance = "Yishai Zehavi began Sea Trader in November 2024 as a game you start with one npx command, and over the next three months grew it through thirty releases into seasons, merchant tips and pirates; he came back to it in October 2026 to make it fit any terminal."
+changes = "PATCHES.md"
+topics = ["trading", "strategy", "economy", "sailing", "pirates", "19th century", "turn-based", "typescript"]
+genre = "trading"
+new = true
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# packaged by Asciiverse from upstream's v3.2.0 (2026-10-12) as one
+# executable made with bun build --compile; PATCHES.md in
+# theasciiverse/sea-trader
+[upstream]
+name = "Yishai Zehavi"
+url = "https://github.com/zyishai/sea-trader"
+
+# writes no files: a voyage lasts one sitting, options live in memory
+[exec]
+game = "sea-trader"
+args = []
+
+# its own limit (layout.ts): 60x20; at 80x32 every screen fits whole,
+# smaller ones scroll
+[min_terminal]
+cols = 60
+rows = 20
+
+# the named terminal colours, list bullets and box lines; the mouse wheel
+# only scrolls, PgUp and PgDn do the same
+[requires]
+utf8 = true
+color = "basic"
+mouse = false
+
+# 100x30 preview: to be recorded once the build has been played locally
+[media]
+cast = "asciiverse/sea-trader.cast"
+thumbnail_at = 10.0
+
+[release]
+source = "github"
