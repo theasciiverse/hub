@@ -1,0 +1,58 @@
+schema_version = 1
+id = "terminactory"
+kind = "game"
+title = "Terminactory"
+description = "A cosy idle factory of drills, belts and furnaces that grows from copper to computers, earns while you are away, and comes with a whole small internet of lore to read."
+year = 2026
+license = "Apache-2.0"
+repo = "theasciiverse/terminactory"
+provenance = "snipedbywifi began Terminactory on 10 November 2026 and showed it to the world four days and some two hundred commits later: a factory game made to run in a terminal pane beside your work, with a town's worth of newspapers, forums and plant intranets written into its in-game browser."
+changes = "PATCHES.md"
+topics = ["factory", "automation", "idle", "belts", "research", "lore", "in-game browser", "cosy", "rust", "ratatui"]
+genre = "simulation"
+new = true
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# upstream's main at 6d76220 (2026-11-15), version 0.1.0, not yet
+# released upstream; PATCHES.md in theasciiverse/terminactory
+[upstream]
+name = "snipedbywifi"
+url = "https://gitlab.com/snipedbywifi/terminactory"
+
+# built without the agent-mail feature (no `tfac msg`, no Claude Code
+# hook, no inbox); saves, blueprints and settings in
+# $XDG_STATE_HOME/terminactory, an old ~/.terminactory moved across once;
+# `tfac` is the same game under its short name
+[exec]
+game = "terminactory"
+args = []
+
+# no size check of its own: below 120 columns it switches to its compact
+# view (no sidebar). Checked in tmux: at 60x20 the map, all seven build
+# slots, the research tree with what each tech needs, termweb and the
+# help all fit; at 50x16 research loses those lines and the status line
+# is cut short
+[min_terminal]
+cols = 60
+rows = 20
+
+# 256-colour indexes and box drawing; mouse to place, drag belts and
+# remove; Nerd Font icons only when chosen in the settings
+[requires]
+utf8 = true
+color = "256"
+mouse = true
+
+# 100x30, asciiverse/record-preview.sh: the --demo factory with the
+# sidebar on (small_view never), sped up, then production, research, and
+# termweb: the Municipal Gazette, crankshaft.forum and a wiki search; the
+# still is the Gazette's front page over the factory
+[media]
+cast = "asciiverse/terminactory.cast"
+thumbnail_at = 26.0
+
+[release]
+source = "github"
