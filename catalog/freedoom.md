@@ -11,6 +11,7 @@ The bigger your terminal window, the sharper the picture. It plays best in a ter
 
 ## Controls
 
+- **W S A D**: walk forward and back, strafe left and right
 - **Arrow keys**: move and turn
 - **,** and **.**: strafe left and right
 - **Space**: fire; **E**: use doors and switches; **]**: run
