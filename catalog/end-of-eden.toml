@@ -1,0 +1,54 @@
+schema_version = 1
+id = "end-of-eden"
+kind = "game"
+title = "End of Eden"
+description = "A roguelite deck-builder in the terminal: wake alone from cryo sleep five hundred years after the end of the world, and fight your way out of the facility one hand of cards at a time."
+year = 2023
+license = "MIT"
+repo = "theasciiverse/end-of-eden"
+provenance = "BigJk (Daniel Schmidt) began End of Eden in April 2023 as a Slay the Spire-like deck-builder that runs entirely in a console, with every card, enemy and event written in Lua so players could mod it."
+changes = "PATCHES.md"
+topics = ["deck-builder", "roguelite", "cards", "post-apocalyptic", "sci-fi", "turn-based", "lua", "mods", "daily seed", "mouse", "go"]
+genre = "card"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# upstream's master at bdfd8e3 (2024-09-02, v0.2.2 plus seven commits),
+# terminal version (end_of_eden_term); PATCHES.md in
+# theasciiverse/end-of-eden
+[upstream]
+name = "BigJk"
+url = "https://github.com/BigJk/end_of_eden"
+
+# assets beside the binary; settings, save, logs, cache and mods in
+# $XDG_STATE_HOME/end-of-eden
+[exec]
+game = "end_of_eden"
+args = []
+
+# lays itself out to the window; the fight screen is whole from 112x36
+[min_terminal]
+cols = 112
+rows = 36
+
+# true colour for its red and grey palette; mouse to pick cards and
+# targets, with hover; sound only in the Windows build
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = true
+
+# 112x36 (the smallest whole screen), asciiverse/record-preview.sh: a new
+# run from the main menu, waking up in the cryo facility, a weapon found,
+# then the first fights, played by asciiverse/drive.py; cropped to 100x30
+# from the centre; the still is the VIBRO Knife raised against a Repair
+# Drone and two Rust Mites
+[media]
+cast = "asciiverse/end-of-eden.cast"
+thumbnail_at = 20.0
+crop = { follow = "centre" }
+
+[release]
+source = "github"
