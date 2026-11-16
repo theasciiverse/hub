@@ -1,0 +1,53 @@
+schema_version = 1
+id = "asciiarena"
+kind = "game"
+title = "AsciiArena"
+description = "A deathmatch where every fighter is a letter: fire balls, novas, dashes, walls and mines across five arenas while the storm closes in, against bots or friends on the local network."
+year = 2020
+license = "Apache-2.0"
+repo = "theasciiverse/asciiarena"
+provenance = "Luis Enrique Muñoz Martín (lemunozm) started AsciiArena in Rust in June 2020, together with message-io, the network library that grew out of it, and released alpha versions up to 0.0.7 in April 2021."
+changes = "PATCHES.md"
+topics = ["action", "multiplayer", "deathmatch", "arena", "spells", "bots", "lan", "rust"]
+genre = "action"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# upstream's master at c278865 (2022-06-07), its 0.0.7 plus dependency
+# updates; skills, arenas, storm, rounds and bots added (DESIGN.md and
+# PATCHES.md in theasciiverse/asciiarena)
+[upstream]
+name = "lemunozm"
+url = "https://github.com/lemunozm/asciiarena"
+
+# the menu with no arguments; settings and the --log file in
+# $XDG_STATE_HOME/asciiarena; solo games listen on 127.0.0.1 only,
+# hosting on TCP and UDP port 3549
+[exec]
+game = "asciiarena"
+args = []
+
+# the arena screen is 79x24 (panels, a 26x20 arena two columns a cell,
+# the skill bar and two lines of news); the menu and lobby fit inside it
+[min_terminal]
+cols = 80
+rows = 24
+
+# box drawing, block and shade characters; 256-colour letters and spells;
+# keyboard only
+[requires]
+utf8 = true
+color = "256"
+mouse = false
+
+# 100x30, asciiverse/record-preview.sh: `asciiarena --demo`, six letters
+# played by the computer, 52 s, the storm closing in the first arena and the
+# second one starting; the still is the storm closing on the last fighters
+[media]
+cast = "asciiverse/asciiarena.cast"
+thumbnail_at = 24.0
+
+[release]
+source = "github"
