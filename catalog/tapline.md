@@ -6,12 +6,7 @@ Eight songs from Bellbeat come with it, turned into keysound charts. *Hello, Wor
 
 Then there are tapline's own eight charts, from *First Steps* to *Final Cascade* at 175 beats a minute, where streams, jacks and staircases come at you on all seven keys.
 
-- **Every hit plays its note.** Miss it and the song has a hole in it.
-- **PERFECT, GREAT, GOOD or MISS** on every note, a combo counter and a gauge that has to be at 80% when the song ends to CLEAR it
-- **Long notes** to hold, and let go of on time where your terminal reports key releases
-- **Your best score, accuracy and combo** on every chart, compared after every run
-- **A chart selector** with live search across titles and artists, and a filter by number of lanes
-- **Bring more:** drop BMS and bmson charts into the songs folder in tapline's state folder, with their keysounds, background music and pictures. 4, 5 and 7 keys, scratch lanes, nine-button PMS and double-play charts all play.
+Every note is judged, PERFECT, GREAT, GOOD or MISS, while a combo counts up and a gauge decides your fate: it has to stand at 80% when the music stops, or the song isn't cleared. Long notes want holding, and letting go on time where your terminal reports key releases. Your best score, accuracy and combo wait on every chart, ready to be beaten. And when the sixteen charts aren't enough, bring more: drop BMS and bmson charts into tapline's songs folder, with their keysounds, background music and pictures, and they play too, from four keys to nine-button and double-play charts.
 
 ## Controls
 
