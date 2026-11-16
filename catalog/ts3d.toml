@@ -1,0 +1,50 @@
+schema_version = 1
+id = "ts3d"
+kind = "game"
+title = "Thing Shooter 3D"
+description = "A first-person shooter drawn in coloured characters: frogs at the pond, goblins in the halls, demons hurling flaming skulls, and a giant eye that keeps coming back changed."
+year = 2019
+license = "MIT"
+repo = "theasciiverse/ts3d"
+provenance = "Jude Melton-Houghton began Thing Shooter 3D in C in May 2019, writing his own 3D renderer and JSON parser for it, released 1.0 that November and kept refining it until October 2022."
+changes = "PATCHES.md"
+topics = ["fps", "first-person", "shooter", "3d", "raycasting", "curses"]
+genre = "action"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# upstream's master at 8c52e9c (2022-10-17), tag v1.16.2; our changes
+# (data beside the binary, state in the state folder, a first-run
+# keyboard fix) in PATCHES.md
+[upstream]
+name = "Jude Melton-Houghton"
+url = "https://github.com/TurkeyMcMac/ts3d"
+
+# data/ ships beside the binary; state.json (levels won) and log in
+# $XDG_STATE_HOME/ts3d
+[exec]
+game = "ts3d"
+
+# the view fills the window; its help says 80x24 plays (bigger is easier)
+[min_terminal]
+cols = 80
+rows = 24
+
+# the 8 basic colours as foreground and background pairs, every pixel a
+# ':'; keyboard only
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, asciiverse/record-preview.sh: the spinning title, The Pond won
+# (two frogs), then Entrance, played by asciiverse/drive.py; the still is
+# the cave mouth of Entrance with a frog in the sights
+[media]
+cast = "asciiverse/ts3d.cast"
+thumbnail_at = 30.0
+
+[release]
+source = "github"
