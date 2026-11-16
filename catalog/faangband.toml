@@ -2,7 +2,7 @@ schema_version = 1
 id = "faangband"
 kind = "game"
 title = "FAangband"
-description = "First Age Angband: Beleriand in the days of the War of the Jewels. Cross the wilderness from your people's town, face Mîm, Glaurung and Sauron in their dungeons, and go down into Angband for Morgoth."
+description = "The Silmarils are in Morgoth's crown: walk out of Menegroth or Belegost into the whole of Beleriand, face Glaurung and Sauron in their lairs, and go down a hundred levels into Angband."
 year = 2005
 # GPL-2 or the non-commercial "Angband licence", at the user's choice
 # (docs/copying.rst); taken under the GPL, which says "version 2" only
