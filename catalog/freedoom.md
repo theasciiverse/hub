@@ -26,7 +26,7 @@ The bigger your terminal window, the sharper the picture. It plays best in a ter
 
 - `-iwad freedoom2.wad`: play Phase 2
 - `-skill 1` to `-skill 5`, `-warp E M` (or `-warp M` in Phase 2): start where you like
-- **Options, Picture**: half blocks, sextants or Braille dots, changed on the spot
+- **Options, Graphic Detail**: half blocks, sextants or Braille dots, changed on the spot with left and right
 - **Options, Sound Volume, Sound**: sound and music on or off
 - `-nosound`, `-nomusic`: play quietly
 - `-chars ascii`, `-chars block` or `-chars braille`: the engine's other looks
