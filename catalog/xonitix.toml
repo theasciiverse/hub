@@ -1,0 +1,50 @@
+schema_version = 1
+id = "xonitix"
+kind = "game"
+title = "Xonitix"
+description = "An arcade game on a single line of your terminal: drop barriers to fence off the bouncing dots and claim the rest of the line, but never within a hair of a dot."
+year = 2018
+license = "MIT"
+repo = "theasciiverse/xonitix"
+provenance = "Breno G. de Oliveira, as wildgaru, made Xonitix in C++ for Terminal Jam 2018 on itch.io and put its source on GitHub in November 2018."
+changes = "PATCHES.md"
+topics = ["one-line", "reflexes", "territory", "score-attack", "game-jam", "terminal-jam", "c++"]
+genre = "arcade"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# upstream's master at 8d0eba8 (2021-06-07); xonitix.cpp unchanged since
+# 2018-11-12, VERSION 1.1; PATCHES.md in theasciiverse/xonitix
+[upstream]
+name = "wildgaru"
+url = "https://wildgaru.itch.io/xonitix"
+
+# no saves or scores; with XONITIX_LOG set, a session log in
+# $XDG_STATE_HOME/xonitix
+[exec]
+game = "xonitix"
+args = []
+
+# one line on the cursor's row, the terminal's width less 30 cells (50 at
+# 80 columns, 70 at 100); the hint line, the game line and GAME OVER
+[min_terminal]
+cols = 80
+rows = 3
+
+# plain ASCII, no colour, arrow keys and space
+[requires]
+utf8 = false
+color = "none"
+mouse = false
+
+# 100x30, asciiverse/record-preview.sh: three games in a row stacking up
+# as they would in a shell, played by asciiverse/drive.py, 41 s; the
+# still is the third game at level 3 with two runs' results above it
+[media]
+cast = "asciiverse/xonitix.cast"
+thumbnail_at = 35.0
+
+[release]
+source = "github"
