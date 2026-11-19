@@ -212,6 +212,13 @@ def title_page(t, template, image, collections):
     return set_app(doc, static)
 
 
+def page_url(name):
+    """The address a page is served at. Cloudflare Pages answers /games.html
+    with a 308 to /games, so the sitemap, canonical and og:url must name
+    /games, or search engines report them as pages with a redirect."""
+    return f"{SITE}/" if name == "index.html" else f"{SITE}/{name.removesuffix('.html')}"
+
+
 def main(public):
     public = Path(public)
     cat = json.loads((public / "data" / "catalog.json").read_text())
@@ -234,10 +241,10 @@ def main(public):
             continue
         doc = p.read_text()
         listed = [t for t in titles if t.get("kind") in kinds]
-        url = f"{SITE}/" if name == "index.html" else f"{SITE}/{name}"
+        url = page_url(name)
         doc = set_head(doc, head_tags(h1, desc, url, default_image))
         if name == "index.html":
-            groups = "".join(f'<h2><a href="/{KIND_PAGE[k]}">{e(KIND_PAGE[k][:-5].capitalize())}</a></h2>'
+            groups = "".join(f'<h2><a href="/{KIND_PAGE[k][:-5]}">{e(KIND_PAGE[k][:-5].capitalize())}</a></h2>'
                              + title_list([t for t in titles if t.get("kind") == k])
                              for k in KIND_PAGE if any(t.get("kind") == k for t in titles))
             body = f'<h1>{e(h1)}</h1><p>{e(desc)}</p>{groups}'
@@ -254,8 +261,8 @@ def main(public):
             continue
         h1 = re.search(r"<title>(.*?)</title>", p.read_text(), re.S)
         title = h1.group(1) if h1 else "Asciiverse"
-        p.write_text(set_head(p.read_text(), head_tags(html.unescape(title), desc, f"{SITE}/{name}", default_image)))
-        urls.append((f"{SITE}/{name}", ""))
+        p.write_text(set_head(p.read_text(), head_tags(html.unescape(title), desc, page_url(name), default_image)))
+        urls.append((page_url(name), ""))
 
     sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     for loc, mod in urls:
