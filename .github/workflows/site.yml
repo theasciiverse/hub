@@ -19,6 +19,7 @@ on:
       - "catalog/**"
       - "site/**"
       - "tools/build_catalog.py"
+      - "tools/build_pages.py"
       - ".github/workflows/site.yml"
   workflow_dispatch:
 
