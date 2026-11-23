@@ -1,0 +1,50 @@
+schema_version = 1
+id = "bb"
+kind = "art"
+title = "BB"
+description = "The AA project's 1997 demo, drawn in nothing but letters: flying titles, fire, plasma, a 3D torus, a fractal zoom and four deadpan life stories, to its own tracker music."
+year = 1997
+# BB GPL-2.0-or-later; AAlib and libmikmod, linked in, LGPL-2.0-or-later
+license = "GPL-2.0-or-later"
+repo = "theasciiverse/bb"
+provenance = "Filip Kupsa, Jan Hubicka, Mojmir Svoboda and Kamil Toman, four friends from Tabor in the Czech Republic, made BB in 1997 to show off AAlib, the ASCII art library Jan Hubicka had written, and kept polishing it until 2001. Debian has carried it since 1998."
+changes = "PATCHES.md"
+topics = ["demoscene", "demo", "ascii art", "aalib", "tracker music", "fractal", "classic"]
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# 1.3rc1 with Debian 1.3rc1-13's patches; AAlib and libmikmod built in,
+# the music through miniaudio; PATCHES.md in theasciiverse/bb
+[upstream]
+name = "The AA project"
+url = "https://aa-project.sourceforge.net/bb/"
+
+# no arguments: the whole demo with its music, about seven minutes, then
+# the AA project's end text to page through; s skips a part, q quits
+[exec]
+game = "bb"
+args = []
+
+# AAlib fits the picture to any size; the authors' life stories type
+# out from the bottom row in lines of up to 63 characters, whole at 80x24
+[min_terminal]
+cols = 80
+rows = 24
+
+# plain ASCII with bold and dim through curses; keyboard only
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, asciiverse/record-preview.py: a minute of the demo from the BB
+# title on (the flying Bs, the AA logo, tunnels and moire, the first 3D
+# object), at 25 fps, without sound. The still is the two Bs
+[media]
+cast = "asciiverse/bb.cast"
+thumbnail_at = 7.5
+
+[release]
+source = "github"
