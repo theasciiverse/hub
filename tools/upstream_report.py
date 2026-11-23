@@ -99,10 +99,12 @@ def check(repo, url):
     # carry the same tag (or its "-patches" twin: a distribution's patches
     # applied one commit each, as with Debian's, rather than merged)
     our_tags = set(git(bare, "for-each-ref", "--format=%(refname:strip=2)", "refs/ours-tags").splitlines())
+    base_ts = int(git(bare, "log", "-1", "--format=%ct", base))
     new = []
     for tag, ts, sha in tags:
-        if tag in our_tags or f"{tag}-patches" in our_tags:
-            break  # tags come newest first; from here on we have them
+        if tag in our_tags or f"{tag}-patches" in our_tags or ts <= base_ts:
+            break  # tags come newest first; from here on we have them, or
+            # they are older than what we built from (side branches)
         commit = git(bare, "rev-parse", "-q", "--verify", f"{sha}^{{commit}}", check=False)
         if not commit:
             continue
