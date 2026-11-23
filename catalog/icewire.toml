@@ -2,13 +2,13 @@ schema_version = 1
 id = "icewire"
 kind = "game"
 title = "Icewire"
-description = "Wire a robot rover's sensors, logic and drive on a bench of box-drawn parts, then let it go on the ice of Europa: a corridor race, a maze and a shoving match, with every wire lit by its live signal."
+description = "Wire a robot rover's sensors, logic, drive and weapons on a bench of box-drawn parts, then let it go on the ice of Europa: a season of races, a maze, a shoving match and battles, with every wire lit by its live signal."
 year = 2026
 new = true
 license = "MIT"
 repo = "theasciiverse/icewire"
 provenance = "Asciiverse made Icewire in 2026. David Sandquist dreamt it up at a scout camp that July: work rovers wired by hand, box by box, and set loose on the ice of Europa."
-topics = ["programming", "robots", "logic", "puzzle", "racing", "europa", "braille", "mouse", "rust"]
+topics = ["programming", "robots", "logic", "puzzle", "racing", "battle", "story", "europa", "braille", "mouse", "rust"]
 genre = "programming"
 
 [developer]
@@ -30,9 +30,9 @@ color = "truecolor"
 mouse = true
 glyphs = ["braille"]
 
-# 100x30, `icewire --demo`: the title, Comet on the bench, Ring Hall with
-# the live bench at about 14-18 s, then the Puck after giving Comet full
-# power (asciiverse/record-preview.sh)
+# 100x30, `icewire --demo`: the league, night 4's scene, the battle in the
+# boiler room with the live bench at about 18-22 s, the scene after, then
+# the Long Window under Jupiter (asciiverse/record-preview.sh)
 [media]
 cast = "asciiverse/icewire.cast"
 thumbnail_at = 15.0

@@ -1,9 +1,9 @@
 **NOBODY ON CONAMARA STATION IS SUPPOSED TO BE RACING THE WORK ROVERS. EVERYBODY IS.**
 
-Under the ice of Europa, with Jupiter filling the long window in Ring
-Hall, the night shift has a league. You get a Mule: a squat ice-crawler
-with two drive tracks, a gyro, eight sensor slots and a logic board. You
-do not drive it. You wire it. Sensors feel the world, logic decides, the
+Under the ice of Europa, with Jupiter filling the long window on the
+upper deck, the night shift has a league. You get a Mule: a squat
+ice-crawler with two drive tracks, a gyro, eight sensor slots, two weapon
+mounts and a logic board. You do not drive it. You wire it. Sensors feel the world, logic decides, the
 tracks move, and then you let go and watch what you built try its best.
 
 Every part is a box on your bench, and every wire finds its own way
@@ -16,6 +16,13 @@ and its trail curling behind.
 
 ## The night league
 
+On your first night, Ines, who runs the league from a paper notebook,
+pushes a rover into your hands. Seven nights later you are under the dome
+at midnight, facing a matte black rover nobody will admit to wiring. In
+between come Hana and her stopwatch, Oskar who is always faster, Sami and
+the meltwater, and Ruben from comms, who fights in the boiler room and
+sends his daughter forty-minute messages about it.
+
 - **Ring Hall Run**: one lap of the lower deck, past the laundry and the
   pump columns, eight checkpoints in order. Homer, waiting in your
   garage, does it at a steady trot. Hana from hydroponics keeps the
@@ -27,18 +34,32 @@ and its trail curling behind.
 - **The Puck**: a circle scraped on the pump room floor, a bucket of
   meltwater to make it slick, and Tumbler, Sami's rover, which has never
   been pushed out by a newcomer
+- **Sparks in the Boiler Room**: the first battle, among the pipes,
+  against Ruben's Sprocket
+- **The Long Window**: Hana's second course, under Jupiter, with a hairpin
+  round the stores lift
+- **Laundry Night**: Kettle, which keeps its distance, faces you and keeps
+  firing
+- **Lights Out in the Dome**: Nightjar, which presses in when you are weak
+  and backs away when it is
 
-A star for finishing and two more for beating the times on the wall.
-Every one of them is in reach with the parts you have.
+Every rover goes into battle with 100 charge, and at 0 it stalls where it
+stands. Each challenge has three stars, for the time on the wall or the
+charge you still have, and every one of them is in reach with the parts
+you have.
 
 ## The parts
 
 - **Sensors**: a bumper that feels a touch, a whisker that feels what is
-  near, a ranger that measures the way ahead, and a compass that knows
-  your heading, or the bearing and distance to the beacon
-- **Logic**: AND, OR, NOT, compare, timer, toggle and a number
+  near, a ranger that measures the way ahead, a compass that knows your
+  heading or the way to the beacon, a radar that finds the nearest rover
+  through walls, and a gauge for your own charge
+- **Logic**: AND, OR, NOT, compare, timer, toggle, counter, memory and a
+  number
 - **Drive**: a left track and a right track, each with forward and back,
   and a gyro that spins the rover on the spot
+- **Weapons**: a pellet gun that fires frozen pellets off the nose, and a
+  lobber that throws slush over walls to the range you wire into it
 
 Every rover is a small text file you can copy to a friend or open in an
 editor, and the arena is exact: the same wiring always gives the same
@@ -56,6 +77,8 @@ run, on any machine.
 - The mouse works too: drag parts, click an output to start a wire,
   right-click to remove
 - **?** shows every key, **p** opens the parts library
+- The league on the title screen plays the season night by night; free
+  play opens every challenge
 
 ## Credits
 
