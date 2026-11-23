@@ -74,6 +74,16 @@ arena. Or start a rover in plain Lua from nothing and give `tick()` your
 own ideas. Scripts can feel, think and drive, and nothing else: no files,
 no system, and a budget of instructions every tick.
 
+## Bring your own language
+
+Any program can drive a rover. Icewire writes its readings as plain text
+lines sixty times a second and reads back lines like `tracks 0.8 0.8`
+and `fire`, so a bot can be a shell script, a Python program or anything
+else that reads a line and prints one. Two come with the game: Shellby,
+in plain shell, and Dodger, in Python, who weaves and lobs and beats
+Kettle. Then pit them all against each other in a tournament with nobody
+watching, and watch the best matches again as replays.
+
 ## Controls
 
 - **Arrows** or **hjkl**: move about the bench; **Tab** jumps from part to part
@@ -90,6 +100,9 @@ no system, and a budget of instructions every tick.
 - **?** shows every key, **p** opens the parts library
 - The league on the title screen plays the season night by night; free
   play opens every challenge
+- **B** in the garage makes a bot rover; `icewire --tournament dodger
+  kettle nightjar` runs a tournament, and `icewire --replay FILE` watches
+  a match again
 
 ## Credits
 

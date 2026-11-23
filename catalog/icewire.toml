@@ -2,13 +2,13 @@ schema_version = 1
 id = "icewire"
 kind = "game"
 title = "Icewire"
-description = "Wire a robot rover's sensors, logic, drive and weapons on a bench of box-drawn parts, then let it go on the ice of Europa: a season of races, a maze, a shoving match and battles, with every wire lit by its live signal, and every wiring ready to turn into Lua."
+description = "Wire a robot rover's sensors, logic, drive and weapons on a bench of box-drawn parts, then let it go on the ice of Europa: a season of races, a maze, a shoving match and battles, with every wire lit by its live signal, every wiring ready to turn into Lua, and room for bots in any language."
 year = 2026
 new = true
 license = "MIT"
 repo = "theasciiverse/icewire"
 provenance = "Asciiverse made Icewire in 2026. David Sandquist dreamt it up at a scout camp that July: work rovers wired by hand, box by box, and set loose on the ice of Europa."
-topics = ["programming", "robots", "logic", "lua", "puzzle", "racing", "battle", "story", "europa", "braille", "mouse", "rust"]
+topics = ["programming", "robots", "logic", "lua", "bots", "tournament", "puzzle", "racing", "battle", "story", "europa", "braille", "mouse", "rust"]
 genre = "programming"
 
 [developer]
