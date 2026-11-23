@@ -90,6 +90,9 @@ watching, and watch the best matches again as replays.
 - **a** or **Enter**: add a part; **Enter** sets a part's mount, mode or value
 - **w**: wire from the part under the cursor, then **Enter** on the part it feeds
 - **m** moves a part, **x** removes a part or wire, **u** undoes
+- **A** arranges the whole bench: sensors on the left, logic in the
+  order the signal flows, drive on the right, as few crossing wires as
+  it can find
 - **L** compiles the wiring to Lua; on a Lua rover **e** opens the script
   in your editor
 - **r**: run the rover; **c** picks the next challenge
