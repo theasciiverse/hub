@@ -2,9 +2,10 @@
 # by scripted keys under asciinema 3, at 128x40 (av's own target size),
 # against the live catalog (AV_CATALOG_URL overrides it), with a throwaway
 # HOME so real av state is untouched. Re-recorded 2026-11-23: the welcome
-# closed as it appears, the list (0verkill, then Page Down to Ambassador of Pain
-# and on to Angband), then a search for Brickspire, whose preview (David
-# playing) av starts just before the tower turns.
+# closed as it appears, En Prise (David's pick for the opening), then Page
+# Down to Ambassador of Pain and on to Angband, then a search for
+# Brickspire, whose preview (David playing) av starts just before the
+# tower turns.
 #
 #   python3 dev/record_av_demo.py casts/av-demo.cast "$(mktemp -d)"
 #
@@ -38,8 +39,11 @@ PGDN = b"\x1b[6~"
 search = [(0.12, bytes([c])) for c in b"bricks"]
 # The welcome a first run shows appears after about 3 s; Space closes it
 # (the arrows do not, and a letter would be eaten by it).
-script = [(3.5, None), (0.1, b" "), (4.5, None), (0.1, PGDN), (4.5, None), (0.1, DOWN), (4.0, None),
-          (0.1, b"/")] + search + [(14.0, None), (0.3, b"\x03"), (0.8, b"y")]
+# It opens on En Prise (found by a search; Esc clears it and puts the
+# list back at its top, which only shows for a moment before Page Down).
+enprise = [(0.1, b"/")] + [(0.12, bytes([c])) for c in b"en prise"]
+script = [(3.5, None), (0.1, b" ")] + enprise + [(6.0, None), (0.1, b"\x1b"), (0.3, PGDN), (4.5, None),
+          (0.1, DOWN), (4.0, None), (0.1, b"/")] + search + [(14.0, None), (0.3, b"\x03"), (0.8, b"y")]
 for wait, key in script:
     pump(wait)
     if key: os.write(fd, key)
