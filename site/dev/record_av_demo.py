@@ -1,13 +1,13 @@
 # Records casts/av-demo.cast, the av session in the Home banner: av driven
 # by scripted keys under asciinema 3, at 128x40 (av's own target size),
 # against the live catalog (AV_CATALOG_URL overrides it), with a throwaway
-# HOME so real av state is untouched. Re-recorded 2026-11-23: the welcome
-# closed as it appears, En Prise (David's pick for the opening), then Page
-# Down to Ambassador of Pain and on to Angband, then a search for
-# Brickspire, whose preview (David playing) av starts just before the
-# tower turns.
+# HOME so real av state is untouched. Re-recorded 2026-11-23: four searches
+# in turn, En Prise (David's pick for the opening), Ambassador of Pain,
+# Angband and Brickspire, whose preview (David playing) av starts just
+# before the tower turns; then cut with dev/cut_av_demo.py.
 #
-#   python3 dev/record_av_demo.py casts/av-demo.cast "$(mktemp -d)"
+#   python3 dev/record_av_demo.py /tmp/av-demo-raw.cast "$(mktemp -d)"
+#   dev/cut_av_demo.py /tmp/av-demo-raw.cast casts/av-demo.cast   (needs pyte)
 #
 # av is taken from a release build in the av folder beside hub.
 import os, pty, sys, time, select, struct, fcntl, termios
@@ -29,21 +29,19 @@ def pump(sec):
             try: os.read(fd, 65536)
             except OSError: return
 DOWN, UP = b"\x1b[B", b"\x1b[A"
-# Every title on screen stays for at least 3.5 s: Page Down jumps ten titles
-# in one move, single steps only go between neighbours. The search starts
-# with / (a first letter alone can be lost) and is typed quickly; "bricks"
-# leaves Brickspire only (Bricktick shares "brick"). Its preview gets 14 s:
-# av starts it a little before the still, so the floor clears, the tower
-# turns to the Spire and play goes on there.
-PGDN = b"\x1b[6~"
-search = [(0.12, bytes([c])) for c in b"bricks"]
+# Each title is found by its own search, typed quickly, and held; Esc
+# between searches clears it (the full list, 0verkill first, shows then,
+# and is cut out afterwards by dev/cut_av_demo.py, which keeps only the
+# stretches where a search is complete: David, 2026-11-23, no 0verkill and
+# no jumping about the list). "bricks" leaves Brickspire only (Bricktick
+# shares "brick"); av starts its preview a little before the still, so
+# the floor clears and the tower turns to the Spire.
+def find(words, hold):
+    return [(0.1, b"/")] + [(0.1, bytes([c])) for c in words.encode()] + [(hold, None), (0.1, b"\x1b")]
 # The welcome a first run shows appears after about 3 s; Space closes it
 # (the arrows do not, and a letter would be eaten by it).
-# It opens on En Prise (found by a search; Esc clears it and puts the
-# list back at its top, which only shows for a moment before Page Down).
-enprise = [(0.1, b"/")] + [(0.12, bytes([c])) for c in b"en prise"]
-script = [(3.5, None), (0.1, b" ")] + enprise + [(6.0, None), (0.1, b"\x1b"), (0.3, PGDN), (4.5, None),
-          (0.1, DOWN), (4.0, None), (0.1, b"/")] + search + [(14.0, None), (0.3, b"\x03"), (0.8, b"y")]
+script = [(3.5, None), (0.1, b" ")] + find("en prise", 8.0) + find("ambassador", 6.0) + find("angband", 6.0) \
+    + find("bricks", 16.0)[:-1] + [(0.3, b"\x03"), (0.8, b"y")]
 for wait, key in script:
     pump(wait)
     if key: os.write(fd, key)
