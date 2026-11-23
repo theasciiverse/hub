@@ -1,0 +1,54 @@
+schema_version = 1
+id = "conquest"
+kind = "game"
+title = "Conquest"
+description = "Real-time space war from the VAX terminal labs of 1983: fly for the Federation, the Romulans, the Klingons or the Orions, bomb enemy worlds, beam your armies down and conquer the universe, against robots or friends on your network."
+year = 1983
+license = "MIT"
+repo = "theasciiverse/conquest"
+provenance = "Jef Poskanzer and Craig Leres wrote Conquest in Ratfor for VAX/VMS in 1983; Jon Trulson, who played it for hours in his college terminal labs, ported it to C on Unix in the 1990s and has kept it going ever since."
+changes = "PATCHES.md"
+topics = ["action", "strategy", "space", "multiplayer", "lan", "robots", "real-time", "classic", "curses", "c++"]
+genre = "action"
+old = true
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# Jon Trulson's repo (upstream master, Version 9.1a), with the curses
+# client brought forward to the 9.x protocol; PATCHES.md in
+# theasciiverse/conquest
+[upstream]
+name = "Jon Trulson"
+url = "https://github.com/jtrulson/conquest"
+
+# the menu: Play here (a private universe with robots), Host on the
+# local network, Join by address. It runs conquestd and conquest-tty
+# from its own folder; the universe, settings and logs live in
+# $XDG_STATE_HOME/conquest
+[exec]
+game = "conquest"
+args = []
+
+# the classic layout, the ship display over three message lines;
+# the client and the menu both ask for 80x25
+[min_terminal]
+cols = 80
+rows = 25
+
+# curses line drawing, the 8 basic colors with bold, keyboard only
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, asciiverse/record-preview.sh: Play here, the long range map at
+# 14 s, the robots in the ship list, a message answered by two robots,
+# torpedoes and phasers, and a self-destruct
+[media]
+cast = "asciiverse/conquest.cast"
+thumbnail_at = 14.0
+
+[release]
+source = "github"
