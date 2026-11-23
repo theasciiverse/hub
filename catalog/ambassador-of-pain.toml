@@ -1,0 +1,52 @@
+schema_version = 1
+id = "ambassador-of-pain"
+kind = "game"
+title = "Ambassador of Pain"
+description = "A rolling ball that never stops, eleven levels where everything but empty space is a wall, and an at-sign to reach: an arcade game in 64 lines of C."
+year = 2004
+license = "GPL-3.0-only"
+repo = "theasciiverse/ambassador-of-pain"
+provenance = "Raffael Himmelreich wrote it in 97 lines of C to prove a point to Claire Wolf, who sent it back squeezed to 64; they published it in 2004."
+changes = "PATCHES.md"
+topics = ["arcade", "ball", "levels", "64 lines", "tiny", "curses", "c"]
+genre = "arcade"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# upstream's master at c3f00fd (2020-08-03), release 0.6; aop.c and ten
+# levels are byte for byte the 2004 aop-0.6.tar.gz, level 6's speech is
+# ours (see PATCHES.md in
+# theasciiverse/ambassador-of-pain)
+[upstream]
+name = "Raffael Himmelreich and Claire Wolf"
+url = "https://github.com/hit-sys/Ambassador-Of-Pain"
+
+# the launcher finds the eleven levels in levels/ beside the program;
+# nothing is written anywhere
+[exec]
+game = "aop"
+args = []
+
+# the field is a fixed 80x25, drawn from the top left
+[min_terminal]
+cols = 80
+rows = 25
+
+# plain ASCII, the ball in red
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30 with the 80x25 field in the middle, asciiverse/record-preview.sh:
+# levels 1 to 4 played along routes from asciiverse/plan.py without losing
+# a life, then quitting on level 5; the still is the ball rolling under
+# level 2's giant AMBASSADOR
+[media]
+cast = "asciiverse/ambassador-of-pain.cast"
+thumbnail_at = 10.5
+
+[release]
+source = "github"
