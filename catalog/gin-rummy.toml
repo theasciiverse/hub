@@ -23,6 +23,7 @@ url = "https://github.com/Pieczasz/tty-cards"
 [upstream]
 name = "Pieczasz"
 url = "https://github.com/Pieczasz/tty-cards"
+git = "https://github.com/Pieczasz/tty-cards"
 
 # opens on a setup screen: players at the table (exactly 2), enter to
 # deal. --players N, --demo; session log in ~/.local/state/gin-rummy

@@ -19,6 +19,7 @@ url = "https://github.com/bloznelis/typioca"
 [upstream]
 name = "Lukas Bloznelis"
 url = "https://github.com/bloznelis/typioca"
+git = "https://github.com/bloznelis/typioca.git"
 
 [exec]
 game = "typioca"

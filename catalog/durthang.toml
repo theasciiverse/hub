@@ -20,6 +20,7 @@ url = "https://github.com/Pommersche92/durthang"
 [upstream]
 name = "Raimo Geisel"
 url = "https://github.com/Pommersche92/durthang"
+git = "https://github.com/Pommersche92/durthang.git"
 
 # no host or port on the command line: worlds are picked inside Durthang
 [exec]

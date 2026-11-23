@@ -17,6 +17,7 @@ url = "https://github.com/jmhobbs/terminal-parrot"
 [upstream]
 name = "John Hobbs and contributors"
 url = "https://github.com/jmhobbs/terminal-parrot"
+git = "https://github.com/jmhobbs/terminal-parrot.git"
 
 # no arguments: the party parrot at 75 ms a frame; any key quits
 [exec]

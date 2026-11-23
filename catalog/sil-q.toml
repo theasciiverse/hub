@@ -24,6 +24,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Quirk and Michael G. Noll"
 url = "https://github.com/sil-quirk/sil-q"
+git = "https://github.com/sil-quirk/sil-q.git"
 
 [exec]
 game = "sil"

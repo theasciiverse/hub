@@ -23,6 +23,7 @@ url = "https://salsa.debian.org/games-team/pente"
 [upstream]
 name = "William Shubert"
 url = "https://salsa.debian.org/games-team/pente"
+git = "https://salsa.debian.org/games-team/pente.git"
 
 # the first question asks who plays each side: 0 for a person, 1 to 6 for
 # the computer; settings in ~/.pente.ad, shared with Debian's pente

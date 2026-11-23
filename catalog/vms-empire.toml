@@ -20,6 +20,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Eric S. Raymond"
 url = "http://www.catb.org/~esr/vms-empire/"
+git = "https://gitlab.com/esr/vms-empire.git"
 
 [exec]
 game = "vms-empire"

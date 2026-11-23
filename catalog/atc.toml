@@ -20,6 +20,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Ed James"
 url = "https://sourceforge.net/projects/bsd-games"
+git = "https://git.code.sf.net/p/bsd-games/code"
 
 # the scenario name is an optional argument (atc -l lists them); av starts
 # the default one

@@ -18,6 +18,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Ben Falconer"
 url = "https://github.com/zed0/Netgame"
+git = "https://github.com/zed0/Netgame"
 
 # an 11x11 board; from a terminal, `netgame 15 20` picks another size
 # (2 to 99) and --wrapping lets pipes run off one edge onto the other

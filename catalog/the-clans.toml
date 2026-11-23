@@ -20,6 +20,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Allen Ussher and the Synchronet developers"
 url = "https://gitlab.synchro.net/main/sbbs/-/tree/master/src/doors/clans-src"
+git = "https://gitlab.synchro.net/main/sbbs.git"
 
 # the launcher keeps the village in the player's state folder, founds it on
 # the first start and plays a local game (clans /L)

@@ -24,6 +24,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Ondřej Žára"
 url = "https://github.com/ondras/sleeping-beauty"
+git = "https://github.com/ondras/sleeping-beauty"
 
 # the session log goes to $XDG_STATE_HOME/sleeping-beauty;
 # SLEEPING_BEAUTY_LOG=debug records every key; --seed N for the same tower

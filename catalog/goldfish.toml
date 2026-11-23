@@ -24,6 +24,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Ondřej Žára"
 url = "https://github.com/ondras/goldfish"
+git = "https://github.com/ondras/goldfish"
 
 # the session log goes to $XDG_STATE_HOME/goldfish (~/.local/state/goldfish);
 # GOLDFISH_LOG=debug records every key

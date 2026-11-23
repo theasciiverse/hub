@@ -22,6 +22,7 @@ url = "https://github.com/seehuhn/moon-buggy"
 [upstream]
 name = "Jochen Voss"
 url = "https://github.com/seehuhn/moon-buggy"
+git = "https://github.com/seehuhn/moon-buggy.git"
 
 # the score file is mbscore in the data folder
 # (~/.local/share/moon-buggy, %APPDATA%\moon-buggy)

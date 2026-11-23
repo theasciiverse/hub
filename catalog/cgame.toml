@@ -20,6 +20,7 @@ url = "https://kobolt.github.io/article-59.html"
 [upstream]
 name = "Kjetil Erga"
 url = "https://github.com/kobolt/curses-collection"
+git = "https://github.com/kobolt/curses-collection"
 
 [exec]
 game = "cgame"

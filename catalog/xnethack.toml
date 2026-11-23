@@ -21,6 +21,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "copperwater and contributors"
 url = "https://github.com/copperwater/xNetHack"
+git = "https://github.com/copperwater/xNetHack"
 
 # the tty interface; OPTIONS=windowtype:curses in xnethackrc picks curses
 [exec]

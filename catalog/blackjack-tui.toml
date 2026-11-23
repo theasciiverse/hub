@@ -21,6 +21,7 @@ url = "https://github.com/MarcusBilo/blackjack-tui"
 [upstream]
 name = "MarcusBilo"
 url = "https://github.com/MarcusBilo/blackjack-tui"
+git = "https://github.com/MarcusBilo/blackjack-tui"
 
 # opens on the start screen: a new game (payout, soft-17 rule, decks,
 # shuffle point) or a game saved in ~/.local/state/blackjack-tui

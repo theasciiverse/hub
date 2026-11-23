@@ -17,6 +17,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Ryan Huth"
 url = "https://github.com/hu-ry/CLiAni"
+git = "https://github.com/hu-ry/CLiAni"
 
 # straight into a scrolling Voronoi pattern with a random seed; any key
 # quits; without arguments clani opens its menu (flavour, effect, seed,

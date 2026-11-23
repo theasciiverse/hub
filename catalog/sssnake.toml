@@ -20,6 +20,7 @@ url = "https://github.com/AngelJumbo/sssnake"
 [upstream]
 name = "AngelJumbo"
 url = "https://github.com/AngelJumbo/sssnake"
+git = "https://github.com/AngelJumbo/sssnake"
 
 # no arguments: the normal game, steered by hand; the modes, looks, speed
 # and board size are command-line options. Saves nothing

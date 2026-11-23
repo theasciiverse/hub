@@ -21,6 +21,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "The TermTrack team"
 url = "https://github.com/TermTrack/TermTrack"
+git = "https://github.com/TermTrack/TermTrack.git"
 
 # plays the five levels in levels/ beside the binary; your times in
 # $XDG_STATE_HOME/termtrack/times; TERMTRACK_LOG=<file> for a session log

@@ -21,6 +21,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Ondřej Žára"
 url = "https://github.com/ondras/wardens-duty"
+git = "https://github.com/ondras/wardens-duty"
 
 # the session log goes to $XDG_STATE_HOME/wardens-duty;
 # WARDENS_DUTY_LOG=debug records every key; --seed N for the same prison

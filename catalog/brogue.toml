@@ -21,6 +21,7 @@ url = "https://github.com/tmewett/BrogueCE"
 [upstream]
 name = "Brian Walker and the Brogue CE team"
 url = "https://github.com/tmewett/BrogueCE"
+git = "https://github.com/tmewett/BrogueCE"
 
 [exec]
 game = "brogue"

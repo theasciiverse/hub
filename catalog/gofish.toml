@@ -19,6 +19,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Muffy Barkocy"
 url = "https://sourceforge.net/projects/bsd-games"
+git = "https://git.code.sf.net/p/bsd-games/code"
 
 [exec]
 game = "gofish"

@@ -23,6 +23,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Beej Jorgensen"
 url = "https://github.com/beejjorgensen/Wizards-Castle-Ncurses"
+git = "https://github.com/beejjorgensen/Wizards-Castle-Ncurses"
 
 # saves nothing; RUST_LOG=debug writes the session log to stderr, which
 # av keeps

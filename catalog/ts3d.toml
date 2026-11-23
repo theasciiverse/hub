@@ -21,6 +21,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Jude Melton-Houghton"
 url = "https://github.com/TurkeyMcMac/ts3d"
+git = "https://github.com/TurkeyMcMac/ts3d.git"
 
 # data/ ships beside the binary; state.json (levels won) and log in
 # $XDG_STATE_HOME/ts3d

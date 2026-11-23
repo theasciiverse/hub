@@ -22,6 +22,7 @@ url = "https://github.com/goblinhack/goblinhack-game"
 [upstream]
 name = "Neil McGill"
 url = "https://github.com/goblinhack/goblinhack-game"
+git = "https://github.com/goblinhack/goblinhack-game"
 
 # the binary with the game's files in resources/ beside it; saves, high
 # scores, bones and logs in ~/.local/state/goblinhack (macOS:

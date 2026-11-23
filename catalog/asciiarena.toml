@@ -21,6 +21,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "lemunozm"
 url = "https://github.com/lemunozm/asciiarena"
+git = "https://github.com/lemunozm/asciiarena"
 
 # the menu with no arguments; settings and the --log file in
 # $XDG_STATE_HOME/asciiarena; solo games listen on 127.0.0.1 only,

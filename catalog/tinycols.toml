@@ -18,6 +18,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Rigel Di Scala"
 url = "https://github.com/zedr/tinycols"
+git = "https://github.com/zedr/tinycols"
 
 # keeps the best score for each class in the state folder
 [exec]

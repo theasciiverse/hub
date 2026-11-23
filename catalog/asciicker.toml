@@ -21,6 +21,7 @@ url = "https://asciicker.com"
 [upstream]
 name = "Marcin Sokalski (Gumix)"
 url = "https://github.com/msokalski/asciicker"
+git = "https://github.com/msokalski/asciicker.git"
 
 # reads its world, meshes, sprites and samples from beside the binary;
 # asciicker.cfg goes to $XDG_DATA_HOME/asciicker (~/.local/share/asciicker).

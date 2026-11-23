@@ -20,6 +20,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Cataclysm: Bright Nights contributors"
 url = "https://github.com/cataclysmbn/Cataclysm-BN"
+git = "https://github.com/cataclysmbn/Cataclysm-BN.git"
 
 # cataclysm-bn is the start script: it passes the data beside it with
 # --basepath and the state folder with --userdir

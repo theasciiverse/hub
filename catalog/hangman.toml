@@ -20,6 +20,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Ken Arnold"
 url = "https://sourceforge.net/projects/bsd-games"
+git = "https://git.code.sf.net/p/bsd-games/code"
 
 # av starts titles in their install folder, where the archive puts the
 # SCOWL word list as `words`

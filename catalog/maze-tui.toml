@@ -17,6 +17,7 @@ url = "https://github.com/agl-alexglopez/maze-tui"
 [upstream]
 name = "Alex G. Lopez"
 url = "https://github.com/agl-alexglopez/maze-tui"
+git = "https://github.com/agl-alexglopez/maze-tui"
 
 # no arguments: the home screen, with a random maze playing behind the
 # instructions; Enter plays a random maze, typed flags choose the

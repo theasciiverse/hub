@@ -17,6 +17,7 @@ url = "https://github.com/Wayoung7/firework-rs"
 [upstream]
 name = "Wayoung7"
 url = "https://github.com/Wayoung7/firework-rs"
+git = "https://github.com/Wayoung7/firework-rs.git"
 
 # no -d: the endless random show (the five fixed demos play once and stop);
 # any key quits

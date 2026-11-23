@@ -20,6 +20,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Eric S. Raymond"
 url = "https://gitlab.com/esr/bluemoon"
+git = "https://gitlab.com/esr/bluemoon.git"
 
 # keeps no files
 [exec]

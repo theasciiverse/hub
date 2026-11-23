@@ -19,6 +19,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Michael Vetter and contributors"
 url = "https://github.com/jubalh/nudoku"
+git = "https://github.com/jubalh/nudoku"
 
 [exec]
 game = "nudoku"

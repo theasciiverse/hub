@@ -20,6 +20,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Yuji Ueki"
 url = "https://github.com/unhappychoice/gittype"
+git = "https://github.com/unhappychoice/gittype"
 
 # av starts it in its install folder, where samples/ holds code from
 # catalog games to type; history, settings and themes in the state folder

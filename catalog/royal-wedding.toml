@@ -24,6 +24,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Ondřej Žára"
 url = "https://github.com/ondras/trw"
+git = "https://github.com/ondras/trw"
 
 # the session log goes to $XDG_STATE_HOME/royal-wedding;
 # ROYAL_WEDDING_LOG=debug records every key; --seed N for the same forest

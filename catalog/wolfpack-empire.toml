@@ -22,6 +22,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Wolfpack"
 url = "http://www.wolfpackempire.com/"
+git = "https://git.pond.sub.org/empire/empserver"
 
 [exec]
 game = "empire"

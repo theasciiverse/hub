@@ -20,6 +20,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Matt Day and Eric S. Raymond"
 url = "https://gitlab.com/esr/greed"
+git = "https://gitlab.com/esr/greed.git"
 
 # -f sizes the board to the terminal (greed.rs fit_to_tty)
 [exec]

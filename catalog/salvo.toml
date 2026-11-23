@@ -19,6 +19,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "abakh and contributors"
 url = "https://github.com/abakh/nbsdgames"
+git = "https://github.com/abakh/nbsdgames.git"
 
 [exec]
 game = "salvo"

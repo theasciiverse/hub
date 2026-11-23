@@ -21,6 +21,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "snipedbywifi"
 url = "https://gitlab.com/snipedbywifi/terminactory"
+git = "https://gitlab.com/snipedbywifi/terminactory.git"
 
 # built without the agent-mail feature (no `tfac msg`, no Claude Code
 # hook, no inbox); saves, blueprints and settings in

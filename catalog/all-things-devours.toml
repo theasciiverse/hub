@@ -21,6 +21,7 @@ url = "https://ifarchive.org/if-archive/games/zcode/devours.z5"
 [upstream]
 name = "Toby Ord (half sick of shadows), 2004"
 url = "https://ifarchive.org/if-archive/games/zcode/devours.z5"
+git = "https://github.com/i7/counterfeit-monkey"
 
 # the start script plays the story in the bundled Frotz; saves go to
 # ~/.local/share/all-things-devours

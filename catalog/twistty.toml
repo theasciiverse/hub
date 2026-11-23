@@ -23,6 +23,7 @@ url = "https://github.com/been-jamming"
 [upstream]
 name = "Benjamin Jones"
 url = "https://github.com/been-jamming/rubiks_cube"
+git = "https://github.com/been-jamming/rubiks_cube"
 
 [exec]
 game = "twistty"

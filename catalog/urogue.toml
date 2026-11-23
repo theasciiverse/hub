@@ -26,6 +26,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Herb Chong"
 url = "https://github.com/RoguelikeRestorationProject/urogue"
+git = "https://github.com/RoguelikeRestorationProject/arogue5.8"
 
 [exec]
 game = "urogue"

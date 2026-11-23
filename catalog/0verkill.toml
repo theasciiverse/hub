@@ -20,6 +20,7 @@ url = "https://github.com/ravener/0verkill"
 [upstream]
 name = "Brainsoft (Brain, Clock and others)"
 url = "https://github.com/ravener/0verkill"
+git = "https://github.com/ravener/0verkill.git"
 
 # 0verkill-play: with no arguments a local game against two bots (server,
 # bots and client), with arguments just the client (-i <host> joins a server)

@@ -18,6 +18,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Dead End"
 url = "https://github.com/dead-end/nuzzle"
+git = "https://github.com/dead-end/nuzzle"
 
 # starts at the menu of the three games; scores in
 # $XDG_DATA_HOME/nuzzle (~/.local/share/nuzzle)

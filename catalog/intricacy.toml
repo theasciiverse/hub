@@ -20,6 +20,7 @@ url = "https://mbays.sdf.org/intricacy/"
 [upstream]
 name = "Martin Bays"
 url = "https://mbays.sdf.org/intricacy/"
+git = "https://thegonz.net/~intricacy/intricacy.git"
 
 # the archive holds intricacy with tutorial/ and initiation/ beside it,
 # which it finds there; a new player's files go to ~/.local/state/intricacy

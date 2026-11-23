@@ -21,6 +21,7 @@ url = "https://github.com/Gliktch/froxcomposband"
 [upstream]
 name = "Gliktch"
 url = "https://github.com/Gliktch/froxcomposband"
+git = "https://github.com/Gliktch/froxcomposband"
 
 # the start script runs it from the folder that holds lib/; saves, scores
 # and bones in ${XDG_DATA_HOME:-~/.local/share}/FroxComposband

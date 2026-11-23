@@ -19,6 +19,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Crack dot Com"
 url = "https://github.com/pgrawehr/golgotha"
+git = "https://github.com/pgrawehr/golgotha"
 
 # the archive holds calvary, README.md and LICENSE; levels, campaign maps,
 # music and sounds are compiled in. Campaign progress is saved to

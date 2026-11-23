@@ -21,6 +21,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Ondřej Žára"
 url = "https://github.com/ondras/roguezombies"
+git = "https://github.com/ondras/roguezombies"
 
 # the session log goes to $XDG_STATE_HOME/rogue-zombies;
 # ROGUE_ZOMBIES_LOG=debug records every key; --seed N for the same game

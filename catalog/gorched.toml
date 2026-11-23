@@ -19,6 +19,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Ján Čabala"
 url = "https://github.com/zladovan/gorched"
+git = "https://github.com/zladovan/gorched.git"
 
 # sizes the world to the terminal at start; a resize applies from the next round
 [exec]

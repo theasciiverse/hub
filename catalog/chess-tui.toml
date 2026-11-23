@@ -21,6 +21,7 @@ url = "https://github.com/thomas-mauran/chess-tui"
 [upstream]
 name = "Thomas Mauran"
 url = "https://github.com/thomas-mauran/chess-tui"
+git = "https://github.com/thomas-mauran/chess-tui"
 
 # the archive holds chess-tui and stockfish side by side; chess-tui finds
 # the engine itself. Settings, skins and saved games go to the config

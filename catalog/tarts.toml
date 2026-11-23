@@ -18,6 +18,7 @@ url = "https://github.com/oiwn/tarts"
 [upstream]
 name = "oiwn and contributors"
 url = "https://github.com/oiwn/tarts"
+git = "https://github.com/oiwn/tarts.git"
 
 # the tour: every effect for 20 seconds, n or Right for the next, p or Left
 # for the previous, q to quit; `tarts <effect>` runs one effect alone

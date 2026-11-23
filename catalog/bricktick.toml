@@ -20,6 +20,7 @@ url = "https://github.com/Subsentient/bricktick"
 [upstream]
 name = "Subsentient"
 url = "https://github.com/Subsentient/bricktick"
+git = "https://github.com/Subsentient/bricktick"
 
 # saved games in ~/.bricktick
 [exec]

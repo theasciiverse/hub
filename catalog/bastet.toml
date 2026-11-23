@@ -18,6 +18,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Federico Poloni"
 url = "https://github.com/fph/bastet"
+git = "https://github.com/fph/bastet"
 
 [exec]
 game = "bastet"

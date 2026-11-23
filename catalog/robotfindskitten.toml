@@ -18,6 +18,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Leonard Richardson and contributors"
 url = "https://robotfindskitten.org"
+git = "https://codeberg.org/robotfindskitten/robotfindskitten.git"
 
 [exec]
 game = "robotfindskitten"

@@ -20,6 +20,7 @@ url = "https://github.com/ricott1/sshattrick"
 [upstream]
 name = "ricott1"
 url = "https://github.com/ricott1/sshattrick"
+git = "https://github.com/ricott1/sshattrick.git"
 
 # with no arguments it plays here (the lobby: the computer, watch,
 # practice, a friend), open to the local network on port 3020

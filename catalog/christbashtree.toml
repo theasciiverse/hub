@@ -17,6 +17,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Sergio Lepore"
 url = "https://github.com/sergiolepore/ChristBASHTree"
+git = "https://github.com/sergiolepore/ChristBASHTree.git"
 
 # the English greeting; any key quits
 [exec]

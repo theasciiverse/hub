@@ -20,6 +20,7 @@ url = "https://github.com/max-niederman/ttyper"
 [upstream]
 name = "Max Niederman"
 url = "https://github.com/max-niederman/ttyper"
+git = "https://github.com/max-niederman/ttyper.git"
 
 [exec]
 game = "ttyper"

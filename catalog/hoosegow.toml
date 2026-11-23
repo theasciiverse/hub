@@ -21,6 +21,7 @@ url = "https://github.com/sussman/hoosegow"
 [upstream]
 name = "Ben Collins-Sussman and Jack Welch, 2010"
 url = "https://github.com/sussman/hoosegow"
+git = "https://github.com/i7/counterfeit-monkey"
 
 # the start script plays the story in the bundled Frotz; saves go to
 # ~/.local/share/hoosegow

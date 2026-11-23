@@ -22,6 +22,7 @@ url = "https://xaos-project.github.io"
 [upstream]
 name = "The XaoS project"
 url = "https://github.com/xaos-project/XaoS"
+git = "https://github.com/xaos-project/XaoS.git"
 
 # the start script runs lib/xaos by its full path, so it finds help/,
 # tutorial/, catalogs/ and examples/ beside it; files it saves go to the

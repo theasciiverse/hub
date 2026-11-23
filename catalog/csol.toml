@@ -21,6 +21,7 @@ url = "https://github.com/nielssp/csol"
 [upstream]
 name = "Niels Sonnich Poulsen"
 url = "https://github.com/nielssp/csol"
+git = "https://github.com/nielssp/csol"
 
 # no arguments: Klondike, or the game saved as the default; `csol freecell`
 # and so on pick a game, the menu bar switches games and themes. Scores and

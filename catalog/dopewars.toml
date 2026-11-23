@@ -21,6 +21,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Ben Webb"
 url = "https://dopewars.sourceforge.io/"
+git = "https://github.com/benmwebb/dopewars.git"
 
 # without -n it first offers a server, the metaserver list or single player
 [exec]

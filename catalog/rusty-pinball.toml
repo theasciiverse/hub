@@ -17,6 +17,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Vector Pinball"
 url = "https://github.com/dozingcat/Vector-Pinball"
+git = "https://github.com/dozingcat/Vector-Pinball"
 
 [exec]
 game = "rusty-pinball"

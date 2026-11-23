@@ -21,6 +21,7 @@ url = "http://cowlark.com/changes/"
 [upstream]
 name = "David Given, 2012"
 url = "http://cowlark.com/changes/"
+git = "https://github.com/i7/counterfeit-monkey"
 
 # the start script plays the story in the bundled Frotz; saves go to
 # ~/.local/share/changes

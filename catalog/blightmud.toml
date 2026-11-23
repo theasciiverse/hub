@@ -20,6 +20,7 @@ url = "https://github.com/Blightmud/Blightmud"
 [upstream]
 name = "Linus Probert and contributors"
 url = "https://github.com/Blightmud/Blightmud"
+git = "https://github.com/Blightmud/Blightmud.git"
 
 # connect from the command line too: blightmud --connect host:port
 [exec]

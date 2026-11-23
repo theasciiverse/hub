@@ -21,6 +21,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Thomas Perl"
 url = "https://icculus.org/tennix/"
+git = "https://repo.or.cz/tennix.git"
 
 # settings, the match left to resume, in $XDG_STATE_HOME/tennix
 [exec]

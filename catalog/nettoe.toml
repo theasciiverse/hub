@@ -21,6 +21,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Gabriele Giorgetti and Mats Erik Andersson"
 url = "https://nettoe.sourceforge.net/"
+git = "https://github.com/gabgio/nettoe.git"
 
 [exec]
 game = "nettoe"

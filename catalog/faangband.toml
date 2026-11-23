@@ -23,6 +23,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Nick McConnell"
 url = "https://github.com/NickMcConnell/FAangband"
+git = "https://github.com/NickMcConnell/FAangband.git"
 
 # lib/ ships beside the binary; saves, options, dumps and scores in
 # $XDG_STATE_HOME/faangband

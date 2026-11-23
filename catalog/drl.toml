@@ -20,6 +20,7 @@ url = "https://drl.chaosforge.org/"
 [upstream]
 name = "ChaosForge"
 url = "https://github.com/chaosforgeorg/drl"
+git = "https://github.com/chaosforgeorg/drl"
 
 # the start script runs --console --no-sound from lib/ and keeps settings,
 # saves and scores in ${XDG_DATA_HOME:-~/.local/share}/drl

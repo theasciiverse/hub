@@ -58,6 +58,10 @@ url = "https://asciiverse.sh"  # here and the maker in [upstream]: the build the
                                # where one exists, not an encyclopedia page
 name = "Murilo Pereira"
 url = "http://murilopereira.com"
+git = "https://github.com/OWNER/REPO" # optional: the original's git
+                               # repository, which tools/upstream_report.py compares
+                               # with ours each week (the title repo's `upstream`
+                               # remote, else its `debian` one)
 
 [exec]
 game = "solitty"               # binary inside the install dir; av adds .exe on Windows

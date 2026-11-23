@@ -21,6 +21,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "David Fisher"
 url = "https://ifarchive.org/if-archive/games/zcode/zracer.z5"
+git = "https://github.com/i7/counterfeit-monkey"
 
 # the start script plays the story in the bundled Frotz; saves go to
 # ~/.local/share/zracer-c40

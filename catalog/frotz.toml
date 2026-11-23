@@ -20,6 +20,7 @@ url = "https://gitlab.com/DavidGriffith/frotz"
 [upstream]
 name = "David Griffith and contributors"
 url = "https://gitlab.com/DavidGriffith/frotz"
+git = "https://gitlab.com/DavidGriffith/frotz.git"
 
 # play a story: frotz <story file>
 [exec]

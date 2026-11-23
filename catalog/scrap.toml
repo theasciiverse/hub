@@ -18,6 +18,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Thijs van Ommen"
 url = "https://github.com/thijsvanommen/scrap"
+git = "https://github.com/thijsvanommen/scrap.git"
 
 [exec]
 game = "scrap"

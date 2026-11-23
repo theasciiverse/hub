@@ -20,6 +20,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "anaseto"
 url = "https://codeberg.org/anaseto/boohu"
+git = "https://codeberg.org/anaseto/boohu"
 
 # save, config, replay and statistics dump in $XDG_STATE_HOME/boohu;
 # -s picks the solarized 16 colours, -o 8 colours, -c a centred camera

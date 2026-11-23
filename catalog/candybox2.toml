@@ -24,6 +24,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "aniwey"
 url = "https://github.com/candybox2/candybox2.github.io"
+git = "https://github.com/candybox2/candybox2.github.io.git"
 
 # saves (the browser's localStorage) go to $XDG_DATA_HOME/candybox2
 # (~/.local/share/candybox2), %APPDATA% on Windows; --slot N starts with

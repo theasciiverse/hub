@@ -21,6 +21,7 @@ url = "https://github.com/historicalsource/zork3"
 [upstream]
 name = "Infocom, 1982"
 url = "https://github.com/historicalsource/zork3"
+git = "https://github.com/historicalsource/zork1"
 
 # the start script plays zork3.z3 in the bundled Frotz; saves go to
 # ~/.local/share/zork3

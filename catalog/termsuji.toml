@@ -21,6 +21,7 @@ url = "https://github.com/lvank/termsuji"
 [upstream]
 name = "lvank"
 url = "https://github.com/lvank/termsuji"
+git = "https://github.com/lvank/termsuji"
 
 # the archive holds termsuji and gnugo side by side; termsuji finds GNU Go
 # itself. The game in progress is saved in the data folder

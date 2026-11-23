@@ -22,6 +22,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Tim Sweeney"
 url = "https://github.com/asiekierka/reconstruction-of-zzt"
+git = "https://github.com/benhoyt/zztgo"
 
 # the archive holds zzt and Epic's zzt.zip, unaltered, from which it reads
 # Town, Caves, Dungeons, City and the Tour; the demo world and the help are

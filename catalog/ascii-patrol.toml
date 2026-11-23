@@ -23,6 +23,7 @@ url = "https://github.com/msokalski/ascii-patrol"
 [upstream]
 name = "Marcin Sokalski"
 url = "https://github.com/msokalski/ascii-patrol"
+git = "https://github.com/msokalski/ascii-patrol.git"
 
 # options, the last game's record and screen shots (Tab) go to
 # $XDG_DATA_HOME/ascii-patrol (~/.local/share/ascii-patrol); %APPDATA%

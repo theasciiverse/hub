@@ -24,6 +24,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Marisa Giancarla"
 url = "https://github.com/fstltna/Imperium"
+git = "https://github.com/fstltna/Imperium"
 
 [exec]
 game = "imperium"

@@ -20,6 +20,7 @@ url = "https://nlarn.github.io/"
 [upstream]
 name = "Joachim de Groot"
 url = "https://github.com/nlarn/nlarn"
+git = "https://github.com/nlarn/nlarn"
 
 # settings and saves in ~/.nlarn; follows the system language (English,
 # German, French, Spanish, Portuguese)

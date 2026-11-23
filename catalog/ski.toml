@@ -21,6 +21,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Eric S. Raymond"
 url = "http://www.catb.org/~esr/ski/"
+git = "https://gitlab.com/esr/ski.git"
 
 [exec]
 game = "ski"

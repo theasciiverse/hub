@@ -17,6 +17,7 @@ url = "https://gitlab.com/jallbrit/cbonsai"
 [upstream]
 name = "John Allbritten and contributors"
 url = "https://gitlab.com/jallbrit/cbonsai"
+git = "https://gitlab.com/jallbrit/cbonsai.git"
 
 # screensaver mode: live growth, a new tree every 4 seconds, any key quits;
 # the tree in progress is saved ($XDG_DATA_HOME/cbonsai/save, %APPDATA% on

@@ -21,6 +21,7 @@ url = "https://sr.ht/~vicho/el_poblador/"
 [upstream]
 name = "Vicente Reyes"
 url = "https://sr.ht/~vicho/el_poblador/"
+git = "https://git.sr.ht/~vicho/el_poblador"
 
 # with no arguments our start screen: name three or four players, or
 # continue a game saved in ~/.local/state/el-poblador

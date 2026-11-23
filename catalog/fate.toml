@@ -21,6 +21,7 @@ url = "https://ifarchive.org/if-archive/games/springthing/2007/Fate.z8"
 [upstream]
 name = "Victor Gijsbers, 2007"
 url = "https://ifarchive.org/if-archive/games/springthing/2007/Fate.z8"
+git = "https://github.com/i7/counterfeit-monkey"
 
 # the start script plays the story in the bundled Frotz; saves go to
 # ~/.local/share/fate

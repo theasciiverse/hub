@@ -22,6 +22,7 @@ url = "https://github.com/ringtailsoftware/zoridor"
 [upstream]
 name = "Ringtail Software"
 url = "https://github.com/ringtailsoftware/zoridor"
+git = "https://github.com/ringtailsoftware/zoridor"
 
 # no arguments: you (player 1) against the machine; -2 human for two
 # players at one keyboard. Saves nothing

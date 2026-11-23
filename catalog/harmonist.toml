@@ -20,6 +20,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "anaseto"
 url = "https://codeberg.org/anaseto/harmonist"
+git = "https://codeberg.org/anaseto/harmonist"
 
 # save, config, replays and logs.txt in $XDG_STATE_HOME/harmonist;
 # -t picks the selenized true colour palette, -l logs the game's messages

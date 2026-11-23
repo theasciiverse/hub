@@ -20,6 +20,7 @@ url = "https://github.com/erkyrath/glulxe"
 [upstream]
 name = "Andrew Plotkin"
 url = "https://github.com/erkyrath/glulxe"
+git = "https://github.com/erkyrath/glulxe.git"
 
 # play a story: glulxe <story file>
 [exec]

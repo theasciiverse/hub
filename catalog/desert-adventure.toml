@@ -21,6 +21,7 @@ url = "http://www.samiam.org/"
 [upstream]
 name = "Sam Trenholme, 2007"
 url = "https://ifarchive.org/if-archive/scott-adams/games/scottfree/desert-scott.zip"
+git = "https://github.com/i7/counterfeit-monkey"
 
 # the start script lists saved games to restore (ScottFree restores only
 # at start), then plays the story in the bundled ScottFree; saves go to

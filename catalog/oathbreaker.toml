@@ -21,6 +21,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Kiëd Llaentenn (kiedtl)"
 url = "https://github.com/kiedtl/roguelike"
+git = "https://github.com/kiedtl/roguelike"
 
 # data/ beside the binary; morgue files and session.log in
 # $XDG_STATE_HOME/oathbreaker; no network (Sentry crash reports removed)

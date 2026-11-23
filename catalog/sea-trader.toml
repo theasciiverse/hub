@@ -22,6 +22,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Yishai Zehavi"
 url = "https://github.com/zyishai/sea-trader"
+git = "https://github.com/zyishai/sea-trader.git"
 
 # writes no files: a voyage lasts one sitting, options live in memory
 [exec]

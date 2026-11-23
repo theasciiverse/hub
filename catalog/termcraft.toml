@@ -20,6 +20,7 @@ url = "https://github.com/pagel-s/termcraft"
 [upstream]
 name = "Sebastian Pagel"
 url = "https://github.com/pagel-s/termcraft"
+git = "https://github.com/pagel-s/termcraft"
 
 # saves in $XDG_DATA_HOME/termcraft/saves (%APPDATA%\termcraft\saves on
 # Windows); `termcraft trial` is Lantern Run, `termcraft host` co-op

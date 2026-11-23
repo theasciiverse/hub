@@ -22,6 +22,7 @@ url = "https://github.com/fezcode/atlas.games"
 [upstream]
 name = "fezcode"
 url = "https://github.com/fezcode/atlas.games"
+git = "https://github.com/fezcode/atlas.games"
 
 # LOG_LEVEL=debug writes a session log to stderr, which av keeps
 [exec]

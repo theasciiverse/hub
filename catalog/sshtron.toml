@@ -19,6 +19,7 @@ url = "https://github.com/zachlatta/sshtron"
 [upstream]
 name = "Zach Latta and Max Wofford"
 url = "https://github.com/zachlatta/sshtron"
+git = "https://github.com/zachlatta/sshtron.git"
 
 # with no arguments the menu: a game here against computer players (open
 # to the local network on port 2022), the public server, or a friend's game

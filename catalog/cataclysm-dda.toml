@@ -18,6 +18,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "CleverRaven and contributors"
 url = "https://github.com/CleverRaven/Cataclysm-DDA"
+git = "https://github.com/CleverRaven/Cataclysm-DDA.git"
 
 # cataclysm-dda is the start script: it passes the read-only data beside
 # it to the game with --basepath

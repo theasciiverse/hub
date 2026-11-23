@@ -19,6 +19,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Alejandro Forero Cuervo"
 url = "https://web.archive.org/web/20071226080243/http://bachue.com/matanza/"
+git = "https://salsa.debian.org/games-team/matanza.git"
 
 # with no arguments the menu: play here against computer ships, host on the
 # local network over SSH (port 2022), or join a friend

@@ -21,6 +21,7 @@ url = "https://github.com/FelineStateMachine/puzzletea"
 [upstream]
 name = "D∆MI"
 url = "https://github.com/FelineStateMachine/puzzletea"
+git = "https://github.com/FelineStateMachine/puzzletea"
 
 # saves, stats and settings in ~/.puzzletea (an SQLite file and config.json)
 [exec]

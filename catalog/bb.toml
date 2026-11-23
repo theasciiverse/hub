@@ -20,6 +20,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "The AA project"
 url = "https://aa-project.sourceforge.net/bb/"
+git = "https://salsa.debian.org/debian/bb.git"
 
 # no arguments: the whole demo with its music, about seven minutes, then
 # the AA project's end text to page through; s skips a part, q quits

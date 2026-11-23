@@ -21,6 +21,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Tomas Zifcak"
 url = "https://github.com/tomz197/asshteroids"
+git = "https://github.com/tomz197/asshteroids"
 
 # with no arguments it plays here against three computer pilots and opens
 # the field to the local network on port 2222 (or the next free one);

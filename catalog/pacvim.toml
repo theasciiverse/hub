@@ -20,6 +20,7 @@ url = "https://github.com/jmoon018/PacVim"
 [upstream]
 name = "Jamal Moon"
 url = "https://github.com/jmoon018/PacVim"
+git = "https://github.com/jmoon018/PacVim.git"
 
 # the start script points pacvim at its bundled maps
 [exec]

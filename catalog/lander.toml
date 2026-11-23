@@ -21,6 +21,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Stacey Campbell"
 url = "https://github.com/staceycampbell/lander"
+git = "https://github.com/staceycampbell/lander"
 
 # high scores in $XDG_STATE_HOME/lander/lander.hs; with LANDER_LOG set, a
 # session log beside them

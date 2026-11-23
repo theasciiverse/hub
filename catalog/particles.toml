@@ -17,6 +17,7 @@ url = "https://github.com/flarn2006/MiscPrograms"
 [upstream]
 name = "flarn2006"
 url = "https://github.com/flarn2006/MiscPrograms"
+git = "https://github.com/flarn2006/MiscPrograms.git"
 
 # no arguments; the help is on the screen until ` hides it; q, Q or Esc quits
 [exec]

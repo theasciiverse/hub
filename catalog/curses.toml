@@ -22,6 +22,7 @@ url = "https://ifarchive.org/if-archive/games/zcode/curses.z5"
 [upstream]
 name = "Graham Nelson, 1993"
 url = "https://ifarchive.org/if-archive/games/zcode/curses.z5"
+git = "https://github.com/i7/counterfeit-monkey"
 
 # the start script plays the story in the bundled Frotz; saves go to
 # ~/.local/share/curses

@@ -20,6 +20,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "pastthepixels"
 url = "https://codeberg.org/pastthepixels/cmdjewel"
+git = "https://codeberg.org/pastthepixels/cmdjewel.git"
 
 # saves and settings in $XDG_STATE_HOME/cmdjewel/config.toml;
 # RUST_LOG=debug writes the session log to stderr, which av keeps

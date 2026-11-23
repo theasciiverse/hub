@@ -22,6 +22,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Scott Miller and Terry Nagy"
 url = "https://jxself.org/supernova.shtml"
+git = "https://jxself.org/git/supernova.git"
 
 # Free Pascal 3.2.2 with src/avcrt.pas for the screen: the framed screen
 # fills any terminal, text wrapped to the width and laid out again on a

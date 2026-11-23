@@ -20,6 +20,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Gregory Adam Scott"
 url = "https://github.com/sudasana/armcom"
+git = "https://github.com/sudasana/armcom"
 
 # the archive holds armcom, README.md and LICENSE; the saved game, high
 # scores, graveyard and journals go to $XDG_DATA_HOME/armoured-commander

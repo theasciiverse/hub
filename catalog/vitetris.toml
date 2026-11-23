@@ -19,6 +19,7 @@ url = "https://github.com/vicgeralds/vitetris"
 [upstream]
 name = "Victor Geraldsson"
 url = "https://github.com/vicgeralds/vitetris"
+git = "https://github.com/vicgeralds/vitetris.git"
 
 [exec]
 game = "vitetris"

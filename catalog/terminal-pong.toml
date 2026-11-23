@@ -21,6 +21,7 @@ url = "https://github.com/IshmamR/terminal.pong"
 [upstream]
 name = "IshmamR"
 url = "https://github.com/IshmamR/terminal.pong"
+git = "https://github.com/IshmamR/terminal.pong.git"
 
 [exec]
 game = "terminal-pong"

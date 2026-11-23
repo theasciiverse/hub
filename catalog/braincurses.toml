@@ -18,6 +18,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Brian Derr"
 url = "https://github.com/bderrly/braincurses"
+git = "https://github.com/bderrly/braincurses"
 
 # four colours to find in ten guesses; -c 5 or -c 6 and -g 1 to 15 from
 # a terminal

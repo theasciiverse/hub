@@ -21,6 +21,7 @@ url = "https://ifarchive.org/if-archive/games/tads/I-Am-Prey.zip"
 [upstream]
 name = "Joey Cramsey, 2023"
 url = "https://ifarchive.org/if-archive/games/tads/I-Am-Prey.zip"
+git = "https://github.com/i7/counterfeit-monkey"
 
 # the start script plays the story in the bundled FrobTADS; saves go to
 # ~/.local/share/i-am-prey

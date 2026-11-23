@@ -20,6 +20,7 @@ url = "https://github.com/filiph/fortress-earth"
 [upstream]
 name = "Filip Hracek"
 url = "https://github.com/filiph/fortress-earth"
+git = "https://github.com/filiph/fortress-earth.git"
 
 # --demo lets the computer fight the war
 [exec]

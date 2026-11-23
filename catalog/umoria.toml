@@ -19,6 +19,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Robert A. Koeneke, James E. Wilson and Michael R. Cook"
 url = "https://github.com/dungeons-of-moria/umoria"
+git = "https://github.com/dungeons-of-moria/umoria"
 
 [exec]
 game = "umoria"

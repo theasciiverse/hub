@@ -17,6 +17,7 @@ url = "https://github.com/ph1l/stars"
 [upstream]
 name = "Philip J Freeman"
 url = "https://github.com/ph1l/stars"
+git = "https://github.com/ph1l/stars.git"
 
 # stars shaded in the 24 greys of the 256-colour palette; with the command
 # line empty any key but / quits, Ctrl+C and Esc always do

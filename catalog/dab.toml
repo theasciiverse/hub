@@ -19,6 +19,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Mike Sharov"
 url = "https://sourceforge.net/projects/bsd-games"
+git = "https://git.code.sf.net/p/bsd-games/code"
 
 # an optional level argument, 1 to 9, sets the starting board size
 [exec]

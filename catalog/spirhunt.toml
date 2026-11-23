@@ -20,6 +20,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Eric Allman and Mike Sharov"
 url = "https://sourceforge.net/projects/bsd-games"
+git = "https://git.code.sf.net/p/bsd-games/code"
 
 [exec]
 game = "spirhunt"

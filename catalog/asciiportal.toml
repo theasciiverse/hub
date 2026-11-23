@@ -20,6 +20,7 @@ url = "https://github.com/cymonsgames/ASCIIpOrtal"
 [upstream]
 name = "Cymon's Games"
 url = "https://github.com/cymonsgames/ASCIIpOrtal"
+git = "https://github.com/cymonsgames/ASCIIpOrtal"
 
 # the start script runs lib/asciiportal, which reads lib/maps; saves and
 # custom map packs go to ~/.asciiportal

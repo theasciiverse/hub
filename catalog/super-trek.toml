@@ -20,6 +20,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Eric S. Raymond (SST2K)"
 url = "https://gitlab.com/esr/super-star-trek"
+git = "https://gitlab.com/esr/super-star-trek"
 
 [exec]
 game = "super-trek"

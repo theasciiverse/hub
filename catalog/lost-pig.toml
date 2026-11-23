@@ -21,6 +21,7 @@ url = "http://grunk.org/lostpig/"
 [upstream]
 name = "Admiral Jota, 2007"
 url = "http://grunk.org/lostpig/"
+git = "https://github.com/i7/counterfeit-monkey"
 
 # the start script plays the story in the bundled Frotz; saves go to
 # ~/.local/share/lost-pig

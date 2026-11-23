@@ -20,6 +20,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Justin David Smith and Jacob Luna Lundberg"
 url = "https://github.com/lschierer/xscorch"
+git = "https://github.com/lschierer/xscorch"
 
 # the world is scaled to the canvas, so any size plays the same game
 [exec]

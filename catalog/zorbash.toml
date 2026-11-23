@@ -21,6 +21,7 @@ url = "https://github.com/goblinhack/zorbash"
 [upstream]
 name = "Neil McGill"
 url = "https://github.com/goblinhack/zorbash"
+git = "https://github.com/goblinhack/zorbash"
 
 # one binary with every picture, sound and tune built in; saves, config
 # and logs in ~/.local/state/zorbash (macOS: ~/Library/Application

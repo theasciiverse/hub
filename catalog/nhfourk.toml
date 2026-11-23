@@ -20,6 +20,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Nathan Eady"
 url = "https://github.com/tsadok/nhfourk"
+git = "https://github.com/tsadok/nhfourk.git"
 
 # the tty interface (libuncursed), no tiles
 [exec]

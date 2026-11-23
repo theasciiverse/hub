@@ -20,6 +20,7 @@ url = "https://github.com/munificent/hauberk"
 [upstream]
 name = "Bob Nystrom"
 url = "https://github.com/munificent/hauberk"
+git = "https://github.com/munificent/hauberk.git"
 
 # heroes are saved in the player's data folder; --demo lets the computer
 # play a new hero

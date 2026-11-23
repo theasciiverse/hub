@@ -22,6 +22,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Gleb Matsko"
 url = "https://github.com/glebmatz/cascade"
+git = "https://github.com/glebmatz/cascade"
 
 # settings, songs, scores and history in $XDG_STATE_HOME/cascade;
 # RUST_LOG=cascade=debug writes the session log to stderr, which av keeps

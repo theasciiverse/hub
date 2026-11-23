@@ -24,6 +24,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Ondřej Žára"
 url = "https://github.com/ondras/rogue-sea"
+git = "https://github.com/ondras/rogue-sea"
 
 # the session log goes to $XDG_STATE_HOME/rogue-sea;
 # ROGUE_SEA_LOG=debug records every key; --seed N for the same seas

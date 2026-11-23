@@ -21,6 +21,7 @@ url = "https://github.com/cody2007/arcane_fortune"
 [upstream]
 name = "Darin Straus"
 url = "https://github.com/cody2007/arcane_fortune"
+git = "https://github.com/cody2007/arcane_fortune"
 
 # the title screen: a new game (historical scenario or random world) or,
 # once there is a save, the last game

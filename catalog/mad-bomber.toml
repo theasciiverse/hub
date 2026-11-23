@@ -21,6 +21,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Neil James Brown"
 url = "https://ifarchive.org/if-archive/games/zcode/bomber.z5"
+git = "https://github.com/i7/counterfeit-monkey"
 
 # the start script plays the story in the bundled Frotz; the high score
 # lasts until you quit

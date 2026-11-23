@@ -22,6 +22,7 @@ url = "https://samsai.itch.io/cursed-platformer"
 [upstream]
 name = "Samsai"
 url = "https://gitlab.com/Samsai/linux-game-jam-2019-game"
+git = "https://gitlab.com/Samsai/linux-game-jam-2019-game"
 
 # the start script runs lib/cursed-platformer beside lib/data (levels and
 # sounds); progress goes to ~/.local/share/cursed-platformer

@@ -22,6 +22,7 @@ url = "https://github.com/mozilla-ai/settl"
 [upstream]
 name = "Mozilla.ai"
 url = "https://github.com/mozilla-ai/settl"
+git = "https://github.com/mozilla-ai/settl"
 
 # no arguments: the title menu. The language model opponents download a
 # llamafile on first use (Bonsai 1.7B, 292 MB, into ~/.cache/settl) and

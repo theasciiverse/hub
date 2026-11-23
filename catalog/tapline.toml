@@ -21,6 +21,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Yuji Ueki"
 url = "https://github.com/unhappychoice/tapline"
+git = "https://github.com/unhappychoice/tapline"
 
 # the charts in songs/ beside the binary; results in $XDG_STATE_HOME/tapline,
 # the player's own charts in songs/ there; RUST_LOG=debug writes the

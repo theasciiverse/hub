@@ -20,6 +20,7 @@ url = "https://github.com/k21971/EvilHack"
 [upstream]
 name = "k21971"
 url = "https://github.com/k21971/EvilHack"
+git = "https://github.com/k21971/EvilHack"
 
 # the start script gives each player a playground in
 # ${XDG_DATA_HOME:-~/.local/share}/evilhack (saves, bones, scores) and

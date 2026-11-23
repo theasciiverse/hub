@@ -22,6 +22,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Anton Medvedev"
 url = "https://github.com/antonmedv/termablo"
+git = "https://github.com/antonmedv/termablo"
 
 # writes no files (no saves, settings or logs); language from LANG or
 # -lang; never started with -ssh

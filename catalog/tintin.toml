@@ -21,6 +21,7 @@ url = "https://tintin.mudhalla.net"
 [upstream]
 name = "Peter Unold, Bill Reis and Igor van den Hoven"
 url = "https://github.com/scandum/tintin"
+git = "https://github.com/scandum/tintin.git"
 
 # connect from inside: #session <name> <host> <port>
 [exec]

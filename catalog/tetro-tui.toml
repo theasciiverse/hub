@@ -20,6 +20,7 @@ url = "https://github.com/Strophox/tetro-tui"
 [upstream]
 name = "Strophox"
 url = "https://github.com/Strophox/tetro-tui"
+git = "https://github.com/Strophox/tetro-tui"
 
 # settings, scores, stats and replays in one save file,
 # ~/.config/.tetro-tui_v3.6_savefile.ron (what it keeps is set in Advanced

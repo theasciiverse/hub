@@ -23,6 +23,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Grzegorz Moskal, Michal Moskal and Przemek Niezborala"
 url = "https://salsa.debian.org/games-team/asciijump"
+git = "https://salsa.debian.org/games-team/asciijump"
 
 # the start script points asciijump at its bundled gfx/ and hills/
 [exec]

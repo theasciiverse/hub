@@ -21,6 +21,7 @@ url = "https://github.com/jwvhewitt/gearhead-1"
 [upstream]
 name = "Joseph Hewitt"
 url = "https://github.com/jwvhewitt/gearhead-1"
+git = "https://github.com/jwvhewitt/gearhead-1"
 
 # the start script changes into the folder with the game's data
 [exec]

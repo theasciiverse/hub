@@ -21,6 +21,7 @@ url = "https://github.com/itabesamesa/minesweeper_4d_rs"
 [upstream]
 name = "itabesamesa"
 url = "https://github.com/itabesamesa/minesweeper_4d_rs"
+git = "https://github.com/itabesamesa/minesweeper_4d_rs"
 
 # keys and colours in $XDG_CONFIG_HOME/minesweeper_4d/config.toml (the
 # default ships in the archive); Ctrl+O saves a game to ~/Downloads

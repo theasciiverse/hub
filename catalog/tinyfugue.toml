@@ -20,6 +20,7 @@ url = "https://tinyfugue.sourceforge.net/"
 [upstream]
 name = "Ken Keys, with Debian's patches"
 url = "https://tinyfugue.sourceforge.net/"
+git = "https://salsa.debian.org/rra/tf5.git"
 
 # the start script sets TFLIBDIR to the bundled tf-lib, then runs tf
 [exec]

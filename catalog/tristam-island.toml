@@ -21,6 +21,7 @@ url = "https://hlabrande.itch.io/tristam-island"
 [upstream]
 name = "Hugo Labrande, 2020"
 url = "https://hlabrande.itch.io/tristam-island"
+git = "https://github.com/i7/counterfeit-monkey"
 
 # the start script plays the story in the bundled Frotz; saves go to
 # ~/.local/share/tristam-island

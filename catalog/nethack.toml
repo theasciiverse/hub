@@ -21,6 +21,7 @@ url = "https://www.nethack.org"
 [upstream]
 name = "NetHack DevTeam"
 url = "https://github.com/NetHack/NetHack"
+git = "https://github.com/NetHack/NetHack.git"
 
 # the tty interface; OPTIONS=windowtype:curses in nethackrc picks curses
 [exec]

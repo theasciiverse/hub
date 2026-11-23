@@ -21,6 +21,7 @@ url = "https://github.com/radha/mahjongg"
 [upstream]
 name = "radha"
 url = "https://github.com/radha/mahjongg"
+git = "https://github.com/radha/mahjongg.git"
 
 [exec]
 game = "mahjongg"

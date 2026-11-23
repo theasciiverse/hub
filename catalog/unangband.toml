@@ -21,6 +21,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Andrew Doull and Duncan Lowther"
 url = "https://github.com/DGoldDragon28/Unangband"
+git = "https://github.com/DGoldDragon28/Unangband.git"
 
 # lib/ ships beside the binary; saves, scores, options and the compiled
 # data files in $XDG_STATE_HOME/unangband. Its data checks print to

@@ -23,6 +23,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "John Calhoun"
 url = "https://github.com/softdorothy/Glider4"
+git = "https://github.com/softdorothy/Glider4.git"
 
 # the archive holds glider; the art, sounds and the 22 houses are compiled
 # in. Settings (glider.cfg) and high scores (scores.txt) go to

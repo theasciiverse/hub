@@ -21,6 +21,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "BigJk"
 url = "https://github.com/BigJk/end_of_eden"
+git = "https://github.com/BigJk/end_of_eden"
 
 # assets beside the binary; settings, save, logs, cache and mods in
 # $XDG_STATE_HOME/end-of-eden

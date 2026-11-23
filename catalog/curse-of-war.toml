@@ -20,6 +20,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Alexey Nikolaev"
 url = "https://a-nikolaev.github.io/curseofwar/"
+git = "https://github.com/a-nikolaev/curseofwar.git"
 
 [exec]
 game = "curseofwar"

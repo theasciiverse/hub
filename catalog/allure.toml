@@ -21,6 +21,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Mikolaj Konarski"
 url = "https://allureofthestars.com"
+git = "https://github.com/AllureOfTheStars/Allure"
 
 # one static binary; saves, settings and scores go to ~/.local/state/allure
 # (XDG_STATE_HOME). The ANSI frontend draws on stderr, and the game sends

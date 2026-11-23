@@ -17,6 +17,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "David Ulrich"
 url = "https://github.com/dulrich/mandelbrot-viewer"
+git = "https://github.com/dulrich/mandelbrot-viewer"
 
 # opens on the whole set, fitted to the terminal and centred; arrows pan,
 # + and - zoom (100 levels), q quits

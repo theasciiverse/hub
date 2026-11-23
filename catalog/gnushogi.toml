@@ -21,6 +21,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Yann Dirson and the GNU Shogi authors"
 url = "https://savannah.gnu.org/projects/gnushogi/"
+git = "https://git.savannah.gnu.org/git/gnushogi.git"
 
 # -C picks the curses display (upstream's default is the text interface
 # for XBoard). The opening book sits beside the program; the binary book

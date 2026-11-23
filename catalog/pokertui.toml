@@ -20,6 +20,7 @@ url = "https://github.com/AlexAlexBabarika/pokertui"
 [upstream]
 name = "Aleksandr Babarika"
 url = "https://github.com/AlexAlexBabarika/pokertui"
+git = "https://github.com/AlexAlexBabarika/pokertui.git"
 
 # the archive also holds pokertui-server, for network tables. Settings in
 # $XDG_CONFIG_HOME/pokertui (%APPDATA%\pokertui on Windows)

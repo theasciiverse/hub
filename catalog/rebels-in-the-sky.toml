@@ -20,6 +20,7 @@ url = "https://github.com/ricott1/rebels-in-the-sky"
 [upstream]
 name = "Alessandro Ricottone"
 url = "https://github.com/ricott1/rebels-in-the-sky"
+git = "https://github.com/ricott1/rebels-in-the-sky"
 
 [exec]
 game = "rebels"

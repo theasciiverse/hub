@@ -21,6 +21,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Martin Bays"
 url = "https://mbays.sdf.org/fov/"
+git = "https://thegonz.net/~fov/fearOfView.git"
 
 # one static binary; the game state and highscores go to
 # ~/.local/state/fear-of-view (XDG_STATE_HOME)

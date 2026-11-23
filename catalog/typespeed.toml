@@ -19,6 +19,7 @@ url = "https://typespeed.sourceforge.net/"
 [upstream]
 name = "Jani Ollikainen, Jaakko Manelius and Tobias Stoeckmann"
 url = "https://typespeed.sourceforge.net/"
+git = "https://salsa.debian.org/games-team/typespeed.git"
 
 # the start script points typespeed at its bundled words and rules
 [exec]

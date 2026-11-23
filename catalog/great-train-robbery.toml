@@ -22,6 +22,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Ondřej Žára"
 url = "https://github.com/ondras/great-train-robbery"
+git = "https://github.com/ondras/great-train-robbery"
 
 # the session log goes to $XDG_STATE_HOME/great-train-robbery;
 # GREAT_TRAIN_ROBBERY_LOG=debug records every key; --seed HEX for a town

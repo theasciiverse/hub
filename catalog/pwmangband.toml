@@ -19,6 +19,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "the MAngband and PWMAngband developers"
 url = "https://github.com/draconisPW/PWMAngband"
+git = "https://github.com/draconisPW/PWMAngband.git"
 
 # pwmangband-play: with no arguments a private game on this machine (a
 # local server and the client, the server stopped when the client quits);

@@ -22,6 +22,7 @@ url = "https://github.com/Lyle-Tafoya/Omega"
 [upstream]
 name = "Laurence R. Brothers, Lyle Tafoya"
 url = "https://github.com/Lyle-Tafoya/Omega"
+git = "https://github.com/Lyle-Tafoya/Omega"
 
 # saves, the hall of fame and omega.toml in ~/.local/share/omega
 # (%APPDATA%\omega on Windows); lib/ beside the binary holds the game's data

@@ -21,6 +21,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "anaseto"
 url = "https://codeberg.org/anaseto/shamogu"
+git = "https://codeberg.org/anaseto/shamogu"
 
 # save, config, replays and logs.txt in $XDG_STATE_HOME/shamogu;
 # -t picks the selenized true colour palette, -l logs the game's messages

@@ -18,6 +18,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Linley Henzell and the Stone Soup team"
 url = "https://github.com/crawl/crawl"
+git = "https://github.com/crawl/crawl"
 
 [exec]
 game = "crawl"

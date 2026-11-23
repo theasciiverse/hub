@@ -20,6 +20,7 @@ url = "https://github.com/ElnurBDa/blackguard"
 [upstream]
 name = "Elnur Badalov"
 url = "https://github.com/ElnurBDa/blackguard"
+git = "https://github.com/ElnurBDa/blackguard"
 
 # no arguments: a random dungeon. Stats (best score, wins, games played) in
 # $XDG_DATA_HOME/blackguard (the platform data folder elsewhere)

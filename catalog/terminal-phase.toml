@@ -20,6 +20,7 @@ url = "https://gitlab.com/dustyweb/terminal-phase"
 [upstream]
 name = "Christine Lemmer-Webber"
 url = "https://gitlab.com/dustyweb/terminal-phase"
+git = "https://gitlab.com/dustyweb/terminal-phase.git"
 
 [exec]
 game = "terminal-phase"

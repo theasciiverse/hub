@@ -21,6 +21,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "conornally"
 url = "https://github.com/conornally/diabaig"
+git = "https://github.com/conornally/diabaig"
 
 # saves, settings, high scores and the -v log in $XDG_STATE_HOME/diabaig
 [exec]

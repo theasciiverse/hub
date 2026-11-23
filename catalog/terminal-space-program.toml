@@ -22,6 +22,7 @@ url = "https://github.com/jasonfen/terminal-space-program"
 [upstream]
 name = "jasonfen"
 url = "https://github.com/jasonfen/terminal-space-program"
+git = "https://github.com/jasonfen/terminal-space-program"
 
 # saves in ~/.local/state/terminal-space-program, mods (systems, vessels,
 # parts, missions as JSON) in ~/.config/terminal-space-program

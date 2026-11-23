@@ -19,6 +19,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Eric Allman"
 url = "https://github.com/jj1bdx/bsdtrek"
+git = "https://github.com/jj1bdx/bsdtrek.git"
 
 [exec]
 game = "trek"

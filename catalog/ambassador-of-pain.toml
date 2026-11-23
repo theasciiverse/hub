@@ -22,6 +22,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Raffael Himmelreich and Claire Wolf"
 url = "https://github.com/hit-sys/Ambassador-Of-Pain"
+git = "https://github.com/hit-sys/Ambassador-Of-Pain.git"
 
 # the launcher finds the eleven levels in levels/ beside the program;
 # nothing is written anywhere

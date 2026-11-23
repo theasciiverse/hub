@@ -21,6 +21,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Gregory Adam Scott"
 url = "https://github.com/sudasana/armcom2"
+git = "https://github.com/sudasana/armcom2"
 
 # the archive holds armcom2, README.md and LICENSE; saved campaigns, the
 # settings and the campaign logs go to $XDG_DATA_HOME/armoured-commander-ii

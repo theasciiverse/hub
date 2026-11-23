@@ -20,6 +20,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Dawid Ciężarkiewicz"
 url = "https://github.com/dpc/rhex"
+git = "https://github.com/dpc/rhex"
 
 # no saves or settings; the session log is rhex.log in
 # $XDG_STATE_HOME/rhex (RUST_LOG=debug for every key and snapshots)

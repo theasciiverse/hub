@@ -21,6 +21,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Warren Cheung, J. Ali Harlow and the SLASH'EM development team"
 url = "https://sourceforge.net/projects/slashem/"
+git = "https://github.com/osgamearchive/slashem.git"
 
 # the tty interface; saves, scores and slashemrc in $XDG_STATE_HOME/slashem
 [exec]

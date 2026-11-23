@@ -20,6 +20,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "wildgaru"
 url = "https://wildgaru.itch.io/xonitix"
+git = "https://github.com/garu/Xonitix"
 
 # no saves or scores; with XONITIX_LOG set, a session log in
 # $XDG_STATE_HOME/xonitix

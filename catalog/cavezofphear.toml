@@ -19,6 +19,7 @@ url = "https://github.com/AMDmi3/cavezofphear"
 [upstream]
 name = "Tom Rune Flo, maintained by Dmitry Marakasov"
 url = "https://github.com/AMDmi3/cavezofphear"
+git = "https://github.com/AMDmi3/cavezofphear"
 
 # no arguments: the title screen, then cave 1; data/ sits beside the binary
 [exec]

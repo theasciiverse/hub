@@ -17,6 +17,7 @@ url = "https://github.com/p-e-w/ternimal"
 [upstream]
 name = "Philipp Emanuel Weidmann"
 url = "https://github.com/p-e-w/ternimal"
+git = "https://github.com/p-e-w/ternimal.git"
 
 # the whole window on the alternate screen, starting again after a resize;
 # any key, Ctrl+C or SIGTERM quits

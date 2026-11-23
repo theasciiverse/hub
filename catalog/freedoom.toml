@@ -23,6 +23,7 @@ url = "https://freedoom.github.io"
 [upstream]
 name = "Wojciech Graj"
 url = "https://github.com/wojciech-graj/doom-ascii"
+git = "https://github.com/wojciech-graj/doom-ascii"
 
 # the start script plays Freedoom: Phase 1 with -chars half -scaling 1
 # from ${XDG_DATA_HOME:-~/.local/share}/freedoom, where the game keeps

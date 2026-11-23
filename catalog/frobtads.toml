@@ -21,6 +21,7 @@ url = "https://github.com/realnc/frobtads"
 [upstream]
 name = "Nikos Chantziaras"
 url = "https://github.com/realnc/frobtads"
+git = "https://github.com/realnc/frobtads.git"
 
 # play a story: frob <story file>
 [exec]

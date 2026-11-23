@@ -20,6 +20,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Frederic Culot"
 url = "https://github.com/culot/oldrunner"
+git = "https://github.com/culot/oldrunner.git"
 
 # the levels are built into the binary
 [exec]

@@ -23,6 +23,7 @@ url = "https://github.com/Pieczasz/tty-cards"
 [upstream]
 name = "Pieczasz"
 url = "https://github.com/Pieczasz/tty-cards"
+git = "https://github.com/Pieczasz/tty-cards"
 
 # opens on a setup screen: players at the table (2 to 6, 4 to start), enter to
 # deal. --players N, --demo; session log in ~/.local/state/crazy-eights

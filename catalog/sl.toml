@@ -19,6 +19,7 @@ url = "https://github.com/mtoyoda/sl"
 [upstream]
 name = "Toyoda Masashi"
 url = "https://github.com/mtoyoda/sl"
+git = "https://github.com/mtoyoda/sl.git"
 
 [exec]
 game = "sl"

@@ -20,6 +20,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Michael Toy, Glenn Wichman and Ken Arnold"
 url = "https://github.com/rogueforge/rogue5.2"
+git = "https://github.com/RoguelikeRestorationProject/arogue5.8"
 
 [exec]
 game = "rogue52"

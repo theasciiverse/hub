@@ -23,6 +23,7 @@ url = "https://angband.github.io/angband/"
 [upstream]
 name = "Angband Dev Team, after Alex Cutler and Andy Astrand (1990)"
 url = "https://github.com/angband/angband"
+git = "https://github.com/angband/angband.git"
 
 [exec]
 game = "angband"

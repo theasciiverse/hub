@@ -18,6 +18,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Jordan Mechner"
 url = "https://github.com/jmechner/Prince-of-Persia-Apple-II"
+git = "https://github.com/jmechner/Prince-of-Persia-Apple-II"
 
 # the archive holds prince-of-braille, README.md and LICENSE; the colour
 # theme is saved to ~/.config/prince-of-braille/theme, the game to

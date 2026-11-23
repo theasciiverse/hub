@@ -20,6 +20,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Chris Torek and Darren F. Provine"
 url = "https://sourceforge.net/projects/bsd-games"
+git = "https://git.code.sf.net/p/bsd-games/code"
 
 # an optional level argument, 1 to 9, sets the starting speed
 [exec]

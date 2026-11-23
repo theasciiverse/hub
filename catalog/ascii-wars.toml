@@ -20,6 +20,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Carlos Alvarez"
 url = "https://github.com/Alvarz/ascii-wars"
+git = "https://github.com/Alvarz/ascii-wars"
 
 # the archive holds ascii-wars, README.md and LICENSE; settings and
 # records go to $XDG_DATA_HOME/ascii-wars (~/.local/share/ascii-wars,

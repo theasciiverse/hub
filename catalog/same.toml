@@ -20,6 +20,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Josh Williams"
 url = "https://github.com/jodawill/same"
+git = "https://github.com/jodawill/same.git"
 
 # saved games, highscores and .samerc in $XDG_STATE_HOME/same
 [exec]

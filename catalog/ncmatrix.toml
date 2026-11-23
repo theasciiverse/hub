@@ -17,6 +17,7 @@ url = "https://github.com/abishekvashok/cmatrix"
 [upstream]
 name = "Chris Allegretta, Abishek V Ashok and contributors (CMatrix); Thomas Bloedorn (NCMatrix)"
 url = "https://github.com/abishekvashok/cmatrix"
+git = "https://github.com/abishekvashok/cmatrix"
 
 # screensaver mode (any key quits), columns at their own speeds, bold
 # characters; traffic of every interface but loopback

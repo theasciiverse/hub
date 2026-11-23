@@ -21,6 +21,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Brian \"Beej\" Hall"
 url = "https://github.com/beejjorgensen/starlanes-c"
+git = "https://github.com/beejjorgensen/starlanes-c.git"
 
 [exec]
 game = "starlanes"

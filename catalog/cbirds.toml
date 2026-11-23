@@ -18,6 +18,7 @@ url = "https://github.com/clainstone/cbirds"
 [upstream]
 name = "Alessandro Palliccia"
 url = "https://github.com/clainstone/cbirds"
+git = "https://github.com/clainstone/cbirds.git"
 
 # no arguments: braille in the terminal's own colours; q sends the flock off
 # the top and quits, h opens the sliders, the mouse scatters the flock

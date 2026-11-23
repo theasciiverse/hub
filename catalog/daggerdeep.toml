@@ -21,6 +21,7 @@ url = "https://github.com/chadlung/daggerdeep"
 [upstream]
 name = "Chad Lung"
 url = "https://github.com/chadlung/daggerdeep"
+git = "https://github.com/chadlung/daggerdeep.git"
 
 [exec]
 game = "daggerdeep"

@@ -22,6 +22,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Scott Miller"
 url = "https://jxself.org/beyond-the-titanic.shtml"
+git = "https://jxself.org/git/beyond-the-titanic.git"
 
 # Free Pascal 3.2.2 with src/avcrt.pas for the screen: fills any terminal,
 # text wrapped to the width and laid out again on a resize, paging back

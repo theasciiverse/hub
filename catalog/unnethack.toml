@@ -20,6 +20,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Patric Mueller and contributors"
 url = "https://github.com/UnNetHack/UnNetHack"
+git = "https://github.com/UnNetHack/UnNetHack"
 
 # the tty interface, centred on bigger terminals; OPTIONS=windowtype:curses
 # in unnethackrc picks the curses interface

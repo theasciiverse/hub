@@ -24,6 +24,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Ondřej Žára"
 url = "https://github.com/ondras/cafe-havoc"
+git = "https://github.com/ondras/cafe-havoc"
 
 # the session log goes to $XDG_STATE_HOME/cafe-havoc;
 # CAFE_HAVOC_LOG=debug records every key; --seed N for the same cafe

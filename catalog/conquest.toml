@@ -22,6 +22,7 @@ url = "https://asciiverse.sh"
 [upstream]
 name = "Jon Trulson"
 url = "https://github.com/jtrulson/conquest"
+git = "https://github.com/jtrulson/conquest.git"
 
 # the menu: Play here (a private universe with robots), Host on the
 # local network, Join by address. It runs conquestd and conquest-tty

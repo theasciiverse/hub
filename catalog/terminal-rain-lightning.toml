@@ -18,6 +18,7 @@ url = "https://github.com/rmaake1/terminal-rain-lightning"
 [upstream]
 name = "rmaake1 and contributors"
 url = "https://github.com/rmaake1/terminal-rain-lightning"
+git = "https://github.com/rmaake1/terminal-rain-lightning"
 
 # the thunderstorm; t turns it calm, s changes speed, m sound (needs
 # ffplay), q or Esc quits
