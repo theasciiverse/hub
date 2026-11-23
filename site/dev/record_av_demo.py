@@ -1,10 +1,8 @@
 # Records casts/av-demo.cast, the av session in the Home banner: av driven
 # by scripted keys under asciinema 3, at 128x40 (av's own target size),
 # against the live catalog (AV_CATALOG_URL overrides it), with a throwaway
-# HOME so real av state is untouched. Re-recorded 2026-11-23: four searches
-# in turn, En Prise (David's pick for the opening), Ambassador of Pain,
-# Angband and Brickspire, whose preview (David playing) av starts just
-# before the tower turns; then cut with dev/cut_av_demo.py.
+# HOME so real av state is untouched. One search per title, in the order
+# David picked (dev/av_demo_titles.py); then cut with dev/cut_av_demo.py.
 #
 #   python3 dev/record_av_demo.py /tmp/av-demo-raw.cast "$(mktemp -d)"
 #   dev/cut_av_demo.py /tmp/av-demo-raw.cast casts/av-demo.cast   (needs pyte)
@@ -33,15 +31,18 @@ DOWN, UP = b"\x1b[B", b"\x1b[A"
 # between searches clears it (the full list, 0verkill first, shows then,
 # and is cut out afterwards by dev/cut_av_demo.py, which keeps only the
 # stretches where a search is complete: David, 2026-11-23, no 0verkill and
-# no jumping about the list). "bricks" leaves Brickspire only (Bricktick
-# shares "brick"); av starts its preview a little before the still, so
-# the floor clears and the tower turns to the Spire.
+# no jumping about the list).
 def find(words, hold):
     return [(0.1, b"/")] + [(0.1, bytes([c])) for c in words.encode()] + [(hold, None), (0.1, b"\x1b")]
 # The welcome a first run shows appears after about 3 s; Space closes it
-# (the arrows do not, and a letter would be eaten by it).
-script = [(3.5, None), (0.1, b" ")] + find("en prise", 8.0) + find("ambassador", 6.0) + find("angband", 6.0) \
-    + find("bricks", 16.0)[:-1] + [(0.3, b"\x03"), (0.8, b"y")]
+# (the arrows do not, and a letter would be eaten by it). The titles and
+# their order are David's, in dev/av_demo_titles.py.
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from av_demo_titles import TITLES
+script = [(3.5, None), (0.1, b" ")]
+for words, hold in TITLES:
+    script += find(words, hold)
+script = script[:-1] + [(0.3, b"\x03"), (0.8, b"y")]   # the last search is not cleared
 for wait, key in script:
     pump(wait)
     if key: os.write(fd, key)

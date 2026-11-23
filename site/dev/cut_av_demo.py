@@ -13,7 +13,10 @@ Needs pyte (pip install pyte, in a virtual environment).
 import json, re, sys
 import pyte
 
-QUERIES = ["en prise", "ambassador", "angband", "bricks"]
+import os
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from av_demo_titles import TITLES
+QUERIES = [q for q, _ in TITLES]
 SETTLE = 0.5      # seconds after a query is complete before keeping
 TRIM_END = 0.15   # seconds dropped before the Esc that clears it
 QUIT = 1.3        # seconds before the end the quit begins
@@ -48,6 +51,20 @@ def snapshot(scr):
             out.append(ch.data or ' ')
     out.append('\x1b[0m')
     return ''.join(out)
+
+
+def ends_clean(data, was_clean):
+    """Whether the stream ends between escape sequences after `data`,
+    given whether it did before (a sequence split across chunks)."""
+    i = data.rfind('\x1b')
+    if i < 0:
+        # no new sequence starts here; a pending one ends at its final byte
+        return was_clean or bool(re.search(r'[@-~]', data))
+    tail = data[i:]
+    # CSI: ESC [ parameters, then a final byte; other escapes: ESC and one more
+    if tail.startswith('\x1b['):
+        return bool(re.match(r'\x1b\[[0-?]*[ -/]*[@-~]', tail))
+    return len(tail) >= 2
 
 
 def query_shown(scr):
@@ -93,29 +110,34 @@ def main():
         keep.append((a + SETTLE, b - TRIM_END))
     print("kept:", ", ".join(f"{q} {a:.1f}-{b:.1f}s" for q, (a, b) in zip(QUERIES, keep)))
 
-    # pass 2: write the kept stretches, each opening with a full redraw
+    # pass 2: write the kept stretches, each opening with a full redraw.
+    # av's output comes in chunks that can split an escape sequence, so a
+    # stretch starts and ends only where the stream is between sequences:
+    # a half sequence at the start would print as text (and scroll the
+    # screen), one at the end would swallow the next redraw.
     scr = pyte.Screen(cols, rows)
     st = pyte.Stream(scr)
     t, outev, seg, prev = 0.0, [], 0, None
+    clean = True   # the stream so far ends between escape sequences
     for d, k, data in events:
         t += d
-        if k == 'o':
-            st.feed(data)
         if seg >= len(keep):
             break
         a, b = keep[seg]
-        if prev is None and t >= a:
+        if prev is None and t >= a and clean and k == 'o':
+            # start: a full redraw of the screen as it stands, then this event
             outev.append([0.0 if not outev else 0.05, 'o', snapshot(scr)])
             prev = t
-            continue
-        if prev is not None:
-            if t > b:
+        if prev is not None and k == 'o':
+            if t > b and clean:
                 seg += 1
                 prev = None
-                continue
-            if k == 'o':
+            else:
                 outev.append([round(t - prev, 6), 'o', data])
                 prev = t
+        if k == 'o':
+            st.feed(data)
+            clean = ends_clean(data, clean)
 
     # check: replay what was written, every frame free of 0verkill
     scr = pyte.Screen(cols, rows)
@@ -124,11 +146,14 @@ def main():
         st.feed(data)
         if any('0verkill' in r for r in scr.display):
             sys.exit(f"0verkill shows in the cut at event {i}; nothing written")
+        # av's logo stays on the top line: the screen never shifted
+        if '\u2584\u2580\u2588' not in scr.display[0]:
+            sys.exit(f"the screen shifted at event {i} (the logo left the top line); nothing written")
     with open(out, 'w') as f:
         f.write(json.dumps(head) + '\n')
         for e in outev:
             f.write(json.dumps(e) + '\n')
-    print(f"{out}: {len(outev)} events, {sum(e[0] for e in outev):.1f} s, no 0verkill")
+    print(f"{out}: {len(outev)} events, {sum(e[0] for e in outev):.1f} s, no 0verkill, screen steady")
 
 
 if __name__ == '__main__':
