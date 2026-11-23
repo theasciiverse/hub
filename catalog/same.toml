@@ -1,0 +1,51 @@
+schema_version = 1
+id = "same"
+kind = "game"
+title = "SameGame"
+description = "Clear a board of 512 coloured blocks, group by group, driven like vi: counts, hjkl, :commands and undo all the way back."
+year = 2015
+license = "GPL-2.0-only"
+repo = "theasciiverse/same"
+provenance = "Josh Williams wrote same, his SameGame with vi-like commands, in C and ncurses over 2015."
+changes = "PATCHES.md"
+topics = ["puzzle", "samegame", "vi", "undo", "tile-matching", "ncurses", "c"]
+genre = "puzzle"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# upstream's master at 856146c (2015-11-04), tag v0.9; PATCHES.md in
+# theasciiverse/same
+[upstream]
+name = "Josh Williams"
+url = "https://github.com/jodawill/same"
+
+# saved games, highscores and .samerc in $XDG_STATE_HOME/same
+[exec]
+game = "same"
+args = []
+
+# measured: the 32x16 board with its side panel, and the longest question
+# ("Changing difficulty will reset the board. Continue? (y/n)") on the
+# bottom row
+[min_terminal]
+cols = 57
+rows = 17
+
+# ASCII letters on coloured blocks; click a group to clear it
+[requires]
+utf8 = false
+color = "basic"
+mouse = true
+
+# 100x30 with the 57x17 game in the middle, asciiverse/record-preview.sh:
+# a whole 32x16 board cleared with moves from asciiverse/solve.py, then
+# the end-of-game replay and a new highscore; the still is mid-game, a
+# group lit up and ready to clear
+[media]
+cast = "asciiverse/same.cast"
+thumbnail_at = 20.0
+
+[release]
+source = "github"
