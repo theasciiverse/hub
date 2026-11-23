@@ -1,0 +1,50 @@
+schema_version = 1
+id = "enigma"
+kind = "game"
+title = "Enigma"
+description = "Dig, push and collect every piece of gold while arrows fall, slide and rise around you: twelve fiendish puzzle levels where one wrong step brings the board down on your head."
+year = 2000
+license = "MIT"
+repo = "theasciiverse/enigma"
+provenance = "Simon Tatham wrote Enigma for Unix terminals between 2000 and 2004, to rules and twelve levels devised by a friend of his who chose to stay anonymous."
+changes = "PATCHES.md"
+topics = ["puzzle", "logic", "boulder-dash-like", "xor-like", "save slots", "replays", "curses", "c"]
+genre = "puzzle"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# Tatham's 1.04 tarball (2004-02-29) plus his 2008 "Missing #includes";
+# PATCHES.md in theasciiverse/enigma
+[upstream]
+name = "Simon Tatham"
+url = "https://www.chiark.greenend.org.uk/~sgtatham/enigma/"
+
+# levels in levels/ beside the program; saves and progress in
+# $XDG_STATE_HOME/enigma. System packages call it tatham-enigma.
+[exec]
+game = "enigma"
+args = []
+
+# the menu is 60x22; a level is 36x20 with its title and status lines
+[min_terminal]
+cols = 60
+rows = 22
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, asciiverse/record-preview.sh: the menu, then level 1, Darkness
+# Falls, played with the best line asciiverse/solve.c finds on Enigma's
+# own engine (23 of the 61 pieces of gold, arrows falling around the
+# player), a save to slot 1 and back to the menu; the still is mid-level
+# with arrows fallen and gold taken
+[media]
+cast = "asciiverse/enigma.cast"
+thumbnail_at = 20.0
+
+[release]
+source = "github"

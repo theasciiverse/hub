@@ -10,7 +10,7 @@ Nobody tells you the rules. Arrows slide the way they point whenever there is ro
 - **Mistakes cost nothing:** undo as far back as you like, and redo plays it forward again.
 - **Save, load and replay:** keep positions, and watch a saved solution replay move by move.
 - **A level editor:** build your own, test it and verify it.
-- **Enigma's twelve levels:** the original levels of Enigma, a puzzle game of falling blocks, exploding bombs and pushing things around, from Darkness Falls to Shrouded Glory, played by Enigma's own rules.
+- **Enigma's twelve levels:** the original levels of Enigma, a puzzle game of falling blocks, exploding bombs and pushing things around, from Darkness Falls to Shrouded Glory, played by Enigma's own rules. Simon Tatham's original Enigma, the terminal game they were made for, is in the catalog too.
 
 **THE DOOR IS RIGHT THERE. GETTING TO IT IS ANOTHER MATTER.**
 
