@@ -32,9 +32,12 @@ gamepad = true
 
 system_deps = ["libasound2", "libudev1"]
 
+# 100x30, David playing (2026-11-23), 57 s cut from his recording: Chisel
+# on the Ground Floor, the floor cleared, the tower turning to the Spire,
+# play there; the still is the turn, the Spire coming round
 [media]
 cast = "asciiverse/brickspire.cast"
-thumbnail_at = 8.0
+thumbnail_at = 28.9
 
 [release]
 source = "github"

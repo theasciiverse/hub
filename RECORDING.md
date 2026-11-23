@@ -77,6 +77,15 @@ gameplay.
 Flags checked against asciinema 3.2.1's `src/cli.rs` on 2026-10-06. Its help
 text mentions `--rec-env`, but the actual flag is `--capture-env`.
 
+## Recording yourself playing
+
+A person playing often makes the best preview. Record a whole session the
+way above (Brickspire's `asciiverse/record-play.sh` wraps it: the
+terminal identity, a throwaway data folder, `USER=player`), then cut the
+best 20 to 60 seconds with `tools/casttrim.py IN.cast OUT.cast START END`:
+the clip opens with a full redraw of the screen at START, so it plays
+correctly although the game only redraws what changes.
+
 ## What to record
 
 - Show real gameplay within the first few seconds; skip long menus and
