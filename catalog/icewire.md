@@ -65,12 +65,23 @@ Every rover is a small text file you can copy to a friend or open in an
 editor, and the arena is exact: the same wiring always gives the same
 run, on any machine.
 
+## When the wiring grows up
+
+Press **L** and your wiring turns into Lua: a line or two per part, in the
+order the wiring runs, driving exactly as the wiring did. Open it in your
+editor, change anything, run it again, and watch what it prints beside the
+arena. Or start a rover in plain Lua from nothing and give `tick()` your
+own ideas. Scripts can feel, think and drive, and nothing else: no files,
+no system, and a budget of instructions every tick.
+
 ## Controls
 
 - **Arrows** or **hjkl**: move about the bench; **Tab** jumps from part to part
 - **a** or **Enter**: add a part; **Enter** sets a part's mount, mode or value
 - **w**: wire from the part under the cursor, then **Enter** on the part it feeds
 - **m** moves a part, **x** removes a part or wire, **u** undoes
+- **L** compiles the wiring to Lua; on a Lua rover **e** opens the script
+  in your editor
 - **r**: run the rover; **c** picks the next challenge
 - In the arena: **Space** pauses, **.** steps one tick, **f** goes faster,
   **Tab** shows the live bench, **Esc** stops so you can rewire
