@@ -98,6 +98,9 @@ watching, and watch the best matches again as replays.
 - The mouse works too: drag parts, click an output to start a wire,
   right-click to remove
 - **?** shows every key, **p** opens the parts library
+- **Watch and learn** on the title screen: a rover wired in front of you,
+  key by key, and run three times; Space pauses, the arrows step, and at
+  the end Enter keeps it
 - The league on the title screen plays the season night by night; free
   play opens every challenge
 - **B** in the garage makes a bot rover; `icewire --tournament dodger
