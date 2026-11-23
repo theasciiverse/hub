@@ -1,0 +1,47 @@
+schema_version = 1
+id = "matanza"
+kind = "game"
+title = "Matanza"
+description = "A space battle drawn in ASCII art: turn, thrust, coast and shoot in a shared universe, against computer ships or friends who join over SSH."
+year = 2000
+license = "GPL-2.0-or-later"
+repo = "theasciiverse/matanza"
+provenance = "Alejandro Forero Cuervo of the Freaks Unidos wrote Matanza in CWEB from 2000 to 2003, a space battle you joined by telnet, and Debian has carried it since 2004."
+changes = "PATCHES.md"
+topics = ["action", "space", "multiplayer", "lan", "ssh", "ascii-art", "c"]
+genre = "action"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# packaged by Asciiverse with the changes in PATCHES.md (theasciiverse/matanza)
+[upstream]
+name = "Alejandro Forero Cuervo"
+url = "https://web.archive.org/web/20071226080243/http://bachue.com/matanza/"
+
+# with no arguments the menu: play here against computer ships, host on the
+# local network over SSH (port 2022), or join a friend
+[exec]
+game = "matanza"
+args = []
+
+# the game's screens are laid out for 80x24; bigger windows draw finer
+[min_terminal]
+cols = 80
+rows = 24
+
+# plain ASCII with red, blue, bold and reverse; keyboard only
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, matanza --play --ships 3 (asciiverse/record-preview.sh): the
+# opening, then a fight with the computer ships; at 35 s a ship up close
+[media]
+cast = "asciiverse/matanza.cast"
+thumbnail_at = 35.0
+
+[release]
+source = "github"
