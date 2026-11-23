@@ -29,7 +29,7 @@ of a computer ship.
 - **Enter**: say something to everyone
 - **w**, **z**: who is playing, and the scores
 - **p**: pause the universe, for everyone
-- **q**: quit
+- **q**: quit (**y** to confirm); **Q** quits at once
 
 At the start, press Enter through the opening, take the name you are
 offered or type your own (up to eight letters), and press Enter.
