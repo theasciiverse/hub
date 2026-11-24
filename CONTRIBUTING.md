@@ -81,6 +81,34 @@ For a pull request: open one adding `catalog/<id>.toml` and `catalog/<id>.md`. I
 Once merged, the title appears in `catalog.json` on its next build (every 6
 hours, or right after the merge).
 
+## AI and other tools
+
+Asciiverse is built with the help of AI assistants, and titles made with
+them are welcome. We follow the Linux kernel's approach: tools may help,
+and a person is accountable for the result.
+
+- **A person stands behind every title.** Whoever submits a title has
+  reviewed and tested it, understands how it works, can answer for it in a
+  bug report, and has the right to distribute it. If you could not defend
+  a part of it, do not submit that part.
+- **Say where a tool did real work.** If an AI assistant or a generator
+  wrote a meaningful part of the code, text or art, say so in the README
+  or in the commits (an `Assisted-by:` or `Co-Authored-By:` line is
+  enough). Spelling fixes, autocompletion and formatters do not count.
+- **Original authors keep their credit.** A port or package of someone
+  else's work credits and links them, keeps their code as they wrote it,
+  and lists every change separately (`changes` in the manifest).
+- **Reviewers decide how closely to look.** Every title goes through the
+  checks above. Beyond that, each reviewer may handle a title made with
+  much AI help as they see fit: review it like any other, ask for more
+  testing, ask you to walk through how a part works, or review it later
+  than hand-made work. Expect a closer look the more of a title was
+  generated, and a submission that nobody can explain may be turned down
+  without a detailed review.
+
+Asciiverse's own titles work the same way: an assistant may write much of
+a change, its commits say so, and a person reviews, tests and releases it.
+
 ## Why checksums matter
 
 `av` checks every download against the sha256 in the reviewed catalog before
