@@ -1,0 +1,54 @@
+schema_version = 1
+id = "aftershock"
+kind = "game"
+title = "Aftershock"
+description = "A first-person shooter in your terminal: the 1996 shooter's engine and a whole free world of cultists, knights and things from beyond, in full colour, with a status line you can read at a glance."
+year = 2026
+new = true
+# GPL-3.0-or-later with chafa linked in, as the release builds are; the
+# source is GPL-2.0-or-later
+license = "GPL-3.0-or-later AND BSD-3-Clause"
+repo = "theasciiverse/aftershock"
+provenance = "id Software released the source of its 1996 shooter's engine in 1999; Kevin Shanahan's TyrQuake carried it on, libretro made it a core, Raul Dias brought it to the terminal as OmaQuake in 2026, and Aftershock gave it a terminal frontend of its own. The LibreQuake project has made free maps, monsters, sounds and music for it since 2019."
+changes = "PATCHES.md"
+topics = ["shooter", "first-person", "fps", "3d", "classic", "music", "librequake"]
+genre = "action"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# Our own terminal frontend (after OmaQuake) on the libretro tyrquake
+# core, with our half-block picture, text HUD and menus, keyboard scheme, identity and
+# family-friendly changes; LibreQuake v0.09-beta's data ships in the archive.
+# No id Software data.
+[upstream]
+name = "libretro's tyrquake core and the LibreQuake project"
+url = "https://github.com/libretro/tyrquake"
+
+# the start script runs build/aftershock with the session log in
+# $XDG_STATE_HOME/aftershock, where settings and saves live too
+[exec]
+game = "aftershock"
+
+[min_terminal]
+cols = 80
+rows = 24
+
+# 24-bit colour and the upper half block (U+2580); keyboard first, mouse
+# optional. Sound and music through ALSA, --no-sound for silence
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = false
+
+# 100x30, asciiverse/record-preview.sh: a fight in the prequel's first
+# level, rockets, sparks and debris, the status line throughout; re-encoded
+# at 10 fps (asciiverse/recast.py, from our doom-ascii); the still is a
+# rocket bursting on a wall over a fallen hound
+[media]
+cast = "asciiverse/aftershock.cast"
+thumbnail_at = 15.0
+
+[release]
+source = "github"
