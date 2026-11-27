@@ -47,4 +47,5 @@ id Software released its engine's source in 1997. Chocolate Doom keeps it faithf
 - Engine: Wojciech Graj, after id Software, Chocolate Doom (Simon Howard and contributors) and doomgeneric (ozkl)
 - OPL3 emulation: Nuked OPL3, Alexey Khokholov
 - Freedoom: the Freedoom project
-- License: GPL-2.0-or-later (the engine), BSD-3-Clause (Freedoom)
+- chafa pictures: chafa, Hans Petter Jansson
+- License: GPL-3.0-or-later (the engine, with chafa), BSD-3-Clause (Freedoom)
