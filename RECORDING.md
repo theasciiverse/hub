@@ -149,6 +149,10 @@ partway through, about a third and two thirds in, so viewers see each one.
   sleighride). Proposal: record normally; hub's build re-encodes every cast
   at a capped frame rate (25 to 30 fps keeps the look) and serves it
   compressed, with a size limit the build checks.
+  Settled meanwhile: the site is on Cloudflare Pages, which refuses any
+  file over 25 MiB, so a cast above that fails the whole deploy (Pedigree,
+  2026-11-28: 34 MiB at 10 fps); re-encode it at a lower frame rate with
+  aftershock's `asciiverse/recast.py` until it fits.
 - **A clean environment.** The recording command should drop variables that
   identify the real terminal (`VTE_VERSION`, `TERM_PROGRAM` and similar), or
   a game may detect the recorder's terminal instead of the `xterm-256color`

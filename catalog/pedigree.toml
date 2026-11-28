@@ -37,8 +37,9 @@ gamepad = true
 
 # 100x30, asciiverse/record-preview.sh flown by tools/test/pilot.py through
 # First Light: the airlock, drones down the rock tunnels, a miner picked up
-# in the red cavern; re-encoded at 10 fps, tolerance 16 (aftershock's
-# recast.py); the still is a drone in the red cavern
+# in the red cavern; re-encoded at 8 fps, tolerance 24 (aftershock's
+# recast.py), to stay under Cloudflare Pages' 25 MiB a file; the still
+# is a drone in the red cavern
 [media]
 cast = "asciiverse/pedigree.cast"
 thumbnail_at = 47.0
