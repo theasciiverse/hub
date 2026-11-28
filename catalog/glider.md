@@ -29,8 +29,16 @@ which plays itself. Any Glider 4 house file plays too.
 It is Calhoun's game, translated from his Pascal, with his art, sounds
 and houses read from his own files. The silhouette view is made for the
 terminal: the room softened behind box-drawn furniture, and everything
-that moves or hurts drawn sharp in solid colour. Or press **V** for his
-art itself, in half blocks.
+that moves or hurts drawn sharp in solid colour. Press **V** for his art
+itself in half blocks, and again for the black-and-white art a Mac
+without colour showed, gray patterns and all. Press **C** and the air
+itself appears: the plumes of the vents, the heat of the candles, the
+gusts of the fans, drawn the way Glider drew them.
+
+And his Room Editor is here too. Press **E** on the title screen and
+build a house of your own, room by room, then fly it with a single key;
+it saves real Glider 4 house files, so a house made here plays anywhere
+Glider does.
 
 **Catch the air. Mind the darts.**
 
@@ -44,8 +52,13 @@ art itself, in half blocks.
   the Mac; the button burns the battery
 - Gamepad: d-pad or stick to fly, **A** fires, **B** or the right
   trigger boosts, **Start** pauses
-- **Tab**: pause; **V**: the other view; **M**: sound; **B**: music;
-  **Q**: end the game
+- **Tab**: pause, and **S** there saves the game; **G** on the title
+  screen flies on from the save (saved games skip the high scores, as in
+  Glider)
+- **V**: the next view (silhouette, colour, black and white); **C**: show
+  the air; **R**: relative mouse; **M**: sound; **B**: music; **Q**: end
+  the game
+- **E** on the title screen: the Room Editor
 - Type **Ozma** on the title screen for fifty gliders, as in the original
 
 Best in a terminal that reports key releases (kitty, foot, WezTerm,
@@ -57,7 +70,11 @@ Glider's own tap control did; the mouse and a gamepad don't depend on it.
 - `glider "Mad House"`: start in a built-in house; `--houses` lists them
 - `glider path/to/house`: play a Glider 4 house file from disk
 - `--watch`: no controls, for Hands-off House
-- `--silhouette`, `--original`: which view to start in
+- `--silhouette`, `--original`, `--bw`: which view to start in; `--air`
+  shows the air
+- `--edit`, `--new-house`: open a house, or a new one, in the Room Editor
+- A Glider 4 saved game on the command line flies on from where it was
+  saved
 - `--mute`: no sound
 
 ## History
