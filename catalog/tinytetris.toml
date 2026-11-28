@@ -1,0 +1,46 @@
+schema_version = 1
+id = "tinytetris"
+kind = "game"
+title = "tinytetris"
+description = "Seven shapes, a well ten wide and twenty deep, and a game small enough to fit in a single 80x23 screen of source: turn, slide, drop, and keep the rows clearing."
+year = 2019
+license = "Apache-2.0"
+repo = "theasciiverse/tinytetris"
+provenance = "Conor Taylor wrote tinytetris in 2019 as a falling-blocks game whose whole C++ source fits in one 80x23 terminal screen, shaped into its own logo, with a commented copy beside it for anyone who wants to see how it works."
+changes = "PATCHES.md"
+topics = ["falling blocks", "puzzle", "arcade", "curses"]
+genre = "puzzle"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# upstream master 38d4cc3 (2021-10-25)
+[upstream]
+name = "Conor Taylor"
+url = "https://github.com/taylorconor/tinytetris"
+git = "https://github.com/taylorconor/tinytetris.git"
+
+# keeps the best score in the state folder
+[exec]
+game = "tinytetris"
+
+# the 22x22 well alone; from 40 columns the best score and the keys sit
+# beside it, centred on bigger terminals
+[min_terminal]
+cols = 22
+rows = 22
+
+[requires]
+utf8 = false
+color = "basic"
+mouse = false
+
+# 100x30, played by asciiverse/drive.py, which tries every turn and column
+# of each piece and plays the best; 30 s is a busy well mid-game
+[media]
+cast = "asciiverse/tinytetris.cast"
+thumbnail_at = 30.0
+
+[release]
+source = "github"
