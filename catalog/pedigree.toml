@@ -1,0 +1,47 @@
+schema_version = 1
+id = "pedigree"
+kind = "game"
+title = "Pedigree"
+description = "A six-degrees-of-freedom mine shooter in your terminal: fly a mining ship down tunnels that go every way at once, where the robots have stopped taking orders and started shooting."
+year = 2026
+new = true
+license = "GPL-3.0-or-later AND LicenseRef-Free-Noncommercial"
+repo = "theasciiverse/pedigree"
+provenance = "Pedigree runs on DXX-Rebirth, the engine the DXX-Rebirth team has kept flying since 2006, with a world of its own built for the terminal in 2026: the Cinder Reach, its robots, its miners and its levels."
+topics = ["shooter", "6dof", "3d", "mines", "robots", "music"]
+genre = "action"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+[upstream]
+name = "DXX-Rebirth"
+url = "https://github.com/dxx-rebirth/dxx-rebirth"
+git = "https://github.com/dxx-rebirth/dxx-rebirth"
+
+[exec]
+game = "pedigree"
+
+[min_terminal]
+cols = 80
+rows = 24
+
+# 24-bit colour and the upper half block (U+2580); keyboard first, a
+# gamepad optional
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = false
+gamepad = true
+
+# 100x30, asciiverse/record-preview.sh flown by tools/test/pilot.py through
+# First Light: the airlock, drones down the rock tunnels, a miner picked up
+# in the red cavern; re-encoded at 10 fps, tolerance 16 (aftershock's
+# recast.py); the still is a drone in the red cavern
+[media]
+cast = "asciiverse/pedigree.cast"
+thumbnail_at = 47.0
+
+[release]
+source = "github"
