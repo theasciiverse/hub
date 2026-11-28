@@ -1,0 +1,56 @@
+schema_version = 1
+id = "netrek"
+kind = "game"
+title = "Netrek"
+description = "Four empires, forty planets, sixteen ships and nobody waits for a turn: the team space battle game played across the Internet since 1988, with robots to fight here, a game to host for friends, and the servers still running."
+year = 1988
+old = true
+# the client links the GPL-2.0-or-later terminal frontend and chafa
+# (LGPL-3.0-or-later), the server GNU dbm (GPL-3.0-or-later); their own
+# source is under Netrek's permission notice (MIT-CMU style)
+license = "GPL-3.0-or-later"
+repo = "theasciiverse/netrek"
+provenance = "Chris Guthrie and Ed James wrote Xtrek in 1986; Kevin Smith and Scott Silvey made it Netrek in 1988, a game of teams played over the Internet, and players and servers have kept it going ever since. James Cameron keeps the COW client and the Vanilla server today."
+changes = "PATCHES.md"
+topics = ["space", "team", "multiplayer", "online", "lan", "bots", "classic", "mouse", "sextants"]
+genre = "action"
+
+[developer]
+name = "Asciiverse"
+url = "https://asciiverse.sh"
+
+# Netrek Client COW 3.3.4 with our terminal window layer (term/), and the
+# Vanilla server 2.20.0 as a subtree; changes in PATCHES.md
+[upstream]
+name = "James Cameron and the Netrek developers"
+url = "https://github.com/quozl/netrek-client-cow"
+git = "https://github.com/quozl/netrek-client-cow"
+
+# the menu: Play here (the server on this machine with robots), Host, Join,
+# Server list; state in $XDG_STATE_HOME/netrek
+[exec]
+game = "netrek"
+
+# measured in a game against the robots: both pictures, the dashboard,
+# the warning and message lines and two lines of messages
+[min_terminal]
+cols = 80
+rows = 24
+
+# 24-bit colour and the sextants of Symbols for Legacy Computing (F2 gives
+# Braille, half blocks or chafa); the mouse aims, the keys do too. Sound
+# through ALSA when it is there
+[requires]
+utf8 = true
+color = "truecolor"
+mouse = false
+
+# 100x30, Play here: the team screen with its controls card, then a
+# Romulan cruiser and its squadron in a Federation raid at Indi and
+# Capella, red alert, and the cruiser lost; the still is mid-fight
+[media]
+cast = "asciiverse/netrek.cast"
+thumbnail_at = 35.0
+
+[release]
+source = "github"
