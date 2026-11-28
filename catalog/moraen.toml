@@ -8,7 +8,7 @@ new = true
 license = "MIT"
 repo = "theasciiverse/moraen"
 provenance = "Asciiverse made Moraen in Rust in 2026, a love letter to the 1984 cave-digging classic, named after the moraine the ice left across Sweden."
-topics = ["puzzle", "action", "caves", "boulder-dash"]
+topics = ["puzzle", "action", "caves", "boulder-dash", "multiplayer", "co-op"]
 genre = "puzzle"
 
 [developer]
@@ -27,11 +27,11 @@ color = "truecolor"
 mouse = false
 gamepad = true
 
-system_deps = ["libudev1"]
+system_deps = ["libudev1", "libasound2"]
 
 [media]
 cast = "asciiverse/moraen.cast"
-thumbnail_at = 8.0
+thumbnail_at = 24.0
 
 [release]
 source = "github"
