@@ -1,0 +1,49 @@
+schema_version = 1
+id = "thokr"
+kind = "game"
+title = "thokr"
+description = "A sleek typing test that draws your speed through every second of the run, races you against a ghost caret if you like, and logs every result so you can watch yourself get faster."
+year = 2022
+license = "MIT"
+repo = "theasciiverse/thokr"
+provenance = "Colby Thomas wrote thokr in Rust in 2022 as coloradocolby, and keeps it going today as jrnxf, with contributors adding timed streams, death mode and the ghost caret."
+changes = "PATCHES.md"
+topics = ["typing", "typing test", "wpm", "practice", "rust"]
+genre = "typing"
+
+[developer]
+name = "Colby Thomas and contributors"
+url = "https://github.com/jrnxf/thokr"
+
+# upstream's main after 0.7.0 (README and Dependabot commits only), with
+# the results log in the state folder and a session log
+[upstream]
+name = "Colby Thomas"
+url = "https://github.com/jrnxf/thokr"
+git = "https://github.com/jrnxf/thokr.git"
+
+[exec]
+game = "thokr"
+
+# the words wrap to the terminal and the chart shrinks with it; 40x10
+# still shows a default test and its results whole
+[min_terminal]
+cols = 40
+rows = 10
+
+# Braille dots in the results chart
+[requires]
+utf8 = true
+color = "basic"
+mouse = false
+glyphs = ["braille"]
+
+# 100x30, asciiverse/record-preview.sh: two default tests typed by
+# asciiverse/drive.py, a few typos fixed, each with its results chart;
+# 37 s, the still is the first results chart
+[media]
+cast = "asciiverse/thokr.cast"
+thumbnail_at = 12.5
+
+[release]
+source = "github"
