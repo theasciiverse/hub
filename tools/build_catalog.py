@@ -137,12 +137,19 @@ _releases = {}
 
 
 def releases(repo):
-    """The repo's published releases, newest first (cached: a collection's
-    titles share one repo)."""
+    """The repo's published releases, newest first, except that the one
+    GitHub marks Latest comes first: a release published again after a
+    newer one (a rebuilt v0.3.0 after v0.3.1) is not the one to offer
+    (cached: a collection's titles share one repo)."""
     if repo not in _releases:
         rel = api(f"repos/{repo}/releases?per_page=30")
         rel = [r for r in rel if not r.get("draft") and not r.get("prerelease")]
         rel.sort(key=lambda r: r.get("published_at") or "", reverse=True)
+        try:
+            latest = api(f"repos/{repo}/releases/latest").get("id")
+        except urllib.error.HTTPError:
+            latest = None
+        rel.sort(key=lambda r: r.get("id") != latest)  # stable: the rest keep their order
         _releases[repo] = rel
     return _releases[repo]
 
