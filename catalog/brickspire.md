@@ -22,7 +22,7 @@ At the top, the Mason is still laying bricks, as fast as you can break them. Bre
 - **Left** and **Right** (or **A** and **D**, **H** and **L**), or the **mouse**: move the paddle
 - **Space**, **Enter** or **Up**: launch the ball, fire Chisels, let go of a caught ball
 - **P**: pause, **R**: restart, **Q** or **Esc**: quit
-- **G**: pixel art or pipe graphics, **M**: sound on or off
+- **G**: pixel art or pipe graphics, **M**: sound on or off, **B**: music on or off
 - **Gamepad**: stick or d-pad moves (the stick aims round the roof), bottom or right button or right trigger fires, Start pauses
 
 ## Options
@@ -30,6 +30,7 @@ At the top, the Mason is still laying bricks, as fast as you can break them. Bre
 - `--floor N`: start on floor N (1 to 50)
 - `--glyphs`: start in pipe graphics
 - `--mute`: no sound
+- `--no-music`: no music
 
 ## History
 
@@ -38,4 +39,4 @@ Brickspire began on 9 October 2026 with one question: why should the paddle alwa
 ## Credits
 
 - Game: Asciiverse
-- Sound synthesised in the game
+- Sound and music synthesised in the game
