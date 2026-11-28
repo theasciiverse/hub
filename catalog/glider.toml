@@ -49,12 +49,13 @@ gamepad = true
 glyphs = ["braille"]
 system_deps = ["libasound2", "libudev1"]
 
-# 100x30, `glider --watch "Hands-off House"` (the house plays itself), in
-# the silhouette view, the original view from 20 s to 36 s
+# 100x30, `glider --watch "Hands-off House"` (the house plays itself): the
+# silhouette view, Calhoun's colour art from 14 s, his black and white from
+# 26 s, the silhouette with the air shown from 38 s
 # (asciiverse/record-preview.sh)
 [media]
 cast = "asciiverse/glider.cast"
-thumbnail_at = 12.0
+thumbnail_at = 16.0
 
 [release]
 source = "github"
